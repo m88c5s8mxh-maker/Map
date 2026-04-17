@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Graphify Cache (lokal, nicht im Repo)
+graphify-out/cache/
+graphify-out/.graphify_python
+graphify-out/.graphify_extract.json
+graphify-out/.graphify_ast.json
+graphify-out/.graphify_labels.json
+graphify-out/.graphify_analysis.json
+
+# Obsidian lokale Einstellungen
+wiki/.obsidian/workspace.json
+wiki/.obsidian/workspace-mobile.json
+wiki/.obsidian/plugins/
+
+# System
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Secrets (niemals committen!)
+.env
+*.key
+*.pem
