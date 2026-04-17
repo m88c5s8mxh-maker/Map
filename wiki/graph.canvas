@@ -1,0 +1,1756 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Laziness Research Findings",
+      "x": 0,
+      "y": 0,
+      "width": 1100,
+      "height": 720,
+      "color": "1"
+    },
+    {
+      "id": "n_context_reduction_35pct",
+      "type": "file",
+      "file": "graphify/obsidian/35% Context Reduction from Lazy-Loading.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_compounding_error_avoidance_study",
+      "type": "file",
+      "file": "graphify/obsidian/Compounding Error Avoidance Research.md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_developer_platform_full_access",
+      "type": "file",
+      "file": "graphify/obsidian/Developer Platform Full Context Access (APIAI Studio).md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_emotionprompt_study",
+      "type": "file",
+      "file": "graphify/obsidian/EmotionPrompt (Microsoft Research).md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_error_avoidance_truncation",
+      "type": "file",
+      "file": "graphify/obsidian/Error Avoidance as Truncation Driver.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_gemini_thinking_level",
+      "type": "file",
+      "file": "graphify/obsidian/Gemini thinking_level Parameter.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_references_laziness_studies",
+      "type": "file",
+      "file": "graphify/obsidian/LLM Laziness Research References.md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lazy_loaded_skills_pattern",
+      "type": "file",
+      "file": "graphify/obsidian/Lazy-Loaded Skills Architectural Pattern.md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lazybench_cognitive_shortcuts",
+      "type": "file",
+      "file": "graphify/obsidian/LazyBench Cognitive Shortcutting Discovery.md",
+      "x": 420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lazybench_study",
+      "type": "file",
+      "file": "graphify/obsidian/LazyBench Study.md",
+      "x": 20,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_mcp_reduces_truncation",
+      "type": "file",
+      "file": "graphify/obsidian/MCP Eliminates HallucinationTruncation Incentive.md",
+      "x": 220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_mcp_architecture",
+      "type": "file",
+      "file": "graphify/obsidian/Model Context Protocol (MCP) Architecture.md",
+      "x": 420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_psychological_pattern_matching",
+      "type": "file",
+      "file": "graphify/obsidian/Psychological Pattern Matching in Prompts.md",
+      "x": 20,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_rationale_lazy_skill_architecture",
+      "type": "file",
+      "file": "graphify/obsidian/Rationale Lazy-Loading Reduces Context Dilution and Token Cost.md",
+      "x": 220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_rationale_mcp_real_time_data",
+      "type": "file",
+      "file": "graphify/obsidian/Rationale MCP Transforms Model from Static Store to Live Reasoning Engine.md",
+      "x": 420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_skill_yaml_frontmatter",
+      "type": "file",
+      "file": "graphify/obsidian/SKILL.md YAML Front-Matter Discovery Hook.md",
+      "x": 20,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_seasonal_behavior_study",
+      "type": "file",
+      "file": "graphify/obsidian/Seasonal Behavior Analysis (Winter Break Hypothesis).md",
+      "x": 220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_seasonal_behavior_anomalies",
+      "type": "file",
+      "file": "graphify/obsidian/Seasonal Behavior Anomalies in LLM Output.md",
+      "x": 420,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Taste Skill Rules",
+      "x": 1180,
+      "y": 0,
+      "width": 880,
+      "height": 720,
+      "color": "2"
+    },
+    {
+      "id": "n_ai_tells_forbidden_patterns",
+      "type": "file",
+      "file": "graphify/obsidian/AI Tells - Forbidden Design Patterns.md",
+      "x": 1200,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_anti_slop_design_rules",
+      "type": "file",
+      "file": "graphify/obsidian/Anti-Slop Design Engineering Rules (Bias Correction).md",
+      "x": 1400,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_creative_arsenal_patterns",
+      "type": "file",
+      "file": "graphify/obsidian/Creative Arsenal - High-End UI Pattern Library.md",
+      "x": 1600,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_variance_dial",
+      "type": "file",
+      "file": "graphify/obsidian/DESIGN_VARIANCE Dial (1-10 Symmetry to Chaos).md",
+      "x": 1200,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_floria_bento_grid_archives",
+      "type": "file",
+      "file": "graphify/obsidian/Floria Archives Bento Grid (2x2 image tiles).md",
+      "x": 1400,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_floria_asymmetric_layout",
+      "type": "file",
+      "file": "graphify/obsidian/Floria Asymmetric Left-Aligned Hero Layout.md",
+      "x": 1600,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_floria_dark_aesthetic",
+      "type": "file",
+      "file": "graphify/obsidian/Floria Dark Editorial Aesthetic (Dark Background, High-Contrast Typography).md",
+      "x": 1200,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_floria_newsletter_cta",
+      "type": "file",
+      "file": "graphify/obsidian/Floria Newsletter CTA with Botanical Image Background.md",
+      "x": 1400,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_floria_testimonials_scattered",
+      "type": "file",
+      "file": "graphify/obsidian/Floria Scattered Testimonial Card Layout.md",
+      "x": 1600,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_floria_bottom_section",
+      "type": "file",
+      "file": "graphify/obsidian/Floria Website - Bottom Section (Testimonials, Newsletter, Footer).md",
+      "x": 1200,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_floria_full_page",
+      "type": "file",
+      "file": "graphify/obsidian/Floria Website - Full Page Overview.md",
+      "x": 1400,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_floria_top_section",
+      "type": "file",
+      "file": "graphify/obsidian/Floria Website - Top Section (Hero, Curated Assemblages, Services, Archives).md",
+      "x": 1600,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_motion_intensity_dial",
+      "type": "file",
+      "file": "graphify/obsidian/MOTION_INTENSITY Dial (1-10 Static to Cinematic).md",
+      "x": 1200,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_bento_motion_engine_paradigm",
+      "type": "file",
+      "file": "graphify/obsidian/Motion-Engine Bento Paradigm (Bento 2.0).md",
+      "x": 1400,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_visual_density_dial",
+      "type": "file",
+      "file": "graphify/obsidian/VISUAL_DENSITY Dial (1-10 Art Gallery to Cockpit).md",
+      "x": 1600,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_taste_skill_frontend",
+      "type": "file",
+      "file": "graphify/obsidian/design-taste-frontend SKILL (High-Agency Frontend).md",
+      "x": 1200,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Animation & Layout System",
+      "x": 2140,
+      "y": 0,
+      "width": 880,
+      "height": 620,
+      "color": "3"
+    },
+    {
+      "id": "n_concept_bento_grid",
+      "type": "file",
+      "file": "graphify/obsidian/Bento Grid  Asymmetric CSS Grid Layout.md",
+      "x": 2160,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_design_variance",
+      "type": "file",
+      "file": "graphify/obsidian/DESIGN_VARIANCE Dial (1-10 layout variance parameter).md",
+      "x": 2360,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_double_bezel",
+      "type": "file",
+      "file": "graphify/obsidian/Double-Bezel (Doppelrand) Nested Container Architecture.md",
+      "x": 2560,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_gpu_safe_animation",
+      "type": "file",
+      "file": "graphify/obsidian/GPU-Safe Animation (transform + opacity only).md",
+      "x": 2160,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_soft_skill",
+      "type": "file",
+      "file": "graphify/obsidian/High-End Visual Design  Soft UI (soft-skill).md",
+      "x": 2360,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_motion_intensity",
+      "type": "file",
+      "file": "graphify/obsidian/MOTION_INTENSITY Dial (1-10 animation intensity parameter).md",
+      "x": 2560,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_perpetual_micro_interactions",
+      "type": "file",
+      "file": "graphify/obsidian/Perpetual Micro-Interactions (infinite-loop component states).md",
+      "x": 2160,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_rationale_spring_physics",
+      "type": "file",
+      "file": "graphify/obsidian/Rationale Spring physics over linear easing for premium feel.md",
+      "x": 2360,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_rationale_min_h_dvh",
+      "type": "file",
+      "file": "graphify/obsidian/Rationale Use min-h-100dvh instead of h-screen for iOS Safari fix.md",
+      "x": 2560,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_skill_md_format",
+      "type": "file",
+      "file": "graphify/obsidian/SKILL.md \u00e2\u20ac\u201c Portable AI Instruction File Format.md",
+      "x": 2160,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_spring_physics",
+      "type": "file",
+      "file": "graphify/obsidian/Spring Physics Animation (stiffness100, damping20).md",
+      "x": 2360,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_taste_skill",
+      "type": "file",
+      "file": "graphify/obsidian/Taste Skill (design-taste-frontend).md",
+      "x": 2560,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_visual_density",
+      "type": "file",
+      "file": "graphify/obsidian/VISUAL_DENSITY Dial (1-10 content density parameter).md",
+      "x": 2160,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Brutalist & Anti-Generic UI",
+      "x": 3100,
+      "y": 0,
+      "width": 880,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "n_concept_banned_fonts",
+      "type": "file",
+      "file": "graphify/obsidian/Banned Fonts List (Inter, Roboto, Arial, Open Sans).md",
+      "x": 3120,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_skill",
+      "type": "file",
+      "file": "graphify/obsidian/Design Advisor (design).md",
+      "x": 3320,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_design_audit",
+      "type": "file",
+      "file": "graphify/obsidian/Design Audit \u00e2\u20ac\u201c Systematic Upgrade Checklist.md",
+      "x": 3520,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_brutalist_skill",
+      "type": "file",
+      "file": "graphify/obsidian/Industrial Brutalism & Tactical Telemetry UI (brutalist-skill).md",
+      "x": 3120,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_premium_ui",
+      "type": "file",
+      "file": "graphify/obsidian/Premium  Anti-Generic UI Design Principle.md",
+      "x": 3320,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_minimalist_skill",
+      "type": "file",
+      "file": "graphify/obsidian/Premium Utilitarian Minimalism UI (minimalist-skill).md",
+      "x": 3520,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_rationale_ban_inter",
+      "type": "file",
+      "file": "graphify/obsidian/Rationale Ban Inter font to avoid generic AI aesthetic.md",
+      "x": 3120,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_redesign_skill",
+      "type": "file",
+      "file": "graphify/obsidian/Redesign Existing Projects (redesign-skill).md",
+      "x": 3320,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_swiss_typography",
+      "type": "file",
+      "file": "graphify/obsidian/Swiss Industrial Typography Archetype.md",
+      "x": 3520,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_crt_terminal",
+      "type": "file",
+      "file": "graphify/obsidian/Tactical Telemetry  CRT Terminal Archetype.md",
+      "x": 3120,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_warm_monochrome",
+      "type": "file",
+      "file": "graphify/obsidian/Warm Monochrome Palette with Muted Pastel Accents.md",
+      "x": 3320,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_llms_txt_index",
+      "type": "file",
+      "file": "graphify/obsidian/llms.txt Skill Index.md",
+      "x": 3520,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Output Truncation Problem",
+      "x": 0,
+      "y": 800,
+      "width": 880,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_platform_claude_code",
+      "type": "file",
+      "file": "graphify/obsidian/Claude Code (AI coding agent).md",
+      "x": 20,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_platform_cursor",
+      "type": "file",
+      "file": "graphify/obsidian/Cursor (AI coding agent).md",
+      "x": 220,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_output_skill",
+      "type": "file",
+      "file": "graphify/obsidian/Full-Output Enforcement (output-skill).md",
+      "x": 420,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_laziness_empirical",
+      "type": "file",
+      "file": "graphify/obsidian/LLM Laziness \u00e2\u20ac\u201c Empirical Results (2025 Studies).md",
+      "x": 20,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_output_truncation",
+      "type": "file",
+      "file": "graphify/obsidian/LLM Output Truncation  Laziness Behavior.md",
+      "x": 220,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_laziness_readme",
+      "type": "file",
+      "file": "graphify/obsidian/LLM Output Truncation Research \u00e2\u20ac\u201c Overview.md",
+      "x": 420,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_prompt_stimulus",
+      "type": "file",
+      "file": "graphify/obsidian/Prompt Stimulus Effectiveness (financial framing, stakes language).md",
+      "x": 20,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_rlhf_brevity_bias",
+      "type": "file",
+      "file": "graphify/obsidian/RLHF-induced Brevity Bias (root cause of truncation).md",
+      "x": 220,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_rationale_output_enforcement",
+      "type": "file",
+      "file": "graphify/obsidian/Rationale Explicit output enforcement counters RLHF brevity bias.md",
+      "x": 420,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_taste_readme",
+      "type": "file",
+      "file": "graphify/obsidian/Taste Skill README \u00e2\u20ac\u201c Collection Overview.md",
+      "x": 20,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_taste_research_readme",
+      "type": "file",
+      "file": "graphify/obsidian/Taste Skill Research Index.md",
+      "x": 220,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Stitch & Anti-Slop Rules",
+      "x": 1180,
+      "y": 800,
+      "width": 660,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "n_concept_anti_slop",
+      "type": "file",
+      "file": "graphify/obsidian/Anti-Slop  Anti-Generic AI Design Rules.md",
+      "x": 1200,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_stitch_design_md",
+      "type": "file",
+      "file": "graphify/obsidian/DESIGN.md \u00e2\u20ac\u201c Single Source of Truth for Google Stitch.md",
+      "x": 1400,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_platform_google_stitch",
+      "type": "file",
+      "file": "graphify/obsidian/Google Stitch (AI UI generation platform).md",
+      "x": 1600,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_inline_image_typography",
+      "type": "file",
+      "file": "graphify/obsidian/Inline Image Typography (photos embedded in headlines).md",
+      "x": 1200,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_rationale_no_3col_grid",
+      "type": "file",
+      "file": "graphify/obsidian/Rationale Ban 3-column equal card grids as overused AI pattern.md",
+      "x": 1400,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_design_md",
+      "type": "file",
+      "file": "graphify/obsidian/Stitch Design System DESIGN.md (Taste Standard).md",
+      "x": 1600,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_skill",
+      "type": "file",
+      "file": "graphify/obsidian/Stitch Design Taste Skill (stitch-skill).md",
+      "x": 1200,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "RLHF Root Causes",
+      "x": 2140,
+      "y": 800,
+      "width": 660,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_controlled_laziness_experiments_2025",
+      "type": "file",
+      "file": "graphify/obsidian/2025 Controlled Laziness Experiments.md",
+      "x": 2160,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_token_generation_cost",
+      "type": "file",
+      "file": "graphify/obsidian/GPU Compute Cost Per Token.md",
+      "x": 2360,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_placeholder_propagation",
+      "type": "file",
+      "file": "graphify/obsidian/Placeholder Propagation from Training Data.md",
+      "x": 2560,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_rlhf_brevity_bias",
+      "type": "file",
+      "file": "graphify/obsidian/RLHF Brevity Bias Through Alignment.md",
+      "x": 2160,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_rationale_rlhf_cost_tradeoff",
+      "type": "file",
+      "file": "graphify/obsidian/Rationale RLHF Brevity Bias is Economic Cost Optimization.md",
+      "x": 2360,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stopping_pressure",
+      "type": "file",
+      "file": "graphify/obsidian/Stopping Pressure in Autoregressive Models.md",
+      "x": 2560,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tutorial_style_pattern_reinforcement",
+      "type": "file",
+      "file": "graphify/obsidian/Tutorial-Style Pattern Reinforcement in Training Data.md",
+      "x": 2160,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "Prompt Execution Patterns",
+      "x": 3100,
+      "y": 800,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_chunked_task_execution",
+      "type": "file",
+      "file": "graphify/obsidian/Chunked Task Execution Pattern.md",
+      "x": 3120,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_verification_loops",
+      "type": "file",
+      "file": "graphify/obsidian/Verification Loops (Chain of Verification, Reverse Prompting, Self-Grading).md",
+      "x": 3320,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "Anti-Truncation Techniques",
+      "x": 0,
+      "y": 1400,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_explicit_syntax_binding",
+      "type": "file",
+      "file": "graphify/obsidian/Explicit Syntax Binding (Anti-Truncation).md",
+      "x": 20,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_reference_prompts_templates",
+      "type": "file",
+      "file": "graphify/obsidian/Reference Prompt Templates for Complete Output.md",
+      "x": 220,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "Middleware Output Limits",
+      "x": 1180,
+      "y": 1400,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_consumer_middleware_truncation",
+      "type": "file",
+      "file": "graphify/obsidian/Consumer Middleware Truncation Problem.md",
+      "x": 1200,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_context_window_asymmetry",
+      "type": "file",
+      "file": "graphify/obsidian/Context Window Asymmetry (Large Input, Capped Output).md",
+      "x": 1400,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "Temperature Parameter",
+      "x": 2140,
+      "y": 1400,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_temperature_parameter",
+      "type": "file",
+      "file": "graphify/obsidian/Temperature Parameter for Token Distribution.md",
+      "x": 2160,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g11",
+      "type": "group",
+      "label": "Nucleus Sampling",
+      "x": 3100,
+      "y": 1400,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_top_p_nucleus_sampling",
+      "type": "file",
+      "file": "graphify/obsidian/Top-p Nucleus Sampling.md",
+      "x": 3120,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g12",
+      "type": "group",
+      "label": "XML Prompt Architecture",
+      "x": 0,
+      "y": 1880,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_xml_structured_prompts",
+      "type": "file",
+      "file": "graphify/obsidian/XML-Structured Prompt Architecture.md",
+      "x": 20,
+      "y": 1960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g13",
+      "type": "group",
+      "label": "Continuation Templates",
+      "x": 1180,
+      "y": 1880,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_continuation_handling_prompt",
+      "type": "file",
+      "file": "graphify/obsidian/Continuation Handling Prompt Template.md",
+      "x": 1200,
+      "y": 1960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g14",
+      "type": "group",
+      "label": "Metacognitive Feedback",
+      "x": 2140,
+      "y": 1880,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_metacognitive_laziness",
+      "type": "file",
+      "file": "graphify/obsidian/Metacognitive Laziness and Human Feedback Loop.md",
+      "x": 2160,
+      "y": 1960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g15",
+      "type": "group",
+      "label": "Dynamic Throttling",
+      "x": 3100,
+      "y": 1880,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_dynamic_throttling",
+      "type": "file",
+      "file": "graphify/obsidian/Dynamic Throttling During Peak Demand.md",
+      "x": 3120,
+      "y": 1960,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_llms_txt_index_taste_skill",
+      "fromNode": "n_llms_txt_index",
+      "toNode": "n_taste_skill",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llms_txt_index_redesign_skill",
+      "fromNode": "n_llms_txt_index",
+      "toNode": "n_redesign_skill",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llms_txt_index_soft_skill",
+      "fromNode": "n_llms_txt_index",
+      "toNode": "n_soft_skill",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llms_txt_index_output_skill",
+      "fromNode": "n_llms_txt_index",
+      "toNode": "n_output_skill",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llms_txt_index_minimalist_skill",
+      "fromNode": "n_llms_txt_index",
+      "toNode": "n_minimalist_skill",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llms_txt_index_brutalist_skill",
+      "fromNode": "n_llms_txt_index",
+      "toNode": "n_brutalist_skill",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_llms_txt_index_stitch_skill",
+      "fromNode": "n_llms_txt_index",
+      "toNode": "n_stitch_skill",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_taste_readme",
+      "fromNode": "n_taste_skill",
+      "toNode": "n_taste_readme",
+      "label": "documents [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_concept_anti_slop",
+      "fromNode": "n_taste_skill",
+      "toNode": "n_concept_anti_slop",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_concept_banned_fonts",
+      "fromNode": "n_taste_skill",
+      "toNode": "n_concept_banned_fonts",
+      "label": "enforces [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_concept_spring_physics",
+      "fromNode": "n_taste_skill",
+      "toNode": "n_concept_spring_physics",
+      "label": "specifies [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_concept_bento_grid",
+      "fromNode": "n_taste_skill",
+      "toNode": "n_concept_bento_grid",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_concept_design_variance",
+      "fromNode": "n_taste_skill",
+      "toNode": "n_concept_design_variance",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_concept_motion_intensity",
+      "fromNode": "n_taste_skill",
+      "toNode": "n_concept_motion_intensity",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_concept_visual_density",
+      "fromNode": "n_taste_skill",
+      "toNode": "n_concept_visual_density",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_concept_gpu_safe_animation",
+      "fromNode": "n_taste_skill",
+      "toNode": "n_concept_gpu_safe_animation",
+      "label": "enforces [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_concept_perpetual_micro_interactions",
+      "fromNode": "n_taste_skill",
+      "toNode": "n_concept_perpetual_micro_interactions",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_concept_premium_ui",
+      "fromNode": "n_taste_skill",
+      "toNode": "n_concept_premium_ui",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_concept_skill_md_format",
+      "fromNode": "n_taste_skill",
+      "toNode": "n_concept_skill_md_format",
+      "label": "uses [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_rationale_min_h_dvh",
+      "fromNode": "n_taste_skill",
+      "toNode": "n_rationale_min_h_dvh",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_brutalist_skill_taste_readme",
+      "fromNode": "n_brutalist_skill",
+      "toNode": "n_taste_readme",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_brutalist_skill_concept_swiss_typography",
+      "fromNode": "n_brutalist_skill",
+      "toNode": "n_concept_swiss_typography",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_brutalist_skill_concept_crt_terminal",
+      "fromNode": "n_brutalist_skill",
+      "toNode": "n_concept_crt_terminal",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_design_skill_concept_premium_ui",
+      "fromNode": "n_design_skill",
+      "toNode": "n_concept_premium_ui",
+      "label": "advises_toward [EXTRACTED]"
+    },
+    {
+      "id": "e_minimalist_skill_taste_readme",
+      "fromNode": "n_minimalist_skill",
+      "toNode": "n_taste_readme",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_minimalist_skill_concept_warm_monochrome",
+      "fromNode": "n_minimalist_skill",
+      "toNode": "n_concept_warm_monochrome",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_minimalist_skill_concept_banned_fonts",
+      "fromNode": "n_minimalist_skill",
+      "toNode": "n_concept_banned_fonts",
+      "label": "enforces [EXTRACTED]"
+    },
+    {
+      "id": "e_minimalist_skill_concept_gpu_safe_animation",
+      "fromNode": "n_minimalist_skill",
+      "toNode": "n_concept_gpu_safe_animation",
+      "label": "enforces [EXTRACTED]"
+    },
+    {
+      "id": "e_minimalist_skill_concept_premium_ui",
+      "fromNode": "n_minimalist_skill",
+      "toNode": "n_concept_premium_ui",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_output_skill_taste_readme",
+      "fromNode": "n_output_skill",
+      "toNode": "n_taste_readme",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_output_skill_concept_output_truncation",
+      "fromNode": "n_output_skill",
+      "toNode": "n_concept_output_truncation",
+      "label": "addresses [EXTRACTED]"
+    },
+    {
+      "id": "e_output_skill_rationale_output_enforcement",
+      "fromNode": "n_output_skill",
+      "toNode": "n_rationale_output_enforcement",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_redesign_skill_taste_readme",
+      "fromNode": "n_redesign_skill",
+      "toNode": "n_taste_readme",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_redesign_skill_concept_design_audit",
+      "fromNode": "n_redesign_skill",
+      "toNode": "n_concept_design_audit",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_redesign_skill_concept_banned_fonts",
+      "fromNode": "n_redesign_skill",
+      "toNode": "n_concept_banned_fonts",
+      "label": "enforces [EXTRACTED]"
+    },
+    {
+      "id": "e_redesign_skill_concept_premium_ui",
+      "fromNode": "n_redesign_skill",
+      "toNode": "n_concept_premium_ui",
+      "label": "upgrades_toward [EXTRACTED]"
+    },
+    {
+      "id": "e_redesign_skill_concept_anti_slop",
+      "fromNode": "n_redesign_skill",
+      "toNode": "n_concept_anti_slop",
+      "label": "enforces [EXTRACTED]"
+    },
+    {
+      "id": "e_soft_skill_taste_readme",
+      "fromNode": "n_soft_skill",
+      "toNode": "n_taste_readme",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_soft_skill_concept_double_bezel",
+      "fromNode": "n_soft_skill",
+      "toNode": "n_concept_double_bezel",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_soft_skill_concept_spring_physics",
+      "fromNode": "n_soft_skill",
+      "toNode": "n_concept_spring_physics",
+      "label": "specifies [EXTRACTED]"
+    },
+    {
+      "id": "e_soft_skill_concept_premium_ui",
+      "fromNode": "n_soft_skill",
+      "toNode": "n_concept_premium_ui",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_soft_skill_concept_gpu_safe_animation",
+      "fromNode": "n_soft_skill",
+      "toNode": "n_concept_gpu_safe_animation",
+      "label": "enforces [EXTRACTED]"
+    },
+    {
+      "id": "e_stitch_design_md_concept_inline_image_typography",
+      "fromNode": "n_stitch_design_md",
+      "toNode": "n_concept_inline_image_typography",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_stitch_design_md_concept_stitch_design_md",
+      "fromNode": "n_stitch_design_md",
+      "toNode": "n_concept_stitch_design_md",
+      "label": "instantiates [EXTRACTED]"
+    },
+    {
+      "id": "e_stitch_skill_taste_readme",
+      "fromNode": "n_stitch_skill",
+      "toNode": "n_taste_readme",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_stitch_skill_concept_stitch_design_md",
+      "fromNode": "n_stitch_skill",
+      "toNode": "n_concept_stitch_design_md",
+      "label": "produces [EXTRACTED]"
+    },
+    {
+      "id": "e_stitch_skill_platform_google_stitch",
+      "fromNode": "n_stitch_skill",
+      "toNode": "n_platform_google_stitch",
+      "label": "targets [EXTRACTED]"
+    },
+    {
+      "id": "e_stitch_skill_concept_anti_slop",
+      "fromNode": "n_stitch_skill",
+      "toNode": "n_concept_anti_slop",
+      "label": "enforces [EXTRACTED]"
+    },
+    {
+      "id": "e_stitch_skill_concept_spring_physics",
+      "fromNode": "n_stitch_skill",
+      "toNode": "n_concept_spring_physics",
+      "label": "specifies [EXTRACTED]"
+    },
+    {
+      "id": "e_stitch_skill_concept_bento_grid",
+      "fromNode": "n_stitch_skill",
+      "toNode": "n_concept_bento_grid",
+      "label": "uses [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_readme_taste_research_readme",
+      "fromNode": "n_taste_readme",
+      "toNode": "n_taste_research_readme",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_readme_platform_cursor",
+      "fromNode": "n_taste_readme",
+      "toNode": "n_platform_cursor",
+      "label": "supports [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_readme_platform_claude_code",
+      "fromNode": "n_taste_readme",
+      "toNode": "n_platform_claude_code",
+      "label": "supports [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_research_readme_laziness_readme",
+      "fromNode": "n_taste_research_readme",
+      "toNode": "n_laziness_readme",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_laziness_readme_laziness_empirical",
+      "fromNode": "n_laziness_readme",
+      "toNode": "n_laziness_empirical",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_laziness_empirical_concept_rlhf_brevity_bias",
+      "fromNode": "n_laziness_empirical",
+      "toNode": "n_concept_rlhf_brevity_bias",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_laziness_empirical_concept_prompt_stimulus",
+      "fromNode": "n_laziness_empirical",
+      "toNode": "n_concept_prompt_stimulus",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_concept_anti_slop_rationale_no_3col_grid",
+      "fromNode": "n_concept_anti_slop",
+      "toNode": "n_rationale_no_3col_grid",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_concept_banned_fonts_rationale_ban_inter",
+      "fromNode": "n_concept_banned_fonts",
+      "toNode": "n_rationale_ban_inter",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_concept_spring_physics_rationale_spring_physics",
+      "fromNode": "n_concept_spring_physics",
+      "toNode": "n_rationale_spring_physics",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_concept_output_truncation_concept_rlhf_brevity_bias",
+      "fromNode": "n_concept_output_truncation",
+      "toNode": "n_concept_rlhf_brevity_bias",
+      "label": "causes [EXTRACTED]"
+    },
+    {
+      "id": "e_references_laziness_studies_lazybench_study",
+      "fromNode": "n_references_laziness_studies",
+      "toNode": "n_lazybench_study",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_references_laziness_studies_emotionprompt_study",
+      "fromNode": "n_references_laziness_studies",
+      "toNode": "n_emotionprompt_study",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_references_laziness_studies_compounding_error_avoidance_study",
+      "fromNode": "n_references_laziness_studies",
+      "toNode": "n_compounding_error_avoidance_study",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_references_laziness_studies_seasonal_behavior_study",
+      "fromNode": "n_references_laziness_studies",
+      "toNode": "n_seasonal_behavior_study",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_references_laziness_studies_controlled_laziness_experiments_2025",
+      "fromNode": "n_references_laziness_studies",
+      "toNode": "n_controlled_laziness_experiments_2025",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_references_laziness_studies_mcp_architecture",
+      "fromNode": "n_references_laziness_studies",
+      "toNode": "n_mcp_architecture",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_references_laziness_studies_gemini_thinking_level",
+      "fromNode": "n_references_laziness_studies",
+      "toNode": "n_gemini_thinking_level",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_references_laziness_studies_lazy_loaded_skills_pattern",
+      "fromNode": "n_references_laziness_studies",
+      "toNode": "n_lazy_loaded_skills_pattern",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_emotionprompt_study_psychological_pattern_matching",
+      "fromNode": "n_emotionprompt_study",
+      "toNode": "n_psychological_pattern_matching",
+      "label": "supports [EXTRACTED]"
+    },
+    {
+      "id": "e_lazybench_study_lazybench_cognitive_shortcuts",
+      "fromNode": "n_lazybench_study",
+      "toNode": "n_lazybench_cognitive_shortcuts",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_compounding_error_avoidance_study_error_avoidance_truncation",
+      "fromNode": "n_compounding_error_avoidance_study",
+      "toNode": "n_error_avoidance_truncation",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_seasonal_behavior_study_seasonal_behavior_anomalies",
+      "fromNode": "n_seasonal_behavior_study",
+      "toNode": "n_seasonal_behavior_anomalies",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_controlled_laziness_experiments_2025_rlhf_brevity_bias",
+      "fromNode": "n_controlled_laziness_experiments_2025",
+      "toNode": "n_rlhf_brevity_bias",
+      "label": "confirms [EXTRACTED]"
+    },
+    {
+      "id": "e_lazy_loaded_skills_pattern_skill_yaml_frontmatter",
+      "fromNode": "n_lazy_loaded_skills_pattern",
+      "toNode": "n_skill_yaml_frontmatter",
+      "label": "uses [EXTRACTED]"
+    },
+    {
+      "id": "e_lazy_loaded_skills_pattern_context_reduction_35pct",
+      "fromNode": "n_lazy_loaded_skills_pattern",
+      "toNode": "n_context_reduction_35pct",
+      "label": "achieves [EXTRACTED]"
+    },
+    {
+      "id": "e_lazy_loaded_skills_pattern_rationale_lazy_skill_architecture",
+      "fromNode": "n_lazy_loaded_skills_pattern",
+      "toNode": "n_rationale_lazy_skill_architecture",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_skill_yaml_frontmatter_taste_skill_frontend",
+      "fromNode": "n_skill_yaml_frontmatter",
+      "toNode": "n_taste_skill_frontend",
+      "label": "uses [EXTRACTED]"
+    },
+    {
+      "id": "e_mcp_architecture_mcp_reduces_truncation",
+      "fromNode": "n_mcp_architecture",
+      "toNode": "n_mcp_reduces_truncation",
+      "label": "enables [EXTRACTED]"
+    },
+    {
+      "id": "e_mcp_architecture_rationale_mcp_real_time_data",
+      "fromNode": "n_mcp_architecture",
+      "toNode": "n_rationale_mcp_real_time_data",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_context_window_asymmetry_consumer_middleware_truncation",
+      "fromNode": "n_context_window_asymmetry",
+      "toNode": "n_consumer_middleware_truncation",
+      "label": "compounds [EXTRACTED]"
+    },
+    {
+      "id": "e_rlhf_brevity_bias_token_generation_cost",
+      "fromNode": "n_rlhf_brevity_bias",
+      "toNode": "n_token_generation_cost",
+      "label": "causes [EXTRACTED]"
+    },
+    {
+      "id": "e_rlhf_brevity_bias_rationale_rlhf_cost_tradeoff",
+      "fromNode": "n_rlhf_brevity_bias",
+      "toNode": "n_rationale_rlhf_cost_tradeoff",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_rlhf_brevity_bias_stopping_pressure",
+      "fromNode": "n_rlhf_brevity_bias",
+      "toNode": "n_stopping_pressure",
+      "label": "produces [EXTRACTED]"
+    },
+    {
+      "id": "e_placeholder_propagation_tutorial_style_pattern_reinforcement",
+      "fromNode": "n_placeholder_propagation",
+      "toNode": "n_tutorial_style_pattern_reinforcement",
+      "label": "reinforced_by [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_frontend_design_variance_dial",
+      "fromNode": "n_taste_skill_frontend",
+      "toNode": "n_design_variance_dial",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_frontend_motion_intensity_dial",
+      "fromNode": "n_taste_skill_frontend",
+      "toNode": "n_motion_intensity_dial",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_frontend_visual_density_dial",
+      "fromNode": "n_taste_skill_frontend",
+      "toNode": "n_visual_density_dial",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_frontend_anti_slop_design_rules",
+      "fromNode": "n_taste_skill_frontend",
+      "toNode": "n_anti_slop_design_rules",
+      "label": "enforces [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_frontend_ai_tells_forbidden_patterns",
+      "fromNode": "n_taste_skill_frontend",
+      "toNode": "n_ai_tells_forbidden_patterns",
+      "label": "enforces [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_frontend_bento_motion_engine_paradigm",
+      "fromNode": "n_taste_skill_frontend",
+      "toNode": "n_bento_motion_engine_paradigm",
+      "label": "defines [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_frontend_creative_arsenal_patterns",
+      "fromNode": "n_taste_skill_frontend",
+      "toNode": "n_creative_arsenal_patterns",
+      "label": "includes [EXTRACTED]"
+    },
+    {
+      "id": "e_floria_bottom_section_floria_full_page",
+      "fromNode": "n_floria_bottom_section",
+      "toNode": "n_floria_full_page",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_floria_bottom_section_floria_testimonials_scattered",
+      "fromNode": "n_floria_bottom_section",
+      "toNode": "n_floria_testimonials_scattered",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_floria_bottom_section_floria_newsletter_cta",
+      "fromNode": "n_floria_bottom_section",
+      "toNode": "n_floria_newsletter_cta",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_floria_full_page_floria_top_section",
+      "fromNode": "n_floria_full_page",
+      "toNode": "n_floria_top_section",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_floria_top_section_floria_asymmetric_layout",
+      "fromNode": "n_floria_top_section",
+      "toNode": "n_floria_asymmetric_layout",
+      "label": "demonstrates [EXTRACTED]"
+    },
+    {
+      "id": "e_floria_top_section_floria_dark_aesthetic",
+      "fromNode": "n_floria_top_section",
+      "toNode": "n_floria_dark_aesthetic",
+      "label": "demonstrates [EXTRACTED]"
+    },
+    {
+      "id": "e_floria_top_section_floria_bento_grid_archives",
+      "fromNode": "n_floria_top_section",
+      "toNode": "n_floria_bento_grid_archives",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_taste_skill_frontend_floria_full_page",
+      "fromNode": "n_taste_skill_frontend",
+      "toNode": "n_floria_full_page",
+      "label": "uses_as_reference_example [INFERRED]"
+    },
+    {
+      "id": "e_anti_slop_design_rules_floria_asymmetric_layout",
+      "fromNode": "n_anti_slop_design_rules",
+      "toNode": "n_floria_asymmetric_layout",
+      "label": "exemplifies [INFERRED]"
+    },
+    {
+      "id": "e_output_skill_concept_rlhf_brevity_bias",
+      "fromNode": "n_output_skill",
+      "toNode": "n_concept_rlhf_brevity_bias",
+      "label": "mitigates [INFERRED]"
+    },
+    {
+      "id": "e_concept_spring_physics_concept_perpetual_micro_interactions",
+      "fromNode": "n_concept_spring_physics",
+      "toNode": "n_concept_perpetual_micro_interactions",
+      "label": "enables [INFERRED]"
+    },
+    {
+      "id": "e_concept_motion_intensity_concept_perpetual_micro_interactions",
+      "fromNode": "n_concept_motion_intensity",
+      "toNode": "n_concept_perpetual_micro_interactions",
+      "label": "controls [INFERRED]"
+    },
+    {
+      "id": "e_explicit_syntax_binding_reference_prompts_templates",
+      "fromNode": "n_explicit_syntax_binding",
+      "toNode": "n_reference_prompts_templates",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_ai_tells_forbidden_patterns_floria_dark_aesthetic",
+      "fromNode": "n_ai_tells_forbidden_patterns",
+      "toNode": "n_floria_dark_aesthetic",
+      "label": "exemplifies [INFERRED]"
+    },
+    {
+      "id": "e_bento_motion_engine_paradigm_floria_bento_grid_archives",
+      "fromNode": "n_bento_motion_engine_paradigm",
+      "toNode": "n_floria_bento_grid_archives",
+      "label": "exemplifies [INFERRED]"
+    },
+    {
+      "id": "e_output_skill_concept_prompt_stimulus",
+      "fromNode": "n_output_skill",
+      "toNode": "n_concept_prompt_stimulus",
+      "label": "informs [INFERRED]"
+    },
+    {
+      "id": "e_concept_bento_grid_concept_design_variance",
+      "fromNode": "n_concept_bento_grid",
+      "toNode": "n_concept_design_variance",
+      "label": "controls [INFERRED]"
+    },
+    {
+      "id": "e_anti_slop_design_rules_floria_testimonials_scattered",
+      "fromNode": "n_anti_slop_design_rules",
+      "toNode": "n_floria_testimonials_scattered",
+      "label": "exemplifies [INFERRED]"
+    },
+    {
+      "id": "e_anti_slop_design_rules_ai_tells_forbidden_patterns",
+      "fromNode": "n_anti_slop_design_rules",
+      "toNode": "n_ai_tells_forbidden_patterns",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_concept_spring_physics_concept_gpu_safe_animation",
+      "fromNode": "n_concept_spring_physics",
+      "toNode": "n_concept_gpu_safe_animation",
+      "label": "constrains [INFERRED]"
+    },
+    {
+      "id": "e_concept_bento_grid_concept_visual_density",
+      "fromNode": "n_concept_bento_grid",
+      "toNode": "n_concept_visual_density",
+      "label": "controls [INFERRED]"
+    },
+    {
+      "id": "e_rlhf_brevity_bias_placeholder_propagation",
+      "fromNode": "n_rlhf_brevity_bias",
+      "toNode": "n_placeholder_propagation",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_brutalist_skill_concept_premium_ui",
+      "fromNode": "n_brutalist_skill",
+      "toNode": "n_concept_premium_ui",
+      "label": "implements [INFERRED]"
+    },
+    {
+      "id": "e_stitch_design_md_concept_warm_monochrome",
+      "fromNode": "n_stitch_design_md",
+      "toNode": "n_concept_warm_monochrome",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_mcp_reduces_truncation_developer_platform_full_access",
+      "fromNode": "n_mcp_reduces_truncation",
+      "toNode": "n_developer_platform_full_access",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_concept_anti_slop_concept_warm_monochrome",
+      "fromNode": "n_concept_anti_slop",
+      "toNode": "n_concept_warm_monochrome",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_chunked_task_execution_verification_loops",
+      "fromNode": "n_chunked_task_execution",
+      "toNode": "n_verification_loops",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_concept_bento_grid_concept_double_bezel",
+      "fromNode": "n_concept_bento_grid",
+      "toNode": "n_concept_double_bezel",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_concept_swiss_typography_concept_crt_terminal",
+      "fromNode": "n_concept_swiss_typography",
+      "toNode": "n_concept_crt_terminal",
+      "label": "semantically_similar_to [AMBIGUOUS]"
+    }
+  ]
+}
