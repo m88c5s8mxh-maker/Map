@@ -4,10 +4,10 @@ on:
   push:
     branches: ["**"]
     paths-ignore:
-      - "graphify-out/**"       # Map-Updates lösen keine neue Map aus (kein Loop)
+      - "graphify-out/**"
       - ".github/workflows/**"
       - "wiki/.obsidian/**"
-  workflow_dispatch:            # Manueller Trigger über GitHub UI
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -18,127 +18,23 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
 
-      - name: Install graphify
-        run: pip install graphifyy -q
+      - name: Install dependencies
+        run: pip install graphifyy networkx -q
 
-      # ── Code-Graph rebuild (kein API-Key nötig) ──────────────────────────
-      - name: Rebuild code graph
-        continue-on-error: true
-        run: |
-          python3 -c "
-          from graphify.watch import _rebuild_code
-          from pathlib import Path
-          result = _rebuild_code(Path('.'))
-          print('Code rebuild:', 'ok' if result else 'skipped (no code files)')
-          "
+      - name: Rebuild map
+        run: python3 scripts/update_map.py
 
-      # ── Wiki-Index für graphify-out/index.md generieren ──────────────────
-      - name: Update graphify-out/index.md
-        run: |
-          python3 - << 'PYEOF'
-          from pathlib import Path
-          from datetime import date
-
-          out = Path("graphify-out")
-          out.mkdir(exist_ok=True)
-
-          wiki_pages = sorted(
-              p for p in Path("wiki").rglob("*.md")
-              if p.name not in ("index.md", "log.md")
-              and ".obsidian" not in p.parts
-          )
-          raw_files = [f for f in Path("raw").rglob("*") if f.is_file() and f.name != ".gitkeep"]
-
-          # Gruppiere nach Unterordner
-          from collections import defaultdict
-          by_dir = defaultdict(list)
-          for p in wiki_pages:
-              by_dir[p.parent.name].append(p)
-
-          lines = [
-              "# Knowledge Graph Index",
-              "",
-              f"> Zuletzt aktualisiert: {date.today()} · {len(wiki_pages)} Wiki-Seiten · {len(raw_files)} Quelldateien",
-              "",
-              "---",
-              "",
-          ]
-
-          if wiki_pages:
-              lines.append("## Wiki-Seiten")
-              lines.append("")
-              for folder, pages in sorted(by_dir.items()):
-                  lines.append(f"### {folder}/")
-                  for p in sorted(pages):
-                      lines.append(f"- [[{p.stem}]]")
-                  lines.append("")
-          else:
-              lines += [
-                  "## Noch keine Inhalte",
-                  "",
-                  "1. Dateien in `raw/` ablegen",
-                  "2. `/obsidian-wiki ingest raw/<datei>` ausführen",
-                  "3. `git add . && git commit && git push` → dieser Graph aktualisiert sich",
-                  "",
-              ]
-
-          if raw_files:
-              lines += ["## Quelldateien (raw/)", ""]
-              for f in sorted(raw_files):
-                  lines.append(f"- {f.name}")
-              lines.append("")
-
-          lines += ["---", "", "*Generiert von [graphify](https://pypi.org/project/graphifyy/)*"]
-
-          Path("graphify-out/index.md").write_text("\n".join(lines), encoding="utf-8")
-          print(f"index.md: {len(wiki_pages)} Seiten, {len(raw_files)} Quellen")
-          PYEOF
-
-      # ── HTML-Visualisierung (nur wenn graph.json existiert) ──────────────
-      - name: Generate graph.html
-        continue-on-error: true
-        run: |
-          python3 -c "
-          from pathlib import Path
-          import json
-
-          gj = Path('graphify-out/graph.json')
-          if not gj.exists():
-              print('Kein graph.json — HTML übersprungen')
-              exit(0)
-
-          from graphify.export import to_html
-          from graphify.cluster import cluster
-          from networkx.readwrite import json_graph
-
-          data = json.loads(gj.read_text())
-          G = json_graph.node_link_graph(data, edges='links')
-          if G.number_of_nodes() == 0:
-              print('Leerer Graph — HTML übersprungen')
-              exit(0)
-
-          communities = cluster(G)
-          to_html(G, communities, 'graphify-out/graph.html')
-          print(f'graph.html: {G.number_of_nodes()} Knoten')
-          "
-
-      # ── Änderungen zurück committen ──────────────────────────────────────
-      - name: Commit & push map update
+      - name: Commit & push
         run: |
           git config user.name  "map-bot"
           git config user.email "map-bot@users.noreply.github.com"
           git add graphify-out/
-          git diff --cached --quiet && echo "Keine Änderungen am Graph" || \
-            git commit -m "chore: update knowledge map [skip ci]"
-          git push origin HEAD || echo "Push fehlgeschlagen (ignoriert)"
+          git diff --cached --quiet && echo "Keine Aenderungen" || git commit -m "chore: update knowledge map [skip ci]"
+          git push origin HEAD || true
