@@ -128,8 +128,8 @@
       "file_type": "rationale",
       "source_file": "scripts/update_map.py",
       "source_location": "L1",
-      "id": "update_map_rationale_1",
-      "community": 6
+      "community": 6,
+      "id": "update_map_rationale_1"
     },
     {
       "label": "llms.txt Skill Index",
