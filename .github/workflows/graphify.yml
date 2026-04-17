@@ -7,11 +7,10 @@ on:
       - "graphify-out/**"       # Map-Updates lösen keine neue Map aus (kein Loop)
       - ".github/workflows/**"
       - "wiki/.obsidian/**"
-
   workflow_dispatch:            # Manueller Trigger über GitHub UI
 
 permissions:
-  contents: write               # Nötig um Map-Update zurück zu pushen
+  contents: write
 
 jobs:
   rebuild-map:
@@ -19,157 +18,127 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      # ── 1. Code holen ────────────────────────────────────────────────────
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # ── 2. Python Setup ──────────────────────────────────────────────────
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
 
-      # ── 3. graphify installieren ─────────────────────────────────────────
       - name: Install graphify
         run: pip install graphifyy -q
 
-      # ── 4. Erkennen welche Dateien sich geändert haben ───────────────────
-      - name: Detect change type
-        id: detect
-        run: |
-          CHANGED=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || git ls-files)
-          echo "changed_files<<EOF" >> $GITHUB_OUTPUT
-          echo "$CHANGED" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
-          # Prüfe ob sich Docs/Markdown geändert haben → LLM nötig
-          HAS_DOCS=false
-          while IFS= read -r f; do
-            case "${f##*.}" in md|txt|pdf|rst|adoc) HAS_DOCS=true; break;; esac
-          done <<< "$CHANGED"
-          echo "has_docs=$HAS_DOCS" >> $GITHUB_OUTPUT
-          echo "Changed files: $CHANGED"
-          echo "Has docs: $HAS_DOCS"
-
-      # ── 5a. Strukturellen Map-Rebuild (immer, kein API-Key nötig) ─────────
-      - name: Rebuild map — structure
-        run: |
-          mkdir -p graphify-out
-          python3 -c "import sys; open('graphify-out/.graphify_python','w').write(sys.executable)"
-          # Alle Markdown + Code-Dateien einlesen (ohne node_modules, .git, graphify-out)
-          python3 -c "
-          import json, sys
-          from pathlib import Path
-          from graphify.extract import extract
-
-          exts = {'.py','.ts','.js','.go','.rs','.java','.rb','.md','.txt'}
-          skip = {'graphify-out','.git','node_modules','.obsidian','__pycache__'}
-
-          files = [
-              f for f in Path('.').rglob('*')
-              if f.is_file()
-              and f.suffix in exts
-              and not any(s in f.parts for s in skip)
-          ]
-          print(f'Indexing {len(files)} files…')
-          if files:
-              result = extract(files)
-              Path('graphify-out/.graphify_extract.json').write_text(json.dumps(result))
-              print(f'Nodes: {len(result[\"nodes\"])}, Edges: {len(result[\"edges\"])}')
-          " 2>/dev/null || echo "Structural extract skipped"
-
-      # ── 5b. Vollständiger LLM-Rebuild wenn Docs geändert ─────────────────
-      - name: Rebuild map — with LLM (wenn Docs geändert)
-        if: steps.detect.outputs.has_docs == 'true' && env.ANTHROPIC_API_KEY != ''
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: |
-          graphify . --update --no-viz 2>&1 | tail -30
+      # ── Code-Graph rebuild (kein API-Key nötig) ──────────────────────────
+      - name: Rebuild code graph
         continue-on-error: true
-
-      # ── 6. HTML-Visualisierung generieren ────────────────────────────────
-      - name: Generate graph.html
         run: |
           python3 -c "
-          import json
+          from graphify.watch import _rebuild_code
           from pathlib import Path
+          result = _rebuild_code(Path('.'))
+          print('Code rebuild:', 'ok' if result else 'skipped (no code files)')
+          "
 
-          extract_path = Path('graphify-out/.graphify_extract.json')
-          if not extract_path.exists():
-              print('No extract data, skipping HTML')
-              exit(0)
-
-          try:
-              from graphify.build import build_from_json
-              from graphify.export import to_html
-              from graphify.cluster import cluster
-
-              extraction = json.loads(extract_path.read_text())
-              G = build_from_json(extraction)
-              communities = cluster(G)
-
-              if G.number_of_nodes() > 0:
-                  to_html(G, communities, 'graphify-out/graph.html')
-                  print(f'graph.html: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges')
-              else:
-                  print('Graph leer, HTML übersprungen')
-          except Exception as e:
-              print(f'HTML-Generierung übersprungen: {e}')
-          " 2>/dev/null || echo "HTML skipped"
-
-      # ── 7. Index.md generieren ───────────────────────────────────────────
-      - name: Generate index.md
+      # ── Wiki-Index für graphify-out/index.md generieren ──────────────────
+      - name: Update graphify-out/index.md
         run: |
-          python3 -c "
+          python3 - << 'PYEOF'
           from pathlib import Path
-          import json
+          from datetime import date
 
-          extract_path = Path('graphify-out/.graphify_extract.json')
-          if not extract_path.exists():
-              exit(0)
+          out = Path("graphify-out")
+          out.mkdir(exist_ok=True)
 
-          data = json.loads(extract_path.read_text())
-          nodes = data.get('nodes', [])
-          edges = data.get('edges', [])
+          wiki_pages = sorted(
+              p for p in Path("wiki").rglob("*.md")
+              if p.name not in ("index.md", "log.md")
+              and ".obsidian" not in p.parts
+          )
+          raw_files = [f for f in Path("raw").rglob("*") if f.is_file() and f.name != ".gitkeep"]
 
-          # Einfache Community-Erkennung nach Datei-Verzeichnis
+          # Gruppiere nach Unterordner
           from collections import defaultdict
-          dirs = defaultdict(list)
-          for n in nodes:
-              path = n.get('file','')
-              d = Path(path).parent.name if path else 'root'
-              dirs[d].append(n.get('name','?'))
+          by_dir = defaultdict(list)
+          for p in wiki_pages:
+              by_dir[p.parent.name].append(p)
 
           lines = [
-              '# Knowledge Graph Index',
-              '',
-              f'> Auto-generiert von graphify. {len(nodes)} Knoten · {len(edges)} Kanten',
-              '',
-              '---',
-              '',
-              '## Bereiche',
+              "# Knowledge Graph Index",
+              "",
+              f"> Zuletzt aktualisiert: {date.today()} · {len(wiki_pages)} Wiki-Seiten · {len(raw_files)} Quelldateien",
+              "",
+              "---",
+              "",
           ]
-          for d, names in sorted(dirs.items()):
-              lines.append(f'- **{d}** — {len(names)} Elemente')
 
-          lines += ['', '---', '', '*Generiert von [graphify](https://pypi.org/project/graphifyy/)*']
-          Path('graphify-out/index.md').write_text('\n'.join(lines))
-          print('index.md aktualisiert')
-          " 2>/dev/null || echo "index.md skipped"
+          if wiki_pages:
+              lines.append("## Wiki-Seiten")
+              lines.append("")
+              for folder, pages in sorted(by_dir.items()):
+                  lines.append(f"### {folder}/")
+                  for p in sorted(pages):
+                      lines.append(f"- [[{p.stem}]]")
+                  lines.append("")
+          else:
+              lines += [
+                  "## Noch keine Inhalte",
+                  "",
+                  "1. Dateien in `raw/` ablegen",
+                  "2. `/obsidian-wiki ingest raw/<datei>` ausführen",
+                  "3. `git add . && git commit && git push` → dieser Graph aktualisiert sich",
+                  "",
+              ]
 
-      # ── 8. Map zurück ins Repo committen ─────────────────────────────────
-      - name: Commit updated map
+          if raw_files:
+              lines += ["## Quelldateien (raw/)", ""]
+              for f in sorted(raw_files):
+                  lines.append(f"- {f.name}")
+              lines.append("")
+
+          lines += ["---", "", "*Generiert von [graphify](https://pypi.org/project/graphifyy/)*"]
+
+          Path("graphify-out/index.md").write_text("\n".join(lines), encoding="utf-8")
+          print(f"index.md: {len(wiki_pages)} Seiten, {len(raw_files)} Quellen")
+          PYEOF
+
+      # ── HTML-Visualisierung (nur wenn graph.json existiert) ──────────────
+      - name: Generate graph.html
+        continue-on-error: true
+        run: |
+          python3 -c "
+          from pathlib import Path
+          import json
+
+          gj = Path('graphify-out/graph.json')
+          if not gj.exists():
+              print('Kein graph.json — HTML übersprungen')
+              exit(0)
+
+          from graphify.export import to_html
+          from graphify.cluster import cluster
+          from networkx.readwrite import json_graph
+
+          data = json.loads(gj.read_text())
+          G = json_graph.node_link_graph(data, edges='links')
+          if G.number_of_nodes() == 0:
+              print('Leerer Graph — HTML übersprungen')
+              exit(0)
+
+          communities = cluster(G)
+          to_html(G, communities, 'graphify-out/graph.html')
+          print(f'graph.html: {G.number_of_nodes()} Knoten')
+          "
+
+      # ── Änderungen zurück committen ──────────────────────────────────────
+      - name: Commit & push map update
         run: |
           git config user.name  "map-bot"
           git config user.email "map-bot@users.noreply.github.com"
-
-          git add graphify-out/ 2>/dev/null || true
-          git diff --cached --quiet && echo "Keine Änderungen" || \
-          git commit -m "chore: update knowledge map [skip ci]"
-
-      - name: Push map update
-        run: git push origin HEAD
-        continue-on-error: true
+          git add graphify-out/
+          git diff --cached --quiet && echo "Keine Änderungen am Graph" || \
+            git commit -m "chore: update knowledge map [skip ci]"
+          git push origin HEAD || echo "Push fehlgeschlagen (ignoriert)"
