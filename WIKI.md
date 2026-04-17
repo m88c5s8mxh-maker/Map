@@ -1,7 +1,7 @@
 # Wiki Schema
 
 ## Domain
-Geteilte Wissensbasis — Notizen, Artikel, Recherchen, Konzepte
+Claude Code Skills-System — alle verfügbaren Skills, Konfigurationen und Workflows für Claude Code CLI. 131 Skills in 11 Kategorien.
 
 ## Page Types
 - **concept/** — eine Seite pro Kernidee oder Begriff
