@@ -92,6 +92,46 @@
   },
   "nodes": [
     {
+      "label": "update_map.py",
+      "file_type": "code",
+      "source_file": "scripts/update_map.py",
+      "source_location": "L1",
+      "id": "scripts_update_map_py",
+      "community": 6
+    },
+    {
+      "label": "rebuild_code()",
+      "file_type": "code",
+      "source_file": "scripts/update_map.py",
+      "source_location": "L19",
+      "id": "update_map_rebuild_code",
+      "community": 6
+    },
+    {
+      "label": "update_index()",
+      "file_type": "code",
+      "source_file": "scripts/update_map.py",
+      "source_location": "L29",
+      "id": "update_map_update_index",
+      "community": 6
+    },
+    {
+      "label": "update_html()",
+      "file_type": "code",
+      "source_file": "scripts/update_map.py",
+      "source_location": "L92",
+      "id": "update_map_update_html",
+      "community": 6
+    },
+    {
+      "label": "update_map.py \u2014 Wird von der GitHub Action aufgerufen. Generiert graphify-out/in",
+      "file_type": "rationale",
+      "source_file": "scripts/update_map.py",
+      "source_location": "L1",
+      "id": "update_map_rationale_1",
+      "community": 6
+    },
+    {
       "label": "llms.txt Skill Index",
       "file_type": "document",
       "source_file": "skills/llms.txt",
@@ -100,9 +140,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "llms_txt_index",
-      "community": 3,
-      "norm_label": "llms.txt skill index"
+      "community": 0,
+      "norm_label": "llms.txt skill index",
+      "id": "llms_txt_index"
     },
     {
       "label": "Taste Skill (design-taste-frontend)",
@@ -113,9 +153,9 @@
       "captured_at": null,
       "author": "Leonxlnx",
       "contributor": null,
-      "id": "taste_skill",
-      "community": 2,
-      "norm_label": "taste skill (design-taste-frontend)"
+      "community": 3,
+      "norm_label": "taste skill (design-taste-frontend)",
+      "id": "taste_skill"
     },
     {
       "label": "Industrial Brutalism & Tactical Telemetry UI (brutalist-skill)",
@@ -126,9 +166,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "brutalist_skill",
-      "community": 3,
-      "norm_label": "industrial brutalism & tactical telemetry ui (brutalist-skill)"
+      "community": 0,
+      "norm_label": "industrial brutalism & tactical telemetry ui (brutalist-skill)",
+      "id": "brutalist_skill"
     },
     {
       "label": "Design Advisor (design)",
@@ -139,9 +179,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "design_skill",
-      "community": 3,
-      "norm_label": "design advisor (design)"
+      "community": 0,
+      "norm_label": "design advisor (design)",
+      "id": "design_skill"
     },
     {
       "label": "Premium Utilitarian Minimalism UI (minimalist-skill)",
@@ -152,9 +192,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "minimalist_skill",
-      "community": 3,
-      "norm_label": "premium utilitarian minimalism ui (minimalist-skill)"
+      "community": 0,
+      "norm_label": "premium utilitarian minimalism ui (minimalist-skill)",
+      "id": "minimalist_skill"
     },
     {
       "label": "Full-Output Enforcement (output-skill)",
@@ -165,9 +205,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "output_skill",
       "community": 4,
-      "norm_label": "full-output enforcement (output-skill)"
+      "norm_label": "full-output enforcement (output-skill)",
+      "id": "output_skill"
     },
     {
       "label": "Redesign Existing Projects (redesign-skill)",
@@ -178,9 +218,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "redesign_skill",
-      "community": 3,
-      "norm_label": "redesign existing projects (redesign-skill)"
+      "community": 0,
+      "norm_label": "redesign existing projects (redesign-skill)",
+      "id": "redesign_skill"
     },
     {
       "label": "High-End Visual Design / Soft UI (soft-skill)",
@@ -191,9 +231,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "soft_skill",
-      "community": 2,
-      "norm_label": "high-end visual design / soft ui (soft-skill)"
+      "community": 3,
+      "norm_label": "high-end visual design / soft ui (soft-skill)",
+      "id": "soft_skill"
     },
     {
       "label": "Stitch Design System DESIGN.md (Taste Standard)",
@@ -204,9 +244,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "stitch_design_md",
-      "community": 5,
-      "norm_label": "stitch design system design.md (taste standard)"
+      "community": 0,
+      "norm_label": "stitch design system design.md (taste standard)",
+      "id": "stitch_design_md"
     },
     {
       "label": "Stitch Design Taste Skill (stitch-skill)",
@@ -217,9 +257,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "stitch_skill",
-      "community": 5,
-      "norm_label": "stitch design taste skill (stitch-skill)"
+      "community": 0,
+      "norm_label": "stitch design taste skill (stitch-skill)",
+      "id": "stitch_skill"
     },
     {
       "label": "Taste Skill README \u00e2\u20ac\u201c Collection Overview",
@@ -230,9 +270,9 @@
       "captured_at": "2025-01-01",
       "author": "Leonxlnx",
       "contributor": null,
-      "id": "taste_readme",
       "community": 4,
-      "norm_label": "taste skill readme a\u20ac\u201c collection overview"
+      "norm_label": "taste skill readme a\u20ac\u201c collection overview",
+      "id": "taste_readme"
     },
     {
       "label": "Taste Skill Research Index",
@@ -243,9 +283,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "taste_research_readme",
       "community": 4,
-      "norm_label": "taste skill research index"
+      "norm_label": "taste skill research index",
+      "id": "taste_research_readme"
     },
     {
       "label": "LLM Output Truncation Research \u00e2\u20ac\u201c Overview",
@@ -256,9 +296,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "laziness_readme",
       "community": 4,
-      "norm_label": "llm output truncation research a\u20ac\u201c overview"
+      "norm_label": "llm output truncation research a\u20ac\u201c overview",
+      "id": "laziness_readme"
     },
     {
       "label": "LLM Laziness \u00e2\u20ac\u201c Empirical Results (2025 Studies)",
@@ -269,9 +309,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "laziness_empirical",
       "community": 4,
-      "norm_label": "llm laziness a\u20ac\u201c empirical results (2025 studies)"
+      "norm_label": "llm laziness a\u20ac\u201c empirical results (2025 studies)",
+      "id": "laziness_empirical"
     },
     {
       "label": "Premium / Anti-Generic UI Design Principle",
@@ -282,9 +322,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_premium_ui",
-      "community": 3,
-      "norm_label": "premium / anti-generic ui design principle"
+      "community": 0,
+      "norm_label": "premium / anti-generic ui design principle",
+      "id": "concept_premium_ui"
     },
     {
       "label": "Anti-Slop / Anti-Generic AI Design Rules",
@@ -295,9 +335,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_anti_slop",
-      "community": 5,
-      "norm_label": "anti-slop / anti-generic ai design rules"
+      "community": 0,
+      "norm_label": "anti-slop / anti-generic ai design rules",
+      "id": "concept_anti_slop"
     },
     {
       "label": "Banned Fonts List (Inter, Roboto, Arial, Open Sans)",
@@ -308,9 +348,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_banned_fonts",
-      "community": 3,
-      "norm_label": "banned fonts list (inter, roboto, arial, open sans)"
+      "community": 0,
+      "norm_label": "banned fonts list (inter, roboto, arial, open sans)",
+      "id": "concept_banned_fonts"
     },
     {
       "label": "Spring Physics Animation (stiffness:100, damping:20)",
@@ -321,9 +361,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_spring_physics",
-      "community": 2,
-      "norm_label": "spring physics animation (stiffness:100, damping:20)"
+      "community": 3,
+      "norm_label": "spring physics animation (stiffness:100, damping:20)",
+      "id": "concept_spring_physics"
     },
     {
       "label": "Bento Grid / Asymmetric CSS Grid Layout",
@@ -334,9 +374,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_bento_grid",
-      "community": 2,
-      "norm_label": "bento grid / asymmetric css grid layout"
+      "community": 3,
+      "norm_label": "bento grid / asymmetric css grid layout",
+      "id": "concept_bento_grid"
     },
     {
       "label": "DESIGN_VARIANCE Dial (1-10 layout variance parameter)",
@@ -347,9 +387,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_design_variance",
-      "community": 2,
-      "norm_label": "design_variance dial (1-10 layout variance parameter)"
+      "community": 3,
+      "norm_label": "design_variance dial (1-10 layout variance parameter)",
+      "id": "concept_design_variance"
     },
     {
       "label": "MOTION_INTENSITY Dial (1-10 animation intensity parameter)",
@@ -360,9 +400,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_motion_intensity",
-      "community": 2,
-      "norm_label": "motion_intensity dial (1-10 animation intensity parameter)"
+      "community": 3,
+      "norm_label": "motion_intensity dial (1-10 animation intensity parameter)",
+      "id": "concept_motion_intensity"
     },
     {
       "label": "VISUAL_DENSITY Dial (1-10 content density parameter)",
@@ -373,9 +413,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_visual_density",
-      "community": 2,
-      "norm_label": "visual_density dial (1-10 content density parameter)"
+      "community": 3,
+      "norm_label": "visual_density dial (1-10 content density parameter)",
+      "id": "concept_visual_density"
     },
     {
       "label": "LLM Output Truncation / Laziness Behavior",
@@ -386,9 +426,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_output_truncation",
       "community": 4,
-      "norm_label": "llm output truncation / laziness behavior"
+      "norm_label": "llm output truncation / laziness behavior",
+      "id": "concept_output_truncation"
     },
     {
       "label": "RLHF-induced Brevity Bias (root cause of truncation)",
@@ -399,9 +439,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_rlhf_brevity_bias",
       "community": 4,
-      "norm_label": "rlhf-induced brevity bias (root cause of truncation)"
+      "norm_label": "rlhf-induced brevity bias (root cause of truncation)",
+      "id": "concept_rlhf_brevity_bias"
     },
     {
       "label": "Prompt Stimulus Effectiveness (financial framing, stakes language)",
@@ -412,9 +452,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_prompt_stimulus",
       "community": 4,
-      "norm_label": "prompt stimulus effectiveness (financial framing, stakes language)"
+      "norm_label": "prompt stimulus effectiveness (financial framing, stakes language)",
+      "id": "concept_prompt_stimulus"
     },
     {
       "label": "Swiss Industrial Typography Archetype",
@@ -425,9 +465,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_swiss_typography",
-      "community": 3,
-      "norm_label": "swiss industrial typography archetype"
+      "community": 0,
+      "norm_label": "swiss industrial typography archetype",
+      "id": "concept_swiss_typography"
     },
     {
       "label": "Tactical Telemetry / CRT Terminal Archetype",
@@ -438,9 +478,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_crt_terminal",
-      "community": 3,
-      "norm_label": "tactical telemetry / crt terminal archetype"
+      "community": 0,
+      "norm_label": "tactical telemetry / crt terminal archetype",
+      "id": "concept_crt_terminal"
     },
     {
       "label": "Double-Bezel (Doppelrand) Nested Container Architecture",
@@ -451,9 +491,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_double_bezel",
-      "community": 2,
-      "norm_label": "double-bezel (doppelrand) nested container architecture"
+      "community": 3,
+      "norm_label": "double-bezel (doppelrand) nested container architecture",
+      "id": "concept_double_bezel"
     },
     {
       "label": "DESIGN.md \u00e2\u20ac\u201c Single Source of Truth for Google Stitch",
@@ -464,9 +504,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_stitch_design_md",
-      "community": 5,
-      "norm_label": "design.md a\u20ac\u201c single source of truth for google stitch"
+      "community": 0,
+      "norm_label": "design.md a\u20ac\u201c single source of truth for google stitch",
+      "id": "concept_stitch_design_md"
     },
     {
       "label": "Inline Image Typography (photos embedded in headlines)",
@@ -477,9 +517,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_inline_image_typography",
-      "community": 5,
-      "norm_label": "inline image typography (photos embedded in headlines)"
+      "community": 0,
+      "norm_label": "inline image typography (photos embedded in headlines)",
+      "id": "concept_inline_image_typography"
     },
     {
       "label": "Warm Monochrome Palette with Muted Pastel Accents",
@@ -490,9 +530,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_warm_monochrome",
-      "community": 3,
-      "norm_label": "warm monochrome palette with muted pastel accents"
+      "community": 0,
+      "norm_label": "warm monochrome palette with muted pastel accents",
+      "id": "concept_warm_monochrome"
     },
     {
       "label": "Design Audit \u00e2\u20ac\u201c Systematic Upgrade Checklist",
@@ -503,9 +543,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_design_audit",
-      "community": 3,
-      "norm_label": "design audit a\u20ac\u201c systematic upgrade checklist"
+      "community": 0,
+      "norm_label": "design audit a\u20ac\u201c systematic upgrade checklist",
+      "id": "concept_design_audit"
     },
     {
       "label": "GPU-Safe Animation (transform + opacity only)",
@@ -516,9 +556,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_gpu_safe_animation",
-      "community": 2,
-      "norm_label": "gpu-safe animation (transform + opacity only)"
+      "community": 3,
+      "norm_label": "gpu-safe animation (transform + opacity only)",
+      "id": "concept_gpu_safe_animation"
     },
     {
       "label": "Perpetual Micro-Interactions (infinite-loop component states)",
@@ -529,9 +569,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_perpetual_micro_interactions",
-      "community": 2,
-      "norm_label": "perpetual micro-interactions (infinite-loop component states)"
+      "community": 3,
+      "norm_label": "perpetual micro-interactions (infinite-loop component states)",
+      "id": "concept_perpetual_micro_interactions"
     },
     {
       "label": "Rationale: Ban Inter font to avoid generic AI aesthetic",
@@ -542,9 +582,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rationale_ban_inter",
-      "community": 3,
-      "norm_label": "rationale: ban inter font to avoid generic ai aesthetic"
+      "community": 0,
+      "norm_label": "rationale: ban inter font to avoid generic ai aesthetic",
+      "id": "rationale_ban_inter"
     },
     {
       "label": "Rationale: Spring physics over linear easing for premium feel",
@@ -555,9 +595,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rationale_spring_physics",
-      "community": 2,
-      "norm_label": "rationale: spring physics over linear easing for premium feel"
+      "community": 3,
+      "norm_label": "rationale: spring physics over linear easing for premium feel",
+      "id": "rationale_spring_physics"
     },
     {
       "label": "Rationale: Explicit output enforcement counters RLHF brevity bias",
@@ -568,9 +608,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rationale_output_enforcement",
       "community": 4,
-      "norm_label": "rationale: explicit output enforcement counters rlhf brevity bias"
+      "norm_label": "rationale: explicit output enforcement counters rlhf brevity bias",
+      "id": "rationale_output_enforcement"
     },
     {
       "label": "Rationale: Ban 3-column equal card grids as overused AI pattern",
@@ -581,9 +621,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rationale_no_3col_grid",
-      "community": 5,
-      "norm_label": "rationale: ban 3-column equal card grids as overused ai pattern"
+      "community": 0,
+      "norm_label": "rationale: ban 3-column equal card grids as overused ai pattern",
+      "id": "rationale_no_3col_grid"
     },
     {
       "label": "Rationale: Use min-h-[100dvh] instead of h-screen for iOS Safari fix",
@@ -594,9 +634,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rationale_min_h_dvh",
-      "community": 2,
-      "norm_label": "rationale: use min-h-[100dvh] instead of h-screen for ios safari fix"
+      "community": 3,
+      "norm_label": "rationale: use min-h-[100dvh] instead of h-screen for ios safari fix",
+      "id": "rationale_min_h_dvh"
     },
     {
       "label": "Google Stitch (AI UI generation platform)",
@@ -607,9 +647,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "platform_google_stitch",
-      "community": 5,
-      "norm_label": "google stitch (ai ui generation platform)"
+      "community": 0,
+      "norm_label": "google stitch (ai ui generation platform)",
+      "id": "platform_google_stitch"
     },
     {
       "label": "Cursor (AI coding agent)",
@@ -620,9 +660,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "platform_cursor",
       "community": 4,
-      "norm_label": "cursor (ai coding agent)"
+      "norm_label": "cursor (ai coding agent)",
+      "id": "platform_cursor"
     },
     {
       "label": "Claude Code (AI coding agent)",
@@ -633,9 +673,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "platform_claude_code",
       "community": 4,
-      "norm_label": "claude code (ai coding agent)"
+      "norm_label": "claude code (ai coding agent)",
+      "id": "platform_claude_code"
     },
     {
       "label": "SKILL.md \u00e2\u20ac\u201c Portable AI Instruction File Format",
@@ -646,9 +686,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_skill_md_format",
-      "community": 2,
-      "norm_label": "skill.md a\u20ac\u201c portable ai instruction file format"
+      "community": 3,
+      "norm_label": "skill.md a\u20ac\u201c portable ai instruction file format",
+      "id": "concept_skill_md_format"
     },
     {
       "label": "LLM Laziness Research References",
@@ -659,9 +699,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "references_laziness_studies",
-      "community": 0,
-      "norm_label": "llm laziness research references"
+      "community": 1,
+      "norm_label": "llm laziness research references",
+      "id": "references_laziness_studies"
     },
     {
       "label": "EmotionPrompt (Microsoft Research)",
@@ -672,9 +712,9 @@
       "captured_at": null,
       "author": "Microsoft Research",
       "contributor": null,
-      "id": "emotionprompt_study",
-      "community": 0,
-      "norm_label": "emotionprompt (microsoft research)"
+      "community": 1,
+      "norm_label": "emotionprompt (microsoft research)",
+      "id": "emotionprompt_study"
     },
     {
       "label": "LazyBench Study",
@@ -685,9 +725,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "lazybench_study",
-      "community": 0,
-      "norm_label": "lazybench study"
+      "community": 1,
+      "norm_label": "lazybench study",
+      "id": "lazybench_study"
     },
     {
       "label": "Compounding Error Avoidance Research",
@@ -698,9 +738,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "compounding_error_avoidance_study",
-      "community": 0,
-      "norm_label": "compounding error avoidance research"
+      "community": 1,
+      "norm_label": "compounding error avoidance research",
+      "id": "compounding_error_avoidance_study"
     },
     {
       "label": "Seasonal Behavior Analysis (Winter Break Hypothesis)",
@@ -711,9 +751,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "seasonal_behavior_study",
-      "community": 0,
-      "norm_label": "seasonal behavior analysis (winter break hypothesis)"
+      "community": 1,
+      "norm_label": "seasonal behavior analysis (winter break hypothesis)",
+      "id": "seasonal_behavior_study"
     },
     {
       "label": "2025 Controlled Laziness Experiments",
@@ -724,9 +764,9 @@
       "captured_at": "2025-12",
       "author": null,
       "contributor": null,
-      "id": "controlled_laziness_experiments_2025",
-      "community": 6,
-      "norm_label": "2025 controlled laziness experiments"
+      "community": 5,
+      "norm_label": "2025 controlled laziness experiments",
+      "id": "controlled_laziness_experiments_2025"
     },
     {
       "label": "Lazy-Loaded Skills Architectural Pattern",
@@ -737,9 +777,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "lazy_loaded_skills_pattern",
-      "community": 0,
-      "norm_label": "lazy-loaded skills architectural pattern"
+      "community": 1,
+      "norm_label": "lazy-loaded skills architectural pattern",
+      "id": "lazy_loaded_skills_pattern"
     },
     {
       "label": "SKILL.md YAML Front-Matter Discovery Hook",
@@ -750,9 +790,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "skill_yaml_frontmatter",
-      "community": 0,
-      "norm_label": "skill.md yaml front-matter discovery hook"
+      "community": 1,
+      "norm_label": "skill.md yaml front-matter discovery hook",
+      "id": "skill_yaml_frontmatter"
     },
     {
       "label": "35% Context Reduction from Lazy-Loading",
@@ -763,9 +803,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "context_reduction_35pct",
-      "community": 0,
-      "norm_label": "35% context reduction from lazy-loading"
+      "community": 1,
+      "norm_label": "35% context reduction from lazy-loading",
+      "id": "context_reduction_35pct"
     },
     {
       "label": "Model Context Protocol (MCP) Architecture",
@@ -776,9 +816,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "mcp_architecture",
-      "community": 0,
-      "norm_label": "model context protocol (mcp) architecture"
+      "community": 1,
+      "norm_label": "model context protocol (mcp) architecture",
+      "id": "mcp_architecture"
     },
     {
       "label": "MCP Eliminates Hallucination/Truncation Incentive",
@@ -789,9 +829,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "mcp_reduces_truncation",
-      "community": 0,
-      "norm_label": "mcp eliminates hallucination/truncation incentive"
+      "community": 1,
+      "norm_label": "mcp eliminates hallucination/truncation incentive",
+      "id": "mcp_reduces_truncation"
     },
     {
       "label": "Chunked Task Execution Pattern",
@@ -802,9 +842,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "chunked_task_execution",
       "community": 7,
-      "norm_label": "chunked task execution pattern"
+      "norm_label": "chunked task execution pattern",
+      "id": "chunked_task_execution"
     },
     {
       "label": "Temperature Parameter for Token Distribution",
@@ -815,9 +855,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "temperature_parameter",
       "community": 10,
-      "norm_label": "temperature parameter for token distribution"
+      "norm_label": "temperature parameter for token distribution",
+      "id": "temperature_parameter"
     },
     {
       "label": "Top-p Nucleus Sampling",
@@ -828,9 +868,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "top_p_nucleus_sampling",
       "community": 11,
-      "norm_label": "top-p nucleus sampling"
+      "norm_label": "top-p nucleus sampling",
+      "id": "top_p_nucleus_sampling"
     },
     {
       "label": "Gemini thinking_level Parameter",
@@ -841,9 +881,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "gemini_thinking_level",
-      "community": 0,
-      "norm_label": "gemini thinking_level parameter"
+      "community": 1,
+      "norm_label": "gemini thinking_level parameter",
+      "id": "gemini_thinking_level"
     },
     {
       "label": "Psychological Pattern Matching in Prompts",
@@ -854,9 +894,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "psychological_pattern_matching",
-      "community": 0,
-      "norm_label": "psychological pattern matching in prompts"
+      "community": 1,
+      "norm_label": "psychological pattern matching in prompts",
+      "id": "psychological_pattern_matching"
     },
     {
       "label": "Explicit Syntax Binding (Anti-Truncation)",
@@ -867,9 +907,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "explicit_syntax_binding",
       "community": 8,
-      "norm_label": "explicit syntax binding (anti-truncation)"
+      "norm_label": "explicit syntax binding (anti-truncation)",
+      "id": "explicit_syntax_binding"
     },
     {
       "label": "XML-Structured Prompt Architecture",
@@ -880,9 +920,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "xml_structured_prompts",
       "community": 12,
-      "norm_label": "xml-structured prompt architecture"
+      "norm_label": "xml-structured prompt architecture",
+      "id": "xml_structured_prompts"
     },
     {
       "label": "Verification Loops (Chain of Verification, Reverse Prompting, Self-Grading)",
@@ -893,9 +933,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "verification_loops",
       "community": 7,
-      "norm_label": "verification loops (chain of verification, reverse prompting, self-grading)"
+      "norm_label": "verification loops (chain of verification, reverse prompting, self-grading)",
+      "id": "verification_loops"
     },
     {
       "label": "Reference Prompt Templates for Complete Output",
@@ -906,9 +946,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "reference_prompts_templates",
       "community": 8,
-      "norm_label": "reference prompt templates for complete output"
+      "norm_label": "reference prompt templates for complete output",
+      "id": "reference_prompts_templates"
     },
     {
       "label": "Continuation Handling Prompt Template",
@@ -919,9 +959,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "continuation_handling_prompt",
       "community": 13,
-      "norm_label": "continuation handling prompt template"
+      "norm_label": "continuation handling prompt template",
+      "id": "continuation_handling_prompt"
     },
     {
       "label": "LazyBench Cognitive Shortcutting Discovery",
@@ -932,9 +972,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "lazybench_cognitive_shortcuts",
-      "community": 0,
-      "norm_label": "lazybench cognitive shortcutting discovery"
+      "community": 1,
+      "norm_label": "lazybench cognitive shortcutting discovery",
+      "id": "lazybench_cognitive_shortcuts"
     },
     {
       "label": "Metacognitive Laziness and Human Feedback Loop",
@@ -945,9 +985,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "metacognitive_laziness",
       "community": 14,
-      "norm_label": "metacognitive laziness and human feedback loop"
+      "norm_label": "metacognitive laziness and human feedback loop",
+      "id": "metacognitive_laziness"
     },
     {
       "label": "Seasonal Behavior Anomalies in LLM Output",
@@ -958,9 +998,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "seasonal_behavior_anomalies",
-      "community": 0,
-      "norm_label": "seasonal behavior anomalies in llm output"
+      "community": 1,
+      "norm_label": "seasonal behavior anomalies in llm output",
+      "id": "seasonal_behavior_anomalies"
     },
     {
       "label": "Error Avoidance as Truncation Driver",
@@ -971,9 +1011,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "error_avoidance_truncation",
-      "community": 0,
-      "norm_label": "error avoidance as truncation driver"
+      "community": 1,
+      "norm_label": "error avoidance as truncation driver",
+      "id": "error_avoidance_truncation"
     },
     {
       "label": "Context Window Asymmetry (Large Input, Capped Output)",
@@ -984,9 +1024,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "context_window_asymmetry",
       "community": 9,
-      "norm_label": "context window asymmetry (large input, capped output)"
+      "norm_label": "context window asymmetry (large input, capped output)",
+      "id": "context_window_asymmetry"
     },
     {
       "label": "Consumer Middleware Truncation Problem",
@@ -997,9 +1037,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "consumer_middleware_truncation",
       "community": 9,
-      "norm_label": "consumer middleware truncation problem"
+      "norm_label": "consumer middleware truncation problem",
+      "id": "consumer_middleware_truncation"
     },
     {
       "label": "Developer Platform Full Context Access (API/AI Studio)",
@@ -1010,9 +1050,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "developer_platform_full_access",
-      "community": 0,
-      "norm_label": "developer platform full context access (api/ai studio)"
+      "community": 1,
+      "norm_label": "developer platform full context access (api/ai studio)",
+      "id": "developer_platform_full_access"
     },
     {
       "label": "RLHF Brevity Bias Through Alignment",
@@ -1023,9 +1063,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rlhf_brevity_bias",
-      "community": 6,
-      "norm_label": "rlhf brevity bias through alignment"
+      "community": 5,
+      "norm_label": "rlhf brevity bias through alignment",
+      "id": "rlhf_brevity_bias"
     },
     {
       "label": "Stopping Pressure in Autoregressive Models",
@@ -1036,9 +1076,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "stopping_pressure",
-      "community": 6,
-      "norm_label": "stopping pressure in autoregressive models"
+      "community": 5,
+      "norm_label": "stopping pressure in autoregressive models",
+      "id": "stopping_pressure"
     },
     {
       "label": "Dynamic Throttling During Peak Demand",
@@ -1049,9 +1089,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "dynamic_throttling",
       "community": 15,
-      "norm_label": "dynamic throttling during peak demand"
+      "norm_label": "dynamic throttling during peak demand",
+      "id": "dynamic_throttling"
     },
     {
       "label": "GPU Compute Cost Per Token",
@@ -1062,9 +1102,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "token_generation_cost",
-      "community": 6,
-      "norm_label": "gpu compute cost per token"
+      "community": 5,
+      "norm_label": "gpu compute cost per token",
+      "id": "token_generation_cost"
     },
     {
       "label": "Placeholder Propagation from Training Data",
@@ -1075,9 +1115,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "placeholder_propagation",
-      "community": 6,
-      "norm_label": "placeholder propagation from training data"
+      "community": 5,
+      "norm_label": "placeholder propagation from training data",
+      "id": "placeholder_propagation"
     },
     {
       "label": "Tutorial-Style Pattern Reinforcement in Training Data",
@@ -1088,9 +1128,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tutorial_style_pattern_reinforcement",
-      "community": 6,
-      "norm_label": "tutorial-style pattern reinforcement in training data"
+      "community": 5,
+      "norm_label": "tutorial-style pattern reinforcement in training data",
+      "id": "tutorial_style_pattern_reinforcement"
     },
     {
       "label": "design-taste-frontend SKILL (High-Agency Frontend)",
@@ -1101,9 +1141,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "taste_skill_frontend",
-      "community": 1,
-      "norm_label": "design-taste-frontend skill (high-agency frontend)"
+      "community": 2,
+      "norm_label": "design-taste-frontend skill (high-agency frontend)",
+      "id": "taste_skill_frontend"
     },
     {
       "label": "DESIGN_VARIANCE Dial (1-10 Symmetry to Chaos)",
@@ -1114,9 +1154,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "design_variance_dial",
-      "community": 1,
-      "norm_label": "design_variance dial (1-10 symmetry to chaos)"
+      "community": 2,
+      "norm_label": "design_variance dial (1-10 symmetry to chaos)",
+      "id": "design_variance_dial"
     },
     {
       "label": "MOTION_INTENSITY Dial (1-10 Static to Cinematic)",
@@ -1127,9 +1167,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "motion_intensity_dial",
-      "community": 1,
-      "norm_label": "motion_intensity dial (1-10 static to cinematic)"
+      "community": 2,
+      "norm_label": "motion_intensity dial (1-10 static to cinematic)",
+      "id": "motion_intensity_dial"
     },
     {
       "label": "VISUAL_DENSITY Dial (1-10 Art Gallery to Cockpit)",
@@ -1140,9 +1180,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "visual_density_dial",
-      "community": 1,
-      "norm_label": "visual_density dial (1-10 art gallery to cockpit)"
+      "community": 2,
+      "norm_label": "visual_density dial (1-10 art gallery to cockpit)",
+      "id": "visual_density_dial"
     },
     {
       "label": "Anti-Slop Design Engineering Rules (Bias Correction)",
@@ -1153,9 +1193,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "anti_slop_design_rules",
-      "community": 1,
-      "norm_label": "anti-slop design engineering rules (bias correction)"
+      "community": 2,
+      "norm_label": "anti-slop design engineering rules (bias correction)",
+      "id": "anti_slop_design_rules"
     },
     {
       "label": "AI Tells - Forbidden Design Patterns",
@@ -1166,9 +1206,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_tells_forbidden_patterns",
-      "community": 1,
-      "norm_label": "ai tells - forbidden design patterns"
+      "community": 2,
+      "norm_label": "ai tells - forbidden design patterns",
+      "id": "ai_tells_forbidden_patterns"
     },
     {
       "label": "Motion-Engine Bento Paradigm (Bento 2.0)",
@@ -1179,9 +1219,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "bento_motion_engine_paradigm",
-      "community": 1,
-      "norm_label": "motion-engine bento paradigm (bento 2.0)"
+      "community": 2,
+      "norm_label": "motion-engine bento paradigm (bento 2.0)",
+      "id": "bento_motion_engine_paradigm"
     },
     {
       "label": "Creative Arsenal - High-End UI Pattern Library",
@@ -1192,9 +1232,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "creative_arsenal_patterns",
-      "community": 1,
-      "norm_label": "creative arsenal - high-end ui pattern library"
+      "community": 2,
+      "norm_label": "creative arsenal - high-end ui pattern library",
+      "id": "creative_arsenal_patterns"
     },
     {
       "label": "Floria Website - Bottom Section (Testimonials, Newsletter, Footer)",
@@ -1205,9 +1245,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "floria_bottom_section",
-      "community": 1,
-      "norm_label": "floria website - bottom section (testimonials, newsletter, footer)"
+      "community": 2,
+      "norm_label": "floria website - bottom section (testimonials, newsletter, footer)",
+      "id": "floria_bottom_section"
     },
     {
       "label": "Floria Website - Full Page Overview",
@@ -1218,9 +1258,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "floria_full_page",
-      "community": 1,
-      "norm_label": "floria website - full page overview"
+      "community": 2,
+      "norm_label": "floria website - full page overview",
+      "id": "floria_full_page"
     },
     {
       "label": "Floria Website - Top Section (Hero, Curated Assemblages, Services, Archives)",
@@ -1231,9 +1271,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "floria_top_section",
-      "community": 1,
-      "norm_label": "floria website - top section (hero, curated assemblages, services, archives)"
+      "community": 2,
+      "norm_label": "floria website - top section (hero, curated assemblages, services, archives)",
+      "id": "floria_top_section"
     },
     {
       "label": "Floria Dark Editorial Aesthetic (Dark Background, High-Contrast Typography)",
@@ -1244,9 +1284,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "floria_dark_aesthetic",
-      "community": 1,
-      "norm_label": "floria dark editorial aesthetic (dark background, high-contrast typography)"
+      "community": 2,
+      "norm_label": "floria dark editorial aesthetic (dark background, high-contrast typography)",
+      "id": "floria_dark_aesthetic"
     },
     {
       "label": "Floria Asymmetric Left-Aligned Hero Layout",
@@ -1257,9 +1297,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "floria_asymmetric_layout",
-      "community": 1,
-      "norm_label": "floria asymmetric left-aligned hero layout"
+      "community": 2,
+      "norm_label": "floria asymmetric left-aligned hero layout",
+      "id": "floria_asymmetric_layout"
     },
     {
       "label": "Floria Archives Bento Grid (2x2 image tiles)",
@@ -1270,9 +1310,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "floria_bento_grid_archives",
-      "community": 1,
-      "norm_label": "floria archives bento grid (2x2 image tiles)"
+      "community": 2,
+      "norm_label": "floria archives bento grid (2x2 image tiles)",
+      "id": "floria_bento_grid_archives"
     },
     {
       "label": "Floria Scattered Testimonial Card Layout",
@@ -1283,9 +1323,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "floria_testimonials_scattered",
-      "community": 1,
-      "norm_label": "floria scattered testimonial card layout"
+      "community": 2,
+      "norm_label": "floria scattered testimonial card layout",
+      "id": "floria_testimonials_scattered"
     },
     {
       "label": "Floria Newsletter CTA with Botanical Image Background",
@@ -1296,9 +1336,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "floria_newsletter_cta",
-      "community": 1,
-      "norm_label": "floria newsletter cta with botanical image background"
+      "community": 2,
+      "norm_label": "floria newsletter cta with botanical image background",
+      "id": "floria_newsletter_cta"
     },
     {
       "label": "Rationale: Lazy-Loading Reduces Context Dilution and Token Cost",
@@ -1309,9 +1349,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rationale_lazy_skill_architecture",
-      "community": 0,
-      "norm_label": "rationale: lazy-loading reduces context dilution and token cost"
+      "community": 1,
+      "norm_label": "rationale: lazy-loading reduces context dilution and token cost",
+      "id": "rationale_lazy_skill_architecture"
     },
     {
       "label": "Rationale: MCP Transforms Model from Static Store to Live Reasoning Engine",
@@ -1322,9 +1362,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rationale_mcp_real_time_data",
-      "community": 0,
-      "norm_label": "rationale: mcp transforms model from static store to live reasoning engine"
+      "community": 1,
+      "norm_label": "rationale: mcp transforms model from static store to live reasoning engine",
+      "id": "rationale_mcp_real_time_data"
     },
     {
       "label": "Rationale: RLHF Brevity Bias is Economic Cost Optimization",
@@ -1335,12 +1375,60 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rationale_rlhf_cost_tradeoff",
-      "community": 6,
-      "norm_label": "rationale: rlhf brevity bias is economic cost optimization"
+      "community": 5,
+      "norm_label": "rationale: rlhf brevity bias is economic cost optimization",
+      "id": "rationale_rlhf_cost_tradeoff"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_map.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_src": "scripts_update_map_py",
+      "_tgt": "update_map_rebuild_code",
+      "source": "scripts_update_map_py",
+      "target": "update_map_rebuild_code",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_map.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_src": "scripts_update_map_py",
+      "_tgt": "update_map_update_index",
+      "source": "scripts_update_map_py",
+      "target": "update_map_update_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_map.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_src": "scripts_update_map_py",
+      "_tgt": "update_map_update_html",
+      "source": "scripts_update_map_py",
+      "target": "update_map_update_html",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_map.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "update_map_rationale_1",
+      "_tgt": "scripts_update_map_py",
+      "source": "scripts_update_map_py",
+      "target": "update_map_rationale_1",
+      "confidence_score": 1.0
+    },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
@@ -1432,8 +1520,8 @@
       "source_file": "skills/taste-skill/README.md",
       "source_location": "Skills table",
       "weight": 1.0,
-      "_src": "taste_readme",
-      "_tgt": "taste_skill",
+      "_src": "taste_skill",
+      "_tgt": "taste_readme",
       "source": "taste_skill",
       "target": "taste_readme"
     },
@@ -1576,8 +1664,8 @@
       "source_file": "skills/taste-skill/SKILL.md",
       "source_location": "Section 2",
       "weight": 1.0,
-      "_src": "rationale_min_h_dvh",
-      "_tgt": "taste_skill",
+      "_src": "taste_skill",
+      "_tgt": "rationale_min_h_dvh",
       "source": "taste_skill",
       "target": "rationale_min_h_dvh"
     },
@@ -1588,8 +1676,8 @@
       "source_file": "skills/taste-skill/README.md",
       "source_location": "Skills table (Beta)",
       "weight": 1.0,
-      "_src": "taste_readme",
-      "_tgt": "brutalist_skill",
+      "_src": "brutalist_skill",
+      "_tgt": "taste_readme",
       "source": "brutalist_skill",
       "target": "taste_readme"
     },
@@ -1648,8 +1736,8 @@
       "source_file": "skills/taste-skill/README.md",
       "source_location": "Skills table",
       "weight": 1.0,
-      "_src": "taste_readme",
-      "_tgt": "minimalist_skill",
+      "_src": "minimalist_skill",
+      "_tgt": "taste_readme",
       "source": "minimalist_skill",
       "target": "taste_readme"
     },
@@ -1708,8 +1796,8 @@
       "source_file": "skills/taste-skill/README.md",
       "source_location": "Skills table",
       "weight": 1.0,
-      "_src": "taste_readme",
-      "_tgt": "output_skill",
+      "_src": "output_skill",
+      "_tgt": "taste_readme",
       "source": "output_skill",
       "target": "taste_readme"
     },
@@ -1744,8 +1832,8 @@
       "source_file": "skills/output-skill/SKILL.md",
       "source_location": "Baseline",
       "weight": 1.0,
-      "_src": "rationale_output_enforcement",
-      "_tgt": "output_skill",
+      "_src": "output_skill",
+      "_tgt": "rationale_output_enforcement",
       "source": "output_skill",
       "target": "rationale_output_enforcement"
     },
@@ -1756,8 +1844,8 @@
       "source_file": "skills/taste-skill/research/laziness/findings/empirical-results.md",
       "source_location": "Microsoft Research section",
       "weight": 0.82,
-      "_src": "concept_prompt_stimulus",
-      "_tgt": "output_skill",
+      "_src": "output_skill",
+      "_tgt": "concept_prompt_stimulus",
       "source": "output_skill",
       "target": "concept_prompt_stimulus"
     },
@@ -1768,8 +1856,8 @@
       "source_file": "skills/taste-skill/README.md",
       "source_location": "Skills table",
       "weight": 1.0,
-      "_src": "taste_readme",
-      "_tgt": "redesign_skill",
+      "_src": "redesign_skill",
+      "_tgt": "taste_readme",
       "source": "redesign_skill",
       "target": "taste_readme"
     },
@@ -1828,8 +1916,8 @@
       "source_file": "skills/taste-skill/README.md",
       "source_location": "Skills table",
       "weight": 1.0,
-      "_src": "taste_readme",
-      "_tgt": "soft_skill",
+      "_src": "soft_skill",
+      "_tgt": "taste_readme",
       "source": "soft_skill",
       "target": "taste_readme"
     },
@@ -1924,8 +2012,8 @@
       "source_file": "skills/taste-skill/README.md",
       "source_location": "Skills table",
       "weight": 1.0,
-      "_src": "taste_readme",
-      "_tgt": "stitch_skill",
+      "_src": "stitch_skill",
+      "_tgt": "taste_readme",
       "source": "stitch_skill",
       "target": "taste_readme"
     },
@@ -2080,8 +2168,8 @@
       "source_file": "skills/taste-skill/SKILL.md",
       "source_location": "Section 7",
       "weight": 1.0,
-      "_src": "rationale_no_3col_grid",
-      "_tgt": "concept_anti_slop",
+      "_src": "concept_anti_slop",
+      "_tgt": "rationale_no_3col_grid",
       "source": "concept_anti_slop",
       "target": "rationale_no_3col_grid"
     },
@@ -2092,8 +2180,8 @@
       "source_file": "skills/minimalist-skill/SKILL.md",
       "source_location": "Section 2",
       "weight": 0.65,
-      "_src": "concept_warm_monochrome",
-      "_tgt": "concept_anti_slop",
+      "_src": "concept_anti_slop",
+      "_tgt": "concept_warm_monochrome",
       "source": "concept_anti_slop",
       "target": "concept_warm_monochrome"
     },
@@ -2104,8 +2192,8 @@
       "source_file": "skills/taste-skill/SKILL.md",
       "source_location": "Section 7",
       "weight": 1.0,
-      "_src": "rationale_ban_inter",
-      "_tgt": "concept_banned_fonts",
+      "_src": "concept_banned_fonts",
+      "_tgt": "rationale_ban_inter",
       "source": "concept_banned_fonts",
       "target": "rationale_ban_inter"
     },
@@ -2116,8 +2204,8 @@
       "source_file": "skills/taste-skill/SKILL.md",
       "source_location": "Section 4",
       "weight": 1.0,
-      "_src": "rationale_spring_physics",
-      "_tgt": "concept_spring_physics",
+      "_src": "concept_spring_physics",
+      "_tgt": "rationale_spring_physics",
       "source": "concept_spring_physics",
       "target": "rationale_spring_physics"
     },
@@ -2140,8 +2228,8 @@
       "source_file": "skills/taste-skill/SKILL.md",
       "source_location": "Section 5",
       "weight": 0.78,
-      "_src": "concept_gpu_safe_animation",
-      "_tgt": "concept_spring_physics",
+      "_src": "concept_spring_physics",
+      "_tgt": "concept_gpu_safe_animation",
       "source": "concept_spring_physics",
       "target": "concept_gpu_safe_animation"
     },
@@ -2152,8 +2240,8 @@
       "source_file": "skills/soft-skill/SKILL.md",
       "source_location": "Section 4.A",
       "weight": 0.62,
-      "_src": "concept_double_bezel",
-      "_tgt": "concept_bento_grid",
+      "_src": "concept_bento_grid",
+      "_tgt": "concept_double_bezel",
       "source": "concept_bento_grid",
       "target": "concept_double_bezel"
     },
@@ -2164,8 +2252,8 @@
       "source_file": "skills/taste-skill/SKILL.md",
       "source_location": "Section 6",
       "weight": 0.8,
-      "_src": "concept_design_variance",
-      "_tgt": "concept_bento_grid",
+      "_src": "concept_bento_grid",
+      "_tgt": "concept_design_variance",
       "source": "concept_bento_grid",
       "target": "concept_design_variance"
     },
@@ -2176,8 +2264,8 @@
       "source_file": "skills/taste-skill/SKILL.md",
       "source_location": "Section 6",
       "weight": 0.78,
-      "_src": "concept_visual_density",
-      "_tgt": "concept_bento_grid",
+      "_src": "concept_bento_grid",
+      "_tgt": "concept_visual_density",
       "source": "concept_bento_grid",
       "target": "concept_visual_density"
     },
@@ -2200,8 +2288,8 @@
       "source_file": "skills/taste-skill/research/laziness/findings/empirical-results.md",
       "source_location": "Key Conclusion",
       "weight": 1.0,
-      "_src": "concept_rlhf_brevity_bias",
-      "_tgt": "concept_output_truncation",
+      "_src": "concept_output_truncation",
+      "_tgt": "concept_rlhf_brevity_bias",
       "source": "concept_output_truncation",
       "target": "concept_rlhf_brevity_bias"
     },
@@ -2332,8 +2420,8 @@
       "source_file": "skills/taste-skill/research/laziness/root-causes/cognitive-shortcuts.md",
       "source_location": "## The LazyBench Discovery",
       "weight": 1.0,
-      "_src": "lazybench_cognitive_shortcuts",
-      "_tgt": "lazybench_study",
+      "_src": "lazybench_study",
+      "_tgt": "lazybench_cognitive_shortcuts",
       "source": "lazybench_study",
       "target": "lazybench_cognitive_shortcuts"
     },
@@ -2344,8 +2432,8 @@
       "source_file": "skills/taste-skill/research/laziness/root-causes/cognitive-shortcuts.md",
       "source_location": "## Error Avoidance as Truncation Driver",
       "weight": 1.0,
-      "_src": "error_avoidance_truncation",
-      "_tgt": "compounding_error_avoidance_study",
+      "_src": "compounding_error_avoidance_study",
+      "_tgt": "error_avoidance_truncation",
       "source": "compounding_error_avoidance_study",
       "target": "error_avoidance_truncation"
     },
@@ -2356,8 +2444,8 @@
       "source_file": "skills/taste-skill/research/laziness/root-causes/cognitive-shortcuts.md",
       "source_location": "## Seasonal Behavior Anomalies",
       "weight": 1.0,
-      "_src": "seasonal_behavior_anomalies",
-      "_tgt": "seasonal_behavior_study",
+      "_src": "seasonal_behavior_study",
+      "_tgt": "seasonal_behavior_anomalies",
       "source": "seasonal_behavior_study",
       "target": "seasonal_behavior_anomalies"
     },
@@ -2404,8 +2492,8 @@
       "source_file": "skills/taste-skill/research/laziness/remediation/architectural-patterns.md",
       "source_location": "## Lazy-Loaded Skills",
       "weight": 1.0,
-      "_src": "rationale_lazy_skill_architecture",
-      "_tgt": "lazy_loaded_skills_pattern",
+      "_src": "lazy_loaded_skills_pattern",
+      "_tgt": "rationale_lazy_skill_architecture",
       "source": "lazy_loaded_skills_pattern",
       "target": "rationale_lazy_skill_architecture"
     },
@@ -2416,8 +2504,8 @@
       "source_file": "skills/taste-skill/skills/taste-skill/SKILL.md",
       "source_location": "YAML front-matter",
       "weight": 1.0,
-      "_src": "taste_skill_frontend",
-      "_tgt": "skill_yaml_frontmatter",
+      "_src": "skill_yaml_frontmatter",
+      "_tgt": "taste_skill_frontend",
       "source": "skill_yaml_frontmatter",
       "target": "taste_skill_frontend"
     },
@@ -2440,8 +2528,8 @@
       "source_file": "skills/taste-skill/research/laziness/remediation/architectural-patterns.md",
       "source_location": "### How It Reduces Truncation",
       "weight": 1.0,
-      "_src": "rationale_mcp_real_time_data",
-      "_tgt": "mcp_architecture",
+      "_src": "mcp_architecture",
+      "_tgt": "rationale_mcp_real_time_data",
       "source": "mcp_architecture",
       "target": "rationale_mcp_real_time_data"
     },
@@ -2452,8 +2540,8 @@
       "source_file": "skills/taste-skill/research/laziness/root-causes/output-limits.md",
       "source_location": null,
       "weight": 0.7,
-      "_src": "developer_platform_full_access",
-      "_tgt": "mcp_reduces_truncation",
+      "_src": "mcp_reduces_truncation",
+      "_tgt": "developer_platform_full_access",
       "source": "mcp_reduces_truncation",
       "target": "developer_platform_full_access"
     },
@@ -2464,8 +2552,8 @@
       "source_file": "skills/taste-skill/research/laziness/remediation/prompt-engineering.md",
       "source_location": null,
       "weight": 0.65,
-      "_src": "verification_loops",
-      "_tgt": "chunked_task_execution",
+      "_src": "chunked_task_execution",
+      "_tgt": "verification_loops",
       "source": "chunked_task_execution",
       "target": "verification_loops"
     },
@@ -2488,8 +2576,8 @@
       "source_file": "skills/taste-skill/research/laziness/root-causes/output-limits.md",
       "source_location": "## The Consumer Middleware Problem",
       "weight": 1.0,
-      "_src": "consumer_middleware_truncation",
-      "_tgt": "context_window_asymmetry",
+      "_src": "context_window_asymmetry",
+      "_tgt": "consumer_middleware_truncation",
       "source": "context_window_asymmetry",
       "target": "consumer_middleware_truncation"
     },
@@ -2500,8 +2588,8 @@
       "source_file": "skills/taste-skill/research/laziness/root-causes/rlhf-and-compute.md",
       "source_location": "## The Cost of Token Generation / ## Brevity Bias",
       "weight": 1.0,
-      "_src": "token_generation_cost",
-      "_tgt": "rlhf_brevity_bias",
+      "_src": "rlhf_brevity_bias",
+      "_tgt": "token_generation_cost",
       "source": "rlhf_brevity_bias",
       "target": "token_generation_cost"
     },
@@ -2512,8 +2600,8 @@
       "source_file": "skills/taste-skill/research/laziness/root-causes/rlhf-and-compute.md",
       "source_location": "## The Cost of Token Generation",
       "weight": 1.0,
-      "_src": "rationale_rlhf_cost_tradeoff",
-      "_tgt": "rlhf_brevity_bias",
+      "_src": "rlhf_brevity_bias",
+      "_tgt": "rationale_rlhf_cost_tradeoff",
       "source": "rlhf_brevity_bias",
       "target": "rationale_rlhf_cost_tradeoff"
     },
@@ -2656,8 +2744,8 @@
       "source_file": "skills/taste-skill/examples/floria-top.webp",
       "source_location": "Rule 3: Layout Diversification / ANTI-CENTER BIAS",
       "weight": 0.9,
-      "_src": "floria_asymmetric_layout",
-      "_tgt": "anti_slop_design_rules",
+      "_src": "anti_slop_design_rules",
+      "_tgt": "floria_asymmetric_layout",
       "source": "anti_slop_design_rules",
       "target": "floria_asymmetric_layout"
     },
@@ -2668,8 +2756,8 @@
       "source_file": "skills/taste-skill/examples/floria-bottom.webp",
       "source_location": "Scattered asymmetric testimonial layout",
       "weight": 0.8,
-      "_src": "floria_testimonials_scattered",
-      "_tgt": "anti_slop_design_rules",
+      "_src": "anti_slop_design_rules",
+      "_tgt": "floria_testimonials_scattered",
       "source": "anti_slop_design_rules",
       "target": "floria_testimonials_scattered"
     },
@@ -2692,8 +2780,8 @@
       "source_file": "skills/taste-skill/examples/floria-top.webp",
       "source_location": "NO Pure Black rule / NO Inter Font",
       "weight": 0.85,
-      "_src": "floria_dark_aesthetic",
-      "_tgt": "ai_tells_forbidden_patterns",
+      "_src": "ai_tells_forbidden_patterns",
+      "_tgt": "floria_dark_aesthetic",
       "source": "ai_tells_forbidden_patterns",
       "target": "floria_dark_aesthetic"
     },
@@ -2704,8 +2792,8 @@
       "source_file": "skills/taste-skill/examples/floria-top.webp",
       "source_location": "Archives section - bento grid layout",
       "weight": 0.85,
-      "_src": "floria_bento_grid_archives",
-      "_tgt": "bento_motion_engine_paradigm",
+      "_src": "bento_motion_engine_paradigm",
+      "_tgt": "floria_bento_grid_archives",
       "source": "bento_motion_engine_paradigm",
       "target": "floria_bento_grid_archives"
     },
@@ -2716,8 +2804,8 @@
       "source_file": "skills/taste-skill/examples/floria-full.webp",
       "source_location": "Visual analysis",
       "weight": 1.0,
-      "_src": "floria_full_page",
-      "_tgt": "floria_bottom_section",
+      "_src": "floria_bottom_section",
+      "_tgt": "floria_full_page",
       "source": "floria_bottom_section",
       "target": "floria_full_page"
     },
