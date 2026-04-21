@@ -1,13 +1,13 @@
-# Graph Report - raw  (2026-04-21)
+# Graph Report - .  (2026-04-21)
 
 ## Corpus Check
-- 151 files · ~200,000 words
+- 1 files · ~241,982 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 - 582 nodes · 653 edges · 60 communities detected
 - Extraction: 83% EXTRACTED · 17% INFERRED · 0% AMBIGUOUS · INFERRED: 112 edges (avg confidence: 0.8)
-- Token cost: 169,200 input · 27,200 output
+- Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Community 0|Community 0]]
@@ -88,8 +88,8 @@
   raw/skills/brutalist-skill/SKILL.md → skills/brutalist-skill/SKILL.md
 - `Anti-Slop / Anti-Generic AI Design Rules` --semantically_similar_to--> `Warm Monochrome Palette`  [INFERRED] [semantically similar]
   skills/taste-skill/SKILL.md → raw/skills/minimalist-skill/SKILL.md
-- `Floria Design Language — Dark background, off-white type, botanical photography, editorial asymmetry` --semantically_similar_to--> `Visual Theme & Atmosphere — gallery-airy, asymmetric, clinical-yet-warm`  [INFERRED] [semantically similar]
-  raw/skills/taste-skill/examples/floria-top.webp → raw/skills/stitch-skill/DESIGN.md
+- `Visual Theme & Atmosphere — gallery-airy, asymmetric, clinical-yet-warm` --semantically_similar_to--> `Floria Design Language — Dark background, off-white type, botanical photography, editorial asymmetry`  [INFERRED] [semantically similar]
+  raw/skills/stitch-skill/DESIGN.md → raw/skills/taste-skill/examples/floria-top.webp
 - `output-skill — Stops AI from being lazy, prevents placeholder comments and skipped code` --informs--> `Prompt Stimulus Effectiveness (financial framing, stakes language)`  [INFERRED]
   raw/skills/taste-skill/README.md → skills/taste-skill/research/laziness/findings/empirical-results.md
 - `Redesign Existing Projects (redesign-skill)` --defines--> `Design Audit`  [EXTRACTED]
