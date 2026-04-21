@@ -1,14 +1,32 @@
 # Knowledge Graph Index
 
-> Zuletzt aktualisiert: 2026-04-17 · 0 Wiki-Seiten · 0 Quelldateien
+> Zuletzt aktualisiert: 2026-04-21 · 582 Knoten · 653 Kanten · 670 Wiki-Seiten · 148 Quelldateien
 
 ---
 
-## Noch keine Inhalte
+## Schnellzugriff
 
-1. Dateien in `raw/` ablegen
-2. `/obsidian-wiki ingest raw/<datei>` ausführen
-3. `git add . && git commit && git push` → dieser Graph aktualisiert sich
+- **Graph abfragen:** `/graphify query "<frage>"`  
+- **Verbindung finden:** `/graphify path "<A>" "<B>"`  
+- **Knoten erklären:** `/graphify explain "<konzept>"`  
+- **Visualisierung:** `graphify-out/graph.html` im Browser öffnen
+
+---
+
+## Wissens-Communities (0 Cluster)
+
+
+---
+
+## Wiki (670 Seiten)
+
+Strukturiertes Wissen unter `wiki/`. Einstieg: `wiki/index.md`
+
+---
+
+## Rohdaten (148 Dateien)
+
+Alle Quelldateien unter `raw/`. Skills unter `raw/skills/`.
 
 ---
 
