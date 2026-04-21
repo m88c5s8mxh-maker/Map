@@ -1,19 +1,19 @@
 ---
 source_file: "skills/taste-skill/research/laziness/findings/empirical-results.md"
 type: "document"
-community: "Output Truncation Problem"
+community: "Community 0"
 location: "Key Conclusion"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Truncation_Problem
+  - community/Community_0
 ---
 
 # RLHF-induced Brevity Bias (root cause of truncation)
 
 ## Connections
-- [[Full-Output Enforcement (output-skill)]] - `mitigates` [INFERRED]
 - [[LLM Laziness â€“ Empirical Results (2025 Studies)]] - `defines` [EXTRACTED]
 - [[LLM Output Truncation  Laziness Behavior]] - `causes` [EXTRACTED]
+- [[output-skill — Stops AI from being lazy, prevents placeholder comments and skipped code]] - `mitigates` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Truncation_Problem
+#graphify/document #graphify/EXTRACTED #community/Community_0

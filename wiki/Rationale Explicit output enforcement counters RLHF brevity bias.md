@@ -1,17 +1,17 @@
 ---
 source_file: "skills/output-skill/SKILL.md"
 type: "document"
-community: "Output Truncation Problem"
+community: "Community 0"
 location: "Baseline"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Truncation_Problem
+  - community/Community_0
 ---
 
 # Rationale: Explicit output enforcement counters RLHF brevity bias
 
 ## Connections
-- [[Full-Output Enforcement (output-skill)]] - `rationale_for` [EXTRACTED]
+- [[output-skill — Stops AI from being lazy, prevents placeholder comments and skipped code]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Truncation_Problem
+#graphify/document #graphify/EXTRACTED #community/Community_0

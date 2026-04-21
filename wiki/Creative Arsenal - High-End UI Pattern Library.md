@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/skills/taste-skill/SKILL.md"
 type: "document"
-community: "Taste Skill Rules"
+community: "Community 11"
 location: "## 8. THE CREATIVE ARSENAL"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Taste_Skill_Rules
+  - community/Community_11
 ---
 
 # Creative Arsenal - High-End UI Pattern Library
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[design-taste-frontend SKILL (High-Agency Frontend)]] - `includes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Taste_Skill_Rules
+#graphify/document #graphify/EXTRACTED #community/Community_11

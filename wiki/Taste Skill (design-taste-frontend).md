@@ -1,11 +1,11 @@
 ---
 source_file: "skills/taste-skill/SKILL.md"
 type: "document"
-community: "Animation & Layout System"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Animation_&_Layout_System
+  - community/Community_2
 ---
 
 # Taste Skill (design-taste-frontend)
@@ -13,7 +13,7 @@ tags:
 ## Connections
 - [[Anti-Slop  Anti-Generic AI Design Rules]] - `defines` [EXTRACTED]
 - [[Banned Fonts List (Inter, Roboto, Arial, Open Sans)]] - `enforces` [EXTRACTED]
-- [[Bento Grid  Asymmetric CSS Grid Layout]] - `defines` [EXTRACTED]
+- [[Bento Grid Layout]] - `defines` [EXTRACTED]
 - [[DESIGN_VARIANCE Dial (1-10 layout variance parameter)]] - `defines` [EXTRACTED]
 - [[GPU-Safe Animation (transform + opacity only)]] - `enforces` [EXTRACTED]
 - [[MOTION_INTENSITY Dial (1-10 animation intensity parameter)]] - `defines` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[VISUAL_DENSITY Dial (1-10 content density parameter)]] - `defines` [EXTRACTED]
 - [[llms.txt Skill Index]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Animation_&_Layout_System
+#graphify/document #graphify/EXTRACTED #community/Community_2

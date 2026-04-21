@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/research/laziness/root-causes/output-limits.md"
 type: "document"
-community: "Laziness Research Findings"
+community: "Community 0"
 location: "## Developer Platform Differences"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Laziness_Research_Findings
+  - community/Community_0
 ---
 
 # Developer Platform Full Context Access (API/AI Studio)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP Eliminates HallucinationTruncation Incentive]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Laziness_Research_Findings
+#graphify/document #graphify/INFERRED #community/Community_0

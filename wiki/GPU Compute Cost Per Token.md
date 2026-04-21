@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/research/laziness/root-causes/rlhf-and-compute.md"
 type: "document"
-community: "RLHF Root Causes"
+community: "Community 0"
 location: "## The Cost of Token Generation"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/RLHF_Root_Causes
+  - community/Community_0
 ---
 
 # GPU Compute Cost Per Token
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RLHF Brevity Bias Through Alignment]] - `causes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/RLHF_Root_Causes
+#graphify/document #graphify/EXTRACTED #community/Community_0

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/SKILL.md"
 type: "document"
-community: "Animation & Layout System"
+community: "Community 2"
 location: "Section 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Animation_&_Layout_System
+  - community/Community_2
 ---
 
 # Rationale: Spring physics over linear easing for premium feel
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Spring Physics Animation (stiffness100, damping20)]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Animation_&_Layout_System
+#graphify/document #graphify/EXTRACTED #community/Community_2

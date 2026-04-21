@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/research/laziness/root-causes/cognitive-shortcuts.md"
 type: "document"
-community: "Laziness Research Findings"
+community: "Community 0"
 location: "## Error Avoidance as Truncation Driver"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Laziness_Research_Findings
+  - community/Community_0
 ---
 
 # Error Avoidance as Truncation Driver
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Compounding Error Avoidance Research]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Laziness_Research_Findings
+#graphify/document #graphify/EXTRACTED #community/Community_0

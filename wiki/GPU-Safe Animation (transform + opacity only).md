@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/SKILL.md"
 type: "document"
-community: "Animation & Layout System"
+community: "Community 2"
 location: "Section 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Animation_&_Layout_System
+  - community/Community_2
 ---
 
 # GPU-Safe Animation (transform + opacity only)
@@ -17,4 +17,4 @@ tags:
 - [[Spring Physics Animation (stiffness100, damping20)]] - `constrains` [INFERRED]
 - [[Taste Skill (design-taste-frontend)]] - `enforces` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Animation_&_Layout_System
+#graphify/document #graphify/EXTRACTED #community/Community_2

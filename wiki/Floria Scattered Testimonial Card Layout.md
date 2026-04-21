@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/examples/floria-bottom.webp"
 type: "image"
-community: "Taste Skill Rules"
+community: "Community 11"
 location: "Visual analysis - Testimonials section"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Taste_Skill_Rules
+  - community/Community_11
 ---
 
 # Floria Scattered Testimonial Card Layout
@@ -15,4 +15,4 @@ tags:
 - [[Anti-Slop Design Engineering Rules (Bias Correction)]] - `exemplifies` [INFERRED]
 - [[Floria Website - Bottom Section (Testimonials, Newsletter, Footer)]] - `contains` [EXTRACTED]
 
-#graphify/image #graphify/INFERRED #community/Taste_Skill_Rules
+#graphify/image #graphify/INFERRED #community/Community_11

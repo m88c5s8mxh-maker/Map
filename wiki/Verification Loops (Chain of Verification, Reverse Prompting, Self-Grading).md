@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/research/laziness/remediation/prompt-engineering.md"
 type: "document"
-community: "Prompt Execution Patterns"
+community: "Community 44"
 location: "## Verification Loops"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Prompt_Execution_Patterns
+  - community/Community_44
 ---
 
 # Verification Loops (Chain of Verification, Reverse Prompting, Self-Grading)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Chunked Task Execution Pattern]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Prompt_Execution_Patterns
+#graphify/document #graphify/INFERRED #community/Community_44

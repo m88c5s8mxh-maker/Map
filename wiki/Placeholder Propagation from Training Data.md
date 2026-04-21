@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/research/laziness/root-causes/training-data-bias.md"
 type: "document"
-community: "RLHF Root Causes"
+community: "Community 0"
 location: "## Placeholder Propagation"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/RLHF_Root_Causes
+  - community/Community_0
 ---
 
 # Placeholder Propagation from Training Data
@@ -15,4 +15,4 @@ tags:
 - [[RLHF Brevity Bias Through Alignment]] - `semantically_similar_to` [INFERRED]
 - [[Tutorial-Style Pattern Reinforcement in Training Data]] - `reinforced_by` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/RLHF_Root_Causes
+#graphify/document #graphify/INFERRED #community/Community_0

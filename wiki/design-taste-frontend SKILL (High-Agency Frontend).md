@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/skills/taste-skill/SKILL.md"
 type: "document"
-community: "Taste Skill Rules"
+community: "Community 11"
 location: "YAML front-matter + body"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Taste_Skill_Rules
+  - community/Community_11
 ---
 
 # design-taste-frontend SKILL (High-Agency Frontend)
@@ -22,4 +22,4 @@ tags:
 - [[SKILL.md YAML Front-Matter Discovery Hook]] - `uses` [EXTRACTED]
 - [[VISUAL_DENSITY Dial (1-10 Art Gallery to Cockpit)]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Taste_Skill_Rules
+#graphify/document #graphify/EXTRACTED #community/Community_11

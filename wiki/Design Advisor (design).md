@@ -1,11 +1,11 @@
 ---
 source_file: "skills/design/SKILL.md"
 type: "document"
-community: "Brutalist & Anti-Generic UI"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Brutalist_&_Anti-Generic_UI
+  - community/Community_2
 ---
 
 # Design Advisor (design)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Premium  Anti-Generic UI Design Principle]] - `advises_toward` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Brutalist_&_Anti-Generic_UI
+#graphify/document #graphify/EXTRACTED #community/Community_2

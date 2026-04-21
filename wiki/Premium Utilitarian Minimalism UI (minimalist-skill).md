@@ -1,11 +1,11 @@
 ---
 source_file: "skills/minimalist-skill/SKILL.md"
 type: "document"
-community: "Brutalist & Anti-Generic UI"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Brutalist_&_Anti-Generic_UI
+  - community/Community_2
 ---
 
 # Premium Utilitarian Minimalism UI (minimalist-skill)
@@ -15,7 +15,7 @@ tags:
 - [[GPU-Safe Animation (transform + opacity only)]] - `enforces` [EXTRACTED]
 - [[Premium  Anti-Generic UI Design Principle]] - `implements` [EXTRACTED]
 - [[Taste Skill README â€“ Collection Overview]] - `references` [EXTRACTED]
-- [[Warm Monochrome Palette with Muted Pastel Accents]] - `defines` [EXTRACTED]
+- [[Warm Monochrome Palette]] - `defines` [EXTRACTED]
 - [[llms.txt Skill Index]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Brutalist_&_Anti-Generic_UI
+#graphify/document #graphify/EXTRACTED #community/Community_2

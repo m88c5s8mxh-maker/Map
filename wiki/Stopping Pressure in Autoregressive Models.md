@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/research/laziness/root-causes/rlhf-and-compute.md"
 type: "document"
-community: "RLHF Root Causes"
+community: "Community 0"
 location: "## Stopping Pressure"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/RLHF_Root_Causes
+  - community/Community_0
 ---
 
 # Stopping Pressure in Autoregressive Models
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RLHF Brevity Bias Through Alignment]] - `produces` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/RLHF_Root_Causes
+#graphify/document #graphify/EXTRACTED #community/Community_0

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/SKILL.md"
 type: "document"
-community: "Brutalist & Anti-Generic UI"
+community: "Community 2"
 location: "Section 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Brutalist_&_Anti-Generic_UI
+  - community/Community_2
 ---
 
 # Banned Fonts List (Inter, Roboto, Arial, Open Sans)
@@ -17,4 +17,4 @@ tags:
 - [[Redesign Existing Projects (redesign-skill)]] - `enforces` [EXTRACTED]
 - [[Taste Skill (design-taste-frontend)]] - `enforces` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Brutalist_&_Anti-Generic_UI
+#graphify/document #graphify/EXTRACTED #community/Community_2

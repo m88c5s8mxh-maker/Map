@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/research/laziness/findings/references.md"
 type: "document"
-community: "Laziness Research Findings"
+community: "Community 0"
 location: "Cited Studies"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Laziness_Research_Findings
+  - community/Community_0
 ---
 
 # Seasonal Behavior Analysis (Winter Break Hypothesis)
@@ -15,4 +15,4 @@ tags:
 - [[LLM Laziness Research References]] - `cites` [EXTRACTED]
 - [[Seasonal Behavior Anomalies in LLM Output]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Laziness_Research_Findings
+#graphify/document #graphify/EXTRACTED #community/Community_0

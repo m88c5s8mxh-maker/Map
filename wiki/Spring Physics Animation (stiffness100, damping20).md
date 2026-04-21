@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/SKILL.md"
 type: "document"
-community: "Animation & Layout System"
+community: "Community 2"
 location: "Section 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Animation_&_Layout_System
+  - community/Community_2
 ---
 
 # Spring Physics Animation (stiffness:100, damping:20)
@@ -19,4 +19,4 @@ tags:
 - [[Stitch Design Taste Skill (stitch-skill)]] - `specifies` [EXTRACTED]
 - [[Taste Skill (design-taste-frontend)]] - `specifies` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Animation_&_Layout_System
+#graphify/document #graphify/EXTRACTED #community/Community_2

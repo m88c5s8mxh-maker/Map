@@ -1,18 +1,18 @@
 ---
 source_file: "skills/taste-skill/research/laziness/findings/empirical-results.md"
 type: "document"
-community: "Output Truncation Problem"
+community: "Community 0"
 location: "Microsoft Research section"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Output_Truncation_Problem
+  - community/Community_0
 ---
 
 # Prompt Stimulus Effectiveness (financial framing, stakes language)
 
 ## Connections
-- [[Full-Output Enforcement (output-skill)]] - `informs` [INFERRED]
 - [[LLM Laziness â€“ Empirical Results (2025 Studies)]] - `defines` [EXTRACTED]
+- [[output-skill — Stops AI from being lazy, prevents placeholder comments and skipped code]] - `informs` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Output_Truncation_Problem
+#graphify/document #graphify/INFERRED #community/Community_0

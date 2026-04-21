@@ -1,11 +1,11 @@
 ---
 source_file: "skills/taste-skill/research/laziness/findings/empirical-results.md"
 type: "document"
-community: "Output Truncation Problem"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Truncation_Problem
+  - community/Community_0
 ---
 
 # LLM Laziness â€“ Empirical Results (2025 Studies)
@@ -15,4 +15,4 @@ tags:
 - [[Prompt Stimulus Effectiveness (financial framing, stakes language)]] - `defines` [EXTRACTED]
 - [[RLHF-induced Brevity Bias (root cause of truncation)]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Truncation_Problem
+#graphify/document #graphify/EXTRACTED #community/Community_0

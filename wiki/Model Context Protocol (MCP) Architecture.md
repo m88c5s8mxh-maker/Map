@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/research/laziness/remediation/architectural-patterns.md"
 type: "document"
-community: "Laziness Research Findings"
+community: "Community 0"
 location: "## Model Context Protocol (MCP)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Laziness_Research_Findings
+  - community/Community_0
 ---
 
 # Model Context Protocol (MCP) Architecture
@@ -16,4 +16,4 @@ tags:
 - [[MCP Eliminates HallucinationTruncation Incentive]] - `enables` [EXTRACTED]
 - [[Rationale MCP Transforms Model from Static Store to Live Reasoning Engine]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Laziness_Research_Findings
+#graphify/document #graphify/EXTRACTED #community/Community_0

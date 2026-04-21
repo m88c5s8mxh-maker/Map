@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/research/laziness/remediation/architectural-patterns.md"
 type: "document"
-community: "Prompt Execution Patterns"
+community: "Community 44"
 location: "## Chunked Task Execution"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Prompt_Execution_Patterns
+  - community/Community_44
 ---
 
 # Chunked Task Execution Pattern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Verification Loops (Chain of Verification, Reverse Prompting, Self-Grading)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Prompt_Execution_Patterns
+#graphify/document #graphify/INFERRED #community/Community_44

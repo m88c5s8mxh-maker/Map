@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/examples/floria-bottom.webp"
 type: "image"
-community: "Taste Skill Rules"
+community: "Community 11"
 location: "Visual analysis - CTA section"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Taste_Skill_Rules
+  - community/Community_11
 ---
 
 # Floria Newsletter CTA with Botanical Image Background
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Floria Website - Bottom Section (Testimonials, Newsletter, Footer)]] - `contains` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Taste_Skill_Rules
+#graphify/image #graphify/EXTRACTED #community/Community_11

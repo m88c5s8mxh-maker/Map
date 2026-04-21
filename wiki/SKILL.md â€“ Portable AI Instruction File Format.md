@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/README.md"
 type: "document"
-community: "Animation & Layout System"
+community: "Community 2"
 location: "Common Questions"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Animation_&_Layout_System
+  - community/Community_2
 ---
 
 # SKILL.md â€“ Portable AI Instruction File Format
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Taste Skill (design-taste-frontend)]] - `uses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Animation_&_Layout_System
+#graphify/document #graphify/EXTRACTED #community/Community_2

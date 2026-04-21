@@ -1,11 +1,11 @@
 ---
 source_file: "skills/llms.txt"
 type: "document"
-community: "Brutalist & Anti-Generic UI"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Brutalist_&_Anti-Generic_UI
+  - community/Community_2
 ---
 
 # Premium / Anti-Generic UI Design Principle
@@ -18,4 +18,4 @@ tags:
 - [[Redesign Existing Projects (redesign-skill)]] - `upgrades_toward` [EXTRACTED]
 - [[Taste Skill (design-taste-frontend)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Brutalist_&_Anti-Generic_UI
+#graphify/document #graphify/EXTRACTED #community/Community_2

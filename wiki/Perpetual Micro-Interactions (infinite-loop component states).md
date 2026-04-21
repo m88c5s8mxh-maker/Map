@@ -1,12 +1,12 @@
 ---
 source_file: "skills/taste-skill/SKILL.md"
 type: "document"
-community: "Animation & Layout System"
+community: "Community 2"
 location: "Section 4"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Animation_&_Layout_System
+  - community/Community_2
 ---
 
 # Perpetual Micro-Interactions (infinite-loop component states)
@@ -16,4 +16,4 @@ tags:
 - [[Spring Physics Animation (stiffness100, damping20)]] - `enables` [INFERRED]
 - [[Taste Skill (design-taste-frontend)]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Animation_&_Layout_System
+#graphify/document #graphify/INFERRED #community/Community_2

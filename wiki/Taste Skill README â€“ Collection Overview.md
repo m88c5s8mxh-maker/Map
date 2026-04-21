@@ -1,11 +1,11 @@
 ---
 source_file: "skills/taste-skill/README.md"
 type: "document"
-community: "Output Truncation Problem"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Truncation_Problem
+  - community/Community_2
 ---
 
 # Taste Skill README â€“ Collection Overview
@@ -13,7 +13,6 @@ tags:
 ## Connections
 - [[Claude Code (AI coding agent)]] - `supports` [EXTRACTED]
 - [[Cursor (AI coding agent)]] - `supports` [EXTRACTED]
-- [[Full-Output Enforcement (output-skill)]] - `references` [EXTRACTED]
 - [[High-End Visual Design  Soft UI (soft-skill)]] - `references` [EXTRACTED]
 - [[Industrial Brutalism & Tactical Telemetry UI (brutalist-skill)]] - `references` [EXTRACTED]
 - [[Premium Utilitarian Minimalism UI (minimalist-skill)]] - `references` [EXTRACTED]
@@ -21,5 +20,6 @@ tags:
 - [[Stitch Design Taste Skill (stitch-skill)]] - `references` [EXTRACTED]
 - [[Taste Skill (design-taste-frontend)]] - `documents` [EXTRACTED]
 - [[Taste Skill Research Index]] - `links_to` [EXTRACTED]
+- [[output-skill — Stops AI from being lazy, prevents placeholder comments and skipped code]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Truncation_Problem
+#graphify/document #graphify/EXTRACTED #community/Community_2
