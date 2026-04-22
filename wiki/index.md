@@ -6,6 +6,8 @@
 | [[claude-skills-system]] | 131 Skills in 11 Kategorien — Framework-Übersicht | global-CLAUDE.md, skill-creator.md | 2026-04-17 |
 | [[llm-wiki-pattern]] | Karpathy-Pattern: persistentes LLM-Wiki, raw/ unveränderlich, wiki/ LLM-owned | obsidian-wiki.md | 2026-04-17 |
 | **ENTITIES** | | | |
+| [[emil-kowalski]] | Design Engineer, Autor Sonner & Vaul — Animations-Philosophie & UI-Polish | raw/skills/emil-design-eng.md | 2026-04-22 |
+| [[design-engineering]] | Animations-Framework, Easing-Regeln, Review-Checkliste | raw/skills/emil-design-eng.md | 2026-04-22 |
 | [[graphify]] | Dateien → Knowledge Graph (71.5x Token-Reduktion), auto Git Hooks | graphify.md | 2026-04-17 |
 | [[obsidian-wiki-skill]] | LLM-gepflegtes Wiki: ingest, query, lint — Karpathy-Pattern Implementierung | obsidian-wiki.md | 2026-04-17 |
 | [[memory-management]] | Zwei-Schicht-Gedächtnis: CLAUDE.md (working) + memory/ (persistent) | memory-management.md | 2026-04-17 |
@@ -72,6 +74,8 @@
 | [[explore-data]] | Datensatz profilieren | raw/skills/ | 2026-04-17 |
 | [[financial-statements]] | GuV, Bilanz, Kapitalflussrechnung | raw/skills/ | 2026-04-17 |
 | [[forecast]] | Gewichtete Sales-Prognose mit Szenarien | raw/skills/ | 2026-04-17 |
+| [[emil-kowalski]] | Design Engineer, Autor Sonner & Vaul — Animations-Philosophie & UI-Polish | raw/skills/emil-design-eng.md | 2026-04-22 |
+| [[design-engineering]] | Animations-Framework, Easing-Regeln, Review-Checkliste | raw/skills/emil-design-eng.md | 2026-04-22 |
 | [[graphify]] | Dateien → Knowledge Graph (71.5x Token-Reduktion) | raw/skills/ | 2026-04-17 |
 | [[incident-response]] | Incident Triage, Komm, Postmortem | raw/skills/ | 2026-04-17 |
 | [[instagram-digital-products]] | 7-stufiges Instagram-Marketing-System | raw/skills/ | 2026-04-17 |

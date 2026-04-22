@@ -12,3 +12,10 @@
 - Neue Synthesen: sales-crm-skills, data-analytics-skills, finance-skills, engineering-skills, marketing-content-skills, design-ux-skills, hr-people-skills, knowledge-productivity-skills, document-comms-skills
 - Widersprüche geflaggt: keine
 - Schlüssel-Erkenntnis: Das Skill-System deckt den kompletten Business-Zyklus ab — von Lead-Generierung bis SOX-Compliance. Der Knowledge-Stack (graphify → obsidian-wiki → memory-management → skill-creator) ist das Meta-System das alle anderen Skills organisiert.
+
+## [2026-04-22] ingest | Emil Kowalski - Design Engineering Skill
+
+- Neue Seiten: entity/emil-kowalski.md, concept/design-engineering.md
+- Neue Skill-Datei: raw/skills/emil-design-eng.md
+- Index aktualisiert: 2 neue Eintraege
+- Skill installiert via: npx skills add emilkowalski/skill
