@@ -350,40 +350,60 @@
   },
   "nodes": [
     {
+      "label": "generate_pdf.py",
+      "file_type": "code",
+      "source_file": "generate_pdf.py",
+      "source_location": "L1",
+      "id": "generate_pdf_py",
+      "community": 36
+    },
+    {
+      "label": "cat_color()",
+      "file_type": "code",
+      "source_file": "generate_pdf.py",
+      "source_location": "L170",
+      "id": "generate_pdf_cat_color",
+      "community": 36
+    },
+    {
+      "label": "sty()",
+      "file_type": "code",
+      "source_file": "generate_pdf.py",
+      "source_location": "L189",
+      "id": "generate_pdf_sty",
+      "community": 36
+    },
+    {
       "label": "update_map.py",
       "file_type": "code",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L1",
       "id": "scripts_update_map_py",
-      "community": 26,
-      "norm_label": "update_map.py"
+      "community": 26
     },
     {
       "label": "rebuild_code()",
       "file_type": "code",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L19",
       "id": "update_map_rebuild_code",
-      "community": 26,
-      "norm_label": "rebuild_code()"
+      "community": 26
     },
     {
       "label": "update_index()",
       "file_type": "code",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L29",
       "id": "update_map_update_index",
-      "community": 26,
-      "norm_label": "update_index()"
+      "community": 26
     },
     {
       "label": "update_html()",
       "file_type": "code",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L92",
       "id": "update_map_update_html",
-      "community": 26,
-      "norm_label": "update_html()"
+      "community": 26
     },
     {
       "label": "update_map.py \u2014 Wird von der GitHub Action aufgerufen. Generiert graphify-out/in",
@@ -403,7 +423,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "llms.txt skill index",
       "id": "llms_txt_index"
     },
@@ -416,7 +436,7 @@
       "captured_at": null,
       "author": "Leonxlnx",
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "taste skill (design-taste-frontend)",
       "id": "taste_skill"
     },
@@ -429,7 +449,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "industrial brutalism & tactical telemetry ui (brutalist-skill)",
       "id": "brutalist_skill"
     },
@@ -442,7 +462,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "design advisor (design)",
       "id": "design_skill"
     },
@@ -455,7 +475,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "premium utilitarian minimalism ui (minimalist-skill)",
       "id": "minimalist_skill"
     },
@@ -481,7 +501,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "redesign existing projects (redesign-skill)",
       "id": "redesign_skill"
     },
@@ -494,7 +514,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "high-end visual design / soft ui (soft-skill)",
       "id": "soft_skill"
     },
@@ -520,7 +540,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "stitch design taste skill (stitch-skill)",
       "id": "stitch_skill"
     },
@@ -533,7 +553,7 @@
       "captured_at": "2025-01-01",
       "author": "Leonxlnx",
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "taste skill readme a\u20ac\u201c collection overview",
       "id": "taste_readme"
     },
@@ -585,7 +605,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "premium / anti-generic ui design principle",
       "id": "concept_premium_ui"
     },
@@ -598,7 +618,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "anti-slop / anti-generic ai design rules",
       "id": "concept_anti_slop"
     },
@@ -611,7 +631,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "banned fonts list (inter, roboto, arial, open sans)",
       "id": "concept_banned_fonts"
     },
@@ -624,7 +644,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "spring physics animation (stiffness:100, damping:20)",
       "id": "concept_spring_physics"
     },
@@ -637,7 +657,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "bento grid layout",
       "id": "concept_bento_grid"
     },
@@ -650,7 +670,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "design_variance dial (1-10 layout variance parameter)",
       "id": "concept_design_variance"
     },
@@ -663,7 +683,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "motion_intensity dial (1-10 animation intensity parameter)",
       "id": "concept_motion_intensity"
     },
@@ -676,7 +696,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "visual_density dial (1-10 content density parameter)",
       "id": "concept_visual_density"
     },
@@ -728,7 +748,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "swiss typographic design",
       "id": "concept_swiss_typography"
     },
@@ -741,7 +761,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "tactical telemetry / crt terminal archetype",
       "id": "concept_crt_terminal"
     },
@@ -754,7 +774,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "double-bezel nested architecture",
       "id": "concept_double_bezel"
     },
@@ -767,7 +787,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "design.md a\u20ac\u201c single source of truth for google stitch",
       "id": "concept_stitch_design_md"
     },
@@ -793,7 +813,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "warm monochrome palette",
       "id": "concept_warm_monochrome"
     },
@@ -806,7 +826,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "design audit",
       "id": "concept_design_audit"
     },
@@ -819,7 +839,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "gpu-safe animation (transform + opacity only)",
       "id": "concept_gpu_safe_animation"
     },
@@ -832,7 +852,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "perpetual micro-interactions (infinite-loop component states)",
       "id": "concept_perpetual_micro_interactions"
     },
@@ -845,7 +865,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "rationale: ban inter font to avoid generic ai aesthetic",
       "id": "rationale_ban_inter"
     },
@@ -858,7 +878,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "rationale: spring physics over linear easing for premium feel",
       "id": "rationale_spring_physics"
     },
@@ -884,7 +904,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "rationale: ban 3-column equal card grids as overused ai pattern",
       "id": "rationale_no_3col_grid"
     },
@@ -897,7 +917,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "rationale: use min-h-[100dvh] instead of h-screen for ios safari fix",
       "id": "rationale_min_h_dvh"
     },
@@ -910,7 +930,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "google stitch (ai ui generation platform)",
       "id": "platform_google_stitch"
     },
@@ -923,7 +943,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "cursor (ai coding agent)",
       "id": "platform_cursor"
     },
@@ -936,7 +956,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "claude code (ai coding agent)",
       "id": "platform_claude_code"
     },
@@ -949,7 +969,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "skill.md a\u20ac\u201c portable ai instruction file format",
       "id": "concept_skill_md_format"
     },
@@ -962,7 +982,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "llm laziness research references",
       "id": "references_laziness_studies"
     },
@@ -975,7 +995,7 @@
       "captured_at": null,
       "author": "Microsoft Research",
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "emotionprompt (microsoft research) \u2014 stakes framing improves output quality up to +115%",
       "id": "emotionprompt_study"
     },
@@ -988,7 +1008,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "lazybench \u2014 proves frontier models actively select cognitive shortcuts on high-effort tasks",
       "id": "lazybench_study"
     },
@@ -1001,7 +1021,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "compounding error avoidance research",
       "id": "compounding_error_avoidance_study"
     },
@@ -1014,7 +1034,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "seasonal behavior analysis (winter break hypothesis)",
       "id": "seasonal_behavior_study"
     },
@@ -1027,7 +1047,7 @@
       "captured_at": "2025-12",
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "2025 controlled laziness experiments",
       "id": "controlled_laziness_experiments_2025"
     },
@@ -1040,7 +1060,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "lazy-loaded skills pattern \u2014 skill.md with yaml front-matter for 35% context reduction",
       "id": "lazy_loaded_skills_pattern"
     },
@@ -1053,7 +1073,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "skill.md yaml front-matter discovery hook",
       "id": "skill_yaml_frontmatter"
     },
@@ -1066,7 +1086,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "35% context reduction from lazy-loading",
       "id": "context_reduction_35pct"
     },
@@ -1079,7 +1099,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "model context protocol (mcp) architecture",
       "id": "mcp_architecture"
     },
@@ -1092,7 +1112,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "mcp eliminates hallucination/truncation incentive",
       "id": "mcp_reduces_truncation"
     },
@@ -1105,7 +1125,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 46,
       "norm_label": "chunked task execution pattern",
       "id": "chunked_task_execution"
     },
@@ -1118,7 +1138,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 53,
       "norm_label": "temperature parameter for token distribution",
       "id": "temperature_parameter"
     },
@@ -1131,7 +1151,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 53,
+      "community": 54,
       "norm_label": "top-p nucleus sampling",
       "id": "top_p_nucleus_sampling"
     },
@@ -1144,7 +1164,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "gemini thinking_level parameter",
       "id": "gemini_thinking_level"
     },
@@ -1157,7 +1177,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "psychological pattern matching in prompts",
       "id": "psychological_pattern_matching"
     },
@@ -1183,7 +1203,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 54,
+      "community": 55,
       "norm_label": "xml-structured prompt architecture",
       "id": "xml_structured_prompts"
     },
@@ -1196,7 +1216,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 46,
       "norm_label": "verification loops (chain of verification, reverse prompting, self-grading)",
       "id": "verification_loops"
     },
@@ -1222,7 +1242,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 55,
+      "community": 56,
       "norm_label": "continuation handling prompt template",
       "id": "continuation_handling_prompt"
     },
@@ -1235,7 +1255,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "lazybench cognitive shortcutting discovery",
       "id": "lazybench_cognitive_shortcuts"
     },
@@ -1248,7 +1268,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 56,
+      "community": 57,
       "norm_label": "metacognitive laziness and human feedback loop",
       "id": "metacognitive_laziness"
     },
@@ -1261,7 +1281,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "seasonal behavior anomalies in llm output",
       "id": "seasonal_behavior_anomalies"
     },
@@ -1274,7 +1294,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "error avoidance as truncation driver",
       "id": "error_avoidance_truncation"
     },
@@ -1287,7 +1307,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 47,
       "norm_label": "context window asymmetry (large input, capped output)",
       "id": "context_window_asymmetry"
     },
@@ -1300,7 +1320,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 47,
       "norm_label": "consumer middleware truncation problem",
       "id": "consumer_middleware_truncation"
     },
@@ -1313,7 +1333,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "developer platform full context access (api/ai studio)",
       "id": "developer_platform_full_access"
     },
@@ -1326,7 +1346,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "rlhf brevity bias through alignment",
       "id": "rlhf_brevity_bias"
     },
@@ -1339,7 +1359,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "stopping pressure in autoregressive models",
       "id": "stopping_pressure"
     },
@@ -1352,7 +1372,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 58,
       "norm_label": "dynamic throttling during peak demand",
       "id": "dynamic_throttling"
     },
@@ -1365,7 +1385,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "gpu compute cost per token",
       "id": "token_generation_cost"
     },
@@ -1378,7 +1398,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "placeholder propagation from training data",
       "id": "placeholder_propagation"
     },
@@ -1391,7 +1411,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "tutorial-style pattern reinforcement in training data",
       "id": "tutorial_style_pattern_reinforcement"
     },
@@ -1404,7 +1424,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "design-taste-frontend skill (high-agency frontend)",
       "id": "taste_skill_frontend"
     },
@@ -1417,7 +1437,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "design_variance dial (1-10 symmetry to chaos)",
       "id": "design_variance_dial"
     },
@@ -1430,7 +1450,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "motion_intensity dial (1-10 static to cinematic)",
       "id": "motion_intensity_dial"
     },
@@ -1443,7 +1463,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "visual_density dial (1-10 art gallery to cockpit)",
       "id": "visual_density_dial"
     },
@@ -1456,7 +1476,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "anti-slop design engineering rules (bias correction)",
       "id": "anti_slop_design_rules"
     },
@@ -1469,7 +1489,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "ai tells - forbidden design patterns",
       "id": "ai_tells_forbidden_patterns"
     },
@@ -1482,7 +1502,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "motion-engine bento paradigm (bento 2.0)",
       "id": "bento_motion_engine_paradigm"
     },
@@ -1495,7 +1515,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "creative arsenal - high-end ui pattern library",
       "id": "creative_arsenal_patterns"
     },
@@ -1508,7 +1528,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "floria website - bottom section (testimonials, newsletter, footer)",
       "id": "floria_bottom_section"
     },
@@ -1521,7 +1541,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "floria website - full page overview",
       "id": "floria_full_page"
     },
@@ -1534,7 +1554,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "floria website - top section (hero, curated assemblages, services, archives)",
       "id": "floria_top_section"
     },
@@ -1547,7 +1567,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "floria dark editorial aesthetic (dark background, high-contrast typography)",
       "id": "floria_dark_aesthetic"
     },
@@ -1560,7 +1580,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "floria asymmetric left-aligned hero layout",
       "id": "floria_asymmetric_layout"
     },
@@ -1573,7 +1593,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "floria archives bento grid (2x2 image tiles)",
       "id": "floria_bento_grid_archives"
     },
@@ -1586,7 +1606,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "floria scattered testimonial card layout",
       "id": "floria_testimonials_scattered"
     },
@@ -1599,7 +1619,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 10,
       "norm_label": "floria newsletter cta with botanical image background",
       "id": "floria_newsletter_cta"
     },
@@ -1612,7 +1632,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "rationale: lazy-loading reduces context dilution and token cost",
       "id": "rationale_lazy_skill_architecture"
     },
@@ -1625,7 +1645,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "rationale: mcp transforms model from static store to live reasoning engine",
       "id": "rationale_mcp_real_time_data"
     },
@@ -1638,7 +1658,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "rationale: rlhf brevity bias is economic cost optimization",
       "id": "rationale_rlhf_cost_tradeoff"
     },
@@ -2184,7 +2204,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 58,
+      "community": 59,
       "norm_label": "call preparation workflow",
       "id": "concept_call_prep_workflow"
     },
@@ -2379,7 +2399,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 49,
       "norm_label": "conversation-context",
       "id": "skill_conversation_context"
     },
@@ -2405,7 +2425,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "create-viz",
       "id": "skill_create_viz"
     },
@@ -2431,7 +2451,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "data-context-extractor",
       "id": "skill_data_context_extractor"
     },
@@ -2444,7 +2464,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "data-visualization",
       "id": "skill_data_visualization"
     },
@@ -2834,7 +2854,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 16,
       "norm_label": "call to action (cta)",
       "id": "concept_cta"
     },
@@ -2886,7 +2906,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "data visualization",
       "id": "concept_data_visualization"
     },
@@ -2899,7 +2919,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "chart selection",
       "id": "concept_chart_selection"
     },
@@ -2925,7 +2945,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "data warehouse",
       "id": "concept_data_warehouse"
     },
@@ -2938,7 +2958,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "schema discovery",
       "id": "concept_schema_discovery"
     },
@@ -3120,7 +3140,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "bigquery",
       "id": "tool_bigquery"
     },
@@ -3133,7 +3153,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "snowflake",
       "id": "tool_snowflake"
     },
@@ -3146,7 +3166,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "matplotlib",
       "id": "tool_matplotlib"
     },
@@ -3159,7 +3179,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "plotly",
       "id": "tool_plotly"
     },
@@ -3172,7 +3192,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "seaborn",
       "id": "tool_seaborn"
     },
@@ -3315,7 +3335,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "data & analytics",
       "id": "domain_data_analytics"
     },
@@ -3341,7 +3361,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 49,
       "norm_label": "user context (ulm, de)",
       "id": "entity_user_context_ulm"
     },
@@ -3445,7 +3465,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "draft content skill",
       "id": "draft_content_skill"
     },
@@ -3458,7 +3478,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "blog post",
       "id": "draft_content_blog_post"
     },
@@ -3471,7 +3491,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "social media post",
       "id": "draft_content_social_media"
     },
@@ -3484,7 +3504,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "landing page copy",
       "id": "draft_content_landing_page"
     },
@@ -3497,7 +3517,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "seo recommendations",
       "id": "draft_content_seo"
     },
@@ -3510,7 +3530,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "brand voice",
       "id": "draft_content_brand_voice"
     },
@@ -3523,7 +3543,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "draft offer skill",
       "id": "draft_offer_skill"
     },
@@ -3536,7 +3556,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "compensation package",
       "id": "draft_offer_compensation"
     },
@@ -3549,7 +3569,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "offer letter",
       "id": "draft_offer_letter"
     },
@@ -3627,7 +3647,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "email sequence skill",
       "id": "email_sequence_skill"
     },
@@ -3640,7 +3660,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "onboarding email sequence",
       "id": "email_sequence_onboarding"
     },
@@ -3653,7 +3673,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "lead nurture sequence",
       "id": "email_sequence_lead_nurture"
     },
@@ -3666,7 +3686,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "sequence branching logic",
       "id": "email_sequence_branching"
     },
@@ -3679,7 +3699,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "email performance benchmarks",
       "id": "email_sequence_benchmarks"
     },
@@ -3822,7 +3842,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "financial statements skill",
       "id": "financial_statements_skill"
     },
@@ -3835,7 +3855,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "income statement",
       "id": "financial_statements_income"
     },
@@ -3848,7 +3868,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "variance analysis",
       "id": "financial_statements_variance"
     },
@@ -3861,7 +3881,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "gaap presentation requirements",
       "id": "financial_statements_gaap"
     },
@@ -3874,7 +3894,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "forecast skill",
       "id": "forecast_skill"
     },
@@ -3887,7 +3907,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "sales pipeline",
       "id": "forecast_pipeline"
     },
@@ -3900,7 +3920,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "forecast scenarios (best/likely/worst)",
       "id": "forecast_scenarios"
     },
@@ -3913,7 +3933,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "gap-to-quota analysis",
       "id": "forecast_gap_analysis"
     },
@@ -3926,7 +3946,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "crm connector (forecast)",
       "id": "forecast_crm"
     },
@@ -4095,7 +4115,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "instagram digital products skill",
       "id": "instagram_products_skill"
     },
@@ -4108,7 +4128,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "instagram sales funnel",
       "id": "instagram_products_funnel"
     },
@@ -4121,7 +4141,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "carousel content",
       "id": "instagram_products_carousel"
     },
@@ -4134,7 +4154,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "dm automation sequence",
       "id": "instagram_products_dm_sequence"
     },
@@ -4186,7 +4206,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 38,
       "norm_label": "interview prep skill",
       "id": "interview_prep_skill"
     },
@@ -4199,7 +4219,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 38,
       "norm_label": "competency-based interview questions",
       "id": "interview_prep_competency"
     },
@@ -4212,7 +4232,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 38,
       "norm_label": "interview scorecard",
       "id": "interview_prep_scorecard"
     },
@@ -4225,7 +4245,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "journal entry prep skill",
       "id": "journal_entry_prep_skill"
     },
@@ -4238,7 +4258,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "accrual types (ap, payroll, prepaid)",
       "id": "journal_entry_prep_accruals"
     },
@@ -4251,7 +4271,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "je review checklist",
       "id": "journal_entry_prep_review"
     },
@@ -4264,7 +4284,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "journal entry skill",
       "id": "journal_entry_skill"
     },
@@ -4277,7 +4297,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "revenue recognition (asc 606)",
       "id": "journal_entry_revenue_recognition"
     },
@@ -4290,7 +4310,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "fixed asset depreciation je",
       "id": "journal_entry_fixed_assets"
     },
@@ -4355,7 +4375,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 38,
+      "community": 39,
       "norm_label": "manus vacu landing page skill",
       "id": "manus_vacu_skill"
     },
@@ -4368,7 +4388,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 38,
+      "community": 39,
       "norm_label": "react + tailwind + framer motion stack",
       "id": "manus_vacu_react"
     },
@@ -4381,7 +4401,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 38,
+      "community": 39,
       "norm_label": "glassmorphism design pattern",
       "id": "manus_vacu_glassmorphism"
     },
@@ -4511,7 +4531,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "obsidian-wiki",
       "id": "skill_obsidian_wiki"
     },
@@ -4550,7 +4570,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 27,
       "norm_label": "pdf",
       "id": "skill_pdf"
     },
@@ -4628,7 +4648,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "pptx",
       "id": "skill_pptx"
     },
@@ -4641,7 +4661,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "process-doc",
       "id": "skill_process_doc"
     },
@@ -4654,7 +4674,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "process-optimization",
       "id": "skill_process_optimization"
     },
@@ -4693,7 +4713,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 27,
+      "community": 28,
       "norm_label": "reconciliation",
       "id": "skill_reconciliation"
     },
@@ -4758,7 +4778,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "runbook",
       "id": "skill_runbook"
     },
@@ -4771,7 +4791,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 50,
       "norm_label": "schedule",
       "id": "skill_schedule"
     },
@@ -4862,7 +4882,7 @@
       "captured_at": null,
       "author": "Andrej Karpathy",
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "karpathy llm wiki pattern",
       "id": "concept_karpathy_llm_wiki"
     },
@@ -4875,7 +4895,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "obsidian",
       "id": "tool_obsidian"
     },
@@ -4888,7 +4908,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "persistent knowledge wiki",
       "id": "concept_knowledge_wiki"
     },
@@ -4953,7 +4973,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 27,
       "norm_label": "pypdf",
       "id": "tool_pypdf"
     },
@@ -4966,7 +4986,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 27,
       "norm_label": "pdfplumber",
       "id": "tool_pdfplumber"
     },
@@ -4979,7 +4999,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 27,
       "norm_label": "reportlab",
       "id": "tool_reportlab"
     },
@@ -4992,7 +5012,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 27,
       "norm_label": "pytesseract (ocr)",
       "id": "tool_pytesseract"
     },
@@ -5200,7 +5220,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "pptxgenjs",
       "id": "tool_pptxgenjs"
     },
@@ -5213,7 +5233,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "markitdown",
       "id": "tool_markitdown"
     },
@@ -5226,7 +5246,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "raci matrix",
       "id": "concept_raci_matrix"
     },
@@ -5239,7 +5259,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "standard operating procedure (sop)",
       "id": "concept_sop"
     },
@@ -5252,7 +5272,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "process waste (lean)",
       "id": "concept_process_waste"
     },
@@ -5343,7 +5363,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 27,
+      "community": 28,
       "norm_label": "bank reconciliation",
       "id": "concept_bank_reconciliation"
     },
@@ -5356,7 +5376,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 27,
+      "community": 28,
       "norm_label": "gl-to-subledger reconciliation",
       "id": "concept_gl_subledger"
     },
@@ -5369,7 +5389,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 27,
+      "community": 28,
       "norm_label": "intercompany reconciliation",
       "id": "concept_intercompany_reconciliation"
     },
@@ -5499,7 +5519,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "operational runbook",
       "id": "concept_operational_runbook"
     },
@@ -5512,7 +5532,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "escalation path",
       "id": "concept_escalation_path"
     },
@@ -5525,7 +5545,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 50,
       "norm_label": "scheduled task / cron job",
       "id": "concept_scheduled_task"
     },
@@ -5564,7 +5584,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "knowledge base connector",
       "id": "concept_connector_knowledge_base"
     },
@@ -5642,7 +5662,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 27,
+      "community": 28,
       "norm_label": "finance / accounting operations domain",
       "id": "domain_finance_ops"
     },
@@ -5694,7 +5714,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 32,
+      "community": 34,
       "norm_label": "sequence-load",
       "id": "sequence_load_skill"
     },
@@ -5707,7 +5727,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 32,
       "norm_label": "setup-cowork",
       "id": "setup_cowork_skill"
     },
@@ -5733,7 +5753,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 42,
       "norm_label": "slack-gif-creator",
       "id": "slack_gif_creator_skill"
     },
@@ -5902,7 +5922,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 43,
       "norm_label": "design-taste-frontend",
       "id": "taste_skill_skill"
     },
@@ -5928,7 +5948,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 50,
+      "community": 51,
       "norm_label": "template-saver",
       "id": "template_saver_skill"
     },
@@ -6032,7 +6052,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 32,
+      "community": 34,
       "norm_label": "apollo mcp",
       "id": "tool_apollo_mcp"
     },
@@ -6045,7 +6065,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 32,
+      "community": 34,
       "norm_label": "lead enrichment",
       "id": "concept_lead_enrichment"
     },
@@ -6058,7 +6078,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 32,
+      "community": 34,
       "norm_label": "outreach sequence",
       "id": "concept_outreach_sequence"
     },
@@ -6071,7 +6091,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 32,
       "norm_label": "cowork onboarding",
       "id": "concept_cowork_onboarding"
     },
@@ -6084,7 +6104,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 32,
       "norm_label": "plugin marketplace",
       "id": "concept_plugin_marketplace"
     },
@@ -6097,7 +6117,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 32,
       "norm_label": "connector registry",
       "id": "concept_connector_registry"
     },
@@ -6149,7 +6169,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 42,
       "norm_label": "pil / pillow",
       "id": "tool_pil_pillow"
     },
@@ -6162,7 +6182,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 42,
       "norm_label": "gif optimization for slack",
       "id": "concept_gif_optimization"
     },
@@ -6474,7 +6494,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 43,
       "norm_label": "react component architecture",
       "id": "concept_react_component_arch"
     },
@@ -6487,7 +6507,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 43,
       "norm_label": "framer motion animations",
       "id": "concept_framer_motion"
     },
@@ -6526,7 +6546,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 50,
+      "community": 51,
       "norm_label": "blueprint template library",
       "id": "concept_blueprint_library"
     },
@@ -6539,7 +6559,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "testing-strategy",
       "id": "skill_testing_strategy"
     },
@@ -6552,7 +6572,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 52,
       "norm_label": "theme-factory",
       "id": "skill_theme_factory"
     },
@@ -6591,7 +6611,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 16,
       "norm_label": "ux-copy",
       "id": "skill_ux_copy"
     },
@@ -6604,7 +6624,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 16,
       "norm_label": "ux-design",
       "id": "skill_ux_design"
     },
@@ -6617,7 +6637,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "validate-data",
       "id": "skill_validate_data"
     },
@@ -6630,7 +6650,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "variance-analysis",
       "id": "skill_variance_analysis"
     },
@@ -6643,7 +6663,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "vendor-review",
       "id": "skill_vendor_review"
     },
@@ -6656,7 +6676,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 16,
       "norm_label": "web-artifacts-builder",
       "id": "skill_web_artifacts_builder"
     },
@@ -6682,7 +6702,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "write-query",
       "id": "skill_write_query"
     },
@@ -6708,7 +6728,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "xlsx",
       "id": "skill_xlsx"
     },
@@ -6734,7 +6754,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "industrial-brutalist-ui",
       "id": "skill_industrial_brutalist_ui"
     },
@@ -6747,7 +6767,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "design-advisor",
       "id": "skill_design_advisor"
     },
@@ -6760,7 +6780,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "minimalist-ui",
       "id": "skill_minimalist_ui"
     },
@@ -6773,7 +6793,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "full-output-enforcement",
       "id": "skill_full_output_enforcement"
     },
@@ -6786,7 +6806,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "redesign-existing-projects",
       "id": "skill_redesign_existing_projects"
     },
@@ -6799,7 +6819,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "high-end-visual-design",
       "id": "skill_high_end_visual_design"
     },
@@ -6812,7 +6832,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "testing pyramid",
       "id": "concept_testing_pyramid"
     },
@@ -6825,7 +6845,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "test plan",
       "id": "concept_test_plan"
     },
@@ -6838,7 +6858,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 52,
       "norm_label": "theme palette",
       "id": "concept_theme_palette"
     },
@@ -6877,7 +6897,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 16,
       "norm_label": "microcopy",
       "id": "concept_microcopy"
     },
@@ -6890,7 +6910,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 16,
       "norm_label": "ux audit",
       "id": "concept_ux_audit"
     },
@@ -6903,7 +6923,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 16,
       "norm_label": "react component",
       "id": "concept_react_component"
     },
@@ -6916,7 +6936,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "data validation / qa",
       "id": "concept_data_validation"
     },
@@ -6929,7 +6949,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "survivorship bias",
       "id": "concept_survivorship_bias"
     },
@@ -6942,7 +6962,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "waterfall chart",
       "id": "concept_waterfall_chart"
     },
@@ -6955,7 +6975,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "price/volume decomposition",
       "id": "concept_price_volume_decomposition"
     },
@@ -6968,7 +6988,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "total cost of ownership (tco)",
       "id": "concept_tco"
     },
@@ -6981,7 +7001,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "vendor risk assessment",
       "id": "concept_vendor_risk_assessment"
     },
@@ -6994,7 +7014,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 16,
       "norm_label": "react",
       "id": "tool_react"
     },
@@ -7007,7 +7027,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 16,
       "norm_label": "tailwind css",
       "id": "tool_tailwind_css"
     },
@@ -7020,7 +7040,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 16,
       "norm_label": "shadcn/ui",
       "id": "tool_shadcn_ui"
     },
@@ -7046,7 +7066,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "sql query",
       "id": "concept_sql_query"
     },
@@ -7059,7 +7079,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "common table expression (cte)",
       "id": "concept_cte"
     },
@@ -7111,7 +7131,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "openpyxl",
       "id": "tool_openpyxl"
     },
@@ -7124,7 +7144,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "pandas",
       "id": "tool_pandas"
     },
@@ -7137,7 +7157,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "financial model",
       "id": "concept_financial_model"
     },
@@ -7176,7 +7196,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "crt terminal ui",
       "id": "concept_crt_terminal_ui"
     },
@@ -7189,7 +7209,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "design data csv files",
       "id": "concept_design_data_csv"
     },
@@ -7202,7 +7222,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "anti-truncation / full output",
       "id": "concept_anti_truncation"
     },
@@ -7215,7 +7235,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "spring physics motion",
       "id": "concept_spring_physics_motion"
     },
@@ -7228,7 +7248,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "ui design system",
       "id": "concept_ui_design_system"
     },
@@ -7241,7 +7261,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 16,
       "norm_label": "landing page",
       "id": "concept_landing_page"
     },
@@ -7280,7 +7300,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "skill registry (llms.txt)",
       "id": "concept_skill_registry"
     },
@@ -7371,7 +7391,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 59,
+      "community": 60,
       "norm_label": "component stylings \u2014 buttons, cards, inputs, navigation, loaders, empty states",
       "id": "stitch_component_stylings"
     },
@@ -7618,7 +7638,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "norm_label": "taste skill research hub \u2014 llm output truncation study directory",
       "id": "taste_research_hub"
     },
@@ -7631,7 +7651,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "llm output truncation research \u2014 root causes, remediation, empirical findings",
       "id": "llm_laziness_research"
     },
@@ -7644,7 +7664,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "rlhf brevity bias \u2014 alignment training instills short-output preference to reduce compute cost",
       "id": "llm_rlhf_brevity_bias"
     },
@@ -7657,7 +7677,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "stopping pressure \u2014 aggressively calibrated learned tendency to conclude outputs early",
       "id": "llm_stopping_pressure"
     },
@@ -7670,7 +7690,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "training data bias \u2014 placeholder code patterns from stack overflow / github propagate into llm outputs",
       "id": "llm_training_data_bias"
     },
@@ -7683,7 +7703,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "cognitive shortcuts \u2014 lazybench: models reduce reasoning depth on perceived-simple or long-context tasks",
       "id": "llm_cognitive_shortcuts"
     },
@@ -7696,7 +7716,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "output limits \u2014 context window asymmetry, consumer middleware truncation, developer api difference",
       "id": "llm_output_limits"
     },
@@ -7709,7 +7729,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "parameter tuning \u2014 temperature, top-p, gemini thinking_level for complete output",
       "id": "llm_parameter_tuning"
     },
@@ -7722,7 +7742,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "prompt engineering techniques \u2014 psychological patterns, syntax binding, xml structure, verification loops",
       "id": "llm_prompt_engineering"
     },
@@ -7735,7 +7755,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "architectural patterns \u2014 lazy-loaded skills, mcp integration, chunked task execution",
       "id": "llm_architectural_patterns"
     },
@@ -7748,7 +7768,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "reference prompts \u2014 ready-to-use templates for enforcing complete llm output",
       "id": "llm_reference_prompts"
     },
@@ -7761,7 +7781,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "empirical results \u2014 2025 controlled experiments on llm truncation; truncation is behavioral, not memory failure",
       "id": "llm_empirical_results"
     },
@@ -7774,7 +7794,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "research references \u2014 emotionprompt, lazybench, compounding error avoidance, winter break hypothesis",
       "id": "llm_research_references"
     },
@@ -7787,7 +7807,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "winter break hypothesis \u2014 llms produce shorter outputs during holiday-season-matching training periods",
       "id": "winter_break_hypothesis"
     },
@@ -7800,7 +7820,7 @@
       "captured_at": null,
       "author": "Anthropic",
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "norm_label": "model context protocol (mcp) \u2014 open standard for real-time llm \u2194 external data connections",
       "id": "mcp_protocol"
     },
@@ -7900,7 +7920,31 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "generate_pdf.py",
+      "source_location": "L170",
+      "weight": 1.0,
+      "_src": "generate_pdf_py",
+      "_tgt": "generate_pdf_cat_color",
+      "source": "generate_pdf_py",
+      "target": "generate_pdf_cat_color",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "generate_pdf.py",
+      "source_location": "L189",
+      "weight": 1.0,
+      "_src": "generate_pdf_py",
+      "_tgt": "generate_pdf_sty",
+      "source": "generate_pdf_py",
+      "target": "generate_pdf_sty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_map.py",
       "source_location": "L19",
       "weight": 1.0,
       "_src": "scripts_update_map_py",
@@ -7912,7 +7956,7 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L29",
       "weight": 1.0,
       "_src": "scripts_update_map_py",
@@ -7924,7 +7968,7 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L92",
       "weight": 1.0,
       "_src": "scripts_update_map_py",
@@ -7936,7 +7980,7 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L1",
       "weight": 1.0,
       "_src": "update_map_rationale_1",
