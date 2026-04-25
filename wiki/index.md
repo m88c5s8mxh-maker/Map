@@ -30,6 +30,8 @@
 | [[audit-support]] | SOX 404 Compliance und Kontrolltests | raw/skills/ | 2026-04-17 |
 | [[brand-guidelines]] | Markenfarben und Typografie anwenden | raw/skills/ | 2026-04-17 |
 | [[brand-review]] | Inhalte gegen Markenstimme prüfen | raw/skills/ | 2026-04-17 |
+| [[browser-use]] | Browser-Steuerung: Klicken, Forms, Screenshots (Community Plugin) | raw/skills/ | 2026-04-24 |
+| [[brutalist-skill]] | Industrial Brutalism UI — Swiss-Typ + Military-Terminal Ästhetik | raw/skills/ | 2026-04-24 |
 | [[build-dashboard]] | Interaktives HTML-Dashboard bauen | raw/skills/ | 2026-04-17 |
 | [[build-with-claude-code]] | SaaS-Tools selbst bauen für $0 | raw/skills/ | 2026-04-17 |
 | [[call-prep]] | Call-Vorbereitung mit Common Room Signalen | raw/skills/ | 2026-04-17 |
@@ -40,6 +42,7 @@
 | [[change-request]] | Change-Management-Antrag mit Rollback-Plan | raw/skills/ | 2026-04-17 |
 | [[claude-efficiency]] | 8 Fixes für Kontext-Fenster-Effizienz | raw/skills/ | 2026-04-17 |
 | [[claude-max-effort]] | Claude's Effort-Reduktion beheben | raw/skills/ | 2026-04-17 |
+| [[claude-mem]] | Persistentes Gedächtnis zwischen Sessions (Community Plugin) | raw/skills/ | 2026-04-24 |
 | [[close-management]] | Monatsabschluss-Prozess verwalten | raw/skills/ | 2026-04-17 |
 | [[code-review]] | Code auf Sicherheit und Performance reviewen | raw/skills/ | 2026-04-17 |
 | [[comp-analysis]] | Vergütungsanalyse und Equity-Modellierung | raw/skills/ | 2026-04-17 |
@@ -57,6 +60,7 @@
 | [[data-context-extractor]] | Datenkontext-Skill aus Tribal Knowledge | raw/skills/ | 2026-04-17 |
 | [[data-visualization]] | Datenvisualisierungen mit matplotlib/plotly | raw/skills/ | 2026-04-17 |
 | [[debug]] | Strukturierte Debugging-Session | raw/skills/ | 2026-04-17 |
+| [[design]] | Design Advisor — branchenspezifische UI/UX-Empfehlungen | raw/skills/ | 2026-04-24 |
 | [[deploy-checklist]] | Pre-Deployment-Verifikation | raw/skills/ | 2026-04-17 |
 | [[design-critique]] | Strukturiertes Design-Feedback | raw/skills/ | 2026-04-17 |
 | [[design-handoff]] | Developer-Handoff-Specs aus Design | raw/skills/ | 2026-04-17 |
@@ -70,8 +74,10 @@
 | [[draft-outreach]] | Prospect recherchieren + Outreach verfassen | raw/skills/ | 2026-04-17 |
 | [[email-sequence]] | Multi-E-Mail-Sequenz mit Branching | raw/skills/ | 2026-04-17 |
 | [[email-sorter]] | E-Mails in Gmail-Labels einordnen | raw/skills/ | 2026-04-17 |
+| [[emil-design-eng]] | Emil Kowalski's UI-Polish & Animation-Philosophie (Community Plugin) | raw/skills/ | 2026-04-24 |
 | [[enrich-lead]] | Lead-Anreicherung → vollständige Kontaktkarte | raw/skills/ | 2026-04-17 |
 | [[explore-data]] | Datensatz profilieren | raw/skills/ | 2026-04-17 |
+| [[everything-claude-code]] | Full Performance System: Skills, Memory, Security (Community Plugin) | raw/skills/ | 2026-04-24 |
 | [[financial-statements]] | GuV, Bilanz, Kapitalflussrechnung | raw/skills/ | 2026-04-17 |
 | [[forecast]] | Gewichtete Sales-Prognose mit Szenarien | raw/skills/ | 2026-04-17 |
 | [[emil-kowalski]] | Design Engineer, Autor Sonner & Vaul — Animations-Philosophie & UI-Polish | raw/skills/emil-design-eng.md | 2026-04-22 |
