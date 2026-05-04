@@ -54,77 +54,206 @@ Gilt für: Metallbau, Maschinenbau, Handwerksbetriebe, Bauunternehmen, Industrie
 ## Sektionsreihenfolge
 
 1. **Navigation** — Logo + Links + "Anfrage stellen" CTA Button
-2. **Hero** — Starke Headline + Subline + 2 CTAs + Trust-Badge (z.B. "Seit 1987", "TÜV-zertifiziert")
+2. **Hero** — Starke Headline + Subline + 2 CTAs + Trust-Badge (Seit GRÜNDUNGSJAHR / Zertifikat)
 3. **Leistungen** — 3–6 Karten (Icon + Titel + Kurzbeschreibung)
-4. **Über uns / Warum wir** — Firmengeschichte, Werte, Team-Foto Placeholder
-5. **Zahlen & Fakten** — 3–4 Kennzahlen (Jahre Erfahrung, Mitarbeiter, Projekte, Kunden)
-6. **Referenzen / Projekte** — 3 Beispiel-Projekte oder Kundenstimmen
-7. **Zertifikate & Partner** — Logo-Leiste (Platzhalter)
-8. **Kontakt** — Formular + Adresse + Karte-Link + Ansprechpartner
-9. **Footer** — Schnelllinks, Rechtliches, Social Media
+4. **Über uns** — Firmengeschichte aus GRÜNDUNGSJAHR, Werte, Team
+5. **Zahlen & Fakten** — Aus Brief: GRÜNDUNGSJAHR → Jahre, MITARBEITERZAHL, Projektanzahl aus REFERENZKUNDEN
+6. **Referenzen / Projekte** — Aus REFERENZKUNDEN: 3 Beispiele als Cards
+7. **Zertifikate & Partner** — Aus ZERTIFIKATE: als Badge-Liste oder Logo-Leiste
+8. **Kontakt** — Formular + echte Adresse + Karte-Link + Ansprechpartner
+9. **Impressum** — Vollständig (§5 TMG)
+10. **Footer** — Schnelllinks, Rechtliches
+
+---
+
+## Zahlen-Sektion (aus Brief-Daten befüllt)
+
+```html
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat reveal">
+        <span class="stat-number">[aktuelles Jahr - GRÜNDUNGSJAHR]</span>
+        <span class="stat-label">Jahre Erfahrung</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number">[MITARBEITERZAHL]</span>
+        <span class="stat-label">Mitarbeitende</span>
+      </div>
+      <!-- Weiteres aus BESONDERHEITEN wenn vorhanden -->
+    </div>
+  </div>
+</section>
+```
+
+```css
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 48px;
+  text-align: center;
+}
+.stat-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.stat-label {
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+```
+
+---
+
+## Referenzen-Rendering (aus REFERENZKUNDEN)
+
+Eingabe: Freitext wie "BMW Group München — Präzisionsfertigung für Motorenteile" oder einfach Kundennamen.
+
+```html
+<section id="referenzen" class="references-section">
+  <div class="container">
+    <h2>Unsere Referenzen</h2>
+    <div class="references-grid">
+      <!-- Pro Referenz-Eintrag: -->
+      <div class="reference-card reveal">
+        <div class="reference-icon">
+          <i class="ph ph-buildings"></i>
+        </div>
+        <div>
+          <h3>[Kundenname]</h3>
+          <p>[Projektbeschreibung — 1 Satz]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+---
+
+## Zertifikate-Rendering (aus ZERTIFIKATE)
+
+```html
+<section class="certifications-section">
+  <div class="container">
+    <p class="certs-label">Zertifizierungen & Mitgliedschaften</p>
+    <div class="certs-list">
+      <!-- Pro Zertifikat aus ZERTIFIKATE: -->
+      <div class="cert-badge">
+        <i class="ph ph-seal-check"></i>
+        <span>[Zertifikat — z.B. "ISO 9001:2015"]</span>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+```css
+.certs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+.cert-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.cert-badge i {
+  color: var(--secondary);
+}
+```
 
 ---
 
 ## Hero-Formeln
 
 Gute Headline-Strukturen für Mittelstand:
-- `[Leistung] für [Zielgruppe] in [Region]` — "Präzisionsfertigung für die Automobilindustrie in Bayern"
+- `[Leistung] für [Zielgruppe] in [STADT]` — "Präzisionsfertigung für die Automobilindustrie in Bayern"
 - `Ihr Partner für [Kernleistung]` — "Ihr Partner für nachhaltigen Metallbau"
-- `[Adjektiv] [Leistung] seit [Jahr]` — "Zuverlässige Gebäudetechnik seit 1992"
+- `[Adjektiv] [Leistung] seit [GRÜNDUNGSJAHR]` — "Zuverlässige Gebäudetechnik seit 1992"
 
-Subline (immer): Ein konkreter Nutzen, keine Buzzwords.
+Trust-Badge im Hero: `"Seit [GRÜNDUNGSJAHR]"` oder erstes Zertifikat aus ZERTIFIKATE.
 
----
-
-## Komponenten-Spezifika
-
-**Leistungs-Karten:**
-```
-Icon (Phosphor, 32px, --primary) 
-Titel (H3, Outfit SemiBold)
-2 Sätze Beschreibung
-Optional: Link "Mehr erfahren →"
-```
-
-**Zahlen-Sektion:**
-```
-Großes Numeral (Outfit 800, clamp(3rem, 6vw, 6rem), --primary)
-Beschriftung darunter (Inter, --text-muted)
-4er Grid, zentriert
-```
-
-**Kundenstimmen:**
-```
-Zitat-Text (kursiv, --text)
-Name + Firma + Titel
-Optional: Firmenlogo
-```
-
-**Kontakt-Formular Felder:**
-- Name (required)
-- E-Mail (required)  
-- Telefon (optional)
-- Betreff (Select: Anfrage / Termin / Sonstiges)
-- Nachricht (Textarea, 4 rows)
-- Submit: "Anfrage senden →"
+Subline: Ein konkreter Nutzen, keine Buzzwords — aus LEISTUNGEN ableiten.
 
 ---
 
-## Vertrauens-Elemente (immer einbauen)
+## Kontaktformular
 
-- Gründungsjahr prominent ("Seit 1987")
-- Mitarbeiterzahl oder Projektanzahl
-- Regionaler Bezug ("in Bayern ansässig", "bundesweit tätig")
-- Zertifikate (ISO, TÜV, Innungsmitglied)
-- Konkrete Kundenlogos oder -namen wenn vorhanden
+```html
+<form class="contact-form">
+  <div class="form-group">
+    <label for="name">Name *</label>
+    <input type="text" id="name" required>
+  </div>
+  <div class="form-group">
+    <label for="email">E-Mail *</label>
+    <input type="email" id="email" required>
+  </div>
+  <div class="form-group">
+    <label for="phone">Telefon</label>
+    <input type="tel" id="phone">
+  </div>
+  <div class="form-group">
+    <label for="subject">Betreff</label>
+    <select id="subject">
+      <option>Anfrage</option>
+      <option>Termin</option>
+      <option>Sonstiges</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="message">Nachricht *</label>
+    <textarea id="message" rows="4" required></textarea>
+  </div>
+  <button type="submit" class="btn-primary">Anfrage senden →</button>
+</form>
+```
 
 ---
 
 ## Häufige Fehler vermeiden
 
 - NICHT: "Wir sind Ihr kompetenter Partner für..." (Floskel)
-- STATTDESSEN: Spezifische Leistung + messbaren Nutzen nennen
-- NICHT: Generische Stock-Foto-Ästhetik
-- STATTDESSEN: Industrielle Ästhetik, technische Präzision im Layout
+- STATTDESSEN: Spezifische Leistung + messbaren Nutzen aus LEISTUNGEN
 - NICHT: Zu viele Farben, zu viel Bewegung
 - STATTDESSEN: Ruhig, strukturiert, Qualität durch Reduktion
+- NICHT: Gründungsjahr verstecken
+- STATTDESSEN: Prominente Trust-Badges — "Seit [GRÜNDUNGSJAHR]" im Hero sichtbar
+
+---
+
+## Schema.org für Mittelstand
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "[FIRMENNAME]",
+  "description": "[aus LEISTUNGEN generiert]",
+  "foundingDate": "[GRÜNDUNGSJAHR]",
+  "numberOfEmployees": "[MITARBEITERZAHL]",
+  "telephone": "[TELEFON]",
+  "email": "[EMAIL]",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[STRASSE]",
+    "addressLocality": "[ORT]",
+    "postalCode": "[PLZ]",
+    "addressCountry": "DE"
+  }
+}
+```
