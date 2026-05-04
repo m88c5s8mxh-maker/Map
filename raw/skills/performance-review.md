@@ -147,3 +147,22 @@ If **~~project tracker** is connected:
 2. **Balance positive and constructive** — Both are essential. Neither should be a surprise.
 3. **Focus on behaviors, not personality** — "Your documentation has been incomplete" vs. "You're careless."
 4. **Make development actionable** — "Improve communication" is vague. "Present at the next team all-hands" is actionable.
+
+---
+
+## Related Skills & Workflows
+
+**Before this skill:**
+- `/people-report` — performance distribution context
+- `/metrics-review` — data on team member's output
+
+**After this skill:**
+- `/comp-analysis` — compensation review after performance
+- `/draft-offer` — promotion offer letter
+- `/org-planning` — team structure changes from review
+- `/capacity-plan` — headcount decisions post-review
+- `/onboarding` — new hires joining after backfills
+
+**Full HR Lifecycle:** `recruiting-pipeline` → `interview-prep` → `onboarding` → `performance-review` → `comp-analysis` → `org-planning`
+
+**See also:** `_SKILL_MAP.md` for the complete HR Employee Lifecycle Chain

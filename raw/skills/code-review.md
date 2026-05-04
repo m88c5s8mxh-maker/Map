@@ -8,6 +8,26 @@ argument-hint: "<PR URL, diff, or file path>"
 
 > If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](../../CONNECTORS.md).
 
+## Related Skills & Workflows
+
+**Before this skill:**
+- `/write-spec` — spec defines what was supposed to be built
+- `/system-design` — architecture decisions context
+- `/architecture` — ADR context for the design choices
+
+**After this skill:**
+- `/testing-strategy` — design tests for reviewed code
+- `/debug` — fix issues found in review
+- `/deploy-checklist` — prepare for deployment after review
+- `/tech-debt` — track issues that won't be fixed immediately
+- `/documentation` — document decisions made during review
+
+**Full Engineering Workflow:** `write-spec` → `system-design` → `code-review` → `testing-strategy` → `debug` → `deploy-checklist`
+
+**See also:** `_SKILL_MAP.md` for the complete Engineering Development Chain
+
+---
+
 Review code changes with a structured lens on security, performance, correctness, and maintainability.
 
 ## Usage

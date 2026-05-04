@@ -264,3 +264,23 @@ Use a clear, scannable format. Tables work well for roadmap items. Use text stat
 - Flag capacity issues early. If the roadmap has more work than the team can handle, say so.
 - Dependencies are the biggest risk to roadmaps. Surface them explicitly.
 - If the user asks to add something, always ask what comes off or moves. Roadmaps are zero-sum against capacity.
+
+---
+
+## Related Skills & Workflows
+
+**Input (run before):**
+- `/metrics-review` — current performance drives priorities
+- `/user-research` + `/research-synthesis` — user insights shape roadmap
+- `/product-brainstorming` — ideation before planning
+- `/write-spec` — spec out the items going on the roadmap
+
+**Output (run after):**
+- `/sprint-planning` — break roadmap items into sprints
+- `/stakeholder-update` — communicate roadmap changes to leadership
+- `/tech-debt` — ensure technical debt is represented on roadmap
+- `/capacity-plan` — validate team can deliver what's planned
+
+**Full Product Cycle:** `metrics-review` → `product-brainstorming` → `write-spec` → `roadmap-update` → `sprint-planning` → `standup`
+
+**See also:** `_SKILL_MAP.md` for the complete Product Management Loop

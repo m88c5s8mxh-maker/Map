@@ -117,3 +117,29 @@ When a chart would communicate results more effectively than a table:
 - If you know the table names, mention them to speed up the process
 - For complex questions, Claude may break them into multiple queries
 - Results are always validated before presentation -- if something looks off, Claude will flag it
+
+---
+
+## Related Skills & Workflows
+
+**Before this skill:**
+- `/explore-data` — profile the dataset first
+- `/data-context-extractor` — extract tribal knowledge about data meaning
+- `/sql-queries` — write the underlying queries
+
+**After this skill:**
+- `/validate-data` — QA check before sharing
+- `/create-viz` — visualize findings
+- `/data-visualization` — more chart options with matplotlib/plotly
+- `/build-dashboard` — interactive results dashboard
+- `/metrics-review` — frame findings as product metrics
+- `/statistical-analysis` — add statistical significance testing
+
+**Cross-domain:**
+- `/variance-analysis` — same skill, finance framing
+- `/forecast` — extend analysis into predictions
+- `/stakeholder-update` — package findings for leadership
+
+**Full Analytics Workflow:** `explore-data` → `sql-queries` → `analyze` → `validate-data` → `create-viz` → `build-dashboard`
+
+**See also:** `_SKILL_MAP.md` for the complete Data Analytics Stack

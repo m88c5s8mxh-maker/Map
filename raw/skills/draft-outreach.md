@@ -438,3 +438,23 @@ Best,
 ## Email Draft Status
 Draft created - check ~~email
 ```
+
+---
+
+## Related Skills & Workflows
+
+**Before this skill:**
+- `/prospect` — build the lead list first
+- `/enrich-lead` — get verified email/phone before writing
+- `/contact-research` — deep research on the person
+- `/account-research` — company context for personalization
+
+**After this skill:**
+- `/email-sequence` — turn this email into a multi-touch sequence
+- `/sequence-load` — push contact into Apollo sequence
+- `/call-prep` — prepare for the follow-up call
+- `/compose-outreach` — signal-driven version with CRM context
+
+**Full Sales Workflow:** `prospect` → `enrich-lead` → `draft-outreach` → `email-sequence` → `call-prep` → `pipeline-review`
+
+**See also:** `_SKILL_MAP.md` for the complete Sales Funnel Chain

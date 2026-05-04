@@ -333,3 +333,23 @@ Cash and cash equivalents, end of period
 4. **Discontinued operations:** Reclassify results of discontinued operations to a separate line item
 5. **Equity method adjustments:** Record share of investee income/loss for equity method investments
 6. **Segment reclassifications:** Ensure transactions are properly classified by operating segment
+
+---
+
+## Related Skills & Workflows
+
+**Before this skill:**
+- `/close-management` — month-end close drives the statements
+- `/journal-entry` + `/journal-entry-prep` — underlying transactions
+- `/reconciliation` — GL vs. bank verified before statements
+
+**After this skill:**
+- `/variance-analysis` — explain the budget vs. actual differences
+- `/forecast` — project forward from current actuals
+- `/audit-support` + `/sox-testing` — compliance layer
+- `/stakeholder-update` — present findings to board/investors
+- `/pdf` or `/pptx` — package statements for distribution
+
+**Full Finance Workflow:** `journal-entry` → `close-management` → `financial-statements` → `variance-analysis` → `reconciliation` → `audit-support`
+
+**See also:** `_SKILL_MAP.md` for the complete Finance & Accounting Chain

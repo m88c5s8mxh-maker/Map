@@ -306,3 +306,24 @@ Present the full campaign brief with clear headings and formatting. After the br
 - Draft specific content pieces from the calendar?
 - Create a competitive analysis to inform the messaging?
 - Adjust the plan for a different budget or timeline?"
+
+---
+
+## Related Skills & Workflows
+
+**Before this skill:**
+- `/competitive-intelligence` — understand competitors before positioning
+- `/competitive-brief` — quick competitor overview
+- `/brand-guidelines` — apply brand voice to campaign
+
+**After this skill:**
+- `/draft-content` — write the actual content pieces
+- `/content-creation` — multi-channel content from the brief
+- `/email-sequence` — newsletter/nurture tracks from the campaign
+- `/ux-copy` — microcopy, CTAs, landing page copy
+- `/seo-audit` — optimize content for search visibility
+- `/performance-report` — measure campaign results
+
+**Full Marketing Workflow:** `competitive-intelligence` → `campaign-plan` → `draft-content` → `email-sequence` → `seo-audit` → `performance-report`
+
+**See also:** `_SKILL_MAP.md` for the complete Content Marketing Chain

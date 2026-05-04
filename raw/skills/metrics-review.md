@@ -386,3 +386,28 @@ Use tables for the scorecard. Use clear status indicators. Keep the summary tigh
 - Not all metric movements matter. Small fluctuations are noise. Focus attention on meaningful changes.
 - If a metric is missing its target, do not just report the miss — recommend what to do about it.
 - Metrics reviews should drive decisions. If the review does not lead to at least one action, it was not useful.
+
+---
+
+## Related Skills & Workflows
+
+**Data layer (run first):**
+- `/analyze` — deep-dive on specific metric questions
+- `/explore-data` — profile the underlying dataset
+- `/sql-queries` — pull raw numbers from the warehouse
+- `/statistical-analysis` — hypothesis tests, trend significance
+
+**Output layer (run after):**
+- `/build-dashboard` — turn findings into an interactive dashboard
+- `/create-viz` — publication-ready charts from the data
+- `/validate-data` — QA before sharing externally
+- `/stakeholder-update` — format findings for leadership
+
+**Product cycle:**
+- `/roadmap-update` — update roadmap based on metric findings
+- `/variance-analysis` — financial perspective on the same numbers
+- `/forecast` — sales/revenue projections from current trends
+
+**Full Analytics Workflow:** `explore-data` → `sql-queries` → `analyze` → `metrics-review` → `build-dashboard` → `stakeholder-update`
+
+**See also:** `_SKILL_MAP.md` for the complete Data Analytics Stack

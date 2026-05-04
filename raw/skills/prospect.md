@@ -88,3 +88,20 @@ Ask the user:
 3. **Deep-dive a company** — Run `/apollo:company-intel` on any company from the list
 4. **Refine the search** — Adjust filters and re-run
 5. **Export** — Format leads as a CSV-style table for easy copy-paste
+
+---
+
+## Related Skills & Workflows
+
+**Next in Sales Chain:**
+- `/enrich-lead` — deepen individual lead profiles with verified data
+- `/contact-research` — manual deep-dive on a specific person
+- `/account-research` — full company intel before outreach
+- `/draft-outreach` — write personalized first email from lead data
+- `/compose-outreach` — signal-driven outreach with CRM context
+- `/email-sequence` — build multi-touch sequence for the lead list
+- `/sequence-load` — push leads directly into Apollo sequence
+
+**Full Sales Workflow:** `prospect` → `enrich-lead` → `draft-outreach` → `email-sequence` → `call-prep` → `pipeline-review` → `forecast`
+
+**See also:** `_SKILL_MAP.md` for the complete Sales Funnel Chain

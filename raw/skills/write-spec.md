@@ -248,3 +248,24 @@ Use markdown with clear headers. Keep the document scannable — busy stakeholde
 - Success metrics should be specific and measurable, not vague ("improve user experience").
 - Non-goals are as important as goals. They prevent scope creep during implementation.
 - Open questions should be genuinely open — do not include questions you can answer from context.
+
+---
+
+## Related Skills & Workflows
+
+**Before this skill:**
+- `/product-brainstorming` — ideation before writing the spec
+- `/user-research` + `/research-synthesis` — user insights inform the spec
+- `/metrics-review` — current data informs the problem statement
+- `/competitive-brief` — competitor context for the feature
+
+**After this skill:**
+- `/system-design` — architecture design from the spec
+- `/architecture` — create ADR for key decisions
+- `/roadmap-update` — add the spec'd feature to roadmap
+- `/sprint-planning` — break spec into sprint tasks
+- `/testing-strategy` — write tests against the acceptance criteria
+
+**Full Engineering Workflow:** `write-spec` → `system-design` → `code-review` → `testing-strategy` → `deploy-checklist`
+
+**See also:** `_SKILL_MAP.md` for the complete Engineering Development Chain

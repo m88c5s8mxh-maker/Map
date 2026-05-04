@@ -243,3 +243,22 @@ You can tell me to weight differently: "Focus on big deals over soon deals" or "
 2. **Kill dead deals** — Stale opportunities inflate your pipeline and distort forecasts. Be ruthless.
 3. **Multi-thread everything** — If one person goes dark, you need a backup contact.
 4. **Close dates should mean something** — A close date is when you expect signature, not when you hope for one.
+
+---
+
+## Related Skills & Workflows
+
+**Before this skill:**
+- `/prospect` — fills the top of the pipeline
+- `/enrich-lead` — enriches leads already in pipeline
+- `/call-summary` — call notes should feed pipeline updates
+
+**After this skill:**
+- `/forecast` — project pipeline to revenue
+- `/daily-briefing` — operationalize the weekly action plan
+- `/create-an-asset` — generate deal-specific assets for stuck deals
+- `/compose-outreach` — re-engage stale opportunities
+
+**Full Sales Workflow:** `prospect` → `draft-outreach` → `call-prep` → `call-summary` → `pipeline-review` → `forecast`
+
+**See also:** `_SKILL_MAP.md` for the complete Sales Funnel Chain
