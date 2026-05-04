@@ -355,8 +355,7 @@
       "source_file": "generate_pdf.py",
       "source_location": "L1",
       "id": "generate_pdf_py",
-      "community": 36,
-      "norm_label": "generate_pdf.py"
+      "community": 36
     },
     {
       "label": "cat_color()",
@@ -364,8 +363,7 @@
       "source_file": "generate_pdf.py",
       "source_location": "L170",
       "id": "generate_pdf_cat_color",
-      "community": 36,
-      "norm_label": "cat_color()"
+      "community": 36
     },
     {
       "label": "sty()",
@@ -373,44 +371,39 @@
       "source_file": "generate_pdf.py",
       "source_location": "L189",
       "id": "generate_pdf_sty",
-      "community": 36,
-      "norm_label": "sty()"
+      "community": 36
     },
     {
       "label": "update_map.py",
       "file_type": "code",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L1",
       "id": "scripts_update_map_py",
-      "community": 26,
-      "norm_label": "update_map.py"
+      "community": 26
     },
     {
       "label": "rebuild_code()",
       "file_type": "code",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L19",
       "id": "update_map_rebuild_code",
-      "community": 26,
-      "norm_label": "rebuild_code()"
+      "community": 26
     },
     {
       "label": "update_index()",
       "file_type": "code",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L29",
       "id": "update_map_update_index",
-      "community": 26,
-      "norm_label": "update_index()"
+      "community": 26
     },
     {
       "label": "update_html()",
       "file_type": "code",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L92",
       "id": "update_map_update_html",
-      "community": 26,
-      "norm_label": "update_html()"
+      "community": 26
     },
     {
       "label": "update_map.py \u2014 Wird von der GitHub Action aufgerufen. Generiert graphify-out/in",
@@ -7951,7 +7944,7 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L19",
       "weight": 1.0,
       "_src": "scripts_update_map_py",
@@ -7963,7 +7956,7 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L29",
       "weight": 1.0,
       "_src": "scripts_update_map_py",
@@ -7975,7 +7968,7 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L92",
       "weight": 1.0,
       "_src": "scripts_update_map_py",
@@ -7987,7 +7980,7 @@
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "scripts\\update_map.py",
+      "source_file": "scripts/update_map.py",
       "source_location": "L1",
       "weight": 1.0,
       "_src": "update_map_rationale_1",
