@@ -135,6 +135,36 @@ Wenn kein Bild-URL geliefert wurde: CSS-generiertes Visual (Gradient, Shapes) �
 
 ---
 
+### Video-Integration (wenn Videomaterial vorhanden)
+
+**Pfad-Konvention — niemals Base64 für Videos (Dateien zu groß):**
+```html
+<video autoplay muted loop playsinline preload="auto">
+  <source src="../assets/hero.mp4" type="video/mp4">
+</video>
+```
+
+**Attribut-Regeln:**
+| Anwendung | Attribute |
+|-----------|-----------|
+| Hero-Loop | `autoplay muted loop playsinline preload="auto"` |
+| Scroll-Scrub | `preload="auto" muted playsinline` — KEIN `autoplay` |
+| Below-Fold | `preload="none" muted playsinline` |
+
+**Performance-Pflichten:**
+- Kein `autoplay` bei Scroll-Scrub-Videos — verhindert Konflikt mit manuellem `currentTime`
+- `will-change: transform` auf dem Video-Element wenn Parallax/Scale-Animation
+- `contain: paint layout` auf dem Sticky-Container
+- Mobile: Scrub-Video durch statisches Poster ersetzen (`@media (max-width: 768px) { .scrub-outer { display: none; } }`)
+
+**Komprimierung (Checkliste vor Deployment):**
+- Format: H.264 MP4, max. 30 fps
+- Hero-Loop: ≤5 MB, 720p
+- Scrub-Video: ≤10 MB, 1080p
+- Befehl: `ffmpeg -i input.mp4 -vcodec h264 -crf 28 -preset slow output.mp4`
+
+---
+
 ### Logo-Handling
 
 ```html
@@ -384,6 +414,70 @@ Wenn kein Bild-URL geliefert wurde: CSS-generiertes Visual (Gradient, Shapes) �
 - Alle Formularfelder mit `<label>`
 - Skip-Link für Tastaturnavigation
 - Telefonnummer überall als `<a href="tel:...">` — nie als reiner Text
+
+---
+
+### Animation & Motion System
+
+**MOTION_INTENSITY Levels (definiert im Branchenprofil):**
+
+| Level | Branche | Erlaubte Techniken |
+|-------|---------|-------------------|
+| 1–2 | Arztpraxis | Nur `opacity` transitions (0.3s ease), kein Autoplay |
+| 3–4 | Mittelstand, Gastronomie Standard | Fade-up on scroll, Nav backdrop-blur |
+| 5–6 | Gastronomie Premium, Agentur | Kinetic Type Reveal, Marquee Strip, Float-Animation |
+| 7–8 | Agentur Premium, Premium Food | Scroll Scrub, 3D Mouse-Tilt, Lerp-Loops, Parallax Scale |
+
+**Goldene Regel — IMMER:**
+- Nur `transform` und `opacity` animieren — NIEMALS `width`, `height`, `top`, `left`, `margin`
+- `will-change: transform` auf animierten Elementen
+- Scroll-Listener immer `{ passive: true }`
+- RAF (`requestAnimationFrame`) für JS-Animationen — kein `setInterval`
+- `@media (prefers-reduced-motion: reduce)` am Ende des CSS-Blocks
+
+**Scroll Reveal Pattern (MOTION_INTENSITY 3+):**
+```css
+.fade-up {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.fade-up.in { opacity: 1; transform: none; }
+```
+```javascript
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }});
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+```
+
+**CSS Marquee Strip Pattern (MOTION_INTENSITY 5+) — Inhalte 2× duplizieren:**
+```css
+.marquee-track {
+  display: inline-flex;
+  animation: marqueeRun 24s linear infinite;
+  will-change: transform;
+}
+@keyframes marqueeRun {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); } /* −50% weil Inhalt 2× dupliziert */
+}
+```
+
+**Scroll-Scrub Pattern (MOTION_INTENSITY 7+) — kritische Regeln:**
+- KEIN `isSeeking`-Flag — Browser ersetzen in-flight Seeks automatisch beim nächsten `currentTime`-Assignment; ein Flag blockiert neue Seeks → Video friert ein
+- Geometry einmalig cachen: `outerTop = el.getBoundingClientRect().top + window.scrollY` — nie im Scroll-Handler
+- Lerp für butterweichen Übergang: `currentProg += (target - currentProg) * 0.12` im RAF-Loop
+- `video.pause()` nicht nach jedem Seek aufrufen — Video war nie am Spielen (kein `autoplay`)
+
+**Reduced Motion Abschluss-Block (IMMER am Ende des `<style>`):**
+```css
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+```
 
 ---
 
