@@ -1,0 +1,22 @@
+---
+source_file: "skills/llms.txt"
+type: "document"
+community: "Community 2"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_2
+---
+
+# llms.txt Skill Index
+
+## Connections
+- [[High-End Visual Design  Soft UI (soft-skill)]] - `references` [EXTRACTED]
+- [[Industrial Brutalism & Tactical Telemetry UI (brutalist-skill)]] - `references` [EXTRACTED]
+- [[Premium Utilitarian Minimalism UI (minimalist-skill)]] - `references` [EXTRACTED]
+- [[Redesign Existing Projects (redesign-skill)]] - `references` [EXTRACTED]
+- [[Stitch Design Taste Skill (stitch-skill)]] - `references` [EXTRACTED]
+- [[Taste Skill (design-taste-frontend)]] - `references` [EXTRACTED]
+- [[output-skill — Stops AI from being lazy, prevents placeholder comments and skipped code]] - `references` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_2

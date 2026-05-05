@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f graphify-out/index.md ]; then echo '{\"hookSpecificOutput\": {\"hookEventName\": \"SessionStart\", \"additionalContext\": \"GRAPHIFY MAP AKTIV: Lies zuerst graphify-out/index.md bevor du Dateien öffnest. Token-Budget: Map=~280 Tokens, alle Dateien=~20000 Tokens.\"}}'; fi",
+            "statusMessage": "Graphify Map wird geladen..."
+          }
+        ]
+      }
+    ]
+  }
+}

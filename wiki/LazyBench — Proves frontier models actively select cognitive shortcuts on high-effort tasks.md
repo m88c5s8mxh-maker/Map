@@ -1,0 +1,20 @@
+---
+source_file: "raw/skills/taste-skill/research/laziness/findings/references.md"
+type: "document"
+community: "Community 0"
+location: "Cited Studies: LazyBench"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_0
+---
+
+# LazyBench — Proves frontier models actively select cognitive shortcuts on high-effort tasks
+
+## Connections
+- [[Cognitive Shortcuts — LazyBench models reduce reasoning depth on perceived-simple or long-context tasks]] - `evidenced_by` [EXTRACTED]
+- [[LLM Laziness Research References]] - `cites` [EXTRACTED]
+- [[LazyBench Cognitive Shortcutting Discovery]] - `cites` [EXTRACTED]
+- [[Research References — EmotionPrompt, LazyBench, Compounding Error Avoidance, Winter Break Hypothesis]] - `cites` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_0
