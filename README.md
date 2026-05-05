@@ -113,7 +113,14 @@ Mit **Obsidian Git** Plugin synchronisiert Obsidian automatisch per `git pull/pu
 
 ## Zusammenarbeit
 
-- Beide klonen das Repo und führen `./setup.sh` aus
+- Alle klonen das Repo und führen `./setup.sh` aus
 - Änderungen committen & pushen → GitHub Action baut Map neu
 - `git pull` → neueste Map + Wiki erhalten
 - Bei Konflikten in `wiki/`: Markdown-Merge wie normaler Code
+
+### Aktive Kollaboratoren
+
+| Name | GitHub |
+|------|--------|
+| Tyrone | [@m88c5s8mxh-maker](https://github.com/m88c5s8mxh-maker) |
+| Mc | [@MCMORIO](https://github.com/MCMORIO) |
