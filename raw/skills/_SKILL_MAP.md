@@ -49,12 +49,13 @@ Full end-to-end: Brief → Design → Review → Handoff → Implementation
 [accessibility-review]
 
 Style layer (pick one):
-[taste-skill]         ← Senior UI, anti-generic, premium
-[brutalist-skill]     ← Industrial, Swiss typography, military terminal
-[minimalist-skill]    ← Warm monochrome, editorial, flat bento
-[manus-vacu-landing]  ← Dark glassmorphism landing pages
-[stitch-skill]        ← Google Stitch DESIGN.md system
-[emil-design-eng]     ← Animation polish, spring physics
+[taste-skill]                ← Senior UI, anti-generic, premium
+[brutalist-skill]            ← Industrial, Swiss typography, military terminal
+[minimalist-skill]           ← Warm monochrome, editorial, flat bento
+[manus-vacu-landing]         ← Dark glassmorphism landing pages
+[stitch-skill]               ← Google Stitch DESIGN.md system
+[emil-design-eng]            ← Animation polish, spring physics
+[immersive-web-experience]   ← Cinematic scroll-driven 4-phase pipeline (Director → System → Code → Review)
 ```
 
 **When to chain:**
@@ -62,6 +63,8 @@ Style layer (pick one):
 - Design review → `design-critique` + `accessibility-review`
 - Handoff to dev → `design-handoff` + `design-system`
 - Brand work → `brand-guidelines` + `brand-review` + `canvas-design`
+- Cinematic landing page → `brand-guidelines` + `immersive-web-experience` (runs 4 phases internally)
+- Luxury product showcase → `manus-vacu-landing` + `immersive-web-experience` + `canvas-design`
 
 ---
 
