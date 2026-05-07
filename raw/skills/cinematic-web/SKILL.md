@@ -1007,9 +1007,288 @@ Nach Lieferung anbieten:
 
 ---
 
+---
+
+## Schritt 9 — 3D Walkthrough Mode (Three.js)
+
+Wenn der Nutzer eine **3D-animierte Website** möchte, bei der die Kamera durch einen echten Raum fliegt (Lokal, Hotel, Showroom, Galerie, Immobilie), aktiviere diesen Modus statt des 2D Scroll-Erlebnisses.
+
+### Wann 3D Walkthrough nutzen
+
+| Branche | Anwendung |
+|---------|-----------|
+| Gastronomie | Kamera fliegt durch Restaurant, Gerichte erscheinen auf Tischen |
+| Hotel / Immobilie | Kamera läuft durch Zimmer, Lobby, Außenbereich |
+| Showroom / Auto | Kamera umkreist Produkt, Details zoomen herein |
+| Galerie / Museum | Kamera gleitet an Kunstwerken vorbei |
+| Event-Location | Kamera zeigt Raum-Atmosphäre und Stimmung |
+
+### Tech-Stack (zusätzlich zu Standard-Stack)
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<!-- GSAP + ScrollTrigger + Lenis wie gehabt -->
+```
+
+Wichtig: Three.js als **UMD-Build** (`.min.js`), KEINE ES-Module-Imports.
+
+---
+
+### Architektur
+
+```
+700vh Scroll-Wrapper (#cv-wrap)
+  └── position: relative, height: 700vh
+
+Fixed Canvas (#cvs)
+  └── position: fixed, inset: 0, z-index: 0
+
+HTML Overlays (.ov)
+  └── position: fixed, z-index: 10
+  └── fade in/out per GSAP basierend auf scroll-Fortschritt
+
+ScrollTrigger scrub
+  └── scrollProg: 0 → 1 mapped auf 700vh
+  └── CatmullRomCurve3.getPoint(scrollProg) → Kamera-Position
+```
+
+---
+
+### Kamera-Pfad konfigurieren
+
+```javascript
+/* CAM_PTS — Kamera-Positionen entlang des Wegs [x, y, z]
+   y = Augenhöhe über Boden (z.B. 0.40 = ca. 1.6m wenn FY=-1.2)
+   z = Tiefenachse (positiv = außen/vorne, negativ = hinten)
+   x = Seitenachse (negativ = links, positiv = rechts) */
+
+const CAM_PTS = [
+  [0,    0.42, 40],   // Außen — Blick auf Gebäude
+  [0,    0.42, 27],   // Eingang
+  [0.15, 0.40, 21],   // Drinnen, kurz nach Eingang
+  [0.6,  0.40, 17],   // Zu Station 1 (rechts)
+  [1.3,  0.40, 14],   // AN Station 1
+  [0.4,  0.40,  9],   // Mittelgang
+  [-1.3, 0.40,  2],   // AN Station 2 (links)
+  [-0.4, 0.40, -4],   // Mittelgang
+  [1.3,  0.40,-11],   // AN Station 3 (rechts)
+  [0,    0.40,-18],   // Ausgang / Exit
+];
+
+/* LOOK_PTS — wohin die Kamera schaut [x, y, z]
+   y = -0.46 → schaut auf Tischoberfläche (TY)
+   y =  4.5  → schaut nach oben (z.B. auf Schild) */
+
+const LOOK_PTS = [
+  [0,    4.5, 28.5], // Schild am Gebäude
+  [0,    2.5, 28.5], // Tür / Eingang
+  [0,    0.4,  20],  // Interior scannen
+  [2.5,  0.0,  14],  // Station 1 anvisieren
+  [2.5, -0.46, 14],  // Produkt auf Tisch betrachten
+  [-2.5,-0.46,  2],  // Station 2
+  [2.5, -0.46,-11],  // Station 3
+  [0,    0.5, -26],  // Exit
+];
+```
+
+**Spline-Erzeugung:**
+```javascript
+// tension 0.45 = weiche S-Kurven (Wert 0.0 = gerade Linien, 1.0 = sehr kurvig)
+camSpline  = new THREE.CatmullRomCurve3(CAM_PTS.map(p  => new THREE.Vector3(...p)), false, 'catmullrom', 0.45);
+lookSpline = new THREE.CatmullRomCurve3(LOOK_PTS.map(p => new THREE.Vector3(...p)), false, 'catmullrom', 0.45);
+```
+
+---
+
+### Szenen-Elemente
+
+#### Innenraum (buildInterior)
+
+```javascript
+const RW   = 9;    // Raumbreite in Metern
+const CEIL = 2.7;  // Deckenhöhe
+const FY   = -1.2; // Boden-Y (Kamera y=0.40 → Augenhöhe = FY + 1.6m)
+const LEN  = 54;   // Raumlänge (z: -LEN/2 bis +LEN/2)
+```
+
+**Wichtig: LEN so wählen, dass die Kamera am Startpunkt (z=40) mind. 10m freien Außenblick hat:**
+- `LEN = 54` → Wand beginnt bei z=27 → 13m frei vor der Wand ✓
+- `LEN = 72` → Wand beginnt bei z=36 → nur 4m frei → Kamera sieht gleich Innenraum ✗
+
+#### Produktstationen (addStation)
+
+Eine Station = ein Tisch mit Produkt-Foto flach darauf:
+
+```javascript
+addStation({
+  x: 2.5,              // Tisch-X-Position (rechte Seite)
+  z: 14,               // Tisch-Z-Position
+  ry: 0.5,             // Y-Rotation (Winkel zum Gang hin)
+  src: 'produkt.jpg',  // Lokale Bild-Datei (relativ zur HTML)
+  fb: 'https://...'    // Fallback-URL wenn lokal nicht ladbar
+});
+```
+
+**Foto liegt FLACH auf dem Tisch:**
+```javascript
+// PlaneGeometry horizontal
+panel.rotation.x = -Math.PI / 2;
+panel.position.set(x, TY + 0.012, z); // TY = -0.46 = Tischoberfläche
+```
+
+**Amber-Fallback:** Wenn Bild nicht lädt, bleibt eine bernsteinfarbene Platte auf dem Tisch sichtbar.
+
+**Absoluter Pfad für zuverlässiges Laden:**
+```javascript
+img.src = window.location.origin
+        + window.location.pathname.replace(/[^/]*$/, '')
+        + cfg.src;
+```
+
+#### Prozeduraler Beton / Wand-Textur
+
+Ohne externe Asset-Abhängigkeit — Canvas generiert Textur direkt in JS:
+
+```javascript
+function makeConcreteTexture(baseHex, lineHex, w, h, lineSpacing) {
+  const cv = document.createElement('canvas');
+  cv.width = w || 512; cv.height = h || 512;
+  const ctx = cv.getContext('2d');
+  ctx.fillStyle = baseHex; ctx.fillRect(0, 0, cv.width, cv.height);
+  // Horizontale Schalungslinien
+  ctx.strokeStyle = lineHex; ctx.lineWidth = 1;
+  for(let y = 0; y < cv.height; y += (lineSpacing || 22)) {
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(cv.width, y); ctx.stroke();
+  }
+  // Zufällige Körnung
+  for(let i = 0; i < 4000; i++) {
+    const v = Math.floor(Math.random()*22+10).toString(16).padStart(2,'0');
+    ctx.fillStyle = `#${v}${v}${v}`;
+    ctx.fillRect(Math.random()*cv.width, Math.random()*cv.height, 1, 1);
+  }
+  const tex = new THREE.CanvasTexture(cv);
+  tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
+  return tex;
+}
+
+// Verwendung:
+const tex = makeConcreteTexture('#1c1a26', '#0e0c18', 512, 512, 20);
+tex.repeat.set(4, 2); // Wiederholungen je nach Fläche anpassen
+const mat = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.78 });
+```
+
+---
+
+### Beleuchtungs-Referenz
+
+```javascript
+// Ambient — Grundhelligkeit (zu dunkel wenn < 4.0)
+scene.add(new THREE.AmbientLight(0x3A2208, 5.5));
+
+// Hemisphere — Himmel / Boden Licht
+scene.add(new THREE.HemisphereLight(0x2A1408, 0x140804, 2.0));
+
+// Renderer Exposure — Gesamthelligkeit (2.5–3.5 für dramatisch aber lesbar)
+renderer.toneMappingExposure = 3.2;
+
+// Fog — leicht damit Tiefe sichtbar bleibt aber kein Schwarz-Fresser
+scene.fog = new THREE.FogExp2(0x050A18, 0.003);
+
+// Pendant SpotLight über jedem Tisch
+const spot = new THREE.SpotLight(0xFFAA30, 28, 7, Math.PI/4.5, 0.45, 1.8);
+spot.position.set(x, 1.65, z);
+spot.target.position.set(x, FY, z);
+spot.castShadow = true;
+
+// Korridor-Fülllichter (alle 5–8m)
+[22, 18, 10, 6, -2, -6, -15].forEach(z => {
+  const fill = new THREE.PointLight(0xF09A30, 5.5, 12, 1.5);
+  fill.position.set(0, 2.4, z);
+  scene.add(fill);
+});
+```
+
+---
+
+### Overlay-System (HTML über 3D)
+
+HTML-Overlays mit `.ov` Klasse: `position: fixed`, `opacity: 0` Standard.
+Werden per GSAP ein-/ausgeblendet basierend auf `scrollProg`:
+
+```javascript
+const OVS = [
+  { id: 'ovHero',    r: [0.00, 0.15] }, // Außen / Gebäude
+  { id: 'ovStation1',r: [0.18, 0.42] }, // Station 1
+  { id: 'ovStation2',r: [0.46, 0.67] }, // Station 2
+  { id: 'ovStation3',r: [0.71, 0.90] }, // Station 3
+  { id: 'ovExit',    r: [0.91, 1.00] }, // CTA / Abschluss
+];
+```
+
+Ranges: Lücken zwischen Stationen (z.B. 0.42–0.46) = Übergangsmoment ohne Text.
+
+---
+
+### Mobile Fallback
+
+3D Walkthrough deaktivieren auf Mobilgeräten — Canvas verstecken, statische Alternative zeigen:
+
+```javascript
+const IS_MOB = window.innerWidth < 960 || !window.WebGLRenderingContext;
+if (!IS_MOB) { /* Three.js initialisieren */ }
+```
+
+```css
+@media (max-width: 959px) {
+  #cvs { display: none; }
+  #cv-wrap { height: auto; min-height: 100vh; }
+  #mob-hero { display: flex; } /* statische Fallback-Ansicht */
+  .ov { display: none; }
+}
+```
+
+---
+
+### Branchen-Anpassung
+
+| Branche | CAM_PTS y | Station-Inhalt | Tisch-Material | Atmosphäre |
+|---------|-----------|----------------|----------------|------------|
+| Restaurant | 0.40 | Speisefoto flach | Holz/Anthrazit | Amber warm |
+| Hotel | 0.40 | Bettwäsche, Deko | Weiß/Creme | Kühl-weiß |
+| Auto-Showroom | 0.80 | Fahrzeug auf Podest | Beton-grau | Spot-weiß |
+| Galerie | 0.40 | Kunstwerk an Wand | --- | Museumsweiß |
+| Immobilie | 0.40 | Möbel, Details | Parkett | Warm-neutral |
+
+**Für Hotels / Immobilien:** Wände auf helle Farben (`0xF5F0E8`), Decke weiß, natürliches Tageslicht simulieren:
+```javascript
+scene.add(new THREE.AmbientLight(0xF0F4FF, 4.0)); // kühles weißes Licht
+renderer.toneMappingExposure = 2.2;
+```
+
+**Für Showrooms:** Schwarzer Boden, weiße Spots auf Produkte, neutrale Wände:
+```javascript
+// Stage-Spot auf Produkt
+const stageSpot = new THREE.SpotLight(0xFFFFFF, 60, 12, Math.PI/6, 0.2);
+```
+
+---
+
+### Output-Checkliste 3D Mode
+
+- [ ] `IS_MOB` Guard — kein Three.js auf Mobile
+- [ ] LEN korrekt — mind. 10m Außenblick vor Gebäudefassade
+- [ ] Alle Stationen mit Amber-Fallback (sofort sichtbar ohne Netz)
+- [ ] Logo-Textur über absoluten Pfad geladen
+- [ ] `toneMappingExposure` ≥ 2.5 — keine schwarzen Bereiche
+- [ ] Fog-Dichte ≤ 0.004 — Geometrie bleibt lesbar
+- [ ] LOOK_PTS y auf Produkthöhe beim "Betrachten" (y = TY für flache Tische)
+- [ ] HTML Overlays pro Station mit Produktname + Preis + Beschreibung
+- [ ] Mobile Fallback mit Bild / statischer Hero-Ansicht
+
+---
+
 ## Related Skills
 
-- `/immersive-web-experience` — für 3D/WebGL Canvas-Backgrounds
 - `/web-factory` — Standard-Websites ohne Cinematic-Layer
 - `/redesign-existing-projects` — bestehendes HTML auf dieses Niveau heben
 - `/brand-guidelines` — Markenfarben zuerst definieren
