@@ -42,6 +42,39 @@ Gilt für: Restaurants, Cafés, Bars, Bistros, Imbisse, Catering-Services, Bäck
 - Veganes Lokal: `--primary: #2d6a4f` (Waldgrün) + Erdtöne
 - Fast-Casual: `--primary: #f97316` (Orange) + `--secondary: #fbbf24` (Gelb)
 
+**Premium Dark Food Brand (TONE: "premium" / "cinematic" / "modern"):**
+
+Für: Smash Burger, Gourmet Fast-Casual, Modern Kitchen, Food-Concept-Stores.  
+Erkennungsmerkmal: dunkler Hintergrund, warmer Amber-Akzent, kinematische Optik.
+
+```css
+:root {
+  --primary: #F5A623;           /* Amber / Warm Gold */
+  --primary-dark: #C8851A;
+  --primary-light: #FFD280;
+  --primary-glow: rgba(245, 166, 35, 0.18);
+  --primary-border: rgba(245, 166, 35, 0.28);
+  --text: #f0ece6;              /* Crème — nie reines Weiß */
+  --text-muted: #8a8480;
+  --bg: #111111;
+  --bg-subtle: #181818;
+  --bg-card: #1e1e1e;
+  --bg-dark: #0a0a0a;
+  --border: #272727;
+}
+/* Fonts: kondensierte Bold-Heading + neutraler Body */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap');
+--font-heading: 'Barlow Condensed', sans-serif;
+--font-body: 'DM Sans', sans-serif;
+```
+
+Design-Prinzipien dieser Variante:
+- Hintergrund: tief dunkel (`#111`) — Lebensmittel wirken wärmer und appetitlicher
+- Amber-Akzent: erzeugt Wärme und Energie ohne aufdringlich zu wirken
+- Glow-Effekte: `box-shadow` mit `rgba(245,166,35,0.20)` auf Cards und Buttons
+- Große, kondensierte Headlines in Uppercase — Impact ohne viel Platz
+- MOTION_INTENSITY auf 6–7 setzen (Kinetic Type, Marquee, Video Card Float)
+
 ---
 
 ## Typografie
@@ -233,6 +266,319 @@ Zeige 3 Beispiel-Highlights als "Unsere Empfehlungen" + Button "Vollständige Ka
 
 ---
 
+## Kinetic Text Reveal (MOTION_INTENSITY 5+)
+
+Jede Headline-Zeile fährt von unten ins Bild — cinematic, kein Opacity-Fade.
+
+```html
+<h1>
+  <span class="reveal-wrap"><span class="reveal-inner">Burger.</span></span><br>
+  <span class="reveal-wrap"><span class="reveal-inner accent">Bowls.</span></span><br>
+  <span class="reveal-wrap"><span class="reveal-inner">Basics.</span></span>
+</h1>
+```
+```css
+.reveal-wrap {
+  display: inline-block; overflow: hidden;
+  vertical-align: bottom; line-height: 0.95;
+}
+.reveal-inner {
+  display: inline-block;
+  transform: translateY(115%);
+  transition: transform 0.95s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-inner.revealed { transform: translateY(0); }
+```
+```javascript
+// Verzögert pro Zeile — Staffeleffekt
+document.querySelectorAll('.reveal-inner').forEach((el, i) => {
+  setTimeout(() => el.classList.add('revealed'), 200 + i * 180);
+});
+```
+
+---
+
+## Premium Video Hero (wenn Videomaterial vorhanden, MOTION_INTENSITY ≥ 5)
+
+Statt Vollbild-Video-Background: **animierte Video-Card im Split-Layout** (links Text, rechts schwebende Card). Wirkt hochwertiger, kontrollierbarer und verkauft das Produkt besser.
+
+**HTML-Struktur:**
+```html
+<section class="hero">
+  <div class="hero-split container">
+
+    <!-- Linke Spalte: Kinetic Headline + CTAs -->
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="hero-dot"></span> Täglich frisch — seit [Jahr]
+      </div>
+      <h1>
+        <span class="reveal-wrap"><span class="reveal-inner">[Produkt1].</span></span><br>
+        <span class="reveal-wrap"><span class="reveal-inner accent">[Produkt2].</span></span><br>
+        <span class="reveal-wrap"><span class="reveal-inner">[Produkt3].</span></span>
+      </h1>
+      <p class="hero-sub">[SLOGAN oder 1-2 Sätze Konzept]</p>
+      <div class="hero-ctas">
+        <a href="#speisekarte" class="btn-primary">Zur Karte</a>
+        <a href="tel:[TELEFON]" class="btn-secondary">[TELEFON]</a>
+      </div>
+    </div>
+
+    <!-- Rechte Spalte: Floating Video Card -->
+    <div class="hero-visual fade-up">
+      <div class="video-card-wrap">
+        <div class="video-tilt-wrap" id="videoTiltWrap">
+          <div class="video-ring" aria-hidden="true"></div>
+          <div class="video-card">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="../[PFAD]/hero.mp4" type="video/mp4">
+            </video>
+            <span class="video-card-badge">Täglich frisch zubereitet</span>
+          </div>
+        </div>
+      </div>
+      <div class="video-glow" aria-hidden="true"></div>
+    </div>
+
+  </div>
+</section>
+```
+
+**CSS — Split-Layout + Card:**
+```css
+.hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  padding: 130px 0 96px;
+}
+/* Floating Card */
+.video-card-wrap {
+  position: relative;
+  animation: heroFloat 5s ease-in-out infinite;
+  will-change: transform;
+}
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-14px); }
+}
+.video-card {
+  position: relative;
+  border-radius: 24px; overflow: hidden;
+  aspect-ratio: 4 / 5; width: min(360px, 42vw);
+  box-shadow:
+    0 0 0 1px rgba(245,166,35,0.35),
+    0 0 40px rgba(245,166,35,0.20),
+    0 40px 100px rgba(0,0,0,0.75);
+}
+.video-card video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.video-card::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 55%, rgba(0,0,0,0.65) 100%);
+  pointer-events: none;
+}
+.video-card-badge {
+  position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%);
+  z-index: 2; background: rgba(10,10,10,0.78);
+  border: 1px solid rgba(245,166,35,0.4); color: var(--primary);
+  padding: 7px 20px; border-radius: 100px;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  backdrop-filter: blur(10px); white-space: nowrap;
+}
+/* Rotierende Dashed-Ring Dekoration */
+.video-tilt-wrap { position: relative; will-change: transform; }
+.video-ring {
+  position: absolute; inset: -6px; border-radius: 28px;
+  border: 1px dashed rgba(245,166,35,0.18);
+  animation: ringRotate 18s linear infinite;
+  pointer-events: none;
+}
+@keyframes ringRotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+/* Ambientes Glow unter der Card */
+.video-glow {
+  position: absolute; bottom: -30px; left: 50%;
+  width: 70%; height: 80px;
+  background: radial-gradient(ellipse at center, rgba(245,166,35,0.30) 0%, transparent 75%);
+  filter: blur(24px); transform: translateX(-50%);
+  animation: heroFloat 5s ease-in-out infinite;
+  pointer-events: none;
+}
+/* Mobile: Stack */
+@media (max-width: 860px) {
+  .hero-split { grid-template-columns: 1fr; gap: 48px; padding: 110px 0 80px; }
+  .hero-visual { order: -1; }
+  .video-card { width: min(280px, 72vw); margin: 0 auto; }
+}
+```
+
+**3D Mouse-Tilt JS (Hover-only, MOTION_INTENSITY 7+):**
+```javascript
+(function() {
+  const visual = document.querySelector('.hero-visual');
+  const tiltEl = document.getElementById('videoTiltWrap');
+  if (!visual || !tiltEl || !window.matchMedia('(hover: hover)').matches) return;
+  let raf = null, tRX = 0, tRY = 0, cRX = 0, cRY = 0, active = false;
+  const lerp = (a, b, t) => a + (b - a) * t;
+  function tick() {
+    cRX = lerp(cRX, tRX, 0.09); cRY = lerp(cRY, tRY, 0.09);
+    tiltEl.style.transform = `perspective(900px) rotateX(${cRX.toFixed(2)}deg) rotateY(${cRY.toFixed(2)}deg)`;
+    if (!active && Math.abs(cRX) < 0.02 && Math.abs(cRY) < 0.02) { tiltEl.style.transform = ''; raf = null; }
+    else raf = requestAnimationFrame(tick);
+  }
+  visual.addEventListener('mousemove', e => {
+    const r = tiltEl.getBoundingClientRect();
+    tRX = -((e.clientY - (r.top + r.height/2)) / (r.height/2)) * 11;
+    tRY = ((e.clientX - (r.left + r.width/2)) / (r.width/2)) * 11;
+    active = true; if (!raf) raf = requestAnimationFrame(tick);
+  });
+  visual.addEventListener('mouseleave', () => {
+    tRX = 0; tRY = 0; active = false;
+    if (!raf) raf = requestAnimationFrame(tick);
+  });
+})();
+```
+
+---
+
+## Scroll-Synced Product Visual (MOTION_INTENSITY 7+)
+
+Das Produkt-Video wird zum zentralen Scroll-Erlebnis. Nutzer "dreht" das Video durch Scrollen — Apple-Style.
+
+**Wann einsetzen:** Wenn hochwertiges Videomaterial des Produkts vorhanden ist. Setzt direkt nach dem Marquee-Strip an (nach dem Hero).
+
+**HTML:**
+```html
+<div class="scrub-outer" id="scrubOuter">
+  <div class="scrub-sticky">
+    <video id="scrubVideo" preload="auto" muted playsinline>
+      <!-- KEIN autoplay — wird manuell durch currentTime gesteuert -->
+      <source src="../[PFAD]/product.mp4" type="video/mp4">
+    </video>
+    <div class="scrub-overlay">
+      <div class="scrub-text" id="scrubText">
+        <span class="section-label">Das ist [FIRMENNAME]</span>
+        <h2>Frisch.<br><span class="accent">Ehrlich.</span><br>Gut.</h2>
+      </div>
+    </div>
+    <div class="scrub-progress"><div class="scrub-fill" id="scrubFill"></div></div>
+  </div>
+</div>
+```
+
+**CSS:**
+```css
+.scrub-outer { height: 280vh; position: relative; }
+.scrub-sticky {
+  position: sticky; top: 0; height: 100vh;
+  overflow: hidden; background: #000;
+  contain: paint layout; /* isoliert Repaints */
+}
+#scrubVideo {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  will-change: transform; transform-origin: center;
+}
+.scrub-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, transparent 60%);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: clamp(40px, 7vw, 88px);
+}
+.scrub-text { opacity: 0; transform: translateY(28px); transition: opacity 0.9s ease, transform 0.9s ease; }
+.scrub-text.revealed { opacity: 1; transform: translateY(0); }
+.scrub-progress { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: rgba(255,255,255,0.10); }
+.scrub-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--primary-dark), var(--primary)); }
+/* Mobile: Scrub deaktivieren */
+@media (max-width: 768px) { .scrub-outer { display: none; } }
+```
+
+**JS — robuste Implementierung (Lerp + kein isSeeking):**
+```javascript
+(function() {
+  const outer = document.getElementById('scrubOuter');
+  const video = document.getElementById('scrubVideo');
+  const fill  = document.getElementById('scrubFill');
+  const text  = document.getElementById('scrubText');
+  if (!outer || !video) return;
+
+  let progress = 0, currentProg = 0, rafId = null;
+  let outerTop = 0, totalH = 0;
+
+  // Geometry einmalig cachen — nie im Scroll-Handler messen
+  function measure() {
+    outerTop = outer.getBoundingClientRect().top + window.scrollY;
+    totalH   = outer.offsetHeight - window.innerHeight;
+  }
+  measure();
+  window.addEventListener('resize', measure, { passive: true });
+
+  // Erstes Frame zeigen
+  const showFirst = () => { if (video.duration) video.currentTime = 0; };
+  if (video.readyState >= 1) showFirst();
+  else video.addEventListener('loadedmetadata', showFirst, { once: true });
+
+  function draw() {
+    rafId = null;
+    if (!video.duration) return;
+    // Lerp: 12% pro Frame → ~200ms smooth lag (butter-smooth feel)
+    currentProg += (progress - currentProg) * 0.12;
+    if (Math.abs(progress - currentProg) > 0.0005) rafId = requestAnimationFrame(draw);
+    // Seek + Parallax Scale
+    video.currentTime = currentProg * video.duration;
+    const s = 1 + currentProg * 0.07; // 1.0 → 1.07
+    video.style.transform = `scale3d(${s.toFixed(4)},${s.toFixed(4)},1)`;
+    if (fill) fill.style.width = (currentProg * 100) + '%';
+  }
+
+  window.addEventListener('scroll', () => {
+    progress = Math.max(0, Math.min(1, (window.scrollY - outerTop) / totalH));
+    if (text) text.classList.toggle('revealed', progress > 0.12);
+    if (!rafId) rafId = requestAnimationFrame(draw);
+  }, { passive: true });
+})();
+```
+
+**Kritisch — warum kein `isSeeking`-Flag:**
+Browser ersetzen in-flight Seeks automatisch beim nächsten `currentTime`-Assignment (letzter Wert gewinnt). Ein `isSeeking`-Flag blockiert neue Seeks und führt zum eingefrorenen Video. Kein Flag nötig — direkte Zuweisung im RAF ist robust.
+
+---
+
+## Marquee Strip (MOTION_INTENSITY 5+)
+
+Qualitätsmerkmale als endlose horizontale Textzeile — zwischen Hero und nächster Sektion.
+
+```html
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <!-- Inhalt 2× duplizieren für seamless loop -->
+    <span class="marquee-item">Regionales Rind</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Täglich frisch</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Handgemacht</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Hirschau</span><span class="marquee-sep">·</span>
+    <!-- Kopie: -->
+    <span class="marquee-item">Regionales Rind</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Täglich frisch</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Handgemacht</span><span class="marquee-sep">·</span>
+    <span class="marquee-item">Hirschau</span><span class="marquee-sep">·</span>
+  </div>
+</div>
+```
+```css
+.marquee-strip { background: var(--primary); overflow: hidden; padding: 14px 0; white-space: nowrap; }
+.marquee-track {
+  display: inline-flex; align-items: center;
+  animation: marqueeRun 22s linear infinite;
+  will-change: transform;
+}
+.marquee-strip:hover .marquee-track { animation-play-state: paused; }
+.marquee-item { font-weight: 800; font-size: 0.88rem; letter-spacing: 0.18em; text-transform: uppercase; color: #000; padding: 0 28px; }
+.marquee-sep { color: rgba(0,0,0,0.35); font-weight: 900; }
+@keyframes marqueeRun { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+```
+
+---
+
 ## Öffnungszeiten-Sektion
 
 ```html
@@ -331,6 +677,48 @@ document.querySelectorAll('.hours-row').forEach(row => {
     </form>
   </div>
 </section>
+```
+
+---
+
+## Performance & Animation System
+
+### Grundregeln (gelten für alle Gastronomie-Websites)
+
+```
+transform + opacity → GPU-Compositor → kein Layout-Thrash → IMMER bevorzugen
+width / height / top / left / margin → Layout-trigger → NIEMALS animieren
+```
+
+**Pflicht-CSS auf animierten Elementen:**
+```css
+.animated { will-change: transform; } /* eigener Compositor-Layer */
+.sticky-container { contain: paint layout; } /* isoliert Repaints */
+```
+
+**Scroll-Performance:**
+```javascript
+// IMMER passive: true
+window.addEventListener('scroll', handler, { passive: true });
+// Geometry EINMAL cachen, dann window.scrollY benutzen
+const top = el.getBoundingClientRect().top + window.scrollY;
+// NIEMALS getBoundingClientRect() im Scroll-Handler aufrufen
+```
+
+**Mobile Video-Strategie:**
+| Video | Desktop | Mobile |
+|-------|---------|--------|
+| Hero-Loop | `autoplay muted loop` | Behalten (reduziert in CSS) |
+| Scroll-Scrub | Aktiviert | `display: none` via Media Query |
+
+**Reduced Motion:**
+```css
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 ```
 
 ---
