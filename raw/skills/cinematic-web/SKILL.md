@@ -10,6 +10,9 @@ Erzeugt fertige, deployfähige Single-File HTML-Websites auf Awwwards-Niveau. Ke
 
 Inspirationsreferenz: [sidewave.it](https://sidewave.it) — Editorial Dark, All-Caps Headlines, Scramble Reveals, Cinematic Flow.
 
+> **Verknüpfter Skill:** Nach Fertigstellung der Website immer `/kling-prompts` aufrufen.
+> Liefert optimierte Kling 3.0 Video-Prompts (V1 Exterior · V2 Interior · V3 Produkt) die als Scroll-Background in die Website eingebettet werden. Der Skill lernt aus jedem Projekt und verbessert Prompt-Qualität kontinuierlich.
+
 ---
 
 ## Schritt 1 — Brief aufnehmen
@@ -1284,6 +1287,1037 @@ const stageSpot = new THREE.SpotLight(0xFFFFFF, 60, 12, Math.PI/6, 0.2);
 - [ ] LOOK_PTS y auf Produkthöhe beim "Betrachten" (y = TY für flache Tische)
 - [ ] HTML Overlays pro Station mit Produktname + Preis + Beschreibung
 - [ ] Mobile Fallback mit Bild / statischer Hero-Ansicht
+
+---
+
+## Schritt 10 — Konzept-Bibliothek Gastronomie-Websites
+
+Für jedes neue Restaurant-Projekt: Konzept aus dieser Bibliothek wählen, dann KI-Prompt-System aus Schritt 12 anwenden.
+
+### Konzept-Auswahlmatrix
+
+| Konzept | Typ | Aufwand | Passt für |
+|---------|-----|---------|-----------|
+| **3D Walkthrough** | Three.js | Hoch | Casual Premium, Burger, Bowls |
+| **Farm to Table** | Scroll-Video | Mittel | Bio, Regional, Saisonal |
+| **Chef's POV** | Scroll-Video | Niedrig | Grill, Ramen, Steakhouse |
+| **Tageszeiten** | Dynamisch | Hoch | Bistro, Café, All-Day-Dining |
+| **Magazin-Menü** | Editorial | Mittel | Fine Dining, Weinrestaurant |
+| **Reservierung als Flow** | Funnel | Niedrig | Exklusiv, Tasting Menu |
+| **Neighbourhood** | Map-Zoom | Hoch | Stadtteil-Lokal, Verwurzelung |
+| **Single Dish** | Hero-Focus | Niedrig | Monoprodukt: Pizza, Sushi, Burger |
+
+---
+
+### Konzept 1 — 3D Walkthrough *(Triple B Referenz)*
+
+**Kern:** Three.js Kamerafahrt durch das reale oder stilisierte Lokal. Tisch für Tisch, Gericht für Gericht.
+
+**Wann wählen:**
+- Restaurant hat mehr als 2 Produktkategorien
+- Kunde will "digitales Erlebnis" klar kommunizieren
+- Budget für Umsetzungszeit vorhanden
+- Desktop-Primärzielgruppe
+
+**Signature Moments:**
+1. Gebäude-Annäherung von außen — Schild, warmes Licht aus Fenstern
+2. Kamera kreuzt Eingangsbereich — Atmosphärenwechsel draußen/drinnen
+3. Close-Up Gerichte auf Tischen — jedes Produkt als 3D-Modell
+
+**Tech:** Three.js 0.160.0 UMD + GSAP ScrollTrigger + Lenis → Schritt 9 anwenden
+
+---
+
+### Konzept 2 — Farm to Table
+
+**Kern:** Die Reise des Gerichts. Scrollen = Zeitlinie vom Rohstoff zum fertigen Teller.
+
+**Story-Struktur:**
+```
+Sektion 1: Feld / Bauer / Ursprung — erdige Farben, Tageslicht
+Sektion 2: Transport / Anlieferung — Bewegung, Dynamik
+Sektion 3: Küche / Zubereitung — Wärme, Dampf, Feuer
+Sektion 4: Teller / Anrichten — Ruhe, Präzision
+Sektion 5: Gast-Moment — emotional, menschlich
+```
+
+**Ästhetik:** Warmes Cremeweiß `#FDFAF5`, Erdtöne, Handschrift-Akzente, Körnung.
+
+**KI-Video Struktur (3 Clips):**
+- Clip 1: Nahaufnahme frischer Zutaten, natürliches Licht
+- Clip 2: Küchen-Sequenz, offenes Feuer, Hände beim Anrichten
+- Clip 3: Fertiges Gericht serviert, Gast-Reaktion
+
+---
+
+### Konzept 3 — Chef's POV
+
+**Kern:** First-Person-Perspektive. Der Nutzer *ist* der Koch. Website beginnt mit Küche, endet mit Gast.
+
+**Story-Struktur:**
+```
+Sektion 1: Messer auf Schneidebrett, Hände hacken
+Sektion 2: Pfanne auf Herd, Flamme, Dampf
+Sektion 3: Anrichten — Pinsel, Sauce, Perfektion
+Sektion 4: Gericht erscheint aus Koch-Perspektive
+Sektion 5: Übergang zum Tisch — Gast-Seite
+```
+
+**Ästhetik:** Dunkel `#0A0906`, Feuerlicht, Stahl-Grau, harte Kontraste.
+
+**KI-Video Struktur (3 Clips):**
+- Clip 1: Close-Up Hände & Messer (First-Person), ca. 8 Sek.
+- Clip 2: Herd & Feuer von oben/schräg, ca. 8 Sek.
+- Clip 3: Fertig angerichteter Teller auf Pass, ca. 8 Sek.
+
+---
+
+### Konzept 4 — Tageszeiten
+
+**Kern:** Website erkennt echte Uhrzeit und zeigt entsprechende Stimmung. Technisch anspruchsvoll, sehr einprägsam.
+
+**Zeit-Mapping:**
+```javascript
+const HOUR = new Date().getHours();
+if (HOUR >= 6  && HOUR < 11) mode = 'morning';   // Cremeweiß, Kaffee
+if (HOUR >= 11 && HOUR < 15) mode = 'lunch';      // Goldgelb, Energie
+if (HOUR >= 15 && HOUR < 18) mode = 'afternoon';  // Honig-Amber, ruhig
+if (HOUR >= 18 && HOUR < 23) mode = 'evening';    // Tiefes Charcoal, Kerzen
+if (HOUR >= 23 || HOUR < 6)  mode = 'night';      // Fast-Monochrom, Bar
+```
+
+**CSS-Variablen per Mode wechseln:**
+```javascript
+document.documentElement.setAttribute('data-time', mode);
+```
+
+**Ästhetik pro Tageszeit:**
+- morning: `--accent: #E8A050` / bg `#FDFAF5`
+- lunch: `--accent: #F5C030` / bg `#1A1408`
+- evening: `--accent: #F5A523` / bg `#060404`
+- night: `--accent: #8A7060` / bg `#030202`
+
+---
+
+### Konzept 5 — Magazin-Menü
+
+**Kern:** Speisekarte als Editorial-Magazin. Keine Listenansicht — jedes Gericht ist eine halbe Seite.
+
+**Layout-Regeln:**
+- Jedes Gericht: Großes Foto links (60%), Text rechts (40%) — alternierend
+- Preise: GROSS und selbstbewusst gesetzt, nicht klein versteckt
+- Gerichte-Kategorie-Wechsel: Horizontales Scrollen als Intermezzo
+- Typografie: Serif-Display für Gerichtnamen, Mono für Preise
+
+**Ästhetik:** Warmweiß `#FDFBF7`, minimalste Farbe, Schwarz/Weiß-Foto-Stil.
+
+---
+
+### Konzept 6 — Reservierung als Erlebnis
+
+**Kern:** Gesamte Website ist ein einziger geführter Buchungs-Flow. Ein Schritt pro Vollbild.
+
+**Flow-Schritte:**
+```
+Schritt 1: Willkommens-Bild + "Tisch reservieren" CTA
+Schritt 2: Datum wählen (großes Calendar UI)
+Schritt 3: Uhrzeit wählen (Pills)
+Schritt 4: Personenanzahl (Slider)
+Schritt 5: Name + Telefon
+Schritt 6: Bestätigung + "Wir freuen uns auf Sie"
+```
+
+**Pro Schritt:** Vollbild-Hintergrundfoto wechselt, sanfter Blend-Übergang.
+
+**Ästhetik:** Dunkel, luxuriös — ein Foto, ein Feld, nichts mehr.
+
+---
+
+### Konzept 7 — Neighbourhood
+
+**Kern:** Website beginnt mit Stadtansicht (stilisierte Karte), zoomt langsam auf das Lokal herein.
+
+**Animation:**
+```
+Zoom 1: Stadtpanorama / Satellitenansicht stilisiert
+Zoom 2: Straßenzug wird sichtbar
+Zoom 3: Gebäudefassade tritt hervor
+Zoom 4: Eingang — Übergang zu Lokal-Content
+```
+
+**Tech:** CSS Transform Scale + clip-path Reveal ODER Three.js OrthographicCamera über SVG-Karte.
+
+**Ästhetik:** Kartenstil dunkel `#0F1117`, leuchtende Straßenlinien in Akzentfarbe.
+
+---
+
+### Konzept 8 — Single Dish
+
+**Kern:** Keine Ablenkung. Das Hero-Bild ist das Gericht. Der Rest der Seite öffnet sich darunter.
+
+**Hero-Struktur:**
+```
+Vollbild-Gericht-Foto, centred
+Kleiner Text: "TRIPLE B" + "HIRSCHAU"
+Scroll-Pfeil
+→ Scrollen → Foto zoomt rein → löst sich auf → Content erscheint
+```
+
+**Ästhetik:** Schwarzer Hintergrund, Gericht als einziges Licht auf der Seite.
+
+**Wirkung:** Mutig, einprägsam, funktioniert nur wenn das Gericht wirklich fotogen ist.
+
+---
+
+## Schritt 11 — KI-Video Scroll Engine (Alternative zu Three.js)
+
+Wenn ein Client **kein** Three.js-Budget hat oder maximalen Photorealismus will: Video statt 3D-Geometrie.
+
+### Entscheidungsbaum: Three.js vs. KI-Video
+
+```
+Hat das Projekt echte Fotos oder 3D-Scans?
+  → Ja: Three.js mit echten Texturen (Schritt 9)
+  → Nein:
+      Budget für KI-Video-Generierung vorhanden?
+        → Ja: KI-Video Scroll Engine (Schritt 11)
+        → Nein: Schritt 9 mit prozeduralen Texturen
+```
+
+### Technische Implementierung
+
+```html
+<!-- Video als Scene-Ersatz -->
+<video id="sceneVideo" muted playsinline preload="auto"
+       style="position:fixed;inset:0;width:100%;height:100%;
+              object-fit:cover;z-index:0;">
+  <source src="restaurant-scene.mp4" type="video/mp4">
+</video>
+```
+
+```javascript
+const video = document.getElementById('sceneVideo');
+
+// Video vorab laden
+video.load();
+
+// ScrollTrigger steuert currentTime
+ScrollTrigger.create({
+  trigger: '#cv-wrap',
+  start: 'top top',
+  end: 'bottom bottom',
+  scrub: 1.2,
+  onUpdate(self) {
+    if (video.readyState >= 2) {
+      video.currentTime = self.progress * video.duration;
+    }
+    scrollProg = self.progress;
+    updateOverlays(self.progress);
+  }
+});
+
+// Autoplay-Fix: kurz abspielen dann pausieren
+video.play().then(() => video.pause()).catch(() => {});
+```
+
+### Performance-Regeln für Scroll-Video
+
+```
+Maximale Dateigröße: 15 MB (Web-Delivery)
+Codec: H.264 / MP4 (beste Browser-Kompatibilität)
+Auflösung: 1920×1080 reicht (kein 4K für Web)
+FPS: 30fps optimal für scrub-Feeling
+Länge: 24–32 Sekunden (genug Detail, klein genug)
+```
+
+**Kompression-Workflow:**
+```bash
+# FFmpeg — 15MB Zielgröße, H.264, Web-optimiert
+ffmpeg -i input.mp4 -c:v libx264 -crf 28 -preset slow \
+       -vf scale=1920:1080 -movflags +faststart \
+       -an output-web.mp4
+```
+
+### Mobile Fallback
+
+```javascript
+const IS_MOB = window.innerWidth < 768;
+
+if (IS_MOB) {
+  // Kein Video-Scrub auf Mobile (Performance)
+  document.getElementById('sceneVideo').style.display = 'none';
+  document.getElementById('mob-hero').style.display = 'flex';
+} else {
+  initScrollVideo();
+}
+```
+
+---
+
+## Schritt 12 — KI-Prompt Generator System
+
+Universelles Template-System für AI-Video-Generierung (Kling 3.0, Sora, Runway Gen-4).
+
+### Pflicht-Briefing vor Prompt-Erstellung
+
+Folgende Felder aus dem Client-Brief extrahieren:
+
+```
+[LOKAL_NAME]       → z.B. "Triple B"
+[LOKAL_ORT]        → z.B. "Hirschau"
+[INTERIOR_STIL]    → z.B. "warme Pendellampen, Holzstühle, Navy-Polster, Charcoal-Tische"
+[EXTERIOR_STIL]    → z.B. "dunkle Fassade, große Fenster, warmes Licht sichtbar"
+[LICHT_STIMMUNG]   → z.B. "Abend, Bernstein-Amber, tief und warm"
+[GERICHT_1]        → Name + ALLE Zutaten aus Speisekarte (1:1)
+[GERICHT_2]        → Name + ALLE Zutaten aus Speisekarte (1:1)
+[GERICHT_3]        → Name + ALLE Zutaten aus Speisekarte (1:1)
+[KAMERA_STIL]      → z.B. "langsamer Dolly, kein Shake, cinematisch"
+```
+
+**Kritische Regel: Gerichte IMMER 1:1 aus der echten Speisekarte — nie erfunden.**
+
+---
+
+### Prompt-Template Video 1: Exterior → Entrance
+
+```
+Cinematic slow [KAMERA_STIL] camera movement, starting at street level
+approximately 15 meters in front of [LOKAL_NAME] restaurant facade
+at dusk / golden hour. 
+
+Exterior: [EXTERIOR_STIL]. Restaurant sign reads "[LOKAL_NAME]" clearly.
+Warm interior light spills through large windows.
+
+Camera glides continuously forward toward entrance — smooth, no cuts,
+no shake. As camera approaches, interior amber light grows through windows.
+[Optionale Umgebungsdetails: Bürgersteig, Straße, Nachbarschaft]
+
+Final 2 seconds: camera crosses entrance threshold, interior
+begins to reveal — [erste Innenraum-Beschreibung: Beleuchtung, Möbel, Tiefe].
+
+Mood: [LICHT_STIMMUNG], premium casual dining, cinematic depth.
+Color grade: deep shadows exterior, warm amber interior, 
+slight contrast between outside blue-hour sky and inside warmth.
+Aspect ratio: 16:9, photorealistic, no text overlays, no people.
+```
+
+**Negative Prompt:**
+```
+cartoon, animation, fast movement, camera shake, crowds, people walking,
+lens flare, CGI obvious, bright daylight, fluorescent overhead lights,
+fast cuts, fish-eye distortion
+```
+
+---
+
+### Prompt-Template Video 2: Interior Walkthrough
+
+```
+Cinematic floating camera movement through the interior of [LOKAL_NAME]
+restaurant at night, no people present.
+
+Camera starts at entrance end, glides forward in gentle S-curve
+path between dining tables.
+
+Interior details: [INTERIOR_STIL — vollständige Beschreibung:
+Tischfarbe, Stuhlmaterial, Polsterfarbe, Bodenbelag, Wandmaterial,
+Deckenhöhe, Pendellampen-Position, Lichtfarbe, Schattenmuster].
+
+Camera height: approx. 120cm (eye level seated person). Camera tilts
+very slightly downward toward table surfaces while passing each table.
+
+Lighting: exclusively from [Lichtquelle]. Deep shadows between tables,
+circular pools of [Lichtfarbe] on each table surface. Restaurant depth
+disappears into warm bokeh darkness.
+
+Duration: camera passes [ANZAHL] table positions, approximately 3 seconds
+per table before gliding forward. Smooth, continuous, no jerks.
+
+Mood: [LICHT_STIMMUNG], intimate, quiet, the restaurant just before
+guests arrive. Film-like grain, warm [Farbgradierung]-grade.
+Aspect ratio: 16:9, photorealistic, no people, no text.
+```
+
+**Negative Prompt:**
+```
+people, staff, customers, bright overhead fluorescent, fast movement,
+drone footage feeling, wide angle distortion, CGI, fast cuts
+```
+
+---
+
+### Prompt-Template Video 3: Food Beauty Shots
+
+```
+Cinematic food photography video sequence. Three dishes presented
+sequentially on [Tisch-Material] restaurant tabletop.
+Lighting: warm [Lichtfarbe] pendant lamp from above as sole light source.
+
+SEGMENT 1 — [GERICHT_1 NAME] — First [X] seconds:
+[Kamerabewegung: z.B. "Slow orbital camera movement, camera rotates 
+30 degrees around the dish"]. Camera angle: [X] degrees above horizontal,
+very shallow depth of field, restaurant interior bokeh background.
+
+Dish on [Teller-Beschreibung]: [ALLE ZUTATEN 1:1 aus Speisekarte, 
+visuelle Beschreibung jeder Komponente — Farbe, Textur, Anordnung,
+Glanz, Schichtung]. [Charakteristisches Detail: z.B. "melted cheese draping",
+"crispy golden crust", "glossy sauce spiral"].
+
+SEGMENT 2 — [GERICHT_2 NAME] — Middle [X] seconds:
+[Kamerabewegung]. [ALLE ZUTATEN 2 mit visueller Beschreibung].
+
+SEGMENT 3 — [GERICHT_3 NAME] — Final [X] seconds:
+[Kamerabewegung]. [ALLE ZUTATEN 3 mit visueller Beschreibung].
+
+Throughout: top-down ambient [Lichtfarbe] from pendant creating dramatic
+highlights on food surfaces and deep side shadows. Tabletop: [Material].
+Ultra-warm color grade, glossy highlights on food, cinematic depth.
+Professional food stylist quality, no people, no text, no utensils moving.
+```
+
+**Negative Prompt:**
+```
+cartoon, plastic-looking food, cold blue lighting, bright white studio,
+people's hands, fast cuts, shaky camera, blurry food
+(only background soft), CGI obvious, generic plating
+```
+
+---
+
+### Kling 3.0 spezifische Settings
+
+| Parameter | Empfehlung |
+|-----------|-----------|
+| Stil | Cinematic |
+| Dauer | 10 Sekunden (max) |
+| Kamera | Video 1: Push In / Video 2: Dolly Forward / Video 3: Orbit |
+| Qualität | Professional / High |
+| Seed | Notieren — gleicher Seed für Konsistenz zwischen Clips |
+| Negative Prompt | Immer ausfüllen (erhöht Qualität stark) |
+
+**Tipp Konsistenz:** Gleichen Stil-Referenz-Screenshot als "Reference Image" in Kling für alle 3 Clips hochladen — sichert einheitliche Lichtstimmung.
+
+---
+
+### Referenz-Umsetzung: Triple B, Hirschau
+
+Vollständig ausgefülltes Beispiel für Agentur-Dokumentation. Alle 3 Kling-Prompts inklusive korrekter Speisekarten-Gerichte.
+
+**Gewählte Repräsentations-Gerichte:**
+- Burger → **Triple Stack** (Signature): Drei Rinderpatties, dreifach Cheddar, Triple B Soße, Gurke, Zwiebeln
+- Bowl → **Caesar Bowl**: Römersalat, Parmesan, Caesar-Dressing, Croutons, Kirschtomaten
+- Basics → **Käsespätzle**: Hausgemachte Spätzle, geschmolzener Emmentaler, Röstzwiebeln, Schnittlauch
+
+**Begründung Auswahl:**
+- Triple Stack: Signature-Item, visuell beeindruckendste Komposition (drei Patties, dreifach Käse)
+- Caesar Bowl: klare Farben, hohe Lesbarkeit im Video, breite Zielgruppe
+- Käsespätzle: reiches Comfort-Food, goldene Farbtöne, Käse-Glanz + Zwiebel-Textur visuell sehr stark
+
+#### Triple B — Video 1 Prompt (Exterior → Entrance)
+
+```
+Cinematic slow push-in camera movement, starting at street level
+approximately 15 meters in front of Triple B restaurant facade at dusk.
+
+Exterior: dark charcoal-grey painted walls, large dark-framed windows
+glowing with warm amber interior light, clean modern sign reading
+"Triple B" in bold white letters, minimal industrial styling.
+
+Camera glides forward slowly and continuously toward the entrance door —
+smooth, steady, no shake, no cuts. As camera approaches, warm amber
+pendant lamp light grows more visible through windows. Street is quiet,
+slightly wet pavement reflecting warm glow. Evening blue-hour sky
+contrasting with warm interior.
+
+Final 2 seconds: camera crosses entrance threshold, interior reveals —
+rows of dark wooden tables, warm amber pendant lights hanging low,
+depth of restaurant corridor opening.
+
+Mood: premium casual dining, warm and inviting, cinematic depth,
+opening of a high-end restaurant documentary.
+Color grade: deep shadows, warm amber highlights, slight blue exterior
+sky contrasting with interior warmth.
+Aspect ratio: 16:9, photorealistic, no text overlays, no people.
+```
+
+**Negative Prompt:**
+```
+cartoon, animation, bright daylight, fluorescent lighting,
+fast movement, camera shake, people walking, crowds, lens flare,
+artificial looking, CGI obvious
+```
+
+**Kling Settings:** Stil: Cinematic | Kamera: Push In | Dauer: 10 Sek.
+
+---
+
+#### Triple B — Video 2 Prompt (Interior Walkthrough)
+
+```
+Cinematic floating camera movement through the interior of Triple B
+restaurant at night, no people present. Camera starts at entrance end
+and slowly glides forward in gentle S-curve path between dining tables.
+
+Interior: dark charcoal-grey rectangular tabletops approximately
+120×70cm, light natural beech wood chairs with deep navy blue cushioned
+seats and backrests, warm amber Edison-style pendant lamps hanging at
+150cm height casting perfect circular pools of amber light on each table,
+dark grey polished concrete or wood floor reflecting pendant light pools,
+exposed brick or dark plaster walls with subtle texture.
+
+Camera height stays at approximately 120cm — eye level of seated person.
+Tilts very slightly downward toward table surfaces while passing each table.
+
+Lighting: exclusively from warm amber pendant lamps — deep shadows
+between tables, golden amber circles of light on each table surface.
+Restaurant corridor depth disappears into warm bokeh darkness.
+
+Camera passes three table positions, approximately 3 seconds per table,
+then glides forward. Smooth, continuous, no jerks.
+
+Mood: intimate, quiet, the restaurant just before guests arrive,
+premium atmosphere. Color grade: ultra-warm amber highlights,
+deep charcoal blacks in shadows, slight golden vignette, film grain.
+Aspect ratio: 16:9, photorealistic, no text, no people.
+```
+
+**Negative Prompt:**
+```
+people, staff, customers, bright overhead fluorescent, fast movement,
+drone footage, fish-eye lens, wide angle distortion, cartoon, CGI,
+fast cuts, modern white minimalist interior
+```
+
+**Kling Settings:** Stil: Cinematic | Kamera: Dolly Forward + leichter Pan | Dauer: 10 Sek.
+
+---
+
+#### Triple B — Video 3 Prompt (Food Beauty Shots)
+
+```
+Cinematic food photography video sequence. Three Triple B dishes
+presented sequentially on dark charcoal matte restaurant tabletop.
+Lighting: single warm amber pendant lamp from above as sole light source —
+dramatic top-down illumination, deep side shadows, glossy highlights.
+
+SEGMENT 1 — Triple Stack (Signature Burger) — First 3-4 seconds:
+Slow orbital camera movement, camera rotates 30 degrees around the dish.
+Camera angle: 35 degrees above horizontal, very shallow depth of field,
+restaurant interior amber bokeh background.
+
+White ceramic plate. Three thin wide smash-pressed beef patties stacked,
+each with dark charred crispy outer edges showing Maillard reaction.
+Three individual slices of fully melted American cheddar cheese draped
+over each patty layer, cheese glossy and pulling. Triple B sauce (creamy
+amber) visible at edges of each layer. Thin pickle slices peeking out
+between layers. Finely sliced white onions. Toasted golden sesame seed
+brioche bun on top — bottom bun visible below, lightly toasted.
+The three patty stack is tall and impressive. Cheese reflects amber light.
+
+SEGMENT 2 — Caesar Bowl — Middle 3-4 seconds:
+Smooth push-in from 40 degrees above, bowl fills the frame.
+
+Large white ceramic bowl. Fresh dark and light green Roman lettuce leaves
+(Römersalat) filling the bowl, slightly glistening. Freshly grated
+Parmesan cheese in thick shavings scattered across the top, catching
+warm light. Caesar dressing (cream-white, slightly glossy) drizzled
+in an arc across the lettuce. Whole and halved bright red cherry
+tomatoes (Kirschtomaten) with stems tucked at edges. Golden croutons
+(Croutons) visible between lettuce leaves, slightly darker from toasting.
+Bowl feels fresh, generous, colorful against dark tabletop.
+
+SEGMENT 3 — Käsespätzle — Final 3-4 seconds:
+Very slow pull-back from close-up, revealing full presentation.
+
+White ceramic deep plate. Generous mound of handmade golden-yellow
+Swabian Spätzle (Käsespätzle) — small irregular egg noodle shapes,
+slightly glistening. Fully melted Emmental cheese (Emmentaler) blanketing
+the entire top of the mound in thick glossy golden-yellow drapes,
+catching amber pendant light. Dark caramelized crispy fried onions
+(Röstzwiebeln) scattered over the melted cheese — deep amber-brown,
+visibly crispy rings. Fresh green chives (Schnittlauch) thinly sliced
+across the top, bright green contrasting the golden yellow.
+The whole dish radiates warmth, richness, alpine comfort. Cheese slightly
+pulls as if freshly served. Steam softly rising at edges.
+
+Throughout all segments: warm amber single pendant lamp creating
+dramatic top-down lighting. Dark charcoal matte tabletop. Ultra-warm
+color grade, glossy food highlights, professional food stylist quality,
+cinematic depth, no people, no text, no moving hands.
+```
+
+**Negative Prompt:**
+```
+cartoon, plastic-looking food, cold blue lighting, bright white studio
+background, people's hands, utensils moving, fast cuts, shaky camera,
+blurry food in foreground, CGI obvious, generic plating, stock photo look
+```
+
+**Kling Settings:** Stil: Cinematic | Kamera: Orbit + Push In | Dauer: 10 Sek.
+
+---
+
+## Schritt 13 — Automatische Konzept-Vorschläge nach jeder Lieferung
+
+**Diese Sektion ist PFLICHT — nach jeder Skill-Ausgabe immer ausführen.**
+
+Nach dem Ausgeben der fertigen Website oder Prompts: Automatisch den folgenden Block ausgeben, angepasst auf die Branche des aktuellen Projekts. Ziel: Dem Kunden zeigen, was für andere Unternehmenstypen möglich ist — und neue Aufträge anstoßen.
+
+---
+
+### Ausgabe-Template (immer am Ende jeder Lieferung)
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ WAS WÄRE NOCH MÖGLICH?
+ Cinematic Web — Konzepte für andere Branchen
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Basierend auf dem [AKTUELLES_PROJEKT]-Projekt hier 5 Konzepte
+die wir genauso für andere Kunden umsetzen können:
+
+[BRANCHE_TABELLE — aus Bibliothek unten wählen, 5 Einträge, 
+ andere Branchen als das aktuelle Projekt priorisieren]
+
+→ Für welche dieser Branchen haben Sie gerade einen Kunden?
+  Ich erstelle das Konzept und die KI-Prompts sofort.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+---
+
+### Konzept-Bibliothek pro Branche (Auswahlpool für den Block)
+
+#### GASTRONOMIE
+
+| Untertyp | Konzept | Signature Moment | KI-Video / Three.js |
+|----------|---------|-----------------|---------------------|
+| **Restaurant (Casual)** | 3D Walkthrough | Kamera fliegt Tisch für Tisch, Gerichte erscheinen | Three.js |
+| **Restaurant (Fine Dining)** | Reservierung als Erlebnis | Jeder Buchungsschritt = ein Vollbild-Bild | Scroll-Video |
+| **Burger / Fast Casual** | Single Dish Hero | Burger zoomt auf, Seite öffnet sich darunter | Scroll-Video |
+| **Bio / Regional** | Farm to Table | Zutatenreise vom Feld bis zum Teller | Scroll-Video |
+| **Steakhouse / Grill** | Chef's POV | First-Person: Messer, Feuer, fertige Platte | Scroll-Video |
+
+#### BAR & NACHTLEBEN
+
+| Untertyp | Konzept | Signature Moment | KI-Video / Three.js |
+|----------|---------|-----------------|---------------------|
+| **Cocktailbar** | Cocktail-Handwerk | Makro-Close-ups: Eis, Glas, Farben, Shaker | Scroll-Video |
+| **Weinbar** | Weinreise | Kamera fährt durch Weinregion → landet in Bar | Scroll-Video |
+| **Bierlokal / Brauerei** | Brauerei-Walkthrough | Kamera durch Kessel, Lager, Ausschank | Three.js |
+| **Diskothek / Club** | Energy-Kaskade | Strobo-Effekte, Crowd-Silhouetten, Bass-Vibrationen | Scroll-Video |
+| **Rooftop Bar** | Panorama-Reveal | Kamera steigt von unten auf, Stadt-Panorama öffnet sich | Scroll-Video |
+
+#### AGENTUR & DIENSTLEISTUNG
+
+| Untertyp | Konzept | Signature Moment | KI-Video / Three.js |
+|----------|---------|-----------------|---------------------|
+| **Digitalagentur** | Code wird Bild | Scramble-Text morpht zu fertigem Design | GSAP/CSS |
+| **Kreativagentur** | Work-Cinematic | Schwarzweiß-Atelier-Bilder, Akzentfarbe taucht auf | Scroll-Video |
+| **Unternehmensberatung** | Numbers-First | Zahlen explodieren, Statistiken erzählen Story | Stats-Counter |
+| **PR / Kommunikation** | Editorial Magazine | Artikel-Layouts, Zitate, Pressebilder | Editorial-Scroll |
+| **Fotograf / Videograf** | Galerie-Walkthrough | Three.js Galerie-Korridor, Bilder an Wänden | Three.js |
+
+#### HANDEL & PRODUKT
+
+| Untertyp | Konzept | Signature Moment | KI-Video / Three.js |
+|----------|---------|-----------------|---------------------|
+| **Premium-Shop** | Produkt-Orbit | Three.js Kamera umkreist Produkt auf Podest | Three.js |
+| **Mode / Fashion** | Look-Sequenz | Runway-Ästhetik, Kollektion als Editorial | Scroll-Video |
+| **Auto-Händler** | Showroom-Drive | Kamera fährt um Fahrzeug herum, Details | Three.js |
+| **Schmuck / Luxus** | Makro-Beauty | Extreme Nahaufnahmen: Struktur, Licht, Material | Scroll-Video |
+| **Kosmetik** | Ingredient-Story | Farm to Table-Stil für Inhaltsstoffe | Scroll-Video |
+
+#### IMMOBILIEN & LOCATION
+
+| Untertyp | Konzept | Signature Moment | KI-Video / Three.js |
+|----------|---------|-----------------|---------------------|
+| **Hotel** | Room-Flythrough | Three.js durch Lobby, Suite, Pool, Restaurant | Three.js |
+| **Boutique-Hotel** | Tageszeiten-Wechsel | Website ändert sich mit Sonnenstand | Dynamisch |
+| **Event-Location** | Vor & Nach | Split-Screen: leerer Raum → volle Feier | Scroll-Video |
+| **Immobilienmakler** | Neighbourhood-Zoom | Stadtansicht zoomt auf Objekt | Neighbourhood |
+| **Ferienwohnung** | Erlebnisreise | Location-Story: Umgebung → Wohnung → Detail | Scroll-Video |
+
+#### LIFESTYLE & WELLNESS
+
+| Untertyp | Konzept | Signature Moment | KI-Video / Three.js |
+|----------|---------|-----------------|---------------------|
+| **Fitnessstudio** | Energy-Walkthrough | Kamera durch Geräte, Licht, Bewegung | Three.js |
+| **Yoga / Pilates** | Stille-Ästhetik | Extremes Weißraum, Atemrhythmus als Scroll | Minimal-CSS |
+| **Spa / Wellness** | Sensorisch | Wasser, Dampf, Texturen — keine Menschen | Scroll-Video |
+| **Friseur / Beauty** | Transformation | Vorher/Nachher als dramatisches Reveal | Scroll-Video |
+| **Tattoo Studio** | Craft-Korridor | Three.js Walkthrough durch Studio, Artworks an Wänden | Three.js |
+
+---
+
+### Branchenspezifische Anpassung des Ton im Vorschlagsblock
+
+Wenn das aktuelle Projekt ein **Restaurant** war → Vorschläge für Bar, Club, Agentur, Hotel betonen.
+Wenn das aktuelle Projekt eine **Agentur** war → Vorschläge für Produkt, Immobilien, Lifestyle.
+Wenn das aktuelle Projekt ein **Shop** war → Vorschläge für Gastronomie, Hotel, Agentur.
+
+→ Nie dasselbe Branchen-Segment zweimal im Vorschlagsblock — immer Diversität zeigen.
+
+---
+
+## Schritt 14 — Standort-Anreicherung für KI-Prompts
+
+Wenn der Nutzer den genauen Standort beschreibt (Adresse, Stadt, Viertel, Architektur), **müssen** die KI-Prompts diesen Kontext exakt widerspiegeln. Generic "restaurant facade" reicht nicht — der Prompt soll die echte Umgebung beschreiben.
+
+### Zusatzfelder im Brief
+
+```
+[ADRESSE_VOLL]     → Straße + Hausnummer + PLZ + Ort
+[STADTTEIL_VIBE]   → z.B. "ruhige Wohnstraße", "Fußgängerzone", "Industriequartier"
+[ARCHITEKTUR_STIL] → z.B. "Altbau-Fassade", "Neubau Glas-Stahl", "bayerischer Gasthof-Stil",
+                         "Backsteinbau", "verputzte Fassade 1970er", "Fachwerkhaus"
+[UMGEBUNG]         → Was steht links/rechts/gegenüber? Bäume? Platz? Parkplatz?
+[REGION]           → Bayern / Sachsen / NRW / Österreich / Schweiz / etc.
+[BESONDERHEITEN]   → Besondere Merkmale: Markise, Vorgarten, Terrasse, Schaufenster, Brunnen
+```
+
+---
+
+### Region → Visuelle Sprache (Übersetzungstabelle)
+
+| Region | Architektur-Typ | Licht-Charakter | Prompt-Sprache |
+|--------|----------------|-----------------|----------------|
+| **Bayern / Oberpfalz** | Verputzte Fassaden, Holzdetails, flache Dächer | Warm-golden, klares Licht | "rendered facade typical of Bavarian small town, warm southern German evening light, quiet residential street with mature linden trees" |
+| **München Innenstadt** | Urban, Gründerzeit-Altbau | Warmes Stadtlicht, Fußgängerstrom | "Gründerzeit building facade, urban Munich setting, cobblestone side street, city ambient glow" |
+| **Hamburg / Nordsee** | Backstein, Speichergebäude | Diffuses nordisches Licht, oft bewölkt | "north German red brick building, maritime influence, overcast northern light, cobblestone Hinterhof" |
+| **Berlin** | Mix: Plattenbau, Altbau, Neubau | Urbanes Neonlicht, Multikulti | "Berlin-style mixed architecture, urban street art nearby, neon-lit urban night scene" |
+| **Wien** | Historistisch, Jugendstil | Weich, warm, imperial | "Viennese Historicism facade, ornate stucco details, warm imperial evening light, quiet Gasse" |
+| **Zürich / Schweiz** | Sauber, präzise, Naturstein | Klar, hochwertig | "Swiss precision architecture, natural stone facade, clean mountain-country street, pristine evening light" |
+| **Ländlich / Dorf** | Freistehend, Parkplatz, Grün | Natur, Ruhe, Sterne | "freestanding rural building surrounded by trees, village setting, quiet country road, starlit sky visible" |
+| **Industriequartier** | Beton, Metall, Lager-Umgebung | Industrielles Gelb, Spot-Licht | "former industrial building converted, raw concrete and steel, industrial district setting, warehouse neighborhood" |
+
+---
+
+### Standort-Anreicherungs-Regel
+
+**Vor jedem Video-1-Prompt (Exterior):**
+
+1. `[ADRESSE_VOLL]` → Ort in Prompt einarbeiten: *"in the small Bavarian town of Hirschau"*
+2. `[ARCHITEKTUR_STIL]` → Gebäude beschreiben: *"rendered facade typical of southern German small-town commercial building"*
+3. `[UMGEBUNG]` → Straßenkontext: *"quiet residential side street, few parked cars, linden trees visible"*
+4. `[BESONDERHEITEN]` → spezifische Details: *"small outdoor terrace with two tables visible to the left of the entrance"*
+5. `[REGION]` → Lichtstimmung aus Tabelle oben wählen
+
+**Für Video-2 (Interior):** Standort beeinflusst nur Außengeräusche und Fensterblick — optional einfließen lassen.
+
+**Für Video-3 (Food):** Standort beeinflusst Tellerform, regionale Zutaten-Herkunft — in Mood-Beschreibung erwähnen.
+
+---
+
+### Triple B Standort-Anreicherung (Referenz)
+
+**Brief-Daten:**
+```
+ADRESSE_VOLL:     [Hauptstraße], 92242 Hirschau
+STADTTEIL_VIBE:   ruhige Kleinstadt, Innenstadt-nah
+ARCHITEKTUR_STIL: verputzte Fassade, typisch bayerischer Gewerbe-Bau
+UMGEBUNG:         Geschäftsstraße, wenig Fußgänger abends, ländliche Ruhe
+REGION:           Bayern / Oberpfalz
+BESONDERHEITEN:   Schild "Triple B", große Schaufensterscheiben
+```
+
+**Angereicherte Exterior-Beschreibung für Video 1:**
+```
+...in the quiet small Bavarian town of Hirschau, Oberpfalz region.
+Exterior: rendered facade typical of southern German small-town
+commercial building, large display windows glowing with warm amber
+interior light, clean sign reading "Triple B" prominently displayed.
+Quiet evening street with few passing cars, the calm of a small
+Bavarian Innenstadt at dusk. Warm southern German evening light
+quality — golden, clear, low sun angle casting long shadows.
+Street is almost still — the calm before the dinner rush...
+```
+
+---
+
+### Prompt-Qualitäts-Skala
+
+Nutze diese Skala um zu prüfen, ob ein Prompt gut genug ist:
+
+| Level | Beschreibung | Beispiel |
+|-------|-------------|---------|
+| ❌ **Generic** | Könnte jedes Restaurant sein | "a restaurant at night" |
+| ⚠️ **Basic** | Grundlegende Details | "a burger restaurant with warm lighting" |
+| ✅ **Good** | Stil + Licht + Kamera | "dark charcoal facade, amber pendant lights, push-in camera" |
+| ⭐ **Premium** | Alles obige + Standort + Zutaten 1:1 + Stimmung | Triple B Prompts oben |
+| 🏆 **Agency-Tier** | Premium + Referenzstil + Seed-Konsistenz + Negative Prompt | Vollständige Kling-Outputs mit Settings |
+
+**Ziel:** Immer ⭐ oder 🏆. Nie unter ✅ liefern.
+
+---
+
+## Schritt 11 — JPEG Frame Player Mode (Video-Alternative)
+
+Wenn echte MP4-Videos vorliegen (aus Kling oder anderen Quellen), ersetze Three.js durch einen **JPEG-Frame-Canvas-Player**. Dieser Modus ist stabiler, leichter zu debuggen, und vermeidet WebGL-Probleme.
+
+### Wann JPEG Frame Player statt Three.js
+
+| Situation | Empfehlung |
+|-----------|-----------|
+| Fertige Videos aus Kling 3.0 vorhanden | **JPEG Frame Player** |
+| Kein Video vorhanden, generierter Raum reicht | Three.js Walkthrough |
+| Mobile-Performance kritisch | Frame Player (einfacher) |
+| Budget für Kling-Videos vorhanden | Frame Player |
+
+### Schritt 0 — Frames extrahieren (Python)
+
+```python
+import cv2, os
+
+JOBS = [
+    ("V1.mp4", "frames/v1", 1920, 1080),
+    ("V2.mp4", "frames/v2", 1920, 1080),
+    ("V3.mp4", "frames/v3", 1920, 1080),
+]
+TARGET_FPS = 30
+QUALITY    = 92
+
+for fname, out_rel, tw, th in JOBS:
+    cap     = cv2.VideoCapture(fname)
+    src_fps = cap.get(cv2.CAP_PROP_FPS)
+    total   = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    step    = src_fps / TARGET_FPS
+    out_idx = 1; src_idx = 0.0
+    os.makedirs(out_rel, exist_ok=True)
+    while True:
+        cap.set(cv2.CAP_PROP_POS_FRAMES, int(src_idx))
+        ret, frame = cap.read()
+        if not ret: break
+        cv2.imwrite(f"{out_rel}/{out_idx:04d}.jpg",
+                    cv2.resize(frame, (tw, th), cv2.INTER_LANCZOS4),
+                    [cv2.IMWRITE_JPEG_QUALITY, QUALITY])
+        out_idx += 1; src_idx += step
+        if src_idx >= total: break
+    cap.release()
+```
+
+### Canvas-Architektur
+
+```html
+<!-- 700vh Scroll-Wrapper — gleich wie Three.js Modus -->
+<div id="cv-wrap" style="height:700vh;position:relative">
+  <canvas id="cvs" style="position:fixed;inset:0;width:100%;height:100%;z-index:0"></canvas>
+  <!-- HTML Overlays identisch zu Three.js Modus -->
+</div>
+```
+
+### KRITISCH: USE_BMP = false — NIEMALS true setzen
+
+```javascript
+/* ⚠️ NIEMALS auf true setzen bei vollständigem Preload:
+   906 Frames × 8 MB GPU-Bitmap = 7,5 GB VRAM → Browser-Tab-Crash
+   USE_BMP = typeof createImageBitmap !== 'undefined';  // VERBOTEN
+*/
+const USE_BMP = false;
+```
+
+**Erlaubt:** Für lookahead-Frames (nur next frame, nicht alle):
+```javascript
+// Spekulativ nur das NÄCHSTE Frame dekodieren — nie alle
+if (!USE_BMP) {
+  frames[si]?.[nfi]?.decode?.()?.catch?.(() => {});
+}
+```
+
+### Scenes-Konfiguration
+
+```javascript
+const SCENES = [
+  { dir: 'frames/v1', count: 302 },  // V1 Exterior
+  { dir: 'frames/v2', count: 302 },  // V2 Interior
+  { dir: 'frames/v3', count: 302 },  // V3 Food / Produkt
+];
+// SCENE_STARTS[i]: Frames überspringen wenn Video mit leerem Bild beginnt
+const SCENE_STARTS = [15, 0, 0]; // V1 überspringt 15 Frames (Schild wird sichtbar)
+```
+
+### ScrollTrigger — Progress immer clampen
+
+```javascript
+ScrollTrigger.create({
+  trigger: '#cv-wrap',
+  start: 'top top',
+  end: 'bottom bottom',
+  onUpdate(self) {
+    /* ⚠️ PFLICHT: Lenis kann negative Progress-Werte liefern (Bounce) */
+    const p  = Math.max(0, Math.min(1, self.progress));
+    const sc = SCENES.length;
+    const si = Math.max(0, Math.min(sc - 1, Math.floor(p * sc)));
+    const lp = Math.max(0, (p * sc) - si);
+    const fi = Math.max(0, Math.floor(lp * SCENES[si].count));
+    drawFrame(si, fi);
+    updateOverlays(p);
+  }
+});
+```
+
+**Fehler ohne Clamping:** `SCENES[-1].count` → `TypeError: Cannot read properties of undefined` → Tab-Crash beim Zurückscrollen.
+
+### Frame-zu-Scroll-Progress Umrechnung
+
+```javascript
+/* Gegeben: sceneIndex (0–2), frameIndex (0–count-1), count=302
+   Scroll-Progress für dieses Frame: */
+function frameToProgress(sceneIndex, fi, count) {
+  return (fi / count + sceneIndex) / SCENES.length;
+}
+
+/* Beispiel Triple B V3 (sceneIndex=2, count=302):
+   Frame 125 → Bowl erscheint  → p ≈ 0.803
+   Frame 130 → Burger          → p ≈ 0.809
+   Frame 140 → Käsespätzle     → p ≈ 0.821
+*/
+```
+
+### Frame-genaues Overlay-System
+
+Wenn ein Element im Video erscheint, soll der Text exakt dann erscheinen:
+
+```javascript
+/* Statt OVS-Ranges: per-Element Schwellwerte */
+const TRIO_THRESH = [0.803, 0.809, 0.821]; // Bowl, Burger, Käsespätzle
+const TRIO_HIDE   = 0.990;
+const TRIO_STATE  = [false, false, false];
+let   TRIO_FOOD_VISIBLE = false;
+
+function updateFoodTrio(p) {
+  const foodEl = document.getElementById('ovFood');
+  if (!foodEl) return;
+  const anyVis = p >= TRIO_THRESH[0] && p <= TRIO_HIDE;
+
+  if (TRIO_FOOD_VISIBLE !== anyVis) {
+    TRIO_FOOD_VISIBLE = anyVis;
+    if (anyVis) { gsap.set(foodEl, {opacity:1}); foodEl.classList.add('act'); }
+    else {
+      gsap.to(foodEl, {opacity:0, duration:0.22, ease:'power1.in',
+        onComplete() { foodEl.classList.remove('act'); }});
+      TRIO_STATE.fill(false);
+    }
+  }
+  if (!anyVis) return;
+
+  foodEl.querySelectorAll('.ov-trio-col').forEach((col, i) => {
+    const shouldShow = p >= TRIO_THRESH[i];
+    if (TRIO_STATE[i] === shouldShow) return;
+    TRIO_STATE[i] = shouldShow;
+    const items = col.querySelectorAll('.ov-trio-dish,.ov-trio-p');
+    if (shouldShow) {
+      gsap.fromTo(col, {opacity:0}, {opacity:1, duration:0.08});
+      gsap.fromTo(items, {opacity:0, y:20}, {opacity:1, y:0, duration:0.6,
+        ease:'power3.out', stagger:0.1});
+    } else {
+      gsap.to(col, {opacity:0, duration:0.15, ease:'power1.in'});
+    }
+  });
+}
+```
+
+### V3 Frame-Scan Workflow (vor Implementierung)
+
+Bevor OVS-Ranges gesetzt werden: Frames visuell prüfen um exakte Erschein-Frames zu finden.
+
+```
+Frame 1–110:   Leerer Teller — kein Overlay
+Frame ~120–125: Bowl erscheint (slide-in von links)
+Frame ~128–130: Burger erscheint (slide-in von rechts)
+Frame ~138–140: Käsespätzle erscheint (slide-in von rechts)
+Frame 150–302: Alle drei sichtbar — Overlays bleiben aktiv
+```
+
+**Scanning-Methode:** Frames an 1, 50, 100, 110, 125, 130, 140 lesen um Erschein-Punkte zu finden. Binärsuche bei Unsicherheit.
+
+### Speisekarte als 3D-Flipbuch
+
+Für Gastronomie: Original-Menüfotos als CSS-3D-Buch einbetten (kein Click-to-Open, immer sichtbar):
+
+```css
+.bk-wrap { width: min(960px, calc(100% - 120px)); margin: 0 auto; }
+.bk      { height: min(740px, 88vh); display: grid;
+           grid-template-columns: 1fr 12px 1fr; overflow: hidden;
+           box-shadow: 0 50px 100px rgba(0,0,0,.85); }
+
+/* Flip-Animation — nur transform, keine height/top */
+.bk-l { transform-origin: right center;
+        transition: transform .45s cubic-bezier(0.4,0,0.2,1), opacity .3s; }
+.bk-l.fo { transform: perspective(900px) rotateY(-28deg); opacity: .5; }
+.bk-r.fo { transform: perspective(900px) rotateY(28deg);  opacity: .5; }
+
+/* Photo-Modus — beide Seiten identisch */
+.bk-l.bk-lp, .bk-r.bk-rp { padding: 0; background: #0a0808;
+                              overflow-y: auto; }
+.bk-l.bk-lp::after { display: none; } /* Gradient-Overlay entfernen */
+.bk-l.bk-lp img, .bk-r.bk-rp img { width: 100%; height: auto; display: block; }
+```
+
+**BD-Struktur für reine Original-Foto-Seiten:**
+```javascript
+const BD = [
+  { l:{t:'photo', src:'menu-p1.jpg', alt:'...'}, r:{t:'photo', src:'menu-p2.jpg', alt:'...'} },
+  { l:{t:'photo', src:'menu-p3.jpg', alt:'...'}, r:{t:'photo', src:'menu-p4.jpg', alt:'...'} },
+  // ...
+  { l:{t:'cover'}, r:{t:'photo', src:'menu-last.jpg', alt:'...'} }, // Backcover
+];
+```
+
+### Performance-Checkliste Frame Player
+
+- [ ] `USE_BMP = false` — nie alle 900 Frames als GPU-Bitmap anlegen
+- [ ] `self.progress` immer clampen: `Math.max(0, Math.min(1, ...))`
+- [ ] `si` immer clampen: `Math.max(0, Math.min(sc-1, ...))`
+- [ ] `fi` immer clampen: `Math.max(0, ...)`
+- [ ] Mobile: Frame Player komplett deaktivieren (`IS_MOB = window.innerWidth < 960`)
+- [ ] `img.decode()` nur für 1–2 Lookahead-Frames, nicht für alle
+- [ ] Python-Server für JPEG-Auslieferung (SimpleHTTPRequestHandler) mit Cache-Header
+
+---
+
+## Schritt 12 — Projekt-Lernprotokoll (Triple B, 2026)
+
+### Performance-Lektion: USE_BMP
+
+**Problem:** `createImageBitmap()` für alle 906 Frames beim Preload → 906 × 8 MB GPU-Textur → ~7,5 GB VRAM → Browser-Tab-Crash.  
+**Fix:** `USE_BMP = false`. Lookahead: nur nächstes Frame mit `img.decode()`.  
+**Regel:** Bei mehr als 100 Frames NIEMALS alle als Bitmap anlegen.
+
+### Crash-Lektion: Lenis Negative Progress
+
+**Problem:** Lenis kann `self.progress < 0` liefern (Bounce-Effekt beim schnellen Zurückscrollen).  
+**Fix:** Alle ScrollTrigger-Werte mit `Math.max(0, Math.min(1, ...))` clampen.  
+**Regel:** Alle progress-abhängigen Berechnungen immer clampen — auch `si` und `fi`.
+
+### Speisekarte-Lektion: Foto-First
+
+**Problem:** Generierte Menü-Seiten (mit Texten, Preisen, Beschreibungen) wirken schwächer als Original-Menüfotos.  
+**Fix:** Beide Seiten des Flipbuches zeigen Original-Fotos. Keine generierten Inhalte.  
+**Regel:** Wenn der Kunde echte Menüfotos hat → immer Fotos verwenden, nie generieren.
+
+### About-Sektion Hintergrundbild
+
+Subtiles Hintergrundbild verbessert die Story-Sektion stark:
+```css
+.about { position: relative; overflow: hidden; }
+.about::before { content: ''; position: absolute; inset: 0;
+  background: url('interior.jpg') center/cover no-repeat;
+  opacity: .13; filter: grayscale(40%); z-index: 0; pointer-events: none; }
+.about .ctr { position: relative; z-index: 1; }
+```
+**Regel:** Hintergrundbilder bei max. 15% Deckkraft + Graustufenfilter einsetzen — subtil, nie ablenkend.
+
+### Kontaktformular-Dringlichkeit
+
+Urgency-Element + IntersectionObserver-Slide-in erhöht Konversionsrate:
+```html
+<div class="c-urgency"><span class="u-dot"></span>Tische heute noch verfügbar</div>
+```
+```css
+@keyframes urgPulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.35;transform:scale(.6)} }
+.u-dot { animation: urgPulse 1.4s ease-in-out infinite; }
+```
 
 ---
 

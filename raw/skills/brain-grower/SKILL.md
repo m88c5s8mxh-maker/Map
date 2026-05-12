@@ -1,10 +1,10 @@
 ---
-name: brain-growth
-description: Automatischer Wachstums-Workflow für das Map-Gehirn. Liest alle Skills, scrapt relevante Quellen pro Skill-Kategorie, extrahiert Wissen und fügt es als Research-Nodes ins Map-Repo ein. Trigger: /brain-growth [Kategorie] oder /brain-growth all
+name: brain-grower
+description: Automatischer Wachstums-Workflow für das Map-Gehirn. Liest alle Skills, scrapt relevante Quellen pro Skill-Kategorie, extrahiert Wissen und fügt es als Research-Nodes ins Map-Repo ein. Trigger: /brain-grower [Kategorie] oder /brain-grower all
 argument-hint: "<Kategorie: design|sales|marketing|engineering|ai|finance|hr|data|all>"
 ---
 
-# Brain Growth — Automatischer Wachstums-Workflow
+# Brain Grower — Automatischer Wachstums-Workflow
 
 Erweitert das Map-Gehirn systematisch: für jede Skill-Kategorie werden kuratierte Quellen gescrapt, aufbereitet und als neue Wissensknoten committed.
 

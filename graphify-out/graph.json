@@ -1,353 +1,7 @@
 {
   "directed": false,
   "multigraph": false,
-  "graph": {
-    "hyperedges": [
-      {
-        "id": "he_sales_workflow_cluster",
-        "label": "Sales Workflow Skills Cluster",
-        "members": [
-          "skill_account_research",
-          "skill_call_prep",
-          "skill_call_summary"
-        ],
-        "relation": "form_sales_workflow",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "rationale": "account-research feeds call-prep which produces call-summary \u2014 a coherent end-to-end sales call workflow, all using Common Room data",
-        "source_file": "raw/skills/call-prep.md"
-      },
-      {
-        "id": "he_compliance_finance_cluster",
-        "label": "Finance & Compliance Skills Cluster",
-        "members": [
-          "skill_audit_support",
-          "skill_close_management",
-          "concept_sox404"
-        ],
-        "relation": "form_compliance_workflow",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "rationale": "audit-support and close-management both address financial reporting accuracy and compliance (SOX 404, ICFR) \u2014 two phases of the same financial governance cycle",
-        "source_file": "raw/skills/audit-support.md"
-      },
-      {
-        "id": "he_creative_visual_cluster",
-        "label": "Creative & Visual Design Skills Cluster",
-        "members": [
-          "skill_algorithmic_art",
-          "skill_canvas_design",
-          "skill_brand_guidelines"
-        ],
-        "relation": "form_visual_design_ecosystem",
-        "confidence": "INFERRED",
-        "confidence_score": 0.75,
-        "rationale": "algorithmic-art and canvas-design share a two-step philosophy-then-execution pattern, both referencing Anthropic brand guidelines for consistent UI/branding output",
-        "source_file": "raw/skills/algorithmic-art.md"
-      },
-      {
-        "id": "hyperedge_sales_intelligence_cluster",
-        "label": "Sales Intelligence Cluster",
-        "nodes": [
-          "skill_contact_research",
-          "skill_compose_outreach",
-          "skill_competitive_intelligence"
-        ],
-        "relation": "collectively_enable",
-        "description": "These three skills together form the core sales intelligence pipeline: research contacts, understand competitive context, then craft personalized outreach.",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_files": [
-          "raw/skills/contact-research.md",
-          "raw/skills/compose-outreach.md",
-          "raw/skills/competitive-intelligence.md"
-        ]
-      },
-      {
-        "id": "hyperedge_design_workflow_chain",
-        "label": "Design Workflow Chain",
-        "nodes": [
-          "skill_design_critique",
-          "skill_design_handoff",
-          "skill_design_system"
-        ],
-        "relation": "form_sequential_workflow",
-        "description": "Design critique \u2192 handoff \u2192 system management forms the end-to-end design-to-engineering workflow.",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_files": [
-          "raw/skills/design-critique.md",
-          "raw/skills/design-handoff.md",
-          "raw/skills/design-system.md"
-        ]
-      },
-      {
-        "id": "hyperedge_data_stack",
-        "label": "Data Analytics Stack",
-        "nodes": [
-          "skill_data_context_extractor",
-          "skill_create_viz",
-          "skill_data_visualization"
-        ],
-        "relation": "form_data_pipeline",
-        "description": "Data context extraction defines the warehouse schema, create-viz and data-visualization turn query results into insights \u2014 together they form the analytical workflow.",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_files": [
-          "raw/skills/data-context-extractor.md",
-          "raw/skills/create-viz.md",
-          "raw/skills/data-visualization.md"
-        ]
-      },
-      {
-        "id": "financial_accounting_cluster",
-        "label": "Financial Accounting Skill Cluster",
-        "nodes": [
-          "financial_statements_skill",
-          "journal_entry_skill",
-          "journal_entry_prep_skill",
-          "forecast_skill"
-        ],
-        "relation": "form",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "raw/skills/financial-statements.md"
-      },
-      {
-        "id": "sales_outreach_pipeline",
-        "label": "Sales Outreach & Pipeline Cluster",
-        "nodes": [
-          "draft_outreach_skill",
-          "enrich_lead_skill",
-          "email_sequence_skill",
-          "forecast_skill"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_file": "raw/skills/draft-outreach.md"
-      },
-      {
-        "id": "mcp_integration_cluster",
-        "label": "MCP Integration Skills",
-        "nodes": [
-          "mcp_builder_skill",
-          "graphify_mcp_server",
-          "email_sorter_gmail_mcp",
-          "enrich_lead_apollo"
-        ],
-        "relation": "implement",
-        "confidence": "INFERRED",
-        "confidence_score": 0.82,
-        "source_file": "raw/skills/mcp-builder.md"
-      },
-      {
-        "id": "hyperedge_product_insight_loop",
-        "label": "Product Insight \u2192 Roadmap \u2192 Metrics Loop",
-        "members": [
-          "skill_research_synthesis",
-          "skill_roadmap_update",
-          "skill_metrics_review"
-        ],
-        "relation": "forms_continuous_feedback_cycle",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "rationale": "Research synthesis informs roadmap prioritization; roadmap execution is tracked via metrics review; metrics findings feed back into new research questions.",
-        "source_files": [
-          "raw/skills/research-synthesis.md",
-          "raw/skills/roadmap-update.md",
-          "raw/skills/metrics-review.md"
-        ]
-      },
-      {
-        "id": "hyperedge_hr_employee_lifecycle",
-        "label": "HR Employee Lifecycle Cluster",
-        "members": [
-          "skill_recruiting_pipeline",
-          "skill_onboarding",
-          "skill_performance_review",
-          "skill_people_report"
-        ],
-        "relation": "covers_employee_lifecycle_stages",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "rationale": "These four skills collectively span the full employee journey: sourcing/hiring, onboarding, performance evaluation, and aggregate workforce analytics.",
-        "source_files": [
-          "raw/skills/recruiting-pipeline.md",
-          "raw/skills/onboarding.md",
-          "raw/skills/performance-review.md",
-          "raw/skills/people-report.md"
-        ]
-      },
-      {
-        "id": "hyperedge_connector_driven_skills",
-        "label": "Connector-Enhanced Skills Cluster",
-        "members": [
-          "skill_metrics_review",
-          "skill_pipeline_review",
-          "skill_policy_lookup",
-          "skill_roadmap_update",
-          "skill_research_synthesis"
-        ],
-        "relation": "share_connector_enhancement_pattern",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "rationale": "All five skills share the same structural pattern: standalone mode using user-provided data, plus a 'supercharged' mode when specific connectors (CRM, analytics, knowledge base, project tracker) are available \u2014 as documented in each skill's workflow section.",
-        "source_files": [
-          "raw/skills/metrics-review.md",
-          "raw/skills/pipeline-review.md",
-          "raw/skills/policy-lookup.md",
-          "raw/skills/roadmap-update.md",
-          "raw/skills/research-synthesis.md"
-        ]
-      },
-      {
-        "id": "he_enterprise_search_cluster",
-        "label": "Enterprise Search System",
-        "members": [
-          "search_skill",
-          "search_strategy_skill",
-          "source_management_skill"
-        ],
-        "relation": "forms_system",
-        "rationale": "These three skills collectively form the enterprise search pipeline: search decomposes queries via search-strategy and uses source-management to detect and prioritize MCP sources.",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "raw/skills/search.md"
-      },
-      {
-        "id": "he_agile_workflow_cluster",
-        "label": "Agile Team Workflow",
-        "members": [
-          "sprint_planning_skill",
-          "standup_skill",
-          "stakeholder_update_skill",
-          "status_report_skill"
-        ],
-        "relation": "forms_system",
-        "rationale": "These four skills together support the full agile team communication cycle: sprint planning sets the work, standup tracks daily progress, and stakeholder-update/status-report communicate outcomes upward.",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "raw/skills/sprint-planning.md"
-      },
-      {
-        "id": "he_skill_lifecycle_cluster",
-        "label": "Skill Lifecycle Management",
-        "members": [
-          "skill_creator_skill",
-          "concept_skill_eval_loop",
-          "concept_description_optimization",
-          "concept_skill_triggering"
-        ],
-        "relation": "forms_system",
-        "rationale": "The skill-creator skill and its sub-concepts form a complete lifecycle system for creating, evaluating, and optimizing skills \u2014 including iterative eval loops and description tuning for accurate triggering.",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "raw/skills/skill-creator.md"
-      },
-      {
-        "id": "hyperedge_ui_design_cluster",
-        "label": "UI Design Skill Cluster",
-        "members": [
-          "skill_high_end_visual_design",
-          "skill_minimalist_ui",
-          "skill_industrial_brutalist_ui",
-          "skill_redesign_existing_projects",
-          "skill_design_advisor"
-        ],
-        "relation": "forms_design_system_cluster",
-        "rationale": "All five skills focus on premium frontend visual design aesthetics \u2014 they share anti-pattern bans (Inter font, generic shadows), emphasize typography hierarchy, and are registered together in llms.txt as a design skill suite.",
-        "confidence": "INFERRED",
-        "confidence_score": 0.88,
-        "source_file": "raw/skills/llms.txt"
-      },
-      {
-        "id": "hyperedge_data_analysis_workflow",
-        "label": "Data Analysis & Reporting Workflow",
-        "members": [
-          "skill_write_query",
-          "skill_validate_data",
-          "skill_variance_analysis",
-          "skill_xlsx"
-        ],
-        "relation": "forms_data_workflow",
-        "rationale": "These four skills represent the end-to-end data analysis pipeline: write SQL queries, validate results, perform variance/financial analysis, and output findings to Excel. They are semantically connected through their shared concern for data accuracy and stakeholder reporting.",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "raw/skills/write-query.md"
-      },
-      {
-        "id": "hyperedge_product_ux_workflow",
-        "label": "Product & UX Development Workflow",
-        "members": [
-          "skill_user_research",
-          "skill_write_spec",
-          "skill_ux_design",
-          "skill_ux_copy",
-          "skill_testing_strategy"
-        ],
-        "relation": "forms_product_workflow",
-        "rationale": "These skills represent the full product development lifecycle: research users, write the spec (PRD), design the UX, write the interface copy, and define a testing strategy. They are naturally sequential and complementary.",
-        "confidence": "INFERRED",
-        "confidence_score": 0.87,
-        "source_file": "raw/skills/user-research.md"
-      },
-      {
-        "id": "hyperedge_llm_laziness_triad",
-        "label": "LLM Laziness \u2014 Root Causes, Remediation, Empirical Evidence form an integrated research system",
-        "members": [
-          "llm_rlhf_brevity_bias",
-          "llm_cognitive_shortcuts",
-          "llm_training_data_bias",
-          "llm_output_limits",
-          "llm_parameter_tuning",
-          "llm_prompt_engineering",
-          "llm_architectural_patterns",
-          "llm_empirical_results"
-        ],
-        "relation": "constitutes_research_system_for",
-        "confidence": "INFERRED",
-        "confidence_score": 0.9,
-        "source_file": "raw/skills/taste-skill/research/laziness/README.md",
-        "note": "These nodes jointly form the structured LLM output truncation research system that backs the output-skill remediation"
-      },
-      {
-        "id": "hyperedge_taste_design_system",
-        "label": "Taste Design System \u2014 Dials, Anti-patterns, Motion, and Examples jointly encode a coherent premium UI standard",
-        "members": [
-          "taste_skill_settings",
-          "taste_anti_slop_rules",
-          "taste_spring_physics",
-          "taste_bento_paradigm",
-          "taste_creative_arsenal",
-          "floria_design_language",
-          "ai_purple_ban"
-        ],
-        "relation": "defines_coherent_design_standard",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "raw/skills/taste-skill/SKILL.md",
-        "note": "These nodes together express the unified premium frontend design philosophy enforced by taste-skill"
-      },
-      {
-        "id": "hyperedge_stitch_output_pipeline",
-        "label": "Stitch Output Pipeline \u2014 Skill + DESIGN.md + Dials + Atmosphere collectively drive Google Stitch screen generation",
-        "members": [
-          "stitch_skill_design_taste",
-          "stitch_design_md",
-          "stitch_design_dials",
-          "stitch_visual_atmosphere",
-          "stitch_antipatterns",
-          "google_stitch"
-        ],
-        "relation": "constitutes_generation_pipeline_for",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "raw/skills/stitch-skill/SKILL.md",
-        "note": "The stitch-skill generates DESIGN.md which encodes all design tokens for Stitch AI to consume in screen generation"
-      }
-    ]
-  },
+  "graph": {},
   "nodes": [
     {
       "label": "generate_pdf.py",
@@ -355,7 +9,7 @@
       "source_file": "generate_pdf.py",
       "source_location": "L1",
       "id": "generate_pdf_py",
-      "community": 36,
+      "community": 37,
       "norm_label": "generate_pdf.py"
     },
     {
@@ -364,7 +18,7 @@
       "source_file": "generate_pdf.py",
       "source_location": "L170",
       "id": "generate_pdf_cat_color",
-      "community": 36,
+      "community": 37,
       "norm_label": "cat_color()"
     },
     {
@@ -373,7 +27,7 @@
       "source_file": "generate_pdf.py",
       "source_location": "L189",
       "id": "generate_pdf_sty",
-      "community": 36,
+      "community": 37,
       "norm_label": "sty()"
     },
     {
@@ -382,7 +36,7 @@
       "source_file": "scripts\\update_map.py",
       "source_location": "L1",
       "id": "scripts_update_map_py",
-      "community": 26,
+      "community": 27,
       "norm_label": "update_map.py"
     },
     {
@@ -391,7 +45,7 @@
       "source_file": "scripts\\update_map.py",
       "source_location": "L19",
       "id": "update_map_rebuild_code",
-      "community": 26,
+      "community": 27,
       "norm_label": "rebuild_code()"
     },
     {
@@ -400,7 +54,7 @@
       "source_file": "scripts\\update_map.py",
       "source_location": "L29",
       "id": "update_map_update_index",
-      "community": 26,
+      "community": 27,
       "norm_label": "update_index()"
     },
     {
@@ -409,7 +63,7 @@
       "source_file": "scripts\\update_map.py",
       "source_location": "L92",
       "id": "update_map_update_html",
-      "community": 26,
+      "community": 27,
       "norm_label": "update_html()"
     },
     {
@@ -417,7 +71,7 @@
       "file_type": "rationale",
       "source_file": "scripts/update_map.py",
       "source_location": "L1",
-      "community": 26,
+      "community": 27,
       "norm_label": "update_map.py \u2014 wird von der github action aufgerufen. generiert graphify-out/in",
       "id": "update_map_rationale_1"
     },
@@ -1145,7 +799,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 53,
+      "community": 54,
       "norm_label": "temperature parameter for token distribution",
       "id": "temperature_parameter"
     },
@@ -1158,7 +812,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 54,
+      "community": 55,
       "norm_label": "top-p nucleus sampling",
       "id": "top_p_nucleus_sampling"
     },
@@ -1197,7 +851,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 47,
       "norm_label": "explicit syntax binding (anti-truncation)",
       "id": "explicit_syntax_binding"
     },
@@ -1210,7 +864,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 55,
+      "community": 56,
       "norm_label": "xml-structured prompt architecture",
       "id": "xml_structured_prompts"
     },
@@ -1236,7 +890,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 47,
       "norm_label": "reference prompt templates for complete output",
       "id": "reference_prompts_templates"
     },
@@ -1249,7 +903,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 56,
+      "community": 57,
       "norm_label": "continuation handling prompt template",
       "id": "continuation_handling_prompt"
     },
@@ -1275,7 +929,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 58,
       "norm_label": "metacognitive laziness and human feedback loop",
       "id": "metacognitive_laziness"
     },
@@ -1314,7 +968,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 48,
       "norm_label": "context window asymmetry (large input, capped output)",
       "id": "context_window_asymmetry"
     },
@@ -1327,7 +981,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 48,
       "norm_label": "consumer middleware truncation problem",
       "id": "consumer_middleware_truncation"
     },
@@ -1379,7 +1033,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 58,
+      "community": 59,
       "norm_label": "dynamic throttling during peak demand",
       "id": "dynamic_throttling"
     },
@@ -2094,7 +1748,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "architecture decision record",
       "id": "concept_adr"
     },
@@ -2211,7 +1865,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 59,
+      "community": 60,
       "norm_label": "call preparation workflow",
       "id": "concept_call_prep_workflow"
     },
@@ -2302,7 +1956,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "comp-analysis",
       "id": "skill_comp_analysis"
     },
@@ -2341,7 +1995,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 24,
+      "community": 25,
       "norm_label": "compliance-tracking",
       "id": "skill_compliance_tracking"
     },
@@ -2367,7 +2021,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 48,
+      "community": 49,
       "norm_label": "consolidate-memory",
       "id": "skill_consolidate_memory"
     },
@@ -2406,7 +2060,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 50,
       "norm_label": "conversation-context",
       "id": "skill_conversation_context"
     },
@@ -2432,7 +2086,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "create-viz",
       "id": "skill_create_viz"
     },
@@ -2458,7 +2112,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "data-context-extractor",
       "id": "skill_data_context_extractor"
     },
@@ -2471,7 +2125,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "data-visualization",
       "id": "skill_data_visualization"
     },
@@ -2588,7 +2242,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "compensation analysis",
       "id": "concept_compensation_analysis"
     },
@@ -2601,7 +2255,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "equity modeling",
       "id": "concept_equity_modeling"
     },
@@ -2614,7 +2268,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "compensation benchmarking",
       "id": "concept_comp_benchmarking"
     },
@@ -2627,7 +2281,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "total compensation",
       "id": "concept_total_compensation"
     },
@@ -2718,7 +2372,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 24,
+      "community": 25,
       "norm_label": "compliance framework",
       "id": "concept_compliance_framework"
     },
@@ -2731,7 +2385,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 24,
+      "community": 25,
       "norm_label": "soc 2",
       "id": "concept_soc2"
     },
@@ -2744,7 +2398,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 24,
+      "community": 25,
       "norm_label": "gdpr",
       "id": "concept_gdpr"
     },
@@ -2757,7 +2411,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 24,
+      "community": 25,
       "norm_label": "audit readiness",
       "id": "concept_audit_readiness"
     },
@@ -2796,7 +2450,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 48,
+      "community": 49,
       "norm_label": "memory consolidation",
       "id": "concept_memory_consolidation"
     },
@@ -2861,7 +2515,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "call to action (cta)",
       "id": "concept_cta"
     },
@@ -2913,7 +2567,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "data visualization",
       "id": "concept_data_visualization"
     },
@@ -2926,7 +2580,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "chart selection",
       "id": "concept_chart_selection"
     },
@@ -2952,7 +2606,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "data warehouse",
       "id": "concept_data_warehouse"
     },
@@ -2965,7 +2619,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "schema discovery",
       "id": "concept_schema_discovery"
     },
@@ -3108,7 +2762,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "hris",
       "id": "tool_hris"
     },
@@ -3147,7 +2801,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "bigquery",
       "id": "tool_bigquery"
     },
@@ -3160,7 +2814,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "snowflake",
       "id": "tool_snowflake"
     },
@@ -3173,7 +2827,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "matplotlib",
       "id": "tool_matplotlib"
     },
@@ -3186,7 +2840,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "plotly",
       "id": "tool_plotly"
     },
@@ -3199,7 +2853,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "seaborn",
       "id": "tool_seaborn"
     },
@@ -3277,7 +2931,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "hr & compensation",
       "id": "domain_hr_compensation"
     },
@@ -3303,7 +2957,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 24,
+      "community": 25,
       "norm_label": "compliance & security",
       "id": "domain_compliance_security"
     },
@@ -3342,7 +2996,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "data & analytics",
       "id": "domain_data_analytics"
     },
@@ -3368,7 +3022,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 50,
       "norm_label": "user context (ulm, de)",
       "id": "entity_user_context_ulm"
     },
@@ -3381,7 +3035,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 23,
       "norm_label": "docx skill",
       "id": "docx_skill"
     },
@@ -3394,7 +3048,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 23,
       "norm_label": "word document (.docx)",
       "id": "docx_word_document"
     },
@@ -3407,7 +3061,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 23,
       "norm_label": "docx-js library",
       "id": "docx_docxjs"
     },
@@ -3420,7 +3074,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 23,
       "norm_label": "pandoc",
       "id": "docx_pandoc"
     },
@@ -3433,7 +3087,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 23,
       "norm_label": "libreoffice",
       "id": "docx_libreoffice"
     },
@@ -3446,7 +3100,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 23,
       "norm_label": "tracked changes",
       "id": "docx_tracked_changes"
     },
@@ -3459,7 +3113,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 23,
       "norm_label": "xml editing (docx)",
       "id": "docx_xml_editing"
     },
@@ -3550,7 +3204,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 38,
       "norm_label": "draft offer skill",
       "id": "draft_offer_skill"
     },
@@ -3563,7 +3217,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 38,
       "norm_label": "compensation package",
       "id": "draft_offer_compensation"
     },
@@ -3576,7 +3230,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 38,
       "norm_label": "offer letter",
       "id": "draft_offer_letter"
     },
@@ -3797,7 +3451,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 29,
+      "community": 30,
       "norm_label": "explore data skill",
       "id": "explore_data_skill"
     },
@@ -3810,7 +3464,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 29,
+      "community": 30,
       "norm_label": "data profiling",
       "id": "explore_data_profiling"
     },
@@ -3823,7 +3477,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 29,
+      "community": 30,
       "norm_label": "data quality assessment",
       "id": "explore_data_quality"
     },
@@ -3836,7 +3490,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 29,
+      "community": 30,
       "norm_label": "data warehouse connector",
       "id": "explore_data_warehouse"
     },
@@ -4070,7 +3724,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "incident response skill",
       "id": "incident_response_skill"
     },
@@ -4083,7 +3737,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "incident severity classification (sev1-4)",
       "id": "incident_response_severity"
     },
@@ -4096,7 +3750,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "blameless postmortem",
       "id": "incident_response_postmortem"
     },
@@ -4109,7 +3763,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "5 whys root cause analysis",
       "id": "incident_response_5whys"
     },
@@ -4174,7 +3828,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "internal comms skill",
       "id": "internal_comms_skill"
     },
@@ -4187,7 +3841,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "3p update (progress/plans/problems)",
       "id": "internal_comms_3p_update"
     },
@@ -4200,7 +3854,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 24,
       "norm_label": "company newsletter",
       "id": "internal_comms_newsletter"
     },
@@ -4213,7 +3867,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 38,
+      "community": 39,
       "norm_label": "interview prep skill",
       "id": "interview_prep_skill"
     },
@@ -4226,7 +3880,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 38,
+      "community": 39,
       "norm_label": "competency-based interview questions",
       "id": "interview_prep_competency"
     },
@@ -4239,7 +3893,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 38,
+      "community": 39,
       "norm_label": "interview scorecard",
       "id": "interview_prep_scorecard"
     },
@@ -4382,7 +4036,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "manus vacu landing page skill",
       "id": "manus_vacu_skill"
     },
@@ -4395,7 +4049,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "react + tailwind + framer motion stack",
       "id": "manus_vacu_react"
     },
@@ -4408,7 +4062,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "glassmorphism design pattern",
       "id": "manus_vacu_glassmorphism"
     },
@@ -4473,7 +4127,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 31,
       "norm_label": "memory management skill",
       "id": "memory_management_skill"
     },
@@ -4486,7 +4140,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 31,
       "norm_label": "claude.md hot cache",
       "id": "memory_management_hot_cache"
     },
@@ -4499,7 +4153,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 31,
       "norm_label": "glossary / decoder ring",
       "id": "memory_management_glossary"
     },
@@ -4512,7 +4166,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 31,
       "norm_label": "two-tier memory architecture",
       "id": "memory_management_two_tier"
     },
@@ -4538,7 +4192,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "obsidian-wiki",
       "id": "skill_obsidian_wiki"
     },
@@ -4577,7 +4231,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 27,
+      "community": 28,
       "norm_label": "pdf",
       "id": "skill_pdf"
     },
@@ -4629,7 +4283,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "pipeline-review",
       "id": "skill_pipeline_review"
     },
@@ -4655,7 +4309,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "pptx",
       "id": "skill_pptx"
     },
@@ -4668,7 +4322,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "process-doc",
       "id": "skill_process_doc"
     },
@@ -4681,7 +4335,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "process-optimization",
       "id": "skill_process_optimization"
     },
@@ -4707,7 +4361,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "prospect",
       "id": "skill_prospect"
     },
@@ -4720,7 +4374,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 29,
       "norm_label": "reconciliation",
       "id": "skill_reconciliation"
     },
@@ -4785,7 +4439,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "runbook",
       "id": "skill_runbook"
     },
@@ -4798,7 +4452,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 50,
+      "community": 51,
       "norm_label": "schedule",
       "id": "skill_schedule"
     },
@@ -4889,7 +4543,7 @@
       "captured_at": null,
       "author": "Andrej Karpathy",
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "karpathy llm wiki pattern",
       "id": "concept_karpathy_llm_wiki"
     },
@@ -4902,7 +4556,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "obsidian",
       "id": "tool_obsidian"
     },
@@ -4915,7 +4569,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "persistent knowledge wiki",
       "id": "concept_knowledge_wiki"
     },
@@ -4980,7 +4634,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 27,
+      "community": 28,
       "norm_label": "pypdf",
       "id": "tool_pypdf"
     },
@@ -4993,7 +4647,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 27,
+      "community": 28,
       "norm_label": "pdfplumber",
       "id": "tool_pdfplumber"
     },
@@ -5006,7 +4660,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 27,
+      "community": 28,
       "norm_label": "reportlab",
       "id": "tool_reportlab"
     },
@@ -5019,7 +4673,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 27,
+      "community": 28,
       "norm_label": "pytesseract (ocr)",
       "id": "tool_pytesseract"
     },
@@ -5162,7 +4816,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "sales pipeline health score",
       "id": "concept_pipeline_health"
     },
@@ -5175,7 +4829,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "deal prioritization framework",
       "id": "concept_deal_prioritization"
     },
@@ -5188,7 +4842,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "crm hygiene",
       "id": "concept_crm_hygiene"
     },
@@ -5227,7 +4881,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "pptxgenjs",
       "id": "tool_pptxgenjs"
     },
@@ -5240,7 +4894,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "markitdown",
       "id": "tool_markitdown"
     },
@@ -5253,7 +4907,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "raci matrix",
       "id": "concept_raci_matrix"
     },
@@ -5266,7 +4920,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "standard operating procedure (sop)",
       "id": "concept_sop"
     },
@@ -5279,7 +4933,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "process waste (lean)",
       "id": "concept_process_waste"
     },
@@ -5344,7 +4998,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "ideal customer profile (icp)",
       "id": "concept_icp"
     },
@@ -5357,7 +5011,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "apollo mcp (lead enrichment)",
       "id": "tool_apollo"
     },
@@ -5370,7 +5024,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 29,
       "norm_label": "bank reconciliation",
       "id": "concept_bank_reconciliation"
     },
@@ -5383,7 +5037,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 29,
       "norm_label": "gl-to-subledger reconciliation",
       "id": "concept_gl_subledger"
     },
@@ -5396,7 +5050,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 29,
       "norm_label": "intercompany reconciliation",
       "id": "concept_intercompany_reconciliation"
     },
@@ -5526,7 +5180,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "operational runbook",
       "id": "concept_operational_runbook"
     },
@@ -5539,7 +5193,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "escalation path",
       "id": "concept_escalation_path"
     },
@@ -5552,7 +5206,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 50,
+      "community": 51,
       "norm_label": "scheduled task / cron job",
       "id": "concept_scheduled_task"
     },
@@ -5578,7 +5232,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "crm connector",
       "id": "concept_connector_crm"
     },
@@ -5591,7 +5245,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "knowledge base connector",
       "id": "concept_connector_knowledge_base"
     },
@@ -5656,7 +5310,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "sales operations domain",
       "id": "domain_sales_ops"
     },
@@ -5669,7 +5323,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 29,
       "norm_label": "finance / accounting operations domain",
       "id": "domain_finance_ops"
     },
@@ -5682,7 +5336,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "search-strategy",
       "id": "search_strategy_skill"
     },
@@ -5695,7 +5349,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "search",
       "id": "search_skill"
     },
@@ -5708,7 +5362,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 34,
       "norm_label": "seo-audit",
       "id": "seo_audit_skill"
     },
@@ -5721,7 +5375,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 35,
       "norm_label": "sequence-load",
       "id": "sequence_load_skill"
     },
@@ -5773,7 +5427,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "source-management",
       "id": "source_management_skill"
     },
@@ -5799,7 +5453,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "sprint-planning",
       "id": "sprint_planning_skill"
     },
@@ -5812,7 +5466,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 41,
+      "community": 43,
       "norm_label": "sql-queries",
       "id": "sql_queries_skill"
     },
@@ -5825,7 +5479,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "stakeholder-update",
       "id": "stakeholder_update_skill"
     },
@@ -5838,7 +5492,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "standup",
       "id": "standup_skill"
     },
@@ -5851,7 +5505,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 25,
+      "community": 26,
       "norm_label": "start",
       "id": "start_skill"
     },
@@ -5877,7 +5531,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "status-report",
       "id": "status_report_skill"
     },
@@ -5903,7 +5557,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "system-design",
       "id": "system_design_skill"
     },
@@ -5916,7 +5570,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 25,
+      "community": 26,
       "norm_label": "task-management",
       "id": "task_management_skill"
     },
@@ -5929,7 +5583,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "design-taste-frontend",
       "id": "taste_skill_skill"
     },
@@ -5942,7 +5596,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "tech-debt",
       "id": "tech_debt_skill"
     },
@@ -5955,7 +5609,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 52,
       "norm_label": "template-saver",
       "id": "template_saver_skill"
     },
@@ -5968,7 +5622,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "query decomposition",
       "id": "concept_query_decomposition"
     },
@@ -5981,7 +5635,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "parallel search execution",
       "id": "concept_parallel_execution"
     },
@@ -5994,7 +5648,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "result ranking and deduplication",
       "id": "concept_result_ranking"
     },
@@ -6007,7 +5661,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "mcp connected sources",
       "id": "concept_mcp_sources"
     },
@@ -6020,7 +5674,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 34,
       "norm_label": "seo audit types",
       "id": "concept_seo_audit_types"
     },
@@ -6033,7 +5687,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 34,
       "norm_label": "keyword research",
       "id": "concept_keyword_research"
     },
@@ -6046,7 +5700,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 34,
       "norm_label": "content gap analysis",
       "id": "concept_content_gap_analysis"
     },
@@ -6059,7 +5713,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 35,
       "norm_label": "apollo mcp",
       "id": "tool_apollo_mcp"
     },
@@ -6072,7 +5726,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 35,
       "norm_label": "lead enrichment",
       "id": "concept_lead_enrichment"
     },
@@ -6085,7 +5739,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 35,
       "norm_label": "outreach sequence",
       "id": "concept_outreach_sequence"
     },
@@ -6202,7 +5856,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "mcp source priority ordering",
       "id": "concept_source_priority"
     },
@@ -6215,7 +5869,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "rate limit handling",
       "id": "concept_rate_limiting"
     },
@@ -6267,7 +5921,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "sprint capacity planning",
       "id": "concept_sprint_capacity"
     },
@@ -6280,7 +5934,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "backlog prioritization",
       "id": "concept_backlog_prioritization"
     },
@@ -6293,7 +5947,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 41,
+      "community": 43,
       "norm_label": "sql dialect compatibility",
       "id": "concept_sql_dialects"
     },
@@ -6306,7 +5960,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 41,
+      "community": 43,
       "norm_label": "window functions",
       "id": "concept_window_functions"
     },
@@ -6319,7 +5973,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "stakeholder audience segmentation",
       "id": "concept_stakeholder_audience"
     },
@@ -6332,7 +5986,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "roam risk framework",
       "id": "concept_roam_framework"
     },
@@ -6345,7 +5999,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "green/yellow/red status",
       "id": "concept_green_yellow_red"
     },
@@ -6358,7 +6012,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "standup format (yesterday/today/blockers)",
       "id": "concept_standup_format"
     },
@@ -6371,7 +6025,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 25,
+      "community": 26,
       "norm_label": "working memory bootstrap",
       "id": "concept_working_memory"
     },
@@ -6423,7 +6077,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "kpi reporting",
       "id": "concept_kpi_reporting"
     },
@@ -6462,7 +6116,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "system architecture design",
       "id": "concept_system_architecture"
     },
@@ -6475,7 +6129,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "trade-off analysis",
       "id": "concept_tradeoff_analysis"
     },
@@ -6488,7 +6142,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 25,
+      "community": 26,
       "norm_label": "tasks.md task file",
       "id": "concept_tasks_md"
     },
@@ -6501,7 +6155,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "react component architecture",
       "id": "concept_react_component_arch"
     },
@@ -6514,7 +6168,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "framer motion animations",
       "id": "concept_framer_motion"
     },
@@ -6527,7 +6181,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "technical debt categories",
       "id": "concept_tech_debt_categories"
     },
@@ -6540,7 +6194,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "tech debt prioritization framework",
       "id": "concept_tech_debt_prioritization"
     },
@@ -6553,7 +6207,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 52,
       "norm_label": "blueprint template library",
       "id": "concept_blueprint_library"
     },
@@ -6579,7 +6233,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 53,
       "norm_label": "theme-factory",
       "id": "skill_theme_factory"
     },
@@ -6592,7 +6246,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 25,
+      "community": 26,
       "norm_label": "update",
       "id": "skill_update"
     },
@@ -6618,7 +6272,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "ux-copy",
       "id": "skill_ux_copy"
     },
@@ -6631,7 +6285,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "ux-design",
       "id": "skill_ux_design"
     },
@@ -6670,7 +6324,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 45,
       "norm_label": "vendor-review",
       "id": "skill_vendor_review"
     },
@@ -6683,7 +6337,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "web-artifacts-builder",
       "id": "skill_web_artifacts_builder"
     },
@@ -6748,7 +6402,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 36,
       "norm_label": "youtube-channel-ai",
       "id": "skill_youtube_channel_ai"
     },
@@ -6865,7 +6519,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 53,
       "norm_label": "theme palette",
       "id": "concept_theme_palette"
     },
@@ -6878,7 +6532,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 25,
+      "community": 26,
       "norm_label": "memory gap filling",
       "id": "concept_memory_gap_filling"
     },
@@ -6904,7 +6558,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "microcopy",
       "id": "concept_microcopy"
     },
@@ -6917,7 +6571,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "ux audit",
       "id": "concept_ux_audit"
     },
@@ -6930,7 +6584,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "react component",
       "id": "concept_react_component"
     },
@@ -6995,7 +6649,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 45,
       "norm_label": "total cost of ownership (tco)",
       "id": "concept_tco"
     },
@@ -7008,7 +6662,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 45,
       "norm_label": "vendor risk assessment",
       "id": "concept_vendor_risk_assessment"
     },
@@ -7021,7 +6675,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "react",
       "id": "tool_react"
     },
@@ -7034,7 +6688,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "tailwind css",
       "id": "tool_tailwind_css"
     },
@@ -7047,7 +6701,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "shadcn/ui",
       "id": "tool_shadcn_ui"
     },
@@ -7177,7 +6831,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 36,
       "norm_label": "channel forensics",
       "id": "concept_channel_forensics"
     },
@@ -7190,7 +6844,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 36,
       "norm_label": "viral title production",
       "id": "concept_viral_title"
     },
@@ -7268,7 +6922,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "landing page",
       "id": "concept_landing_page"
     },
@@ -7294,7 +6948,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 36,
       "norm_label": "faceless youtube channel",
       "id": "concept_faceless_youtube_channel"
     },
@@ -7398,7 +7052,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 60,
+      "community": 61,
       "norm_label": "component stylings \u2014 buttons, cards, inputs, navigation, loaders, empty states",
       "id": "stitch_component_stylings"
     },
@@ -7921,6 +7575,188 @@
       "community": 3,
       "norm_label": "ai purple ban \u2014 no purple/neon gradients, the generic ai aesthetic is strictly forbidden",
       "id": "ai_purple_ban"
+    },
+    {
+      "label": "Kling Prompts Skill",
+      "file_type": "document",
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "kling prompts skill",
+      "id": "kling_prompts_skill"
+    },
+    {
+      "label": "Cinematic Web Skill",
+      "file_type": "document",
+      "source_file": "raw/skills/cinematic-web/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "cinematic web skill",
+      "id": "cinematic_web_skill"
+    },
+    {
+      "label": "Kling 3.0 AI Video Platform",
+      "file_type": "concept",
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "kling 3.0 ai video platform",
+      "id": "kling_30_platform"
+    },
+    {
+      "label": "Triple B Project (Hirschau)",
+      "file_type": "concept",
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "triple b project (hirschau)",
+      "id": "triple_b_project"
+    },
+    {
+      "label": "Monte Kaolino (Hirschau, Oberpfalz)",
+      "file_type": "concept",
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "monte kaolino (hirschau, oberpfalz)",
+      "id": "monte_kaolino"
+    },
+    {
+      "label": "Feedback-Protokoll (Prompt Learning Loop)",
+      "file_type": "concept",
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "feedback-protokoll (prompt learning loop)",
+      "id": "feedback_protokoll"
+    },
+    {
+      "label": "5-Element Prompt Formula",
+      "file_type": "concept",
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "5-element prompt formula",
+      "id": "five_element_formula"
+    },
+    {
+      "label": "Video Scroll Engine (scroll-driven video background)",
+      "file_type": "concept",
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "video scroll engine (scroll-driven video background)",
+      "id": "video_scroll_engine"
+    },
+    {
+      "label": "Prompt-Bausteine Bibliothek",
+      "file_type": "concept",
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "prompt-bausteine bibliothek",
+      "id": "prompt_bausteine_bibliothek"
+    },
+    {
+      "label": "Negative Prompt Bibliothek",
+      "file_type": "concept",
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "negative prompt bibliothek",
+      "id": "negative_prompt_bibliothek"
+    },
+    {
+      "label": "Single-File HTML Website (Awwwards-Niveau)",
+      "file_type": "concept",
+      "source_file": "raw/skills/cinematic-web/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "single-file html website (awwwards-niveau)",
+      "id": "single_file_html_website"
+    },
+    {
+      "label": "GSAP + Lenis Animation Stack",
+      "file_type": "concept",
+      "source_file": "raw/skills/cinematic-web/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "gsap + lenis animation stack",
+      "id": "gsap_lenis_stack"
+    },
+    {
+      "label": "sidewave.it (Design Inspiration Reference)",
+      "file_type": "concept",
+      "source_file": "raw/skills/cinematic-web/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "sidewave.it (design inspiration reference)",
+      "id": "sidewave_it"
+    },
+    {
+      "label": "Bayern / Oberpfalz Location Pattern",
+      "file_type": "concept",
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "bayern / oberpfalz location pattern",
+      "id": "bavaria_oberpfalz_location"
     }
   ],
   "links": [
@@ -15783,351 +15619,235 @@
       "_tgt": "floria_design_language",
       "source": "floria_example_top",
       "target": "floria_design_language"
+    },
+    {
+      "relation": "feeds_into",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "_src": "kling_prompts_skill",
+      "_tgt": "cinematic_web_skill",
+      "source": "kling_prompts_skill",
+      "target": "cinematic_web_skill"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 9",
+      "weight": 1.0,
+      "_src": "kling_prompts_skill",
+      "_tgt": "kling_30_platform",
+      "source": "kling_prompts_skill",
+      "target": "kling_30_platform"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 80",
+      "weight": 0.9,
+      "_src": "kling_prompts_skill",
+      "_tgt": "triple_b_project",
+      "source": "kling_prompts_skill",
+      "target": "triple_b_project"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 92",
+      "weight": 0.9,
+      "_src": "kling_prompts_skill",
+      "_tgt": "monte_kaolino",
+      "source": "kling_prompts_skill",
+      "target": "monte_kaolino"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 149",
+      "weight": 1.0,
+      "_src": "kling_prompts_skill",
+      "_tgt": "feedback_protokoll",
+      "source": "kling_prompts_skill",
+      "target": "feedback_protokoll"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 24",
+      "weight": 1.0,
+      "_src": "kling_prompts_skill",
+      "_tgt": "five_element_formula",
+      "source": "kling_prompts_skill",
+      "target": "five_element_formula"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 38",
+      "weight": 0.9,
+      "_src": "kling_prompts_skill",
+      "_tgt": "prompt_bausteine_bibliothek",
+      "source": "kling_prompts_skill",
+      "target": "prompt_bausteine_bibliothek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 103",
+      "weight": 0.9,
+      "_src": "kling_prompts_skill",
+      "_tgt": "negative_prompt_bibliothek",
+      "source": "kling_prompts_skill",
+      "target": "negative_prompt_bibliothek"
+    },
+    {
+      "relation": "feeds_into",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 194",
+      "weight": 1.0,
+      "_src": "cinematic_web_skill",
+      "_tgt": "video_scroll_engine",
+      "source": "cinematic_web_skill",
+      "target": "video_scroll_engine"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/cinematic-web/SKILL.md",
+      "source_location": "line 1",
+      "weight": 1.0,
+      "_src": "cinematic_web_skill",
+      "_tgt": "single_file_html_website",
+      "source": "cinematic_web_skill",
+      "target": "single_file_html_website"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/cinematic-web/SKILL.md",
+      "source_location": "line 93",
+      "weight": 0.95,
+      "_src": "cinematic_web_skill",
+      "_tgt": "gsap_lenis_stack",
+      "source": "cinematic_web_skill",
+      "target": "gsap_lenis_stack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/cinematic-web/SKILL.md",
+      "source_location": "line 11",
+      "weight": 0.8,
+      "_src": "cinematic_web_skill",
+      "_tgt": "sidewave_it",
+      "source": "cinematic_web_skill",
+      "target": "sidewave_it"
+    },
+    {
+      "relation": "feeds_into",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 194",
+      "weight": 1.0,
+      "_src": "kling_30_platform",
+      "_tgt": "video_scroll_engine",
+      "source": "kling_30_platform",
+      "target": "video_scroll_engine"
+    },
+    {
+      "relation": "feeds_into",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 24",
+      "weight": 0.9,
+      "_src": "kling_30_platform",
+      "_tgt": "five_element_formula",
+      "source": "kling_30_platform",
+      "target": "five_element_formula"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 92",
+      "weight": 0.9,
+      "_src": "triple_b_project",
+      "_tgt": "monte_kaolino",
+      "source": "triple_b_project",
+      "target": "monte_kaolino"
+    },
+    {
+      "relation": "feeds_into",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 168",
+      "weight": 0.9,
+      "_src": "triple_b_project",
+      "_tgt": "feedback_protokoll",
+      "source": "triple_b_project",
+      "target": "feedback_protokoll"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 80",
+      "weight": 0.9,
+      "_src": "triple_b_project",
+      "_tgt": "bavaria_oberpfalz_location",
+      "source": "triple_b_project",
+      "target": "bavaria_oberpfalz_location"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 80",
+      "weight": 0.9,
+      "_src": "monte_kaolino",
+      "_tgt": "bavaria_oberpfalz_location",
+      "source": "monte_kaolino",
+      "target": "bavaria_oberpfalz_location"
+    },
+    {
+      "relation": "feeds_into",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "raw/skills/kling-prompts/SKILL.md",
+      "source_location": "line 149",
+      "weight": 0.8,
+      "_src": "feedback_protokoll",
+      "_tgt": "prompt_bausteine_bibliothek",
+      "source": "feedback_protokoll",
+      "target": "prompt_bausteine_bibliothek"
     }
   ],
-  "hyperedges": [
-    {
-      "id": "he_sales_workflow_cluster",
-      "label": "Sales Workflow Skills Cluster",
-      "members": [
-        "skill_account_research",
-        "skill_call_prep",
-        "skill_call_summary"
-      ],
-      "relation": "form_sales_workflow",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "rationale": "account-research feeds call-prep which produces call-summary \u2014 a coherent end-to-end sales call workflow, all using Common Room data",
-      "source_file": "raw/skills/call-prep.md"
-    },
-    {
-      "id": "he_compliance_finance_cluster",
-      "label": "Finance & Compliance Skills Cluster",
-      "members": [
-        "skill_audit_support",
-        "skill_close_management",
-        "concept_sox404"
-      ],
-      "relation": "form_compliance_workflow",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "rationale": "audit-support and close-management both address financial reporting accuracy and compliance (SOX 404, ICFR) \u2014 two phases of the same financial governance cycle",
-      "source_file": "raw/skills/audit-support.md"
-    },
-    {
-      "id": "he_creative_visual_cluster",
-      "label": "Creative & Visual Design Skills Cluster",
-      "members": [
-        "skill_algorithmic_art",
-        "skill_canvas_design",
-        "skill_brand_guidelines"
-      ],
-      "relation": "form_visual_design_ecosystem",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "rationale": "algorithmic-art and canvas-design share a two-step philosophy-then-execution pattern, both referencing Anthropic brand guidelines for consistent UI/branding output",
-      "source_file": "raw/skills/algorithmic-art.md"
-    },
-    {
-      "id": "hyperedge_sales_intelligence_cluster",
-      "label": "Sales Intelligence Cluster",
-      "nodes": [
-        "skill_contact_research",
-        "skill_compose_outreach",
-        "skill_competitive_intelligence"
-      ],
-      "relation": "collectively_enable",
-      "description": "These three skills together form the core sales intelligence pipeline: research contacts, understand competitive context, then craft personalized outreach.",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_files": [
-        "raw/skills/contact-research.md",
-        "raw/skills/compose-outreach.md",
-        "raw/skills/competitive-intelligence.md"
-      ]
-    },
-    {
-      "id": "hyperedge_design_workflow_chain",
-      "label": "Design Workflow Chain",
-      "nodes": [
-        "skill_design_critique",
-        "skill_design_handoff",
-        "skill_design_system"
-      ],
-      "relation": "form_sequential_workflow",
-      "description": "Design critique \u2192 handoff \u2192 system management forms the end-to-end design-to-engineering workflow.",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_files": [
-        "raw/skills/design-critique.md",
-        "raw/skills/design-handoff.md",
-        "raw/skills/design-system.md"
-      ]
-    },
-    {
-      "id": "hyperedge_data_stack",
-      "label": "Data Analytics Stack",
-      "nodes": [
-        "skill_data_context_extractor",
-        "skill_create_viz",
-        "skill_data_visualization"
-      ],
-      "relation": "form_data_pipeline",
-      "description": "Data context extraction defines the warehouse schema, create-viz and data-visualization turn query results into insights \u2014 together they form the analytical workflow.",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_files": [
-        "raw/skills/data-context-extractor.md",
-        "raw/skills/create-viz.md",
-        "raw/skills/data-visualization.md"
-      ]
-    },
-    {
-      "id": "financial_accounting_cluster",
-      "label": "Financial Accounting Skill Cluster",
-      "nodes": [
-        "financial_statements_skill",
-        "journal_entry_skill",
-        "journal_entry_prep_skill",
-        "forecast_skill"
-      ],
-      "relation": "form",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "raw/skills/financial-statements.md"
-    },
-    {
-      "id": "sales_outreach_pipeline",
-      "label": "Sales Outreach & Pipeline Cluster",
-      "nodes": [
-        "draft_outreach_skill",
-        "enrich_lead_skill",
-        "email_sequence_skill",
-        "forecast_skill"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "raw/skills/draft-outreach.md"
-    },
-    {
-      "id": "mcp_integration_cluster",
-      "label": "MCP Integration Skills",
-      "nodes": [
-        "mcp_builder_skill",
-        "graphify_mcp_server",
-        "email_sorter_gmail_mcp",
-        "enrich_lead_apollo"
-      ],
-      "relation": "implement",
-      "confidence": "INFERRED",
-      "confidence_score": 0.82,
-      "source_file": "raw/skills/mcp-builder.md"
-    },
-    {
-      "id": "hyperedge_product_insight_loop",
-      "label": "Product Insight \u2192 Roadmap \u2192 Metrics Loop",
-      "members": [
-        "skill_research_synthesis",
-        "skill_roadmap_update",
-        "skill_metrics_review"
-      ],
-      "relation": "forms_continuous_feedback_cycle",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "rationale": "Research synthesis informs roadmap prioritization; roadmap execution is tracked via metrics review; metrics findings feed back into new research questions.",
-      "source_files": [
-        "raw/skills/research-synthesis.md",
-        "raw/skills/roadmap-update.md",
-        "raw/skills/metrics-review.md"
-      ]
-    },
-    {
-      "id": "hyperedge_hr_employee_lifecycle",
-      "label": "HR Employee Lifecycle Cluster",
-      "members": [
-        "skill_recruiting_pipeline",
-        "skill_onboarding",
-        "skill_performance_review",
-        "skill_people_report"
-      ],
-      "relation": "covers_employee_lifecycle_stages",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "rationale": "These four skills collectively span the full employee journey: sourcing/hiring, onboarding, performance evaluation, and aggregate workforce analytics.",
-      "source_files": [
-        "raw/skills/recruiting-pipeline.md",
-        "raw/skills/onboarding.md",
-        "raw/skills/performance-review.md",
-        "raw/skills/people-report.md"
-      ]
-    },
-    {
-      "id": "hyperedge_connector_driven_skills",
-      "label": "Connector-Enhanced Skills Cluster",
-      "members": [
-        "skill_metrics_review",
-        "skill_pipeline_review",
-        "skill_policy_lookup",
-        "skill_roadmap_update",
-        "skill_research_synthesis"
-      ],
-      "relation": "share_connector_enhancement_pattern",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "rationale": "All five skills share the same structural pattern: standalone mode using user-provided data, plus a 'supercharged' mode when specific connectors (CRM, analytics, knowledge base, project tracker) are available \u2014 as documented in each skill's workflow section.",
-      "source_files": [
-        "raw/skills/metrics-review.md",
-        "raw/skills/pipeline-review.md",
-        "raw/skills/policy-lookup.md",
-        "raw/skills/roadmap-update.md",
-        "raw/skills/research-synthesis.md"
-      ]
-    },
-    {
-      "id": "he_enterprise_search_cluster",
-      "label": "Enterprise Search System",
-      "members": [
-        "search_skill",
-        "search_strategy_skill",
-        "source_management_skill"
-      ],
-      "relation": "forms_system",
-      "rationale": "These three skills collectively form the enterprise search pipeline: search decomposes queries via search-strategy and uses source-management to detect and prioritize MCP sources.",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "raw/skills/search.md"
-    },
-    {
-      "id": "he_agile_workflow_cluster",
-      "label": "Agile Team Workflow",
-      "members": [
-        "sprint_planning_skill",
-        "standup_skill",
-        "stakeholder_update_skill",
-        "status_report_skill"
-      ],
-      "relation": "forms_system",
-      "rationale": "These four skills together support the full agile team communication cycle: sprint planning sets the work, standup tracks daily progress, and stakeholder-update/status-report communicate outcomes upward.",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "raw/skills/sprint-planning.md"
-    },
-    {
-      "id": "he_skill_lifecycle_cluster",
-      "label": "Skill Lifecycle Management",
-      "members": [
-        "skill_creator_skill",
-        "concept_skill_eval_loop",
-        "concept_description_optimization",
-        "concept_skill_triggering"
-      ],
-      "relation": "forms_system",
-      "rationale": "The skill-creator skill and its sub-concepts form a complete lifecycle system for creating, evaluating, and optimizing skills \u2014 including iterative eval loops and description tuning for accurate triggering.",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "raw/skills/skill-creator.md"
-    },
-    {
-      "id": "hyperedge_ui_design_cluster",
-      "label": "UI Design Skill Cluster",
-      "members": [
-        "skill_high_end_visual_design",
-        "skill_minimalist_ui",
-        "skill_industrial_brutalist_ui",
-        "skill_redesign_existing_projects",
-        "skill_design_advisor"
-      ],
-      "relation": "forms_design_system_cluster",
-      "rationale": "All five skills focus on premium frontend visual design aesthetics \u2014 they share anti-pattern bans (Inter font, generic shadows), emphasize typography hierarchy, and are registered together in llms.txt as a design skill suite.",
-      "confidence": "INFERRED",
-      "confidence_score": 0.88,
-      "source_file": "raw/skills/llms.txt"
-    },
-    {
-      "id": "hyperedge_data_analysis_workflow",
-      "label": "Data Analysis & Reporting Workflow",
-      "members": [
-        "skill_write_query",
-        "skill_validate_data",
-        "skill_variance_analysis",
-        "skill_xlsx"
-      ],
-      "relation": "forms_data_workflow",
-      "rationale": "These four skills represent the end-to-end data analysis pipeline: write SQL queries, validate results, perform variance/financial analysis, and output findings to Excel. They are semantically connected through their shared concern for data accuracy and stakeholder reporting.",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "raw/skills/write-query.md"
-    },
-    {
-      "id": "hyperedge_product_ux_workflow",
-      "label": "Product & UX Development Workflow",
-      "members": [
-        "skill_user_research",
-        "skill_write_spec",
-        "skill_ux_design",
-        "skill_ux_copy",
-        "skill_testing_strategy"
-      ],
-      "relation": "forms_product_workflow",
-      "rationale": "These skills represent the full product development lifecycle: research users, write the spec (PRD), design the UX, write the interface copy, and define a testing strategy. They are naturally sequential and complementary.",
-      "confidence": "INFERRED",
-      "confidence_score": 0.87,
-      "source_file": "raw/skills/user-research.md"
-    },
-    {
-      "id": "hyperedge_llm_laziness_triad",
-      "label": "LLM Laziness \u2014 Root Causes, Remediation, Empirical Evidence form an integrated research system",
-      "members": [
-        "llm_rlhf_brevity_bias",
-        "llm_cognitive_shortcuts",
-        "llm_training_data_bias",
-        "llm_output_limits",
-        "llm_parameter_tuning",
-        "llm_prompt_engineering",
-        "llm_architectural_patterns",
-        "llm_empirical_results"
-      ],
-      "relation": "constitutes_research_system_for",
-      "confidence": "INFERRED",
-      "confidence_score": 0.9,
-      "source_file": "raw/skills/taste-skill/research/laziness/README.md",
-      "note": "These nodes jointly form the structured LLM output truncation research system that backs the output-skill remediation"
-    },
-    {
-      "id": "hyperedge_taste_design_system",
-      "label": "Taste Design System \u2014 Dials, Anti-patterns, Motion, and Examples jointly encode a coherent premium UI standard",
-      "members": [
-        "taste_skill_settings",
-        "taste_anti_slop_rules",
-        "taste_spring_physics",
-        "taste_bento_paradigm",
-        "taste_creative_arsenal",
-        "floria_design_language",
-        "ai_purple_ban"
-      ],
-      "relation": "defines_coherent_design_standard",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "raw/skills/taste-skill/SKILL.md",
-      "note": "These nodes together express the unified premium frontend design philosophy enforced by taste-skill"
-    },
-    {
-      "id": "hyperedge_stitch_output_pipeline",
-      "label": "Stitch Output Pipeline \u2014 Skill + DESIGN.md + Dials + Atmosphere collectively drive Google Stitch screen generation",
-      "members": [
-        "stitch_skill_design_taste",
-        "stitch_design_md",
-        "stitch_design_dials",
-        "stitch_visual_atmosphere",
-        "stitch_antipatterns",
-        "google_stitch"
-      ],
-      "relation": "constitutes_generation_pipeline_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "raw/skills/stitch-skill/SKILL.md",
-      "note": "The stitch-skill generates DESIGN.md which encodes all design tokens for Stitch AI to consume in screen generation"
-    }
-  ]
+  "hyperedges": []
 }
