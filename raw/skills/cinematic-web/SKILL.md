@@ -86,6 +86,22 @@ Beispiel:
 2. Stats-Explosion: Zahlen zählen hoch wenn sichtbar
 3. Kunden-Marquee: Logos gleiten endlos durch — Beweis durch Masse
 
+### Video-Konzept (wenn JPEG Frame Player verwendet wird)
+Falls die Website einen Canvas-basierten JPEG Frame Player hat (V1/V2/V3 Scroll-Videos), hier explizit festhalten wie die Videos zusammenhängen. Das bestimmt den First Frame für alle Kling-Prompts.
+
+**Pflicht-Entscheidung:**
+```
+VIDEO-BEZIEHUNG: [nahtlose Durchfahrt / Szenenwechsel mit Schnitt / eigenständige Clips]
+
+V1 → V2 Übergang: [nahtlos / Schnitt] — Begründung: [warum]
+V2 → V3 Übergang: [nahtlos / Schnitt] — Begründung: [warum]
+```
+
+**Nahtlos** = Kamera-Bewegung setzt sich über Clip-Grenzen hinweg fort (V2 First Frame = letzter V1-Frame).  
+**Schnitt** = Bewusster Perspektivwechsel, neue Komposition (V2 bekommt eigenen First Frame via Imagen 3 oder Foto).
+
+Diese Entscheidung wird im `/kling-prompts` Skill direkt als First Frame Angabe übernommen — nie ohne das Konzept entscheiden.
+
 ---
 
 ## Schritt 3 — Tech-System

@@ -170,14 +170,33 @@ multiple light sources, generic plating, stock photo look
 | Reference Image | Echtes Foto in 16:9 zuschneiden | Verhindert Ratio-Übernahme — **max. 3 Slots** |
 | Seed | Gleichen Seed für alle 3 Videos | Stilkonsistenz über alle Clips |
 | Konsistenz-Tipp | Gleiches Reference Image für alle 3 Videos | Gleiche Lichtstimmung sichern |
+| **First Frame** | Folgt immer aus dem Animations-Konzept — siehe Tabelle unten | Nie isoliert entscheiden ohne das Konzept zu kennen |
 
 **Ratio-Fix:** Wenn Kling das Reference Image-Ratio übernimmt → Reference Image vor Upload manuell auf 16:9 zuschneiden.
 
 ---
 
+## First Frame — Konzept-getriebene Entscheidung
+
+Der First Frame ist **keine technische Entscheidung**, sondern eine **konzeptionelle**. Er ergibt sich direkt aus dem Animations-Konzept das in Phase 1 (Creative Direction) definiert wurde.
+
+**Frage vor jedem First Frame:**
+> "Wie verhalten sich V1, V2 und V3 im Konzept zueinander?"
+
+| Konzept-Typ | Beispiel | First Frame |
+|---|---|---|
+| **Nahtlose Durchfahrt** | Kamera fliegt von außen rein, durch die Tür, weiter zur Bar — eine einzige Bewegung über 3 Videos | Vn First Frame = letzter extrahierter Frame von V(n-1) (`frames/vN/XXXX.jpg`) |
+| **Szenenwechsel mit Schnitt** | V1 Exterior, V2 springt direkt auf Detailaufnahme Food, V3 zurück zur Bar | Jedes Video erhält einen eigenen First Frame (Imagen 3 oder echtes Foto) |
+| **Parallele Perspektiven** | Alle 3 Videos zeigen denselben Raum aus verschiedenen Winkeln | Jedes Video bekommt eine eigene Startkomposition |
+| **Zeitlicher Sprung** | V1 Dusk Exterior, V2 Night Interior — bewusster Zeitsprung | Eigener First Frame pro Video, kein Anschluss an Vorgänger |
+
+**Regel:** Das Konzept aus cinematic-web Phase 1 muss explizit festhalten, ob die Videos **durchgehend** oder **eigenständig** sind — das ist die Grundlage für alle First Frame Entscheidungen.
+
+---
+
 ## First Frame Generierung (Google Imagen 3)
 
-**Regel:** Jedes Video das einen First Frame braucht, erhält zuerst einen **Google Imagen 3 Prompt** um das Startbild zu generieren. Dieser Prompt wird IMMER zusammen mit dem Kling-Prompt ausgegeben — ohne Ausnahme.
+**Gilt für:** Videos die einen frischen Start brauchen (kein Anschluss an Vorgänger-Video im Konzept).
 
 **Warum Imagen 3:** Erzeugt photorealistische, cinematische Einzelbilder in 16:9. Das generierte Bild wird als First Frame in Kling hochgeladen, um die exakte Startkomposition vorzugeben.
 
@@ -216,7 +235,7 @@ Kling Settings:
 - Stil: Cinematic
 - Dauer: 10 Sek.
 - Ratio: 16:9 (manuell setzen — nicht vom Bild übernehmen lassen)
-- First Frame: [beschreibung welches Bild / "keiner" wenn V1]
+- First Frame: [Kommt auf das Ziel an — bei nahtloser Scroll-Sequenz (V1→V2→V3 fließen cinematisch ineinander): letzter extrahierter Frame des Vorgänger-Videos. Bei standalone Video oder bewusstem Szenenwechsel: Imagen 3 Bild oder echtes Foto. Immer zuerst fragen: Sollen die Videos eine durchgehende Animation sein oder eigenständige Clips?]
 
 Reference Images (max. 3 — alle 16:9 zugeschnitten):
 - [dateiname_16x9.jpg] — [wofür: Raumstruktur / Außenansicht / Food-Stil]
@@ -323,16 +342,18 @@ Kling Settings:
 - Stil: Cinematic
 - Dauer: 10 Sek.
 - Ratio: 16:9 (manuell setzen)
-- First Frame: Bild vom Eingangsbereich (9S3A2620_16x9.jpg, 16:9 zugeschnitten)
+- First Frame: **letzter extrahierter Frame von V1** (`frames/v1/XXXX.jpg`) — damit V2 nahtlos an V1 anschließt
+- ⚠️ NICHT: ein echtes Foto als First Frame für V2 — das war der Fehler in der ersten Korrektur
 
 Reference Images (alle 16:9 zugeschnitten):
-- 9S3A2620_16x9.jpg — Innenraum (Tische, Stühle, Fenster)
-- 9S3A2659_16x9.jpg — Exterior für Lichtstimmung-Konsistenz
+- 9S3A2620_16x9.jpg — Innenraum Atmosphäre (Licht, Bar, Architektur)
+- Optional: 9S3A2659_16x9.jpg — Exterior für Stilkonsistenz
 
 **Neue allgemeine Regeln aus V2:**
 - V2 enthält NIEMALS Essen auf Tischen — das ist V3's Job
 - "no people" in V2 muss als ERSTE Zeile im Prompt stehen
 - Interior-Prompt fokussiert auf: Bar, Shelving, Licht, Architektur — nie auf Tisch-Objekte
+- **First Frame für V2 (und alle Folge-Videos) = letzter Frame des Vorgänger-Videos, nicht ein Referenzfoto**
 
 ---
 

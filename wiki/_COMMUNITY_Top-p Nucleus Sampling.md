@@ -4,7 +4,7 @@ cohesion: 1.00
 members: 1
 ---
 
-# XML Prompt Architecture
+# Top-p Nucleus Sampling
 
 **Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
@@ -15,7 +15,7 @@ members: 1
 ## Live Query (requires Dataview plugin)
 
 ```dataview
-TABLE source_file, type FROM #community/XML_Prompt_Architecture
+TABLE source_file, type FROM #community/Community_54
 SORT file.name ASC
 ```
 

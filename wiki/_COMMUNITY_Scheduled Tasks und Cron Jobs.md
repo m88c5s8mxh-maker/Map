@@ -1,0 +1,22 @@
+﻿---
+type: community
+cohesion: 1.00
+members: 2
+---
+
+# Scheduled Tasks und Cron Jobs
+
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
+
+## Members
+- [[Blueprint Template Library]] - concept - raw/skills/template-saver.md
+- [[template-saver]] - document - raw/skills/template-saver.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_50
+SORT file.name ASC
+```
+
