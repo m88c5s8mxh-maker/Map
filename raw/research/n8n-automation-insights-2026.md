@@ -38,5 +38,15 @@ Google Sheets, Telegram, MySQL, Slack, Discord, Postgres, Notion, Gmail, Airtabl
 
 **n8n hat einen eigenen MCP Server** → Claude Code kann direkt n8n-Workflows erstellen und updaten. Das verbindet unser Gehirn (Map) mit der Automatisierungsebene.
 
+## Verbundene Skills
+
+| Skill | Relevanz |
+|-------|---------|
+| `raw/skills/mcp-builder/SKILL.md` | n8n MCP Server → Claude baut Workflows direkt |
+| `raw/skills/graphify/SKILL.md` | RAG-Patterns aus n8n Blog für Graph-Extraktion relevant |
+| `raw/skills/web-factory/SKILL.md` | n8n Automation als Add-on zur Website (z.B. Kontaktformular → n8n → CRM) |
+| `raw/skills/email-sequence/SKILL.md` | n8n Marketing-Automation als Backend für E-Mail-Sequenzen |
+| `raw/skills/prospect/SKILL.md` | Apollo MCP + n8n für Lead-Automation kombinierbar |
+
 ## Tags
-`#n8n` `#automation` `#ai-agents` `#rag` `#mcp` `#workflow` `#llm` `#2026`
+`#n8n` `#automation` `#ai-agents` `#rag` `#mcp` `#workflow` `#llm` `#2026` `#web-factory` `#mcp-server`

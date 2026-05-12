@@ -516,8 +516,70 @@ Nach der ersten Version biete an:
 
 ---
 
+## Angebotsstufen — Was du in Rechnung stellen kannst
+
+Jede Stufe ist eine eigenständige Dienstleistung mit klarem Mehrwert für den Kunden.
+
+| Tier | Skill | Typischer Kunde | Leistung | Preis-Range |
+|------|-------|----------------|---------|-------------|
+| **Standard** | `/web-factory` | Handwerker, Arztpraxis, lokale Gastronomie | Single-File HTML, Mobile-Responsive, Impressum, SEO-Basics | 1.000–2.500 € |
+| **Premium** | `/web-factory` + MOTION_INTENSITY 7–8 | Premium-Restaurant, Boutique-Agentur, Mittelstand | Wie Standard + Scroll-Scrub Video, GSAP Hero, Magnetic Buttons, Lenis | 2.500–5.000 € |
+| **Cinematic** | `/cinematic-web` + `/kling-prompts` | Luxus-Marken, Event-Locations, Kreativ-Studios | Awwwards-Niveau, Dark Cinematic, GSAP Timeline, Scramble Text, Kling 3.0 Video-Backgrounds | 5.000–12.000 € |
+
+**Upgrade-Pfad:** Jeder Standard-Kunde kann später auf Premium oder Cinematic upgraden — die Basis-Struktur bleibt, die Animations-Schicht wird ausgetauscht.
+
+---
+
+## Cinematic Web Design (Premium-Tier)
+
+Der Skill `/cinematic-web` ist die Premium-Variante der Web Factory — für Kunden die eine Awwwards-würdige Präsenz wollen statt einer soliden Unternehmenswebsite.
+
+### Wann Cinematic statt Standard?
+
+| Signal | Empfehlung |
+|--------|-----------|
+| Kunde sagt "hochwertig", "wie die großen Agenturen", "besonders" | → Cinematic |
+| Premium-Restaurant, Winery, Luxury Hotel | → Cinematic (EMBER Archetype) |
+| Kreativ-Agentur, Fotostudio, Architekturbüro | → Cinematic (VOID Archetype) |
+| Produkt-Launch, Brand-Kampagne | → Cinematic (LUXE Archetype) |
+| Lokales KMU mit normalem Budget | → Standard oder Premium |
+
+### Was Cinematic liefert (über Standard hinaus)
+
+- **Loader-Animation** — Firmenname dekodiert sich beim ersten Aufruf
+- **Scramble Text Reveal** — Überschriften entstehen aus Zeichen-Chaos
+- **Canvas Partikel** — Ambient Background-Partikel im Hero
+- **Kinetic Marquee** — Endlos-Laufband mit Kunden/Leistungen
+- **Stats Counter** — Zahlen zählen dramatisch hoch wenn sichtbar
+- **Parallax Sections** — Tiefenwirkung beim Scrollen
+- **Kling 3.0 Video-Backgrounds** — KI-generierte Cinematic Videos eingebettet
+
+### Kling-Prompts Workflow (immer nach Cinematic)
+
+Nach jeder Cinematic-Website → `/kling-prompts` aufrufen:
+- **V1 Exterior** — außen, Architektur, Atmosphäre (10 Sek.)
+- **V2 Interior** — innen, Produkt, Menschen (10 Sek.)
+- **V3 Produkt/Food** — Nahaufnahme, Detail, Emotion (10 Sek.)
+
+Die Videos werden als `<video autoplay muted loop playsinline>` in Scroll-Sektionen eingebettet.
+
+### Branchen × Cinematic Archetype
+
+| Branche | Archetype | Akzent | Display-Font |
+|---------|-----------|--------|-------------|
+| Premium-Restaurant / Bar | `EMBER` | Amber `#F5A523` | Fraunces (Serif) |
+| Kreativ-Agentur / Studio | `VOID` | White/Lime | Clash Display |
+| Kanzlei / Beratung / Tech | `FROST` | Ice-Blue | Geist |
+| Luxury / Premium Produkt | `LUXE` | Gold `#C9A84C` | Cormorant Garamond |
+
+→ Vollständige Implementierung: `raw/skills/cinematic-web/SKILL.md`
+
+---
+
 ## Related Skills
 
+- `/cinematic-web` — Awwwards-Niveau Single-File HTML (Premium-Tier dieser Factory)
+- `/kling-prompts` — KI Video-Prompts für Cinematic-Website Backgrounds
 - `/redesign-existing-projects` — bestehendes HTML auf Premium-Niveau bringen
 - `/design-taste-frontend` — für React/Next.js Implementierung statt reinem HTML
 - `/brand-guidelines` — Markenfarben zuerst definieren

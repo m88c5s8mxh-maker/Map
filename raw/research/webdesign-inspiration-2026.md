@@ -45,5 +45,15 @@ Hochwertige Referenzseiten die als Designinspiration dienen:
 - Referenzen für Agentur: Metalab, Lusion, UNVEIL®, Bigpicture Company
 - Referenzen für SaaS/Mittelstand: Stripe Sessions, Amie, Reflect
 
+## Verbundene Skills
+
+| Skill | Relevanz |
+|-------|---------|
+| `raw/skills/web-factory/SKILL.md` | Standard + Premium Tier — Muster aus Godly für Gastronomie/Agentur |
+| `raw/skills/cinematic-web/SKILL.md` | Cinematic Tier — SILENCIO, Traffic Productions als direkte Referenz |
+| `raw/skills/kling-prompts/SKILL.md` | AI Video für Cinematic Backgrounds |
+| `raw/skills/web-factory/industries/gastronomie.md` | Roasted, SILENCIO als Gastronomie-Referenzen |
+| `raw/skills/stitch-skill/DESIGN.md` | Stitch Design System — Bento, Floria aus Godly abgeleitet |
+
 ## Tags
-`#webdesign` `#inspiration` `#awwwards` `#godly` `#2026` `#dark-ui` `#animation` `#scroll`
+`#webdesign` `#inspiration` `#awwwards` `#godly` `#2026` `#dark-ui` `#animation` `#scroll` `#web-factory` `#cinematic-web`
