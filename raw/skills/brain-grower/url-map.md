@@ -1,22 +1,28 @@
-# Brain Growth — URL Map
+# Brain Grower — URL Map
 
 Kuratierte Quellen pro Skill-Kategorie. Immer erst diese Liste lesen bevor gescrapt wird.
 
 ---
 
-## Design (Prio 1)
+## Webdesign Premium (Prio 1)
+
+Fokus: Cinematic, High-End, Award-Level — was aktuell die besten Studios machen.
 
 | Quelle | URL | Fokus |
 |--------|-----|-------|
-| Awwwards Blog | https://www.awwwards.com/blog/ | Trends, SOTD, Techniken |
-| Codrops | https://tympanus.net/codrops/ | CSS/JS Animationen, Tutorials |
-| Smashing Magazine | https://www.smashingmagazine.com/category/ux-design/ | UX, CSS, Motion |
-| Google Web Dev | https://web.dev/blog/ | Performance, CSS, Animation |
-| Godly | https://godly.website | Webdesign-Inspiration |
-| CSS-Tricks | https://css-tricks.com/ | CSS Patterns, Tricks |
-| GSAP Blog | https://gsap.com/blog/ | Animation Techniken |
+| Awwwards Blog | https://www.awwwards.com/blog/ | Trends, Techniken, SOTD Deep Dives |
+| Awwwards SOTD | https://www.awwwards.com/websites/ | Aktuelle Gewinner — täglich neue Referenzen |
+| Codrops | https://tympanus.net/codrops/ | CSS/JS Animationen, Tutorials mit Code |
+| Godly | https://godly.website | Kuratierteste Sammlung moderner Webdesigns |
+| Hoverstates | https://www.hoverstates.com/ | Micro-Interactions, Hover-Effekte, Motion Details |
+| Minimal Gallery | https://minimal.gallery/ | Minimalistische Premium-Sites |
+| Semplice Blog | https://www.semplice.com/blog | Portfolio-Design, Designer Case Studies |
+| GSAP Showcase | https://gsap.com/showcase/ | Beste GSAP-Implementierungen weltweit |
+| Lusion Lab | https://lusion.co/ | WebGL, Three.js, immersive Experiences |
+| Fonts In Use | https://fontsinuse.com/ | Typografie-Inspiration, echte Anwendungen |
+| Bureau of Design | https://bureau.do/ | Editorial Premium Design |
 
-**Relevante Skills:** web-factory, cinematic-web, taste-skill, design-system, design-critique, ux-design, algorithmic-art
+**Relevante Skills:** web-factory, cinematic-web, taste-skill, design-system, design-critique, ux-design, algorithmic-art, immersive-web-experience
 
 ---
 
@@ -49,18 +55,55 @@ Kuratierte Quellen pro Skill-Kategorie. Immer erst diese Liste lesen bevor gescr
 
 ---
 
-## Marketing & Content (Prio 4)
+## Instagram & Creator Economy (Prio 3 — NEU)
+
+Fokus: Instagram-Wachstum, Reels, Carousels, digitale Produkte, Monetarisierung.
+
+| Quelle | URL | Fokus |
+|--------|-----|-------|
+| Later Blog | https://later.com/blog/ | Instagram Strategie, Reels, Algorithmus-Updates |
+| Social Media Examiner | https://www.socialmediaexaminer.com/ | Taktiken, Fallstudien, neue Features |
+| Creator Economy Newsletter | https://creatoreconomy.so/ | Monetarisierung, digitale Produkte, Creator Business |
+| Hootsuite Blog | https://blog.hootsuite.com/instagram-marketing/ | Instagram Marketing Best Practices |
+| Adam Mosseri (IG-Chef) | https://www.threads.net/@mosseri | Direkte Infos über Algorithmus, neue Features |
+| Blogilates / Pat Flynn | https://www.smartpassiveincome.com/blog/ | Digitale Produkte, passive Einnahmen |
+| Katelyn Bourgoin | https://www.customercamp.com/blog | Psychologie hinter Viral Content |
+| Not A Bot | https://www.notabot.co/ | Instagram Automation ethisch, Engagement-Taktiken |
+
+**Relevante Skills:** instagram-digital-products, content-creation, draft-content, campaign-plan, youtube-channel-ai
+
+---
+
+## Automation (Prio 4 — NEU, eigenständige Kategorie)
+
+Fokus: Workflow-Automatisierung, AI Agents, No-Code/Low-Code Pipelines.
+
+| Quelle | URL | Fokus |
+|--------|-----|-------|
+| n8n Blog | https://blog.n8n.io/ | AI Agents, MCP, Workflow-Patterns |
+| n8n Templates | https://n8n.io/workflows/ | Fertige Workflow-Templates zum Adaptieren |
+| Make Blog | https://www.make.com/en/blog | Make.com Automation Patterns |
+| Zapier Blog | https://zapier.com/blog/ | No-Code Automation, Zap-Patterns |
+| Pipedream Blog | https://pipedream.com/blog/ | Developer-orientierte Automation, APIs |
+| Activepieces Blog | https://www.activepieces.com/blog | Open-Source Automation Alternative |
+| Vectorize / Relevance AI | https://relevanceai.com/blog | AI Agent Workflows, Tool-Builder |
+| Bardeen Blog | https://www.bardeen.ai/blog | Browser-Automation, Scraping-Workflows |
+
+**Relevante Skills:** mcp-builder, map-sync, browser-use, email-sequence, sequence-load, enrich-lead
+
+---
+
+## Marketing & Content (Prio 5)
 
 | Quelle | URL | Fokus |
 |--------|-----|-------|
 | HubSpot Marketing | https://blog.hubspot.com/marketing | Content, Email, Social |
-| Ahrefs Blog | https://ahrefs.com/blog/ | SEO, Keywords, Backlinks |
+| Ahrefs Blog | https://ahrefs.com/blog/ | SEO, Keywords, AEO |
 | Backlinko | https://backlinko.com/blog | SEO Techniken |
 | Content Marketing Inst. | https://contentmarketinginstitute.com/blog/ | Content Strategy |
-| Sprout Social | https://sproutsocial.com/insights/ | Social Media Analytics |
 | SparkToro Blog | https://sparktoro.com/blog/ | Audience Research |
 
-**Relevante Skills:** seo-audit, content-creation, draft-content, email-sequence, campaign-plan, brand-guidelines, competitive-intelligence, instagram-digital-products
+**Relevante Skills:** seo-audit, content-creation, draft-content, email-sequence, campaign-plan, brand-guidelines, competitive-intelligence
 
 ---
 
@@ -121,8 +164,10 @@ Kuratierte Quellen pro Skill-Kategorie. Immer erst diese Liste lesen bevor gescr
 
 | Kategorie | Intervall | Begründung |
 |-----------|-----------|-----------|
-| design | wöchentlich | Schnellster Wandel, neue Techniken laufend |
-| ai | wöchentlich | Rapid Release Cycle bei LLMs/Tools |
+| webdesign | wöchentlich | Neue SOTD täglich, Techniken entwickeln sich schnell |
+| ai | wöchentlich | Rapid Release Cycle bei LLMs/Tools/Claude |
+| instagram | wöchentlich | Algorithmus ändert sich, neue Features laufend |
+| automation | wöchentlich | n8n/Make releasen laufend neue Nodes und Patterns |
 | sales | 2-wöchentlich | Taktiken ändern sich, aber langsamer |
 | marketing | monatlich | Stable Playbooks, wenig Disruption |
 | engineering | monatlich | Patterns zeitlos, News weniger relevant |
