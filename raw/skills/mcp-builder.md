@@ -193,6 +193,44 @@ Create an XML file with this structure:
 
 ---
 
+# Bewährte MCP-Integrationen 2026
+
+Vor dem Neubauen prüfen: Diese MCP-Server existieren bereits und können direkt genutzt werden.
+
+## Fertige MCP-Server (kein Bauen nötig)
+
+| Service | MCP Server | Was er kann |
+|---------|-----------|-------------|
+| **Zapier** | `zapier.com/mcp` | 7.000+ App-Integrationen direkt aus Claude heraus auslösen |
+| **n8n** | n8n MCP Server (self-hosted) | Workflows bauen, updaten und triggern via Claude |
+| **Make.com** | Maia (conversational) | Automations per natürlicher Sprache erstellen |
+
+### Zapier MCP — wichtigste Erkenntnis
+Zapier hat einen offiziellen MCP Server: Claude kann darüber direkt alle Zapier-Zaps triggern — kein eigener API-Code nötig.
+Quelle: `zapier.com/blog/zapier-mcp-guide`
+
+**Wann Zapier MCP statt eigenem MCP-Server:**
+- Integration mit einem der 7.000+ Zapier-Apps → Zapier MCP nutzen
+- Custom API ohne Zapier-Support → eigenen MCP Server bauen (dieser Skill)
+- Interoperabilität: AI Harness wechseln ohne Workflows neu zu bauen → Zapier MCP
+
+### n8n MCP — Workflow-Automation
+n8n hat einen MCP Server der es Claude ermöglicht, Workflows direkt zu bauen und auszuführen.
+Quelle: `blog.n8n.io/n8n-mcp-server`
+
+**Pattern: Claude + n8n für Agentur-Automation:**
+```
+Claude (Entscheidung) → n8n MCP → n8n Workflow → Externe Services
+                                   ↓
+                     Gmail / HubSpot / Slack / etc.
+```
+
+## Interoperabilität (neu 2026)
+Zapier Interoperability Feature: AI Harness wechseln (Claude → ChatGPT) ohne Workflows neu zu bauen.
+→ Beim MCP-Design darauf achten dass Tool-Namen und -Schemas AI-agnostisch bleiben.
+
+---
+
 # Reference Files
 
 ## 📚 Documentation Library

@@ -124,3 +124,39 @@ Next: Plug these into your scheduling tool and post consistently.
 - No fake hype or urgency
 - Write like a real person talking to a friend
 - The product, story, and voice belong to the user — Claude provides the structure
+
+---
+
+## Platform Updates 2026 (Quelle: Later, Social Media Examiner)
+
+### Was sich geändert hat — immer einbeziehen
+
+**Caption Links funktionieren jetzt direkt** — kein "link in bio" mehr zwingend nötig:
+- CTAs können direkt in der Caption verlinken
+- Step 5 (Sales Caption) und Step 7 (DM Sequence) entsprechend anpassen: direkter Link statt "Klick Link in Bio"
+
+**Grid Customization** — Posts können manuell sortiert werden:
+- Empfehlung: die letzten 9 Posts als kuratiertes Portfolio behandeln (3 Rows × 3 Posts = eine Botschaft)
+- Beim Carousel-Planning (Step 4) darauf hinweisen dass der erste Slide im Grid sichtbar ist
+
+**Reels Retention-Psychologie** — 3 Prinzipien die Algorithmus bevorzugt:
+1. **Pattern Interrupt** — erste 0,5 Sekunden brechen den Scroll-Rhythmus (unerwartetes Visual, Sound oder Bewegung)
+2. **Open Loop** — Frage die erst am Ende beantwortet wird ("Ich hab das X Monate gemacht und dann…")
+3. **Progress Cues** — Zuschauer wissen wann sie fast am Ende sind → bleiben länger
+
+**Anwenden in Step 6 (Reel Script):** Structure-Empfehlung ergänzen:
+```
+0:00–0:03  → Pattern Interrupt (Visuell oder Statement das stoppt)
+0:03–0:10  → Open Loop öffnen (Frage oder Problem benennen)
+0:10–0:45  → Wert liefern
+0:45–0:55  → Loop schließen + Transformation
+0:55–1:00  → CTA mit Progress Cue ("…und hier ist wie:")
+```
+
+**Edits App** — Instagram's eigene Video-Editing App (Alternative zu CapCut):
+- Bei Reel-Empfehlungen als Option erwähnen
+
+### Quick-Check vor jedem Output
+- Enthält der CTA einen direkten Link (nicht nur "link in bio")?
+- Ist der erste Slide/Frame ein Pattern Interrupt?
+- Öffnet der Reel-Script einen Open Loop in den ersten 3 Sekunden?

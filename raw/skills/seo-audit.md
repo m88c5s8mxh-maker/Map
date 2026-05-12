@@ -26,6 +26,7 @@ Gather the following from the user. If not provided, ask before proceeding:
    - **Content gap analysis** — find topics competitors rank for that you don't
    - **Technical SEO check** — crawlability, speed, structured data, and infrastructure issues
    - **Competitor SEO comparison** — head-to-head SEO benchmarking against specific competitors
+   - **AEO audit** — AI Engine Optimization: wie gut wird die Site von ChatGPT, Claude, Perplexity zitiert?
 
    If not specified, default to **full site audit**.
 
@@ -177,6 +178,39 @@ For each action item, include:
 - Expected impact (high, medium, low)
 - Effort estimate
 - Dependencies (if any)
+
+### 6. AEO — AI Engine Optimization (neu 2026)
+
+Wenn Audit-Typ `AEO` gewählt, zusätzlich prüfen:
+
+**Was AEO ist:** Optimierung für KI-Antwort-Engines (ChatGPT, Claude, Perplexity, Google AI Overviews) statt klassische Suchmaschinen. Quelle: Ahrefs AEO-Kurs 2026.
+
+**AEO Checklist:**
+
+| Check | Frage | Status |
+|-------|-------|--------|
+| Direkte Antworten | Hat jede wichtige Seite eine klare, direkt zitierbare Antwort in den ersten 100 Wörtern? | Pass/Fail |
+| FAQ Schema | Ist `FAQPage` Schema.org Markup implementiert? | Pass/Fail |
+| Speakable Schema | Ist `speakable` Property für Voice Search gesetzt? | Pass/Fail |
+| Strukturierte Daten | LocalBusiness / Organization JSON-LD vorhanden und vollständig? | Pass/Fail |
+| Brand Mentions | Wird die Marke in AI-Antworten erwähnt? (manuell testen: ChatGPT/Claude fragen) | Pass/Fail |
+| NAP Konsistenz | Name, Adresse, Telefon überall identisch? (AI liest verschiedene Quellen) | Pass/Fail |
+| Autorität | Backlinks von zitierten Quellen vorhanden? (AI zitiert bekannte Quellen bevorzugt) | Pass/Fail |
+| Content-Struktur | H2/H3 als direkte Fragen formuliert? ("Wie funktioniert X?") | Pass/Fail |
+
+**Brand Gap Analysis:**
+```
+Teste: "[Branche] [Ort] empfehlen" in ChatGPT und Perplexity
+→ Wird die Marke genannt? Falls nicht: fehlende Autorität/Sichtbarkeit für AI-Engines
+→ Welche Konkurrenten werden genannt? → Content-Gap identifiziert
+```
+
+**AEO Quick Wins:**
+- FAQ-Sektion mit echten Kundenfragen + direkten Antworten hinzufügen
+- Schema.org LocalBusiness vollständig befüllen (bereits in web-factory enthalten)
+- Listicle-Format für wichtige Inhalte: AI zitiert gerne nummerierte Listen
+
+---
 
 ## Follow-Up
 
