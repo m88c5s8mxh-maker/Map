@@ -35,6 +35,94 @@ Negative Prompt ist Pflicht — immer als separates Feld in Kling.
 
 ---
 
+## Kling 3.0 — Erweiterte Prompt-Struktur (neu 2026)
+
+### 5-Layer Formel für komplexe Szenen
+
+```
+Scene → Characters → Action → Camera → Audio & Style
+```
+
+1. **Scene** — Environment, Tageszeit, Atmosphäre zuerst verankern
+2. **Characters** — Konkrete Labels vergeben, konsistent wiederholen (`[Character A: Name, Ton]`)
+3. **Action** — Timeline aufbauen: Anfang → Mitte → Ende, nie alles auf einmal
+4. **Camera** — Shot-Typ + Bewegung explizit: "slow dolly push-in", "handheld tracking shot", nie "camera moves"
+5. **Audio & Style** — Dialogue, SFX, Ambient, Film-Ästhetik
+
+### Multi-Shot Syntax (Director Mode — bis 6 Shots)
+
+```
+Shot 1 (0-3 seconds): Wide establishing shot of restaurant exterior at blue hour
+Shot 2 (3-7 seconds): Camera glides through entrance doors, push in
+Shot 3 (7-11 seconds): Close-up on bar, warm amber backlighting
+[Character A: Barkeeper, calm warm voice]: "Welcome."
+Shot 4 (11-15 seconds): Pull back, reveal full dining room, empty tables, golden light
+```
+
+**Intelligence Mode** — AI plant Kameraabdeckung automatisch aus einem Prompt
+**Customization Mode** — Creator definiert jeden Shot explizit (obige Syntax)
+
+### Native Audio Syntax (Kling O3 Omni Audio)
+
+```
+[Character A: Lead Detective, controlled serious voice]: "Let's stop pretending."
+Immediately, the suspect shifts in chair, tense.
+[Character B: Prime Suspect, sharp defensive voice]: "I already told you everything."
+The detective slides a folder across the table. Paper scraping sound.
+SFX: Heavy footsteps echoing in corridor
+```
+
+**Regeln:**
+- `[Name, Ton]: "Text"` — immer unique Labels
+- Transition-Wörter für Pacing: "Immediately," "Then," "Suddenly," "A moment later"
+- `SFX:` für explizite Soundeffekte
+- Für reine Cinematic-Websites ohne Dialogue → Audio-Sektion weglassen reicht
+
+### Omni Reference Tags (Kling 3.0 Syntax)
+
+```
+<<<element_1>>> — Charakter / Objekt → bewahrt Identität
+<<<image_1>>>   — Referenzbild → Stil oder Startframe
+<<<video_1>>>   — Referenzvideo → Motion-Pattern übertragen
+<<<voice_1>>>   — Voice Profile → Stimme an Charakter binden
+```
+
+Beispiel: `@Character_A sits in the setting defined by <<<image_1>>>.`
+
+### Die 4 Kling-Regeln
+
+1. **Motion Verbs** — "Dolly push", "whip-pan", "shoulder-cam drift", "crash zoom" — nie "camera moves"
+2. **Texture = Credibility** — Film grain, lens flare, condensation, fabric sway, steam, sweat
+3. **Temporal Flow** — Immer: Beginning → Middle → End — kein eingefrorener Moment
+4. **Real Light Sources** — Nicht "dramatic lighting" sondern: neon signs, candlelight, golden hour, flickering fluorescents
+
+### Film-Stock Ästhetik (versteht Kling direkt)
+
+```
+"Shot on 35mm film with shallow focus and glowing bokeh"
+"VHS camcorder with heavy grain and chromatic aberration"
+"Super 8 film look with warm vintage tones"
+"Digital cinema with anamorphic lens flare"
+"Desaturated teal grade, crushed blacks"
+```
+
+### Micro-Motions für Realismus
+
+Statt eine komplexe Szene zu beschreiben → **eine Hauptaktion + Micro-Details:**
+
+```
+breathing, blinking, subtle hand movements, drifting dust,
+fabric sway, hair moving in wind, steam rising, light flickering,
+condensation fogging window, rain beading on surface
+```
+
+Beispiel: "Static tripod in neon-lit ramen shop, condensation fogs window, steam rising from bowls,
+couple eating in slow rhythm, broth splattering gently, 35mm shallow focus, glowing bokeh behind them."
+
+---
+
+---
+
 ## Prompt-Bausteine Bibliothek
 
 ### Kamera-Bewegungen — NUR ECHTE KLING MOTION SETTINGS (verifiziert 2026-05-10)
@@ -103,6 +191,7 @@ Negative Prompt ist Pflicht — immer als separates Feld in Kling.
 - [ ] Umgebung (Vegetation, Landschaft) stimmt mit Realität überein?
 - [ ] Referenz-Bild in 16:9 zugeschnitten vor dem Upload?
 - [ ] Negative Prompt enthält die spezifischen Fehler die für diesen Standort wahrscheinlich sind?
+- [ ] **Soll ein Logo/Markenzeichen im Video erscheinen?** → Wenn ja: Logo als Reference Image Slot belegen (sonst erfindet Kling ein eigenes — verschwendete Generation)
 
 ### Standort-Muster (lernend — wird nach jedem Projekt erweitert)
 
@@ -134,7 +223,10 @@ NICHT: "massive desert mountain", "sand dunes", "volcanic peaks"
 ### Allgemein (immer rein)
 ```
 cartoon, CGI obvious, animation, fast movement, camera shake,
-text overlays, watermarks, lens flare, overexposed
+text overlays, watermarks, lens flare, overexposed,
+deformed hands, extra fingers, warped limbs, morphing textures,
+morphing clothes, blur, flicker, distorted faces, unrealistic proportions,
+glitch, artifacts, warped text, unreadable typography
 ```
 
 ### Für Exterior / Außenaufnahmen
@@ -165,14 +257,25 @@ multiple light sources, generic plating, stock photo look
 | Parameter | Empfehlung | Notizen |
 |---|---|---|
 | Stil | Cinematic | Immer für Premium-Look |
-| Dauer | 10 Sek. | 5 Sek. nur für schnelle Tests |
+| Dauer | **10 Sek. (Standard) / 15 Sek. (Narrative)** | 5 Sek. nur für Tests — beste Qualität bei 5–10 Sek. |
 | Ratio | **Manuell 16:9 setzen** | Nicht vom Reference Image ableiten lassen |
-| Reference Image | Echtes Foto in 16:9 zuschneiden | Verhindert Ratio-Übernahme — **max. 3 Slots** |
+| Reference Image | Echtes Foto in 16:9 zuschneiden | Verhindert Ratio-Übernahme — **max. 4 Slots** (nicht 3). Logo als Slot 1 wenn Markenzeichen erscheinen soll |
 | Seed | Gleichen Seed für alle 3 Videos | Stilkonsistenz über alle Clips |
 | Konsistenz-Tipp | Gleiches Reference Image für alle 3 Videos | Gleiche Lichtstimmung sichern |
 | **First Frame** | Folgt immer aus dem Animations-Konzept — siehe Tabelle unten | Nie isoliert entscheiden ohne das Konzept zu kennen |
+| **Model** | **Kling O3** für maximale Qualität, V3 für Speed | O3 = "Omni One" Architektur mit Chain-of-Thought reasoning |
 
 **Ratio-Fix:** Wenn Kling das Reference Image-Ratio übernimmt → Reference Image vor Upload manuell auf 16:9 zuschneiden.
+
+### V3 vs O3 — Wann welches Modell?
+
+| Szenario | Empfehlung |
+|---|---|
+| Restaurant/Location Website | **O3** — Physics, Licht-Realismus, Charakter-Konsistenz |
+| Schnelle Tests / Iteration | **V3** — Günstiger, schneller |
+| Multi-Shot Sequenz (Director Mode) | **O3** — bessere Narrative-Kontrolle |
+| Social Media Content (Budget) | **V3 Standard** |
+| Premium Agency-Output | **O3 Pro** — 1080p/4K, nativer Audio |
 
 ---
 
@@ -238,12 +341,12 @@ Kling Settings:
 - First Frame: [Kommt auf das Ziel an — bei nahtloser Scroll-Sequenz (V1→V2→V3 fließen cinematisch ineinander): letzter extrahierter Frame des Vorgänger-Videos. Bei standalone Video oder bewusstem Szenenwechsel: Imagen 3 Bild oder echtes Foto. Immer zuerst fragen: Sollen die Videos eine durchgehende Animation sein oder eigenständige Clips?]
 
 Reference Images (max. 3 — alle 16:9 zugeschnitten):
+- [logo.png wenn Logo im Video erscheinen soll — sonst erfindet Kling eines]
 - [dateiname_16x9.jpg] — [wofür: Raumstruktur / Außenansicht / Food-Stil]
 - [dateiname_16x9.jpg] — [wofür]
-- [dateiname_16x9.jpg] — [wofür]
 
-Priorität: Wenn First Frame gesetzt → Lichtstimmung/Atmosphäre bereits abgedeckt → 
-3 Slots für Inhalt (Food, Gebäude, Produkt) nutzen.
+Slot-Priorität: Logo > Haupt-Referenzfoto (Gebäude/Innenraum) > Food/Produkt-Stil.
+Wenn First Frame gesetzt → Lichtstimmung bereits abgedeckt → Slots für Logo + Inhalt nutzen.
 ```
 
 **Komprimierter Prompt Triple B V2 (verifiziert, zeichenoptimiert):**
@@ -346,6 +449,7 @@ Kling Settings:
 - ⚠️ NICHT: ein echtes Foto als First Frame für V2 — das war der Fehler in der ersten Korrektur
 
 Reference Images (alle 16:9 zugeschnitten):
+- **logo.png** — echtes Triple B Logo → damit Kling das richtige Emblem verwendet, nicht ein erfundenes
 - 9S3A2620_16x9.jpg — Innenraum Atmosphäre (Licht, Bar, Architektur)
 - Optional: 9S3A2659_16x9.jpg — Exterior für Stilkonsistenz
 
@@ -353,7 +457,23 @@ Reference Images (alle 16:9 zugeschnitten):
 - V2 enthält NIEMALS Essen auf Tischen — das ist V3's Job
 - "no people" in V2 muss als ERSTE Zeile im Prompt stehen
 - Interior-Prompt fokussiert auf: Bar, Shelving, Licht, Architektur — nie auf Tisch-Objekte
-- **First Frame für V2 (und alle Folge-Videos) = letzter Frame des Vorgänger-Videos, nicht ein Referenzfoto**
+- **Wenn ein Logo/Markenzeichen im Video erscheinen soll → Logo immer als Reference Image hochladen, sonst erfindet Kling ein eigenes**
+
+---
+
+## Physics Prompting (Kling O3)
+
+O3 versteht Physics-Keywords und aktiviert spezifische Simulationsmodule:
+
+| Keyword im Prompt | Aktiviertes Modul | Effekt |
+|---|---|---|
+| "realistic gravity" | Z-axis Trajectory | Objekte fallen korrekt |
+| "smooth motion" | Inertia Simulation | Natürliche Bewegung ohne Sprünge |
+| "fluid dynamics" | Particle Flow | Wasser, Farbe, Rauch realistisch |
+| "surface texture" | Friction Model | Glätte vs. Widerstand |
+
+**Für Food Beauty Shots:** "liquid color flows across surface with fluid dynamics" → realistisches Fließen
+**Für Exterior:** "realistic wind through trees, grass moves naturally" → echte Luftbewegung
 
 ---
 
