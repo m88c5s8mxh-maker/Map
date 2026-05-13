@@ -245,6 +245,13 @@ generic cafeteria look, white sterile walls, cold blue tones,
 fast movement, camera shake, fish-eye distortion
 ```
 
+**Logo in Video — Text-Beschreibung schlägt Reference Image:**
+Kling kann ein spezifisches Logo nicht aus einem Reference Image in eine bestimmte Stelle im Video einbauen (Reference Images steuern Stil/Atmosphäre, nicht Objekt-Placement). Zuverlässigste Methode: Logo als physisches Wandschild im Prompt präzise beschreiben:
+`"A large circular wall sign, dark background, bold capital letters reading '[NAME]' in the center, smaller text '[SLOGAN]' curved around the bottom edge, warm amber backlit, glowing against dark wall."`
+
+**Tür-Animation bei Sequenz-Videos:**
+Wenn V1 vor dem Eingang endet → V2 First Frame = Eingangsbereich → V2 muss mit der Tür beginnen (das ist korrekt und gewollt). Das Problem ist nicht die Tür selbst, sondern dass Kling Doppeltüren oft asymmetrisch animiert (eine Tür öffnet, andere bleibt stehen). Fix: Türen als bereits offen beschreiben, keine Animation nötig — `"entrance doors are already standing open, camera glides smoothly through the open doorway"`. In den Negative Prompt: `"door swinging, door moving, door animation, one door open one door closed, asymmetric doors"`.
+
 **Menschen-Fix — kontextueller Rahmen statt reines Verbot:**
 Kling füllt Restaurant-Szenen automatisch mit Menschen (Trainingsdaten-Bias). Reine Verbote wie "no people" wirken schwach. Stattdessen: **einen Grund einbauen warum niemand da ist:**
 - `"One hour before opening. The restaurant is completely empty."` → stärkstes Frame
