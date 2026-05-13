@@ -1,108 +1,1069 @@
 # Knowledge Graph Index
 
-> Zuletzt aktualisiert: 2026-05-04 · 585 Knoten · 655 Kanten · 670 Wiki-Seiten · 148 Quelldateien
+> Zuletzt aktualisiert: 2026-05-13 · 880 Wiki-Seiten · 166 Quelldateien
 
 ---
 
-## Schnellzugriff
+## Wiki-Seiten
 
-- **Graph abfragen:** `/graphify query "<frage>"`  
-- **Verbindung finden:** `/graphify path "<A>" "<B>"`  
-- **Knoten erklären:** `/graphify explain "<konzept>"`  
-- **Skill-Workflow:** Lies `raw/skills/_SKILL_MAP.md`
-- **Visualisierung:** `graphify-out/graph.html` im Browser öffnen
+### concept/
+- [[claude-skills-system]]
+- [[design-engineering]]
+- [[llm-wiki-pattern]]
 
----
+### entity/
+- [[accessibility-review]]
+- [[account-research]]
+- [[algorithmic-art]]
+- [[analyze]]
+- [[architecture]]
+- [[audit-support]]
+- [[brand-guidelines]]
+- [[brand-review]]
+- [[browser-use]]
+- [[brutalist-skill]]
+- [[build-dashboard]]
+- [[build-with-claude-code]]
+- [[call-prep]]
+- [[call-summary]]
+- [[campaign-plan]]
+- [[canvas-design]]
+- [[capacity-plan]]
+- [[change-request]]
+- [[claude-efficiency]]
+- [[claude-max-effort]]
+- [[claude-mem]]
+- [[close-management]]
+- [[code-review]]
+- [[comp-analysis]]
+- [[competitive-brief]]
+- [[competitive-intelligence]]
+- [[compliance-tracking]]
+- [[compose-outreach]]
+- [[consolidate-memory]]
+- [[contact-research]]
+- [[content-creation]]
+- [[conversation-context]]
+- [[create-an-asset]]
+- [[create-viz]]
+- [[daily-briefing]]
+- [[data-context-extractor]]
+- [[data-visualization]]
+- [[debug]]
+- [[deploy-checklist]]
+- [[design-critique]]
+- [[design-handoff]]
+- [[design-system]]
+- [[design]]
+- [[digest]]
+- [[doc-coauthoring]]
+- [[documentation]]
+- [[docx]]
+- [[draft-content]]
+- [[draft-offer]]
+- [[draft-outreach]]
+- [[email-sequence]]
+- [[email-sorter]]
+- [[emil-design-eng]]
+- [[emil-kowalski]]
+- [[enrich-lead]]
+- [[everything-claude-code]]
+- [[explore-data]]
+- [[financial-statements]]
+- [[forecast]]
+- [[graphify]]
+- [[incident-response]]
+- [[instagram-digital-products]]
+- [[internal-comms]]
+- [[interview-prep]]
+- [[journal-entry-prep]]
+- [[journal-entry]]
+- [[knowledge-synthesis]]
+- [[manus-vacu-landing]]
+- [[map-sync]]
+- [[mcp-builder]]
+- [[memory-management]]
+- [[metrics-review]]
+- [[minimalist-skill]]
+- [[obsidian-wiki-skill]]
+- [[obsidian-wiki]]
+- [[onboarding]]
+- [[org-planning]]
+- [[output-skill]]
+- [[pdf]]
+- [[people-report]]
+- [[performance-report]]
+- [[performance-review]]
+- [[pipeline-review]]
+- [[policy-lookup]]
+- [[pptx]]
+- [[process-doc]]
+- [[process-optimization]]
+- [[product-brainstorming]]
+- [[prospect]]
+- [[reconciliation]]
+- [[recruiting-pipeline]]
+- [[redesign-skill]]
+- [[research-synthesis]]
+- [[risk-assessment]]
+- [[roadmap-update]]
+- [[runbook]]
+- [[schedule]]
+- [[search-strategy]]
+- [[search]]
+- [[seo-audit]]
+- [[sequence-load]]
+- [[setup-cowork]]
+- [[skill-creator]]
+- [[slack-gif-creator]]
+- [[soft-skill]]
+- [[source-management]]
+- [[sox-testing]]
+- [[sprint-planning]]
+- [[sql-queries]]
+- [[stakeholder-update]]
+- [[standup]]
+- [[start]]
+- [[statistical-analysis]]
+- [[status-report]]
+- [[stitch-skill]]
+- [[superpowers]]
+- [[synthesize-research]]
+- [[system-design]]
+- [[task-management]]
+- [[taste-skill]]
+- [[tech-debt]]
+- [[template-saver]]
+- [[testing-strategy]]
+- [[theme-factory]]
+- [[ui-ux-pro-max]]
+- [[update]]
+- [[user-research]]
+- [[ux-copy]]
+- [[ux-design]]
+- [[validate-data]]
+- [[variance-analysis]]
+- [[vendor-review]]
+- [[web-artifacts-builder]]
+- [[weekly-prep-brief]]
+- [[write-query]]
+- [[write-spec]]
+- [[xlsx]]
+- [[youtube-channel-ai]]
 
-## Wissens-Communities (61 Cluster)
+### obsidian/
+- [[Sales Pipeline_1]]
 
-Die wichtigsten thematischen Cluster im Graph:
+### synthesis/
+- [[data-analytics-skills]]
+- [[design-ux-skills]]
+- [[document-comms-skills]]
+- [[engineering-skills]]
+- [[finance-skills]]
+- [[hr-people-skills]]
+- [[knowledge-productivity-skills]]
+- [[marketing-content-skills]]
+- [[sales-crm-skills]]
 
-| Community | Thema | Wichtigste Knoten |
-|-----------|-------|-------------------|
-| 0 | Design System & UI Patterns | brutalist-skill, taste-skill, anti-generic rules, bento grid, CRT terminal |
-| 1 | Brand & Marketing | Anthropic identity, campaign brief, Claude limits, generative art |
-| 2 | LLM Output Research | Laziness research, truncation studies, context reduction patterns |
-| 3 | Stitch Design System | DESIGN.md, Floria examples, asymmetric layouts, botanical photography |
-| 4 | Sales Intelligence | Battlecard, competitive analysis, outreach personalization, persona |
-| 5 | Product Analytics | CAC, DAU/WAU/MAU, JTBD, resource planning, dashboard design |
-| 6 | Email & Outreach | AIDA structure, LinkedIn, Gmail MCP, email-sorter, draft-outreach |
-| 7 | HR & People | Onboarding, attrition, HRIS, diversity metrics, performance calibration |
-| 8 | Engineering | Debug, deploy, design tokens, developer handoff, tech documentation |
-| 9 | Product & UX | Acceptance criteria, MoSCoW, persona development, PRD, affinity mapping |
-| 10 | Premium UI Patterns | AI tells, anti-slop rules, motion-engine bento, creative arsenal |
-| 11 | Data & Testing | CTE, SQL, data validation, financial model, testing pyramid |
-| 12 | Content & SEO | Blog, landing page copy, draft-content, email performance, sequencing |
-| 13 | Finance & Sales | GAAP, income statement, financial-statements, variance, pipeline |
-| 14 | Data Visualization | Chart selection, data warehouse, create-viz, data-context-extractor |
-| 15 | Knowledge Systems | Karpathy wiki pattern, runbook, RACI, SOP, escalation paths |
-| 16 | UX & Web | CTA, landing page, microcopy, React, ux-copy, web-artifacts-builder |
-| 17 | Strategy & Roadmap | ADR, KPI reporting, ROAM risk, stakeholder-update, architecture |
-| 18 | CRM & Pipeline | Deal prioritization, ICP, pipeline health, pipeline-review, prospect |
-| 19 | Enterprise Search | MCP sources, parallel search, query decomposition, rate limiting |
-| 20 | Agile Workflow | Backlog, sprint capacity, standup, tech-debt, sprint-planning |
-| 21 | Compensation | Benchmarking, equity modeling, total comp, comp-analysis, HRIS |
-| 22 | Document Output | docx-js, LibreOffice, Pandoc, DOCX skill, tracked changes |
-| 23 | Incident & Comms | 5 Whys, blameless postmortem, incident-response, internal-comms |
-| 24 | Compliance & Security | GDPR, SOC 2, audit readiness, compliance-tracking |
-| 25 | Task & Memory | TASKS.md, working memory bootstrap, update, start, task-management |
-| 26 | Graph Automation | update_map.py, GitHub Actions, graphify rebuild |
-| 27 | PDF Tools | pdf skill, pdfplumber, pypdf, OCR, reportlab |
-| 28 | Reconciliation | Bank recon, GL-to-subledger, intercompany, reconciliation skill |
-| 29 | Data Exploration | Data profiling, quality assessment, explore-data, warehouse connector |
-| 30 | Claude Memory | CLAUDE.md hot cache, memory management, two-tier architecture |
-| 31 | SEO | Content gap, keyword research, audit types, seo-audit |
-| 32 | Cowork Platform | Connector registry, plugin marketplace, setup-cowork |
-| 33 | Skill Development | Skill description optimization, evaluation loop, skill-creator |
-| 34 | Lead Sequences | Lead enrichment, outreach sequence, sequence-load, Apollo MCP |
-| 35 | YouTube & Video | Faceless channel, viral titles, youtube-channel-ai |
-| 36–60 | Specialized clusters | Output enforcement, memory, scheduling, design components, SQL, GIFs, etc. |
+### wiki/
+- [[2025 Controlled Laziness Experiments]]
+- [[306090-Day Onboarding Plan]]
+- [[35% Context Reduction from Lazy-Loading]]
+- [[3P Update (ProgressPlansProblems)]]
+- [[5 Whys Root Cause Analysis]]
+- [[AI Purple Ban — no purpleneon gradients, the generic AI aesthetic is strictly forbidden]]
+- [[AI Tells - Forbidden Design Patterns]]
+- [[AI Tells Forbidden Patterns — no Inter, no neon glows, no pure black, no 3-col cards, no generic names]]
+- [[AIDA Email Structure]]
+- [[Acceptance Criteria]]
+- [[Accrual Types (AP, Payroll, Prepaid)]]
+- [[Activity Digest]]
+- [[Affinity Mapping]]
+- [[Anthropic Brand Identity]]
+- [[Anti-Patterns Banned List — no emojis, no Inter, no pure black, no neon glows, no 3-column equal cards]]
+- [[Anti-Slop  Anti-Generic AI Design Rules]]
+- [[Anti-Slop Design Engineering Rules (Bias Correction)]]
+- [[Anti-Truncation  Full Output]]
+- [[Apollo MCP (Lead Enrichment)]]
+- [[Apollo MCP Integration]]
+- [[Apollo MCP]]
+- [[Architectural Patterns — lazy-loaded skills, MCP integration, chunked task execution]]
+- [[Architecture Decision Record]]
+- [[Asset Creation Workflow]]
+- [[Attribution Modeling]]
+- [[Attrition Analysis]]
+- [[Audit Readiness]]
+- [[Audit Trail (EXTRACTEDINFERREDAMBIGUOUS)]]
+- [[Backlog Prioritization]]
+- [[Bank Reconciliation]]
+- [[Banned Fonts List (Inter, Roboto, Arial, Open Sans)]]
+- [[Battlecard]]
+- [[Bento Grid  Asymmetric CSS Grid Layout]]
+- [[Bento Grid Layout]]
+- [[Bento Grid — Asymmetric tile layout (2fr 1fr 1fr), perpetual micro-animation per tile]]
+- [[BigQuery]]
+- [[Blameless Postmortem]]
+- [[Blog Post]]
+- [[Blueprint Template Library]]
+- [[Brand Voice]]
+- [[Brand Voice_1]]
+- [[CLAUDE.md Hot Cache]]
+- [[CRM Connector (Forecast)]]
+- [[CRM Connector]]
+- [[CRM Hygiene]]
+- [[CRM]]
+- [[CRT Terminal UI]]
+- [[Call Preparation Workflow]]
+- [[Call to Action (CTA)]]
+- [[Campaign Brief]]
+- [[Carousel Content]]
+- [[Change Management Framework]]
+- [[Channel Forensics]]
+- [[Chart Selection]]
+- [[Chart.js]]
+- [[Chunked Task Execution Pattern]]
+- [[Claude Code (AI coding agent)]]
+- [[Claude Usage Limits]]
+- [[Cognitive Shortcuts — LazyBench models reduce reasoning depth on perceived-simple or long-context tasks]]
+- [[Color Palette — Canvas White, Charcoal Ink, accent system, banned colors]]
+- [[Common Room]]
+- [[Common Table Expression (CTE)]]
+- [[Community Detection]]
+- [[Community_0]]
+- [[Community_1]]
+- [[Community_10]]
+- [[Community_11]]
+- [[Community_12]]
+- [[Community_13]]
+- [[Community_14]]
+- [[Community_15]]
+- [[Community_16]]
+- [[Community_17]]
+- [[Community_18]]
+- [[Community_19]]
+- [[Community_2]]
+- [[Community_20]]
+- [[Community_21]]
+- [[Community_22]]
+- [[Community_23]]
+- [[Community_24]]
+- [[Community_25]]
+- [[Community_26]]
+- [[Community_27]]
+- [[Community_28]]
+- [[Community_29]]
+- [[Community_3]]
+- [[Community_30]]
+- [[Community_31]]
+- [[Community_32]]
+- [[Community_33]]
+- [[Community_34]]
+- [[Community_35]]
+- [[Community_36]]
+- [[Community_37]]
+- [[Community_38]]
+- [[Community_39]]
+- [[Community_4]]
+- [[Community_40]]
+- [[Community_41]]
+- [[Community_42]]
+- [[Community_43]]
+- [[Community_44]]
+- [[Community_45]]
+- [[Community_46]]
+- [[Community_47]]
+- [[Community_48]]
+- [[Community_49]]
+- [[Community_5]]
+- [[Community_50]]
+- [[Community_51]]
+- [[Community_52]]
+- [[Community_53]]
+- [[Community_54]]
+- [[Community_55]]
+- [[Community_56]]
+- [[Community_57]]
+- [[Community_58]]
+- [[Community_59]]
+- [[Community_6]]
+- [[Community_60]]
+- [[Community_7]]
+- [[Community_8]]
+- [[Community_9]]
+- [[Company Newsletter]]
+- [[Compensation Analysis]]
+- [[Compensation Benchmarking]]
+- [[Compensation Package]]
+- [[Competency-Based Interview Questions]]
+- [[Competitive Analysis]]
+- [[Competitive Research Workflow]]
+- [[Compliance & Security]]
+- [[Compliance Framework]]
+- [[Component Stylings — Buttons, Cards, Inputs, Navigation, Loaders, Empty States]]
+- [[Compounding Error Avoidance Research]]
+- [[Confidence Scoring (Freshness x Authority)]]
+- [[Connector Registry]]
+- [[Consumer Middleware Truncation Problem]]
+- [[Contact Card  Dossier]]
+- [[Contact Profile]]
+- [[Content Gap Analysis]]
+- [[Context Navigation Rules]]
+- [[Context Window Asymmetry (Large Input, Capped Output)]]
+- [[Continuation Handling Prompt Template]]
+- [[Control Deficiency Classification]]
+- [[Cowork Onboarding]]
+- [[Creative Arsenal - High-End UI Pattern Library]]
+- [[Creative Arsenal — Bento Grid, Masonry, Magnetic Button, Gooey Menu, Parallax Tilt Card, etc.]]
+- [[Cross-Source Deduplication]]
+- [[Cursor (AI coding agent)]]
+- [[Customer Acquisition Cost (CAC)]]
+- [[DAUWAUMAU (Active User Metrics)]]
+- [[DESIGN.md â€“ Single Source of Truth for Google Stitch]]
+- [[DESIGN.md — Stitch Design System Document]]
+- [[DESIGN_VARIANCE Dial (1-10 Symmetry to Chaos)]]
+- [[DESIGN_VARIANCE Dial (1-10 layout variance parameter)]]
+- [[DESIGN_VARIANCE Dial (1=Symmetric, 10=Asymmetric Chaos) — default 8]]
+- [[DM Automation Sequence]]
+- [[DOCX Skill]]
+- [[Dashboard Design Principles]]
+- [[Data & Analytics]]
+- [[Data Analysis]]
+- [[Data Profiling]]
+- [[Data Quality Assessment]]
+- [[Data Validation  QA]]
+- [[Data Visualization]]
+- [[Data Warehouse Connector]]
+- [[Data Warehouse]]
+- [[Deal Prioritization Framework]]
+- [[Debug Workflow]]
+- [[Dependency Verification Mandate — check package.json before importing 3rd party library]]
+- [[Deploy Checklist]]
+- [[Design & UX]]
+- [[Design Advisor (design)]]
+- [[Design Audit â€“ Systematic Upgrade Checklist]]
+- [[Design Audit]]
+- [[Design Data CSV Files]]
+- [[Design Dial System (Creativity, Density, Variance, Motion Intent)]]
+- [[Design Tokens]]
+- [[Developer Handoff]]
+- [[Developer Platform Full Context Access (APIAI Studio)]]
+- [[Diversity Representation Metrics]]
+- [[Document Co-Authoring]]
+- [[Document Creation Workflow]]
+- [[Double-Bezel (Doppelrand) Nested Container Architecture]]
+- [[Double-Bezel Nested Architecture]]
+- [[Draft Content Skill]]
+- [[Draft Offer Skill]]
+- [[Draft Outreach Skill]]
+- [[Dynamic Throttling During Peak Demand]]
+- [[Email Performance Benchmarks]]
+- [[Email Personalization]]
+- [[Email Sequence Skill]]
+- [[Email Sorter Skill]]
+- [[EmotionPrompt (Microsoft Research) — Stakes framing improves output quality up to +115%]]
+- [[EmotionPrompt (Microsoft Research)]]
+- [[Empirical Results — 2025 controlled experiments on LLM truncation; truncation is behavioral, not memory failure]]
+- [[Employee Handbook]]
+- [[Engineering]]
+- [[Enrich Lead Skill]]
+- [[Equity Modeling]]
+- [[Error Avoidance as Truncation Driver]]
+- [[Escalation Path]]
+- [[Explicit Syntax Binding (Anti-Truncation)]]
+- [[Explore Data Skill]]
+- [[Faceless YouTube Channel]]
+- [[Feature Comparison Matrix]]
+- [[Figma]]
+- [[Finance  Accounting Operations Domain]]
+- [[Financial Model]]
+- [[Financial Statements Skill]]
+- [[Fixed Asset Depreciation JE]]
+- [[Floria Archives Bento Grid (2x2 image tiles)]]
+- [[Floria Asymmetric Left-Aligned Hero Layout]]
+- [[Floria Dark Editorial Aesthetic (Dark Background, High-Contrast Typography)]]
+- [[Floria Design Language — Dark background, off-white type, botanical photography, editorial asymmetry]]
+- [[Floria Example — Bottom section testimonials, CTA, footer with 'Clarity.' brand section]]
+- [[Floria Example — Dark editorial floral website top section screenshot]]
+- [[Floria Example — Full page overview of dark, asymmetric editorial layout]]
+- [[Floria Newsletter CTA with Botanical Image Background]]
+- [[Floria Scattered Testimonial Card Layout]]
+- [[Floria Website - Bottom Section (Testimonials, Newsletter, Footer)]]
+- [[Floria Website - Full Page Overview]]
+- [[Floria Website - Top Section (Hero, Curated Assemblages, Services, Archives)]]
+- [[Forecast Scenarios (BestLikelyWorst)]]
+- [[Forecast Skill]]
+- [[Framer Motion Animations]]
+- [[Full-Output Enforcement (output-skill)]]
+- [[GAAP Presentation Requirements]]
+- [[GDPR]]
+- [[GIF Optimization for Slack]]
+- [[GL-to-Subledger Reconciliation]]
+- [[GPU Compute Cost Per Token]]
+- [[GPU-Safe Animation (transform + opacity only)]]
+- [[Gap-to-Quota Analysis]]
+- [[Gemini thinking_level Parameter]]
+- [[Generative Art]]
+- [[Glassmorphism Design Pattern]]
+- [[Glossary  Decoder Ring]]
+- [[Gmail Labels  Sorting Rules]]
+- [[Gmail MCP Integration]]
+- [[Google Stitch (AI UI Generation Tool)]]
+- [[Google Stitch (AI UI generation platform)]]
+- [[Graphify MCP Server]]
+- [[Graphify Skill]]
+- [[GreenYellowRed Status]]
+- [[HR  People Operations Domain]]
+- [[HR & Compensation]]
+- [[HR Policy Lookup]]
+- [[HRIS Connector]]
+- [[HRIS]]
+- [[HTML Graph Visualization]]
+- [[Headcount Planning]]
+- [[Hero Section Rules — Inline image typography, asymmetry, no filler, CTA restraint]]
+- [[High-End Visual Design  Soft UI (soft-skill)]]
+- [[Hypothesis Testing]]
+- [[Ideal Customer Profile (ICP)]]
+- [[Incident Response Skill]]
+- [[Incident Severity Classification (SEV1-4)]]
+- [[Income Statement]]
+- [[Industrial Brutalism & Tactical Telemetry UI (brutalist-skill)]]
+- [[Inline Image Typography (photos embedded in headlines)]]
+- [[Inline Image Typography — small contextual photos embedded between headline words at type-height]]
+- [[Instagram Digital Products Skill]]
+- [[Instagram Sales Funnel]]
+- [[Intercompany Reconciliation]]
+- [[Internal Comms Skill]]
+- [[Internal Controls over Financial Reporting]]
+- [[Interview Prep Skill]]
+- [[Interview Scorecard]]
+- [[JE Review Checklist]]
+- [[Jobs-to-be-Done (JTBD)]]
+- [[Journal Entry Prep Skill]]
+- [[Journal Entry Skill]]
+- [[KPI Reporting]]
+- [[Karpathy LLM Wiki Pattern]]
+- [[Keyword Research]]
+- [[Knowledge Base Connector]]
+- [[Knowledge Graph]]
+- [[Knowledge Graph_1]]
+- [[Knowledge Synthesis Skill]]
+- [[LLM Laziness Research References]]
+- [[LLM Laziness â€“ Empirical Results (2025 Studies)]]
+- [[LLM Output Truncation  Laziness Behavior]]
+- [[LLM Output Truncation Research â€“ Overview]]
+- [[LLM Output Truncation Research — root causes, remediation, empirical findings]]
+- [[Landing Page Copy]]
+- [[Landing Page]]
+- [[Layout Principles — CSS Grid-first, bento architecture, no overlapping, max-width 1400px]]
+- [[Lazy-Loaded Skills Architectural Pattern]]
+- [[Lazy-Loaded Skills Pattern — SKILL.md with YAML front-matter for 35% context reduction]]
+- [[LazyBench Cognitive Shortcutting Discovery]]
+- [[LazyBench Study]]
+- [[LazyBench — Proves frontier models actively select cognitive shortcuts on high-effort tasks]]
+- [[Lead Enrichment]]
+- [[Lead Nurture Sequence]]
+- [[LibreOffice]]
+- [[LinkedIn Outreach]]
+- [[MCP Builder Skill]]
+- [[MCP Connected Sources]]
+- [[MCP Eliminates HallucinationTruncation Incentive]]
+- [[MCP Server Evaluation]]
+- [[MCP Source Priority Ordering]]
+- [[MOTION_INTENSITY Dial (1-10 Static to Cinematic)]]
+- [[MOTION_INTENSITY Dial (1-10 animation intensity parameter)]]
+- [[MOTION_INTENSITY Dial (1=Static, 10=Cinematic) — default 6]]
+- [[Manus VACU Landing Page Skill]]
+- [[Market Trend Identification]]
+- [[Marketing Funnel Metrics]]
+- [[Marketing]]
+- [[Memory Consolidation]]
+- [[Memory Gap Filling]]
+- [[Memory Management Skill]]
+- [[Metacognitive Laziness and Human Feedback Loop]]
+- [[Microcopy]]
+- [[MoSCoW Framework]]
+- [[MoSCoW Prioritization]]
+- [[Model Context Protocol (MCP) Architecture]]
+- [[Model Context Protocol (MCP) — open standard for real-time LLM ↔ external data connections]]
+- [[Model Context Protocol (MCP)]]
+- [[Month-End Close Process]]
+- [[Motion Philosophy — Spring physics stiffness100 damping20, perpetual micro-loops, staggered orchestration]]
+- [[Motion-Engine Bento Paradigm (Bento 2.0)]]
+- [[Motion-Engine Bento Paradigm — 5-card archetypes, perpetual micro-interactions, spring physics]]
+- [[Neo4j Export]]
+- [[Next.js]]
+- [[North Star Metric]]
+- [[NowNextLater Roadmap]]
+- [[OKRs (Objectives and Key Results)]]
+- [[OODA Loop]]
+- [[Obsidian Vault Export]]
+- [[Obsidian]]
+- [[Offer Letter]]
+- [[Onboarding Buddy]]
+- [[Onboarding Email Sequence]]
+- [[Operational Runbook]]
+- [[Opportunity Solution Tree]]
+- [[Outlier and Anomaly Detection]]
+- [[Output Limits — context window asymmetry, consumer middleware truncation, developer API difference]]
+- [[Outreach Personalization]]
+- [[Outreach Sequence]]
+- [[PIL  Pillow]]
+- [[Pandoc]]
+- [[Parallel Search Execution]]
+- [[Parameter Tuning — temperature, top-p, Gemini thinking_level for complete output]]
+- [[People Analytics]]
+- [[Performance Calibration]]
+- [[Performance Guardrails — transformopacity only, no h-screen, isolated leaf client components]]
+- [[Perpetual Micro-Interactions (infinite-loop component states)]]
+- [[Persistent Knowledge Wiki]]
+- [[Persona Classification]]
+- [[Persona Development]]
+- [[Placeholder Propagation from Training Data]]
+- [[Plugin Marketplace]]
+- [[Positioning Analysis]]
+- [[Premium  Anti-Generic UI Design Principle]]
+- [[Premium Utilitarian Minimalism UI (minimalist-skill)]]
+- [[PriceVolume Decomposition]]
+- [[Process Waste (Lean)]]
+- [[Product Analytics Connector]]
+- [[Product Management Domain]]
+- [[Product Metrics Hierarchy]]
+- [[Product Requirements Document (PRD)]]
+- [[Product Strategy]]
+- [[Project Tracker Connector]]
+- [[Prompt Engineering Techniques — psychological patterns, syntax binding, XML structure, verification loops]]
+- [[Prompt Stimulus Effectiveness (financial framing, stakes language)]]
+- [[Prospect Research]]
+- [[Psychological Pattern Matching in Prompts]]
+- [[Query Decomposition]]
+- [[RACI Matrix]]
+- [[RICE Prioritization Score]]
+- [[RLHF Brevity Bias Through Alignment]]
+- [[RLHF Brevity Bias — alignment training instills short-output preference to reduce compute cost]]
+- [[RLHF-induced Brevity Bias (root cause of truncation)]]
+- [[ROAM Risk Framework]]
+- [[ROI Calculator]]
+- [[Rate Limit Handling]]
+- [[Rationale Ban 3-column equal card grids as overused AI pattern]]
+- [[Rationale Ban Inter font to avoid generic AI aesthetic]]
+- [[Rationale Explicit output enforcement counters RLHF brevity bias]]
+- [[Rationale Lazy-Loading Reduces Context Dilution and Token Cost]]
+- [[Rationale MCP Transforms Model from Static Store to Live Reasoning Engine]]
+- [[Rationale RLHF Brevity Bias is Economic Cost Optimization]]
+- [[Rationale Spring physics over linear easing for premium feel]]
+- [[Rationale Use min-h-100dvh instead of h-screen for iOS Safari fix]]
+- [[React + Tailwind + Framer Motion Stack]]
+- [[React Component Architecture]]
+- [[React Component]]
+- [[React]]
+- [[Reader Testing]]
+- [[Recruiting Pipeline Stages]]
+- [[Redesign Existing Projects (redesign-skill)]]
+- [[Reference Prompt Templates for Complete Output]]
+- [[Reference Prompts — ready-to-use templates for enforcing complete LLM output]]
+- [[Research References — EmotionPrompt, LazyBench, Compounding Error Avoidance, Winter Break Hypothesis]]
+- [[Resend]]
+- [[Resource Capacity Planning]]
+- [[Responsive Rules — Mobile-first, no horizontal scroll, clamp typography, touch targets 44px]]
+- [[Result Ranking and Deduplication]]
+- [[Retention Metrics (D1D7D30)]]
+- [[Return on Ad Spend (ROAS)]]
+- [[Revenue Recognition (ASC 606)]]
+- [[Risk Assessment Matrix (Likelihood x Impact)]]
+- [[Risk Register]]
+- [[Rollback Plan]]
+- [[SCAMPER Ideation Framework]]
+- [[SEO Audit Types]]
+- [[SEO Recommendations]]
+- [[SEO]]
+- [[SKILL.md YAML Front-Matter Discovery Hook]]
+- [[SKILL.md â€“ Portable AI Instruction File Format]]
+- [[SOC 2]]
+- [[SOX 404]]
+- [[SOX Internal Controls]]
+- [[SOX Sample Selection]]
+- [[SQL Dialect Compatibility]]
+- [[SQL Query]]
+- [[SaaS Replacement with Claude Code]]
+- [[Sales Asset]]
+- [[Sales Enablement]]
+- [[Sales Intelligence Workflow]]
+- [[Sales Operations Domain]]
+- [[Sales Pipeline Health Score]]
+- [[Sales Pipeline]]
+- [[Sales Pipeline_1]]
+- [[Scheduled Task  Cron Job]]
+- [[Schema Discovery]]
+- [[Seasonal Behavior Analysis (Winter Break Hypothesis)]]
+- [[Seasonal Behavior Anomalies in LLM Output]]
+- [[Self-Assessment Template]]
+- [[Sequence Branching Logic]]
+- [[Signal-Based Outreach]]
+- [[Skill Description Optimization]]
+- [[Skill Evaluation Loop]]
+- [[Skill Registry (llms.txt)]]
+- [[Skill Triggering Mechanism]]
+- [[Snowflake]]
+- [[Social Media Post]]
+- [[Source Attribution  Citation]]
+- [[Span of Control]]
+- [[Spark Enrichment]]
+- [[Spring Physics Animation (stiffness100, damping20)]]
+- [[Spring Physics Motion]]
+- [[Spring Physics — stiffness100, damping20, no linear easing, Framer Motion]]
+- [[Sprint Capacity Planning]]
+- [[Stakeholder Audience Segmentation]]
+- [[Standard Operating Procedure (SOP)]]
+- [[Standup Format (YesterdayTodayBlockers)]]
+- [[Statistical Significance]]
+- [[Stitch Design System DESIGN.md (Taste Standard)]]
+- [[Stitch Design Taste Skill (stitch-skill)]]
+- [[Stopping Pressure in Autoregressive Models]]
+- [[Stopping Pressure — aggressively calibrated learned tendency to conclude outputs early]]
+- [[Stripe]]
+- [[Supabase]]
+- [[Survivorship Bias]]
+- [[Swiss Industrial Typography Archetype]]
+- [[Swiss Typographic Design]]
+- [[System Architecture Design]]
+- [[TASKS.md Task File]]
+- [[Tactical Telemetry  CRT Terminal Archetype]]
+- [[Tailwind CSS]]
+- [[Taste Skill (design-taste-frontend)]]
+- [[Taste Skill 3-Dial Settings — DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY]]
+- [[Taste Skill README â€“ Collection Overview]]
+- [[Taste Skill Research Hub — LLM output truncation study directory]]
+- [[Taste Skill Research Index]]
+- [[Taste Skill Variants — taste, redesign, soft, output, minimalist, brutalist, stitch]]
+- [[Taste Skill — AI frontend design skill collection]]
+- [[Tech Debt Prioritization Framework]]
+- [[Technical Debt Categories]]
+- [[Technical Documentation]]
+- [[Temperature Parameter for Token Distribution]]
+- [[Test Plan]]
+- [[Testing Pyramid]]
+- [[Thematic Analysis (Research)]]
+- [[Theme Palette]]
+- [[Time to Fill (Recruiting)]]
+- [[Top-p Nucleus Sampling]]
+- [[Total Compensation]]
+- [[Total Cost of Ownership (TCO)]]
+- [[Tracked Changes]]
+- [[Trade-off Analysis]]
+- [[Training Data Bias — placeholder code patterns from Stack Overflow  GitHub propagate into LLM outputs]]
+- [[Tutorial-Style Pattern Reinforcement in Training Data]]
+- [[Two-Tier Memory Architecture]]
+- [[TypeScript MCP SDK]]
+- [[Typography Rules — GeistSatoshiCabinet Grotesk, Inter ban, serif ban]]
+- [[UI Design System]]
+- [[UX Audit]]
+- [[User Context (Ulm, DE)]]
+- [[User Interview]]
+- [[User Segments]]
+- [[User Story]]
+- [[VISUAL_DENSITY Dial (1-10 Art Gallery to Cockpit)]]
+- [[VISUAL_DENSITY Dial (1-10 content density parameter)]]
+- [[VISUAL_DENSITY Dial (1=Art Gallery, 10=Cockpit Dense) — default 4]]
+- [[Variance Analysis]]
+- [[Vendor Risk Assessment]]
+- [[Vercel]]
+- [[Verification Loops (Chain of Verification, Reverse Prompting, Self-Grading)]]
+- [[Viral Title Production]]
+- [[Visual Hierarchy]]
+- [[Visual Theme & Atmosphere — gallery-airy, asymmetric, clinical-yet-warm]]
+- [[WCAG 2.1 AA]]
+- [[Warm Monochrome Palette with Muted Pastel Accents]]
+- [[Warm Monochrome Palette]]
+- [[Waterfall Chart]]
+- [[Weekly Prep Brief]]
+- [[WinLoss Analysis]]
+- [[Window Functions]]
+- [[Winter Break Hypothesis — LLMs produce shorter outputs during holiday-season-matching training periods]]
+- [[Word Document (.docx)]]
+- [[Workflow Demo]]
+- [[Working Memory Bootstrap]]
+- [[XML Editing (DOCX)]]
+- [[XML-Structured Prompt Architecture]]
+- [[_COMMUNITY_Accounting Reconciliation]]
+- [[_COMMUNITY_Agile Sprint Planning und Tech Debt]]
+- [[_COMMUNITY_Animation & Layout System]]
+- [[_COMMUNITY_Anti-Truncation Prompt Patterns]]
+- [[_COMMUNITY_Anti-Truncation Techniques]]
+- [[_COMMUNITY_Brutalist & Anti-Generic UI]]
+- [[_COMMUNITY_Call Preparation Workflow]]
+- [[_COMMUNITY_Chunked Execution und Verification Loops]]
+- [[_COMMUNITY_Cinematic Web, AI Video und Bayern-Oberpfalz]]
+- [[_COMMUNITY_Claude Memory Architecture]]
+- [[_COMMUNITY_Claude Memory und Task Management]]
+- [[_COMMUNITY_Community 55]]
+- [[_COMMUNITY_Compensation Analysis und HR]]
+- [[_COMMUNITY_Compliance und Security GDPR SOC2]]
+- [[_COMMUNITY_Content Creation und SEO Copywriting]]
+- [[_COMMUNITY_Continuation Prompt Handling]]
+- [[_COMMUNITY_Continuation Templates]]
+- [[_COMMUNITY_Cowork Connectors und Plugins]]
+- [[_COMMUNITY_DOCX Document Generation]]
+- [[_COMMUNITY_Data Engineering und Financial Queries]]
+- [[_COMMUNITY_Data Profiling und Quality]]
+- [[_COMMUNITY_Data Visualization und Warehouse]]
+- [[_COMMUNITY_Design Skills — Taste, Premium UI, Anti-Slop]]
+- [[_COMMUNITY_Dynamic Throttling LLM]]
+- [[_COMMUNITY_Dynamic Throttling]]
+- [[_COMMUNITY_Empty Cluster]]
+- [[_COMMUNITY_Engineering Workflow und DevOps]]
+- [[_COMMUNITY_Financial Statements und Sales Forecasting]]
+- [[_COMMUNITY_Glassmorphism und Manus VACU Landing]]
+- [[_COMMUNITY_Graph Auto-Update Script]]
+- [[_COMMUNITY_HR und People Operations]]
+- [[_COMMUNITY_High-End UI Engineering und Motion Design]]
+- [[_COMMUNITY_Incident Response und Internal Comms]]
+- [[_COMMUNITY_Interview Preparation]]
+- [[_COMMUNITY_Job Offers und Offer Letters]]
+- [[_COMMUNITY_Knowledge Management, Runbooks und SOPs]]
+- [[_COMMUNITY_LLM Context und Truncation Limits]]
+- [[_COMMUNITY_LLM Laziness und Anti-Truncation Research]]
+- [[_COMMUNITY_LLM Temperature Tuning]]
+- [[_COMMUNITY_Laziness Research Findings]]
+- [[_COMMUNITY_Lead Enrichment und Apollo CRM]]
+- [[_COMMUNITY_Memory Consolidation]]
+- [[_COMMUNITY_Metacognitive Feedback]]
+- [[_COMMUNITY_Metacognitive Laziness LLM]]
+- [[_COMMUNITY_Middleware Output Limits]]
+- [[_COMMUNITY_Nucleus Sampling]]
+- [[_COMMUNITY_Output Truncation Problem]]
+- [[_COMMUNITY_Outreach, Email und Gmail Automation]]
+- [[_COMMUNITY_PDF Generation und OCR]]
+- [[_COMMUNITY_PowerPoint PPTX Generation]]
+- [[_COMMUNITY_Product Analytics, Metrics und Dashboards]]
+- [[_COMMUNITY_Product Management und UX Research]]
+- [[_COMMUNITY_Prompt Execution Patterns]]
+- [[_COMMUNITY_RLHF Root Causes]]
+- [[_COMMUNITY_React und Framer Motion Components]]
+- [[_COMMUNITY_SEO Strategy und Keyword Research]]
+- [[_COMMUNITY_SQL Queries und Analytics]]
+- [[_COMMUNITY_Sales Intelligence und Competitive Enablement]]
+- [[_COMMUNITY_Sales Pipeline und CRM Operations]]
+- [[_COMMUNITY_Scheduled Tasks und Cron Jobs]]
+- [[_COMMUNITY_Search Strategy und MCP Sources]]
+- [[_COMMUNITY_Skill Design und Optimization]]
+- [[_COMMUNITY_Skills Library und Claude Config]]
+- [[_COMMUNITY_Slack GIF Creator]]
+- [[_COMMUNITY_Stitch & Anti-Slop Rules]]
+- [[_COMMUNITY_Stitch Design System und Floria Brand]]
+- [[_COMMUNITY_System Architecture und Stakeholder Communication]]
+- [[_COMMUNITY_Taste Skill Rules]]
+- [[_COMMUNITY_Temperature Parameter]]
+- [[_COMMUNITY_Template Library und Blueprint Saver]]
+- [[_COMMUNITY_Theme und Color Palette Factory]]
+- [[_COMMUNITY_Top-p Nucleus Sampling]]
+- [[_COMMUNITY_UX Writing und Web Components]]
+- [[_COMMUNITY_User Context Ulm DE]]
+- [[_COMMUNITY_XML Prompt Architecture]]
+- [[_COMMUNITY_YouTube und Faceless Content Creation]]
+- [[accessibility-review]]
+- [[account-research]]
+- [[algorithmic-art]]
+- [[analyze]]
+- [[architecture]]
+- [[audit-support]]
+- [[brand-guidelines]]
+- [[brand-review]]
+- [[build-dashboard]]
+- [[build-with-claude-code]]
+- [[call-prep]]
+- [[call-summary]]
+- [[campaign-plan]]
+- [[canvas-design]]
+- [[capacity-plan]]
+- [[change-request]]
+- [[claude-efficiency]]
+- [[claude-max-effort]]
+- [[close-management]]
+- [[code-review]]
+- [[comp-analysis]]
+- [[competitive-brief]]
+- [[competitive-intelligence]]
+- [[compliance-tracking]]
+- [[compose-outreach]]
+- [[consolidate-memory]]
+- [[contact-research]]
+- [[content-creation]]
+- [[conversation-context]]
+- [[create-an-asset]]
+- [[create-viz]]
+- [[daily-briefing]]
+- [[data-context-extractor]]
+- [[data-visualization]]
+- [[debug]]
+- [[deploy-checklist]]
+- [[design-advisor]]
+- [[design-critique]]
+- [[design-handoff]]
+- [[design-system]]
+- [[design-taste-frontend SKILL (High-Agency Frontend)]]
+- [[design-taste-frontend]]
+- [[digest]]
+- [[doc-coauthoring]]
+- [[documentation]]
+- [[docx-js Library]]
+- [[eNPS (Employee Net Promoter Score)]]
+- [[full-output-enforcement]]
+- [[global-CLAUDE]]
+- [[graphify]]
+- [[high-end-visual-design]]
+- [[industrial-brutalist-ui]]
+- [[llms.txt Skill Index]]
+- [[markitdown]]
+- [[matplotlib]]
+- [[metrics-review]]
+- [[minimalist-ui]]
+- [[morioCRM-CLAUDE]]
+- [[obsidian-wiki]]
+- [[onboarding]]
+- [[openpyxl]]
+- [[org-planning]]
+- [[output-skill — Stops AI from being lazy, prevents placeholder comments and skipped code]]
+- [[p5.js]]
+- [[pandas]]
+- [[pdf]]
+- [[pdfplumber]]
+- [[people-report]]
+- [[performance-report]]
+- [[performance-review]]
+- [[pipeline-review]]
+- [[plotly]]
+- [[policy-lookup]]
+- [[pptx]]
+- [[pptxgenjs]]
+- [[process-doc]]
+- [[process-optimization]]
+- [[product-brainstorming]]
+- [[prospect]]
+- [[pypdf]]
+- [[pytesseract (OCR)]]
+- [[rebuild_code()]]
+- [[reconciliation]]
+- [[recruiting-pipeline]]
+- [[redesign-existing-projects]]
+- [[reportlab]]
+- [[research-synthesis]]
+- [[risk-assessment]]
+- [[roadmap-update]]
+- [[runbook]]
+- [[schedule]]
+- [[seaborn]]
+- [[search-strategy]]
+- [[search]]
+- [[seo-audit]]
+- [[sequence-load]]
+- [[setup-cowork]]
+- [[shadcnui]]
+- [[skill-creator]]
+- [[slack-gif-creator]]
+- [[source-management]]
+- [[sox-testing]]
+- [[sprint-planning]]
+- [[sql-queries]]
+- [[stakeholder-update]]
+- [[standup]]
+- [[start]]
+- [[statistical-analysis]]
+- [[status-report]]
+- [[stitch-design-taste Skill]]
+- [[synthesize-research]]
+- [[system-design]]
+- [[task-management]]
+- [[taste-skill SKILL.md — High-Agency Frontend Skill]]
+- [[tech-debt]]
+- [[template-saver]]
+- [[testing-strategy]]
+- [[theme-factory]]
+- [[update]]
+- [[update_html()]]
+- [[update_index()]]
+- [[update_map.py — Wird von der GitHub Action aufgerufen. Generiert graphify-outin]]
+- [[update_map.py]]
+- [[user-research]]
+- [[ux-copy]]
+- [[ux-design]]
+- [[validate-data]]
+- [[variance-analysis]]
+- [[vendor-review]]
+- [[web-artifacts-builder]]
+- [[weekly-prep-brief]]
+- [[write-query]]
+- [[write-spec]]
+- [[xlsx]]
+- [[youtube-channel-ai]]
 
----
+## Quelldateien (raw/)
 
-## God Nodes (meistvernetzte Konzepte)
-
-Diese Knoten verbinden die meisten anderen — hier ist das Kern-Wissen:
-
-1. `Taste Skill (design-taste-frontend)` — 14 Kanten
-2. `DESIGN.md — Stitch Design System` — 13 Kanten
-3. `LLM Output Truncation Research` — 12 Kanten
-4. `Taste Skill README — Collection Overview` — 10 Kanten
-5. `output-skill` — 9 Kanten
-6. `metrics-review` — 9 Kanten
-7. `roadmap-update` — 9 Kanten
-
----
-
-## Workflow Chains (Skill-Sequenzen)
-
-Vollständige Workflows: Lies `raw/skills/_SKILL_MAP.md`
-
-| Workflow | Skill-Kette |
-|----------|-------------|
-| Sales Funnel | `prospect` → `enrich-lead` → `draft-outreach` → `email-sequence` → `call-prep` → `pipeline-review` → `forecast` |
-| Design | `ux-design` → `design-critique` → `design-handoff` + style layer (`taste-skill`/`brutalist-skill`) |
-| Data Analytics | `explore-data` → `sql-queries` → `analyze` → `create-viz` → `build-dashboard` |
-| Finance | `journal-entry` → `close-management` → `financial-statements` → `variance-analysis` |
-| Engineering | `write-spec` → `system-design` → `code-review` → `testing-strategy` → `deploy-checklist` |
-| HR | `recruiting-pipeline` → `interview-prep` → `onboarding` → `performance-review` |
-| Marketing | `campaign-plan` → `draft-content` → `email-sequence` → `seo-audit` → `performance-report` |
-| Knowledge | `graphify` → `obsidian-wiki` → `memory-management` → `search` |
-
----
-
-## Wiki (670 Seiten)
-
-Strukturiertes Wissen unter `wiki/`. Einstieg: `wiki/index.md`
-
----
-
-## Rohdaten (148 Dateien)
-
-Alle Quelldateien unter `raw/`. Skills unter `raw/skills/`.
-
-- **Skill-Navigation:** `raw/skills/_SKILL_MAP.md`
-- **Skill-Verzeichnis:** `wiki/index.md` (alle Skills A-Z)
+- claude-settings.json
+- global-CLAUDE.md
+- morioCRM-CLAUDE.md
+- ai-claude-anthropic-updates-2026-05.md
+- ai-engineering-insights-2026-05.md
+- automation-make-zapier-n8n-2026-05.md
+- design-animation-techniques-2026-05.md
+- instagram-growth-tactics-2026-05.md
+- kling-3-ai-video-2026-05.md
+- n8n-automation-insights-2026.md
+- seo-aeo-trends-2026-05.md
+- webdesign-gsap-showcase-2026-05.md
+- webdesign-inspiration-2026.md
+- _SKILL_MAP.md
+- accessibility-review.md
+- account-research.md
+- algorithmic-art.md
+- analyze.md
+- architecture.md
+- audit-support.md
+- auto-compact.md
+- SKILL.md
+- url-map.md
+- brand-guidelines.md
+- brand-review.md
+- browser-use.md
+- SKILL.md
+- build-dashboard.md
+- build-with-claude-code.md
+- call-prep.md
+- call-summary.md
+- campaign-plan.md
+- canvas-design.md
+- capacity-plan.md
+- change-request.md
+- SKILL.md
+- claude-efficiency.md
+- claude-max-effort.md
+- claude-mem.md
+- close-management.md
+- code-review.md
+- comp-analysis.md
+- competitive-brief.md
+- competitive-intelligence.md
+- compliance-tracking.md
+- compose-outreach.md
+- consolidate-memory.md
+- contact-research.md
+- content-creation.md
+- conversation-context.md
+- create-an-asset.md
+- create-viz.md
+- daily-briefing.md
+- data-context-extractor.md
+- data-visualization.md
+- debug.md
+- deploy-checklist.md
+- SKILL.md
+- colors.csv
+- typography.csv
+- ui-reasoning.csv
+- design-critique.md
+- design-handoff.md
+- design-system.md
+- digest.md
+- doc-coauthoring.md
+- documentation.md
+- docx.md
+- draft-content.md
+- draft-offer.md
+- draft-outreach.md
+- email-sequence.md
+- email-sorter.md
+- emil-design-eng.md
+- enrich-lead.md
+- everything-claude-code.md
+- explore-data.md
+- financial-statements.md
+- forecast.md
+- graphify.md
+- immersive-web-experience.md
+- incident-response.md
+- instagram-digital-products.md
+- internal-comms.md
+- interview-prep.md
+- journal-entry-prep.md
+- journal-entry.md
+- SKILL.md
+- knowledge-synthesis.md
+- llms.txt
+- manus-vacu-landing.md
+- map-sync.md
+- mcp-builder.md
+- memory-management.md
+- metrics-review.md
+- SKILL.md
+- obsidian-wiki.md
+- onboarding.md
+- org-planning.md
+- SKILL.md
+- pdf.md
+- people-report.md
+- performance-report.md
+- performance-review.md
+- pipeline-review.md
+- policy-lookup.md
+- pptx.md
+- process-doc.md
+- process-optimization.md
+- product-brainstorming.md
+- prospect.md
+- reconciliation.md
+- recruiting-pipeline.md
+- SKILL.md
+- research-synthesis.md
+- risk-assessment.md
+- roadmap-update.md
+- runbook.md
+- schedule.md
+- search-strategy.md
+- search.md
+- seo-audit.md
+- sequence-load.md
+- setup-cowork.md
+- skill-creator.md
+- slack-gif-creator.md
+- SKILL.md
+- source-management.md
+- sox-testing.md
+- sprint-planning.md
+- sql-queries.md
+- stakeholder-update.md
+- standup.md
+- start.md
+- statistical-analysis.md
+- status-report.md
+- DESIGN.md
+- SKILL.md
+- superpowers.md
+- synthesize-research.md
+- system-design.md
+- task-management.md
+- taste-skill.md
+- tech-debt.md
+- template-saver.md
+- testing-strategy.md
+- theme-factory.md
+- ui-ux-pro-max.md
+- update.md
+- user-research.md
+- ux-copy.md
+- ux-design.md
+- validate-data.md
+- variance-analysis.md
+- vendor-review.md
+- web-artifacts-builder.md
+- SKILL.md
+- agentur.md
+- arztpraxis.md
+- gastronomie.md
+- mittelstand.md
+- weekly-prep-brief.md
+- write-query.md
+- write-spec.md
+- xlsx.md
+- youtube-channel-ai.md
 
 ---
 
