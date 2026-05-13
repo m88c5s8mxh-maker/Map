@@ -238,10 +238,19 @@ fluorescent signage, people crowds, fast cuts
 
 ### Für Interior / Innenaufnahmen
 ```
-bright overhead fluorescent lighting, TV screens, people, staff,
+people, humans, customers, guests, staff, waiter, cook, silhouettes,
+figures, shadows of people, person in background,
+bright overhead fluorescent lighting, TV screens,
 generic cafeteria look, white sterile walls, cold blue tones,
 fast movement, camera shake, fish-eye distortion
 ```
+
+**Menschen-Fix — kontextueller Rahmen statt reines Verbot:**
+Kling füllt Restaurant-Szenen automatisch mit Menschen (Trainingsdaten-Bias). Reine Verbote wie "no people" wirken schwach. Stattdessen: **einen Grund einbauen warum niemand da ist:**
+- `"One hour before opening. The restaurant is completely empty."` → stärkstes Frame
+- `"Restaurant closed for private event, all guests have left."` → Alternative
+- `"Early morning setup before service begins."` → Alternative
+Dann trotzdem "no people, no staff, zero humans" im Prompt wiederholen + alle Varianten in den Negative Prompt.
 
 ### Für Food Beauty Shots
 ```
