@@ -156,7 +156,24 @@ Next: Plug these into your scheduling tool and post consistently.
 **Edits App** — Instagram's eigene Video-Editing App (Alternative zu CapCut):
 - Bei Reel-Empfehlungen als Option erwähnen
 
+**Algorithmus-Gewichtung 2026 (Saves > Likes > Comments):**
+- Saves = stärkstes Signal → Inhalte die man bookmarked ("speichern für später")
+- Likes = zweites Signal
+- Comments = drittes Signal
+- **Konsequenz für Step 4 (Carousel) und Step 5 (Caption):** CTA immer auch auf Saves ausrichten: "Speicher das für später", "Bookmark this"
+
+**Posting-Frequenz 2026:**
+- Reels: Sweet Spot 4–5x/Woche (zu selten UND zu oft schaden Reach)
+- Stories: Engagement sinkt gegenüber 2024 — weniger verlassen
+- Carousel > Single Image im Engagement, aber Reels bekommen mehr Reichweite
+
+**Micro-Influencer vs. Mega-Influencer (für Kampagnen-Empfehlungen):**
+- Micro (10K–100K): höhere Engagement-Rates, authentischer
+- Creator-Brief: Talking Points geben, kein Skript — Authentizität entscheidend
+- Kombination: Story (Awareness) + Reel (Reach) für Kampagnen
+
 ### Quick-Check vor jedem Output
 - Enthält der CTA einen direkten Link (nicht nur "link in bio")?
 - Ist der erste Slide/Frame ein Pattern Interrupt?
 - Öffnet der Reel-Script einen Open Loop in den ersten 3 Sekunden?
+- Enthält der Caption-CTA auch einen Save-Trigger?

@@ -218,12 +218,41 @@ Quelle: `zapier.com/blog/zapier-mcp-guide`
 n8n hat einen MCP Server der es Claude ermöglicht, Workflows direkt zu bauen und auszuführen.
 Quelle: `blog.n8n.io/n8n-mcp-server`
 
+**n8n Enterprise-Status (Mai 2026):** SAP hat strategisch in n8n investiert → Bewertung $5.2 Milliarden. Mercedes-Benz nutzt n8n für AI Automation. n8n ist kein "kleine Open-Source Alternative" mehr — Enterprise-Standard. Für Agentur-Pitches gegenüber Mittelstands-Kunden: n8n als Empfehlung deutlich glaubwürdiger.
+
 **Pattern: Claude + n8n für Agentur-Automation:**
 ```
 Claude (Entscheidung) → n8n MCP → n8n Workflow → Externe Services
                                    ↓
                      Gmail / HubSpot / Slack / etc.
 ```
+
+**LLM Memory Types (relevant für AI Agent Design in n8n):**
+```
+Buffer Memory    — letzte N Nachrichten im Context
+Summary Memory   — komprimierte Zusammenfassung des Gesprächs
+Vector Memory    — semantische Suche in Vergangenheit (RAG)
+Knowledge Graph  — strukturierte Wissensbasis
+```
+
+### Make AI Web Search — Kein eigenes Scraping-MCP nötig
+
+Make hat ein neues natives Modul (Mai 2026): **Make AI Web Search**
+- Real-time Internet-Daten direkt in Scenarios — kein API, kein Scraping-Tool, kein externer Account nötig
+- Alternative zu Firecrawl-MCP wenn bereits Make genutzt wird
+
+**Einsatzbeispiel:**
+```
+Scenario: Monitor Competitor Preise
+→ Make AI Web Search "competitor.com pricing" (täglich)
+→ Claude Module: Preis analysiert
+→ Slack: Alert wenn Preis sich ändert
+```
+
+**Wann Make AI Web Search statt Firecrawl:**
+- Bereits Make-Kunde → Make AI Web Search (kein zusätzlicher Account)
+- Einmalige Suchen in Automation-Context → Make AI Web Search
+- Strukturiertes Crawling ganzer Sites → Firecrawl bleibt besser
 
 ## Interoperabilität (neu 2026)
 Zapier Interoperability Feature: AI Harness wechseln (Claude → ChatGPT) ohne Workflows neu zu bauen.
