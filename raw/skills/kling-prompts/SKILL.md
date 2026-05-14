@@ -618,8 +618,8 @@ PROMPTS = {
 
 MODEL       = "kling-v3-pro"    # fest: Kling 3 — nicht ändern
 IMAGE_MODEL = "nano-banana-2"   # fest: Nano Banana 2 — nicht ändern
-DURATION = 10                   # Sekunden
-RATIO    = "16:9"
+DURATION    = "10"              # String! (validiert 2026-05-15) — für Tests: "5"
+RATIO       = "16:9"
 
 def submit(name, p):
     r = requests.post(f"{BASE}/video/{MODEL}", headers=HDR, json={
@@ -635,17 +635,18 @@ def submit(name, p):
     return task_id
 
 def poll(name, task_id):
+    # Poll-Endpoint verifiziert 2026-05-15: /video/kling-v3/{task_id}
     poll_url = f"{BASE}/video/kling-v3/{task_id}"
     while True:
         r = requests.get(poll_url, headers=HDR)
-        d = r.json()
+        d = r.json().get("data", r.json())
         status = d.get("status", "")
-        if status == "completed":
-            url = d.get("result_url") or d.get("video_url") or d.get("output", {}).get("url")
+        if status == "COMPLETED":
+            url = (d.get("generated") or [""])[0]
             print(f"[{name}] ✅ Fertig → {url}")
             return url
-        elif status in ("failed", "error"):
-            print(f"[{name}] ❌ Fehlgeschlagen: {d.get('error', 'Unbekannt')}")
+        elif status in ("FAILED", "ERROR"):
+            print(f"[{name}] ❌ Fehlgeschlagen: {d}")
             return None
         else:
             print(f"[{name}] ⏳ Status: {status} — warte 15s...")
