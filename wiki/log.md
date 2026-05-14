@@ -19,3 +19,11 @@
 - Neue Skill-Datei: raw/skills/emil-design-eng.md
 - Index aktualisiert: 2 neue Eintraege
 - Skill installiert via: npx skills add emilkowalski/skill
+
+## [2026-05-14] ingest | cinematic-threejs-techniques.md
+
+- Pages created: 2 (concept/cinematic-threejs-scrollytelling.md, concept/backdrop-shader-animated.md)
+- Pages updated: 0
+- New concepts: Earth-to-Forest Transition, Animated ShaderMaterial Backdrops, Procedural Water Stream, Chromatic Aberration, 3D Bottle Two-Layer
+- Contradictions flagged: none
+- Key takeaway: Scroll-p [0,1] treibt CatmullRom-Kamera + ShaderMaterial-Backdrops mit Parallax/Shimmer/Breath für cinematic luxury web
