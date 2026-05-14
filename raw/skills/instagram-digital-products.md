@@ -156,16 +156,43 @@ Next: Plug these into your scheduling tool and post consistently.
 **Edits App** — Instagram's eigene Video-Editing App (Alternative zu CapCut):
 - Bei Reel-Empfehlungen als Option erwähnen
 
-**Algorithmus-Gewichtung 2026 (Saves > Likes > Comments):**
-- Saves = stärkstes Signal → Inhalte die man bookmarked ("speichern für später")
-- Likes = zweites Signal
-- Comments = drittes Signal
-- **Konsequenz für Step 4 (Carousel) und Step 5 (Caption):** CTA immer auch auf Saves ausrichten: "Speicher das für später", "Bookmark this"
+**Algorithmus-Gewichtung 2026 — NEU: Shares ist #1 (nicht mehr Saves)**
+
+Bestätigt von Adam Mosseri, Head of Instagram:
+
+> Shares/Sends > Saves > Likes > Comments
+
+- **Shares** = wenn jemand Content an einen Freund schickt → stärkstes Signal 2026
+- **Saves** = High-Value Content → zweites Signal
+- **Likes** = drittes Signal
+- **Konsequenz für Step 4 (Carousel) und Step 5 (Caption):** CTAs immer auch auf Shares ausrichten: "Schick das an jemanden der das braucht", "Share mit jemandem der..."
+
+**Signal-Hierarchie anwenden:**
+```
+Step 4 Carousel-CTA: "Speicher das für später UND schick es an..."
+Step 5 Caption-CTA: "Tag jemanden / schick das weiter"
+Step 6 Reel-Ende:   "Share mit einem Freund der..."
+```
 
 **Posting-Frequenz 2026:**
 - Reels: Sweet Spot 4–5x/Woche (zu selten UND zu oft schaden Reach)
-- Stories: Engagement sinkt gegenüber 2024 — weniger verlassen
+- Stories: Max. 5 pro Posting-Session — nach 5 bricht Engagement ein
 - Carousel > Single Image im Engagement, aber Reels bekommen mehr Reichweite
+
+**Trial Reels (Standard-Tool 2026):**
+- Reel wird zuerst nur Nicht-Followern gezeigt
+- Bei gutem Cold-Engagement → automatisch an Follower gepusht
+- **Strategie:** Neue Hooks/Formate immer als Trial Reel testen — schlechte Tests sehen Follower nie
+
+**Loop-Technik (Reels Watch-Time maximieren):**
+- Video so enden lassen dass es nahtlos zum Anfang zurückführt
+- Rewatches = starkes Ranking-Signal
+- Beispiel: Ende "…und deshalb—" → Loop zu Anfang → Zuschauer schaut nochmal
+
+**Viraler Momentum-Effekt (Mosseri-Tipp):**
+> "Post within the next day or two after going viral."
+- Viraler Post hebt Algorithmus-Ranking für die nächsten Posts
+- Sofort nachposten wenn Content viral geht
 
 **Micro-Influencer vs. Mega-Influencer (für Kampagnen-Empfehlungen):**
 - Micro (10K–100K): höhere Engagement-Rates, authentischer
@@ -176,4 +203,6 @@ Next: Plug these into your scheduling tool and post consistently.
 - Enthält der CTA einen direkten Link (nicht nur "link in bio")?
 - Ist der erste Slide/Frame ein Pattern Interrupt?
 - Öffnet der Reel-Script einen Open Loop in den ersten 3 Sekunden?
-- Enthält der Caption-CTA auch einen Save-Trigger?
+- Enthält der CTA einen **Share-Trigger** (nicht nur Save)?
+- Reel-Ende: Loopt es zurück zum Anfang (für Rewatches)?
+- Neue Formate als Trial Reel empfehlen?
