@@ -10,14 +10,20 @@ Dieses Skill generiert und verbessert Kling 3.0 Video-Prompts für cinematic Scr
 
 **Workflow-Position im cinematic-web Pipeline:**
 ```
-cinematic-web Skill → Konzept + HTML/JS Website
+cinematic-web Skill → Konzept + HTML/JS Website (1–4 Videos je nach Seite)
         ↓
-kling-prompts Skill → AI Video Prompts (max. 3 Videos)
+kling-prompts Skill → AI Video Prompts (1 bis 4 Videos — nicht immer 3!)
         ↓
-[Optional] Magnific API Auto-Generate → V1 + V2 + V3 direkt rendern lassen
+[Optional] Magnific API Auto-Generate → alle Videos direkt rendern lassen
         ↓
 Fertige MP4-URLs → in Website als Scroll-Background einbetten
 ```
+
+**Anzahl Videos:** Immer aus dem cinematic-web Konzept ableiten — nie automatisch 3 annehmen.
+- 1 Video → z.B. einfache Agentur-Landingpage mit Hero-Loop
+- 2 Videos → z.B. Exterior + Interior (ohne Food-Shot)
+- 3 Videos → Standard Restaurant / Location-Website
+- 4 Videos → z.B. Restaurant mit 2 separaten Food-Shots oder mehrstöckiges Gebäude
 
 ---
 
@@ -706,6 +712,26 @@ def gen_first_frame(prompt, output_path="first_frame.jpg"):
   data-v3="MAGNIFIC_V3_URL">
 </video>
 ```
+
+### Kostenkalkulation (verifiziert Mai 2026)
+
+| Dauer | Kling 3 Pro direkt | Kling 3 Pro via Magnific |
+|---|---|---|
+| 5s | $0.38 | $0.56 |
+| 10s | $0.75 | $1.12 |
+| 15s | $1.13 | $1.68 |
+| Nano Banana 2 (Bild) | ~$0.02–0.06/Bild | gleich |
+
+**Gesamtkosten pro Website (10s pro Video):**
+
+| Videos | via Magnific API | + Bilder | Total |
+|---|---|---|---|
+| 1 | $1.12 | $0.06 | **~$1.18** |
+| 2 | $2.24 | $0.12 | **~$2.36** |
+| 3 | $3.36 | $0.18 | **~$3.54** |
+| 4 | $4.48 | $0.24 | **~$4.72** |
+
+→ Bei 2.000€ Website-Auftrag: Materialkosten < 0,3% — negligible.
 
 ### Wichtig: Magnific Modell-IDs können sich ändern
 
