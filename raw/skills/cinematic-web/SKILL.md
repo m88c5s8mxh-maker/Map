@@ -27,6 +27,23 @@ Inspirationsreferenz: [sidewave.it](https://sidewave.it) — Editorial Dark, All
 
 ---
 
+## Ablauf — immer zu Beginn ausgeben
+
+Sobald der Skill aufgerufen wird, zeige dem Nutzer **als erstes** diesen Ablauf — damit er weiß, was ihn erwartet und wann er input geben muss:
+
+```
+Wir bauen deine Website in 4 Schritten:
+
+① Brief — ich frage einmalig alle nötigen Informationen ab
+② Konzepte — ich zeige dir 3 verschiedene visuelle Konzepte zur Auswahl
+③ Prompts — du bekommst alle Kling-Video- und Imagen-Bildprompts für dein gewähltes Konzept
+④ Code — ich generiere die fertige HTML-Website
+
+Du kannst bei jedem Schritt Feedback geben bevor es weitergeht.
+```
+
+---
+
 ## Schritt 1 — Brief aufnehmen
 
 Frage alle fehlenden **Pflichtfelder** auf einmal als nummerierte Liste ab. Sobald alle da sind, direkt zur Generierung.
@@ -336,9 +353,160 @@ Hero: 1-Zeilen-Claim + 1-Zeilen-Sub + doppelter CTA ("Get started" / "View demo"
 
 ---
 
-## Schritt 2 — Creative Direction (Phase 1)
+## Schritt 2 — Konzept-Präsentation (VOR dem Coden)
 
-Vor dem Coden: kreative Richtung definieren. KEIN Code in diesem Schritt.
+**PFLICHT: Zweistufiger Prozess. KEIN Code ohne Freigabe.**
+
+---
+
+### Phase 1 — Konzept-Übersicht (ohne Prompts)
+
+Zeige alle 3 Konzepte kompakt und lesbar. Kein Prompt-Clutter in dieser Phase. Der Nutzer soll die Richtung verstehen und wählen können.
+
+**Format:**
+
+```
+# Konzepte für [FIRMENNAME]
+
+---
+
+## A — [Konzeptname]
+[Logline: Ein Satz, der das Gefühl der Website beschreibt wie ein Filmtitel]
+
+**Atmosphäre:** [2 Sätze — was fühlt der Nutzer? Welche Emotion, welche Welt?]
+**3D-Erlebnis:** [2–3 Sätze — was sieht der Nutzer konkret? Startpunkt der Kamera, Bewegung, Schlüsselmoment]
+**Visuell:** [Archetype] · [Fonts] · Akzent [HEX]
+
+Signature Momente:
+→ [Moment 1 — konkretes visuelles Ereignis]
+→ [Moment 2]
+→ [Moment 3]
+
+---
+
+## B — [Konzeptname]
+[Logline]
+...
+
+---
+
+## C — [Konzeptname]
+[Logline]
+...
+
+---
+Welches Konzept soll umgesetzt werden — A, B oder C?
+```
+
+---
+
+### Phase 2 — Prompts für gewähltes Konzept
+
+Erst wenn der Nutzer ein Konzept gewählt hat: alle Prompts für dieses Konzept ausgeben.
+
+**Format:**
+
+```
+# Prompts: Konzept [X] — [Name]
+
+## Video-Prompts (Kling AI)
+*Einstellungen für alle: kein Text, keine Personen, seamless loop wo angegeben*
+
+**Hero Background (10s, Loop):**
+> [Prompt]
+
+**Produkt-Clip 1 — [Name/Modell] (5s):**
+> [Prompt]
+
+**Produkt-Clip 2 — [Name/Modell] (5s):**
+> [Prompt]
+
+**Atmosphäre / Story-Sektion (8s):**
+> [Prompt]
+
+---
+
+## Bild-Prompts (Midjourney / Flux / Leonardo)
+*Für Hero-Image, OG-Bild, Sektions-Hintergründe*
+
+**Hero Still (1920×1080):**
+> [Prompt] --ar 16:9 --style raw --q 2
+
+**Produkt Hero Shot (quadratisch):**
+> [Prompt] --ar 1:1 --style raw
+
+**Textur / Hintergrund-Detail:**
+> [Prompt] --ar 16:9 --tile
+
+**OG Social Image (1200×630):**
+> [Prompt] --ar 1.91:1
+
+---
+Soll ich jetzt den Code generieren?
+```
+
+---
+
+### Variationsregel — 3 Konzept-Archetypen (Pflicht)
+
+Basiert auf Awwwards SOTY / SOTM Gewinnern. Jedes der 3 Konzepte nimmt einen anderen Typ. Niemals zwei vom gleichen Typ.
+
+---
+
+**ARCHETYPE 1 — METAPHER**
+*Das Produkt-Versprechen wird visuell erlebt, nicht erklärt.*
+
+Referenzen: Opal Camera (blur→scharf beim Scrollen = "klarer sehen"), Lusion.co (Partikel kollabieren zu Form = Idee kristallisiert), Evolve SOTD (organische 3D-Formen entfalten sich).
+Kamera-Verhalten: Kamera bewegt sich kaum — das Objekt transformiert sich. Scroll = Verwandlung.
+Emotion: Revelation. Der Nutzer "versteht" ohne einen Satz gelesen zu haben.
+
+---
+
+**ARCHETYPE 2 — WELT / ENVIRONMENT**
+*Die Kamera ist ein Fahrzeug. Das Produkt ist das Ziel.*
+
+Referenzen: Bruno Simon (Awwwards SOTM Jan 2026 — Spielzeugauto fährt durch 3D-Welt), Lando Norris / OFF+BRAND (SOTY 2025 — Racing-Environment, Kamera driftet), Noomo Agency (Kamera fliegt durch Räume = Case Studies).
+Kamera-Verhalten: Scroll = Bewegung durch Raum. Nutzer ist Passagier auf einem cinematischen Dolly.
+Emotion: Immersion. Der Nutzer vergisst, dass er auf einer Website ist.
+
+---
+
+**ARCHETYPE 3 — OBJEKT-STUDIE**
+*Ein Objekt. Maximum Detail. Fast forensisch.*
+
+Referenzen: Apple Mac Pro (Canvas-Sequence, Kamera kreist in Dunkelheit, jedes Scroll-Frame = neues Detail), Apple AirPods Pro (Produkt in Schwarz schwebend, Innenleben öffnet sich im Schnitt), Weber BBQ (Textur-Reise durch Stahl und Flamme wie Skulptur).
+Kamera-Verhalten: Langsame Kreisbahn oder kontrollierter Zoom ins Mikro-Detail. Produkt dramatisch beleuchtet.
+Emotion: Begehren und Vertrauen. Das Objekt fühlt sich kostbar und engineered an.
+
+---
+
+### Bild-Prompt Formel (Google Imagen 3)
+
+**Tool:** Google Imagen 3 (via ImageFX oder Gemini). Kein --ar Flag nötig — Seitenverhältnis wird in der UI als Dropdown gewählt.
+
+**Core Formula:** `[Produkt] on [Oberfläche], [Licht], [Kamera], [Linse], [Filmgrade], [Stimmung]`
+
+**Einstellungen in Imagen 3 UI:**
+- Seitenverhältnis: je nach Verwendung (16:9 für Hero, 1:1 für Produkt, 4:5 für Social)
+- Quality: "Ultra" wenn verfügbar
+- Safety Filter: Standard
+- Anzahl Bilder: 4 generieren, bestes auswählen
+
+**High-Yield Keywords für Imagen 3:**
+
+| Layer | Keywords |
+|-------|----------|
+| Licht | `dramatic single spotlight`, `rim light`, `chiaroscuro`, `volumetric haze`, `practical light leak` |
+| Hintergrund | `pure black void`, `dark gradient seamless`, `studio black cyclorama`, `deep shadow environment` |
+| Kamera/Linse | `shot on Arri Alexa`, `Phase One medium format`, `120mm macro`, `f/1.4 shallow DOF` |
+| Grade | `cinematic color grading`, `muted shadows`, `teal and orange grade`, `S-curve contrast` |
+| Qualität | `commercial advertising quality`, `product hero shot`, `ultra-sharp`, `photorealistic` |
+| Luxury-Feel | `on black velvet`, `polished obsidian surface`, `floating in negative space`, `wet stone surface` |
+
+**Best Single-Line Basis:**
+> Luxury [Produkt], single overhead spotlight, deep black seamless background, rim light edge detail, 120mm macro lens, Phase One medium format, cinematic color grade, ultra-sharp, commercial advertising photography, photorealistic
+
+---
 
 ### Aesthetic Archetype (wähle einen)
 
@@ -349,8 +517,6 @@ Vor dem Coden: kreative Richtung definieren. KEIN Code in diesem Schritt.
 | `FROST` | Dunkelblau-Grau, Eis-Weiß Akzent, scharf | Kanzlei, Beratung, Tech |
 | `LUXE` | Tiefdunkel + Gold, serif Display-Font | Luxury, Premium Produkt |
 
-Wähle Archetype basierend auf Branche und Akzentfarbe.
-
 ### Motion Language (wähle einen)
 - **Drift** — langsame schwebende Bewegung (Partikel, Elemente)
 - **Cut** — harte Cuts zwischen Zuständen, digitale Energie
@@ -358,12 +524,56 @@ Wähle Archetype basierend auf Branche und Akzentfarbe.
 - **Surge** — Aufwärtsbewegung, Energie, Wachstum
 
 ### Signature Moments (2–3)
-Definiere die 3 Szenen die der User im Gedächtnis behält. Konkret und bold.
+Konkret und visuell beschreibbar — keine abstrakten Stichworte.
 
-Beispiel:
-1. Scramble-Text: Firmenname dekodiert sich aus Zeichen-Chaos
-2. Stats-Explosion: Zahlen zählen hoch wenn sichtbar
-3. Kunden-Marquee: Logos gleiten endlos durch — Beweis durch Masse
+Gut: "Kamera schwebt aus Dunkelheit auf eine einzelne orange Brille zu, die langsam rotiert — Spotlight von oben, alles andere schwarz"
+Schlecht: "Dramatische Brille im Fokus"
+
+---
+
+## Schritt 2b — Kling-Prompts generieren
+
+Für jede Site: Kling AI Video-Prompts erstellen. Diese werden im Konzept-Dokument präsentiert und nach Freigabe im HTML-Code als `<video>` Platzhalter-Kommentar eingetragen.
+
+### Prompt-Typen
+
+**Hero Background Loop** (6–10 Sek, seamless loop, kein Audio):
+```
+Cinematic [PRODUKT/SZENE], [KAMERA-BEWEGUNG], [LICHT-STIMMUNG], [FARB-PALETTE], dramatic studio lighting, dark background, luxury product photography, ultra slow motion, seamless loop, no text, no people, 4K, film grain, anamorphic lens flare
+```
+
+**Produkt-Spotlight** (3–5 Sek, pro Variante):
+```
+Extreme close-up macro [PRODUKT DETAIL], [MATERIAL], [LICHT], ultra sharp focus, dark void background, dramatic orange rim light, slow rotation, luxury commercial, 4K cinema
+```
+
+**Atmosphäre / Ambient** (optional, für About/Story Sektion):
+```
+Abstract [THEMA DES BRANDS], [METAPHER], [STIMMUNG], slow drift, minimal, cinematic, dark palette, [AKZENTFARBE] light leaks
+```
+
+### Branchen-Kling-Templates
+
+| Branche | Hero Prompt-Basis | Produkt-Prompt-Basis |
+|---------|-------------------|----------------------|
+| Gastronomie | Slow camera drift through dark restaurant, candlelight, empty tables, steam rising | Close-up food texture, olive oil drip, macro, warm amber light |
+| Produkt/Eyewear | Glasses emerging from pure darkness, spotlight, lens refraction | Macro lens detail, orange tint, slow rotation, black void |
+| Agentur | Abstract data grid dissolving into architecture, neon traces | Code/pixel streams, electric accent color |
+| Luxury | Single product on dark surface, golden hour light sweep | Material close-up (leather/metal/fabric), tactile |
+| Immobilien | Drone push into dark building facade, city lights | Architectural detail, concrete/glass texture |
+| SaaS/Tech | Particle network forming UI elements, electric blue | Interface animation, clean transitions |
+
+### Im HTML eintragen
+Nach Code-Generierung: Kling-Prompts als Kommentare vor dem `<video>` Tag einfügen:
+```html
+<!-- KLING HERO PROMPT:
+  [Prompt Text]
+  Einstellungen: 1080p, 10s, Loop, No Audio
+-->
+<video id="heroVideo" autoplay muted loop playsinline>
+  <source src="hero-bg.mp4" type="video/mp4">
+</video>
+```
 
 ---
 
