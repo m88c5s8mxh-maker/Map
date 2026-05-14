@@ -8,7 +8,5 @@ erstellt: 2026-05-13
 status: aktiv
 ---
 
-# 🎬 Skill: AI UGC Video Automation
 
-> Vollautomatisches UGC-Video-System mit Claude + MCP Playwright + Higgsfield/Seedance.
-> *"While you're still hunting for UGC creators one by one..."*
+---
