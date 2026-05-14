@@ -1572,6 +1572,60 @@ const stageSpot = new THREE.SpotLight(0xFFFFFF, 60, 12, Math.PI/6, 0.2);
 
 ---
 
+---
+
+## Neue Techniken Mai 2026 (Codrops)
+
+### Clip-Path Wipes statt WebGL (GSAP)
+
+Page Transitions ohne WebGL: `clip-path: polygon(...)` per GSAP animieren — 80% weniger Code, identische Performance.
+
+```javascript
+// Clip-Path Wipe Transition (kein WebGL nötig)
+gsap.to(overlay, {
+  clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+  ease: "power3.inOut",
+  duration: 0.8
+});
+
+// Reveal von unten (z.B. Section-Overlay wegwischen)
+gsap.fromTo(overlay,
+  { clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" },
+  { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", ease: "power3.inOut", duration: 1 }
+);
+```
+
+**Wann verwenden:** Für Page Transitions, Hero-Reveals, Section-Wipes — wenn WebGL-Setup overkill ist.
+
+### SVG Blob Morphing ohne MorphSVG Plugin
+
+Organische Blob-Formen animieren ohne Club-Lizenz. Voraussetzung: beide `<path>`-Elemente müssen identische Punkt-Anzahl haben.
+
+```javascript
+const paths = [
+  "M 50,30 C 70,10 90,30 80,50 C 90,70 70,90 50,70 C 30,90 10,70 20,50 C 10,30 30,10 50,30 Z",
+  "M 50,25 C 75,5 95,35 85,55 C 95,75 75,95 50,75 C 25,95 5,75 15,55 C 5,35 25,5 50,25 Z"
+];
+let i = 0;
+setInterval(() => {
+  gsap.to("#blob path", {
+    attr: { d: paths[i++ % paths.length] },
+    duration: 2,
+    ease: "power2.inOut"
+  });
+}, 2000);
+```
+
+### "Presence over Portfolio" — Awwwards Trend 2026
+
+> Website soll nicht zeigen *was man macht*, sondern *wie man denkt*.
+
+- Scroll-Erlebnis = Markenerfahrung, nicht Werkzeugshow
+- Editorial Storytelling vor Feature-Listen
+- Cinematic Flow > statische Grid-Layouts
+
+---
+
 ## Related Skills
 
 - `/web-factory` — Standard-Websites ohne Cinematic-Layer
