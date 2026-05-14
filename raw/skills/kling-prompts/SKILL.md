@@ -579,18 +579,18 @@ export MAGNIFIC_API_KEY="dein-key-hier"
 | **Kling 4K T2V** | `/v1/ai/video/kling-4k-t2v` | 4K Output wenn Website retina-ready ist |
 | **Runway Gen 4.5** | `/v1/ai/video/runway-gen45` | Alternative wenn Kling-Style nicht passt |
 
-**Default für cinematic-web:** Kling 3 Pro (`kling-v3-pro`)
+**Default für cinematic-web: Kling 3 (`kling-v3-pro`) — fest, nicht ändern**
 
 ### Verfügbare Bild-Modelle (für First Frame Generierung)
 
 | Modell | Endpoint | Empfehlung |
 |---|---|---|
-| **Google Imagen 4 Ultra** | `/v1/ai/image/imagen-4-ultra` | Photorealistisch, ersetzt Imagen 3 |
+| **Nano Banana 2** | `/v1/ai/image/nano-banana-2` | **Default** — Gemini 3, bis zu 3 Reference Images |
+| **Google Imagen 4 Ultra** | `/v1/ai/image/imagen-4-ultra` | Photorealistisch, alternativ |
 | **Google Imagen 4 Fast** | `/v1/ai/image/imagen-4-fast` | Schnell + günstig für Tests |
-| **Nano Banana Pro** | `/v1/ai/image/nano-banana-pro` | Gemini 3, bis zu 3 Reference Images |
 | **Mystic** | `/v1/ai/mystic` | Magnific Eigenmodell, hohe Detailtiefe |
 
-**Default für First Frame:** Google Imagen 4 Ultra
+**Default für First Frame: Nano Banana 2 (`nano-banana-2`) — fest, nicht ändern**
 
 ### Auto-Submit Script
 
@@ -616,7 +616,8 @@ PROMPTS = {
     }
 }
 
-MODEL    = "kling-v3-pro"       # oder: kling-v3-std / kling-4k-t2v / happy-horse-...
+MODEL       = "kling-v3-pro"    # fest: Kling 3 — nicht ändern
+IMAGE_MODEL = "nano-banana-2"   # fest: Nano Banana 2 — nicht ändern
 DURATION = 10                   # Sekunden
 RATIO    = "16:9"
 
@@ -672,7 +673,7 @@ for name, url in results.items():
 
 ```python
 def gen_first_frame(prompt, output_path="first_frame.jpg"):
-    r = requests.post(f"{BASE}/image/imagen-4-ultra", headers=HDR, json={
+    r = requests.post(f"{BASE}/image/nano-banana-2", headers=HDR, json={
         "prompt": prompt + ", photorealistic, cinematic, 16:9, film grain, no people, no text",
         "aspect_ratio": "16:9",
     })
@@ -689,7 +690,7 @@ def gen_first_frame(prompt, output_path="first_frame.jpg"):
 ### Ablauf bei "ja — direkt generieren"
 
 1. `MAGNIFIC_API_KEY` vorhanden? → wenn nein: Key beim User erfragen
-2. Modell wählen (Default: `kling-v3-pro`) — bei 4K Wunsch: `kling-4k-t2v`
+2. Modelle: Video = `kling-v3-pro` (Kling 3), Bild = `nano-banana-2` — beide fest, keine Auswahl nötig
 3. Script mit den 3 generierten Prompts befüllen
 4. Bash ausführen → Task IDs loggen
 5. Pollen bis alle 3 fertig (30–120s pro Video)

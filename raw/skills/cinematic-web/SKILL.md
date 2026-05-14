@@ -533,7 +533,9 @@ Schlecht: "Dramatische Brille im Fokus"
 
 ## Schritt 2b — Kling-Prompts generieren
 
-Für jede Site: Kling AI Video-Prompts erstellen. Diese werden im Konzept-Dokument präsentiert und nach Freigabe im HTML-Code als `<video>` Platzhalter-Kommentar eingetragen.
+**WICHTIG:** Kling-Prompts werden NICHT hier inline generiert. Stattdessen: nach der Website-Ausgabe (Schritt 7) immer `/kling-prompts` aufrufen — der Skill übernimmt die vollständige Prompt-Generierung + Magnific API Auto-Generate.
+
+Die folgenden Templates dienen nur als Referenz für das Konzept-Dokument (Schritt 2). Die finale Prompt-Generierung läuft ausschließlich über `/kling-prompts`.
 
 ### Prompt-Typen
 
@@ -1486,6 +1488,8 @@ Danach Zusammenfassung:
 - [ ] Kontaktformular Backend (Formspree / n8n Webhook)
 - [ ] Datenschutzerklärung (separates Dokument)
 ```
+
+**Direkt nach der Ausgabe: `/kling-prompts` aufrufen** — generiert V1/V2/V3 Prompts und bietet Magnific API Auto-Generate an.
 
 ---
 
