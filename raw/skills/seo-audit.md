@@ -210,6 +210,46 @@ Teste: "[Branche] [Ort] empfehlen" in ChatGPT und Perplexity
 - Schema.org LocalBusiness vollständig befüllen (bereits in web-factory enthalten)
 - Listicle-Format für wichtige Inhalte: AI zitiert gerne nummerierte Listen
 
+**Technische AEO-Checks (Mai 2026):**
+
+| Check | Beschreibung | Priorität |
+|-------|-------------|-----------|
+| `llms.txt` | Datei unter `/llms.txt` vorhanden? Erklärt LLMs was die Site ist und welche Seiten relevant. Anthropic + Perplexity erkennen es bereits. | Hoch |
+| `robots.txt AI-Crawler` | GPTBot, ClaudeBot, GoogleOther NICHT blockiert (falls AI-Sichtbarkeit gewünscht)? | Kritisch |
+| YouTube SEO for AI | Video-Beschreibungen: erste 250 Zeichen als direkt zitierbare Zusammenfassung? Chapters/Timestamps vorhanden? Transkript aktiviert? | Mittel |
+| Titel als Fragen | Video-/Seiten-Titel als direkte Fragen: "Wie macht man X?" statt "X Tutorial" | Mittel |
+
+**robots.txt Empfehlung für AI-Sichtbarkeit:**
+```
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: GoogleOther-Image
+Allow: /
+```
+
+**llms.txt Template:**
+```markdown
+# Firmenname
+> Kurze Beschreibung was die Firma macht
+
+## Services
+- [Service 1](https://example.com/service1): Kurzbeschreibung
+- [Service 2](https://example.com/service2): Kurzbeschreibung
+
+## About
+- [Über uns](https://example.com/about)
+- [Kontakt](https://example.com/kontakt)
+```
+
+**3-Tier Brand Mentions Strategie:**
+- **Tier 1 — Direkte Mentions:** Marke in AI-Antworten direkt genannt → Auf bekannte zitierte Sites linken lassen (Wikipedia, Branchenblogs)
+- **Tier 2 — Attributierte Mentions:** Marke in Quellenlinks gezeigt → Structured Data + FAQ Schema auf allen relevanten Seiten
+- **Tier 3 — Thematische Autorität:** AI-Antworten im Themenbereich ohne direkte Nennung → Primäre Fragen des Themas mit vollständigen Antworten beantworten
+
 ---
 
 ## Follow-Up
