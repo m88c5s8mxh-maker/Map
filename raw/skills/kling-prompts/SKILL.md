@@ -14,9 +14,9 @@ cinematic-web Skill → Konzept + HTML/JS Website
         ↓
 kling-prompts Skill → AI Video Prompts (max. 3 Videos)
         ↓
-Kling 3.0 generiert Videos
+[Optional] Magnific API Auto-Generate → V1 + V2 + V3 direkt rendern lassen
         ↓
-Videos werden in Website als Scroll-Background eingebettet
+Fertige MP4-URLs → in Website als Scroll-Background einbetten
 ```
 
 ---
@@ -543,10 +543,171 @@ ScrollTrigger.create({
 3. Negative Prompts für diesen Standort definieren
 4. Referenzfotos auf 16:9 zuschneiden (Python PIL center-crop)
 5. 5-Element Formel für jeden der 3 Videos ausfüllen
-6. Für V2 + V3: Imagen 3 Prompt schreiben → First Frame generieren → auf 16:9 zuschneiden
-7. Kling: Ratio manuell 16:9 setzen → First Frame hochladen → Reference Images hochladen → Prompt einfügen
-8. Video-Ergebnis im Feedback-Protokoll eintragen
-9. Regeln ableiten und Bibliothek erweitern
+6. Für V2 + V3: Imagen 4 Ultra Prompt schreiben → First Frame via Magnific API generieren → auf 16:9 zuschneiden
+7. [Optional] Magnific API Auto-Generate: MAGNIFIC_API_KEY setzen → Script ausführen → 3 Video-URLs erhalten
+8. Kling manuell (falls kein API Key): Ratio 16:9 → First Frame → Reference Images → Prompt einfügen
+9. Video-Ergebnis im Feedback-Protokoll eintragen
+10. Regeln ableiten und Bibliothek erweitern
 ```
 
 **Prompt-Länge:** Kling hat ein Zeichenlimit. Prompts immer als kompakter Fließtext ohne Zeilenumbrüche schreiben. Wenn zu lang: Adjektive kürzen, keine Wiederholungen, kein "the camera"-Prefix vor jeder Bewegungsanweisung.
+
+---
+
+## Magnific API — Auto-Generate (Phase 4)
+
+Nach der Prompt-Generierung (V1, V2, V3) immer fragen:
+> **"Soll ich die Prompts jetzt direkt auf Magnific generieren?"**
+
+Wenn ja → API Key prüfen → alle 3 Videos parallel submiten → URLs zurückgeben.
+
+### Setup
+
+```bash
+# Einmalig als Env-Variable setzen
+export MAGNIFIC_API_KEY="dein-key-hier"
+# Key holen: https://www.magnific.com/api → Dashboard → API Key
+```
+
+### Verfügbare Video-Modelle auf Magnific
+
+| Modell | Endpoint | Empfehlung |
+|---|---|---|
+| **Kling 3 Pro** | `/v1/ai/video/kling-v3-pro` | Standard für alle Cinematic Websites |
+| **Kling 3 Standard** | `/v1/ai/video/kling-v3-std` | Schnellere Tests, günstiger |
+| **Happy Horse 1.0** | `/v1/ai/video/happy-horse-...` | #1 Video Arena April 2026 — für maximale Qualität |
+| **Kling 4K T2V** | `/v1/ai/video/kling-4k-t2v` | 4K Output wenn Website retina-ready ist |
+| **Runway Gen 4.5** | `/v1/ai/video/runway-gen45` | Alternative wenn Kling-Style nicht passt |
+
+**Default für cinematic-web:** Kling 3 Pro (`kling-v3-pro`)
+
+### Verfügbare Bild-Modelle (für First Frame Generierung)
+
+| Modell | Endpoint | Empfehlung |
+|---|---|---|
+| **Google Imagen 4 Ultra** | `/v1/ai/image/imagen-4-ultra` | Photorealistisch, ersetzt Imagen 3 |
+| **Google Imagen 4 Fast** | `/v1/ai/image/imagen-4-fast` | Schnell + günstig für Tests |
+| **Nano Banana Pro** | `/v1/ai/image/nano-banana-pro` | Gemini 3, bis zu 3 Reference Images |
+| **Mystic** | `/v1/ai/mystic` | Magnific Eigenmodell, hohe Detailtiefe |
+
+**Default für First Frame:** Google Imagen 4 Ultra
+
+### Auto-Submit Script
+
+```python
+import requests, time, os, sys
+
+API_KEY = os.environ.get("MAGNIFIC_API_KEY", "")
+BASE    = "https://api.magnific.com/v1/ai"
+HDR     = {"x-magnific-api-key": API_KEY, "Content-Type": "application/json"}
+
+PROMPTS = {
+    "V1": {
+        "prompt": "HIER_V1_PROMPT",
+        "negative_prompt": "cartoon, CGI, camera shake, blur, deformed hands, text overlays, watermarks"
+    },
+    "V2": {
+        "prompt": "HIER_V2_PROMPT",
+        "negative_prompt": "people, humans, food on tables, camera shake, fluorescent lighting, cold blue tones"
+    },
+    "V3": {
+        "prompt": "HIER_V3_PROMPT",
+        "negative_prompt": "white studio background, cold blue lighting, hands visible, shaky camera, stock photo look"
+    }
+}
+
+MODEL    = "kling-v3-pro"       # oder: kling-v3-std / kling-4k-t2v / happy-horse-...
+DURATION = 10                   # Sekunden
+RATIO    = "16:9"
+
+def submit(name, p):
+    r = requests.post(f"{BASE}/video/{MODEL}", headers=HDR, json={
+        "prompt": p["prompt"],
+        "negative_prompt": p["negative_prompt"],
+        "duration": DURATION,
+        "aspect_ratio": RATIO,
+        "cfg_scale": 0.5,
+    })
+    d = r.json()
+    task_id = d.get("task_id") or d.get("id")
+    print(f"[{name}] Submitted → Task ID: {task_id}")
+    return task_id
+
+def poll(name, task_id):
+    poll_url = f"{BASE}/video/kling-v3/{task_id}"
+    while True:
+        r = requests.get(poll_url, headers=HDR)
+        d = r.json()
+        status = d.get("status", "")
+        if status == "completed":
+            url = d.get("result_url") or d.get("video_url") or d.get("output", {}).get("url")
+            print(f"[{name}] ✅ Fertig → {url}")
+            return url
+        elif status in ("failed", "error"):
+            print(f"[{name}] ❌ Fehlgeschlagen: {d.get('error', 'Unbekannt')}")
+            return None
+        else:
+            print(f"[{name}] ⏳ Status: {status} — warte 15s...")
+            time.sleep(15)
+
+if not API_KEY:
+    print("Fehler: MAGNIFIC_API_KEY nicht gesetzt"); sys.exit(1)
+
+# 1. Alle 3 Videos parallel submiten
+task_ids = {name: submit(name, p) for name, p in PROMPTS.items()}
+
+# 2. Auf alle warten + URLs sammeln
+results = {}
+for name, tid in task_ids.items():
+    if tid:
+        results[name] = poll(name, tid)
+
+# 3. Ausgabe
+print("\n=== FERTIGE VIDEO-URLs ===")
+for name, url in results.items():
+    print(f"{name}: {url}")
+```
+
+### First Frame via Imagen 4 generieren
+
+```python
+def gen_first_frame(prompt, output_path="first_frame.jpg"):
+    r = requests.post(f"{BASE}/image/imagen-4-ultra", headers=HDR, json={
+        "prompt": prompt + ", photorealistic, cinematic, 16:9, film grain, no people, no text",
+        "aspect_ratio": "16:9",
+    })
+    d = r.json()
+    img_url = d.get("image_url") or d.get("output", {}).get("url")
+    # Bild herunterladen + als First Frame in Kling hochladen
+    img_data = requests.get(img_url).content
+    with open(output_path, "wb") as f:
+        f.write(img_data)
+    print(f"First Frame gespeichert: {output_path} → jetzt in Kling als First Frame hochladen")
+    return output_path
+```
+
+### Ablauf bei "ja — direkt generieren"
+
+1. `MAGNIFIC_API_KEY` vorhanden? → wenn nein: Key beim User erfragen
+2. Modell wählen (Default: `kling-v3-pro`) — bei 4K Wunsch: `kling-4k-t2v`
+3. Script mit den 3 generierten Prompts befüllen
+4. Bash ausführen → Task IDs loggen
+5. Pollen bis alle 3 fertig (30–120s pro Video)
+6. 3 Video-URLs ausgeben
+7. Embed-Code für die cinematic-web Website generieren:
+
+```html
+<!-- V1, V2, V3 MP4s direkt aus Magnific-URLs laden -->
+<video id="scene-video" muted playsinline preload="auto"
+  data-v1="MAGNIFIC_V1_URL"
+  data-v2="MAGNIFIC_V2_URL"
+  data-v3="MAGNIFIC_V3_URL">
+</video>
+```
+
+### Wichtig: Magnific Modell-IDs können sich ändern
+
+Die exakten Endpoint-Namen (`kling-v3-pro`, `happy-horse-...`) werden vom Magnific Team gelegentlich aktualisiert. Vor jedem Projekt aktuelle IDs prüfen:
+```bash
+curl -s https://api.magnific.com/v1/ai/models -H "x-magnific-api-key: $MAGNIFIC_API_KEY" | python -m json.tool
+```
