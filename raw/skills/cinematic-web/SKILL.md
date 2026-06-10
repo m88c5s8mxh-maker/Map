@@ -1,14 +1,61 @@
 ---
 name: cinematic-web
-description: Generates complete, production-ready single-file HTML websites with mandatory Three.js 3D walkthrough, cinematic award-tier aesthetics, and industry-specific structural DNA. Includes curated Awwwards reference library for 8 industries (Gastronomie, Produkt, Agentur, Portfolio, Kanzlei, Luxury, Immobilien, Tech/SaaS). Every site gets a custom 3D camera scene — no opt-out. Trigger with "/cinematic-web [Branche] [Firmenname]" or any premium website request.
+description: Generates complete, production-ready single-file HTML websites with cinematic award-tier aesthetics and industry-specific structural DNA. Includes curated Awwwards reference library for 8 industries. MANDATORY: Run /web-benchmark before coding to determine correct stack (GSAP/Lenis/3D are NOT always right — Beauty/Portfolio sites need minimal vanilla JS). Trigger with "/cinematic-web [Branche] [Firmenname]" or any premium website request.
 argument-hint: "<Branche> | <Firmenname> | <Akzentfarbe>"
 ---
 
-# Cinematic Web — Premium 3D Single-File HTML Generator
+# Cinematic Web — Premium Single-File HTML Generator
 
-Erzeugt fertige, deployfähige Single-File HTML-Websites auf Awwwards-Niveau. **Jede Site hat einen 3D-Walkthrough — das ist kein Feature, das ist der Standard.** Kein Build-Schritt, keine Abhängigkeiten außer CDN-Links. Dark-first Ästhetik, Three.js Kamera-Erlebnis, GSAP Scroll-Animationen — kein Template-Look, kein TripleB-Clone.
+Erzeugt fertige, deployfähige Single-File HTML-Websites auf Awwwards-Niveau. Kein Build-Schritt, keine Abhängigkeiten außer CDN-Links wo nötig. Dark-first Ästhetik, industry-specific DNA — kein Template-Look.
 
 Inspirationsreferenz: [sidewave.it](https://sidewave.it) — Editorial Dark, All-Caps Headlines, Scramble Reveals, Cinematic Flow.
+
+---
+
+## ⚠️ PFLICHT VOR DEM BUILD: Benchmark-Scoring
+
+**Führe `/web-benchmark [Branche]` aus BEVOR du irgendwas codierst.**
+
+Der Score entscheidet über den Tech-Stack:
+
+| Score | Aktion |
+|-------|--------|
+| ≥ 54  | Direkt zum Build mit vollem Stack |
+| 45–53 | Kleines Konzept-Fix, dann Build |
+| < 45  | Konzept restart |
+
+### Stack-Entscheidung nach Branche (KRITISCH)
+
+**NICHT jede Branche braucht GSAP + Lenis + 3D. Das ist ein häufiger Fehler.**
+
+| Branche | GSAP | Lenis | 3D/Canvas | Loader | Warum |
+|---------|------|-------|-----------|--------|-------|
+| Beauty / Photography Portfolio | ❌ | ❌ | ❌ | ❌ | Fotos sind das Produkt — jedes UI-Element konkurriert mit dem Bild |
+| Gastronomie (Fine Dining) | ✓ leicht | ✓ | ❌ | ✓ kurz | Atmosphäre braucht sanfte Motion |
+| Agentur / Studio | ✓ stark | ✓ | ✓ optional | ✓ | Cases müssen beeindrucken |
+| Luxury Product | ✓ mittel | ✓ | ❌ | ✓ kurz | Produkt-Präsentation, kein Tech-Show |
+| Tech / SaaS | ✓ | ✓ | ✓ Partikel | ✓ | Tech-Kompetenz demonstrieren |
+| Kanzlei / Beratung | ❌ | ❌ | ❌ | ❌ | Vertrauen durch Stille |
+
+### Beauty / Photography Portfolio — Spezialregel
+
+Für Make-up Artist, Fotograf, Model-Portfolio gilt:
+```
+Hero:        Text-only (kein Hintergrundbild) ODER full-bleed ohne Text-Overlay
+Navigation:  Transparent, Logo links, Kategorie-Links rechts — nichts mehr
+Gallery:     Justified-Flex Grid (Bilder füllen Reihen, variable Breite)
+Animation:   Nur: img { transition: transform 0.7s; } on hover
+Lightbox:    Ja — öffnet auf Klick
+Loader:      NEIN — Fotos müssen sofort sichtbar sein
+GSAP:        NEIN — IntersectionObserver für fade-in reicht
+Lenis:       NEIN — nativer Scroll ist korrekt
+Canvas:      NEIN — lenkt von Fotos ab
+Cursor Glow: NEIN — lenkt von Fotos ab
+```
+
+Referenz: **kholodovamakeup.com** — Text-Only Hero, Photography-Grid, invisible Nav
+
+---
 
 ### 3D-Pflicht — kein Opt-out
 
