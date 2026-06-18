@@ -354,6 +354,22 @@ function scanAssets(projectPath) {
   return [...new Set(found)];
 }
 
+// Bilder als Base64-Data-URIs einbetten → selbst-enthaltenes HTML für die CRM-Vorschau
+function inlineAssets(html, projectPath) {
+  const mime = { png: "image/png", jpg: "image/jpeg", jpeg: "image/jpeg", svg: "image/svg+xml", webp: "image/webp", gif: "image/gif", avif: "image/avif" };
+  return html.replace(
+    /(["'(])((?:assets|bilder|images|img|logos|media)\/[^"')]+\.(png|jpe?g|svg|webp|gif|avif))(["')])/gi,
+    (m, pre, rel, ext, post) => {
+      try {
+        const fp = path.join(projectPath, rel);
+        if (!fs.existsSync(fp)) return m;
+        const b64 = fs.readFileSync(fp).toString("base64");
+        return `${pre}data:${mime[ext.toLowerCase()] || "image/jpeg"};base64,${b64}${post}`;
+      } catch { return m; }
+    }
+  );
+}
+
 // Dedizierter Website-Generator — voller Skill + Opus 4.8 + Streaming
 async function generateWebsite(task) {
   const projectName = task.title || "website-projekt";
@@ -420,6 +436,17 @@ ${skill}`;
 
   let note = ok ? " ✅ vollständig" : " ⚠️ evtl. unvollständig — bitte prüfen";
   if (missing.length) note += `\n⚠️ Fehlende Bilder (Agent hat falsche Namen verwendet): ${missing.join(", ")} — vorhandene Assets: ${assets.join(", ") || "keine"}`;
+
+  // Projekt + Vorschau im CRM anlegen (Bilder inline → Vorschau funktioniert auf dem Server)
+  try {
+    const selfContained = inlineAssets(html, projectPath);
+    const res = await apiPost("/api/projects/from-website", { name: projectName, html: selfContained, status: "design" });
+    if (res?.preview_url) {
+      const url = `${CRM_URL}${res.preview_url}`;
+      console.log(`   📋 Projekt im CRM angelegt · Vorschau: ${url}`);
+      note += `\n📋 Im CRM als Projekt "${projectName}" angelegt → Projekte-Seite → "Website-Vorschau öffnen".\n🔗 Direkt: ${url}`;
+    }
+  } catch (e) { console.warn(`   ⚠️  Projekt-Anlage im CRM fehlgeschlagen: ${e.message}`); }
 
   return `📂 Projektordner: ${projectPath}\nDatei: index.html (${html.length} Zeichen)${note}\n\nÖffne die Datei im Browser zur Vorschau. Danach /kling-prompts für Video-Hintergründe aufrufen.`;
 }
