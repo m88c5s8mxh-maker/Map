@@ -336,12 +336,52 @@ async function runWithClaudeStreaming(prompt, systemPrompt, model, maxTokens) {
   return text;
 }
 
+// Lokale Kunden-Assets (Logos, Fotos) im Projektordner finden
+function scanAssets(projectPath) {
+  const exts = /\.(png|jpe?g|svg|webp|gif|avif|mp4|webm)$/i;
+  const dirs = ["assets", "bilder", "images", "img", "logos", "media", "."];
+  const found = [];
+  for (const d of dirs) {
+    const dir = d === "." ? projectPath : path.join(projectPath, d);
+    try {
+      if (!fs.existsSync(dir)) continue;
+      for (const f of fs.readdirSync(dir)) {
+        if (f === "index.html" || f === "CLAUDE.md") continue;
+        if (exts.test(f)) found.push(d === "." ? f : `${d}/${f}`);
+      }
+    } catch { /* skip */ }
+  }
+  return [...new Set(found)];
+}
+
 // Dedizierter Website-Generator — voller Skill + Opus 4.8 + Streaming
 async function generateWebsite(task) {
   const projectName = task.title || "website-projekt";
   const projectPath = openInVSCode(projectName, task.input);
   const skill = loadCinematicSkill();
   if (!skill) console.warn("   ⚠️  cinematic-web Skill nicht gefunden — generiere ohne Skill-DNA");
+
+  // Kunden-Assets erkennen und dem Agent mitgeben
+  const assets = scanAssets(projectPath);
+  let assetNote;
+  if (assets.length) {
+    console.log(`   🖼️  ${assets.length} lokale Asset(s) gefunden: ${assets.join(", ")}`);
+    const logo = assets.find(a => /logo/i.test(a));
+    assetNote = `
+
+VERFÜGBARE LOKALE ASSETS (vom Kunden bereitgestellt) — verwende GENAU diese Dateien mit relativen Pfaden:
+${assets.map(a => `- ${a}`).join("\n")}
+
+ASSET-REGELN (zwingend):
+- Binde diese Dateien per relativem Pfad ein, z.B. <img src="${assets[0]}" alt="...">.${logo ? `\n- Das Logo ist "${logo}" → in die Navigation (und ggf. Loader/Footer) einbauen, NICHT als Text-Logo.` : ""}
+- Setze die Fotos sinnvoll in Hero, Galerie und passenden Sektionen ein.
+- Verwende NUR diese gelisteten Pfade. Erfinde KEINE Bild-URLs und KEINE Stock-Links für nicht gelistete Bilder — nutze dort Canvas-/CSS-Visuals.`;
+  } else {
+    console.log("   🖼️  Keine lokalen Assets gefunden → CSS/Canvas-Visuals");
+    assetNote = `
+
+KEINE lokalen Bilddateien vorhanden. Erzeuge alle Visuals per Canvas/CSS (Gradients, Partikel, geometrische Formen). KEINE externen Bild-URLs / Stock-Platzhalter. Logo als sauberes Text-Logo gestalten.`;
+  }
 
   const system = `Du bist ein Awwwards-Level Web-Designer der Morio Solutions Agentur. Du erstellst EINE vollständige, produktionsreife Single-File HTML-Website (HTML + inline <style> + inline <script>).
 
@@ -356,7 +396,7 @@ Befolge diesen Skill exakt:
 
 ${skill}`;
 
-  const prompt = `AUFTRAG:\n${task.input}\n\nErstelle jetzt die komplette, fertige index.html nach dem Skill. Nur HTML-Code ausgeben.`;
+  const prompt = `AUFTRAG:\n${task.input}${assetNote}\n\nErstelle jetzt die komplette, fertige index.html nach dem Skill. Nur HTML-Code ausgeben.`;
 
   console.log("   🎨 Generiere Website mit Opus 4.8 (Streaming, bis 32k Tokens)…");
   let html = await runWithClaudeStreaming(prompt, system, "claude-opus-4-8", 32000);
