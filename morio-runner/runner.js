@@ -13,6 +13,7 @@
 const fs   = require("fs");
 const path = require("path");
 const { exec } = require("child_process");
+const { industryProfile } = require("./industry-dna");
 
 // ── .env laden ────────────────────────────────────────────────────────────────
 function loadEnvFile() {
@@ -412,9 +413,12 @@ ABSOLUTE REGELN:
 
 Befolge diesen Skill exakt:
 
-${skill}`;
+${skill}${industryProfile(task.input)}`;
 
-  const prompt = `AUFTRAG:\n${task.input}${assetNote}\n\nErstelle jetzt die komplette, fertige index.html nach dem Skill. Nur HTML-Code ausgeben.`;
+  const detectedProfile = industryProfile(task.input);
+  if (detectedProfile) console.log("   🎯 Branchen-Profil erkannt und injiziert");
+
+  const prompt = `AUFTRAG:\n${task.input}${assetNote}\n\nErstelle jetzt die komplette, fertige index.html nach dem Skill UND der Branchen-Referenz. Nur HTML-Code ausgeben.`;
 
   console.log("   🎨 Generiere Website mit Opus 4.8 (Streaming, bis 32k Tokens)…");
   let html = await runWithClaudeStreaming(prompt, system, "claude-opus-4-8", 32000);
