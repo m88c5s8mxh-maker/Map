@@ -372,10 +372,12 @@ async function generateWebsite(task) {
 VERFÜGBARE LOKALE ASSETS (vom Kunden bereitgestellt) — verwende GENAU diese Dateien mit relativen Pfaden:
 ${assets.map(a => `- ${a}`).join("\n")}
 
-ASSET-REGELN (zwingend):
-- Binde diese Dateien per relativem Pfad ein, z.B. <img src="${assets[0]}" alt="...">.${logo ? `\n- Das Logo ist "${logo}" → in die Navigation (und ggf. Loader/Footer) einbauen, NICHT als Text-Logo.` : ""}
-- Setze die Fotos sinnvoll in Hero, Galerie und passenden Sektionen ein.
-- Verwende NUR diese gelisteten Pfade. Erfinde KEINE Bild-URLs und KEINE Stock-Links für nicht gelistete Bilder — nutze dort Canvas-/CSS-Visuals.`;
+ASSET-REGELN (ZWINGEND — keine Ausnahme):
+- Kopiere jeden Dateinamen ZEICHENGENAU wie oben gelistet, inklusive Endung. "logo.jpg" bleibt "logo.jpg" — ändere NIEMALS die Endung (kein .png aus .jpg).
+- Benenne NICHTS um. Verwende NIEMALS erfundene oder "aufgeräumte" Namen wie bar-1.jpg, bar-2.jpg, image1.jpg, hero.jpg — nur exakt die Pfade aus der Liste.
+- Binde sie per relativem Pfad ein, z.B. <img src="${assets[0]}" alt="...">.${logo ? `\n- Das Logo ist exakt "${logo}" → in die Navigation (und ggf. Loader/Footer), NICHT als Text-Logo.` : ""}
+- Setze die Fotos sinnvoll ein (Bar-Fotos in Hero/Atmosphäre, Drink-Fotos im Cocktail-Grid).
+- Brauchst du mehr Bilder als gelistet? Dann nutze die vorhandenen mehrfach ODER Canvas-/CSS-Visuals — erfinde KEINE zusätzlichen Dateinamen und KEINE Stock-URLs.`;
   } else {
     console.log("   🖼️  Keine lokalen Assets gefunden → CSS/Canvas-Visuals");
     assetNote = `
@@ -411,7 +413,15 @@ ${skill}`;
   fs.writeFileSync(path.join(projectPath, "index.html"), html);
   console.log(`   ${ok ? "✅" : "⚠️"} index.html geschrieben (${html.length} Zeichen)`);
 
-  return `📂 Projektordner: ${projectPath}\nDatei: index.html (${html.length} Zeichen)${ok ? " ✅ vollständig" : " ⚠️ evtl. unvollständig — bitte prüfen"}\n\nÖffne die Datei im Browser zur Vorschau. Danach /kling-prompts für Video-Hintergründe aufrufen.`;
+  // Validierung: referenzierte lokale Bilder gegen echte Dateien prüfen
+  const refs = [...html.matchAll(/(?:src|href)=["']((?:assets|bilder|images|img|logos|media)\/[^"']+\.(?:png|jpe?g|svg|webp|gif|avif|mp4|webm))["']/gi)].map(m => m[1]);
+  const missing = [...new Set(refs)].filter(r => !fs.existsSync(path.join(projectPath, r)));
+  if (missing.length) console.warn(`   ⚠️  ${missing.length} referenzierte Bilddatei(en) FEHLEN: ${missing.join(", ")}`);
+
+  let note = ok ? " ✅ vollständig" : " ⚠️ evtl. unvollständig — bitte prüfen";
+  if (missing.length) note += `\n⚠️ Fehlende Bilder (Agent hat falsche Namen verwendet): ${missing.join(", ")} — vorhandene Assets: ${assets.join(", ") || "keine"}`;
+
+  return `📂 Projektordner: ${projectPath}\nDatei: index.html (${html.length} Zeichen)${note}\n\nÖffne die Datei im Browser zur Vorschau. Danach /kling-prompts für Video-Hintergründe aufrufen.`;
 }
 
 function openInVSCode(projectName, taskInput) {
