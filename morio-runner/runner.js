@@ -96,6 +96,17 @@ async function apiPut(apiPath, body) {
   return res.json();
 }
 
+// Anthropic-Verbrauch ans CRM melden (Kostenzähler). Fire-and-forget, darf nie werfen.
+async function reportUsage(source, model, usage) {
+  if (!usage) return;
+  try {
+    await fetch(`${CRM_URL}/api/usage`, {
+      method: "POST", headers: { "Content-Type": "application/json", ...authHeader },
+      body: JSON.stringify({ source, model, usage }),
+    });
+  } catch { /* Tracking-Fehler ignorieren */ }
+}
+
 // ── Skills-Sync ───────────────────────────────────────────────────────────────
 async function syncSkills() {
   console.log("🧠 Synchronisiere Skills aus Map-Repo...");
@@ -276,6 +287,7 @@ async function runWithClaude(prompt, systemPrompt) {
   });
   const data = await res.json();
   if (data.error) throw new Error(data.error.message);
+  await reportUsage("runner", data.model || "claude-sonnet-4-6", data.usage);
   return data.content[0].text;
 }
 
@@ -319,6 +331,7 @@ async function runWithClaudeStreaming(prompt, systemPrompt, model, maxTokens) {
   const reader = res.body.getReader();
   const decoder = new TextDecoder();
   let buffer = "", text = "";
+  const usage = { input_tokens: 0, output_tokens: 0, cache_creation_input_tokens: 0, cache_read_input_tokens: 0 };
   while (true) {
     const { done, value } = await reader.read();
     if (done) break;
@@ -330,10 +343,18 @@ async function runWithClaudeStreaming(prompt, systemPrompt, model, maxTokens) {
       try {
         const evt = JSON.parse(line.slice(6));
         if (evt.type === "content_block_delta" && evt.delta?.type === "text_delta") text += evt.delta.text;
+        // Usage: input/cache aus message_start, output aus message_delta
+        if (evt.type === "message_start" && evt.message?.usage) {
+          usage.input_tokens = evt.message.usage.input_tokens || 0;
+          usage.cache_creation_input_tokens = evt.message.usage.cache_creation_input_tokens || 0;
+          usage.cache_read_input_tokens = evt.message.usage.cache_read_input_tokens || 0;
+        }
+        if (evt.type === "message_delta" && evt.usage?.output_tokens) usage.output_tokens = evt.usage.output_tokens;
         if (evt.type === "error") throw new Error(evt.error?.message || "stream error");
       } catch (e) { if (e.message && e.message !== "Unexpected end of JSON input") { /* ignore parse noise */ } }
     }
   }
+  await reportUsage("web-agent", model || "claude-opus-4-8", usage);
   return text;
 }
 
