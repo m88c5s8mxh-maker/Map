@@ -22,6 +22,8 @@ function loadEnvFile() {
     path.join(__dirname, "..", ".env.production"),
     path.join(__dirname, "..", ".env.local"),
   ];
+  // Alle vorhandenen Dateien in Präzedenz mergen (nicht nach der ersten abbrechen),
+  // damit Keys über mehrere Dateien verteilt sein dürfen.
   for (const envPath of envPaths) {
     if (!fs.existsSync(envPath)) continue;
     fs.readFileSync(envPath, "utf8").split("\n").forEach(line => {
@@ -33,14 +35,14 @@ function loadEnvFile() {
       const val = trimmed.slice(idx + 1).trim().replace(/^["']|["']$/g, "");
       if (!process.env[key]) process.env[key] = val;
     });
-    break;
   }
 }
 loadEnvFile();
 
 // ── Konfiguration ─────────────────────────────────────────────────────────────
 const CRM_URL        = process.env.CRM_URL         || "https://intra.moriosolutions.de";
-const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET  || "c8a193196cd733b0101769ce";
+const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
+if (!WEBHOOK_SECRET) throw new Error("WEBHOOK_SECRET nicht gesetzt (bridge/.env)");
 const ANTHROPIC_KEY  = process.env.ANTHROPIC_API_KEY;
 const MAP_PATH       = process.env.MAP_PATH        || "C:/Users/kbeck/OneDrive/Dokumente/Agency/Map/raw/skills";
 const PROJECTS_PATH  = process.env.PROJECTS_PATH   || "C:/Users/kbeck/OneDrive/Dokumente/Agency";
@@ -75,26 +77,25 @@ function getCategory(slug) {
 // ── HTTP ──────────────────────────────────────────────────────────────────────
 const authHeader = { "Authorization": `Bearer ${WEBHOOK_SECRET}` };
 
-async function apiGet(apiPath) {
-  const res = await fetch(`${CRM_URL}${apiPath}`, { headers: authHeader });
-  return res.json();
+const API_TIMEOUT_MS = 30000;
+
+// Robuste JSON-Antwort: Timeout, res.ok-Prüfung, sicheres Parsing.
+async function apiRequest(method, apiPath, body) {
+  const opts = { method, headers: { ...authHeader }, signal: AbortSignal.timeout(API_TIMEOUT_MS) };
+  if (body !== undefined) {
+    opts.headers["Content-Type"] = "application/json";
+    opts.body = JSON.stringify(body);
+  }
+  const res = await fetch(`${CRM_URL}${apiPath}`, opts);
+  const text = await res.text();
+  if (!res.ok) throw new Error(`${method} ${apiPath} → HTTP ${res.status}: ${text.slice(0, 160)}`);
+  try { return text ? JSON.parse(text) : {}; }
+  catch { throw new Error(`${method} ${apiPath} → ungültiges JSON: ${text.slice(0, 160)}`); }
 }
 
-async function apiPost(apiPath, body) {
-  const res = await fetch(`${CRM_URL}${apiPath}`, {
-    method: "POST", headers: { "Content-Type": "application/json", ...authHeader },
-    body: JSON.stringify(body),
-  });
-  return res.json();
-}
-
-async function apiPut(apiPath, body) {
-  const res = await fetch(`${CRM_URL}${apiPath}`, {
-    method: "PUT", headers: { "Content-Type": "application/json", ...authHeader },
-    body: JSON.stringify(body),
-  });
-  return res.json();
-}
+async function apiGet(apiPath)        { return apiRequest("GET", apiPath); }
+async function apiPost(apiPath, body) { return apiRequest("POST", apiPath, body); }
+async function apiPut(apiPath, body)  { return apiRequest("PUT", apiPath, body); }
 
 // Anthropic-Verbrauch ans CRM melden (Kostenzähler). Fire-and-forget, darf nie werfen.
 async function reportUsage(source, model, usage) {
@@ -288,7 +289,9 @@ async function runWithClaude(prompt, systemPrompt) {
   const data = await res.json();
   if (data.error) throw new Error(data.error.message);
   await reportUsage("runner", data.model || "claude-sonnet-4-6", data.usage);
-  return data.content[0].text;
+  const textBlock = Array.isArray(data.content) ? data.content.find(b => b.type === "text") : null;
+  if (!textBlock?.text) throw new Error("Claude lieferte keine Textantwort");
+  return textBlock.text;
 }
 
 // ── Website-Task ──────────────────────────────────────────────────────────────
@@ -532,18 +535,30 @@ async function watchdog() {
   if (ok) { if (healthFails > 0) console.log("   💚 CRM wieder erreichbar"); healthFails = 0; return; }
 
   healthFails++;
-  console.warn(`   ⚠️  CRM nicht erreichbar (${healthFails}/3)`);
-  // Nach 3 Fehlschlägen reseten, aber max. 1× pro 10 Min (Cooldown)
-  if (healthFails >= 3 && Date.now() - lastResetAt > 600000) {
+  console.warn(`   ⚠️  CRM nicht erreichbar (${healthFails}/5)`);
+  // Nach 5 Fehlschlägen neustarten, aber max. 1× pro 10 Min (Cooldown)
+  if (healthFails >= 5 && Date.now() - lastResetAt > 600000) {
+    // Zweit-Check: Hat DIESER PC überhaupt Internet? Wenn nicht, ist wahrscheinlich
+    // die lokale Leitung das Problem — dann KEIN Server-Neustart (verhindert Fehlauslösung).
+    let localNetOk = false;
+    try {
+      const probe = await fetch("https://api.hetzner.cloud/v1/", { signal: AbortSignal.timeout(10000) });
+      localNetOk = probe.status > 0;
+    } catch { localNetOk = false; }
+    if (!localNetOk) {
+      console.warn("   ⚠️  Externe Referenz auch nicht erreichbar → lokales Netzproblem vermutet, KEIN Server-Neustart.");
+      healthFails = 0;
+      return;
+    }
     lastResetAt = Date.now();
     healthFails = 0;
-    console.error("   🔴 CRM down → Hetzner-Reset wird ausgelöst");
+    console.error("   🔴 CRM down (extern bestätigt) → Hetzner-REBOOT (graceful/ACPI) wird ausgelöst");
     try {
-      await fetch(`https://api.hetzner.cloud/v1/servers/${HETZNER_SERVER}/actions/reset`, {
+      await fetch(`https://api.hetzner.cloud/v1/servers/${HETZNER_SERVER}/actions/reboot`, {
         method: "POST", headers: { Authorization: `Bearer ${HETZNER_TOKEN}` },
       });
-      console.error("   ↻ Reset gesendet. Warte auf Boot…");
-    } catch (e) { console.error("   Reset fehlgeschlagen:", e.message); }
+      console.error("   ↻ Reboot gesendet. Warte auf Boot…");
+    } catch (e) { console.error("   Reboot fehlgeschlagen:", e.message); }
   }
 }
 
@@ -565,8 +580,7 @@ async function processTasks() {
 
   let tasks;
   try {
-    const res = await fetch(`${CRM_URL}/api/agents/tasks?status=pending`, { headers: authHeader });
-    tasks = await res.json();
+    tasks = await apiGet("/api/agents/tasks?status=pending");
   } catch (e) {
     console.error("   Verbindungsfehler:", e.message);
     return;
@@ -576,15 +590,17 @@ async function processTasks() {
   console.log(`\n📋 ${tasks.length} Task(s) in der Queue`);
 
   for (const task of tasks) {
-    // Atomar beanspruchen — bei mehreren Runnern gewinnt genau einer pro Task
-    const claim = await apiPost(`/api/agents/tasks/${task.id}/claim`, { worker: os.hostname() });
-    if (!claim?.claimed) {
-      console.log(`   ⏭️  [${task.id.slice(0, 8)}] bereits von anderem Runner übernommen — überspringe`);
-      continue;
-    }
-    console.log(`\n▶ [${task.id.slice(0, 8)}] ${task.title || task.input.slice(0, 60)}`);
-
+    let claimed = false;
     try {
+      // Atomar beanspruchen — bei mehreren Runnern gewinnt genau einer pro Task
+      const claim = await apiPost(`/api/agents/tasks/${task.id}/claim`, { worker: os.hostname() });
+      if (!claim?.claimed) {
+        console.log(`   ⏭️  [${task.id.slice(0, 8)}] bereits von anderem Runner übernommen — überspringe`);
+        continue;
+      }
+      claimed = true;
+      console.log(`\n▶ [${task.id.slice(0, 8)}] ${task.title || task.input.slice(0, 60)}`);
+
       // Agent-Profil laden
       let agentPrompt = "Du bist ein hilfreicher AI-Agent der Morio Solutions Agentur.";
       let agentType   = "custom";
@@ -634,8 +650,12 @@ async function processTasks() {
       }
 
     } catch (err) {
-      await apiPut(`/api/agents/tasks/${task.id}`, { status: "failed", error: err.message });
       console.error(`   ❌ Fehler: ${err.message}`);
+      // Nur als 'failed' markieren, wenn wir den Task tatsächlich beansprucht hatten
+      // (sonst gehört er einem anderen Runner). Der Reaper-Cron holt hängende Tasks zurück.
+      if (claimed) {
+        try { await apiPut(`/api/agents/tasks/${task.id}`, { status: "failed", error: err.message }); } catch {}
+      }
     }
   }
 }
@@ -660,10 +680,25 @@ async function main() {
 
   console.log(`\n🔄 Polling alle ${POLL_INTERVAL / 1000}s... (Ctrl+C zum Beenden)`);
   console.log(`🛡️  Auto-Healing Watchdog: ${HETZNER_TOKEN ? "aktiv" : "inaktiv (kein HETZNER_API_TOKEN)"}\n`);
-  await processTasks();
-  setInterval(processTasks, POLL_INTERVAL);
+
+  // Self-scheduling Loop: nächster Poll erst NACH Abschluss des vorherigen — keine Überlappung.
+  const loop = async () => {
+    try { await processTasks(); }
+    catch (e) { console.error("   ⚠️  processTasks-Fehler:", e.message); }
+    setTimeout(loop, POLL_INTERVAL);
+  };
+  loop();
+
   // Watchdog alle 60s (unabhängig vom Task-Polling)
   setInterval(watchdog, 60000);
 }
+
+// Ein transienter Fehler darf den Runner nicht killen — loggen statt crashen.
+process.on("unhandledRejection", (reason) => {
+  console.error("⚠️  Unhandled Rejection:", reason instanceof Error ? reason.message : reason);
+});
+process.on("uncaughtException", (err) => {
+  console.error("⚠️  Uncaught Exception:", err.message);
+});
 
 main().catch(console.error);
