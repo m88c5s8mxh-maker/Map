@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "0cd9b6beed28e2f7",
+    "id": "bf05f5e04fb1a8a5",
     "type": "split",
     "children": [
       {
-        "id": "cc587cabbae2730f",
+        "id": "e5ccd55afa224056",
         "type": "tabs",
         "children": [
           {
-            "id": "9a70464c1ff9065a",
+            "id": "eb0014e0ce811336",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph-Ansicht"
+              "type": "markdown",
+              "state": {
+                "file": "SETUP_MC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SETUP_MC"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "1356a4478be90605",
+    "id": "6539bd599d3763c0",
     "type": "split",
     "children": [
       {
-        "id": "254ce8215ba749db",
+        "id": "0a70b9cd989b561b",
         "type": "tabs",
         "children": [
           {
-            "id": "50c2bb855357151a",
+            "id": "e2e6ccc96f01f9df",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +48,7 @@
             }
           },
           {
-            "id": "349bdfc6a1630b20",
+            "id": "d134cd9da495c6dd",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +65,7 @@
             }
           },
           {
-            "id": "02f0abc70d06473f",
+            "id": "08336619b2667627",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,19 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "20f8c837ac160dfe",
+    "id": "78c5bb638de56f33",
     "type": "split",
     "children": [
       {
-        "id": "9aa11051b339b362",
+        "id": "1acaa086db4f118d",
         "type": "tabs",
         "children": [
           {
-            "id": "70a1cdedb3c713d6",
+            "id": "886b62c8776ab23c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "SETUP_MC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,24 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rückverweise"
+              "title": "Rückverweise auf SETUP_MC"
             }
           },
           {
-            "id": "3bf44d44752babba",
+            "id": "a1aef0211f00e80a",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "SETUP_MC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links"
+              "title": "Ausgehende Links von SETUP_MC öffnen"
             }
           },
           {
-            "id": "671cf0eb0279fe9e",
+            "id": "3786eda4bd8724ce",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +137,7 @@
             }
           },
           {
-            "id": "3ff0a3643ae71534",
+            "id": "9f15060c91d3bff5",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -145,17 +151,18 @@
             }
           },
           {
-            "id": "7af8fe95e6f2e339",
+            "id": "e710ca03a471d5ab",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "SETUP_MC.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Gliederung"
+              "title": "Gliederung von SETUP_MC"
             }
           }
         ]
@@ -176,39 +183,10 @@
       "bases:Neue Base erstellen": false
     }
   },
-  "active": "9a70464c1ff9065a",
+  "active": "eb0014e0ce811336",
   "lastOpenFiles": [
-<<<<<<< HEAD
     "Trading FRVP Graph.md",
-    "Unbenannt",
-    "Unbenannt.canvas",
-    "raw/skills/auto-compact.md",
-=======
-    "WIKI.md",
->>>>>>> 687d4b42b60fe4ef900fe71a524cffa9f405a017
-    "wiki/entity/account-research.md",
-    "wiki/entity/accessibility-review.md",
-    "SETUP_KOLLEGE.md",
-    "scripts/graphify-out/cache/f24e52b4f75b523ab61b765780ce27dfd89b91dbfa7def2581d6012e524c9a0d.json",
-    "wiki/CRT Terminal UI.md",
-    "wiki/Viral Title Production.md",
-    "wiki/Channel Forensics.md",
-    "wiki/Financial Model.md",
-    "wiki/pandas.md",
-    "wiki/openpyxl.md",
-    "wiki/MoSCoW Framework.md",
-    "wiki/User Story.md",
-    "wiki/Product Requirements Document (PRD).md",
-    "wiki/Common Table Expression (CTE).md",
-    "wiki/SQL Query.md",
-    "wiki/Weekly Prep Brief.md",
-    "wiki/shadcnui.md",
-    "wiki/TASKS.md Task File.md",
-    "wiki/Trade-off Analysis.md",
-    "wiki/System Architecture Design.md",
-    "wiki/Persona Development.md",
-    "wiki/Affinity Mapping.md",
-    "wiki/KPI Reporting.md",
-    "wiki/synthesize-research.md"
+    "SETUP_MC.md",
+    "CLAUDE.md"
   ]
 }
