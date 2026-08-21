@@ -11,14 +11,10 @@
             "id": "eb0014e0ce811336",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SETUP_MC.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SETUP_MC"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph-Ansicht"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SETUP_MC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rückverweise auf SETUP_MC"
+              "title": "Rückverweise"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SETUP_MC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links von SETUP_MC öffnen"
+              "title": "Ausgehende Links"
             }
           },
           {
@@ -156,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SETUP_MC.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Gliederung von SETUP_MC"
+              "title": "Gliederung"
             }
           }
         ]
@@ -185,8 +178,32 @@
   },
   "active": "eb0014e0ce811336",
   "lastOpenFiles": [
-    "Trading FRVP Graph.md",
-    "SETUP_MC.md",
-    "CLAUDE.md"
+    "trading/GOLD ROB — Trade Copier.md",
+    "trading/GOLD ROB — Funded Accounts.md",
+    "trading/GOLD ROB Monat — 2026-07.md",
+    "trading/GOLD ROB Monat — 2026-06.md",
+    "trading/GOLD ROB Monat — 2026-05.md",
+    "trading/GOLD ROB Monat — 2026-04.md",
+    "trading/GOLD ROB Monat — 2026-03.md",
+    "trading/GOLD ROB Monat — 2026-02.md",
+    "trading/GOLD ROB Monat — 2026-01.md",
+    "trading/GOLD ROB Monat — 2025-12.md",
+    "trading/GOLD ROB Monat — 2025-11.md",
+    "trading/GOLD ROB Monat — 2025-10.md",
+    "trading/GOLD ROB Monat — 2025-09.md",
+    "trading/GOLD ROB Monat — 2025-08.md",
+    "trading/GOLD ROB Monat — 2025-07.md",
+    "trading/GOLD ROB Strategie — Bollinger-Reversion M15.md",
+    "trading/GOLD ROB Strategie — Bollinger-Reversion M30.md",
+    "trading/GOLD ROB Strategie — RSI-Reversal 14 M15.md",
+    "trading/GOLD ROB Strategie — Bollinger-Reversion H1.md",
+    "trading/GOLD ROB Strategie — RSI-Reversal 14 M30.md",
+    "trading/GOLD ROB Strategie — EMA-Trend 20-50 M30.md",
+    "trading/GOLD ROB Strategie — EMA-Trend 20-50 M15.md",
+    "trading/GOLD ROB Strategie — Donchian-Breakout 20 M15.md",
+    "trading/GOLD ROB Strategie — RSI-Reversal 14 H1.md",
+    "trading/GOLD ROB Strategie — Donchian-Breakout 20 M30.md",
+    "trading/GOLD ROB Strategie — EMA-Trend 20-50 H1.md",
+    "trading"
   ]
 }
