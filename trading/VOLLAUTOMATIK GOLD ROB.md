@@ -28,7 +28,6 @@ updated: "2026-08-21"
 ## Connections
 - [[GOLD ROB — System & Regelwerk]] — beschreibt
 - [[GOLD ROB — Backtest-Ergebnis]] — belegt
-- [[GOLD ROB — Strategie-Labor]] — vergleicht
 - [[GOLD ROB — Funded Accounts]] — handelt auf
 - [[GOLD ROB — Trade Copier]] — plant
 

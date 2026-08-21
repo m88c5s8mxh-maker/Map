@@ -8,13 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "eb0014e0ce811336",
+            "id": "261910be72ee60ef",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph-Ansicht"
+              "type": "markdown",
+              "state": {
+                "file": "raw/config/global-CLAUDE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "global-CLAUDE"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "raw/config/global-CLAUDE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rückverweise"
+              "title": "Rückverweise auf global-CLAUDE"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "raw/config/global-CLAUDE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links"
+              "title": "Ausgehende Links von global-CLAUDE öffnen"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "raw/config/global-CLAUDE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Gliederung"
+              "title": "Gliederung von global-CLAUDE"
             }
           }
         ]
@@ -176,10 +183,24 @@
       "bases:Neue Base erstellen": false
     }
   },
-  "active": "eb0014e0ce811336",
+  "active": "261910be72ee60ef",
   "lastOpenFiles": [
-    "trading/GOLD ROB — Trade Copier.md",
+    "raw/config/morioCRM-CLAUDE.md",
+    "Unbenannt.md",
+    "trading/GOLD ROB — Backtest-Ergebnis.md",
     "trading/GOLD ROB — Funded Accounts.md",
+    "WIKI.md",
+    "Unbenannt.canvas",
+    "Start.md",
+    "SKILLS_OVERVIEW.pdf",
+    "wiki/graphify/obsidian/Sales Pipeline_1.md",
+    "SETUP_MC.md",
+    "README.md",
+    "CLAUDE.md",
+    "wiki/graphify/obsidian/audit-support.md",
+    "trading/VOLLAUTOMATIK GOLD ROB.md",
+    "trading/GOLD ROB — Trade Copier.md",
+    "trading/GOLD ROB — System & Regelwerk.md",
     "trading/GOLD ROB Monat — 2026-07.md",
     "trading/GOLD ROB Monat — 2026-06.md",
     "trading/GOLD ROB Monat — 2026-05.md",
@@ -192,18 +213,6 @@
     "trading/GOLD ROB Monat — 2025-10.md",
     "trading/GOLD ROB Monat — 2025-09.md",
     "trading/GOLD ROB Monat — 2025-08.md",
-    "trading/GOLD ROB Monat — 2025-07.md",
-    "trading/GOLD ROB Strategie — Bollinger-Reversion M15.md",
-    "trading/GOLD ROB Strategie — Bollinger-Reversion M30.md",
-    "trading/GOLD ROB Strategie — RSI-Reversal 14 M15.md",
-    "trading/GOLD ROB Strategie — Bollinger-Reversion H1.md",
-    "trading/GOLD ROB Strategie — RSI-Reversal 14 M30.md",
-    "trading/GOLD ROB Strategie — EMA-Trend 20-50 M30.md",
-    "trading/GOLD ROB Strategie — EMA-Trend 20-50 M15.md",
-    "trading/GOLD ROB Strategie — Donchian-Breakout 20 M15.md",
-    "trading/GOLD ROB Strategie — RSI-Reversal 14 H1.md",
-    "trading/GOLD ROB Strategie — Donchian-Breakout 20 M30.md",
-    "trading/GOLD ROB Strategie — EMA-Trend 20-50 H1.md",
     "trading"
   ]
 }
