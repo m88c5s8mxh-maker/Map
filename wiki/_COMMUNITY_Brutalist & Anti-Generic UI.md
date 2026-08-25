@@ -12,7 +12,7 @@ members: 12
 ## Members
 - [[Banned Fonts List (Inter, Roboto, Arial, Open Sans)]] - document - skills/taste-skill/SKILL.md
 - [[Design Advisor (design)]] - document - skills/design/SKILL.md
-- [[Design Audit â€“ Systematic Upgrade Checklist]] - document - skills/redesign-skill/SKILL.md
+- [[Design Audit – Systematic Upgrade Checklist]] - document - skills/redesign-skill/SKILL.md
 - [[Industrial Brutalism & Tactical Telemetry UI (brutalist-skill)]] - document - skills/brutalist-skill/SKILL.md
 - [[Premium  Anti-Generic UI Design Principle]] - document - skills/llms.txt
 - [[Premium Utilitarian Minimalism UI (minimalist-skill)]] - document - skills/minimalist-skill/SKILL.md

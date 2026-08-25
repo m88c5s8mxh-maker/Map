@@ -1,4 +1,4 @@
-﻿---
+---
 type: community
 cohesion: 0.14
 members: 15
@@ -33,3 +33,10 @@ TABLE source_file, type FROM #community/Community_14
 SORT file.name ASC
 ```
 
+
+## Ergänzende Skills (nachträglich verlinkt, 2026-08-25)
+Diese Skills fehlten bisher komplett im Graphen (0 Backlinks) und gehören inhaltlich hierher:
+- [[cinematic-web]]
+- [[web-factory]]
+- [[kling-prompts]]
+- [[immersive-web-experience]]

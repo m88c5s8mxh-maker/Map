@@ -13,10 +13,10 @@ tags:
 ## Connections
 - [[Anti-Slop  Anti-Generic AI Design Rules]] - `enforces` [EXTRACTED]
 - [[Bento Grid Layout]] - `uses` [EXTRACTED]
-- [[DESIGN.md â€“ Single Source of Truth for Google Stitch]] - `produces` [EXTRACTED]
+- [[DESIGN.md – Single Source of Truth for Google Stitch]] - `produces` [EXTRACTED]
 - [[Google Stitch (AI UI generation platform)]] - `targets` [EXTRACTED]
 - [[Spring Physics Animation (stiffness100, damping20)]] - `specifies` [EXTRACTED]
-- [[Taste Skill README â€“ Collection Overview]] - `references` [EXTRACTED]
+- [[Taste Skill README – Collection Overview]] - `references` [EXTRACTED]
 - [[llms.txt Skill Index]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_2

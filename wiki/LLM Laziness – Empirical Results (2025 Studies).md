@@ -8,10 +8,10 @@ tags:
   - community/Community_0
 ---
 
-# LLM Laziness â€“ Empirical Results (2025 Studies)
+# LLM Laziness – Empirical Results (2025 Studies)
 
 ## Connections
-- [[LLM Output Truncation Research â€“ Overview]] - `contains` [EXTRACTED]
+- [[LLM Output Truncation Research – Overview]] - `contains` [EXTRACTED]
 - [[Prompt Stimulus Effectiveness (financial framing, stakes language)]] - `defines` [EXTRACTED]
 - [[RLHF-induced Brevity Bias (root cause of truncation)]] - `defines` [EXTRACTED]
 

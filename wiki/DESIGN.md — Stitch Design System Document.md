@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Anti-Patterns Banned List — no emojis, no Inter, no pure black, no neon glows, no 3-column equal cards]] - `contains` [EXTRACTED]
 - [[Color Palette — Canvas White, Charcoal Ink, accent system, banned colors]] - `contains` [EXTRACTED]
-- [[DESIGN.md â€“ Single Source of Truth for Google Stitch]] - `instantiates` [EXTRACTED]
+- [[DESIGN.md – Single Source of Truth for Google Stitch]] - `instantiates` [EXTRACTED]
 - [[Design Dial System (Creativity, Density, Variance, Motion Intent)]] - `contains` [EXTRACTED]
 - [[Hero Section Rules — Inline image typography, asymmetry, no filler, CTA restraint]] - `contains` [EXTRACTED]
 - [[Inline Image Typography (photos embedded in headlines)]] - `defines` [EXTRACTED]

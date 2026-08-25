@@ -9,7 +9,7 @@ tags:
   - community/Brutalist_&_Anti-Generic_UI
 ---
 
-# Design Audit â€“ Systematic Upgrade Checklist
+# Design Audit – Systematic Upgrade Checklist
 
 ## Connections
 - [[Redesign Existing Projects (redesign-skill)]] - `defines` [EXTRACTED]

@@ -15,7 +15,7 @@ tags:
 - [[Banned Fonts List (Inter, Roboto, Arial, Open Sans)]] - `enforces` [EXTRACTED]
 - [[Design Audit]] - `defines` [EXTRACTED]
 - [[Premium  Anti-Generic UI Design Principle]] - `upgrades_toward` [EXTRACTED]
-- [[Taste Skill README â€“ Collection Overview]] - `references` [EXTRACTED]
+- [[Taste Skill README – Collection Overview]] - `references` [EXTRACTED]
 - [[llms.txt Skill Index]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_2

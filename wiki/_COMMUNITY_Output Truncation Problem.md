@@ -13,13 +13,13 @@ members: 11
 - [[Claude Code (AI coding agent)]] - document - skills/taste-skill/README.md
 - [[Cursor (AI coding agent)]] - document - skills/taste-skill/README.md
 - [[Full-Output Enforcement (output-skill)]] - document - skills/output-skill/SKILL.md
-- [[LLM Laziness â€“ Empirical Results (2025 Studies)]] - document - skills/taste-skill/research/laziness/findings/empirical-results.md
+- [[LLM Laziness – Empirical Results (2025 Studies)]] - document - skills/taste-skill/research/laziness/findings/empirical-results.md
 - [[LLM Output Truncation  Laziness Behavior]] - document - skills/output-skill/SKILL.md
-- [[LLM Output Truncation Research â€“ Overview]] - document - skills/taste-skill/research/laziness/README.md
+- [[LLM Output Truncation Research – Overview]] - document - skills/taste-skill/research/laziness/README.md
 - [[Prompt Stimulus Effectiveness (financial framing, stakes language)]] - document - skills/taste-skill/research/laziness/findings/empirical-results.md
 - [[RLHF-induced Brevity Bias (root cause of truncation)]] - document - skills/taste-skill/research/laziness/findings/empirical-results.md
 - [[Rationale Explicit output enforcement counters RLHF brevity bias]] - document - skills/output-skill/SKILL.md
-- [[Taste Skill README â€“ Collection Overview]] - document - skills/taste-skill/README.md
+- [[Taste Skill README – Collection Overview]] - document - skills/taste-skill/README.md
 - [[Taste Skill Research Index]] - document - skills/taste-skill/research/README.md
 
 ## Live Query (requires Dataview plugin)
@@ -35,5 +35,5 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Stitch & Anti-Slop Rules]]
 
 ## Top bridge nodes
-- [[Taste Skill README â€“ Collection Overview]] - degree 10, connects to 3 communities
+- [[Taste Skill README – Collection Overview]] - degree 10, connects to 3 communities
 - [[Full-Output Enforcement (output-skill)]] - degree 6, connects to 1 community

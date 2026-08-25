@@ -12,7 +12,7 @@ tags:
 # Prompt Stimulus Effectiveness (financial framing, stakes language)
 
 ## Connections
-- [[LLM Laziness â€“ Empirical Results (2025 Studies)]] - `defines` [EXTRACTED]
+- [[LLM Laziness – Empirical Results (2025 Studies)]] - `defines` [EXTRACTED]
 - [[output-skill — Stops AI from being lazy, prevents placeholder comments and skipped code]] - `informs` [INFERRED]
 
 #graphify/document #graphify/INFERRED #community/Community_0

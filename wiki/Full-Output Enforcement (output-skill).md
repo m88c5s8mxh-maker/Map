@@ -15,7 +15,7 @@ tags:
 - [[Prompt Stimulus Effectiveness (financial framing, stakes language)]] - `informs` [INFERRED]
 - [[RLHF-induced Brevity Bias (root cause of truncation)]] - `mitigates` [INFERRED]
 - [[Rationale Explicit output enforcement counters RLHF brevity bias]] - `rationale_for` [EXTRACTED]
-- [[Taste Skill README â€“ Collection Overview]] - `references` [EXTRACTED]
+- [[Taste Skill README – Collection Overview]] - `references` [EXTRACTED]
 - [[llms.txt Skill Index]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Output_Truncation_Problem

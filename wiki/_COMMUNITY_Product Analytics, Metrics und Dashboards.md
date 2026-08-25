@@ -1,4 +1,4 @@
-﻿---
+---
 type: community
 cohesion: 0.09
 members: 31
@@ -50,10 +50,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Skills Library und Claude Config]]
+- 1 edge to [[_COMMUNITY_Sales Intelligence und Competitive Enablement]]
+- 1 edge to [[_COMMUNITY_Product Management und UX Research]]
+- 1 edge to [[_COMMUNITY_HR und People Operations]]
 
 ## Top bridge nodes
 - [[performance-report]] - degree 7, connects to 1 community

@@ -1,4 +1,4 @@
-﻿---
+---
 type: community
 cohesion: 0.12
 members: 16
@@ -35,8 +35,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 4]]
+- 2 edges to [[_COMMUNITY_LLM Laziness und Anti-Truncation Research]]
+- 1 edge to [[_COMMUNITY_Sales Intelligence und Competitive Enablement]]
 
 ## Top bridge nodes
 - [[redesign-existing-projects]] - degree 4, connects to 1 community

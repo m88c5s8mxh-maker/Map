@@ -1,4 +1,4 @@
-﻿---
+---
 type: community
 cohesion: 0.22
 members: 10
@@ -29,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Skills Library und Claude Config]]
 
 ## Top bridge nodes
 - [[Architecture Decision Record]] - degree 3, connects to 1 community

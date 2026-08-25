@@ -11,7 +11,7 @@ members: 7
 
 ## Members
 - [[Anti-Slop  Anti-Generic AI Design Rules]] - document - skills/taste-skill/SKILL.md
-- [[DESIGN.md â€“ Single Source of Truth for Google Stitch]] - document - skills/stitch-skill/SKILL.md
+- [[DESIGN.md – Single Source of Truth for Google Stitch]] - document - skills/stitch-skill/SKILL.md
 - [[Google Stitch (AI UI generation platform)]] - document - skills/stitch-skill/SKILL.md
 - [[Inline Image Typography (photos embedded in headlines)]] - document - skills/stitch-skill/DESIGN.md
 - [[Rationale Ban 3-column equal card grids as overused AI pattern]] - document - skills/taste-skill/SKILL.md

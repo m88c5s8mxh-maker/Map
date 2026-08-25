@@ -8,7 +8,7 @@ tags:
   - community/Community_2
 ---
 
-# Taste Skill README â€“ Collection Overview
+# Taste Skill README – Collection Overview
 
 ## Connections
 - [[Claude Code (AI coding agent)]] - `supports` [EXTRACTED]

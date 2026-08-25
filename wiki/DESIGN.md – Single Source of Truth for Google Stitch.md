@@ -9,7 +9,7 @@ tags:
   - community/Community_2
 ---
 
-# DESIGN.md â€“ Single Source of Truth for Google Stitch
+# DESIGN.md – Single Source of Truth for Google Stitch
 
 ## Connections
 - [[DESIGN.md — Stitch Design System Document]] - `instantiates` [EXTRACTED]
