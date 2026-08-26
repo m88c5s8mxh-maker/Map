@@ -8,5 +8,28 @@ erstellt: 2026-05-13
 status: aktiv
 ---
 
+# 🎥 Skill: AI UGC Video Automation
+
+> Vollautomatisches UGC-Video-System mit Claude + MCP Playwright + Higgsfield/Seedance.  
+> *"While you're still hunting for UGC creators one by one..."*
+
+## 🔗 Verbindungen
+- [[playwright-visual]] — Playwright Skill-Basis für Browser-Automation
+- [[everything-claude-code]] — Claude Code Agent-System
+- [[claude-mem]] — Claude Memory & CLAUDE.md Pattern
+- [[creator-branding]] — UGC & Creator-Kontext
+- [[social-media-growth]] — Distribution der generierten Videos
 
 ---
+
+## System-Überblick
+
+```
+project/
+├── my-project/
+│.  ── CLAUDE.md.      → Flow Director (Rules)
+│   └── reference/.     → Referenzbilder (JPG/PNG/WEBP)
+└── .claude/
+    ├── settings.json   → MCP Playwright Config
+        └── SKILL.md.       → UGC Scriptwriter
+```
