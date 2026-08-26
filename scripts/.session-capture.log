@@ -22,3 +22,19 @@ Run 'graphify --help' for usage.
 2026-08-26 15:55:29 [sync] ABBRUCH: Repo steht mitten in Rebase/Merge. Bitte manuell aufloesen.
 2026-08-26 20:34:44 T2 score=55 Vertriebsskript für Webseitenverkauf schreiben
 2026-08-26 20:34:44 [integrate] start 708920ec-09ac-4b4d-b67a-8bca3073622b -> raw/sessions/2026-08-26-vertriebsskript-für-webseitenverkauf-schreiben.md
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 6 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main bfa9b66] Auto: wiki sync 2026-08-26 20:36
+ 6 files changed, 280 insertions(+)
+ create mode 100644 "raw/sessions/2026-08-26-vertriebsskript-f\303\274r-webseitenverkauf-schreiben.md"
+ create mode 100644 wiki/concept/vertrieb-niedrigpreis-abschluss.md
+To https://github.com/m88c5s8mxh-maker/Map.git
+   06f6e70..bfa9b66  main -> main
+2026-08-26 20:36:44 [sync] gepusht (main): Auto: wiki sync 2026-08-26 20:36
+OK: neu `wiki/concept/vertrieb-niedrigpreis-abschluss.md`; aktualisiert `wiki/index.md` (zwei Stellen) und `wiki/log.md`. Ein Widerspruch zur Preisspanne in [[web-factory]] ist als `#prüfen` markiert.
+2026-08-26 20:36:45 [integrate] claude beendet rc=0
+/Users/tyrone/Map/scripts/session-integrate.sh: line 102: 95836 Terminated: 15          ( sleep "$TIMEOUT_SEC"; if kill -0 "$CPID" 2> /dev/null; then
+    kill -9 "$CPID" 2> /dev/null; log "ABBRUCH Timeout ${TIMEOUT_SEC}s";
+fi )
