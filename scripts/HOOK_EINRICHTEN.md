@@ -128,17 +128,25 @@ vom 18.06. nie angewendet hatte.
 ### Eine Entscheidung, die du prüfen solltest
 
 Commit `c7ecaa2` „Mc: wiki sync 2026-08-21 22:21" hat per `git add -A`
-`CLAUDE.md`, `README.md`, `SETUP_KOLLEGE.md`, `SETUP_MC.md` und
-`Trading FRVP Graph.md` gelöscht — generische Auto-Sync-Nachricht, kein Ersatz,
-nie zurückgeholt. Ich habe die fünf wiederhergestellt (Commit
-„Vier Root-Dokumente wiederhergestellt"), weil das Muster nach versehentlichem
-Mitreißen aussieht, nicht nach Aufräumen.
+`CLAUDE.md`, `README.md`, `SETUP_KOLLEGE.md` und `SETUP_MC.md` gelöscht —
+generische Auto-Sync-Nachricht, kein Ersatz, nie zurückgeholt. Im selben
+Commit wurde `Unbenannt.md` angelegt, Obsidians „Untitled"-Notiz: der
+Fingerabdruck eines versehentlich mitgerissenen Arbeitsbaums.
 
-War die Löschung doch gewollt, mach sie rückgängig:
+Diese vier sind wiederhergestellt (Commit `2c274ce`). Rückgängig machen:
 
 ```bash
-git revert <sha des Wiederherstellungs-Commits>
+git revert 2c274ce
 ```
+
+**Bewusst nicht wiederhergestellt:** die 15 `trading/`-Strategiedateien aus
+demselben Commit (Bollinger-Reversion / Donchian-Breakout / EMA-Trend /
+RSI-Reversal je in H1/M15/M30 plus `Strategie-Labor.md`). Eine systematisch
+benannte Familie, die zusammen verschwindet, ist Aufräumen.
+
+`Trading FRVP Graph.md` wurde zunächst mit wiederhergestellt, dann in
+`aef8e41` wieder entfernt: gelöscht hatte sie `920176a` am selben Abend wie
+die Trading-Bereinigung, sie gehörte also dazu.
 
 ### Sicherheitsnetz
 
