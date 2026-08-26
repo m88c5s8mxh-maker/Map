@@ -19,3 +19,9 @@ Naming-Inkonsistenzen, hardcoded Values, Komponenten-Dokumentation
 
 ## Quellen
 > [Source: raw/skills/design-system.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Design & UX]] - `belongs_to` [EXTRACTED]
+- [[Design Tokens]] - `manages` [EXTRACTED]
+- [[Figma]] - `uses_connector` [EXTRACTED]
+- [[design-handoff]] - `references` [INFERRED]

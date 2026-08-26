@@ -19,3 +19,8 @@ SEO-Gesundheit prüfen, Keyword-Chancen, Content-Gaps die Konkurrenten besitzen
 
 ## Quellen
 > [Source: raw/skills/seo-audit.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Content Gap Analysis]] - `rationale_for` [EXTRACTED]
+- [[Keyword Research]] - `implements` [EXTRACTED]
+- [[SEO Audit Types]] - `defines` [EXTRACTED]

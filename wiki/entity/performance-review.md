@@ -19,3 +19,10 @@ Review Season, Promotion Cases, Rating-Distributions, vages Feedback konkretisie
 
 ## Quellen
 > [Source: raw/skills/performance-review.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[HR  People Operations Domain]] - `belongs_to_domain` [INFERRED]
+- [[HRIS Connector]] - `uses_when_available` [EXTRACTED]
+- [[Performance Calibration]] - `includes` [EXTRACTED]
+- [[Self-Assessment Template]] - `produces` [EXTRACTED]
+- [[org-planning]] - `informs` [INFERRED]

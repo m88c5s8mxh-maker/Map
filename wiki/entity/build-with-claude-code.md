@@ -19,3 +19,12 @@ Calendly, Mailchimp, Shopify, Intercom selbst bauen mit Supabase, Stripe, Resend
 
 ## Quellen
 > [Source: raw/skills/build-with-claude-code.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Next.js]] - `uses_tool` [EXTRACTED]
+- [[Resend]] - `uses_tool` [EXTRACTED]
+- [[SaaS Replacement with Claude Code]] - `implements` [EXTRACTED]
+- [[Stripe]] - `uses_tool` [EXTRACTED]
+- [[Supabase]] - `uses_tool` [EXTRACTED]
+- [[Vercel]] - `uses_tool` [EXTRACTED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

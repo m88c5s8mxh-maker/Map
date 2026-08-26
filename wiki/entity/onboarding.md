@@ -19,3 +19,10 @@ Pre-Start Tasks, Day 1, Week 1, 30/60/90-Tage-Ziele
 
 ## Quellen
 > [Source: raw/skills/onboarding.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[306090-Day Onboarding Plan]] - `produces` [EXTRACTED]
+- [[HR  People Operations Domain]] - `belongs_to_domain` [INFERRED]
+- [[HRIS Connector]] - `uses_when_available` [EXTRACTED]
+- [[Onboarding Buddy]] - `recommends` [EXTRACTED]
+- [[recruiting-pipeline]] - `feeds_into` [INFERRED]

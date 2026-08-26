@@ -19,3 +19,10 @@ Natural-Language-Fragen in gezielte Suchen aufteilen, Source-spezifische Syntax
 
 ## Quellen
 > [Source: raw/skills/search-strategy.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Parallel Search Execution]] - `implements` [EXTRACTED]
+- [[Query Decomposition]] - `implements` [EXTRACTED]
+- [[Result Ranking and Deduplication]] - `implements` [EXTRACTED]
+- [[search]] - `depends_on` [INFERRED]
+- [[source-management]] - `related_to` [INFERRED]

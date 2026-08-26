@@ -19,3 +19,10 @@ Generative Art, Flow Fields, Particle Systems, interaktive Kunstwerke
 
 ## Quellen
 > [Source: raw/skills/algorithmic-art.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Anthropic Brand Identity]] - `uses_branding` [EXTRACTED]
+- [[Generative Art]] - `implements` [EXTRACTED]
+- [[canvas-design]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]
+- [[p5.js]] - `uses_tool` [EXTRACTED]

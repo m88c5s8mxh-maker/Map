@@ -19,3 +19,10 @@ Datenbankschemas entdecken, Datenkontext-Skill erstellen, iterativ verbessern
 
 ## Quellen
 > [Source: raw/skills/data-context-extractor.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[BigQuery]] - `supports` [EXTRACTED]
+- [[Data & Analytics]] - `belongs_to` [EXTRACTED]
+- [[Data Warehouse]] - `targets` [EXTRACTED]
+- [[Schema Discovery]] - `implements` [EXTRACTED]
+- [[Snowflake]] - `supports` [EXTRACTED]

@@ -19,3 +19,8 @@ Produkt-Launch, Lead-Gen, Awareness-Kampagne planen
 
 ## Quellen
 > [Source: raw/skills/campaign-plan.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Campaign Brief]] - `produces` [EXTRACTED]
+- [[brand-review]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

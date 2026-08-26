@@ -19,3 +19,10 @@ Prozess formalisieren, RACI für Ownership, SOP für Übergabe oder Audit
 
 ## Quellen
 > [Source: raw/skills/process-doc.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Knowledge Base Connector]] - `uses_when_available` [EXTRACTED]
+- [[RACI Matrix]] - `produces` [EXTRACTED]
+- [[Standard Operating Procedure (SOP)]] - `produces` [EXTRACTED]
+- [[process-optimization]] - `semantically_similar_to` [INFERRED]
+- [[runbook]] - `semantically_similar_to` [INFERRED]

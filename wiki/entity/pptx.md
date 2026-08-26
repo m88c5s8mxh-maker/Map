@@ -19,3 +19,7 @@ Slide Decks, Pitch Decks, Präsentationen, Templates, Speaker Notes
 
 ## Quellen
 > [Source: raw/skills/pptx.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[markitdown]] - `uses` [EXTRACTED]
+- [[pptxgenjs]] - `uses` [EXTRACTED]

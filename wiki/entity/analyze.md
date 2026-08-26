@@ -19,3 +19,8 @@ Einzelne Metrik nachschlagen, Trend-Ursachen untersuchen, Segmente vergleichen, 
 
 ## Quellen
 > [Source: raw/skills/analyze.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Data Analysis]] - `implements` [EXTRACTED]
+- [[build-dashboard]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

@@ -19,3 +19,9 @@ Text/Tabellen extrahieren, PDFs mergen/splitten, Formulare ausfüllen, OCR
 
 ## Quellen
 > [Source: raw/skills/pdf.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[pdfplumber]] - `uses` [EXTRACTED]
+- [[pypdf]] - `uses` [EXTRACTED]
+- [[pytesseract (OCR)]] - `uses_for_ocr` [EXTRACTED]
+- [[reportlab]] - `uses` [EXTRACTED]

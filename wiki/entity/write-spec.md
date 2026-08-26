@@ -19,3 +19,10 @@ Vage Idee → strukturiertes Dokument, Goals/Non-Goals, Erfolgsmetriken, Akzepta
 
 ## Quellen
 > [Source: raw/skills/write-spec.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Acceptance Criteria]] - `defines` [EXTRACTED]
+- [[MoSCoW Framework]] - `applies` [EXTRACTED]
+- [[Product Requirements Document (PRD)]] - `produces` [EXTRACTED]
+- [[User Story]] - `includes` [EXTRACTED]
+- [[user-research]] - `semantically_similar_to` [INFERRED]

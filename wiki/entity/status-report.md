@@ -19,3 +19,8 @@ Leadership-Update, Projekt-Gesundheit mit Ampelstatus, Risiken und Entscheidunge
 
 ## Quellen
 > [Source: raw/skills/status-report.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[GreenYellowRed Status]] - `uses` [EXTRACTED]
+- [[KPI Reporting]] - `implements` [EXTRACTED]
+- [[stakeholder-update]] - `semantically_similar_to` [INFERRED]

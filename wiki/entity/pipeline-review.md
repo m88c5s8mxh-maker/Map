@@ -19,3 +19,11 @@ Wöchentlicher Pipeline-Review, stockende Deals, schlechte Close-Dates, single-t
 
 ## Quellen
 > [Source: raw/skills/pipeline-review.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[CRM Connector]] - `uses_when_available` [EXTRACTED]
+- [[CRM Hygiene]] - `audits_for` [EXTRACTED]
+- [[Deal Prioritization Framework]] - `implements` [EXTRACTED]
+- [[Sales Operations Domain]] - `belongs_to_domain` [INFERRED]
+- [[Sales Pipeline Health Score]] - `produces` [EXTRACTED]
+- [[prospect]] - `semantically_similar_to` [INFERRED]

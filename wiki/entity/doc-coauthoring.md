@@ -19,3 +19,9 @@ Docs, Proposals, Tech Specs, Decision Docs — Context Gathering, Refinement, Re
 
 ## Quellen
 > [Source: raw/skills/doc-coauthoring.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Document Co-Authoring]] - `implements` [EXTRACTED]
+- [[Document Creation Workflow]] - `uses` [EXTRACTED]
+- [[Reader Testing]] - `implements` [EXTRACTED]
+- [[documentation]] - `semantically_similar_to` [INFERRED]

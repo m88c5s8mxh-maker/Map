@@ -19,3 +19,6 @@ Word, Excel, PowerPoint, PDF, HTML, Scripts — nach Dateityp organisiert
 
 ## Quellen
 > [Source: raw/skills/template-saver.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Blueprint Template Library]] - `rationale_for` [EXTRACTED]

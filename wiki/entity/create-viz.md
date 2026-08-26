@@ -19,3 +19,10 @@ Query-Ergebnisse in Charts, richtigen Chart-Typ wählen, interaktive Plots mit H
 
 ## Quellen
 > [Source: raw/skills/create-viz.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Data & Analytics]] - `belongs_to` [EXTRACTED]
+- [[Data Visualization]] - `implements` [EXTRACTED]
+- [[data-visualization]] - `semantically_similar_to` [EXTRACTED]
+- [[matplotlib]] - `uses` [EXTRACTED]
+- [[plotly]] - `uses` [EXTRACTED]

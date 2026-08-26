@@ -19,3 +19,12 @@ Layout, Design Tokens, Component Props, Interaction States, responsive Breakpoin
 
 ## Quellen
 > [Source: raw/skills/design-handoff.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Design & UX]] - `belongs_to` [EXTRACTED]
+- [[Design Tokens]] - `uses` [EXTRACTED]
+- [[Developer Handoff]] - `produces` [EXTRACTED]
+- [[Engineering]] - `bridges_to` [INFERRED]
+- [[Figma]] - `uses_connector` [EXTRACTED]
+- [[design-critique]] - `precedes` [INFERRED]
+- [[design-system]] - `references` [INFERRED]

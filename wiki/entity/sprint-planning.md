@@ -19,3 +19,8 @@ Sprint-Kick-off, Backlog gegen Kapazität sizingen, P0 vs Stretch, Carryover
 
 ## Quellen
 > [Source: raw/skills/sprint-planning.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Backlog Prioritization]] - `implements` [EXTRACTED]
+- [[Sprint Capacity Planning]] - `implements` [EXTRACTED]
+- [[standup]] - `semantically_similar_to` [INFERRED]

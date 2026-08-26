@@ -19,3 +19,8 @@ Claude fühlt sich dümmer an, gibt oberflächliche Antworten, nimmt Abkürzunge
 
 ## Quellen
 > [Source: raw/skills/claude-max-effort.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Claude Usage Limits]] - `addresses` [EXTRACTED]
+- [[claude-efficiency]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

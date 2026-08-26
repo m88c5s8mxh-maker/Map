@@ -19,3 +19,13 @@ Produktstrategie, Sales Battle Cards, Board-Materialien, Differenzierungsstrateg
 
 ## Quellen
 > [Source: raw/skills/competitive-brief.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Competitive Analysis]] - `implements` [EXTRACTED]
+- [[Feature Comparison Matrix]] - `implements` [EXTRACTED]
+- [[Market Trend Identification]] - `implements` [EXTRACTED]
+- [[Positioning Analysis]] - `implements` [EXTRACTED]
+- [[Product Strategy]] - `belongs_to` [EXTRACTED]
+- [[Sales Enablement]] - `belongs_to` [EXTRACTED]
+- [[WinLoss Analysis]] - `implements` [EXTRACTED]
+- [[competitive-intelligence]] - `semantically_similar_to` [INFERRED]

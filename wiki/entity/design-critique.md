@@ -19,3 +19,9 @@ Mockup reviewen, von Exploration bis Final Polish
 
 ## Quellen
 > [Source: raw/skills/design-critique.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Design & UX]] - `belongs_to` [EXTRACTED]
+- [[Figma]] - `uses_connector` [EXTRACTED]
+- [[Visual Hierarchy]] - `evaluates` [EXTRACTED]
+- [[design-handoff]] - `precedes` [INFERRED]

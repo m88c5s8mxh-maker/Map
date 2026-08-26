@@ -19,3 +19,7 @@ Farbkontrast, Keyboard-Navigation, Touch-Target-Größe, Screen-Reader-Verhalten
 
 ## Quellen
 > [Source: raw/skills/accessibility-review.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[WCAG 2.1 AA]] - `implements_standard` [EXTRACTED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

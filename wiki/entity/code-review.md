@@ -19,3 +19,7 @@ N+1-Queries, Injection-Risiken, fehlende Edge Cases, Error Handling prüfen
 
 ## Quellen
 > [Source: raw/skills/code-review.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[architecture]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

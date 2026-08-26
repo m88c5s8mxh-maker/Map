@@ -19,3 +19,10 @@ Channel-spezifisches Formatting, SEO-optimierter Copy, Headlines, CTAs
 
 ## Quellen
 > [Source: raw/skills/content-creation.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Call to Action (CTA)]] - `includes` [EXTRACTED]
+- [[Marketing]] - `belongs_to` [EXTRACTED]
+- [[SEO]] - `includes` [EXTRACTED]
+- [[compose-outreach]] - `semantically_similar_to` [INFERRED]
+- [[create-an-asset]] - `semantically_similar_to` [INFERRED]

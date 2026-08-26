@@ -19,3 +19,8 @@ Claude-Limits erreicht, Tokens sparen, Chat-Hygiene, Batching, 5-Stunden-Rolling
 
 ## Quellen
 > [Source: raw/skills/claude-efficiency.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Claude Usage Limits]] - `addresses` [EXTRACTED]
+- [[claude-max-effort]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

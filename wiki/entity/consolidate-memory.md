@@ -19,3 +19,6 @@ Memory aufräumen, veraltete Einträge entfernen, Duplikate mergen
 
 ## Quellen
 > [Source: raw/skills/consolidate-memory.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Memory Consolidation]] - `implements` [EXTRACTED]

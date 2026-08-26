@@ -19,3 +19,8 @@ Ersteinrichtung: Rolle, Plugin, ersten Skill testen, Connectors
 
 ## Quellen
 > [Source: raw/skills/setup-cowork.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Connector Registry]] - `uses` [EXTRACTED]
+- [[Cowork Onboarding]] - `implements` [EXTRACTED]
+- [[Plugin Marketplace]] - `uses` [EXTRACTED]

@@ -19,3 +19,7 @@ Discovery-Call, Demo, Verhandlung nachbereiten, CRM-Aktivität loggen
 
 ## Quellen
 > [Source: raw/skills/call-summary.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[call-prep]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

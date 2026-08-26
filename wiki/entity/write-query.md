@@ -19,3 +19,8 @@ Natural-Language → SQL, Multi-CTE mit Joins, große partitionierte Tabellen op
 
 ## Quellen
 > [Source: raw/skills/write-query.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Common Table Expression (CTE)]] - `uses_pattern` [EXTRACTED]
+- [[SQL Query]] - `produces` [EXTRACTED]
+- [[validate-data]] - `semantically_similar_to` [INFERRED]

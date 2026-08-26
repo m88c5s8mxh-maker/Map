@@ -19,3 +19,12 @@ Vollständige Wettbewerber-Analyse mit klickbaren Competitor-Cards und Vergleich
 
 ## Quellen
 > [Source: raw/skills/competitive-intelligence.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Battlecard]] - `produces` [EXTRACTED]
+- [[CRM]] - `uses_connector` [EXTRACTED]
+- [[Competitive Analysis]] - `implements` [EXTRACTED]
+- [[Competitive Research Workflow]] - `uses` [EXTRACTED]
+- [[Sales Enablement]] - `belongs_to` [EXTRACTED]
+- [[competitive-brief]] - `semantically_similar_to` [INFERRED]
+- [[create-an-asset]] - `related_to` [EXTRACTED]

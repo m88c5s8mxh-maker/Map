@@ -19,3 +19,9 @@ Interview-Notizen, Umfrageantworten, Support-Tickets in Themen und Roadmap-Empfe
 
 ## Quellen
 > [Source: raw/skills/synthesize-research.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Affinity Mapping]] - `implements` [EXTRACTED]
+- [[Persona Development]] - `produces` [EXTRACTED]
+- [[Thematic Analysis (Research)]] - `implements` [EXTRACTED]
+- [[statistical-analysis]] - `complements` [INFERRED]

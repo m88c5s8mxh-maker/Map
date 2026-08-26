@@ -19,3 +19,7 @@ Daily Standup, Commits/PRs/Tickets zusammenfassen, Yesterday/Today/Blockers
 
 ## Quellen
 > [Source: raw/skills/standup.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Standup Format (YesterdayTodayBlockers)]] - `implements` [EXTRACTED]
+- [[sprint-planning]] - `semantically_similar_to` [INFERRED]

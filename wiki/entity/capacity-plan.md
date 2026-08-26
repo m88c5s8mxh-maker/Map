@@ -19,3 +19,7 @@ Quarterly Planning, Überallokation analysieren, Hire-or-Deprioritize-Entscheidu
 
 ## Quellen
 > [Source: raw/skills/capacity-plan.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Resource Capacity Planning]] - `implements` [EXTRACTED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

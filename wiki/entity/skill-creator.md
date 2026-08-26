@@ -19,3 +19,8 @@ Skill von Grund auf schreiben, optimieren, Evals laufen lassen, Beschreibung fü
 
 ## Quellen
 > [Source: raw/skills/skill-creator.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Skill Description Optimization]] - `implements` [EXTRACTED]
+- [[Skill Evaluation Loop]] - `rationale_for` [EXTRACTED]
+- [[Skill Triggering Mechanism]] - `optimizes` [EXTRACTED]

@@ -19,3 +19,9 @@ State Management, Routing, shadcn/ui-Komponenten — für komplexe Multi-Compone
 
 ## Quellen
 > [Source: raw/skills/web-artifacts-builder.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[React]] - `uses` [EXTRACTED]
+- [[Tailwind CSS]] - `uses` [EXTRACTED]
+- [[shadcnui]] - `uses` [EXTRACTED]
+- [[ux-design]] - `semantically_similar_to` [INFERRED]

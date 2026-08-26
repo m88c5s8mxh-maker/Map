@@ -19,3 +19,8 @@ Testing Pyramid, Coverage-Balance, Test-Architektur, Unit/Integration/E2E
 
 ## Quellen
 > [Source: raw/skills/testing-strategy.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Test Plan]] - `produces` [EXTRACTED]
+- [[Testing Pyramid]] - `defines` [EXTRACTED]
+- [[validate-data]] - `semantically_similar_to` [INFERRED]

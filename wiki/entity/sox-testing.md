@@ -19,3 +19,9 @@ SOX 404 Testing, Revenue/P2P/ITGC/Close-Samples, Kontrollmangel klassifizieren
 
 ## Quellen
 > [Source: raw/skills/sox-testing.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Control Deficiency Classification]] - `classifies` [EXTRACTED]
+- [[SOX Internal Controls]] - `documents` [EXTRACTED]
+- [[SOX Sample Selection]] - `implements` [EXTRACTED]
+- [[statistical-analysis]] - `semantically_similar_to` [INFERRED]

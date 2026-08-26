@@ -19,3 +19,8 @@ Technologiewahl (Kafka vs SQS), Designentscheidung dokumentieren, System-Design-
 
 ## Quellen
 > [Source: raw/skills/architecture.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Architecture Decision Record]] - `produces` [EXTRACTED]
+- [[code-review]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

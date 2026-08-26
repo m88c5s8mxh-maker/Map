@@ -19,3 +19,8 @@ Research Plan, Interview Guide, Usability Test, Survey Design
 
 ## Quellen
 > [Source: raw/skills/user-research.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Affinity Mapping]] - `uses_framework` [EXTRACTED]
+- [[User Interview]] - `uses_method` [EXTRACTED]
+- [[write-spec]] - `semantically_similar_to` [INFERRED]

@@ -19,3 +19,9 @@ Entwurf vor Veröffentlichung checken, Terminologie-Konsistenz, rechtliche Flags
 
 ## Quellen
 > [Source: raw/skills/brand-review.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Brand Voice]] - `evaluates` [EXTRACTED]
+- [[brand-guidelines]] - `rationale_for` [INFERRED]
+- [[campaign-plan]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

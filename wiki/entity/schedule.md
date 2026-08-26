@@ -19,3 +19,6 @@ Automatisierte Aufgaben, On-Demand- oder Interval-Ausführung
 
 ## Quellen
 > [Source: raw/skills/schedule.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Scheduled Task  Cron Job]] - `creates` [EXTRACTED]

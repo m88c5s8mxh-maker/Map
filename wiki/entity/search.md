@@ -19,3 +19,9 @@ Dokument finden, Entscheidung nachschlagen, Diskussion aus Chat/Mail/Cloud suche
 
 ## Quellen
 > [Source: raw/skills/search.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[MCP Connected Sources]] - `uses` [EXTRACTED]
+- [[Parallel Search Execution]] - `implements` [EXTRACTED]
+- [[search-strategy]] - `depends_on` [INFERRED]
+- [[source-management]] - `depends_on` [INFERRED]

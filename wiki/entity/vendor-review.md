@@ -19,3 +19,7 @@ Neues Vendor-Proposal, Vertragsverlängerung, Vendor-Vergleich, TCO, Verhandlung
 
 ## Quellen
 > [Source: raw/skills/vendor-review.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Total Cost of Ownership (TCO)]] - `calculates` [EXTRACTED]
+- [[Vendor Risk Assessment]] - `performs` [EXTRACTED]
