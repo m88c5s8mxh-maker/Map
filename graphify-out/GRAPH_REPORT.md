@@ -1,11 +1,11 @@
 # Graph Report - .  (2026-08-26)
 
 ## Corpus Check
-- 5 files · ~283,433 words
+- 5 files · ~301,013 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 633 nodes · 737 edges · 65 communities detected
+- 634 nodes · 741 edges · 65 communities detected
 - Extraction: 85% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 113 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
@@ -82,11 +82,11 @@
 3. `LLM Output Truncation Research — root causes, remediation, empirical findings` - 12 edges
 4. `processTasks()` - 11 edges
 5. `Taste Skill README â€“ Collection Overview` - 10 edges
-6. `output-skill — Stops AI from being lazy, prevents placeholder comments and skipped code` - 9 edges
-7. `design-taste-frontend SKILL (High-Agency Frontend)` - 9 edges
-8. `metrics-review` - 9 edges
-9. `roadmap-update` - 9 edges
-10. `taste-skill SKILL.md — High-Agency Frontend Skill` - 9 edges
+6. `apiPost()` - 9 edges
+7. `output-skill — Stops AI from being lazy, prevents placeholder comments and skipped code` - 9 edges
+8. `design-taste-frontend SKILL (High-Agency Frontend)` - 9 edges
+9. `metrics-review` - 9 edges
+10. `roadmap-update` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Swiss Typographic Design` --semantically_similar_to--> `Tactical Telemetry / CRT Terminal Archetype`  [AMBIGUOUS] [semantically similar]
@@ -128,7 +128,7 @@ Nodes (31): Attribution Modeling, Customer Acquisition Cost (CAC), Resource Capa
 
 ### Community 6 - "Community 6"
 Cohesion: 0.16
-Nodes (23): apiPost(), apiPut(), buildBrainContext(), chainNextAgent(), extractKeywords(), generateWebsite(), getCategory(), inlineAssets() (+15 more)
+Nodes (25): apiGet(), apiPost(), apiPut(), apiRequest(), buildBrainContext(), chainNextAgent(), extractKeywords(), generateWebsite() (+17 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.07
@@ -240,19 +240,19 @@ Nodes (4): Glossary / Decoder Ring, CLAUDE.md Hot Cache, Memory Management Skill
 
 ### Community 34 - "Community 34"
 Cohesion: 0.5
-Nodes (4): Lead Enrichment, Outreach Sequence, sequence-load, Apollo MCP
+Nodes (4): Content Gap Analysis, Keyword Research, SEO Audit Types, seo-audit
 
 ### Community 35 - "Community 35"
 Cohesion: 0.5
-Nodes (4): Skill Description Optimization, Skill Evaluation Loop, Skill Triggering Mechanism, skill-creator
+Nodes (4): Lead Enrichment, Outreach Sequence, sequence-load, Apollo MCP
 
 ### Community 36 - "Community 36"
 Cohesion: 0.5
-Nodes (4): Content Gap Analysis, Keyword Research, SEO Audit Types, seo-audit
+Nodes (4): Connector Registry, Cowork Onboarding, Plugin Marketplace, setup-cowork
 
 ### Community 37 - "Community 37"
 Cohesion: 0.5
-Nodes (4): Connector Registry, Cowork Onboarding, Plugin Marketplace, setup-cowork
+Nodes (4): Skill Description Optimization, Skill Evaluation Loop, Skill Triggering Mechanism, skill-creator
 
 ### Community 38 - "Community 38"
 Cohesion: 0.5
@@ -284,15 +284,15 @@ Nodes (3): pptx, markitdown, pptxgenjs
 
 ### Community 45 - "Community 45"
 Cohesion: 0.67
-Nodes (3): GIF Optimization for Slack, slack-gif-creator, PIL / Pillow
+Nodes (3): SQL Dialect Compatibility, Window Functions, sql-queries
 
 ### Community 46 - "Community 46"
 Cohesion: 0.67
-Nodes (3): SQL Dialect Compatibility, Window Functions, sql-queries
+Nodes (3): Framer Motion Animations, React Component Architecture, design-taste-frontend
 
 ### Community 47 - "Community 47"
 Cohesion: 0.67
-Nodes (3): Framer Motion Animations, React Component Architecture, design-taste-frontend
+Nodes (3): GIF Optimization for Slack, slack-gif-creator, PIL / Pillow
 
 ### Community 48 - "Community 48"
 Cohesion: 0.67
@@ -408,7 +408,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `Swiss Typographic Design` and `Tactical Telemetry / CRT Terminal Archetype`?**
   _Edge tagged AMBIGUOUS (relation: semantically_similar_to) - confidence is low._
 - **Why does `content-creation` connect `Community 4` to `Community 18`?**
-  _High betweenness centrality (0.147) - this node is a cross-community bridge._
+  _High betweenness centrality (0.146) - this node is a cross-community bridge._
 - **What connects `update_map.py — Wird von der GitHub Action aufgerufen. Generiert graphify-out/in`, `Design Advisor (design)`, `Inline Image Typography (photos embedded in headlines)` to the rest of the system?**
   _307 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
