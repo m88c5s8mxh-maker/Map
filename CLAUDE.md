@@ -6,12 +6,12 @@ Dieser Repo hat einen Wissens-Graph unter `graphify-out/`.
 **Regeln:**
 - Vor Architektur- oder Inhaltsfragen: `graphify-out/index.md` lesen
 - Community-Übersichten: `graphify-out/Community_*.md`
-- Nach Änderungen an Dateien in `raw/` oder `wiki/`: Map neu bauen
+- Nach Änderungen an Dateien in `raw/` oder `wiki/`: passiert automatisch
 
-**Map neu bauen (lokal):**
-```bash
-graphify . --update --no-viz
-```
+**Map neu bauen:** kein manueller Befehl nötig — der `post-commit`-Hook baut den
+Graph bei jedem Commit neu (`graphify hook status` zeigt ihn an). Ein
+`graphify . --update` existiert nicht; `graphify --help` listet die echten
+Befehle (`query`, `path`, `explain`, `hook`, …).
 
 ## Obsidian Wiki
 Das Wiki liegt unter `wiki/`. Rohdaten unter `raw/`.
@@ -57,4 +57,4 @@ Schwellen: Tier 1 ab 15, Tier 2 ab 45.
 ## Context Navigation
 1. Immer zuerst `graphify-out/index.md` lesen
 2. Rohdateien nur lesen wenn explizit gefragt
-3. Nach Code-Änderungen Map aktualisieren: `graphify . --update --no-viz`
+3. Graph-Neubau läuft automatisch per post-commit-Hook
