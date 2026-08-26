@@ -18,3 +18,4 @@ Run 'graphify --help' for usage.
  2 files changed, 14 insertions(+), 1 deletion(-)
 2026-08-26 15:51:03 [integrate] NO_PUSH gesetzt - nur lokal committed
 2026-08-26 15:51:03 [integrate] fertig 3fe1e528-test
+2026-08-26 15:55:19 [sync] ABBRUCH: detached HEAD. Bitte 'git checkout <branch>' und dann erneut.

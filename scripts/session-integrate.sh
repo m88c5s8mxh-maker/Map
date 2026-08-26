@@ -100,27 +100,20 @@ kill "$WPID" 2>/dev/null
 
 log "claude beendet rc=$RC"
 
-# --- Graph nachziehen (kein LLM, rein lokal) ---
-if command -v graphify >/dev/null 2>&1; then
-  if graphify . --update --no-viz >> "$LOG" 2>&1; then
-    log "graph aktualisiert"
-  else
-    log "graph-update fehlgeschlagen"
-  fi
-fi
+# Den Graph baut der graphify post-commit-Hook selbst neu ("graphify hook status"),
+# deshalb hier kein eigener Aufruf. Ein "graphify . --update" gibt es gar nicht.
 
-# --- In GitHub sichern (mit NO_PUSH=1 nur lokal committen, fuer Testlaeufe) ---
-git add -A >> "$LOG" 2>&1
-if git diff --cached --quiet; then
-  log "keine Aenderungen zu committen"
-else
-  git commit -m "Session: $(basename "$RAW" .md)" >> "$LOG" 2>&1
-  if [ -n "${NO_PUSH:-}" ]; then
-    log "NO_PUSH gesetzt - nur lokal committed"
+# --- In GitHub sichern; die Guards stecken in map-git-sync.sh ---
+if [ -n "${NO_PUSH:-}" ]; then
+  git add -A >> "$LOG" 2>&1
+  if git diff --cached --quiet; then
+    log "keine Aenderungen zu committen"
   else
-    git pull --rebase --autostash >> "$LOG" 2>&1 || log "pull --rebase fehlgeschlagen"
-    if git push >> "$LOG" 2>&1; then log "gepusht"; else log "push fehlgeschlagen"; fi
+    git commit -m "Session: $(basename "$RAW" .md)" >> "$LOG" 2>&1
+    log "NO_PUSH gesetzt - nur lokal committed"
   fi
+else
+  "$MAP/scripts/map-git-sync.sh" "Session: $(basename "$RAW" .md)"
 fi
 
 log "fertig $SID"
