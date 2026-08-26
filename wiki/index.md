@@ -112,6 +112,7 @@
 | [[morio-crm]] | Das laufende CRM auf `intra.moriosolutions.de` — Stack, Server, echtes Quellcode-Repo (`Beckomate88/MorioCRM`, Branch `redesign-ui`), Deploy-Weg, nginx-Eigenheiten, Backup |
 | [[server-quellcode-drift]] | Warum der Quellcode auf einem Server nicht beweist, was dort läuft — Schadensfall, Prüfroutine, sechs verwandte Deploy-Fallen |
 | [[vorschau-webseiten]] | Preview-Webseiten-Reiter unter Projekte: Kunden-Freigabeworkflow, nativ im CRM, live · offene Punkte |
+| [[vertrieb-niedrigpreis-abschluss]] | Kaltakquise-Mechanik bei 1.000–1.500 € Projektpreis: Abschluss im ersten Gespräch, Preis früh als Filter, Agentur-Vergleichszahl als Anker, Inhalte-Frage als Margenschutz |
 
 ---
 
@@ -124,3 +125,4 @@
 | Cinematic | `/cinematic-web` + `/kling-prompts` | Hochwertige Marken, Premiumsegment | 6.000–12.000 € |
 
 → Details: `raw/skills/web-factory/SKILL.md` und `raw/skills/cinematic-web/SKILL.md`
+→ Verkaufsmechanik zur Standard-Stufe: [[vertrieb-niedrigpreis-abschluss]] (⚠️ nennt 890–1.890 € — Abgleich offen)

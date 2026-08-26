@@ -20,3 +20,5 @@ Run 'graphify --help' for usage.
 2026-08-26 15:51:03 [integrate] fertig 3fe1e528-test
 2026-08-26 15:55:19 [sync] ABBRUCH: detached HEAD. Bitte 'git checkout <branch>' und dann erneut.
 2026-08-26 15:55:29 [sync] ABBRUCH: Repo steht mitten in Rebase/Merge. Bitte manuell aufloesen.
+2026-08-26 20:34:44 T2 score=55 Vertriebsskript für Webseitenverkauf schreiben
+2026-08-26 20:34:44 [integrate] start 708920ec-09ac-4b4d-b67a-8bca3073622b -> raw/sessions/2026-08-26-vertriebsskript-für-webseitenverkauf-schreiben.md
