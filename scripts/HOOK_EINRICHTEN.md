@@ -100,27 +100,51 @@ und tun nichts mehr von selbst.
 
 ---
 
-## Offener Punkt: Branch-Divergenz
+## 3. Push nachholen (der Sync ist zusammengeführt, aber noch nicht draußen)
 
-Dieser Vault liegt aktuell auf `rescue/vault-2026-08-26`, nicht auf `main`.
-
-| Branch | Stand |
-|--------|-------|
-| `rescue/vault-2026-08-26` | alle lokalen Commits inkl. 18.06.–26.08. und der Session-Erfassung |
-| `main` | eingefroren seit 10.06.2026 |
-| `origin/main` | 10+ Commits des Kollegen, u.a. Skill-Duplikat-Konsolidierung |
-
-Das Zusammenführen ist eine inhaltliche Entscheidung über hunderte Wiki-Seiten
-und gehört nicht in ein automatisches Skript. Vorschlag für den nächsten
-Schritt, wenn du es angehen willst:
+Die Divergenz ist aufgelöst. `main` steht auf dem zusammengeführten Stand,
+**23 Commits vor `origin/main` und 0 dahinter** — der Push ist ein reiner
+Fast-Forward, kein `force`, keine History-Umschreibung:
 
 ```bash
-cd ~/Map
-git checkout rescue/vault-2026-08-26
-git pull --no-rebase origin main    # Merge, kein Rebase - schreibt keine History um
-# Konflikte auflösen, dann:
-git checkout main && git merge rescue/vault-2026-08-26 && git push
+cd ~/Map && git push origin main
 ```
 
-Solange die Divergenz besteht, protokolliert `map-git-sync.sh` bei jedem
-Versuch „PUSH FEHLGESCHLAGEN" statt still zu scheitern.
+Danach prüfen:
+
+```bash
+git status -sb        # erwartet: ## main...origin/main (ohne ahead/behind)
+```
+
+### Was in dem Merge steckt
+
+Übernommen vom Kollegen:
+- Skill-Duplikat-Konsolidierung (109× `wiki/X.md` → `wiki/entity/X.md`) — intakt
+- `trading/` (18 Dateien GOLD ROB), `raw/skills/webdesign-pro/`, Mojibake-Fixes
+
+Nachgeholt: vier `main`-Commits vom 19.05. und 10.06., die der hängende Rebase
+vom 18.06. nie angewendet hatte.
+
+### Eine Entscheidung, die du prüfen solltest
+
+Commit `c7ecaa2` „Mc: wiki sync 2026-08-21 22:21" hat per `git add -A`
+`CLAUDE.md`, `README.md`, `SETUP_KOLLEGE.md`, `SETUP_MC.md` und
+`Trading FRVP Graph.md` gelöscht — generische Auto-Sync-Nachricht, kein Ersatz,
+nie zurückgeholt. Ich habe die fünf wiederhergestellt (Commit
+„Vier Root-Dokumente wiederhergestellt"), weil das Muster nach versehentlichem
+Mitreißen aussieht, nicht nach Aufräumen.
+
+War die Löschung doch gewollt, mach sie rückgängig:
+
+```bash
+git revert <sha des Wiederherstellungs-Commits>
+```
+
+### Sicherheitsnetz
+
+Der Branch `rescue/vault-2026-08-26` zeigt weiter auf denselben Stand. Wenn nach
+dem Push alles passt, kann er weg:
+
+```bash
+git branch -d rescue/vault-2026-08-26
+```
