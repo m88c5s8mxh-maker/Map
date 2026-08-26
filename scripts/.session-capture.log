@@ -1,3 +1,12 @@
 2026-08-26 15:37:57 T1 score=37 Theke 1 Referenzlink auf Moriosolutions konfigurieren
 2026-08-26 15:37:58 T0 score=7 Übernehme Einser-Markierungen in Getränkekarte
 2026-08-26 15:46:07 [integrate] start 3fe1e528-test -> raw/sessions/2026-08-20-preview-reiter-in-crm-intranet-einbauen.md
+Drei Seiten angelegt, keine bestehende Seite zum Thema vorhanden (739 Seiten geprüft — nur skill-bezogene CRM-Seiten wie `CRM.md`, `Deploy Checklist.md`, `Rollback Plan.md`, die ich verlinkt statt dupliziert habe).
+
+Zwei bewusste Auslassungen: das Server-Root-Passwort und das Startpasswort der Zugänge habe ich **nicht** ins Wiki geschrieben — das Repo wird nach GitHub gepusht. Beide sind als Risiko bzw. Mechanismus vermerkt, ohne die Werte.
+
+OK: neu angelegt `wiki/entity/morio-crm.md`, `wiki/concept/server-quellcode-drift.md`, `wiki/entity/vorschau-webseiten.md`; aktualisiert `wiki/index.md`, `wiki/log.md`
+2026-08-26 15:51:01 [integrate] claude beendet rc=0
+error: unknown command '.'
+Run 'graphify --help' for usage.
+2026-08-26 15:51:02 [integrate] graph-update fehlgeschlagen
