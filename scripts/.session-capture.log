@@ -19,3 +19,4 @@ Run 'graphify --help' for usage.
 2026-08-26 15:51:03 [integrate] NO_PUSH gesetzt - nur lokal committed
 2026-08-26 15:51:03 [integrate] fertig 3fe1e528-test
 2026-08-26 15:55:19 [sync] ABBRUCH: detached HEAD. Bitte 'git checkout <branch>' und dann erneut.
+2026-08-26 15:55:29 [sync] ABBRUCH: Repo steht mitten in Rebase/Merge. Bitte manuell aufloesen.
