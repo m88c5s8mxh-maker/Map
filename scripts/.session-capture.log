@@ -49,3 +49,19 @@ To https://github.com/m88c5s8mxh-maker/Map.git
 2026-08-26 20:36:48 [sync] gepusht (main): Session: 2026-08-26-vertriebsskript-für-webseitenverkauf-schreiben
 2026-08-26 20:36:48 [integrate] fertig 708920ec-09ac-4b4d-b67a-8bca3073622b
 [graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 1 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main 86d7fe1] Auto: wiki sync 2026-08-26 20:37
+ 1 file changed, 14 insertions(+)
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 1 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main 9a286b3] Auto: wiki sync 2026-08-26 20:37
+ 1 file changed, 10 insertions(+)
+To https://github.com/m88c5s8mxh-maker/Map.git
+   903b0fd..9a286b3  main -> main
+2026-08-26 20:37:18 [sync] gepusht (main): Auto: wiki sync 2026-08-26 20:37
+Everything up-to-date
+2026-08-26 20:37:19 [sync] gepusht (main): Auto: wiki sync 2026-08-26 20:37
