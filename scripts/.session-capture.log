@@ -48,3 +48,4 @@ To https://github.com/m88c5s8mxh-maker/Map.git
    bfa9b66..903b0fd  main -> main
 2026-08-26 20:36:48 [sync] gepusht (main): Session: 2026-08-26-vertriebsskript-für-webseitenverkauf-schreiben
 2026-08-26 20:36:48 [integrate] fertig 708920ec-09ac-4b4d-b67a-8bca3073622b
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
