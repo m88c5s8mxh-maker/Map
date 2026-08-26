@@ -9,7 +9,7 @@
       "source_file": "generate_pdf.py",
       "source_location": "L1",
       "id": "generate_pdf_py",
-      "community": 38
+      "community": 39
     },
     {
       "label": "cat_color()",
@@ -17,7 +17,7 @@
       "source_file": "generate_pdf.py",
       "source_location": "L170",
       "id": "generate_pdf_cat_color",
-      "community": 38
+      "community": 39
     },
     {
       "label": "sty()",
@@ -25,7 +25,7 @@
       "source_file": "generate_pdf.py",
       "source_location": "L189",
       "id": "generate_pdf_sty",
-      "community": 38
+      "community": 39
     },
     {
       "label": "industry-dna.js",
@@ -33,7 +33,7 @@
       "source_file": "morio-runner/industry-dna.js",
       "source_location": "L1",
       "id": "morio_runner_industry_dna_js",
-      "community": 39
+      "community": 40
     },
     {
       "label": "detect()",
@@ -41,7 +41,7 @@
       "source_file": "morio-runner/industry-dna.js",
       "source_location": "L83",
       "id": "industry_dna_detect",
-      "community": 39
+      "community": 40
     },
     {
       "label": "industryProfile()",
@@ -49,7 +49,7 @@
       "source_file": "morio-runner/industry-dna.js",
       "source_location": "L94",
       "id": "industry_dna_industryprofile",
-      "community": 39
+      "community": 40
     },
     {
       "label": "runner.js",
@@ -307,6 +307,38 @@
       "community": 28,
       "norm_label": "update_map.py \u2014 wird von der github action aufgerufen. generiert graphify-out/in",
       "id": "update_map_rationale_1"
+    },
+    {
+      "label": "session_extract.py",
+      "file_type": "code",
+      "source_file": "scripts/session_extract.py",
+      "source_location": "L1",
+      "id": "scripts_session_extract_py",
+      "community": 31
+    },
+    {
+      "label": "blocks()",
+      "file_type": "code",
+      "source_file": "scripts/session_extract.py",
+      "source_location": "L38",
+      "id": "session_extract_blocks",
+      "community": 31
+    },
+    {
+      "label": "clean()",
+      "file_type": "code",
+      "source_file": "scripts/session_extract.py",
+      "source_location": "L45",
+      "id": "session_extract_clean",
+      "community": 31
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/session_extract.py",
+      "source_location": "L49",
+      "id": "session_extract_main",
+      "community": 31
     },
     {
       "label": "llms.txt Skill Index",
@@ -681,7 +713,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "design.md a\u20ac\u201c single source of truth for google stitch",
       "id": "concept_stitch_design_md"
     },
@@ -720,7 +752,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 2,
       "norm_label": "design audit",
       "id": "concept_design_audit"
     },
@@ -1019,7 +1051,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 48,
+      "community": 49,
       "norm_label": "chunked task execution pattern",
       "id": "chunked_task_execution"
     },
@@ -1032,7 +1064,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 56,
+      "community": 57,
       "norm_label": "temperature parameter for token distribution",
       "id": "temperature_parameter"
     },
@@ -1045,7 +1077,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 58,
       "norm_label": "top-p nucleus sampling",
       "id": "top_p_nucleus_sampling"
     },
@@ -1084,7 +1116,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 50,
       "norm_label": "explicit syntax binding (anti-truncation)",
       "id": "explicit_syntax_binding"
     },
@@ -1097,7 +1129,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 58,
+      "community": 59,
       "norm_label": "xml-structured prompt architecture",
       "id": "xml_structured_prompts"
     },
@@ -1110,7 +1142,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 48,
+      "community": 49,
       "norm_label": "verification loops (chain of verification, reverse prompting, self-grading)",
       "id": "verification_loops"
     },
@@ -1123,7 +1155,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 50,
       "norm_label": "reference prompt templates for complete output",
       "id": "reference_prompts_templates"
     },
@@ -1136,7 +1168,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 59,
+      "community": 60,
       "norm_label": "continuation handling prompt template",
       "id": "continuation_handling_prompt"
     },
@@ -1162,7 +1194,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 60,
+      "community": 61,
       "norm_label": "metacognitive laziness and human feedback loop",
       "id": "metacognitive_laziness"
     },
@@ -1201,7 +1233,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 50,
+      "community": 51,
       "norm_label": "context window asymmetry (large input, capped output)",
       "id": "context_window_asymmetry"
     },
@@ -1214,7 +1246,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 50,
+      "community": 51,
       "norm_label": "consumer middleware truncation problem",
       "id": "consumer_middleware_truncation"
     },
@@ -1266,7 +1298,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 62,
       "norm_label": "dynamic throttling during peak demand",
       "id": "dynamic_throttling"
     },
@@ -2098,7 +2130,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 63,
       "norm_label": "call preparation workflow",
       "id": "concept_call_prep_workflow"
     },
@@ -2254,7 +2286,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 52,
       "norm_label": "consolidate-memory",
       "id": "skill_consolidate_memory"
     },
@@ -2293,7 +2325,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 53,
       "norm_label": "conversation-context",
       "id": "skill_conversation_context"
     },
@@ -2319,7 +2351,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "create-viz",
       "id": "skill_create_viz"
     },
@@ -2345,7 +2377,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "data-context-extractor",
       "id": "skill_data_context_extractor"
     },
@@ -2358,7 +2390,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "data-visualization",
       "id": "skill_data_visualization"
     },
@@ -2683,7 +2715,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 52,
       "norm_label": "memory consolidation",
       "id": "concept_memory_consolidation"
     },
@@ -2748,7 +2780,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 18,
       "norm_label": "call to action (cta)",
       "id": "concept_cta"
     },
@@ -2800,7 +2832,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "data visualization",
       "id": "concept_data_visualization"
     },
@@ -2813,7 +2845,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "chart selection",
       "id": "concept_chart_selection"
     },
@@ -2839,7 +2871,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "data warehouse",
       "id": "concept_data_warehouse"
     },
@@ -2852,7 +2884,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "schema discovery",
       "id": "concept_schema_discovery"
     },
@@ -3034,7 +3066,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "bigquery",
       "id": "tool_bigquery"
     },
@@ -3047,7 +3079,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "snowflake",
       "id": "tool_snowflake"
     },
@@ -3060,7 +3092,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "matplotlib",
       "id": "tool_matplotlib"
     },
@@ -3073,7 +3105,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "plotly",
       "id": "tool_plotly"
     },
@@ -3086,7 +3118,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "seaborn",
       "id": "tool_seaborn"
     },
@@ -3229,7 +3261,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "data & analytics",
       "id": "domain_data_analytics"
     },
@@ -3255,7 +3287,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 53,
       "norm_label": "user context (ulm, de)",
       "id": "entity_user_context_ulm"
     },
@@ -3359,7 +3391,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "draft content skill",
       "id": "draft_content_skill"
     },
@@ -3372,7 +3404,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "blog post",
       "id": "draft_content_blog_post"
     },
@@ -3385,7 +3417,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "social media post",
       "id": "draft_content_social_media"
     },
@@ -3398,7 +3430,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "landing page copy",
       "id": "draft_content_landing_page"
     },
@@ -3411,7 +3443,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "seo recommendations",
       "id": "draft_content_seo"
     },
@@ -3424,7 +3456,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "brand voice",
       "id": "draft_content_brand_voice"
     },
@@ -3437,7 +3469,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "draft offer skill",
       "id": "draft_offer_skill"
     },
@@ -3450,7 +3482,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "compensation package",
       "id": "draft_offer_compensation"
     },
@@ -3463,7 +3495,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "offer letter",
       "id": "draft_offer_letter"
     },
@@ -3541,7 +3573,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "email sequence skill",
       "id": "email_sequence_skill"
     },
@@ -3554,7 +3586,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "onboarding email sequence",
       "id": "email_sequence_onboarding"
     },
@@ -3567,7 +3599,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "lead nurture sequence",
       "id": "email_sequence_lead_nurture"
     },
@@ -3580,7 +3612,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "sequence branching logic",
       "id": "email_sequence_branching"
     },
@@ -3593,7 +3625,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "email performance benchmarks",
       "id": "email_sequence_benchmarks"
     },
@@ -3684,7 +3716,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 32,
       "norm_label": "explore data skill",
       "id": "explore_data_skill"
     },
@@ -3697,7 +3729,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 32,
       "norm_label": "data profiling",
       "id": "explore_data_profiling"
     },
@@ -3710,7 +3742,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 32,
       "norm_label": "data quality assessment",
       "id": "explore_data_quality"
     },
@@ -3723,7 +3755,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 32,
       "norm_label": "data warehouse connector",
       "id": "explore_data_warehouse"
     },
@@ -3736,7 +3768,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "financial statements skill",
       "id": "financial_statements_skill"
     },
@@ -3749,7 +3781,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "income statement",
       "id": "financial_statements_income"
     },
@@ -3762,7 +3794,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "variance analysis",
       "id": "financial_statements_variance"
     },
@@ -3775,7 +3807,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "gaap presentation requirements",
       "id": "financial_statements_gaap"
     },
@@ -3788,7 +3820,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "forecast skill",
       "id": "forecast_skill"
     },
@@ -3801,7 +3833,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "sales pipeline",
       "id": "forecast_pipeline"
     },
@@ -3814,7 +3846,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "forecast scenarios (best/likely/worst)",
       "id": "forecast_scenarios"
     },
@@ -3827,7 +3859,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "gap-to-quota analysis",
       "id": "forecast_gap_analysis"
     },
@@ -3840,7 +3872,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "crm connector (forecast)",
       "id": "forecast_crm"
     },
@@ -4009,7 +4041,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "instagram digital products skill",
       "id": "instagram_products_skill"
     },
@@ -4022,7 +4054,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "instagram sales funnel",
       "id": "instagram_products_funnel"
     },
@@ -4035,7 +4067,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "carousel content",
       "id": "instagram_products_carousel"
     },
@@ -4048,7 +4080,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "dm automation sequence",
       "id": "instagram_products_dm_sequence"
     },
@@ -4100,7 +4132,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 41,
+      "community": 42,
       "norm_label": "interview prep skill",
       "id": "interview_prep_skill"
     },
@@ -4113,7 +4145,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 41,
+      "community": 42,
       "norm_label": "competency-based interview questions",
       "id": "interview_prep_competency"
     },
@@ -4126,7 +4158,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 41,
+      "community": 42,
       "norm_label": "interview scorecard",
       "id": "interview_prep_scorecard"
     },
@@ -4139,7 +4171,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "journal entry prep skill",
       "id": "journal_entry_prep_skill"
     },
@@ -4152,7 +4184,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "accrual types (ap, payroll, prepaid)",
       "id": "journal_entry_prep_accruals"
     },
@@ -4165,7 +4197,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "je review checklist",
       "id": "journal_entry_prep_review"
     },
@@ -4178,7 +4210,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "journal entry skill",
       "id": "journal_entry_skill"
     },
@@ -4191,7 +4223,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "revenue recognition (asc 606)",
       "id": "journal_entry_revenue_recognition"
     },
@@ -4204,7 +4236,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 14,
       "norm_label": "fixed asset depreciation je",
       "id": "journal_entry_fixed_assets"
     },
@@ -4269,7 +4301,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 43,
       "norm_label": "manus vacu landing page skill",
       "id": "manus_vacu_skill"
     },
@@ -4282,7 +4314,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 43,
       "norm_label": "react + tailwind + framer motion stack",
       "id": "manus_vacu_react"
     },
@@ -4295,7 +4327,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 43,
       "norm_label": "glassmorphism design pattern",
       "id": "manus_vacu_glassmorphism"
     },
@@ -4360,7 +4392,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 32,
+      "community": 33,
       "norm_label": "memory management skill",
       "id": "memory_management_skill"
     },
@@ -4373,7 +4405,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 32,
+      "community": 33,
       "norm_label": "claude.md hot cache",
       "id": "memory_management_hot_cache"
     },
@@ -4386,7 +4418,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 32,
+      "community": 33,
       "norm_label": "glossary / decoder ring",
       "id": "memory_management_glossary"
     },
@@ -4399,7 +4431,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 32,
+      "community": 33,
       "norm_label": "two-tier memory architecture",
       "id": "memory_management_two_tier"
     },
@@ -4425,7 +4457,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "obsidian-wiki",
       "id": "skill_obsidian_wiki"
     },
@@ -4464,7 +4496,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 29,
+      "community": 30,
       "norm_label": "pdf",
       "id": "skill_pdf"
     },
@@ -4542,7 +4574,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "pptx",
       "id": "skill_pptx"
     },
@@ -4555,7 +4587,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "process-doc",
       "id": "skill_process_doc"
     },
@@ -4568,7 +4600,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "process-optimization",
       "id": "skill_process_optimization"
     },
@@ -4607,7 +4639,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 29,
       "norm_label": "reconciliation",
       "id": "skill_reconciliation"
     },
@@ -4672,7 +4704,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "runbook",
       "id": "skill_runbook"
     },
@@ -4685,7 +4717,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 53,
+      "community": 54,
       "norm_label": "schedule",
       "id": "skill_schedule"
     },
@@ -4776,7 +4808,7 @@
       "captured_at": null,
       "author": "Andrej Karpathy",
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "karpathy llm wiki pattern",
       "id": "concept_karpathy_llm_wiki"
     },
@@ -4789,7 +4821,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "obsidian",
       "id": "tool_obsidian"
     },
@@ -4802,7 +4834,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "persistent knowledge wiki",
       "id": "concept_knowledge_wiki"
     },
@@ -4867,7 +4899,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 29,
+      "community": 30,
       "norm_label": "pypdf",
       "id": "tool_pypdf"
     },
@@ -4880,7 +4912,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 29,
+      "community": 30,
       "norm_label": "pdfplumber",
       "id": "tool_pdfplumber"
     },
@@ -4893,7 +4925,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 29,
+      "community": 30,
       "norm_label": "reportlab",
       "id": "tool_reportlab"
     },
@@ -4906,7 +4938,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 29,
+      "community": 30,
       "norm_label": "pytesseract (ocr)",
       "id": "tool_pytesseract"
     },
@@ -5114,7 +5146,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "pptxgenjs",
       "id": "tool_pptxgenjs"
     },
@@ -5127,7 +5159,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "markitdown",
       "id": "tool_markitdown"
     },
@@ -5140,7 +5172,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "raci matrix",
       "id": "concept_raci_matrix"
     },
@@ -5153,7 +5185,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "standard operating procedure (sop)",
       "id": "concept_sop"
     },
@@ -5166,7 +5198,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "process waste (lean)",
       "id": "concept_process_waste"
     },
@@ -5257,7 +5289,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 29,
       "norm_label": "bank reconciliation",
       "id": "concept_bank_reconciliation"
     },
@@ -5270,7 +5302,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 29,
       "norm_label": "gl-to-subledger reconciliation",
       "id": "concept_gl_subledger"
     },
@@ -5283,7 +5315,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 29,
       "norm_label": "intercompany reconciliation",
       "id": "concept_intercompany_reconciliation"
     },
@@ -5413,7 +5445,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "operational runbook",
       "id": "concept_operational_runbook"
     },
@@ -5426,7 +5458,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "escalation path",
       "id": "concept_escalation_path"
     },
@@ -5439,7 +5471,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 53,
+      "community": 54,
       "norm_label": "scheduled task / cron job",
       "id": "concept_scheduled_task"
     },
@@ -5478,7 +5510,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "knowledge base connector",
       "id": "concept_connector_knowledge_base"
     },
@@ -5556,7 +5588,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 30,
+      "community": 29,
       "norm_label": "finance / accounting operations domain",
       "id": "domain_finance_ops"
     },
@@ -5595,7 +5627,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 36,
       "norm_label": "seo-audit",
       "id": "seo_audit_skill"
     },
@@ -5608,7 +5640,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 33,
+      "community": 34,
       "norm_label": "sequence-load",
       "id": "sequence_load_skill"
     },
@@ -5621,7 +5653,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "setup-cowork",
       "id": "setup_cowork_skill"
     },
@@ -5634,7 +5666,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 35,
       "norm_label": "skill-creator",
       "id": "skill_creator_skill"
     },
@@ -5647,7 +5679,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 45,
       "norm_label": "slack-gif-creator",
       "id": "slack_gif_creator_skill"
     },
@@ -5699,7 +5731,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 46,
       "norm_label": "sql-queries",
       "id": "sql_queries_skill"
     },
@@ -5816,7 +5848,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 47,
       "norm_label": "design-taste-frontend",
       "id": "taste_skill_skill"
     },
@@ -5842,7 +5874,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 54,
+      "community": 55,
       "norm_label": "template-saver",
       "id": "template_saver_skill"
     },
@@ -5907,7 +5939,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 36,
       "norm_label": "seo audit types",
       "id": "concept_seo_audit_types"
     },
@@ -5920,7 +5952,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 36,
       "norm_label": "keyword research",
       "id": "concept_keyword_research"
     },
@@ -5933,7 +5965,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 36,
       "norm_label": "content gap analysis",
       "id": "concept_content_gap_analysis"
     },
@@ -5946,7 +5978,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 33,
+      "community": 34,
       "norm_label": "apollo mcp",
       "id": "tool_apollo_mcp"
     },
@@ -5959,7 +5991,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 33,
+      "community": 34,
       "norm_label": "lead enrichment",
       "id": "concept_lead_enrichment"
     },
@@ -5972,7 +6004,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 33,
+      "community": 34,
       "norm_label": "outreach sequence",
       "id": "concept_outreach_sequence"
     },
@@ -5985,7 +6017,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "cowork onboarding",
       "id": "concept_cowork_onboarding"
     },
@@ -5998,7 +6030,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "plugin marketplace",
       "id": "concept_plugin_marketplace"
     },
@@ -6011,7 +6043,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "connector registry",
       "id": "concept_connector_registry"
     },
@@ -6024,7 +6056,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 35,
       "norm_label": "skill evaluation loop",
       "id": "concept_skill_eval_loop"
     },
@@ -6037,7 +6069,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 35,
       "norm_label": "skill description optimization",
       "id": "concept_description_optimization"
     },
@@ -6050,7 +6082,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 35,
       "norm_label": "skill triggering mechanism",
       "id": "concept_skill_triggering"
     },
@@ -6063,7 +6095,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 45,
       "norm_label": "pil / pillow",
       "id": "tool_pil_pillow"
     },
@@ -6076,7 +6108,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 44,
+      "community": 45,
       "norm_label": "gif optimization for slack",
       "id": "concept_gif_optimization"
     },
@@ -6180,7 +6212,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 46,
       "norm_label": "sql dialect compatibility",
       "id": "concept_sql_dialects"
     },
@@ -6193,7 +6225,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 46,
       "norm_label": "window functions",
       "id": "concept_window_functions"
     },
@@ -6388,7 +6420,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 47,
       "norm_label": "react component architecture",
       "id": "concept_react_component_arch"
     },
@@ -6401,7 +6433,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 47,
       "norm_label": "framer motion animations",
       "id": "concept_framer_motion"
     },
@@ -6440,7 +6472,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 54,
+      "community": 55,
       "norm_label": "blueprint template library",
       "id": "concept_blueprint_library"
     },
@@ -6466,7 +6498,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 55,
+      "community": 56,
       "norm_label": "theme-factory",
       "id": "skill_theme_factory"
     },
@@ -6505,7 +6537,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 18,
       "norm_label": "ux-copy",
       "id": "skill_ux_copy"
     },
@@ -6518,7 +6550,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 18,
       "norm_label": "ux-design",
       "id": "skill_ux_design"
     },
@@ -6557,7 +6589,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 48,
       "norm_label": "vendor-review",
       "id": "skill_vendor_review"
     },
@@ -6570,7 +6602,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 18,
       "norm_label": "web-artifacts-builder",
       "id": "skill_web_artifacts_builder"
     },
@@ -6635,7 +6667,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 38,
       "norm_label": "youtube-channel-ai",
       "id": "skill_youtube_channel_ai"
     },
@@ -6661,7 +6693,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 2,
       "norm_label": "design-advisor",
       "id": "skill_design_advisor"
     },
@@ -6700,7 +6732,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 2,
       "norm_label": "redesign-existing-projects",
       "id": "skill_redesign_existing_projects"
     },
@@ -6752,7 +6784,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 55,
+      "community": 56,
       "norm_label": "theme palette",
       "id": "concept_theme_palette"
     },
@@ -6791,7 +6823,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 18,
       "norm_label": "microcopy",
       "id": "concept_microcopy"
     },
@@ -6804,7 +6836,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 18,
       "norm_label": "ux audit",
       "id": "concept_ux_audit"
     },
@@ -6817,7 +6849,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 18,
       "norm_label": "react component",
       "id": "concept_react_component"
     },
@@ -6882,7 +6914,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 48,
       "norm_label": "total cost of ownership (tco)",
       "id": "concept_tco"
     },
@@ -6895,7 +6927,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 48,
       "norm_label": "vendor risk assessment",
       "id": "concept_vendor_risk_assessment"
     },
@@ -6908,7 +6940,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 18,
       "norm_label": "react",
       "id": "tool_react"
     },
@@ -6921,7 +6953,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 18,
       "norm_label": "tailwind css",
       "id": "tool_tailwind_css"
     },
@@ -6934,7 +6966,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 18,
       "norm_label": "shadcn/ui",
       "id": "tool_shadcn_ui"
     },
@@ -7064,7 +7096,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 38,
       "norm_label": "channel forensics",
       "id": "concept_channel_forensics"
     },
@@ -7077,7 +7109,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 38,
       "norm_label": "viral title production",
       "id": "concept_viral_title"
     },
@@ -7103,7 +7135,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 2,
       "norm_label": "design data csv files",
       "id": "concept_design_data_csv"
     },
@@ -7142,7 +7174,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 2,
       "norm_label": "ui design system",
       "id": "concept_ui_design_system"
     },
@@ -7155,7 +7187,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 18,
       "norm_label": "landing page",
       "id": "concept_landing_page"
     },
@@ -7181,7 +7213,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 38,
       "norm_label": "faceless youtube channel",
       "id": "concept_faceless_youtube_channel"
     },
@@ -7285,7 +7317,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 63,
+      "community": 64,
       "norm_label": "component stylings \u2014 buttons, cards, inputs, navigation, loaders, empty states",
       "id": "stitch_component_stylings"
     },
@@ -7818,7 +7850,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "kling prompts skill",
       "id": "kling_prompts_skill"
     },
@@ -7831,7 +7863,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "cinematic web skill",
       "id": "cinematic_web_skill"
     },
@@ -7844,7 +7876,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "kling 3.0 ai video platform",
       "id": "kling_30_platform"
     },
@@ -7857,7 +7889,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "triple b project (hirschau)",
       "id": "triple_b_project"
     },
@@ -7870,7 +7902,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "monte kaolino (hirschau, oberpfalz)",
       "id": "monte_kaolino"
     },
@@ -7883,7 +7915,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "feedback-protokoll (prompt learning loop)",
       "id": "feedback_protokoll"
     },
@@ -7896,7 +7928,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "5-element prompt formula",
       "id": "five_element_formula"
     },
@@ -7909,7 +7941,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "video scroll engine (scroll-driven video background)",
       "id": "video_scroll_engine"
     },
@@ -7922,7 +7954,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "prompt-bausteine bibliothek",
       "id": "prompt_bausteine_bibliothek"
     },
@@ -7935,7 +7967,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "negative prompt bibliothek",
       "id": "negative_prompt_bibliothek"
     },
@@ -7948,7 +7980,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "single-file html website (awwwards-niveau)",
       "id": "single_file_html_website"
     },
@@ -7961,7 +7993,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "gsap + lenis animation stack",
       "id": "gsap_lenis_stack"
     },
@@ -7974,7 +8006,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "sidewave.it (design inspiration reference)",
       "id": "sidewave_it"
     },
@@ -7987,7 +8019,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": "bayern / oberpfalz location pattern",
       "id": "bavaria_oberpfalz_location"
     }
@@ -8759,6 +8791,66 @@
       "_tgt": "scripts_update_map_py",
       "source": "scripts_update_map_py",
       "target": "update_map_rationale_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/session_extract.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_src": "scripts_session_extract_py",
+      "_tgt": "session_extract_blocks",
+      "source": "scripts_session_extract_py",
+      "target": "session_extract_blocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/session_extract.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_src": "scripts_session_extract_py",
+      "_tgt": "session_extract_clean",
+      "source": "scripts_session_extract_py",
+      "target": "session_extract_clean",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/session_extract.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_src": "scripts_session_extract_py",
+      "_tgt": "session_extract_main",
+      "source": "scripts_session_extract_py",
+      "target": "session_extract_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/session_extract.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_src": "session_extract_main",
+      "_tgt": "session_extract_blocks",
+      "source": "session_extract_blocks",
+      "target": "session_extract_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/session_extract.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_src": "session_extract_main",
+      "_tgt": "session_extract_clean",
+      "source": "session_extract_clean",
+      "target": "session_extract_main",
       "confidence_score": 1.0
     },
     {

@@ -1,12 +1,12 @@
-# Graph Report - .  (2026-08-16)
+# Graph Report - .  (2026-08-26)
 
 ## Corpus Check
-- 4 files · ~261,305 words
+- 5 files · ~263,258 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 629 nodes · 732 edges · 64 communities detected
-- Extraction: 84% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 113 edges (avg confidence: 0.8)
+- 633 nodes · 737 edges · 65 communities detected
+- Extraction: 85% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 113 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -74,6 +74,7 @@
 - [[_COMMUNITY_Community 61|Community 61]]
 - [[_COMMUNITY_Community 62|Community 62]]
 - [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Taste Skill (design-taste-frontend)` - 14 edges
@@ -96,8 +97,8 @@
   raw/skills/stitch-skill/DESIGN.md → raw/skills/taste-skill/examples/floria-top.webp
 - `output-skill — Stops AI from being lazy, prevents placeholder comments and skipped code` --informs--> `Prompt Stimulus Effectiveness (financial framing, stakes language)`  [INFERRED]
   raw/skills/taste-skill/README.md → skills/taste-skill/research/laziness/findings/empirical-results.md
-- `Redesign Existing Projects (redesign-skill)` --defines--> `Design Audit`  [EXTRACTED]
-  skills/redesign-skill/SKILL.md → raw/skills/redesign-skill/SKILL.md
+- `Bento Grid Layout` --controls--> `DESIGN_VARIANCE Dial (1-10 layout variance parameter)`  [INFERRED]
+  raw/skills/minimalist-skill/SKILL.md → skills/taste-skill/SKILL.md
 
 ## Communities
 
@@ -110,12 +111,12 @@ Cohesion: 0.06
 Nodes (44): Anthropic Brand Identity, Brand Voice, Campaign Brief, Change Management Framework, Claude Usage Limits, Context Navigation Rules, Data Analysis, Generative Art (+36 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.09
-Nodes (40): Industrial Brutalism & Tactical Telemetry UI (brutalist-skill), Anti-Slop / Anti-Generic AI Design Rules, Anti-Truncation / Full Output, Banned Fonts List (Inter, Roboto, Arial, Open Sans), Bento Grid Layout, Tactical Telemetry / CRT Terminal Archetype, CRT Terminal UI, DESIGN_VARIANCE Dial (1-10 layout variance parameter) (+32 more)
+Cohesion: 0.08
+Nodes (44): Industrial Brutalism & Tactical Telemetry UI (brutalist-skill), Anti-Slop / Anti-Generic AI Design Rules, Anti-Truncation / Full Output, Banned Fonts List (Inter, Roboto, Arial, Open Sans), Bento Grid Layout, Tactical Telemetry / CRT Terminal Archetype, CRT Terminal UI, Design Audit (+36 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.07
-Nodes (34): AI Purple Ban — no purple/neon gradients, the generic AI aesthetic is strictly forbidden, Bento Grid — Asymmetric tile layout (2fr 1fr 1fr), perpetual micro-animation per tile, Inline Image Typography (photos embedded in headlines), Floria Design Language — Dark background, off-white type, botanical photography, editorial asymmetry, Floria Example — Bottom section: testimonials, CTA, footer with 'Clarity.' brand section, Floria Example — Full page overview of dark, asymmetric editorial layout, Floria Example — Dark editorial floral website top section screenshot, Google Stitch (AI UI Generation Tool) (+26 more)
+Nodes (35): AI Purple Ban — no purple/neon gradients, the generic AI aesthetic is strictly forbidden, Bento Grid — Asymmetric tile layout (2fr 1fr 1fr), perpetual micro-animation per tile, Inline Image Typography (photos embedded in headlines), DESIGN.md â€“ Single Source of Truth for Google Stitch, Floria Design Language — Dark background, off-white type, botanical photography, editorial asymmetry, Floria Example — Bottom section: testimonials, CTA, footer with 'Clarity.' brand section, Floria Example — Full page overview of dark, asymmetric editorial layout, Floria Example — Dark editorial floral website top section screenshot (+27 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.08
@@ -154,28 +155,28 @@ Cohesion: 0.12
 Nodes (16): Common Table Expression (CTE), Data Validation / QA, Financial Model, Price/Volume Decomposition, SQL Query, Survivorship Bias, Test Plan, Testing Pyramid (+8 more)
 
 ### Community 13 - "Community 13"
-Cohesion: 0.12
-Nodes (16): Call to Action (CTA), Design Audit, Design Data CSV Files, Landing Page, Microcopy, React Component, UI Design System, UX Audit (+8 more)
-
-### Community 14 - "Community 14"
 Cohesion: 0.14
 Nodes (15): Blog Post, Brand Voice, Landing Page Copy, SEO Recommendations, Draft Content Skill, Social Media Post, Email Performance Benchmarks, Sequence Branching Logic (+7 more)
 
-### Community 15 - "Community 15"
+### Community 14 - "Community 14"
 Cohesion: 0.14
 Nodes (15): GAAP Presentation Requirements, Income Statement, Financial Statements Skill, Variance Analysis, CRM Connector (Forecast), Gap-to-Quota Analysis, Sales Pipeline, Forecast Scenarios (Best/Likely/Worst) (+7 more)
 
-### Community 16 - "Community 16"
+### Community 15 - "Community 15"
 Cohesion: 0.21
 Nodes (14): Bayern / Oberpfalz Location Pattern, Cinematic Web Skill, Feedback-Protokoll (Prompt Learning Loop), 5-Element Prompt Formula, GSAP + Lenis Animation Stack, Kling 3.0 AI Video Platform, Kling Prompts Skill, Monte Kaolino (Hirschau, Oberpfalz) (+6 more)
 
-### Community 17 - "Community 17"
+### Community 16 - "Community 16"
 Cohesion: 0.18
 Nodes (13): Chart Selection, Data Visualization, Data Warehouse, Schema Discovery, Data & Analytics, create-viz, data-context-extractor, data-visualization (+5 more)
 
-### Community 18 - "Community 18"
+### Community 17 - "Community 17"
 Cohesion: 0.19
 Nodes (13): Knowledge Base Connector, Escalation Path, Karpathy LLM Wiki Pattern, Persistent Knowledge Wiki, Operational Runbook, Process Waste (Lean), RACI Matrix, Standard Operating Procedure (SOP) (+5 more)
+
+### Community 18 - "Community 18"
+Cohesion: 0.18
+Nodes (11): Call to Action (CTA), Landing Page, Microcopy, React Component, UX Audit, ux-copy, ux-design, web-artifacts-builder (+3 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.22
@@ -219,141 +220,145 @@ Nodes (1): update_map.py — Wird von der GitHub Action aufgerufen. Generiert gr
 
 ### Community 29 - "Community 29"
 Cohesion: 0.4
-Nodes (5): pdf, pdfplumber, pypdf, pytesseract (OCR), reportlab
+Nodes (5): Bank Reconciliation, GL-to-Subledger Reconciliation, Intercompany Reconciliation, Finance / Accounting Operations Domain, reconciliation
 
 ### Community 30 - "Community 30"
 Cohesion: 0.4
-Nodes (5): Bank Reconciliation, GL-to-Subledger Reconciliation, Intercompany Reconciliation, Finance / Accounting Operations Domain, reconciliation
+Nodes (5): pdf, pdfplumber, pypdf, pytesseract (OCR), reportlab
 
 ### Community 31 - "Community 31"
+Cohesion: 0.83
+Nodes (3): blocks(), clean(), main()
+
+### Community 32 - "Community 32"
 Cohesion: 0.5
 Nodes (4): Data Profiling, Data Quality Assessment, Explore Data Skill, Data Warehouse Connector
 
-### Community 32 - "Community 32"
+### Community 33 - "Community 33"
 Cohesion: 0.67
 Nodes (4): Glossary / Decoder Ring, CLAUDE.md Hot Cache, Memory Management Skill, Two-Tier Memory Architecture
 
-### Community 33 - "Community 33"
+### Community 34 - "Community 34"
 Cohesion: 0.5
 Nodes (4): Lead Enrichment, Outreach Sequence, sequence-load, Apollo MCP
 
-### Community 34 - "Community 34"
+### Community 35 - "Community 35"
 Cohesion: 0.5
 Nodes (4): Skill Description Optimization, Skill Evaluation Loop, Skill Triggering Mechanism, skill-creator
 
-### Community 35 - "Community 35"
+### Community 36 - "Community 36"
 Cohesion: 0.5
 Nodes (4): Content Gap Analysis, Keyword Research, SEO Audit Types, seo-audit
 
-### Community 36 - "Community 36"
+### Community 37 - "Community 37"
 Cohesion: 0.5
 Nodes (4): Connector Registry, Cowork Onboarding, Plugin Marketplace, setup-cowork
 
-### Community 37 - "Community 37"
+### Community 38 - "Community 38"
 Cohesion: 0.5
 Nodes (4): Channel Forensics, Faceless YouTube Channel, Viral Title Production, youtube-channel-ai
 
-### Community 38 - "Community 38"
+### Community 39 - "Community 39"
 Cohesion: 0.67
 Nodes (0): 
 
-### Community 39 - "Community 39"
+### Community 40 - "Community 40"
 Cohesion: 1.0
 Nodes (2): detect(), industryProfile()
 
-### Community 40 - "Community 40"
+### Community 41 - "Community 41"
 Cohesion: 0.67
 Nodes (3): Compensation Package, Offer Letter, Draft Offer Skill
 
-### Community 41 - "Community 41"
+### Community 42 - "Community 42"
 Cohesion: 0.67
 Nodes (3): Competency-Based Interview Questions, Interview Scorecard, Interview Prep Skill
 
-### Community 42 - "Community 42"
+### Community 43 - "Community 43"
 Cohesion: 0.67
 Nodes (3): Glassmorphism Design Pattern, React + Tailwind + Framer Motion Stack, Manus VACU Landing Page Skill
 
-### Community 43 - "Community 43"
+### Community 44 - "Community 44"
 Cohesion: 0.67
 Nodes (3): pptx, markitdown, pptxgenjs
 
-### Community 44 - "Community 44"
+### Community 45 - "Community 45"
 Cohesion: 0.67
 Nodes (3): GIF Optimization for Slack, slack-gif-creator, PIL / Pillow
 
-### Community 45 - "Community 45"
+### Community 46 - "Community 46"
 Cohesion: 0.67
 Nodes (3): SQL Dialect Compatibility, Window Functions, sql-queries
 
-### Community 46 - "Community 46"
+### Community 47 - "Community 47"
 Cohesion: 0.67
 Nodes (3): Framer Motion Animations, React Component Architecture, design-taste-frontend
 
-### Community 47 - "Community 47"
+### Community 48 - "Community 48"
 Cohesion: 0.67
 Nodes (3): Total Cost of Ownership (TCO), Vendor Risk Assessment, vendor-review
 
-### Community 48 - "Community 48"
+### Community 49 - "Community 49"
 Cohesion: 1.0
 Nodes (2): Chunked Task Execution Pattern, Verification Loops (Chain of Verification, Reverse Prompting, Self-Grading)
 
-### Community 49 - "Community 49"
+### Community 50 - "Community 50"
 Cohesion: 1.0
 Nodes (2): Explicit Syntax Binding (Anti-Truncation), Reference Prompt Templates for Complete Output
 
-### Community 50 - "Community 50"
+### Community 51 - "Community 51"
 Cohesion: 1.0
 Nodes (2): Consumer Middleware Truncation Problem, Context Window Asymmetry (Large Input, Capped Output)
 
-### Community 51 - "Community 51"
+### Community 52 - "Community 52"
 Cohesion: 1.0
 Nodes (2): Memory Consolidation, consolidate-memory
 
-### Community 52 - "Community 52"
+### Community 53 - "Community 53"
 Cohesion: 1.0
 Nodes (2): User Context (Ulm, DE), conversation-context
 
-### Community 53 - "Community 53"
+### Community 54 - "Community 54"
 Cohesion: 1.0
 Nodes (2): Scheduled Task / Cron Job, schedule
 
-### Community 54 - "Community 54"
+### Community 55 - "Community 55"
 Cohesion: 1.0
 Nodes (2): Blueprint Template Library, template-saver
 
-### Community 55 - "Community 55"
+### Community 56 - "Community 56"
 Cohesion: 1.0
 Nodes (2): Theme Palette, theme-factory
 
-### Community 56 - "Community 56"
+### Community 57 - "Community 57"
 Cohesion: 1.0
 Nodes (1): Temperature Parameter for Token Distribution
 
-### Community 57 - "Community 57"
+### Community 58 - "Community 58"
 Cohesion: 1.0
 Nodes (1): Top-p Nucleus Sampling
 
-### Community 58 - "Community 58"
+### Community 59 - "Community 59"
 Cohesion: 1.0
 Nodes (1): XML-Structured Prompt Architecture
 
-### Community 59 - "Community 59"
+### Community 60 - "Community 60"
 Cohesion: 1.0
 Nodes (1): Continuation Handling Prompt Template
 
-### Community 60 - "Community 60"
+### Community 61 - "Community 61"
 Cohesion: 1.0
 Nodes (1): Metacognitive Laziness and Human Feedback Loop
 
-### Community 61 - "Community 61"
+### Community 62 - "Community 62"
 Cohesion: 1.0
 Nodes (1): Dynamic Throttling During Peak Demand
 
-### Community 62 - "Community 62"
+### Community 63 - "Community 63"
 Cohesion: 1.0
 Nodes (1): Call Preparation Workflow
 
-### Community 63 - "Community 63"
+### Community 64 - "Community 64"
 Cohesion: 1.0
 Nodes (1): Component Stylings — Buttons, Cards, Inputs, Navigation, Loaders, Empty States
 
@@ -364,37 +369,37 @@ Nodes (1): Component Stylings — Buttons, Cards, Inputs, Navigation, Loaders, E
 ## Knowledge Gaps
 - **307 isolated node(s):** `update_map.py — Wird von der GitHub Action aufgerufen. Generiert graphify-out/in`, `Design Advisor (design)`, `Inline Image Typography (photos embedded in headlines)`, `Rationale: Ban Inter font to avoid generic AI aesthetic`, `Rationale: Spring physics over linear easing for premium feel` (+302 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Community 48`** (2 nodes): `Chunked Task Execution Pattern`, `Verification Loops (Chain of Verification, Reverse Prompting, Self-Grading)`
+- **Thin community `Community 49`** (2 nodes): `Chunked Task Execution Pattern`, `Verification Loops (Chain of Verification, Reverse Prompting, Self-Grading)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 49`** (2 nodes): `Explicit Syntax Binding (Anti-Truncation)`, `Reference Prompt Templates for Complete Output`
+- **Thin community `Community 50`** (2 nodes): `Explicit Syntax Binding (Anti-Truncation)`, `Reference Prompt Templates for Complete Output`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 50`** (2 nodes): `Consumer Middleware Truncation Problem`, `Context Window Asymmetry (Large Input, Capped Output)`
+- **Thin community `Community 51`** (2 nodes): `Consumer Middleware Truncation Problem`, `Context Window Asymmetry (Large Input, Capped Output)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 51`** (2 nodes): `Memory Consolidation`, `consolidate-memory`
+- **Thin community `Community 52`** (2 nodes): `Memory Consolidation`, `consolidate-memory`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 52`** (2 nodes): `User Context (Ulm, DE)`, `conversation-context`
+- **Thin community `Community 53`** (2 nodes): `User Context (Ulm, DE)`, `conversation-context`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 53`** (2 nodes): `Scheduled Task / Cron Job`, `schedule`
+- **Thin community `Community 54`** (2 nodes): `Scheduled Task / Cron Job`, `schedule`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 54`** (2 nodes): `Blueprint Template Library`, `template-saver`
+- **Thin community `Community 55`** (2 nodes): `Blueprint Template Library`, `template-saver`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 55`** (2 nodes): `Theme Palette`, `theme-factory`
+- **Thin community `Community 56`** (2 nodes): `Theme Palette`, `theme-factory`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 56`** (1 nodes): `Temperature Parameter for Token Distribution`
+- **Thin community `Community 57`** (1 nodes): `Temperature Parameter for Token Distribution`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 57`** (1 nodes): `Top-p Nucleus Sampling`
+- **Thin community `Community 58`** (1 nodes): `Top-p Nucleus Sampling`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 58`** (1 nodes): `XML-Structured Prompt Architecture`
+- **Thin community `Community 59`** (1 nodes): `XML-Structured Prompt Architecture`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 59`** (1 nodes): `Continuation Handling Prompt Template`
+- **Thin community `Community 60`** (1 nodes): `Continuation Handling Prompt Template`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 60`** (1 nodes): `Metacognitive Laziness and Human Feedback Loop`
+- **Thin community `Community 61`** (1 nodes): `Metacognitive Laziness and Human Feedback Loop`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 61`** (1 nodes): `Dynamic Throttling During Peak Demand`
+- **Thin community `Community 62`** (1 nodes): `Dynamic Throttling During Peak Demand`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 62`** (1 nodes): `Call Preparation Workflow`
+- **Thin community `Community 63`** (1 nodes): `Call Preparation Workflow`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 63`** (1 nodes): `Component Stylings — Buttons, Cards, Inputs, Navigation, Loaders, Empty States`
+- **Thin community `Community 64`** (1 nodes): `Component Stylings — Buttons, Cards, Inputs, Navigation, Loaders, Empty States`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
@@ -402,8 +407,8 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Swiss Typographic Design` and `Tactical Telemetry / CRT Terminal Archetype`?**
   _Edge tagged AMBIGUOUS (relation: semantically_similar_to) - confidence is low._
-- **Why does `content-creation` connect `Community 4` to `Community 13`?**
-  _High betweenness centrality (0.149) - this node is a cross-community bridge._
+- **Why does `content-creation` connect `Community 4` to `Community 18`?**
+  _High betweenness centrality (0.147) - this node is a cross-community bridge._
 - **What connects `update_map.py — Wird von der GitHub Action aufgerufen. Generiert graphify-out/in`, `Design Advisor (design)`, `Inline Image Typography (photos embedded in headlines)` to the rest of the system?**
   _307 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
@@ -411,6 +416,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.06 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.09 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.07 - nodes in this community are weakly interconnected._

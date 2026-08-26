@@ -27,3 +27,10 @@
 - New concepts: Earth-to-Forest Transition, Animated ShaderMaterial Backdrops, Procedural Water Stream, Chromatic Aberration, 3D Bottle Two-Layer
 - Contradictions flagged: none
 - Key takeaway: Scroll-p [0,1] treibt CatmullRom-Kamera + ShaderMaterial-Backdrops mit Parallax/Shimmer/Breath für cinematic luxury web
+
+## [2026-08-26] session | Preview-Reiter in CRM Intranet einbauen
+
+- Neue Seiten: entity/morio-crm.md, concept/server-quellcode-drift.md, entity/vorschau-webseiten.md
+- Aktualisierte Seiten: index.md (neuer Abschnitt „Morio Solutions — Betrieb & Produktion")
+- Widersprüche geflaggt: keine offenen — die frühere Annahme „intra läuft auf dem FastAPI-`reviewcrm`" ist in [[morio-crm]] korrigiert und als Verwechslungsfalle dokumentiert
+- Schlüssel-Erkenntnis: Ein Deploy-Skript, das nur das gebaute Image überträgt, macht den Quellcode auf dem Server wertlos als Referenz — ein Build von dort hat drei Produktionsbereiche gelöscht. Vor jedem Build aus einem Server-Ordner: `deploy.sh` lesen und die Seitenliste des laufenden Artefakts als Soll-Zustand gegenprüfen. Diese Liste gehört ins Backup.

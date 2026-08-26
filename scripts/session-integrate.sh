@@ -109,14 +109,18 @@ if command -v graphify >/dev/null 2>&1; then
   fi
 fi
 
-# --- In GitHub sichern ---
+# --- In GitHub sichern (mit NO_PUSH=1 nur lokal committen, fuer Testlaeufe) ---
 git add -A >> "$LOG" 2>&1
 if git diff --cached --quiet; then
   log "keine Aenderungen zu committen"
 else
   git commit -m "Session: $(basename "$RAW" .md)" >> "$LOG" 2>&1
-  git pull --rebase --autostash >> "$LOG" 2>&1 || log "pull --rebase fehlgeschlagen"
-  if git push >> "$LOG" 2>&1; then log "gepusht"; else log "push fehlgeschlagen"; fi
+  if [ -n "${NO_PUSH:-}" ]; then
+    log "NO_PUSH gesetzt - nur lokal committed"
+  else
+    git pull --rebase --autostash >> "$LOG" 2>&1 || log "pull --rebase fehlgeschlagen"
+    if git push >> "$LOG" 2>&1; then log "gepusht"; else log "push fehlgeschlagen"; fi
+  fi
 fi
 
 log "fertig $SID"

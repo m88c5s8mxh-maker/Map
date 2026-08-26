@@ -105,6 +105,16 @@
 
 ---
 
+## Morio Solutions — Betrieb & Produktion
+
+| Seite | Inhalt |
+|-------|--------|
+| [[morio-crm]] | Das laufende CRM auf `intra.moriosolutions.de` — Stack, Server, echtes Quellcode-Repo (`Beckomate88/MorioCRM`, Branch `redesign-ui`), Deploy-Weg, nginx-Eigenheiten, Backup |
+| [[server-quellcode-drift]] | Warum der Quellcode auf einem Server nicht beweist, was dort läuft — Schadensfall, Prüfroutine, sechs verwandte Deploy-Fallen |
+| [[vorschau-webseiten]] | Preview-Webseiten-Reiter unter Projekte: Kunden-Freigabeworkflow, nativ im CRM, live · offene Punkte |
+
+---
+
 ## Web Factory — Angebotsstufen
 
 | Tier | Skill | Einsatz | Preis-Range |
