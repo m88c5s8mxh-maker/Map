@@ -19,3 +19,9 @@ Budget vs Actual, Period-over-Period, Revenue/Expense-Varianzen, Leadership-Komm
 
 ## Quellen
 > [Source: raw/skills/variance-analysis.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Financial Model]] - `rationale_for` [INFERRED]
+- [[PriceVolume Decomposition]] - `uses_technique` [EXTRACTED]
+- [[Waterfall Chart]] - `produces` [EXTRACTED]
+- [[validate-data]] - `semantically_similar_to` [INFERRED]

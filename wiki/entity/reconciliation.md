@@ -19,3 +19,9 @@ Bankabstimmung, GL-zu-Subledger-Rec, Intercompany-Reconciliation
 
 ## Quellen
 > [Source: raw/skills/reconciliation.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Bank Reconciliation]] - `implements` [EXTRACTED]
+- [[Finance  Accounting Operations Domain]] - `belongs_to_domain` [INFERRED]
+- [[GL-to-Subledger Reconciliation]] - `implements` [EXTRACTED]
+- [[Intercompany Reconciliation]] - `implements` [EXTRACTED]

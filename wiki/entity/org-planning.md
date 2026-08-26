@@ -19,3 +19,9 @@ Reorg, wer als nächstes einstellen, Reporting-Struktur, Org-Design
 
 ## Quellen
 > [Source: raw/skills/org-planning.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[HR  People Operations Domain]] - `belongs_to_domain` [INFERRED]
+- [[Headcount Planning]] - `implements` [EXTRACTED]
+- [[Span of Control]] - `defines_benchmark_for` [EXTRACTED]
+- [[performance-review]] - `informs` [INFERRED]

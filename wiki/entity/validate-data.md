@@ -19,3 +19,10 @@ Vor Stakeholder-Präsentation, Kalkulationen spot-checken, SQL-Ergebnisse verifi
 
 ## Quellen
 > [Source: raw/skills/validate-data.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Data Validation  QA]] - `rationale_for` [INFERRED]
+- [[Survivorship Bias]] - `detects` [EXTRACTED]
+- [[testing-strategy]] - `semantically_similar_to` [INFERRED]
+- [[variance-analysis]] - `semantically_similar_to` [INFERRED]
+- [[write-query]] - `semantically_similar_to` [INFERRED]

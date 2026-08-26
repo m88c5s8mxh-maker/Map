@@ -19,3 +19,9 @@ Vor Release, Datenbankmigrationen, Feature Flags, CI-Status, Rollback-Trigger
 
 ## Quellen
 > [Source: raw/skills/deploy-checklist.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Deploy Checklist]] - `implements` [EXTRACTED]
+- [[Engineering]] - `belongs_to` [EXTRACTED]
+- [[Rollback Plan]] - `includes` [EXTRACTED]
+- [[debug]] - `semantically_similar_to` [INFERRED]

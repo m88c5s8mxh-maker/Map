@@ -45,3 +45,8 @@ Nach `setup.sh` werden post-commit und post-checkout Hooks installiert — der G
 
 ## Quellen
 > [Source: raw/skills/graphify.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Context Navigation Rules]] - `depends_on` [EXTRACTED]
+- [[global-CLAUDE]] - `defines_trigger_for` [EXTRACTED]
+- [[morioCRM-CLAUDE]] - `integrates_with` [EXTRACTED]

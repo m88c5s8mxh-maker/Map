@@ -19,3 +19,8 @@ Spalten hinzufügen, Formeln, Formatierung, Charts, messy Data bereinigen
 
 ## Quellen
 > [Source: raw/skills/xlsx.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Financial Model]] - `supports` [EXTRACTED]
+- [[openpyxl]] - `uses` [EXTRACTED]
+- [[pandas]] - `uses` [EXTRACTED]

@@ -19,3 +19,10 @@ Chart-Auswahl, Accessibility, Farblehre, publikationsreife Figures
 
 ## Quellen
 > [Source: raw/skills/data-visualization.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Chart Selection]] - `includes` [EXTRACTED]
+- [[Data Visualization]] - `implements` [EXTRACTED]
+- [[create-viz]] - `semantically_similar_to` [EXTRACTED]
+- [[matplotlib]] - `uses` [EXTRACTED]
+- [[seaborn]] - `uses` [EXTRACTED]

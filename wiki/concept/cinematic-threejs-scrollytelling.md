@@ -26,13 +26,13 @@ CSS-Overlay (`#aerial-forest`, z-index:11) mit Drohnen-Bild:
 
 ## Motion Philosophy
 
-Aus [[Motion Philosophy — Spring physics stiffness100 damping20]]:
+Aus [[Motion Philosophy — Spring physics stiffness100 damping20, perpetual micro-loops, staggered orchestration|Motion Philosophy — Spring physics stiffness100 damping20]]:
 - Alle Floats: `sin(time·a)·amp1 + sin(time·b)·amp2` — nie lineare Easing
 - Perpetual micro-loops: jedes Element hat Dauerbewegung
 - Stagger via `phase`-Offset pro Instanz
 
 ## Verbindungen
 
-- [[Backdrop Shader — Animated Images]] — ShaderMaterial Technik
-- [[Motion Philosophy — Spring physics stiffness100 damping20]]
+- [[concept/backdrop-shader-animated|Backdrop Shader — Animated Images]] — ShaderMaterial Technik
+- [[Motion Philosophy — Spring physics stiffness100 damping20, perpetual micro-loops, staggered orchestration|Motion Philosophy — Spring physics stiffness100 damping20]]
 - [[Design Advisor (design)]]

@@ -19,3 +19,10 @@ Verteilungen, Signifikanztests, Anomalien, Korrelationen, statistische Ergebniss
 
 ## Quellen
 > [Source: raw/skills/statistical-analysis.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Hypothesis Testing]] - `implements` [EXTRACTED]
+- [[Outlier and Anomaly Detection]] - `implements` [EXTRACTED]
+- [[Statistical Significance]] - `covers` [EXTRACTED]
+- [[sox-testing]] - `semantically_similar_to` [INFERRED]
+- [[synthesize-research]] - `complements` [INFERRED]

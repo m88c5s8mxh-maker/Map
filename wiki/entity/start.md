@@ -19,3 +19,7 @@ Plugin erstmalig einrichten, Working Memory aus bestehender Task-Liste bootstrap
 
 ## Quellen
 > [Source: raw/skills/start.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Working Memory Bootstrap]] - `implements` [EXTRACTED]
+- [[task-management]] - `used_by` [EXTRACTED]

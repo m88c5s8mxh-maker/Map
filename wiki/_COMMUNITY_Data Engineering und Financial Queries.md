@@ -1,4 +1,4 @@
-﻿---
+---
 type: community
 cohesion: 0.17
 members: 16
@@ -35,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Design Skills — Taste, Premium UI, Anti-Slop]]
 
 ## Top bridge nodes
 - [[design-taste-frontend SKILL (High-Agency Frontend)]] - degree 9, connects to 1 community

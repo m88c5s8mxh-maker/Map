@@ -1,4 +1,4 @@
-﻿---
+---
 type: community
 cohesion: 0.19
 members: 13
@@ -32,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_HR und People Operations]]
 
 ## Top bridge nodes
 - [[Knowledge Base Connector]] - degree 4, connects to 1 community

@@ -19,3 +19,7 @@ Poster, Artwork, statische Designs — nie existierende Künstler kopieren
 
 ## Quellen
 > [Source: raw/skills/canvas-design.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[algorithmic-art]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

@@ -19,3 +19,6 @@ Frühere Gespräche referenzieren, Präferenzen merken, Skill-Erstellung, MCP-Se
 
 ## Quellen
 > [Source: raw/skills/conversation-context.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[User Context (Ulm, DE)]] - `stores` [EXTRACTED]

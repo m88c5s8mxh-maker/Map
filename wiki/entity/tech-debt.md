@@ -19,3 +19,7 @@ Tech Debt Audit, was refactoren, Code-Health, Maintenance Backlog
 
 ## Quellen
 > [Source: raw/skills/tech-debt.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Tech Debt Prioritization Framework]] - `implements` [EXTRACTED]
+- [[Technical Debt Categories]] - `defines` [EXTRACTED]

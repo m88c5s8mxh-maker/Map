@@ -19,3 +19,8 @@ API Design, Data Modeling, Service Boundaries, Architektur-Entscheidungen
 
 ## Quellen
 > [Source: raw/skills/system-design.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Architecture Decision Record]] - `semantically_similar_to` [INFERRED]
+- [[System Architecture Design]] - `implements` [EXTRACTED]
+- [[Trade-off Analysis]] - `implements` [EXTRACTED]

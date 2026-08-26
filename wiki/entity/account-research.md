@@ -19,3 +19,8 @@ Vollständiger Account-Überblick, gezielte Feldfragen, CRM-Signale
 
 ## Quellen
 > [Source: raw/skills/account-research.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Common Room]] - `uses_tool` [EXTRACTED]
+- [[call-prep]] - `depends_on` [EXTRACTED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

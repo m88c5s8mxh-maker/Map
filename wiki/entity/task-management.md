@@ -19,3 +19,7 @@ Aufgaben hinzufügen/abschließen, Commitments tracken
 
 ## Quellen
 > [Source: raw/skills/task-management.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[TASKS.md Task File]] - `manages` [EXTRACTED]
+- [[start]] - `used_by` [EXTRACTED]

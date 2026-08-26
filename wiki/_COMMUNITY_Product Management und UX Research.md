@@ -1,4 +1,4 @@
-﻿---
+---
 type: community
 cohesion: 0.11
 members: 19
@@ -38,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Product Analytics, Metrics und Dashboards]]
 
 ## Top bridge nodes
 - [[Thematic Analysis (Research)]] - degree 2, connects to 1 community

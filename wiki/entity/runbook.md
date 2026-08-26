@@ -19,3 +19,9 @@ On-Call/Ops-Aufgaben, Tribal Knowledge in Schritt-für-Schritt-Befehle, Eskalati
 
 ## Quellen
 > [Source: raw/skills/runbook.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Escalation Path]] - `includes` [EXTRACTED]
+- [[Knowledge Base Connector]] - `uses_when_available` [EXTRACTED]
+- [[Operational Runbook]] - `produces` [EXTRACTED]
+- [[process-doc]] - `semantically_similar_to` [INFERRED]

@@ -19,3 +19,10 @@ PTO, Benefits, Remote Work, Reisekosten, Handbuchangeln
 
 ## Quellen
 > [Source: raw/skills/policy-lookup.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Employee Handbook]] - `searches` [EXTRACTED]
+- [[HR  People Operations Domain]] - `belongs_to_domain` [INFERRED]
+- [[HR Policy Lookup]] - `retrieves` [EXTRACTED]
+- [[HRIS Connector]] - `uses_when_available` [EXTRACTED]
+- [[Knowledge Base Connector]] - `uses_when_available` [EXTRACTED]

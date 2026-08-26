@@ -19,3 +19,8 @@ Stack-Trace, 'funktioniert in Staging aber nicht Prod', unerwartetes Verhalten
 
 ## Quellen
 > [Source: raw/skills/debug.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Debug Workflow]] - `implements` [EXTRACTED]
+- [[Engineering]] - `belongs_to` [EXTRACTED]
+- [[deploy-checklist]] - `semantically_similar_to` [INFERRED]

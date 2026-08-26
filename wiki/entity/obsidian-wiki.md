@@ -32,3 +32,9 @@ LLM-gepflegte persistente Wissensdatenbank — Quellen einlesen, abfragen, Gesun
 
 ## Quellen
 > [Source: raw/skills/obsidian-wiki.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Karpathy LLM Wiki Pattern]] - `implements` [EXTRACTED]
+- [[Knowledge Base Connector]] - `semantically_similar_to` [INFERRED]
+- [[Obsidian]] - `uses` [EXTRACTED]
+- [[Persistent Knowledge Wiki]] - `produces` [EXTRACTED]

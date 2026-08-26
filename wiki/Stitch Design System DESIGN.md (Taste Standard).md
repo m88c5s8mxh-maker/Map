@@ -11,7 +11,7 @@ tags:
 # Stitch Design System DESIGN.md (Taste Standard)
 
 ## Connections
-- [[DESIGN.md â€“ Single Source of Truth for Google Stitch]] - `instantiates` [EXTRACTED]
+- [[DESIGN.md – Single Source of Truth for Google Stitch]] - `instantiates` [EXTRACTED]
 - [[Inline Image Typography (photos embedded in headlines)]] - `defines` [EXTRACTED]
 - [[Warm Monochrome Palette with Muted Pastel Accents]] - `semantically_similar_to` [INFERRED]
 

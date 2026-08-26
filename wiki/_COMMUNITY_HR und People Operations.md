@@ -1,4 +1,4 @@
-﻿---
+---
 type: community
 cohesion: 0.12
 members: 22
@@ -41,8 +41,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 16]]
-- 1 edge to [[_COMMUNITY_Community 5]]
+- 1 edge to [[_COMMUNITY_Knowledge Management, Runbooks und SOPs]]
+- 1 edge to [[_COMMUNITY_Product Analytics, Metrics und Dashboards]]
 
 ## Top bridge nodes
 - [[policy-lookup]] - degree 5, connects to 1 community

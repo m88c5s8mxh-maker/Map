@@ -19,3 +19,9 @@ Vollständiges Call-Prep-Brief mit Account-Research, Kontakt-Research und Signal
 
 ## Quellen
 > [Source: raw/skills/call-prep.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Common Room]] - `uses_tool` [EXTRACTED]
+- [[account-research]] - `depends_on` [EXTRACTED]
+- [[call-summary]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

@@ -19,3 +19,7 @@ Langsamer Prozess, Engpässe, zu viele Schritte, Workflow-Optimierung
 
 ## Quellen
 > [Source: raw/skills/process-optimization.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Process Waste (Lean)]] - `identifies` [EXTRACTED]
+- [[process-doc]] - `semantically_similar_to` [INFERRED]

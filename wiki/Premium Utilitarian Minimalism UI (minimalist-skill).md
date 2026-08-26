@@ -14,7 +14,7 @@ tags:
 - [[Banned Fonts List (Inter, Roboto, Arial, Open Sans)]] - `enforces` [EXTRACTED]
 - [[GPU-Safe Animation (transform + opacity only)]] - `enforces` [EXTRACTED]
 - [[Premium  Anti-Generic UI Design Principle]] - `implements` [EXTRACTED]
-- [[Taste Skill README â€“ Collection Overview]] - `references` [EXTRACTED]
+- [[Taste Skill README – Collection Overview]] - `references` [EXTRACTED]
 - [[Warm Monochrome Palette]] - `defines` [EXTRACTED]
 - [[llms.txt Skill Index]] - `references` [EXTRACTED]
 

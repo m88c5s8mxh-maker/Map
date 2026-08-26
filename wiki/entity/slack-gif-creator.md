@@ -19,3 +19,7 @@ Slack-Constraints, Validierungstools, Animationskonzepte
 
 ## Quellen
 > [Source: raw/skills/slack-gif-creator.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[GIF Optimization for Slack]] - `implements` [EXTRACTED]
+- [[PIL  Pillow]] - `uses` [EXTRACTED]

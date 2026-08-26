@@ -19,3 +19,8 @@ Executive KPI-Übersicht, Query-Ergebnisse als teilbarer Report, Monitoring-Snap
 
 ## Quellen
 > [Source: raw/skills/build-dashboard.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Chart.js]] - `uses_tool` [EXTRACTED]
+- [[analyze]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

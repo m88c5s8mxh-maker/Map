@@ -19,3 +19,10 @@ Compliance-Status, Audit-Vorbereitung, regulatorische Anforderungen dokumentiere
 
 ## Quellen
 > [Source: raw/skills/compliance-tracking.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Audit Readiness]] - `produces` [EXTRACTED]
+- [[Compliance & Security]] - `belongs_to` [EXTRACTED]
+- [[Compliance Framework]] - `implements` [EXTRACTED]
+- [[GDPR]] - `covers` [EXTRACTED]
+- [[SOC 2]] - `covers` [EXTRACTED]

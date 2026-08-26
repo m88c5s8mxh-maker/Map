@@ -19,7 +19,7 @@ members: 13
 - [[Perpetual Micro-Interactions (infinite-loop component states)]] - document - skills/taste-skill/SKILL.md
 - [[Rationale Spring physics over linear easing for premium feel]] - document - skills/taste-skill/SKILL.md
 - [[Rationale Use min-h-100dvh instead of h-screen for iOS Safari fix]] - document - skills/taste-skill/SKILL.md
-- [[SKILL.md â€“ Portable AI Instruction File Format]] - document - skills/taste-skill/README.md
+- [[SKILL.md – Portable AI Instruction File Format]] - document - skills/taste-skill/README.md
 - [[Spring Physics Animation (stiffness100, damping20)]] - document - skills/taste-skill/SKILL.md
 - [[Taste Skill (design-taste-frontend)]] - document - skills/taste-skill/SKILL.md
 - [[VISUAL_DENSITY Dial (1-10 content density parameter)]] - document - skills/taste-skill/SKILL.md

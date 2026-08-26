@@ -19,3 +19,10 @@ Sourcing, Screening, Interviewing, Offer Status tracken
 
 ## Quellen
 > [Source: raw/skills/recruiting-pipeline.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[HR  People Operations Domain]] - `belongs_to_domain` [INFERRED]
+- [[Recruiting Pipeline Stages]] - `defines` [EXTRACTED]
+- [[Time to Fill (Recruiting)]] - `tracks` [EXTRACTED]
+- [[onboarding]] - `feeds_into` [INFERRED]
+- [[people-report]] - `feeds_data_into` [INFERRED]

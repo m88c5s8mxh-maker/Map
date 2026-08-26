@@ -19,3 +19,7 @@ Per-Meeting Account und Kontakt-Research aus Common Room
 
 ## Quellen
 > [Source: raw/skills/weekly-prep-brief.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Common Room]] - `integrates_with` [EXTRACTED]
+- [[Weekly Prep Brief]] - `produces` [EXTRACTED]

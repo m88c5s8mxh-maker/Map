@@ -19,3 +19,7 @@ System-/Prozessänderung für Genehmigung, CAB-Review, Deployment-Risiko
 
 ## Quellen
 > [Source: raw/skills/change-request.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Change Management Framework]] - `implements` [EXTRACTED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

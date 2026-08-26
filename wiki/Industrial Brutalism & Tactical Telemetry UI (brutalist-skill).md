@@ -14,7 +14,7 @@ tags:
 - [[Premium  Anti-Generic UI Design Principle]] - `implements` [INFERRED]
 - [[Swiss Typographic Design]] - `defines` [EXTRACTED]
 - [[Tactical Telemetry  CRT Terminal Archetype]] - `defines` [EXTRACTED]
-- [[Taste Skill README â€“ Collection Overview]] - `references` [EXTRACTED]
+- [[Taste Skill README – Collection Overview]] - `references` [EXTRACTED]
 - [[llms.txt Skill Index]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_2

@@ -19,3 +19,8 @@ Anthropic Brand Colors und Stil auf Dokumente, Dashboards, Präsentationen anwen
 
 ## Quellen
 > [Source: raw/skills/brand-guidelines.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Anthropic Brand Identity]] - `applies` [EXTRACTED]
+- [[brand-review]] - `rationale_for` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

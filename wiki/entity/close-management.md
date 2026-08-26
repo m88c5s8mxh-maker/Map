@@ -19,3 +19,8 @@ Close-Kalender planen, Fortschritt tracken, Blocker identifizieren, Aktivitäten
 
 ## Quellen
 > [Source: raw/skills/close-management.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Month-End Close Process]] - `manages` [EXTRACTED]
+- [[audit-support]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]

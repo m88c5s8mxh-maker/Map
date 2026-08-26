@@ -19,3 +19,10 @@ Was soll eine Rolle kosten, ist dieses Angebot wettbewerbsfähig, Equity-Grant m
 
 ## Quellen
 > [Source: raw/skills/comp-analysis.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Compensation Analysis]] - `implements` [EXTRACTED]
+- [[Compensation Benchmarking]] - `implements` [EXTRACTED]
+- [[Equity Modeling]] - `implements` [EXTRACTED]
+- [[HR & Compensation]] - `belongs_to` [EXTRACTED]
+- [[HRIS]] - `uses_connector` [EXTRACTED]

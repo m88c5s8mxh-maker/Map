@@ -64,5 +64,5 @@ mat.uniforms.time.value = performance.now() * 0.001;
 
 ## Verbindungen
 
-- [[Cinematic Three.js Scrollytelling]]
+- [[concept/cinematic-threejs-scrollytelling|Cinematic Three.js Scrollytelling]]
 - [[Creative Arsenal — Bento Grid, Masonry, Magnetic Button, Gooey Menu, Parallax Tilt Card, etc.]]

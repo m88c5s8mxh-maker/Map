@@ -19,3 +19,7 @@ Neue Assignments aus Projekt-Tracker, veraltete Tasks triagen, Memory-LÃ¼cken fÃ
 
 ## Quellen
 > [Source: raw/skills/update.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Memory Gap Filling]] - `performs` [EXTRACTED]
+- [[TASKS.md Task File]] - `syncs` [EXTRACTED]

@@ -19,3 +19,12 @@ Aktivitätshistorie, Spark-Scores, Website-Visits, CRM-Felder abrufen
 
 ## Quellen
 > [Source: raw/skills/contact-research.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Common Room]] - `uses_connector` [EXTRACTED]
+- [[Contact Profile]] - `produces` [EXTRACTED]
+- [[Persona Classification]] - `produces` [EXTRACTED]
+- [[Sales Enablement]] - `belongs_to` [EXTRACTED]
+- [[Sales Intelligence Workflow]] - `part_of` [INFERRED]
+- [[Spark Enrichment]] - `uses` [EXTRACTED]
+- [[compose-outreach]] - `depends_on` [EXTRACTED]

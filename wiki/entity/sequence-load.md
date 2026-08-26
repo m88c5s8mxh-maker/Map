@@ -19,3 +19,8 @@ Anreicherung, Kontakt-Erstellung, Deduplizierung, Enrollment in einem Flow
 
 ## Quellen
 > [Source: raw/skills/sequence-load.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Apollo MCP]] - `uses` [EXTRACTED]
+- [[Lead Enrichment]] - `implements` [EXTRACTED]
+- [[Outreach Sequence]] - `manages` [EXTRACTED]

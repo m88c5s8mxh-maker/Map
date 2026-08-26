@@ -19,3 +19,11 @@ Neue Opportunity explorieren, Ideen stress-testen, PM-Sparringspartner
 
 ## Quellen
 > [Source: raw/skills/product-brainstorming.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Jobs-to-be-Done (JTBD)]] - `uses_framework` [EXTRACTED]
+- [[OODA Loop]] - `uses_framework` [EXTRACTED]
+- [[Opportunity Solution Tree]] - `uses_framework` [EXTRACTED]
+- [[Product Management Domain]] - `belongs_to_domain` [INFERRED]
+- [[SCAMPER Ideation Framework]] - `uses_framework` [EXTRACTED]
+- [[research-synthesis]] - `informs` [INFERRED]

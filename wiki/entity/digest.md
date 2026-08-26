@@ -19,3 +19,8 @@ Nach Abwesenheit aufholen, Mentions und Action Items zusammenfassen
 
 ## Quellen
 > [Source: raw/skills/digest.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Activity Digest]] - `produces` [EXTRACTED]
+- [[CRM]] - `uses_connector` [EXTRACTED]
+- [[daily-briefing]] - `semantically_similar_to` [INFERRED]

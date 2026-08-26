@@ -19,3 +19,14 @@ Wöchentlicher/Monatlicher/Quartals-Review, Spike oder Drop untersuchen, Scoreca
 
 ## Quellen
 > [Source: raw/skills/metrics-review.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[DAUWAUMAU (Active User Metrics)]] - `defines` [EXTRACTED]
+- [[Dashboard Design Principles]] - `includes` [EXTRACTED]
+- [[North Star Metric]] - `defines` [EXTRACTED]
+- [[OKRs (Objectives and Key Results)]] - `incorporates` [EXTRACTED]
+- [[Product Analytics Connector]] - `uses_when_available` [EXTRACTED]
+- [[Product Management Domain]] - `belongs_to_domain` [INFERRED]
+- [[Product Metrics Hierarchy]] - `implements` [EXTRACTED]
+- [[Retention Metrics (D1D7D30)]] - `defines` [EXTRACTED]
+- [[performance-report]] - `semantically_similar_to` [INFERRED]

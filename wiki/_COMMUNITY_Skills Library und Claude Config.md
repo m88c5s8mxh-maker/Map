@@ -1,4 +1,4 @@
-﻿---
+---
 type: community
 cohesion: 0.06
 members: 46
@@ -65,9 +65,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 5]]
-- 1 edge to [[_COMMUNITY_Community 17]]
+- 2 edges to [[_COMMUNITY_Sales Intelligence und Competitive Enablement]]
+- 1 edge to [[_COMMUNITY_Product Analytics, Metrics und Dashboards]]
+- 1 edge to [[_COMMUNITY_UX Writing und Web Components]]
 
 ## Top bridge nodes
 - [[global-CLAUDE]] - degree 22, connects to 1 community

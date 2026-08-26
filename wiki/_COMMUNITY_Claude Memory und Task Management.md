@@ -1,4 +1,4 @@
-﻿---
+---
 type: community
 cohesion: 0.40
 members: 5
@@ -14,7 +14,7 @@ members: 5
 - [[update_html()]] - code - scripts/update_map.py
 - [[update_index()]] - code - scripts/update_map.py
 - [[update_map.py]] - code - scripts/update_map.py
-- [[update_map.py â€” Wird von der GitHub Action aufgerufen. Generiert graphify-outin]] - rationale - scripts/update_map.py
+- [[update_map.py — Wird von der GitHub Action aufgerufen. Generiert graphify-outin]] - rationale - scripts/update_map.py
 
 ## Live Query (requires Dataview plugin)
 

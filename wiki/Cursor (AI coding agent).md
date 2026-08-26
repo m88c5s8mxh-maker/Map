@@ -11,6 +11,6 @@ tags:
 # Cursor (AI coding agent)
 
 ## Connections
-- [[Taste Skill README â€“ Collection Overview]] - `supports` [EXTRACTED]
+- [[Taste Skill README – Collection Overview]] - `supports` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_2

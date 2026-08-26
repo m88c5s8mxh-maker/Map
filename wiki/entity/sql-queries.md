@@ -19,3 +19,7 @@ Snowflake, BigQuery, Databricks, PostgreSQL — Queries, Optimierung, Dialekt-Ü
 
 ## Quellen
 > [Source: raw/skills/sql-queries.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[SQL Dialect Compatibility]] - `covers` [EXTRACTED]
+- [[Window Functions]] - `documents` [EXTRACTED]

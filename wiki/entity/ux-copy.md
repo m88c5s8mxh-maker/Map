@@ -19,3 +19,8 @@ Button-Text, Bestätigungs-Dialog, Empty State, Onboarding-Text
 
 ## Quellen
 > [Source: raw/skills/ux-copy.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Call to Action (CTA)]] - `covers` [EXTRACTED]
+- [[Microcopy]] - `produces` [EXTRACTED]
+- [[ux-design]] - `semantically_similar_to` [INFERRED]

@@ -20,9 +20,9 @@ tags:
 - [[Perpetual Micro-Interactions (infinite-loop component states)]] - `defines` [EXTRACTED]
 - [[Premium  Anti-Generic UI Design Principle]] - `implements` [EXTRACTED]
 - [[Rationale Use min-h-100dvh instead of h-screen for iOS Safari fix]] - `rationale_for` [EXTRACTED]
-- [[SKILL.md â€“ Portable AI Instruction File Format]] - `uses` [EXTRACTED]
+- [[SKILL.md – Portable AI Instruction File Format]] - `uses` [EXTRACTED]
 - [[Spring Physics Animation (stiffness100, damping20)]] - `specifies` [EXTRACTED]
-- [[Taste Skill README â€“ Collection Overview]] - `documents` [EXTRACTED]
+- [[Taste Skill README – Collection Overview]] - `documents` [EXTRACTED]
 - [[VISUAL_DENSITY Dial (1-10 content density parameter)]] - `defines` [EXTRACTED]
 - [[llms.txt Skill Index]] - `references` [EXTRACTED]
 

@@ -1,4 +1,4 @@
-﻿---
+---
 type: community
 cohesion: 0.25
 members: 9

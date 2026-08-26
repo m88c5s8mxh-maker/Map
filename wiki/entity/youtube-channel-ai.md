@@ -19,3 +19,8 @@ Channel Forensics, Viral Titles, Script Curator — Kanäle mit 3M+ Views/Monat 
 
 ## Quellen
 > [Source: raw/skills/youtube-channel-ai.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Channel Forensics]] - `includes_step` [EXTRACTED]
+- [[Faceless YouTube Channel]] - `enables` [EXTRACTED]
+- [[Viral Title Production]] - `includes_step` [EXTRACTED]

@@ -19,3 +19,11 @@ E-Mail, Call-Script und LinkedIn-Nachricht — alle drei Formate auf einmal
 
 ## Quellen
 > [Source: raw/skills/compose-outreach.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Common Room]] - `uses_connector` [EXTRACTED]
+- [[Outreach Personalization]] - `implements` [EXTRACTED]
+- [[Sales Enablement]] - `belongs_to` [EXTRACTED]
+- [[Signal-Based Outreach]] - `implements` [EXTRACTED]
+- [[contact-research]] - `depends_on` [EXTRACTED]
+- [[content-creation]] - `semantically_similar_to` [INFERRED]

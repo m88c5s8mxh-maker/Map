@@ -15,7 +15,7 @@ tags:
 - [[GPU-Safe Animation (transform + opacity only)]] - `enforces` [EXTRACTED]
 - [[Premium  Anti-Generic UI Design Principle]] - `implements` [EXTRACTED]
 - [[Spring Physics Animation (stiffness100, damping20)]] - `specifies` [EXTRACTED]
-- [[Taste Skill README â€“ Collection Overview]] - `references` [EXTRACTED]
+- [[Taste Skill README – Collection Overview]] - `references` [EXTRACTED]
 - [[llms.txt Skill Index]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_2

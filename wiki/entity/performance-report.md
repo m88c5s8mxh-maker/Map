@@ -19,3 +19,12 @@ Kampagnen-Wrap-up, Kanal-Summary für Stakeholder, Executive Summary
 
 ## Quellen
 > [Source: raw/skills/performance-report.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Attribution Modeling]] - `includes` [EXTRACTED]
+- [[Customer Acquisition Cost (CAC)]] - `tracks` [EXTRACTED]
+- [[Dashboard Design Principles]] - `incorporates` [EXTRACTED]
+- [[Marketing]] - `belongs_to_domain` [INFERRED]
+- [[Marketing Funnel Metrics]] - `analyzes` [EXTRACTED]
+- [[Return on Ad Spend (ROAS)]] - `tracks` [EXTRACTED]
+- [[metrics-review]] - `semantically_similar_to` [INFERRED]

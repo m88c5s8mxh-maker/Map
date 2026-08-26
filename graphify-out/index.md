@@ -1,3 +1,5 @@
+> ⚠️ Dies ist ein archivierter Rohexport eines `graphify`-Laufs. Der gepflegte, aktuelle Index ist [[wiki/index|wiki/index.md]].
+
 # Knowledge Graph Index
 
 > Zuletzt aktualisiert: 2026-05-13 · 880 Wiki-Seiten · 166 Quelldateien
@@ -318,7 +320,7 @@
 - [[Cursor (AI coding agent)]]
 - [[Customer Acquisition Cost (CAC)]]
 - [[DAUWAUMAU (Active User Metrics)]]
-- [[DESIGN.md â€“ Single Source of Truth for Google Stitch]]
+- [[DESIGN.md – Single Source of Truth for Google Stitch]]
 - [[DESIGN.md — Stitch Design System Document]]
 - [[DESIGN_VARIANCE Dial (1-10 Symmetry to Chaos)]]
 - [[DESIGN_VARIANCE Dial (1-10 layout variance parameter)]]
@@ -340,7 +342,7 @@
 - [[Deploy Checklist]]
 - [[Design & UX]]
 - [[Design Advisor (design)]]
-- [[Design Audit â€“ Systematic Upgrade Checklist]]
+- [[Design Audit – Systematic Upgrade Checklist]]
 - [[Design Audit]]
 - [[Design Data CSV Files]]
 - [[Design Dial System (Creativity, Density, Variance, Motion Intent)]]
@@ -448,9 +450,9 @@
 - [[Knowledge Graph_1]]
 - [[Knowledge Synthesis Skill]]
 - [[LLM Laziness Research References]]
-- [[LLM Laziness â€“ Empirical Results (2025 Studies)]]
+- [[LLM Laziness – Empirical Results (2025 Studies)]]
 - [[LLM Output Truncation  Laziness Behavior]]
-- [[LLM Output Truncation Research â€“ Overview]]
+- [[LLM Output Truncation Research – Overview]]
 - [[LLM Output Truncation Research — root causes, remediation, empirical findings]]
 - [[Landing Page Copy]]
 - [[Landing Page]]
@@ -577,7 +579,7 @@
 - [[SEO Recommendations]]
 - [[SEO]]
 - [[SKILL.md YAML Front-Matter Discovery Hook]]
-- [[SKILL.md â€“ Portable AI Instruction File Format]]
+- [[SKILL.md – Portable AI Instruction File Format]]
 - [[SOC 2]]
 - [[SOX 404]]
 - [[SOX Internal Controls]]
@@ -631,7 +633,7 @@
 - [[Tailwind CSS]]
 - [[Taste Skill (design-taste-frontend)]]
 - [[Taste Skill 3-Dial Settings — DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY]]
-- [[Taste Skill README â€“ Collection Overview]]
+- [[Taste Skill README – Collection Overview]]
 - [[Taste Skill Research Hub — LLM output truncation study directory]]
 - [[Taste Skill Research Index]]
 - [[Taste Skill Variants — taste, redesign, soft, output, minimalist, brutalist, stitch]]
@@ -695,7 +697,7 @@
 - [[_COMMUNITY_Cinematic Web, AI Video und Bayern-Oberpfalz]]
 - [[_COMMUNITY_Claude Memory Architecture]]
 - [[_COMMUNITY_Claude Memory und Task Management]]
-- [[_COMMUNITY_Community 55]]
+- [[_COMMUNITY_XML Prompt Architecture]]
 - [[_COMMUNITY_Compensation Analysis und HR]]
 - [[_COMMUNITY_Compliance und Security GDPR SOC2]]
 - [[_COMMUNITY_Content Creation und SEO Copywriting]]

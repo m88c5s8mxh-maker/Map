@@ -19,3 +19,6 @@ Slides, Docs, Reportings, HTML Landing Pages stylen — Farben + Fonts
 
 ## Quellen
 > [Source: raw/skills/theme-factory.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Theme Palette]] - `provides` [EXTRACTED]

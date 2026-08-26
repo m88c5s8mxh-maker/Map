@@ -19,3 +19,9 @@ Testing-Workpapers generieren, Audit-Samples auswählen, Kontrollmängel klassif
 
 ## Quellen
 > [Source: raw/skills/audit-support.md]
+
+## Verbindungen (Graph-Extraktion)
+- [[Internal Controls over Financial Reporting]] - `addresses` [EXTRACTED]
+- [[SOX 404]] - `supports_compliance_with` [EXTRACTED]
+- [[close-management]] - `semantically_similar_to` [INFERRED]
+- [[global-CLAUDE]] - `registers_skill` [EXTRACTED]
