@@ -10,3 +10,11 @@ OK: neu angelegt `wiki/entity/morio-crm.md`, `wiki/concept/server-quellcode-drif
 error: unknown command '.'
 Run 'graphify --help' for usage.
 2026-08-26 15:51:02 [integrate] graph-update fehlgeschlagen
+[graphify] Extraction warning (250 issues): Node 61 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 2 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 633 nodes, 737 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[detached HEAD 52e336c] Session: 2026-08-20-preview-reiter-in-crm-intranet-einbauen
+ 2 files changed, 14 insertions(+), 1 deletion(-)
+2026-08-26 15:51:03 [integrate] NO_PUSH gesetzt - nur lokal committed
+2026-08-26 15:51:03 [integrate] fertig 3fe1e528-test
