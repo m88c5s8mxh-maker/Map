@@ -1,0 +1,66 @@
+{
+  "model": "opus[1m]",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f graphify-out/index.md ]; then echo '{\"hookSpecificOutput\": {\"hookEventName\": \"SessionStart\", \"additionalContext\": \"GRAPHIFY MAP AKTIV: Lies zuerst graphify-out/index.md bevor du Dateien öffnest. Token-Budget: Map=~280 Tokens, alle Dateien=~20000 Tokens.\"}}'; fi",
+            "statusMessage": "Graphify Map wird geladen..."
+          },
+          {
+            "type": "command",
+            "command": "cd /Users/tyrone/Map && git pull --ff-only 2>/dev/null || true",
+            "statusMessage": "Map wird synchronisiert (git pull)..."
+          },
+          {
+            "type": "command",
+            "command": "cd /Users/tyrone/Morio-Solutions && git pull --ff-only 2>/dev/null || true",
+            "statusMessage": "Morio Solutions Graph wird synchronisiert (git pull)..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/tyrone/Map/scripts/map-git-sync.sh \"Auto: wiki sync $(date '+%Y-%m-%d %H:%M')\"",
+            "statusMessage": "Map wird gespeichert (git push)..."
+          },
+          {
+            "type": "command",
+            "command": "cd /Users/tyrone/Morio-Solutions && git add -A && git diff --cached --quiet || git commit -m \"Auto: morio sync $(date '+%Y-%m-%d %H:%M')\" && git push 2>/dev/null || true",
+            "statusMessage": "Morio Solutions wird gespeichert (git push)..."
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/tyrone/Map/scripts/session-capture.sh",
+            "timeout": 30,
+            "statusMessage": "Session wird für die Map ausgewertet..."
+          }
+        ]
+      }
+    ]
+  },
+  "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "enabledPlugins": {
+    "playwright@claude-plugins-official": true
+  }
+}
