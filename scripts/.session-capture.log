@@ -74,3 +74,12 @@ Everything up-to-date
 To https://github.com/m88c5s8mxh-maker/Map.git
    9a286b3..045837a  main -> main
 2026-08-26 20:44:09 [sync] gepusht (main): Auto: wiki sync 2026-08-26 20:44
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 1 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main 8b1bd3d] Auto: wiki sync 2026-08-27 14:11
+ 1 file changed, 13 insertions(+)
+To https://github.com/m88c5s8mxh-maker/Map.git
+   045837a..8b1bd3d  main -> main
+2026-08-27 14:11:14 [sync] gepusht (main): Auto: wiki sync 2026-08-27 14:11
