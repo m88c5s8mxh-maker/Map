@@ -235,3 +235,19 @@ To https://github.com/m88c5s8mxh-maker/Map.git
 To https://github.com/m88c5s8mxh-maker/Map.git
    d068ffe..d8f6725  main -> main
 2026-08-27 20:22:01 [sync] gepusht (main): Auto: wiki sync 2026-08-27 20:21
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 1 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main 4244c68] Auto: wiki sync 2026-08-27 20:28
+ 1 file changed, 13 insertions(+)
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-27 20:28:32 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-27 20:28:32 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
