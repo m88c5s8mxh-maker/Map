@@ -272,15 +272,22 @@ function buildBrainContext(taskInput, agentType) {
   return parts.join("\n\n");
 }
 
+// ── Modelle ───────────────────────────────────────────────────────────────────
+// An einer Stelle definiert, damit ein Modellwechsel nicht an fuenf Stellen
+// nachgezogen werden muss. Agents koennen im CRM ein eigenes Modell wählen —
+// das gewinnt gegen diese Vorgaben.
+const MODEL_STANDARD = "claude-sonnet-5";   // normale Agent-Aufgaben
+const MODEL_STARK    = "claude-opus-5";     // Websites und lange Ausgaben
+
 // ── Claude API ────────────────────────────────────────────────────────────────
-async function runWithClaude(prompt, systemPrompt) {
+async function runWithClaude(prompt, systemPrompt, model) {
   if (!ANTHROPIC_KEY) throw new Error("ANTHROPIC_API_KEY nicht gesetzt");
 
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: { "x-api-key": ANTHROPIC_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
     body: JSON.stringify({
-      model: "claude-sonnet-4-6",
+      model: model || MODEL_STANDARD,
       max_tokens: 4096,
       system: systemPrompt,
       messages: [{ role: "user", content: prompt }],
@@ -288,7 +295,7 @@ async function runWithClaude(prompt, systemPrompt) {
   });
   const data = await res.json();
   if (data.error) throw new Error(data.error.message);
-  await reportUsage("runner", data.model || "claude-sonnet-4-6", data.usage);
+  await reportUsage("runner", data.model || model || MODEL_STANDARD, data.usage);
   const textBlock = Array.isArray(data.content) ? data.content.find(b => b.type === "text") : null;
   if (!textBlock?.text) throw new Error("Claude lieferte keine Textantwort");
   return textBlock.text;
@@ -319,7 +326,7 @@ async function runWithClaudeStreaming(prompt, systemPrompt, model, maxTokens) {
     method: "POST",
     headers: { "x-api-key": ANTHROPIC_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
     body: JSON.stringify({
-      model: model || "claude-opus-4-8",
+      model: model || MODEL_STARK,
       max_tokens: maxTokens || 32000,
       stream: true,
       // Skill als gecachter System-Block (spart Kosten bei wiederholten Generierungen)
@@ -357,7 +364,7 @@ async function runWithClaudeStreaming(prompt, systemPrompt, model, maxTokens) {
       } catch (e) { if (e.message && e.message !== "Unexpected end of JSON input") { /* ignore parse noise */ } }
     }
   }
-  await reportUsage("web-agent", model || "claude-opus-4-8", usage);
+  await reportUsage("web-agent", model || MODEL_STARK, usage);
   return text;
 }
 
@@ -395,7 +402,7 @@ function inlineAssets(html, projectPath) {
   );
 }
 
-// Dedizierter Website-Generator — voller Skill + Opus 4.8 + Streaming
+// Dedizierter Website-Generator — voller Skill + starkes Modell + Streaming
 async function generateWebsite(task) {
   const projectName = task.title || "website-projekt";
   const projectPath = openInVSCode(projectName, task.input);
@@ -444,8 +451,8 @@ ${skill}${industryProfile(task.input)}`;
 
   const prompt = `AUFTRAG:\n${task.input}${assetNote}\n\nErstelle jetzt die komplette, fertige index.html nach dem Skill UND der Branchen-Referenz. Nur HTML-Code ausgeben.`;
 
-  console.log("   🎨 Generiere Website mit Opus 4.8 (Streaming, bis 32k Tokens)…");
-  let html = await runWithClaudeStreaming(prompt, system, "claude-opus-4-8", 32000);
+  console.log(`   🎨 Generiere Website mit ${MODEL_STARK} (Streaming, bis 32k Tokens)…`);
+  let html = await runWithClaudeStreaming(prompt, system, MODEL_STARK, 32000);
 
   // Code-Fences entfernen + auf das reine Dokument zuschneiden
   html = html.trim().replace(/^```html?\s*/i, "").replace(/```\s*$/i, "").trim();
@@ -604,6 +611,7 @@ async function processTasks() {
       // Agent-Profil laden
       let agentPrompt = "Du bist ein hilfreicher AI-Agent der Morio Solutions Agentur.";
       let agentType   = "custom";
+      let agentModel  = null;
       if (task.agent_id) {
         try {
           const agentRes = await fetch(`${CRM_URL}/api/agents/${task.agent_id}`, { headers: authHeader });
@@ -611,6 +619,9 @@ async function processTasks() {
             const agent = await agentRes.json();
             if (agent.prompt_template) agentPrompt = agent.prompt_template;
             if (agent.type) agentType = agent.type;
+            // Das im CRM gewaehlte Modell wurde bisher ignoriert — die Auswahl
+            // auf der Agents-Seite war damit wirkungslos.
+            if (agent.model) agentModel = agent.model;
           }
         } catch {}
       }
@@ -630,7 +641,7 @@ async function processTasks() {
       if (isWebsiteTask(task.input)) {
         output = await generateWebsite(task);
       } else {
-        output = await runWithClaude(task.input, systemPrompt);
+        output = await runWithClaude(task.input, systemPrompt, agentModel);
       }
 
       await apiPut(`/api/agents/tasks/${task.id}`, { status: "completed", output });
