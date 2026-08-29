@@ -711,3 +711,22 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 2026-08-29 18:33:32 T2 score=136 30-Tages Content-Plan für AI/Web-Design Startup
 2026-08-29 18:33:33 [integrate] start cab6a8a8-8c50-461e-bf7c-278581a90aa8 -> raw/sessions/2026-08-26-30-tages-content-plan-für-aiweb-design-startup.md
 2026-08-29 18:34:02 T1 score=43 Video equipment guide for personal brand on social media
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 6 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main 03d0814] Session-Mitschnitt: Video equipment guide for personal brand on social media
+ 6 files changed, 1671 insertions(+)
+ create mode 100644 raw/sessions/2026-08-25-video-editor-mit-3d-rekonstruktion-und-ki-integration.md
+ create mode 100644 "raw/sessions/2026-08-26-30-tages-content-plan-f\303\274r-aiweb-design-startup.md"
+ create mode 100644 raw/sessions/2026-08-29-video-equipment-guide-for-personal-brand-on-social-media.md
+ create mode 100644 wiki/entity/morio-studio.md
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 18:34:04 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 18:34:04 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.

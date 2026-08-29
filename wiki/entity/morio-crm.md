@@ -1,6 +1,6 @@
 ---
 tags: [entity, projekt, crm, infrastruktur, morio-solutions]
-sources: [raw/sessions/2026-08-20-preview-reiter-in-crm-intranet-einbauen.md, raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md, raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
+sources: [raw/sessions/2026-08-20-preview-reiter-in-crm-intranet-einbauen.md, raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md, raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md, raw/sessions/2026-08-25-video-editor-mit-3d-rekonstruktion-und-ki-integration.md]
 updated: 2026-08-29
 ---
 
@@ -172,6 +172,57 @@ Diesmal ging es gut aus; die umgekehrte Richtung ist genauso wahrscheinlich.
   `standalone`-Output. Ein `pkill` auf den Dev-Server kann die Build-Artefakte zerschießen —
   `.next` vor dem Upload prüfen.
 
+## Nachtrag 25.–26.08.2026 — Studio unter Lieferung, und der veraltete Arbeitsordner
+
+**Neuer Eintrag `Lieferung → Studio`** (Route `/studio`) — das Medienwerkzeug
+[[morio-studio]], eingesetzt nach dem Muster aus [[additive-fremdcode-einbettung]].
+Cross-Origin-Header (COOP/COEP) fürs Browser-Rendering sind **nur** auf dieser Route
+gescoped, per `curl` gegen `/` und `/websites` gegengeprüft.
+
+> [Quelle: raw/sessions/2026-08-25-video-editor-mit-3d-rekonstruktion-und-ki-integration.md]
+
+**Der lokale Arbeitsordner `~/morio-solutions-ai` war ein veralteter Nicht-Repo-Stand.**
+Er kannte weder die neue Sidebar-Gruppierung (Vertrieb / Lieferung / Geld / Automatisierung)
+noch die Seiten Angebote, Telefon, Umsatz, Abos. Zweimal wurde „Studio" an der falschen
+Stelle eingebaut, bevor das auffiel — einmal als eigener Sidebar-Punkt, einmal als neu
+erfundene Seite „Lieferungen" mit Tab-Leiste, während es die Gruppe **Lieferung** (Projekte,
+Websites, Zeiterfassung) längst gab.
+
+Behoben: alter Ordner nach `~/morio-solutions-ai.stale-backup-20260826` gesichert, das echte
+Repo (`redesign-ui`) an seine Stelle geklont, `.env`/`.env.local`/`.env.production`
+unverändert zurückkopiert. **Seitdem ist der Ordner ein echtes git-Repo** — vorher war er
+keins und konnte deshalb unbemerkt einrosten.
+
+> Das ist [[server-quellcode-drift]] in einer dritten Variante: nicht der Server-Ordner,
+> sondern der **lokale Arbeitsordner** war der Geisterstand. Die Regel bleibt dieselbe —
+> maßgeblich ist, was der Remote bzw. das laufende Artefakt sagt, nie der Ordner unter der Hand.
+
+## Nachtrag 26.08.2026 — „der Reiter ist nicht sichtbar" war der Browser-Cache
+
+Nach dem Anfragen-Deploy meldete der Nutzer, der Reiter fehle. Serverseitig war alles
+korrekt: das ausgelieferte Sidebar-Bundle enthielt laut Build-Manifest „Anfragen", `/anfragen`
+und `/api/inquiries` lagen im laufenden Container, Container `healthy`.
+
+**Ursache: die JS-Dateien werden mit `immutable` ein Jahr lang gecacht.** Der Browser hielt
+den Stand von vor dem Deploy. Prüfreihenfolge, die das in Minuten klärt: erst **im laufenden
+Container** nachsehen (Manifest, Routen), dann hart neu laden (Cmd+Shift+R / Inkognito) —
+nicht umgekehrt raten. Verschärfend lagen auf dem Server nicht aufgeräumte `.next`-Reste aus
+mehreren parallelen Deploys derselben Stunde.
+
+**Zwei parallele Lösungen für dasselbe Problem** waren zu diesem Zeitpunkt im Umlauf:
+
+| | System A (lief bereits live) | System B (gewählt) |
+|---|---|---|
+Ort | `/opt/morio-contact-bridge`, eigener Node-Dienst auf Port 3010 | Tabelle `inquiries` im CRM |
+Ziel | legt direkt einen **Lead** an | eigene Prüf-Warteschlange **vor** den Leads |
+UI | keins | Reiter `Vertrieb → Anfragen` mit Status-Workflow und „als Lead übernehmen" |
+
+Gewählt wurde **B**, weil Anfragen ausdrücklich getrennt von Leads liegen sollten. A läuft
+weiter, aber wirkungslos — bewusst als dokumentierter Rückweg stehengelassen. Wer den Port
+3010 später aufräumt, sollte wissen, dass er damit den Rollback-Pfad entfernt.
+
+> [Quelle: raw/sessions/2026-08-25-video-editor-mit-3d-rekonstruktion-und-ki-integration.md]
+
 ## Offene Risiken
 
 - Das **Server-Root-Passwort steht im Klartext** in `~/Downloads/reviewcrm-rt/deploy.py`.
@@ -182,6 +233,8 @@ Diesmal ging es gut aus; die umgekehrte Richtung ist genauso wahrscheinlich.
 ## Verbindungen
 - [[server-quellcode-drift]] — die Regression und ihre Lehre
 - [[vorschau-webseiten]] — das darauf aufbauende Feature
+- [[morio-studio]] — das Medienwerkzeug unter `Lieferung → Studio`
+- [[additive-fremdcode-einbettung]] — wie es eingesetzt wurde, ohne Bestehendes zu verändern
 - [[moriosolutions-website]] — die öffentliche Seite, deren Anfragen hier landen
 - [[unerreichbarer-dienst-ufw-docker]] — warum die Formularstrecke acht Tage tot war
 - [[Next.js]] · [[Deploy Checklist]] · [[Rollback Plan]] · [[CRM]]

@@ -121,11 +121,13 @@
 
 | Seite | Inhalt |
 |-------|--------|
-| [[morio-crm]] | Das laufende CRM auf `intra.moriosolutions.de` — Stack, Server, echtes Quellcode-Repo (`Beckomate88/MorioCRM`, Branch `redesign-ui`), Deploy-Weg, nginx-Eigenheiten, Backup · ⟳ `Vertrieb → Anfragen` live, `.env.production` 5 → 18 Schlüssel, Build-Reparatur (`React.ElementType` → `LucideIcon`), Parallelarbeit am Repo |
+| [[morio-crm]] | Das laufende CRM auf `intra.moriosolutions.de` — Stack, Server, echtes Quellcode-Repo (`Beckomate88/MorioCRM`, Branch `redesign-ui`), Deploy-Weg, nginx-Eigenheiten, Backup · ⟳ `Vertrieb → Anfragen` live, `.env.production` 5 → 18 Schlüssel, Build-Reparatur (`React.ElementType` → `LucideIcon`), Parallelarbeit am Repo · ⟳ `Lieferung → Studio` live, veralteter lokaler Arbeitsordner ersetzt, „Reiter unsichtbar" = `immutable`-Browser-Cache, zwei parallele Anfragen-Systeme (A/B) |
+| [[morio-studio]] | Browser-Medienwerkzeug unter `Lieferung → Studio`: was echt rechnet (ffmpeg.wasm, Szenenerkennung, GLB-Export) — und warum der 3D-Teil abgeschaltet statt beschriftet wurde |
+| [[additive-fremdcode-einbettung]] | Ein Werkzeug in fremde, aktiv bearbeitete Codebasis setzen, ohne eine Zeile zu verändern: eigene fest verdrahtete Tokens, route-gescopte Header, „0 neue Typfehler" als Abnahme, Rebase statt Überschreiben |
 | [[moriosolutions-website]] | Die öffentliche Landingpage — Aufbau, Deploy (`gzip_static`!), Mobil-Überarbeitung (Globus, Accordions, Animationslängen), nginx im Container statt Systemdienst, Sicherheitsaudit, Soft-404-Fix, offene Config-Bereinigung |
 | [[mobile-choreografie-portierung]] | Warum eine gepinnte Scroll-Choreografie mobil rechnerisch bricht: negativer Nenner, feste vertikale FOV im Portrait, nicht überschriebenes `visibility`, der 820-px-Breakpoint und das gedrehte iPhone |
 | [[unerreichbarer-dienst-ufw-docker]] | Gebaut ≠ erreichbar: ufw kennt nur das Docker-Default-Netz, veröffentlichte Container-Ports umgehen es — und der `405`, der in Wahrheit ein 307-Auth-Redirect ist |
-| [[server-quellcode-drift]] | Warum der Quellcode auf einem Server nicht beweist, was dort läuft — Schadensfall, Prüfroutine, neun verwandte Deploy-Fallen (u. a. `gzip_static`, tote `systemctl`-Rauchtests, Einzeldatei-Mount) |
+| [[server-quellcode-drift]] | Warum der Quellcode auf einem Server nicht beweist, was dort läuft — Schadensfall, Prüfroutine, neun verwandte Deploy-Fallen (u. a. `gzip_static`, tote `systemctl`-Rauchtests, Einzeldatei-Mount) · ⟳ dritte Variante: der lokale Arbeitsordner ohne Remote |
 | [[lenis-scroll-container-konflikt]] | Warum ein `overflow-y:auto`-Container auf einer Lenis-Seite scrollbar ist, sich aber nicht scrollen lässt — `data-lenis-prevent-wheel`, konditionales Blocken, gemessener statt geschätzter Deckel |
 | [[vorschau-webseiten]] | Preview-Webseiten-Reiter unter Projekte: Kunden-Freigabeworkflow, nativ im CRM, live · offene Punkte |
 | [[vertrieb-niedrigpreis-abschluss]] | Kaltakquise-Mechanik bei 1.000–1.500 € Projektpreis: Abschluss im ersten Gespräch, Preis früh als Filter, Agentur-Vergleichszahl als Anker, Inhalte-Frage als Margenschutz |

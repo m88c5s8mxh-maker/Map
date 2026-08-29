@@ -1,6 +1,6 @@
 ---
 tags: [concept, deployment, postmortem, hoch]
-sources: [raw/sessions/2026-08-20-preview-reiter-in-crm-intranet-einbauen.md, raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md, raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
+sources: [raw/sessions/2026-08-20-preview-reiter-in-crm-intranet-einbauen.md, raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md, raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md, raw/sessions/2026-08-25-video-editor-mit-3d-rekonstruktion-und-ki-integration.md]
 updated: 2026-08-29
 ---
 
@@ -116,6 +116,21 @@ daneben aussieht.
 Kostenpunkt des falschen Alarms: eine abgebrochene Sitzung, eine unnötige Rückfrage an den
 Nutzer nach dem „richtigen Branch" — und die Gefahr, dass die Warnung beim nächsten Mal
 ignoriert wird, wenn sie berechtigt ist.
+
+## Nachtrag 25.08.2026 — dritte Variante: der lokale Arbeitsordner
+
+Dieselbe Drift, wieder ein anderer Ordner. `~/morio-solutions-ai` auf dem Arbeitsrechner war
+**kein git-Repo**, sondern eine losgelöste Kopie — und kannte weder die neue Sidebar-Gruppierung
+noch vier live existierende Seiten. Zwei Einbauversuche gingen an die falsche Stelle, bevor ein
+Klon des echten Repos (`redesign-ui`) den Unterschied zeigte. Ein `deploy.sh` aus diesem Ordner
+hätte die Produktion auf den alten Stand zurückgesetzt.
+
+**Verallgemeinerung:** Nicht der *Server*-Ordner ist das Problem, sondern **jeder Ordner ohne
+Remote**. Ein Verzeichnis, das nicht `git fetch` kann, kann auch nicht veralten *hörbar* — es
+altert still. Erste Prüfung vor jeder Arbeit an fremdem Bestand: `git remote -v` und
+`git status`. Details am Fall in [[morio-crm]] und [[morio-studio]].
+
+> [Quelle: raw/sessions/2026-08-25-video-editor-mit-3d-rekonstruktion-und-ki-integration.md]
 
 ## Offene Fragen
 
