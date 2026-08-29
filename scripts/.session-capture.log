@@ -482,3 +482,4 @@ OK: neu angelegt `wiki/entity/session-erfassung-map.md`, `wiki/concept/stiller-s
 /Users/tyrone/Map/scripts/session-integrate.sh: line 102: 19567 Terminated: 15          ( sleep "$TIMEOUT_SEC"; if kill -0 "$CPID" 2> /dev/null; then
     kill -9 "$CPID" 2> /dev/null; log "ABBRUCH Timeout ${TIMEOUT_SEC}s";
 fi )
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
