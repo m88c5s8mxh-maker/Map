@@ -782,3 +782,24 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 2026-08-29 18:36:00 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
 2026-08-29 18:36:00 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
 2026-08-29 18:36:00 [integrate] fertig a6e71d5f-722e-43eb-9613-3e922a8c7a4c
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 6 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main 4a0d77e] Auto: wiki sync 2026-08-29 18:37
+ 6 files changed, 170 insertions(+), 2 deletions(-)
+ create mode 100644 wiki/entity/contentplan-30-tage.md
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 18:37:23 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 18:37:23 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+OK: `wiki/concept/social-content-akquise-lokal.md` (neu), `wiki/entity/marktpreise-crm-webdesign-de.md` (neu), `wiki/entity/contentplan-30-tage.md` (neu), `wiki/concept/vertrieb-niedrigpreis-abschluss.md` (Widerspruchs-Flag + Querverweise), `wiki/index.md`, `wiki/log.md`
+2026-08-29 18:37:24 [integrate] claude beendet rc=0
+/Users/tyrone/Map/scripts/session-integrate.sh: line 102: 21514 Terminated: 15          ( sleep "$TIMEOUT_SEC"; if kill -0 "$CPID" 2> /dev/null; then
+    kill -9 "$CPID" 2> /dev/null; log "ABBRUCH Timeout ${TIMEOUT_SEC}s";
+fi )
