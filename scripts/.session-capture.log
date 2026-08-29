@@ -730,3 +730,38 @@ hint: use 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 2026-08-29 18:34:04 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
 2026-08-29 18:34:04 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 8 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main f3d6091] Auto: wiki sync 2026-08-29 18:35
+ 8 files changed, 354 insertions(+), 5 deletions(-)
+ create mode 100644 wiki/concept/additive-fremdcode-einbettung.md
+ create mode 100644 wiki/concept/social-content-akquise-lokal.md
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 18:35:57 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 18:35:57 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+Integriert. Zwei neue Seiten, drei ergänzte.
+
+**Neu**
+- `wiki/entity/morio-studio.md` — das Browser-Medienwerkzeug unter `Lieferung → Studio`: was verifiziert echt rechnet (Szenenerkennung 3/3, ffmpeg.wasm-Export, Canvas-Konvertierung, GLB-Export) und die 3D-Entscheidung mit Begründung — abgeschaltet statt beschriftet, weil COLMAP/NeRF/Gaussian Splatting GPU-Minuten pro Objekt brauchen.
+- `wiki/concept/additive-fremdcode-einbettung.md` — das übertragbare Einsetz-Muster: eigene fest verdrahtete Tokens gegen den Theme-Toggle des Wirts, route-gescopte COOP/COEP-Header, „0 neue Typfehler" als Abnahmekriterium, Rebase statt Überschreiben, und die Messungen, ohne die „nichts anderes berührt" nur eine Erinnerung ist.
+
+**Ergänzt**
+- `wiki/entity/morio-crm.md` — Studio-Reiter, der veraltete lokale Arbeitsordner (kein git-Repo, zwei Fehleinbauten), „Reiter unsichtbar" als `immutable`-Browser-Cache statt Deploy-Fehler, die zwei parallelen Anfragen-Systeme mit Port 3010 als bewusst stehengelassenem Rückweg.
+- `wiki/concept/server-quellcode-drift.md` — dritte Drift-Variante: nicht der Server-, sondern der lokale Ordner ohne Remote.
+- `wiki/index.md`, `wiki/log.md`.
+
+Kein Widerspruch zu bestehenden Seiten; ein `#prüfen` gesetzt (Studio existiert in zwei Codebasen ohne Abgleich).
+
+OK: entity/morio-studio.md (neu), concept/additive-fremdcode-einbettung.md (neu), entity/morio-crm.md, concept/server-quellcode-drift.md, index.md, log.md
+2026-08-29 18:35:58 [integrate] claude beendet rc=0
+/Users/tyrone/Map/scripts/session-integrate.sh: line 102: 21376 Terminated: 15          ( sleep "$TIMEOUT_SEC"; if kill -0 "$CPID" 2> /dev/null; then
+    kill -9 "$CPID" 2> /dev/null; log "ABBRUCH Timeout ${TIMEOUT_SEC}s";
+fi )
