@@ -563,3 +563,29 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
 [main 412f685] Auto: wiki sync 2026-08-29 18:18
  6 files changed, 42 insertions(+), 5 deletions(-)
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 18:18:31 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 18:18:31 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+Integration done. Three notes on what happened:
+
+**Judgment: JA** — this session carried a lot of durable knowledge (root causes with mechanisms, two live bugs that predated the work, a corrected self-diagnosis, and a project state change).
+
+**Note on concurrency:** a parallel integration of the 2026-08-27 session was writing into the same files while I worked. It created `entity/moriosolutions-website.md` as a dangling link target, which I had independently chosen as the name — our content merged cleanly, and I left its additions untouched.
+
+**One contradiction I could not resolve, only flag:** that parallel page measured that ports 3000–3002 *do* time out from outside, i.e. ufw is not bypassed. My session measured that 3001 *was* reachable from inside the nginx container while 3010 was not, under the same ufw rule. I recorded the observation as fact and the iptables explanation (INPUT vs. FORWARD/DOCKER chain) as an unverified hypothesis with `#prüfen`, rather than picking a winner. Same for the `scp .env.production → .env` line, which the 08-20 page says was removed and this session found present.
+
+OK: neu `entity/moriosolutions-website.md` (mit der Parallel-Integration verschmolzen), `concept/mobile-choreografie-portierung.md`, `concept/unerreichbarer-dienst-ufw-docker.md` · aktualisiert `entity/morio-crm.md`, `concept/server-quellcode-drift.md`, `wiki/index.md`, `wiki/log.md`
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+2026-08-29 18:18:32 [integrate] claude beendet rc=0
+/Users/tyrone/Map/scripts/session-integrate.sh: line 102: 19452 Terminated: 15          ( sleep "$TIMEOUT_SEC"; if kill -0 "$CPID" 2> /dev/null; then
+    kill -9 "$CPID" 2> /dev/null; log "ABBRUCH Timeout ${TIMEOUT_SEC}s";
+fi )
+[graphify hook] 2 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
