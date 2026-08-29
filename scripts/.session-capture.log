@@ -483,3 +483,46 @@ OK: neu angelegt `wiki/entity/session-erfassung-map.md`, `wiki/concept/stiller-s
     kill -9 "$CPID" 2> /dev/null; log "ABBRUCH Timeout ${TIMEOUT_SEC}s";
 fi )
 [graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 3 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main 522ffde] Session: 2026-08-26-obsidian-integration-for-claude-session-archiving
+ 3 files changed, 102 insertions(+), 1 deletion(-)
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 18:16:35 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 18:16:35 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+2026-08-29 18:16:36 [integrate] fertig 02b2b61e-e3ff-4871-8a69-c8a0bef1951d
+[graphify hook] 1 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main c9ab03b] Auto: wiki sync 2026-08-29 18:16
+ 1 file changed, 20 insertions(+)
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 18:16:37 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 18:16:37 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+Integration abgeschlossen. Ein Hinweis: `entity/moriosolutions-website.md` existierte bereits (aus der Mobil-Session vom 26.08.) — ich habe die neuen Befunde als Nachtrag angehängt statt eine zweite Seite anzulegen; der bestehende Inhalt ist vollständig erhalten.
+
+Kern des Eintrags:
+- **Neu**: `concept/lenis-scroll-container-konflikt.md` — Lenis fängt Wheel-Events global ab, `overflow-y:auto` allein reicht nicht; `data-lenis-prevent-wheel` **konditional** setzen; Höhe in gepinnten Bühnen messen statt per `vh` schätzen; `top` nicht animieren, wenn WebGL + `backdrop-filter` den Main-Thread belasten.
+- **Ergänzt**: `server-quellcode-drift` um drei Fallen desselben Musters (`gzip_static` liefert die alte `.gz`, `systemctl`-Rauchtest auf einen abgeschalteten Dienst, Rollback-Anweisung ins Leere) plus die Präzisierung `cp` statt `mv` beim Einzeldatei-Bind-Mount.
+- **Widerspruch markiert**: Der Kommentar in der nginx-Config („Docker umgeht ufw") ist in dieser Konstellation empirisch falsch — userland-proxy aktiv, ufw greift.
+- **Offen im Wiki vermerkt**: die drei nginx-Befehle für `/tmp/conf.clean` stehen noch aus, und der Paketordner liegt weiterhin in `Downloads`.
+
+OK: neu `wiki/concept/lenis-scroll-container-konflikt.md`; aktualisiert `wiki/entity/moriosolutions-website.md`, `wiki/concept/server-quellcode-drift.md`, `wiki/entity/morio-crm.md`, `wiki/index.md`, `wiki/log.md`
+2026-08-29 18:16:37 [integrate] claude beendet rc=0
+/Users/tyrone/Map/scripts/session-integrate.sh: line 102: 19346 Terminated: 15          ( sleep "$TIMEOUT_SEC"; if kill -0 "$CPID" 2> /dev/null; then
+    kill -9 "$CPID" 2> /dev/null; log "ABBRUCH Timeout ${TIMEOUT_SEC}s";
+fi )
