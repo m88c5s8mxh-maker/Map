@@ -103,6 +103,75 @@ Containern, Image-Tags, Build-ID **und der Seitenliste des laufenden Builds**. G
 Seitenliste als Soll-Zustand hätte die Regression aus [[server-quellcode-drift]] verhindert.
 SQLite im WAL-Modus wird per `VACUUM INTO` gesichert, nicht per Kopie.
 
+## Nachtrag 26.–28.08.2026 — Anfragen-Reiter, Formularstrecke, Build repariert
+
+**Neuer Bereich `Vertrieb → Anfragen`** (19. Bereich), live und verifiziert: Tabelle
+`inquiries` (14 Spalten, 3 Indizes), drei Endpunkte, Status-Workflow
+(Neu → In Bearbeitung → Beantwortet → Kunde), „als Lead übernehmen", Volltextsuche.
+Genau **ein** Pfad ist öffentlich (`/api/inquiries/public` in `PUBLIC_PATHS`), nach dem
+Muster des Stripe-Webhooks: exakte URL, nicht der ganze Namensraum. Reihenfolge bewusst
+**erst speichern, dann mailen** — geht die Mail schief, steht die Anfrage trotzdem im CRM
+mit rotem Warnhinweis statt verloren zu sein.
+
+Damit nimmt das CRM jetzt das Kontaktformular von [[moriosolutions-website]] entgegen:
+`/api/contact` zeigt per exaktem nginx-Match auf Port 3001. Vorgeschichte und die zwei
+Fehler, die das acht Tage lang verhindert haben, stehen in
+[[unerreichbarer-dienst-ufw-docker]].
+
+**Das Repo ließ sich nicht bauen — schon vorher.** 16 Typfehler, `next build` bricht ab.
+Ursache: `React.ElementType` als Typ für Icon-Komponenten; bei dieser breiten Union löst
+TypeScript die Props zur **Schnittmenge** auf, `size`/`color` werden dadurch `never`.
+Die Hauskonvention ist `LucideIcon` (nutzt `empty-state.tsx` bereits). Gegengeprüft per
+`git stash`: 16 Fehler vorher, 0 nachher. Commit `8171c08`, das Feature `a0bc272`.
+
+**`.env.production` von 5 auf 18 Schlüssel ergänzt**, Werte byte-identisch mit der
+Server-`.env`. Dazu kam u. a. `RESEND_API_KEY`, `ALERT_FROM`, `ALERT_EMAIL`, Twilio,
+Google, Hetzner — und `MAGNIFIC_API_KEY`, das **nur** auf dem Server existierte und sonst
+verloren gegangen wäre. `ANTHROPIC_API_KEY` und `APP_URL` wichen ab, hier gilt der Server.
+
+> ⚠️ WIDERSPRUCH mit dem Abschnitt „Deploy — der funktionierende Weg" oben: dort steht,
+> `scp .env.production → .env` sei **entfernt**. Am 26.08. lag die Zeile wieder/noch in
+> `deploy.sh` (Zeile 27) und hätte 13 Schlüssel auf dem Server gelöscht. Entweder betrifft
+> die frühere Reparatur ein anderes Skript, oder sie ist verlorengegangen. #prüfen
+> Aktuell ist der Schritt **wirkungslos statt zerstörend**, weil beide Dateien deckungsgleich
+> sind — das ist aber eine Momentaufnahme, keine strukturelle Lösung.
+
+**`NOTIFY_CUSTOMERS` ist eine tote Variable.** Sie steht ausschließlich in
+`docker-compose.yml`, kein `process.env.NOTIFY_CUSTOMERS` im Quellcode, kein Treffer im
+gebauten Image, weder Bridge noch Skript liest sie; im Container kommt ein Leerstring an.
+Sie schaltet nichts frei und zeigt nichts an — vermutlich Rest einer entfernten Funktion.
+Streichen ist reine Kosmetik.
+
+> [Quelle: raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md]
+
+### Es arbeitet jemand parallel an diesem Repo
+
+Belegt: zwei fremde Landingpage-Deploys, ein fremder CRM-Build, ein fremder Image-Tag
+`before-anfragen-deploy` — und die eigenen Änderungen wurden **von außen committet**
+(`8171c08`, `a0bc272`), später standen 3 fremde Commits auf `origin/redesign-ui`
+(Bank-Import, Excel-Import, Modelle, Suchberater — 23 Dateien). Ein Build aus dem alten
+Baum hätte sie gelöscht. **Vor jedem Build: `git fetch` und Abgleich `0/0` herstellen.**
+Diesmal ging es gut aus; die umgekehrte Richtung ist genauso wahrscheinlich.
+
+> [Quelle: raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md]
+
+### Zwei weitere Deploy-Landminen dieser Runde
+
+- **`migrate.sh` liegt auf dem Server nicht in git.** Es wurde versehentlich überschrieben,
+  das Original ist nicht wiederherstellbar; die drei nur serverseitig angelegten Migrationen
+  (`add-freigabe-login`, `add-vorschau`, `vorschau-zugaenge`) fehlen jetzt in seiner Liste.
+  Sie sind angewandt, es ist nichts kaputt — aber die Einträge müssten zurück. #prüfen
+  Konsequenz: Migrationen **einzeln** anwenden statt die ganze Liste laufen zu lassen,
+  und vorher einen frischen Dump ziehen.
+- **Ein 85 Byte großes `~/package-lock.json`** lässt Next das Home-Verzeichnis als
+  Workspace-Root sehen — `server.js` landet dann eine Ebene tiefer im `standalone`-Output.
+  Der Dockerfile kopiert `.next/standalone` flach und ruft `node server.js`: der Container
+  wäre in eine Crash-Loop gelaufen. Nicht das Lockfile anfassen, sondern den **echten**
+  standalone-Root hochladen.
+- Der Dockerfile **baut nicht selbst**, er verpackt nur den vorher erzeugten
+  `standalone`-Output. Ein `pkill` auf den Dev-Server kann die Build-Artefakte zerschießen —
+  `.next` vor dem Upload prüfen.
+
 ## Offene Risiken
 
 - Das **Server-Root-Passwort steht im Klartext** in `~/Downloads/reviewcrm-rt/deploy.py`.

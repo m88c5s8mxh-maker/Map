@@ -454,3 +454,31 @@ hint: use 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 2026-08-29 18:15:08 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
 2026-08-29 18:15:08 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 11 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main b443071] Auto: wiki sync 2026-08-29 18:16
+ 11 files changed, 452 insertions(+), 9 deletions(-)
+ create mode 100644 wiki/concept/mobile-choreografie-portierung.md
+ create mode 100644 wiki/concept/unerreichbarer-dienst-ufw-docker.md
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 18:16:33 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 18:16:33 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+The index section is intact. Both new pages and all four updated pages are in place.
+
+**Key insight captured:** the session contains two rules sharing one root pattern — automation whose output nobody cross-checks. First, when knowledge is ingested automatically, a source's value tracks the *dialog*, not write volume: a score rewarding file changes let 27 of 46 sessions into the wiki, 12 of them purely mechanical one-shot commands. Second, `|| true` on a sync command is error *deletion*, not error handling — it turned a June rebase that stalled into two months of unnoticed sync standstill.
+
+Two contradictions flagged: `graphify . --update` does not exist (the graph is built solely by the `post-commit` hook), and the calibration figures 12/20/16 sum to 48 rather than the stated 46 transcripts (#prüfen).
+
+OK: neu angelegt `wiki/entity/session-erfassung-map.md`, `wiki/concept/stiller-sync-ausfall.md` · aktualisiert `wiki/concept/llm-wiki-pattern.md`, `wiki/entity/map-sync.md`, `wiki/entity/graphify.md`, `wiki/index.md`, `wiki/log.md`
+2026-08-29 18:16:34 [integrate] claude beendet rc=0
+/Users/tyrone/Map/scripts/session-integrate.sh: line 102: 19567 Terminated: 15          ( sleep "$TIMEOUT_SEC"; if kill -0 "$CPID" 2> /dev/null; then
+    kill -9 "$CPID" 2> /dev/null; log "ABBRUCH Timeout ${TIMEOUT_SEC}s";
+fi )
