@@ -1,6 +1,6 @@
 ---
 tags: [entity, projekt, content-marketing, morio-solutions, laufend]
-sources: [raw/sessions/2026-08-26-30-tages-content-plan-für-aiweb-design-startup.md]
+sources: [raw/sessions/2026-08-26-30-tages-content-plan-für-aiweb-design-startup.md, raw/sessions/2026-08-29-optimiere-posting-strategie-für-social-media-algorithmen.md]
 updated: 2026-08-29
 ---
 
@@ -117,9 +117,34 @@ Offene Punkte:
   Mittelstands-, nicht zur Kleinbetriebszielgruppe gehören. Begründung siehe
   [[social-content-akquise-lokal]].
 
+### Nachtrag 29.08.2026 — Algorithmus-Playbook als drittes Dokument
+
+Zu Contentplan und Drehbuch kommt ein **Algorithmus-Playbook** (Zeitfenster, Frequenzgrenzen,
+Ranking-Signale für TikTok, Instagram, YouTube und X) — als wöchentlich zu öffnende
+Referenzseite gedacht, nicht zum einmaligen Lesen:
+
+- **Algorithmus-Playbook** → `https://claude.ai/code/artifact/27567951-403a-43b0-b7c1-4f6550f97923`
+
+Inhalt und Zahlen stehen in [[plattform-algorithmen-distribution]]. Das Wochenraster darin
+geht von **4 vertikalen Videos/Woche × 3 Ausspielungen** (Reel → TikTok → Short) =
+12 Platzierungen aus. Das passt zur Drehtag-Bündelung oben (21 Videos aus 6 Drehtagen) und
+ist die Annahme, die bei Abweichung zuerst anzupassen ist.
+
+> **Vault-Lücke, aufgefallen bei der Recherche:** Der Contentplan war auf dem System
+> **nirgends als Datei auffindbar** — weder in `Map/`, `Morio-Solutions/` noch
+> `Morio-Vertrieb/`. Er existiert ausschließlich als claude.ai-Artifact (siehe Links oben),
+> und die Algorithmus-Empfehlungen mussten deshalb aus dem im Vault dokumentierten Wissen
+> über Morio Solutions abgeleitet statt am tatsächlichen Plan kalibriert werden. Das
+> Wochenraster ist damit **ungeprüft gegen die echten Formate**. Konsequenz für die Ablage:
+> Ein Artifact-Link ist keine Quelle, auf die eine spätere Sitzung zugreifen kann — die
+> beiden Dokumente gehören als Export nach `raw/`.
+
+> [Quelle: raw/sessions/2026-08-29-optimiere-posting-strategie-für-social-media-algorithmen.md]
+
 ## Beziehungen
 
 - [[social-content-akquise-lokal]] — das System hinter dem Plan (Kanal, Sprache, Quote, Retention)
+- [[plattform-algorithmen-distribution]] — Zeitfenster, Frequenzgrenzen und Ranking-Signale, in die der Plan gelegt wird
 - [[marktpreise-crm-webdesign-de]] — die Zahlen in den Preisposts
 - [[vertrieb-niedrigpreis-abschluss]] — was mit den Leads passiert, die der Plan erzeugt
 - [[morio-crm]] — das CRM-Produkt hinter der Kiendl-Referenz

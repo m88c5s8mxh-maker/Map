@@ -819,3 +819,20 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 2026-08-29 18:37:25 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
 2026-08-29 18:37:25 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
 2026-08-29 18:37:25 [integrate] fertig cab6a8a8-8c50-461e-bf7c-278581a90aa8
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 1 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main 3536e37] Auto: wiki sync 2026-08-29 18:42
+ 1 file changed, 20 insertions(+)
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 18:42:38 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 18:42:38 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+2026-08-29 18:48:45 T2 score=49 Optimiere Posting-Strategie für Social-Media-Algorithmen
+2026-08-29 18:48:45 [integrate] start b339eb1b-2eed-4f6b-b7bd-cc478734b31d -> raw/sessions/2026-08-29-optimiere-posting-strategie-für-social-media-algorithmen.md

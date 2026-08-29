@@ -1,6 +1,6 @@
 ---
 tags: [concept, content-marketing, social-media, akquise, morio-solutions, tiktok, instagram, hoch]
-sources: [raw/sessions/2026-08-26-30-tages-content-plan-für-aiweb-design-startup.md]
+sources: [raw/sessions/2026-08-26-30-tages-content-plan-für-aiweb-design-startup.md, raw/sessions/2026-08-29-optimiere-posting-strategie-für-social-media-algorithmen.md]
 updated: 2026-08-29
 ---
 
@@ -140,6 +140,27 @@ Gleichmäßiger Abfall → normal, nichts tun.
 
 > [Quelle: raw/sessions/2026-08-26-30-tages-content-plan-für-aiweb-design-startup.md]
 
+### Nachtrag 29.08.2026 — die Distributionsebene unter diesem System
+
+Die Recherche zu den Plattform-Algorithmen liegt jetzt separat in
+[[plattform-algorithmen-distribution]] (Zeitfenster, Frequenzgrenzen, Ranking-Signale für
+TikTok, Instagram, YouTube und X). Drei Punkte greifen direkt in die Regeln oben:
+
+- **Das Ranking-Ziel dieser Seite ist bestätigt.** Auf allen vier Plattformen sind Likes zum
+  schwächsten relevanten Signal abgestuft; es zählen Verweildauer und Weiterleitung — auf
+  Instagram wiegt ein DM-Send rund 3–5× so schwer wie ein Like. Die Regel „kein *danke fürs
+  Zuschauen*, sondern ein Satz, der zum Anfang zurückführt" treibt genau diese Größe.
+- **Die 30 Min Kommentararbeit/Tag haben einen richtigen Zeitpunkt.** Nicht irgendwann am
+  Tag, sondern **in der ersten Stunde nach dem Post** — bei TikTok wiegt diese Stunde mehr
+  als die folgenden 23 zusammen.
+- **Die halbierte Variante (15 Inhalte ≈ 3,5/Woche) liegt im algorithmischen Sweet Spot**
+  aller vier Plattformen — vorausgesetzt, sie ist gleichmäßig verteilt und kommt nicht in
+  Schüben. Konstante 3–5 Posts/Woche bringen laut Sprout Social Index ≈3,5× mehr Reach als
+  unregelmäßige 1–2. „Lieber 15 gute als 30 halbe" ist damit auch eine Verteilungsregel,
+  nicht nur eine Aufwandsentscheidung.
+
+> [Quelle: raw/sessions/2026-08-29-optimiere-posting-strategie-für-social-media-algorithmen.md]
+
 ## Aufwand — die Zahl, die die Planung entscheidet
 
 Video-first kostet **≈56 Stunden im Monat** (Dreh, Schnitt, Carousels, täglich 30 Min
@@ -155,6 +176,7 @@ Drehtage** verdichtet.
 ## Verbindungen
 
 - [[contentplan-30-tage]] — die konkrete Umsetzung dieses Systems, mit Stand und offenen Punkten
+- [[plattform-algorithmen-distribution]] — die Ebene darunter: wann, wie oft, mit welchen Signalen
 - [[marktpreise-crm-webdesign-de]] — die Zahlen, gegen die die Preisposts argumentieren
 - [[vertrieb-niedrigpreis-abschluss]] — dieselbe Preislogik am Telefon statt im Feed
 - [[web-factory]] — das beworbene Produkt (Standard-Stufe)
