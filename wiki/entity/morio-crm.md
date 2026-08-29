@@ -1,6 +1,6 @@
 ---
 tags: [entity, projekt, crm, infrastruktur, morio-solutions]
-sources: [raw/sessions/2026-08-20-preview-reiter-in-crm-intranet-einbauen.md, raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
+sources: [raw/sessions/2026-08-20-preview-reiter-in-crm-intranet-einbauen.md, raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md, raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
 updated: 2026-08-29
 ---
 
@@ -182,4 +182,6 @@ Diesmal ging es gut aus; die umgekehrte Richtung ist genauso wahrscheinlich.
 ## Verbindungen
 - [[server-quellcode-drift]] — die Regression und ihre Lehre
 - [[vorschau-webseiten]] — das darauf aufbauende Feature
+- [[moriosolutions-website]] — die öffentliche Seite, deren Anfragen hier landen
+- [[unerreichbarer-dienst-ufw-docker]] — warum die Formularstrecke acht Tage tot war
 - [[Next.js]] · [[Deploy Checklist]] · [[Rollback Plan]] · [[CRM]]

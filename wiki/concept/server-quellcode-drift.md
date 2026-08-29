@@ -1,6 +1,6 @@
 ---
 tags: [concept, deployment, postmortem, hoch]
-sources: [raw/sessions/2026-08-20-preview-reiter-in-crm-intranet-einbauen.md, raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
+sources: [raw/sessions/2026-08-20-preview-reiter-in-crm-intranet-einbauen.md, raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md, raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
 updated: 2026-08-29
 ---
 
@@ -90,6 +90,33 @@ nachweisen.** Image taggen, Konfiguration sichern, nach jedem Schritt alle betro
 prüfen — vorher *und* nachher, mit identischer Messung. Siehe [[Rollback Plan]],
 [[Deploy Checklist]] und [[incident-response]].
 
+## Nachtrag 26.08.2026 — die Drift schlägt in die andere Richtung aus
+
+Derselbe Ordner, umgekehrter Fehlschluss. Beim Deploy des Anfragen-Reiters wurde der eigene
+Checkout gegen den **Quellcode** auf `/opt/morio-solutions-ai` verglichen. Der enthielt
+`/freigabe`, `/api/freigabe` und `/passwort-aendern`, die im eigenen Baum fehlten — und
+tatsächlich einen Commit (`f6bc90c`), den das eigene Repo überhaupt nicht kennt. Schluss:
+„die Bäume sind in beide Richtungen auseinandergelaufen, ein Deploy löscht Live-Funktionen."
+
+**Das war ein Fehlalarm** — und zwar genau der Fehler, vor dem diese Seite warnt, nur mit
+umgekehrtem Vorzeichen. Der Vergleich gegen das **laufende Image** ergab: 20 Dashboard-Seiten
+und 38 API-Routen identisch, **keine einzige nur live**, dazu die zwei neuen. Der Server-
+Quelltext war ein nie gebauter Parallelstand: lokales Repo **ohne Remote**, Branch `master`,
+**39 uncommittete Änderungen** inklusive gelöschtem `app/page.tsx`. Er enthielt `/freigabe`,
+das laufende Image nicht.
+
+> [Quelle: raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md]
+
+**Die verschärfte Regel:** Der Server-Quellcode ist nicht nur kein Beweis für das, was läuft —
+er ist auch **kein gültiger Grund, einen Deploy abzubrechen**. Die einzige belastbare Referenz
+ist in beide Richtungen dieselbe: die **Routen-/Seitenliste aus dem laufenden Artefakt**.
+Ist der eigene Build eine echte Obermenge davon, löscht er nichts, egal wie fremd der Ordner
+daneben aussieht.
+
+Kostenpunkt des falschen Alarms: eine abgebrochene Sitzung, eine unnötige Rückfrage an den
+Nutzer nach dem „richtigen Branch" — und die Gefahr, dass die Warnung beim nächsten Mal
+ignoriert wird, wenn sie berechtigt ist.
+
 ## Offene Fragen
 
 - Lohnt ein CI-Push-Deploy (Push auf `main` → rsync), wie es das `Server`-Repo schon vormacht?
@@ -98,4 +125,6 @@ prüfen — vorher *und* nachher, mit identischer Messung. Siehe [[Rollback Plan
 ## Verbindungen
 - [[morio-crm]] — das betroffene System
 - [[vorschau-webseiten]] — das Vorhaben, bei dem es passierte
+- [[unerreichbarer-dienst-ufw-docker]] — dieselbe Familie: gebaut ist nicht erreichbar
+- [[moriosolutions-website]] — die zweite Codebasis auf demselben Server
 - [[Rollback Plan]] · [[Deploy Checklist]] · [[incident-response]] · [[5 Whys Root Cause Analysis]]
