@@ -691,3 +691,23 @@ hint: use 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 2026-08-29 18:27:11 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
 2026-08-29 18:27:11 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 1 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main f08e501] Auto: wiki sync 2026-08-29 18:27
+ 1 file changed, 19 insertions(+)
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 18:27:22 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 18:27:22 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+2026-08-29 18:31:54 T2 score=122 Video-Editor mit 3D-Rekonstruktion und KI-Integration
+2026-08-29 18:31:55 [integrate] start a6e71d5f-722e-43eb-9613-3e922a8c7a4c -> raw/sessions/2026-08-25-video-editor-mit-3d-rekonstruktion-und-ki-integration.md
+2026-08-29 18:33:32 T2 score=136 30-Tages Content-Plan für AI/Web-Design Startup
+2026-08-29 18:33:33 [integrate] start cab6a8a8-8c50-461e-bf7c-278581a90aa8 -> raw/sessions/2026-08-26-30-tages-content-plan-für-aiweb-design-startup.md
+2026-08-29 18:34:02 T1 score=43 Video equipment guide for personal brand on social media
