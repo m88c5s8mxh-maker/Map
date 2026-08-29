@@ -1,8 +1,8 @@
 ---
 tags: [entity, skill, knowledge-management]
-sources: [raw/skills/map-sync.md]
+sources: [raw/skills/map-sync.md, raw/sessions/2026-08-26-obsidian-integration-for-claude-session-archiving.md]
 trigger: /map-sync
-updated: 2026-04-24
+updated: 2026-08-29
 ---
 
 # map-sync

@@ -417,3 +417,22 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 2026-08-29 18:12:21 [integrate] start 05d9ef24-ac9d-4923-a90f-38a6a15ac299 -> raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md
 2026-08-29 18:12:27 T2 score=122 Obsidian integration for Claude session archiving
 2026-08-29 18:12:27 [integrate] start 02b2b61e-e3ff-4871-8a69-c8a0bef1951d -> raw/sessions/2026-08-26-obsidian-integration-for-claude-session-archiving.md
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 6 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main 3dc7aea] Auto: wiki sync 2026-08-29 18:13
+ 6 files changed, 3784 insertions(+)
+ create mode 100644 raw/sessions/2026-08-26-obsidian-integration-for-claude-session-archiving.md
+ create mode 100644 raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md
+ create mode 100644 raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md
+ create mode 100644 wiki/concept/lenis-scroll-container-konflikt.md
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 18:13:51 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 18:13:51 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.

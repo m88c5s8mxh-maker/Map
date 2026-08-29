@@ -1,7 +1,7 @@
 ---
 tags: [concept, deployment, postmortem, hoch]
-sources: [raw/sessions/2026-08-20-preview-reiter-in-crm-intranet-einbauen.md]
-updated: 2026-08-26
+sources: [raw/sessions/2026-08-20-preview-reiter-in-crm-intranet-einbauen.md, raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
+updated: 2026-08-29
 ---
 
 # Server-Quellcode-Drift
@@ -49,6 +49,35 @@ Einzeldatei-Mount in nginx + `mv` | Container hängt am alten Inode, `reload` me
 `proxy_pass` auf einen Container | fehlt der Container, startet nginx nicht und nimmt alle Domains mit | Docker-DNS mit Variable → im schlimmsten Fall 502 |
 `ADD CONSTRAINT` in einer Migration | kein `IF NOT EXISTS`; beim zweiten Lauf bricht `ON_ERROR_STOP` ab | Migrationen idempotent schreiben und zweimal laufen lassen |
 neue Migration hochgeladen, `migrate.sh` vergessen | Datei liegt da, wird aber nie ausgeführt | Ausgabe der Migration gegenlesen, nicht nur den Exit-Code |
+
+## Nachtrag 2026-08-27 — drei weitere Fallen aus der Website-Sitzung
+
+Alle drei folgen demselben Muster: **die Prüfung meldet Erfolg, ausgeliefert wird etwas anderes.**
+
+| Falle | Wirkung | Gegenmittel |
+|---|---|---|
+`gzip_static on`, aber nur `index.html` deployt | nginx bevorzugt die alte `index.html.gz` und liefert sie an praktisch jeden Browser — der Deploy sieht erfolgreich aus, live ändert sich nichts | `.gz` bei jeder Änderung neu erzeugen; entpackten Hash gegen `index.html` prüfen |
+`systemctl is-active nginx` als Rauchtest | meldet „läuft nicht", obwohl nginx im Container `kiendl-crm-nginx-1` läuft — ein Alarm, der immer schreit, wird ignoriert, und dann auch der echte | den Container prüfen (`docker exec … nginx -t`), nicht den toten Dienst |
+Rollback-Anweisung zeigt auf `systemctl reload nginx` | läuft ins Leere — ausgerechnet dort, wo man sie benutzt, wenn etwas kaputt ist | Rückweg **einmal ausführen**, nicht nur aufschreiben |
+
+> [Quelle: raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
+
+**Bestätigt** wurde dabei die Einzeldatei-Mount-Falle aus der Tabelle oben, mit einer Präzisierung:
+`cp quelle ziel` ist der richtige Weg — es überschreibt den Inhalt der bestehenden Inode, der
+Bind-Mount bleibt gültig. `mv` und `scp` legen eine neue Inode an, der Container liest weiter die
+alte Fassung, und `nginx -t` plus `reload` melden trotzdem Erfolg. Vor dem Reload nachweisen,
+dass der **Container** die neue Datei sieht.
+
+Ergänzend zum Vorgehen bei Änderungen an einer Config, die mehrere Domains bedient (hier sechs,
+mit **zwei identischen** `try_files`-Zeilen für verschiedene Domains): **Baseline aller Endpunkte
+vor dem Eingriff aufnehmen, Änderung lokal an der Kopie machen, Diff prüfen, dann erst aufspielen,
+danach gegen dieselbe Baseline messen.** Details am konkreten Fall in [[moriosolutions-website]].
+
+Und eine methodische Lehre aus derselben Sitzung: Ein **Escaping-Fehler im eigenen `grep`** meldete
+„0 Treffer" für beide `try_files`-Varianten — beinahe ein Befund über ein überschriebenes Serverfile,
+tatsächlich ein Messfehler. Ein überraschender Negativbefund gehört gegengeprüft, **bevor** er zum
+Befund wird. Dasselbe passierte mit einem vermeintlichen Leak: `index.html.bak-…` gab HTTP 200,
+ausgeliefert wurde aber nur die Startseite über den `try_files`-Fallback.
 
 ## Übertragbare Regel
 
