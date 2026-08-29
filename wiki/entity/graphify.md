@@ -1,6 +1,6 @@
 ---
 tags: [entity, skill, knowledge-graph, tool]
-sources: [raw/skills/graphify.md]
+sources: [raw/skills/graphify.md, raw/sessions/2026-08-26-obsidian-integration-for-claude-session-archiving.md]
 trigger: /graphify
 updated: 2026-04-17
 ---
@@ -37,6 +37,19 @@ Map lesen (~280 Token) statt alle Dateien (~20.000 Token) → 71.5x Reduktion.
 
 ## Git Hooks
 Nach `setup.sh` werden post-commit und post-checkout Hooks installiert — der Graph wird automatisch nach jedem Commit neu gebaut.
+
+> ⚠️ WIDERSPRUCH mit der Befehlsliste oben: ein Aufruf `graphify . --update` **existiert nicht**.
+> `graphify --help` listet die echten Befehle (`query`, `path`, `explain`, `hook`, …). Der Graph
+> wird ausschließlich über den `post-commit`-Hook neu gebaut (`graphify hook status` zeigt ihn an);
+> ein expliziter Aufruf in einem Automatisierungsskript war falsch **und** unnötig. `Map/CLAUDE.md`
+> wurde entsprechend korrigiert. #prüfen — ob die übrigen Flags aus `raw/skills/graphify.md`
+> (`--mode deep`, `--watch`, `--neo4j`, `--mcp`) in der installierten Version noch stimmen, wurde
+> nicht geprüft.
+> [Quelle: raw/sessions/2026-08-26-obsidian-integration-for-claude-session-archiving.md]
+
+Nebenwirkung beim Arbeiten mit Git: `post-commit` und `post-checkout` bauen den Report bei jedem
+Commit bzw. Branch-Wechsel neu und machen den Arbeitsbaum dirty — das kann einen Merge blockieren.
+Siehe [[stiller-sync-ausfall]].
 
 ## Beziehungen
 - [[llm-wiki-pattern]] — komplementäres Wissenssystem

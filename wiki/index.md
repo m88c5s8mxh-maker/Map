@@ -105,12 +105,26 @@
 
 ---
 
+## Map-Vault — Infrastruktur & Wissenszufuhr
+
+| Seite | Inhalt |
+|-------|--------|
+| [[session-erfassung-map]] | Pipeline Session → Bewertung → Wiki → Graph → GitHub: Architektur, die zwei Tore (Heuristik + LLM-Veto), Score-Kalibrierung, Stand & offene Einrichtungsschritte |
+| [[stiller-sync-ausfall]] | Warum der Vault zwei Monate unbemerkt nicht synchronisierte: `&#124;&#124; true` als Fehlerlöschung, detached HEAD, Wiederherstellungsreihenfolge, `git add -A` als Löschvektor |
+| [[llm-wiki-pattern]] | ⟳ ergänzt um die Relevanzschwelle: `raw/` behält alles, `wiki/` bleibt kuratiert |
+| [[map-sync]] | ⟳ ergänzt um die Hook-Absicherung via `map-git-sync.sh` |
+| [[graphify]] | ⟳ Widerspruch geflaggt: `graphify . --update` existiert nicht, Graph läuft über `post-commit` |
+
+---
+
 ## Morio Solutions — Betrieb & Produktion
 
 | Seite | Inhalt |
 |-------|--------|
 | [[morio-crm]] | Das laufende CRM auf `intra.moriosolutions.de` — Stack, Server, echtes Quellcode-Repo (`Beckomate88/MorioCRM`, Branch `redesign-ui`), Deploy-Weg, nginx-Eigenheiten, Backup |
-| [[server-quellcode-drift]] | Warum der Quellcode auf einem Server nicht beweist, was dort läuft — Schadensfall, Prüfroutine, sechs verwandte Deploy-Fallen |
+| [[moriosolutions-website]] | Die öffentliche Landingpage — Aufbau, Deploy (`gzip_static`!), Mobil-Überarbeitung, nginx im Container statt Systemdienst, Sicherheitsaudit, Soft-404-Fix, offene Config-Bereinigung |
+| [[server-quellcode-drift]] | Warum der Quellcode auf einem Server nicht beweist, was dort läuft — Schadensfall, Prüfroutine, neun verwandte Deploy-Fallen (u. a. `gzip_static`, tote `systemctl`-Rauchtests, Einzeldatei-Mount) |
+| [[lenis-scroll-container-konflikt]] | Warum ein `overflow-y:auto`-Container auf einer Lenis-Seite scrollbar ist, sich aber nicht scrollen lässt — `data-lenis-prevent-wheel`, konditionales Blocken, gemessener statt geschätzter Deckel |
 | [[vorschau-webseiten]] | Preview-Webseiten-Reiter unter Projekte: Kunden-Freigabeworkflow, nativ im CRM, live · offene Punkte |
 | [[vertrieb-niedrigpreis-abschluss]] | Kaltakquise-Mechanik bei 1.000–1.500 € Projektpreis: Abschluss im ersten Gespräch, Preis früh als Filter, Agentur-Vergleichszahl als Anker, Inhalte-Frage als Margenschutz |
 

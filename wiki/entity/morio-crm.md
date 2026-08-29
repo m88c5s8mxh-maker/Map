@@ -1,7 +1,7 @@
 ---
 tags: [entity, projekt, crm, infrastruktur, morio-solutions]
-sources: [raw/sessions/2026-08-20-preview-reiter-in-crm-intranet-einbauen.md]
-updated: 2026-08-26
+sources: [raw/sessions/2026-08-20-preview-reiter-in-crm-intranet-einbauen.md, raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
+updated: 2026-08-29
 ---
 
 # Morio CRM (intra.moriosolutions.de)
@@ -72,7 +72,14 @@ Rückweg: vor jedem Deploy Image taggen (`:vor-vorschau-live`), zurück per `doc
 
 - **nginx-Konfiguration ist als einzelne Datei eingebunden** → der Container hängt am **Inode**,
   nicht am Pfad. Ein `mv` erzeugt einen neuen Inode, `nginx -t` und `reload` melden Erfolg,
-  der Container liest aber weiter die alte Datei. Richtig: `cat neu > alt`.
+  der Container liest aber weiter die alte Datei. Richtig: `cat neu > alt` — oder `cp neu alt`,
+  das überschreibt ebenfalls den Inhalt der bestehenden Inode (am 27.08. so aufgespielt und
+  verifiziert, bevor neu geladen wurde). Der Mount-Pfad auf dem Host ist
+  `/opt/kiendl-crm/nginx.conf`.
+- **`nginx` läuft nicht als Systemdienst** — der Host-Dienst ist `inactive` **und** `disabled`,
+  alles läuft im Container `kiendl-crm-nginx-1` (nginx:alpine). Jeder `systemctl`-Check auf nginx
+  ist deshalb ein Fehlalarm; prüfen mit `docker exec kiendl-crm-nginx-1 nginx -t`.
+  > [Quelle: raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
 - `client_max_body_size` gilt **pro Server-Block** — eine Änderung an `intra` kann die anderen
   fünf Domains nicht erreichen. Steht jetzt auf **300 MB** (vorher 50), Zeitgrenzen 300 s.
 - `proxy_pass http://dienst:port` löst nginx **beim Start** auf: fehlt der Container, startet

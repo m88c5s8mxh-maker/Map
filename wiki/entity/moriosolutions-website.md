@@ -1,6 +1,6 @@
 ---
 tags: [entity, projekt, landingpage, frontend, morio-solutions, hoch]
-sources: [raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md]
+sources: [raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md, raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
 updated: 2026-08-29
 ---
 
@@ -87,8 +87,104 @@ sonst überschreiben sich zwei Stände gegenseitig.
 
 > [Quelle: raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md]
 
+## Nachtrag 27.08. — Scroll-Fix, nginx-Befunde, Sicherheitsaudit
+
+### Die Accordions scrollen jetzt
+
+Die Leistungs-Karten hatten bereits `overflow-y: auto`, ließen sich aber nicht scrollen: Lenis
+fing das Mausrad global ab, und `max-height: 40vh` galt für alle drei Karten, obwohl die unteren
+beiden 20 vh tiefer sitzen — dort liefen 121 px aus der `overflow:hidden`-Bühne. Mechanik,
+Messwerte und die übertragbare Regel stehen in [[lenis-scroll-container-konflikt]]. Live und
+über vier Auflösungen plus Mobile verifiziert; das `ms-accfit`-Skript aus der Fremdarbeit
+(siehe unten) wurde dabei mitgenommen und scroll-robust gemacht.
+
+> [Quelle: raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
+
+### nginx läuft NICHT als Systemdienst
+
+Das Deploy-Skript meldete dauerhaft „WARNUNG: nginx läuft nicht". **Fehlalarm:** Der Host-nginx
+ist `inactive` **und** `disabled`, bedient wird alles vom Docker-Container
+**`kiendl-crm-nginx-1`** (nginx:alpine, Ports 80/443), der die Domains hält. Deshalb kam trotz
+Warnung sauber HTTP 200. Korrigiert: Das Skript erkennt jetzt den Container und prüft dessen
+Config; auch die Rollback-Zeile riet zu `systemctl reload nginx` und wäre ins Leere gelaufen —
+ausgerechnet dort, wo man sie benutzt, wenn etwas kaputt ist. Ein Reload braucht diese Seite
+ohnehin nur bei **Config**-Änderungen: statische Dateien liest nginx bei jeder Anfrage neu.
+
+Die Config ist ein **Host-Mount einer einzelnen Datei** (`/opt/kiendl-crm/nginx.conf`) und
+bedient sechs Domains. Änderungen darum mit `cp` (Inode bleibt), nie mit `mv`/`scp` —
+Begründung in [[server-quellcode-drift]].
+
+> [Quelle: raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
+
+### Sicherheitsaudit von `site/` — sauber
+
+49 Dateien geprüft: keine Secrets/Keys/Tokens, keine internen Adressen (IPs, Ports, Hostnamen),
+**keine Source Maps** (die hätten den Originalcode offengelegt), keine Tracker und keine
+Fremd-CDNs — nur eigene Domains und Social-Links, dadurch auch datenschutzrechtlich unkritisch.
+Genau ein Endpunkt wird gerufen, `/api/contact`, relativ. Zwei Fehlalarme festgehalten, damit
+sie nicht wieder Arbeit kosten: `.env` war `scene.environment` aus three.js, „password" steht
+im Marketingtext („passwords expire").
+
+**Interne Dienste sind von außen dicht:** 3000, 3001 (CRM), 3002 (Site-Editor) laufen ins
+Timeout, 443 verbindet sofort. ufw erlaubt diese Ports nur aus `172.17.0.0/16` und localhost,
+Default-Policy `deny (routed)`; die Datenbanken sind gar nicht veröffentlicht.
+
+> ⚠️ WIDERSPRUCH mit dem Kommentar in der nginx-Config: Dort steht, Docker umgehe ufw bei
+> veröffentlichten Container-Ports über eigene iptables-Regeln. **In dieser Konstellation stimmt
+> das nicht** — der userland-proxy ist aktiv (11 `docker-proxy`-Prozesse), Verbindungen laufen
+> darum über einen Host-Prozess und damit durch die INPUT-Kette, wo ufw greift. Empirisch durch
+> die Timeouts bestätigt. Der Kommentar könnte zu einem unnötigen Umbau verleiten.
+> Vgl. [[unerreichbarer-dienst-ufw-docker]].
+> [Quelle: raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
+
+### Soft-404 abgestellt
+
+`location /` hatte `try_files $uri $uri/ /index.html`. Nicht existierende URLs bekamen dadurch
+**200 mit der Startseite** statt 404 — `/admin`, `/wp-login.php`, `/.htaccess`, verirrte
+`.bak`-URLs. **Kein Leak** (ausgeliefert wurde immer nur die öffentliche Startseite), aber
+Suchmaschinen indexieren solche 200er als echte Seiten und jeder Scanner sieht eine
+„Treffer"-Antwort. Geändert auf `try_files $uri $uri/ =404;` — die Seite ist keine SPA.
+
+Das Vorgehen ist die eigentliche Lehre, denn die Config enthielt **zwei identische**
+`try_files`-Zeilen (Zeile 103 = oezlem-makeup.de, Zeile 226 = moriosolutions.de):
+
+1. Interne Links der Seite extrahieren → jeder hat eine Dateiendung, `/api/contact` läuft über
+   einen eigenen `location`-Block **vor** `try_files`. Die Seite braucht den Fallback nirgends.
+2. **Baseline** aller 13 Endpunkte über sechs Domains aufnehmen, bevor etwas angefasst wird.
+3. Config herunterladen, lokal ändern, **Diff prüfen** — genau eine Zeile, im richtigen Block.
+4. `cp`, `nginx -t`, dann Reload.
+5. Gegen dieselbe Baseline messen: keine Abweichung. `/api/contact` antwortet **400 statt 404**,
+   der Endpunkt wird also erreicht — das Formular läuft weiter.
+
+> [Quelle: raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md]
+
+### Ablage und alte Fassungen
+
+Backups liegen bewusst **eine Ebene über** `site/` (`index.html.bak-svcscroll-20260827-151502`):
+Was in `site/` liegt, wandert beim Deploy vollständig ins öffentliche Webroot. 13 veraltete
+Landing-Fassungen auf Desktop, in Downloads und die ZIP wurden auf das Präfix
+**`Moriosolutions Landing Alt` + Datum** umbenannt; Rückgängig-Skript liegt als
+`RUECKGAENGIG-umbenennung.sh` im Paketordner (`mv -n`, überschreibt nichts). Bewusst **nicht**
+angefasst: Verträge und Rechtstexte, CRM-Frontends, `morio-animation.html` (Animations-Experiment
+ohne Seiteninhalt) sowie die Morio-Landings **in Projektordnern** (`reviewcrm-rt 6/`) — dort
+könnte ein Server oder Build darauf verweisen. Drei Kandidaten gehörten bei näherer Prüfung
+**fremden Projekten** (ReviewCRM, Theke 1): blind umbenannt wäre Kundenarbeit betroffen gewesen.
+
 ## Offene Punkte
 
+- **Warnungs-Bereinigung der nginx-Config steht noch aus.** Die bereinigte Datei liegt auf dem
+  Server als `/tmp/conf.clean`, Backup als `nginx.conf.bak-warnfix-20260827-183218`. Der
+  Sicherheitsfilter der Claude-Umgebung blockte schreibenden **und** lesenden Zugriff auf die
+  System-Config, daher muss der Nutzer selbst ausführen: `cp` → `nginx -t` → `nginx -s reload`,
+  **Test vor dem Reload**, bei `[emerg]` das Backup zurückspielen. Inhalt: `text/html` aus zwei
+  `gzip_types`-Zeilen entfernt (nginx komprimiert HTML implizit, die Wiederholung erzeugt nur die
+  Warnung) und `ssl_stapling` bei crm-kiendl.de auskommentiert (Let's Encrypt hat OCSP im Mai 2025
+  abgeschaltet, nginx ignorierte die Direktive ohnehin). Reine Rauschbeseitigung, danach
+  `rm -f /tmp/conf.clean /tmp/nginx.conf.new`. Die vier `nginx.conf.bak-*` in `/opt/kiendl-crm/`
+  bewusst liegen lassen — sie sind der Rückweg. #prüfen
+- **Der Paketordner liegt in `Downloads`**, wo macOS optional automatisch aufräumt („Papierkorb
+  nach 30 Tagen leeren"). Für die einzige aktuelle Kopie der Firmenwebsite kein guter Platz;
+  Umzug nach `~/Morio-Solutions/` empfohlen, die Skripte arbeiten relativ. Noch nicht umgesetzt.
 - Die 16 Fachtexte in **it/es/tr** sind maschinell erzeugter Marketingtext auf einer
   Firmenseite und sollten fachlich gegengelesen werden. #prüfen
 - Automatische Lead-Anlage aus jeder Anfrage entfällt bewusst — die Anfrage landet unter
@@ -99,5 +195,6 @@ sonst überschreiben sich zwei Stände gegenseitig.
 - [[mobile-choreografie-portierung]] — warum die Animationen mobil brachen
 - [[unerreichbarer-dienst-ufw-docker]] — warum das Formular acht Tage lang niemanden erreichte
 - [[lenis-scroll-container-konflikt]] — Folgearbeit an denselben Accordions
+- [[server-quellcode-drift]] — `gzip_static`-Falle, Einzeldatei-Mount, tote Rauchtests
 - [[Responsive Rules — Mobile-first, no horizontal scroll, clamp typography, touch targets 44px]]
 - [[cinematic-threejs-scrollytelling]] · [[Deploy Checklist]] · [[web-factory]]
