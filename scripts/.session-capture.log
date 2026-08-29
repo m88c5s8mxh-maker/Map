@@ -765,3 +765,20 @@ OK: entity/morio-studio.md (neu), concept/additive-fremdcode-einbettung.md (neu)
 /Users/tyrone/Map/scripts/session-integrate.sh: line 102: 21376 Terminated: 15          ( sleep "$TIMEOUT_SEC"; if kill -0 "$CPID" 2> /dev/null; then
     kill -9 "$CPID" 2> /dev/null; log "ABBRUCH Timeout ${TIMEOUT_SEC}s";
 fi )
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 3 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main 771d331] Session: 2026-08-25-video-editor-mit-3d-rekonstruktion-und-ki-integration
+ 3 files changed, 142 insertions(+), 1 deletion(-)
+ create mode 100644 wiki/entity/marktpreise-crm-webdesign-de.md
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 18:36:00 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 18:36:00 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+2026-08-29 18:36:00 [integrate] fertig a6e71d5f-722e-43eb-9613-3e922a8c7a4c

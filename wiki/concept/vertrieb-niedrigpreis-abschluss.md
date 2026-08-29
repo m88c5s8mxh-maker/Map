@@ -75,6 +75,17 @@ anrufen**.
 - [[cinematic-web]] — obere Preisstufe, bei der die umgekehrte Logik gilt (Preis spät)
 - [[morio-crm]] — Angebote entstehen im Bereich `angebote` des CRM
 - [[call-prep]] · [[draft-outreach]] — Vorbereitungs- und Erstkontakt-Skills
+- [[marktpreise-crm-webdesign-de]] — recherchierte Marktbänder für Website und Custom CRM
+- [[social-content-akquise-lokal]] — dieselbe Preislogik als Reichweitenhebel im Feed
+
+> ⚠️ WIDERSPRUCH mit [[marktpreise-crm-webdesign-de]] (Nachtrag 29.08.2026): Die
+> Vergleichszahl „Agentur 4.000–6.000 €" hält der Marktrecherche nicht ohne Zusatz stand —
+> eine **Visitenkarten-Website** kostet in Deutschland 1.000–3.500 €, erst eine echte
+> **Unternehmenswebsite** 5.000–20.000 €. Mit 890–1.890 € liegt das Angebot am unteren Ende
+> des normalen Bandes, nicht deutlich darunter. Das Argument bleibt tragfähig, wenn es gegen
+> eine Unternehmenswebsite gestellt wird oder die noch ausstehende eigene Agentur-Recherche
+> es belegt — als pauschale Aussage ist es angreifbar. #prüfen
+> [Quelle: raw/sessions/2026-08-26-30-tages-content-plan-für-aiweb-design-startup.md]
 
 > ⚠️ WIDERSPRUCH mit [[web-factory]]: Die dokumentierte Standard-Preisstufe liegt bei
 > **1.000–3.000 €** (Skillseite nennt 1.000–6.000 € für Standard + Premium). Das Skript

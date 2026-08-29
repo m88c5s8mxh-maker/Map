@@ -130,7 +130,10 @@
 | [[server-quellcode-drift]] | Warum der Quellcode auf einem Server nicht beweist, was dort läuft — Schadensfall, Prüfroutine, neun verwandte Deploy-Fallen (u. a. `gzip_static`, tote `systemctl`-Rauchtests, Einzeldatei-Mount) · ⟳ dritte Variante: der lokale Arbeitsordner ohne Remote |
 | [[lenis-scroll-container-konflikt]] | Warum ein `overflow-y:auto`-Container auf einer Lenis-Seite scrollbar ist, sich aber nicht scrollen lässt — `data-lenis-prevent-wheel`, konditionales Blocken, gemessener statt geschätzter Deckel |
 | [[vorschau-webseiten]] | Preview-Webseiten-Reiter unter Projekte: Kunden-Freigabeworkflow, nativ im CRM, live · offene Punkte |
-| [[vertrieb-niedrigpreis-abschluss]] | Kaltakquise-Mechanik bei 1.000–1.500 € Projektpreis: Abschluss im ersten Gespräch, Preis früh als Filter, Agentur-Vergleichszahl als Anker, Inhalte-Frage als Margenschutz |
+| [[vertrieb-niedrigpreis-abschluss]] | Kaltakquise-Mechanik bei 1.000–1.500 € Projektpreis: Abschluss im ersten Gespräch, Preis früh als Filter, Agentur-Vergleichszahl als Anker, Inhalte-Frage als Margenschutz · ⟳ Widerspruch geflaggt: die Agentur-Vergleichszahl hält der Marktrecherche nicht pauschal stand |
+| [[social-content-akquise-lokal]] | Content-System für lokale B2B-Akquise: TikTok/Instagram statt LinkedIn, Deutsch statt Englisch, 20/30/50 regelt das Thema — nicht das Verkaufen (Akquise-Brücke), Polarisierungs-Kalibrierung, drei Abbruchstellen im Video |
+| [[marktpreise-crm-webdesign-de]] | Recherchierte Marktbänder DE: Custom CRM ab 15.000 € (Module 3.000–15.000 €), Website 1.000–3.500 € bzw. 5.000–20.000 €, SaaS-Vergleich 40–60 €/User/Monat · eigene Position: CRM ab 9.000 € |
+| [[contentplan-30-tage]] | Projektstand Contentplan + Drehbuch: fünf Phasen, Besetzung Tyrone/Kevin/Hazar nach Drehtagen, Referenzen Kiendl GmbH & Bar, Verbindlichkeiten-Tabelle, offene Punkte |
 
 ---
 
