@@ -395,3 +395,25 @@ hint: 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 2026-08-29 00:45:06 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
 2026-08-29 00:45:06 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 2 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main ec96890] Auto: wiki sync 2026-08-29 00:47
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 00:47:57 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 00:47:57 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+2026-08-29 18:12:06 T2 score=118 Add scrollbar to expandable accordion boxes
+2026-08-29 18:12:06 [integrate] start 6064ae22-3ad8-4d25-ad77-212ee1cc214f -> raw/sessions/2026-08-27-add-scrollbar-to-expandable-accordion-boxes.md
+2026-08-29 18:12:21 T2 score=112 Optimize Moriosolutions landing page for mobile view
+2026-08-29 18:12:21 [integrate] start 05d9ef24-ac9d-4923-a90f-38a6a15ac299 -> raw/sessions/2026-08-26-optimize-moriosolutions-landing-page-for-mobile-view.md
+2026-08-29 18:12:27 T2 score=122 Obsidian integration for Claude session archiving
+2026-08-29 18:12:27 [integrate] start 02b2b61e-e3ff-4871-8a69-c8a0bef1951d -> raw/sessions/2026-08-26-obsidian-integration-for-claude-session-archiving.md
