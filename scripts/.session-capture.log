@@ -542,3 +542,18 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 2026-08-29 18:16:39 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
 2026-08-29 18:16:39 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
 2026-08-29 18:16:39 [integrate] fertig 6064ae22-3ad8-4d25-ad77-212ee1cc214f
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 3 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main d5a34d6] Auto: wiki sync 2026-08-29 18:17
+ 3 files changed, 53 insertions(+), 2 deletions(-)
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 18:17:24 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 18:17:24 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.

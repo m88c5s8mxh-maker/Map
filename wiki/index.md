@@ -121,8 +121,10 @@
 
 | Seite | Inhalt |
 |-------|--------|
-| [[morio-crm]] | Das laufende CRM auf `intra.moriosolutions.de` — Stack, Server, echtes Quellcode-Repo (`Beckomate88/MorioCRM`, Branch `redesign-ui`), Deploy-Weg, nginx-Eigenheiten, Backup |
-| [[moriosolutions-website]] | Die öffentliche Landingpage — Aufbau, Deploy (`gzip_static`!), Mobil-Überarbeitung, nginx im Container statt Systemdienst, Sicherheitsaudit, Soft-404-Fix, offene Config-Bereinigung |
+| [[morio-crm]] | Das laufende CRM auf `intra.moriosolutions.de` — Stack, Server, echtes Quellcode-Repo (`Beckomate88/MorioCRM`, Branch `redesign-ui`), Deploy-Weg, nginx-Eigenheiten, Backup · ⟳ `Vertrieb → Anfragen` live, `.env.production` 5 → 18 Schlüssel, Build-Reparatur (`React.ElementType` → `LucideIcon`), Parallelarbeit am Repo |
+| [[moriosolutions-website]] | Die öffentliche Landingpage — Aufbau, Deploy (`gzip_static`!), Mobil-Überarbeitung (Globus, Accordions, Animationslängen), nginx im Container statt Systemdienst, Sicherheitsaudit, Soft-404-Fix, offene Config-Bereinigung |
+| [[mobile-choreografie-portierung]] | Warum eine gepinnte Scroll-Choreografie mobil rechnerisch bricht: negativer Nenner, feste vertikale FOV im Portrait, nicht überschriebenes `visibility`, der 820-px-Breakpoint und das gedrehte iPhone |
+| [[unerreichbarer-dienst-ufw-docker]] | Gebaut ≠ erreichbar: ufw kennt nur das Docker-Default-Netz, veröffentlichte Container-Ports umgehen es — und der `405`, der in Wahrheit ein 307-Auth-Redirect ist |
 | [[server-quellcode-drift]] | Warum der Quellcode auf einem Server nicht beweist, was dort läuft — Schadensfall, Prüfroutine, neun verwandte Deploy-Fallen (u. a. `gzip_static`, tote `systemctl`-Rauchtests, Einzeldatei-Mount) |
 | [[lenis-scroll-container-konflikt]] | Warum ein `overflow-y:auto`-Container auf einer Lenis-Seite scrollbar ist, sich aber nicht scrollen lässt — `data-lenis-prevent-wheel`, konditionales Blocken, gemessener statt geschätzter Deckel |
 | [[vorschau-webseiten]] | Preview-Webseiten-Reiter unter Projekte: Kunden-Freigabeworkflow, nativ im CRM, live · offene Punkte |

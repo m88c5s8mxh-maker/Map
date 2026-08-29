@@ -16,7 +16,7 @@ einem 5-Sprachen-Wörterbuch. Nicht zu verwechseln mit dem Intranet-CRM
 | | |
 |---|---|
 Arbeitskopie | `~/Downloads/moriosolutions-website/site/index.html` — war byte-identisch mit live |
-Deploy | `deploy.sh` rsyncт **nur** den `site/`-Ordner, Standard `PRUNE=0` (kein `--delete`) |
+Deploy | `deploy.sh` rsynct **nur** den `site/`-Ordner, Standard `PRUNE=0` (kein `--delete`) |
 Auslieferung | nginx mit `gzip_static on` — liefert bevorzugt `index.html.gz` |
 Sprachen | de/en/it/es/tr; `applyLang` läuft über `querySelectorAll('[data-i18n]')` + `textContent` |
 3D | `PerspectiveCamera(42, W/H)`, Globus + Partikelwelt teilen sich **dieselbe** Kamera |
@@ -28,7 +28,7 @@ Sicherung alt | `~/Desktop/Morio Solutions/MS Landing (alt).html`, per `cmp` geg
 ## Zwei Deploy-Fallen dieser Seite
 
 **Das vorkomprimierte `.gz` ist die eigentlich ausgelieferte Datei.** `deploy.sh` erzeugt es
-**nicht** neu, es rsyncт nur. Wer `index.html` ändert und deployt, ohne `index.html.gz`
+**nicht** neu, es rsynct nur. Wer `index.html` ändert und deployt, ohne `index.html.gz`
 neu zu bauen, kombiniert eine neue Quelle mit einem alten Auslieferungsstand — echte Besucher
 sehen dann die alte Seite, jede Prüfung per `curl` ohne `Accept-Encoding: gzip` aber die neue.
 

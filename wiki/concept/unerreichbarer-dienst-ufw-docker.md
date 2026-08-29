@@ -37,6 +37,15 @@ Ein funktionierender Nachbarport beweist also **nichts** über einen Host-Prozes
 Wer Docker-Netze und ufw mischt, muss pro Dienst prüfen, und zwar **aus dem aufrufenden
 Container heraus**, nicht vom Host.
 
+> ⚠️ WIDERSPRUCH mit [[moriosolutions-website]]: Dort ist am 27.08. gemessen worden, dass
+> 3000/3001/3002 **von außen** ins Timeout laufen — ufw greift dort also sehr wohl, der
+> userland-proxy schiebt die Verbindung durch die INPUT-Kette. Beide Messungen können
+> zutreffen, wenn man die Richtung trennt: **von außen** filtert ufw (INPUT), **aus einem
+> Container auf einen veröffentlichten Port** läuft der Verkehr über die DOCKER-Kette in
+> FORWARD und umgeht die ufw-Regel. Was hier belegt ist, ist die *Beobachtung*: 3001 war
+> aus dem nginx-Container erreichbar, 3010 nicht, bei identischer ufw-Regel. Die
+> iptables-Erklärung dafür ist **nicht verifiziert**. #prüfen
+
 ## Fehler 2 — der 405, der eigentlich ein Auth-Redirect ist
 
 Danach scheiterte noch der CRM-Eintrag mit `405 Method Not Allowed`. Die Kette:
