@@ -869,3 +869,19 @@ OK: neu `wiki/concept/plattform-algorithmen-distribution.md`; aktualisiert `wiki
 /Users/tyrone/Map/scripts/session-integrate.sh: line 102: 22184 Terminated: 15          ( sleep "$TIMEOUT_SEC"; if kill -0 "$CPID" 2> /dev/null; then
     kill -9 "$CPID" 2> /dev/null; log "ABBRUCH Timeout ${TIMEOUT_SEC}s";
 fi )
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 2 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main bbcb990] Session: 2026-08-29-optimiere-posting-strategie-für-social-media-algorithmen
+ 2 files changed, 38 insertions(+), 1 deletion(-)
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-29 18:51:44 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-08-29 18:51:44 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
+2026-08-29 18:51:44 [integrate] fertig b339eb1b-2eed-4f6b-b7bd-cc478734b31d
