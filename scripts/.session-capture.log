@@ -1083,3 +1083,19 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 2026-09-01 19:20:53 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
 2026-09-01 19:20:53 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
 2026-09-01 19:23:58 T1 score=19 AI-Kennzeichnungspflichten für KI-generierte Webinhalte
+[graphify] Extraction warning (250 issues): Node 62 (id='concept_bento_grid') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 3 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 634 nodes, 741 edges, 65 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main 0c83e7e] Session-Mitschnitt: AI-Kennzeichnungspflichten für KI-generierte Webinhalte
+ 3 files changed, 84 insertions(+)
+ create mode 100644 "raw/sessions/2026-09-01-ai-kennzeichnungspflichten-f\303\274r-ki-generierte-webinhalte.md"
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-09-01 19:24:01 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-09-01 19:24:01 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
