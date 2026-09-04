@@ -1,3 +1,8 @@
+---
+name: kling-prompts
+description: Generiert und verbessert Kling-3.0-Video-Prompts fuer cinematic Scroll-Websites und lernt aus jedem Video eine wachsende Bibliothek getesteter Prompt-Muster. Verknuepft mit cinematic-web (Phase 3 des Scroll-Video-Erlebnisses).
+---
+
 # Skill: kling-prompts
 **Trigger:** `/kling-prompts`
 **Verknüpft mit:** `cinematic-web` (liefert Prompts für Phase 3 des Scroll-Video-Erlebnisses)

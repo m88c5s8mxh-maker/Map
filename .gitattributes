@@ -1,0 +1,4 @@
+# Obsidian schreibt seine Config mit CRLF neu -> ohne Normalisierung
+# erzeugt jeder Vault-Start Phantom-Diffs auf dem gemeinsamen Branch.
+.obsidian/** text eol=lf
+wiki/.obsidian/** text eol=lf

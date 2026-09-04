@@ -138,6 +138,14 @@
 
 ---
 
+## Externe Skill-Bibliotheken
+
+| Seite | Inhalt |
+|-------|--------|
+| [[ecc]] | ECC v2.2.1 (MIT) — 286 fremde Skills + 68 Subagent-Definitionen als Nachschlagewerk unter `raw/skills/ecc/`. Zweistufiger Ladeweg über `INDEX.md`, Hooks bewusst nicht übernommen |
+
+---
+
 ## Web Factory — Angebotsstufen
 
 | Tier | Skill | Einsatz | Preis-Range |

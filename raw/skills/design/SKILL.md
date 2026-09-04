@@ -1,3 +1,8 @@
+---
+name: design-advisor
+description: Branchenspezifische UI/UX-Empfehlungen vor dem Bauen — Hex-Codes, Font-Paarungen, Layout-Muster und Anti-Pattern-Warnungen aus den CSV-Datendateien. Use when starting a new design for a specific industry or product type.
+---
+
 # Design Advisor
 ## Overview
 A design advisor skill that provides industry-specific UI/UX recommendations
@@ -5,7 +10,7 @@ before building. Searches design data files to give actionable recommendations
 with hex codes, font pairings, layout patterns, and anti-pattern warnings.
 ## Workflow
 1. Identify the industry/product type from the user's request
-2. Search relevant CSV data files in .claude/skills/design/data/
+2. Search relevant CSV data files in .claude/skills/design-advisor/data/
 3. Cross-reference with design vocabulary for proper terminology
 4. Search 21st.dev for real component examples (if MCP available)
 5. Present structured recommendations with implementation details

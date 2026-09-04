@@ -30,3 +30,7 @@ Thumbs.db
 .env
 *.key
 *.pem
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/
+.obsidian/graph.json

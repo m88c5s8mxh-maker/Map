@@ -1,25 +1,36 @@
-> ⚠️ Dies ist ein archivierter Rohexport eines `graphify`-Laufs. Der gepflegte, aktuelle Index ist [[wiki/index|wiki/index.md]].
-
 # Knowledge Graph Index
 
-> Zuletzt aktualisiert: 2026-05-13 · 880 Wiki-Seiten · 166 Quelldateien
+> Zuletzt aktualisiert: 2026-09-04 · 796 Wiki-Seiten · 718 Quelldateien
 
 ---
 
 ## Wiki-Seiten
 
+### Clippings/
+- [[Sidewave]]
+
+### Skills/
+- [[AI-UGC-Video-Automation]]
+
 ### concept/
+- [[backdrop-shader-animated]]
+- [[cinematic-threejs-scrollytelling]]
 - [[claude-skills-system]]
 - [[design-engineering]]
 - [[llm-wiki-pattern]]
+- [[server-quellcode-drift]]
+- [[vertrieb-niedrigpreis-abschluss]]
 
 ### entity/
+- [[_SKILL_MAP]]
 - [[accessibility-review]]
 - [[account-research]]
 - [[algorithmic-art]]
 - [[analyze]]
 - [[architecture]]
 - [[audit-support]]
+- [[auto-compact]]
+- [[brain-grower]]
 - [[brand-guidelines]]
 - [[brand-review]]
 - [[browser-use]]
@@ -32,6 +43,7 @@
 - [[canvas-design]]
 - [[capacity-plan]]
 - [[change-request]]
+- [[cinematic-web]]
 - [[claude-efficiency]]
 - [[claude-max-effort]]
 - [[claude-mem]]
@@ -64,6 +76,7 @@
 - [[draft-content]]
 - [[draft-offer]]
 - [[draft-outreach]]
+- [[ecc]]
 - [[email-sequence]]
 - [[email-sorter]]
 - [[emil-design-eng]]
@@ -74,19 +87,23 @@
 - [[financial-statements]]
 - [[forecast]]
 - [[graphify]]
+- [[immersive-web-experience]]
 - [[incident-response]]
 - [[instagram-digital-products]]
 - [[internal-comms]]
 - [[interview-prep]]
 - [[journal-entry-prep]]
 - [[journal-entry]]
+- [[kling-prompts]]
 - [[knowledge-synthesis]]
 - [[manus-vacu-landing]]
 - [[map-sync]]
+- [[marketing-mastery]]
 - [[mcp-builder]]
 - [[memory-management]]
 - [[metrics-review]]
 - [[minimalist-skill]]
+- [[morio-crm]]
 - [[obsidian-wiki-skill]]
 - [[obsidian-wiki]]
 - [[onboarding]]
@@ -146,15 +163,14 @@
 - [[validate-data]]
 - [[variance-analysis]]
 - [[vendor-review]]
+- [[vorschau-webseiten]]
 - [[web-artifacts-builder]]
+- [[web-factory]]
 - [[weekly-prep-brief]]
 - [[write-query]]
 - [[write-spec]]
 - [[xlsx]]
 - [[youtube-channel-ai]]
-
-### obsidian/
-- [[Sales Pipeline_1]]
 
 ### synthesis/
 - [[data-analytics-skills]]
@@ -605,6 +621,7 @@
 - [[Skill Evaluation Loop]]
 - [[Skill Registry (llms.txt)]]
 - [[Skill Triggering Mechanism]]
+- [[Skills-Index]]
 - [[Snowflake]]
 - [[Social Media Post]]
 - [[Source Attribution  Citation]]
@@ -697,7 +714,7 @@
 - [[_COMMUNITY_Cinematic Web, AI Video und Bayern-Oberpfalz]]
 - [[_COMMUNITY_Claude Memory Architecture]]
 - [[_COMMUNITY_Claude Memory und Task Management]]
-- [[_COMMUNITY_XML Prompt Architecture]]
+- [[_COMMUNITY_Community 55]]
 - [[_COMMUNITY_Compensation Analysis und HR]]
 - [[_COMMUNITY_Compliance und Security GDPR SOC2]]
 - [[_COMMUNITY_Content Creation und SEO Copywriting]]
@@ -762,171 +779,66 @@
 - [[_COMMUNITY_User Context Ulm DE]]
 - [[_COMMUNITY_XML Prompt Architecture]]
 - [[_COMMUNITY_YouTube und Faceless Content Creation]]
-- [[accessibility-review]]
-- [[account-research]]
-- [[algorithmic-art]]
-- [[analyze]]
-- [[architecture]]
-- [[audit-support]]
-- [[brand-guidelines]]
-- [[brand-review]]
-- [[build-dashboard]]
-- [[build-with-claude-code]]
-- [[call-prep]]
-- [[call-summary]]
-- [[campaign-plan]]
-- [[canvas-design]]
-- [[capacity-plan]]
-- [[change-request]]
-- [[claude-efficiency]]
-- [[claude-max-effort]]
-- [[close-management]]
-- [[code-review]]
-- [[comp-analysis]]
-- [[competitive-brief]]
-- [[competitive-intelligence]]
-- [[compliance-tracking]]
-- [[compose-outreach]]
-- [[consolidate-memory]]
-- [[contact-research]]
-- [[content-creation]]
-- [[conversation-context]]
-- [[create-an-asset]]
-- [[create-viz]]
-- [[daily-briefing]]
-- [[data-context-extractor]]
-- [[data-visualization]]
-- [[debug]]
-- [[deploy-checklist]]
 - [[design-advisor]]
-- [[design-critique]]
-- [[design-handoff]]
-- [[design-system]]
 - [[design-taste-frontend SKILL (High-Agency Frontend)]]
 - [[design-taste-frontend]]
-- [[digest]]
-- [[doc-coauthoring]]
-- [[documentation]]
 - [[docx-js Library]]
 - [[eNPS (Employee Net Promoter Score)]]
 - [[full-output-enforcement]]
 - [[global-CLAUDE]]
-- [[graphify]]
 - [[high-end-visual-design]]
 - [[industrial-brutalist-ui]]
 - [[llms.txt Skill Index]]
 - [[markitdown]]
 - [[matplotlib]]
-- [[metrics-review]]
 - [[minimalist-ui]]
 - [[morioCRM-CLAUDE]]
-- [[obsidian-wiki]]
-- [[onboarding]]
 - [[openpyxl]]
-- [[org-planning]]
 - [[output-skill — Stops AI from being lazy, prevents placeholder comments and skipped code]]
 - [[p5.js]]
 - [[pandas]]
-- [[pdf]]
 - [[pdfplumber]]
-- [[people-report]]
-- [[performance-report]]
-- [[performance-review]]
-- [[pipeline-review]]
 - [[plotly]]
-- [[policy-lookup]]
-- [[pptx]]
 - [[pptxgenjs]]
-- [[process-doc]]
-- [[process-optimization]]
-- [[product-brainstorming]]
-- [[prospect]]
 - [[pypdf]]
 - [[pytesseract (OCR)]]
 - [[rebuild_code()]]
-- [[reconciliation]]
-- [[recruiting-pipeline]]
 - [[redesign-existing-projects]]
 - [[reportlab]]
-- [[research-synthesis]]
-- [[risk-assessment]]
-- [[roadmap-update]]
-- [[runbook]]
-- [[schedule]]
 - [[seaborn]]
-- [[search-strategy]]
-- [[search]]
-- [[seo-audit]]
-- [[sequence-load]]
-- [[setup-cowork]]
 - [[shadcnui]]
-- [[skill-creator]]
-- [[slack-gif-creator]]
-- [[source-management]]
-- [[sox-testing]]
-- [[sprint-planning]]
-- [[sql-queries]]
-- [[stakeholder-update]]
-- [[standup]]
-- [[start]]
-- [[statistical-analysis]]
-- [[status-report]]
 - [[stitch-design-taste Skill]]
-- [[synthesize-research]]
-- [[system-design]]
-- [[task-management]]
 - [[taste-skill SKILL.md — High-Agency Frontend Skill]]
-- [[tech-debt]]
-- [[template-saver]]
-- [[testing-strategy]]
-- [[theme-factory]]
-- [[update]]
 - [[update_html()]]
 - [[update_index()]]
 - [[update_map.py — Wird von der GitHub Action aufgerufen. Generiert graphify-outin]]
 - [[update_map.py]]
-- [[user-research]]
-- [[ux-copy]]
-- [[ux-design]]
-- [[validate-data]]
-- [[variance-analysis]]
-- [[vendor-review]]
-- [[web-artifacts-builder]]
-- [[weekly-prep-brief]]
-- [[write-query]]
-- [[write-spec]]
-- [[xlsx]]
-- [[youtube-channel-ai]]
 
 ## Quelldateien (raw/)
 
-- claude-settings.json
-- global-CLAUDE.md
-- morioCRM-CLAUDE.md
-- ai-claude-anthropic-updates-2026-05.md
-- ai-engineering-insights-2026-05.md
-- automation-make-zapier-n8n-2026-05.md
-- design-animation-techniques-2026-05.md
-- instagram-growth-tactics-2026-05.md
-- kling-3-ai-video-2026-05.md
-- n8n-automation-insights-2026.md
-- seo-aeo-trends-2026-05.md
-- webdesign-gsap-showcase-2026-05.md
-- webdesign-inspiration-2026.md
+- `skills/ecc/` — 535 Dateien (Bündel, Einstieg `SKILL.md`)
+- .captured
+- 2026-08-20-preview-reiter-in-crm-intranet-einbauen.md
+- 2026-08-21-theke-1-referenzlink-auf-moriosolutions-konfigurieren.md
+- 2026-08-26-vertriebsskript-für-webseitenverkauf-schreiben.md
+- README.md
+- README.md
 - _SKILL_MAP.md
 - accessibility-review.md
 - account-research.md
+- ai-anthropic-updates-2026-05-week2.md
+- ai-claude-anthropic-updates-2026-05.md
+- ai-engineering-insights-2026-05.md
 - algorithmic-art.md
 - analyze.md
 - architecture.md
 - audit-support.md
 - auto-compact.md
-- SKILL.md
-- url-map.md
+- automation-make-zapier-n8n-2026-05.md
+- automation-n8n-sap-make-websearch-2026-05.md
 - brand-guidelines.md
 - brand-review.md
 - browser-use.md
-- SKILL.md
 - build-dashboard.md
 - build-with-claude-code.md
 - call-prep.md
@@ -935,10 +847,11 @@
 - canvas-design.md
 - capacity-plan.md
 - change-request.md
-- SKILL.md
+- cinematic-threejs-techniques.md
 - claude-efficiency.md
 - claude-max-effort.md
 - claude-mem.md
+- claude-settings.json
 - close-management.md
 - code-review.md
 - comp-analysis.md
@@ -957,10 +870,7 @@
 - data-visualization.md
 - debug.md
 - deploy-checklist.md
-- SKILL.md
-- colors.csv
-- typography.csv
-- ui-reasoning.csv
+- design-animation-techniques-2026-05.md
 - design-critique.md
 - design-handoff.md
 - design-system.md
@@ -979,15 +889,19 @@
 - explore-data.md
 - financial-statements.md
 - forecast.md
+- global-CLAUDE.md
 - graphify.md
 - immersive-web-experience.md
 - incident-response.md
+- instagram-algorithm-deep-dive-2026-05.md
+- instagram-attention-science-2026-05.md
 - instagram-digital-products.md
+- instagram-growth-tactics-2026-05.md
 - internal-comms.md
 - interview-prep.md
 - journal-entry-prep.md
 - journal-entry.md
-- SKILL.md
+- kling-3-ai-video-2026-05.md
 - knowledge-synthesis.md
 - llms.txt
 - manus-vacu-landing.md
@@ -995,11 +909,11 @@
 - mcp-builder.md
 - memory-management.md
 - metrics-review.md
-- SKILL.md
+- morioCRM-CLAUDE.md
+- n8n-automation-insights-2026.md
 - obsidian-wiki.md
 - onboarding.md
 - org-planning.md
-- SKILL.md
 - pdf.md
 - people-report.md
 - performance-report.md
@@ -1013,7 +927,6 @@
 - prospect.md
 - reconciliation.md
 - recruiting-pipeline.md
-- SKILL.md
 - research-synthesis.md
 - risk-assessment.md
 - roadmap-update.md
@@ -1021,12 +934,13 @@
 - schedule.md
 - search-strategy.md
 - search.md
+- seo-aeo-technical-2026-05.md
+- seo-aeo-trends-2026-05.md
 - seo-audit.md
 - sequence-load.md
 - setup-cowork.md
 - skill-creator.md
 - slack-gif-creator.md
-- SKILL.md
 - source-management.md
 - sox-testing.md
 - sprint-planning.md
@@ -1036,8 +950,6 @@
 - start.md
 - statistical-analysis.md
 - status-report.md
-- DESIGN.md
-- SKILL.md
 - superpowers.md
 - synthesize-research.md
 - system-design.md
@@ -1056,16 +968,27 @@
 - variance-analysis.md
 - vendor-review.md
 - web-artifacts-builder.md
-- SKILL.md
-- agentur.md
-- arztpraxis.md
-- gastronomie.md
-- mittelstand.md
+- webdesign-codrops-awwwards-2026-05.md
+- webdesign-gsap-showcase-2026-05.md
+- webdesign-inspiration-2026.md
 - weekly-prep-brief.md
 - write-query.md
 - write-spec.md
 - xlsx.md
 - youtube-channel-ai.md
+- skills/brain-grower/SKILL.md
+- skills/brutalist-skill/SKILL.md
+- skills/cinematic-web/SKILL.md
+- skills/design/SKILL.md
+- skills/kling-prompts/SKILL.md
+- skills/marketing-mastery/SKILL.md
+- skills/minimalist-skill/SKILL.md
+- skills/output-skill/SKILL.md
+- skills/redesign-skill/SKILL.md
+- skills/soft-skill/SKILL.md
+- skills/stitch-skill/SKILL.md
+- skills/web-factory/SKILL.md
+- skills/webdesign-pro/SKILL.md
 
 ---
 
