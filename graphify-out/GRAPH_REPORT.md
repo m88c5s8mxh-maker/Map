@@ -1,33 +1,33 @@
 # Graph Report - Map  (2026-09-04)
 
 ## Corpus Check
-- 1543 files · ~812,029 words
+- 1564 files · ~864,128 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 13237 nodes · 14990 edges · 1007 communities (923 shown, 75 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 238 edges (avg confidence: 0.85)
+- 14094 nodes · 15914 edges · 1011 communities (956 shown, 46 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 238 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a7e57a74`
+- Built from commit: `63f6d192`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - angular-developer/SKILL.md
-- config/global-CLAUDE.md
+- _COMMUNITY_Skills Library und Claude Config.md
 - Skill Registry (llms.txt)
 - DESIGN.md — Stitch Design System Document
 - competitive-brief
-- _COMMUNITY_Product Analytics, Metrics und Dashboards.md
+- metrics-review
 - shared.mjs
 - Graphify Skill
-- _COMMUNITY_HR und People Operations.md
+- HR  People Operations Domain.md
 - design-handoff
-- statistical-analysis
+- _COMMUNITY_Product Management und UX Research.md
 - INDEX.md
-- variance-analysis
+- _COMMUNITY_Content Creation und SEO Copywriting.md
 - Draft Content Skill
 - Financial Statements Skill
 - Kling Prompts Skill
@@ -68,7 +68,7 @@
 - Security Checklist
 - Memory Consolidation
 - User Context (Ulm, DE)
-- claude-skills-system.md
+- schedule
 - template-saver
 - theme-factory
 - _COMMUNITY_Financial Statements und Sales Forecasting.md
@@ -87,7 +87,7 @@
 - Vue.js Patterns and Best Practices
 - Windows Desktop E2E Testing
 - _make_project
-- _COMMUNITY_LLM Laziness und Anti-Truncation Research.md
+- _COMMUNITY_Brutalist & Anti-Generic UI.md
 - Quarkus Verification Loop
 - Examples
 - API Design Patterns
@@ -96,7 +96,7 @@
 - Go Development Patterns
 - Kotlin Development Patterns
 - How It Works
-- Skills-Index.md
+- index.md
 - finance-skills.md
 - Rust Development Patterns
 - runner.py
@@ -114,7 +114,7 @@
 - research-synthesis
 - ClickHouse Analytics Patterns
 - Perl Testing Patterns
-- roadmap-update
+- _COMMUNITY_Product Analytics, Metrics und Dashboards.md
 - Data Scraper Agent
 - Database Migration Patterns
 - Go Testing Patterns
@@ -139,8 +139,8 @@
 - Checklist
 - Timeline Editing Guide
 - RTStream Reference
-- index.md
-- _COMMUNITY_Skills Library und Claude Config.md
+- Community_0.md
+- wiki/morioCRM-CLAUDE.md
 - Signal Forms
 - Customs & Trade Compliance
 - Energy Procurement
@@ -160,9 +160,9 @@
 - Uncloud Cluster Management
 - Capture Reference
 - How it works
-- high-end-visual-design.md
+- _COMMUNITY_LLM Laziness und Anti-Truncation Research.md
 - _COMMUNITY_Engineering Workflow und DevOps.md
-- morio-crm.md
+- Engineering.md
 - Review Checklist
 - Backend Development Patterns
 - Dart/Flutter Patterns
@@ -184,8 +184,8 @@
 - _COMMUNITY_DOCX Document Generation.md
 - _COMMUNITY_Sales Intelligence und Competitive Enablement.md
 - _COMMUNITY_Compensation Analysis und HR.md
-- _COMMUNITY_Laziness Research Findings.md
-- _COMMUNITY_Content Creation und SEO Copywriting.md
+- _COMMUNITY_Design Skills — Taste, Premium UI, Anti-Slop.md
+- validate-data.md
 - product-brainstorming
 - datetime
 - Instagram Algorithmus — Deep Dive 2026
@@ -202,8 +202,8 @@
 - Quarkus Security Review
 - React Testing
 - open-terminal.js
-- _COMMUNITY_Data Visualization und Warehouse.md
-- _COMMUNITY_Product Management und UX Research.md
+- create-viz.md
+- write-spec
 - Zwei Wege — das ist deine Entscheidung
 - Frontend Accessibility Patterns
 - Knowledge Operations
@@ -213,8 +213,8 @@
 - /search-first — Research Before You Code
 - How It Works
 - Generative Media Guide
-- PHASE 1 — CREATIVE DIRECTION
-- _COMMUNITY_Design Skills — Taste, Premium UI, Anti-Slop.md
+- PHASE 2 — TECHNICAL SYSTEM DESIGN
+- _COMMUNITY_RLHF Root Causes.md
 - IconError
 - ws_listener.py
 - Verlauf
@@ -232,7 +232,7 @@
 - Phase 2: Cross-read, Match & Verdict (LLM Judgment)
 - SwiftUI Patterns
 - build-with-claude-code.md
-- competitive-brief.md
+- competitive-brief
 - grade
 - code-reviewer.md
 - gan-evaluator.md
@@ -270,12 +270,12 @@
 - Spring Boot Development Patterns
 - Taste
 - Streaming & Playback
-- algorithmic-art.md
-- create-an-asset.md
-- data-context-extractor.md
-- sales-crm-skills.md
-- contact-research.md
-- people-report
+- algorithmic-art
+- create-an-asset
+- _COMMUNITY_Data Visualization und Warehouse.md
+- draft-outreach
+- contact-research
+- _COMMUNITY_HR und People Operations.md
 - Kling 3.0 / O3 — Technisches Deep Dive Mai 2026
 - ZIP — funktionierte schon, Ursache liegt anders
 - Common Fix Patterns
@@ -344,15 +344,15 @@
 - parse_trace
 - How It Works
 - Spring Boot Verification Loop
-- Skill Map — Workflow Chains & Cross-Domain Connections
+- 2. CRM-Integration (`~/morio-solutions-ai`)
 - Branchenprofil: Agentur / Beratung / Digital
 - Draft Outreach Skill.md
-- taste-skill SKILL.md — High-Agency Frontend Skill.md
-- DESIGN.md — Stitch Design System Document.md
+- _COMMUNITY_Stitch Design System und Floria Brand.md
+- Verifiziert
 - Graphify Skill.md
-- Taste Skill 3-Dial Settings — DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY.md
-- EmotionPrompt (Microsoft Research) — Stakes framing improves output quality up to +115%.md
-- LLM Output Truncation Research — root causes, remediation, empirical findings.md
+- Verlauf
+- Das musst du entscheiden
+- Zwei Dinge, die du wissen solltest
 - _parse_stream_json
 - Key Techniques Implemented
 - Build Error Resolver
@@ -472,15 +472,15 @@
 - Unified Memory
 - Workspace Surface Audit
 - Marketing Mastery — 40-Skill Library
-- 35% Context Reduction from Lazy-Loading.md
+- Wie man es schließt
 - Memory Management Skill.md
-- LazyBench — Proves frontier models actively select cognitive shortcuts on high-effort tasks.md
-- _COMMUNITY_Stitch & Anti-Slop Rules.md
+- pypdf - Basic Operations
+- Stitch & Anti-Slop Rules
 - data-analytics-skills.md
-- compose-outreach.md
-- content-creation.md
-- variance-analysis.md
-- Taste Skill — AI frontend design skill collection.md
+- compose-outreach
+- content-creation
+- variance-analysis
+- Optimize Moriosolutions landing page for mobile view
 - Automation Update — n8n SAP Investment + Make AI Web Search
 - n8n Automation Insights 2026
 - Woran du denken solltest
@@ -553,12 +553,12 @@
 - _COMMUNITY_Continuation Prompt Handling.md
 - Dynamic Throttling
 - _COMMUNITY_LLM Temperature Tuning.md
-- _COMMUNITY_Stitch Design System und Floria Brand.md
+- Anfragen-Reiter: gebaut, aber nicht deployt — mit Absicht
 - Temperature Parameter
 - _COMMUNITY_Top-p Nucleus Sampling.md
 - Design Engineering
-- stakeholder-update.md
-- testing-strategy
+- stakeholder-update
+- Offen, ohne Funktionswirkung
 - Skills
 - Sales & CRM Skills
 - Design & Animation Techniken — Mai 2026
@@ -598,7 +598,7 @@
 - visa-doc-translate/SKILL.md
 - Anti-Generic-Checkliste ("0815"-Muster vermeiden)
 - VOLLAUTOMATIK GOLD ROB.md
-- AI Tells Forbidden Patterns — no Inter, no neon glows, no pure black, no 3-col cards, no generic names.md
+- Verlauf
 - Enrich Lead Skill.md
 - change-request
 - Backdrop Shader — Animated Images
@@ -609,8 +609,8 @@
 - Email Sorter Skill.md
 - graphify
 - Morio CRM (intra.moriosolutions.de)
-- user-research.md
-- Floria Design Language — Dark background, off-white type, botanical photography, editorial asymmetry.md
+- user-research
+- Wichtiger Nebenfund — dein Vault synchronisiert seit zwei Monaten nicht
 - Knowledge Graph Index
 - MCP Builder Skill.md
 - Wissen & Produktivitäts-Skills
@@ -695,9 +695,9 @@
 - loop-operator.md
 - Low-Score Example: Adding Retry Logic
 - Side Effects with `effect` and `afterRenderEffect`
-- Hierarchical Injectors
-- Router Lifecycle and Events
-- Continuous Agent Loop
+- Verlauf
+- Was ich dir empfehle
+- Der eigentliche Lückenschluss fehlt aber noch — auf der Website-Seite
 - Classes & Class Hierarchies (C.*)
 - 3. Widget Best Practices
 - 5. Performance
@@ -716,7 +716,7 @@
 - frontmatter
 - AI Tells - Forbidden Design Patterns.md
 - Anti-Slop Design Engineering Rules (Bias Correction).md
-- Architectural Patterns — lazy-loaded skills, MCP integration, chunked task execution.md
+- sox-testing
 - Audit Trail (EXTRACTEDINFERREDAMBIGUOUS).md
 - _COMMUNITY_Dynamic Throttling LLM.md
 - Community 11
@@ -775,7 +775,7 @@
 - design
 - emil-design-eng
 - everything-claude-code
-- marketing-mastery.md
+- Das Produktionsdokument ist jetzt vollständig
 - memory-management (Skill)
 - minimalist-skill
 - obsidian-wiki
@@ -787,12 +787,12 @@
 - Floria Archives Bento Grid (2x2 image tiles).md
 - Floria Website - Top Section (Hero, Curated Assemblages, Services, Archives).md
 - Model Context Protocol (MCP).md
-- Hero Section Rules — Inline image typography, asymmetry, no filler, CTA restraint.md
-- Inline Image Typography (photos embedded in headlines).md
-- LazyBench Cognitive Shortcutting Discovery.md
-- RLHF Brevity Bias — alignment training instills short-output preference to reduce compute cost.md
-- Seasonal Behavior Analysis (Winter Break Hypothesis).md
-- HR & People Skills
+- Zwei Dinge, die du wissen solltest
+- Optimiere Posting-Strategie für Social-Media-Algorithmen
+- Obsidian integration for Claude session archiving
+- Verifiziert
+- Social-Content als Akquisekanal für ein lokales Digitalstudio
+- hr-people-skills.md
 - Verlauf
 - Zwei Dinge bleiben offen, unabhängig vom Tool
 - Was ich stattdessen fertig gemacht habe
@@ -807,10 +807,10 @@
 - 6. Testing
 - 7. Accessibility
 - 9. Security
-- NanoClaw REPL
-- Nasiko CLI Lifecycle Bridge
+- moriosolutions.de (öffentliche Landingpage)
+- Ein Hinweis zur Arbeitsweise
 - Step 4：锻造名字
-- orch-add-feature
+- Investor Outreach
 - Parametrization
 - 4. Client-Side Data Fetching (MEDIUM-HIGH)
 - 8. Advanced Patterns (LOW)
@@ -826,26 +826,26 @@
 - CONTENT-STRATEGY
 - Setup für Kollegen
 - GOLD ROB — Backtest-Ergebnis
-- Community 0
+- Scroll-Choreografie auf Mobil portieren
 - Community 15
-- Community 16
-- Community 17
-- Community 1
-- Community 3
-- Community 4
-- Community 5
-- Community 7
+- Community_5.md
+- Kernaussagen
+- Financial Statements Skill.md
+- Stiller Sync-Ausfall
+- Add scrollbar to expandable accordion boxes
+- Claude Flair Übersicht und Funktionen
+- validate-data
 - Animation & Layout System
-- Brutalist & Anti-Generic UI
+- 30-Tages Content-Plan für AI/Web-Design Startup
 - Data Engineering und Financial Queries
 - Design Skills — Taste, Premium UI, Anti-Slop
 - HR und People Operations
-- Knowledge Management, Runbooks und SOPs
+- Ein Hinweis zur Preiserzählung
 - Laziness Research Findings
 - LLM Laziness und Anti-Truncation Research
 - Output Truncation Problem
 - Product Analytics, Metrics und Dashboards
-- RLHF Root Causes
+- Zwei Dinge, die du wissen musst
 - Sales Intelligence und Competitive Enablement
 - Skills Library und Claude Config
 - Stitch Design System und Floria Brand
@@ -857,51 +857,51 @@
 - build-dashboard
 - call-prep
 - call-summary
-- campaign-plan
-- code-review
+- AI-Kennzeichnungspflichten für KI-generierte Webinhalte
+- Reactive Forms
 - competitive-intelligence
 - compliance-tracking
 - consolidate-memory
 - create-viz
 - daily-briefing
-- data-visualization
+- Lenis-Scroll-Container-Konflikt
 - design-handoff
-- design-system
+- Plattform-Algorithmen — Verteilung, Zeitfenster, Frequenzgrenzen
 - digest
-- draft-offer
+- Session-Erfassung (Map)
 - email-sorter
 - enrich-lead
-- explore-data
-- instagram-digital-products
-- interview-prep
-- journal-entry
+- PHASE 1 — CREATIVE DIRECTION
+- Additive Fremdcode-Einbettung
+- Dienst läuft, ist aber unerreichbar
+- Marktpreise Deutschland — Custom CRM & Website
 - knowledge-synthesis
 - manus-vacu-landing
 - metrics-review
-- onboarding
-- org-planning
+- onboarding.md
+- org-planning.md
 - people-report
-- performance-report
+- Morio Studio (Lieferung → Studio)
 - performance-review
-- pipeline-review
-- policy-lookup
-- process-doc
-- process-optimization
-- prospect
+- Was auf Sie zukommt
+- policy-lookup.md
+- Zwei Punkte für dich
+- gan-planner.md
+- Recursive Decision Ledger
 - reconciliation
-- recruiting-pipeline
-- runbook
+- recruiting-pipeline.md
+- SKILL: Immersive Web Experience Pipeline
 - search
 - search-strategy
-- source-management
-- sql-queries
-- stakeholder-update
+- Was Sie nach den ersten Videos ablesen sollten
+- Was du tun kannst
+- network-architect.md
 - start
-- system-design
+- ECC — externe Skill-Bibliothek
 - task-management
 - weekly-prep-brief
 - Design & UX Skills
-- Dokumente & Kommunikation Skills
+- Accrual Types (AP, Payroll, Prepaid).md
 - Morio Bridge Runner — Setup (für beide)
 - Drei Dinge habe ich absichtlich stehen gelassen
 - Womit du mir am schnellsten hilfst
@@ -967,11 +967,11 @@
 - Chart.js
 - Compliance & Security.md
 - Dependency Verification Mandate — check package.json before importing 3rd party library
-- DESIGN.md – Single Source of Truth for Google Stitch.md
+- ECC
 - Next.js
 - p5.js
-- SKILL.md – Portable AI Instruction File Format.md
-- Stakeholder Audience Segmentation.md
+- Journal Entry Skill.md
+- Journal Entry Prep Skill.md
 - update_map.py — Wird von der GitHub Action aufgerufen. Generiert graphify-out/in
 - WCAG 2.1 AA
 - db-backup.sh
@@ -986,70 +986,74 @@
 - session-capture.sh
 - setup.sh
 - Start.md
-- Anti-Slop / Anti-Generic AI Design Rules
-- Banned Fonts List (Inter, Roboto, Arial, Open Sans)
-- Bento Grid / Asymmetric CSS Grid Layout
-- Bento Grid Layout
-- Design Advisor (design)
-- Design Audit – Systematic Upgrade Checklist
-- DESIGN_VARIANCE Dial (1-10 layout variance parameter)
-- GPU-Safe Animation (transform + opacity only)
-- High-End Visual Design / Soft UI (soft-skill)
-- Industrial Brutalism & Tactical Telemetry UI (brutalist-skill)
-- llms.txt Skill Index
-- Perpetual Micro-Interactions (infinite-loop component states)
-- Premium / Anti-Generic UI Design Principle
-- Premium Utilitarian Minimalism UI (minimalist-skill)
-- Rationale: Ban Inter font to avoid generic AI aesthetic
-- Redesign Existing Projects (redesign-skill)
-- Spring Physics Animation (stiffness:100, damping:20)
-- Stitch Design Taste Skill (stitch-skill)
-- Swiss Industrial Typography Archetype
-- Swiss Typographic Design
-- Tactical Telemetry / CRT Terminal Archetype
-- Taste Skill (design-taste-frontend)
-- Taste Skill README – Collection Overview
-- VISUAL_DENSITY Dial (1-10 content density parameter)
-- Warm Monochrome Palette
-- Warm Monochrome Palette with Muted Pastel Accents
+- Eine Zahl, die Sie sehen müssen
+- Was damit von deiner Liste übrig bleibt
+- Danach: wirken lassen und prüfen
+- High-End UI Engineering und Motion Design
+- Product Management und UX Research
+- canvas-design
+- capacity-plan
+- cinematic-web
+- data-context-extractor
+- design-critique
+- doc-coauthoring
+- docx
+- forecast
+- immersive-web-experience
+- internal-comms
+- kling-prompts
+- pdf
+- roadmap-update
+- web-artifacts-builder
+- web-factory
+- Video-Editor mit 3D-Rekonstruktion und KI-Integration
+- 2026-08-26-30-tages-content-plan-für-aiweb-design-startup.md
+- Verlauf
+- Zwei Dinge, die Sie noch entscheiden müssen
+- Zwei Punkte, die noch bei Ihnen liegen
+- CRM: Was der Markt in Deutschland nimmt
 - skill-comply
+- 4. Eine Entscheidung, die dir gehört
+- Verlauf
+- Cinematic Web, AI Video und Bayern-Oberpfalz
+- _SKILL_MAP
 
 ## God Nodes (most connected - your core abstractions)
 1. `Preview-Reiter in CRM Intranet einbauen` - 76 edges
 2. `Als Nächstes` - 56 edges
-3. `Was jetzt noch fehlt` - 44 edges
-4. `_make_project()` - 27 edges
-5. `grade()` - 26 edges
-6. `_load_instincts_from_dir()` - 24 edges
-7. `Examples` - 24 edges
-8. `Zwei Wege — das ist deine Entscheidung` - 23 edges
-9. `Marketing Mastery — 40-Skill Library` - 23 edges
-10. `ObservationEvent` - 21 edges
+3. `2. CRM-Integration (`~/morio-solutions-ai`)` - 56 edges
+4. `Verifiziert` - 49 edges
+5. `Verlauf` - 48 edges
+6. `Was jetzt noch fehlt` - 44 edges
+7. `Das musst du entscheiden` - 40 edges
+8. `Zwei Dinge, die du wissen solltest` - 36 edges
+9. `Optimize Moriosolutions landing page for mobile view` - 33 edges
+10. `Wie man es schließt` - 32 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `test_projects_gc_no_candidates()` --calls--> `_cmd_projects_gc()`  [INFERRED]
   raw/skills/ecc/skills/continuous-learning-v2/scripts/test_parse_instinct.py → raw/skills/ecc/skills/continuous-learning-v2/scripts/instinct-cli.py
-- `algorithmic-art` --semantically_similar_to--> `canvas-design`  [INFERRED] [semantically similar]
-  raw/skills/algorithmic-art.md → raw/skills/canvas-design.md
-- `architecture` --semantically_similar_to--> `code-review`  [INFERRED] [semantically similar]
-  raw/skills/architecture.md → raw/skills/code-review.md
-- `call-prep` --semantically_similar_to--> `call-summary`  [INFERRED] [semantically similar]
-  raw/skills/call-prep.md → raw/skills/call-summary.md
-- `Architecture Decision Record` --semantically_similar_to--> `system-design`  [INFERRED] [semantically similar]
-  raw/skills/architecture.md → raw/skills/system-design.md
+- `sox-testing` --semantically_similar_to--> `statistical-analysis`  [INFERRED] [semantically similar]
+  raw/skills/sox-testing.md → raw/skills/statistical-analysis.md
+- `validate-data` --semantically_similar_to--> `variance-analysis`  [INFERRED] [semantically similar]
+  raw/skills/validate-data.md → raw/skills/variance-analysis.md
+- `Email Sequence Skill` --semantically_similar_to--> `DM Automation Sequence`  [INFERRED] [semantically similar]
+  raw/skills/email-sequence.md → raw/skills/instagram-digital-products.md
+- `testing-strategy` --semantically_similar_to--> `validate-data`  [INFERRED] [semantically similar]
+  raw/skills/testing-strategy.md → raw/skills/validate-data.md
 
 ## Import Cycles
 - None detected.
 
-## Communities (1007 total, 75 thin omitted)
+## Communities (1011 total, 46 thin omitted)
 
 ### Community 0 - "angular-developer/SKILL.md"
 Cohesion: 0.03
-Nodes (62): Example: Testing with a `MatButtonHarness`, Key Concepts, Testing with Component Harnesses, Using a Harness in a Unit Test, Why Use Harnesses?, Basic Configuration, Define Routes, Matching Strategy (+54 more)
+Nodes (64): Example: Testing with a `MatButtonHarness`, Key Concepts, Testing with Component Harnesses, Using a Harness in a Unit Test, Why Use Harnesses?, Basic Configuration, Define Routes, Matching Strategy (+56 more)
 
-### Community 1 - "config/global-CLAUDE.md"
-Cohesion: 0.08
-Nodes (31): Anthropic Brand Identity, Brand Voice, Campaign Brief, Resource Capacity Planning, Change Management Framework, Claude Usage Limits, Context Navigation Rules, Data Analysis (+23 more)
+### Community 1 - "_COMMUNITY_Skills Library und Claude Config.md"
+Cohesion: 0.04
+Nodes (53): Architecture Decision Record, Anthropic Brand Identity, Brand Voice, Campaign Brief, Resource Capacity Planning, Change Management Framework, Claude Usage Limits, Context Navigation Rules (+45 more)
 
 ### Community 2 - "Skill Registry (llms.txt)"
 Cohesion: 0.12
@@ -1060,12 +1064,12 @@ Cohesion: 0.15
 Nodes (13): Google Stitch (AI UI Generation Tool), Inline Image Typography — small contextual photos embedded between headline words at type-height, Anti-Patterns Banned List — no emojis, no Inter, no pure black, no neon glows, no 3-column equal cards, Color Palette — Canvas White, Charcoal Ink, accent system, banned colors, Design Dial System (Creativity, Density, Variance, Motion Intent), DESIGN.md — Stitch Design System Document, Hero Section Rules — Inline image typography, asymmetry, no filler, CTA restraint, Layout Principles — CSS Grid-first, bento architecture, no overlapping, max-width 1400px (+5 more)
 
 ### Community 4 - "competitive-brief"
-Cohesion: 0.07
-Nodes (35): Activity Digest, Battlecard, Competitive Analysis, Contact Profile, Feature Comparison Matrix, Market Trend Identification, Outreach Personalization, Persona Classification (+27 more)
+Cohesion: 0.08
+Nodes (32): Activity Digest, Battlecard, Competitive Analysis, Contact Profile, Feature Comparison Matrix, Market Trend Identification, Outreach Personalization, Persona Classification (+24 more)
 
-### Community 5 - "_COMMUNITY_Product Analytics, Metrics und Dashboards.md"
-Cohesion: 0.07
-Nodes (36): Attribution Modeling, Customer Acquisition Cost (CAC), Dashboard Design Principles, DAU/WAU/MAU (Active User Metrics), Marketing Funnel Metrics, North Star Metric, OKRs (Objectives and Key Results), Product Metrics Hierarchy (+28 more)
+### Community 5 - "metrics-review"
+Cohesion: 0.06
+Nodes (37): Attribution Modeling, Customer Acquisition Cost (CAC), Product Analytics Connector, Dashboard Design Principles, DAU/WAU/MAU (Active User Metrics), Marketing Funnel Metrics, North Star Metric, Product Metrics Hierarchy (+29 more)
 
 ### Community 6 - "shared.mjs"
 Cohesion: 0.05
@@ -1075,25 +1079,25 @@ Nodes (55): contextDirPath, projects, resolved, resolved, cargo, claudeMd, gitCo
 Cohesion: 0.07
 Nodes (27): AIDA Email Structure, LinkedIn Outreach, Email Personalization, Prospect Research, Draft Outreach Skill, Gmail MCP Integration, Gmail Labels / Sorting Rules, Email Sorter Skill (+19 more)
 
-### Community 8 - "_COMMUNITY_HR und People Operations.md"
-Cohesion: 0.06
-Nodes (41): 30/60/90-Day Onboarding Plan, Performance Calibration, HRIS Connector, Employee Handbook, Headcount Planning, HR Policy Lookup, Onboarding Buddy, Recruiting Pipeline Stages (+33 more)
+### Community 8 - "HR  People Operations Domain.md"
+Cohesion: 0.19
+Nodes (13): 30/60/90-Day Onboarding Plan, HRIS Connector, Employee Handbook, HR Policy Lookup, Onboarding Buddy, Recruiting Pipeline Stages, Time to Fill (Recruiting), HR / People Operations Domain (+5 more)
 
 ### Community 9 - "design-handoff"
 Cohesion: 0.13
 Nodes (20): Debug Workflow, Deploy Checklist, Design Tokens, Developer Handoff, Document Co-Authoring, Reader Testing, Rollback Plan, Technical Documentation (+12 more)
 
-### Community 10 - "statistical-analysis"
+### Community 10 - "_COMMUNITY_Product Management und UX Research.md"
 Cohesion: 0.06
-Nodes (30): Control Deficiency Classification, Hypothesis Testing, Outlier and Anomaly Detection, SOX Internal Controls, SOX Sample Selection, Statistical Significance, sox-testing, statistical-analysis (+22 more)
+Nodes (32): Affinity Mapping, Hypothesis Testing, Outlier and Anomaly Detection, Persona Development, Statistical Significance, Thematic Analysis (Research), User Interview, statistical-analysis (+24 more)
 
 ### Community 11 - "INDEX.md"
 Cohesion: 0.04
-Nodes (43): Guidelines, Key Principle, Output: Product Specification, Process, Prompt Defense Baseline, Your Role, Design Defaults, Output Format (+35 more)
+Nodes (45): Agents (68), ECC — Vollständiger Index, Skills (286), Combined Pattern, Continuous Agent Loop, Failure Modes, Loop Selection Flow, Recovery (+37 more)
 
-### Community 12 - "variance-analysis"
-Cohesion: 0.10
-Nodes (18): Financial Model, Price/Volume Decomposition, Waterfall Chart, variance-analysis, xlsx, openpyxl, pandas, Quellen (+10 more)
+### Community 12 - "_COMMUNITY_Content Creation und SEO Copywriting.md"
+Cohesion: 0.08
+Nodes (25): Financial Model, Price/Volume Decomposition, Waterfall Chart, variance-analysis, xlsx, openpyxl, pandas, Content Creation und SEO Copywriting (+17 more)
 
 ### Community 13 - "Draft Content Skill"
 Cohesion: 0.14
@@ -1112,24 +1116,24 @@ Cohesion: 0.18
 Nodes (13): Chart Selection, Data Visualization, Data Warehouse, Schema Discovery, Data & Analytics, create-viz, data-context-extractor, data-visualization (+5 more)
 
 ### Community 17 - "_COMMUNITY_Knowledge Management, Runbooks und SOPs.md"
-Cohesion: 0.07
-Nodes (31): Knowledge Base Connector, Escalation Path, Karpathy LLM Wiki Pattern, Persistent Knowledge Wiki, Operational Runbook, Process Waste (Lean), RACI Matrix, Standard Operating Procedure (SOP) (+23 more)
+Cohesion: 0.04
+Nodes (51): Knowledge Base Connector, Escalation Path, Karpathy LLM Wiki Pattern, Persistent Knowledge Wiki, Operational Runbook, Process Waste (Lean), RACI Matrix, Standard Operating Procedure (SOP) (+43 more)
 
 ### Community 18 - "ux-design"
 Cohesion: 0.07
 Nodes (27): Call to Action (CTA), Landing Page, Microcopy, React Component, UX Audit, ux-copy, ux-design, Call to Action (CTA) (+19 more)
 
 ### Community 19 - "_COMMUNITY_UX Writing und Web Components.md"
-Cohesion: 0.19
-Nodes (11): Architecture Decision Record, Green/Yellow/Red Status, KPI Reporting, ROAM Risk Framework, Stakeholder Audience Segmentation, stakeholder-update, status-report, Connections (+3 more)
+Cohesion: 0.13
+Nodes (16): Green/Yellow/Red Status, KPI Reporting, ROAM Risk Framework, Stakeholder Audience Segmentation, stakeholder-update, status-report, Architecture Decision Record, Connections (+8 more)
 
 ### Community 20 - "pipeline-review"
-Cohesion: 0.08
-Nodes (26): CRM Connector, CRM Hygiene, Deal Prioritization Framework, Ideal Customer Profile (ICP), Sales Pipeline Health Score, Sales Operations Domain, pipeline-review, prospect (+18 more)
+Cohesion: 0.06
+Nodes (36): CRM Connector, CRM Hygiene, Deal Prioritization Framework, Ideal Customer Profile (ICP), Sales Pipeline Health Score, Sales Operations Domain, pipeline-review, prospect (+28 more)
 
 ### Community 21 - "CONNECTORS.md"
-Cohesion: 0.09
-Nodes (26): MCP Connected Sources, Parallel Search Execution, Query Decomposition, Rate Limit Handling, Result Ranking and Deduplication, MCP Source Priority Ordering, Siehe auch, Zweck der Referenz in den Skills (+18 more)
+Cohesion: 0.07
+Nodes (31): MCP Connected Sources, Parallel Search Execution, Query Decomposition, Rate Limit Handling, Result Ranking and Deduplication, MCP Source Priority Ordering, Siehe auch, Zweck der Referenz in den Skills (+23 more)
 
 ### Community 22 - "_COMMUNITY_Search Strategy und MCP Sources.md"
 Cohesion: 0.06
@@ -1164,8 +1168,8 @@ Cohesion: 0.25
 Nodes (7): Bank Reconciliation, GL-to-Subledger Reconciliation, Intercompany Reconciliation, Finance / Accounting Operations Domain, reconciliation, Connections, GL-to-Subledger Reconciliation
 
 ### Community 30 - "pdf"
-Cohesion: 0.09
-Nodes (21): pdf, pdfplumber, pypdf, pytesseract (OCR), reportlab, Live Query (requires Dataview plugin), Members, PDF Generation und OCR (+13 more)
+Cohesion: 0.12
+Nodes (16): pdf, pdfplumber, pypdf, pytesseract (OCR), reportlab, Live Query (requires Dataview plugin), Members, PDF Generation und OCR (+8 more)
 
 ### Community 31 - "Preview-Reiter in CRM Intranet einbauen"
 Cohesion: 0.04
@@ -1180,8 +1184,8 @@ Cohesion: 0.67
 Nodes (4): Glossary / Decoder Ring, CLAUDE.md Hot Cache, Memory Management Skill, Two-Tier Memory Architecture
 
 ### Community 34 - "seo-audit"
-Cohesion: 0.11
-Nodes (18): Content Gap Analysis, Keyword Research, SEO Audit Types, seo-audit, Claude Memory Architecture, Live Query (requires Dataview plugin), Members, Connections (+10 more)
+Cohesion: 0.08
+Nodes (23): Content Gap Analysis, Keyword Research, SEO Audit Types, seo-audit, Claude Memory Architecture, Live Query (requires Dataview plugin), Members, Connections (+15 more)
 
 ### Community 35 - "sequence-load"
 Cohesion: 0.11
@@ -1220,12 +1224,12 @@ Cohesion: 0.12
 Nodes (15): pptx, markitdown, pptxgenjs, Interview Preparation, Live Query (requires Dataview plugin), Members, pptx, Quellen (+7 more)
 
 ### Community 45 - "sql-queries"
-Cohesion: 0.18
-Nodes (10): SQL Dialect Compatibility, Window Functions, sql-queries, Live Query (requires Dataview plugin), Members, PowerPoint PPTX Generation, Connections, SQL Dialect Compatibility (+2 more)
+Cohesion: 0.12
+Nodes (15): SQL Dialect Compatibility, Window Functions, sql-queries, Live Query (requires Dataview plugin), Members, PowerPoint PPTX Generation, Quellen, sql-queries (+7 more)
 
 ### Community 46 - "design-ux-skills.md"
-Cohesion: 0.19
-Nodes (7): Framer Motion Animations, React Component Architecture, design-taste-frontend, Quellen, taste-skill, Wann nutzen, Zweck
+Cohesion: 0.29
+Nodes (4): Quellen, taste-skill, Wann nutzen, Zweck
 
 ### Community 47 - "slack-gif-creator"
 Cohesion: 0.12
@@ -1236,8 +1240,8 @@ Cohesion: 0.12
 Nodes (15): Total Cost of Ownership (TCO), Vendor Risk Assessment, vendor-review, Live Query (requires Dataview plugin), Members, SQL Queries und Analytics, Quellen, vendor-review (+7 more)
 
 ### Community 49 - "_COMMUNITY_Cinematic Web, AI Video und Bayern-Oberpfalz.md"
-Cohesion: 0.05
-Nodes (34): Accrual Types (AP, Payroll, Prepaid), Connections, Cinematic Web, AI Video und Bayern-Oberpfalz, Ergänzende Skills (nachträglich verlinkt, 2026-08-25), Live Query (requires Dataview plugin), Members, Connections, CRM Connector (Forecast) (+26 more)
+Cohesion: 0.16
+Nodes (10): Connections, CRM Connector (Forecast), Connections, Forecast Scenarios (Best/Likely/Worst), Connections, Forecast Skill, Connections, Gap-to-Quota Analysis (+2 more)
 
 ### Community 50 - "Python Development Patterns"
 Cohesion: 0.04
@@ -1247,8 +1251,8 @@ Nodes (48): 1. Readability Counts, 2. Explicit is Better Than Implicit, 3. EAFP 
 Cohesion: 0.04
 Nodes (48): 10. Dependency Security, 1. Secrets Management, 2. Input Validation, 3. SQL Injection Prevention, 4. Authentication & Authorization, 5. XSS Prevention, 6. CSRF Protection, 7. Rate Limiting (+40 more)
 
-### Community 54 - "claude-skills-system.md"
-Cohesion: 0.13
+### Community 54 - "schedule"
+Cohesion: 0.14
 Nodes (12): Scheduled Task / Cron Job, schedule, Live Query (requires Dataview plugin), Members, User Context Ulm DE, Quellen, schedule, Verbindungen (Graph-Extraktion) (+4 more)
 
 ### Community 55 - "template-saver"
@@ -1315,9 +1319,9 @@ Nodes (41): Add Stable Identifiers to Qt Widgets, Anti-Patterns, Artifact Manage
 Cohesion: 0.05
 Nodes (41): _cmd_projects_delete(), _promote_auto(), Auto-promote instincts found in multiple projects., Validate instinct IDs before using them in filenames., _validate_instinct_id(), _make_project(), dry_run returns 0, prints [DRY RUN], and writes no global file., Create project directory structure and return a project dict. (+33 more)
 
-### Community 73 - "_COMMUNITY_LLM Laziness und Anti-Truncation Research.md"
-Cohesion: 0.14
-Nodes (8): Connections, Double-Bezel (Doppelrand) Nested Container Architecture, Connections, MOTION_INTENSITY Dial (1-10 animation intensity parameter), Connections, Rationale: Spring physics over linear easing for premium feel, Connections, Rationale: Use min-h-[100dvh] instead of h-screen for iOS Safari fix
+### Community 73 - "_COMMUNITY_Brutalist & Anti-Generic UI.md"
+Cohesion: 0.05
+Nodes (33): Banned Fonts List (Inter, Roboto, Arial, Open Sans), Connections, Brutalist & Anti-Generic UI, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, Connections (+25 more)
 
 ### Community 74 - "Quarkus Verification Loop"
 Cohesion: 0.05
@@ -1332,8 +1336,8 @@ Cohesion: 0.05
 Nodes (38): API Design Checklist, API Design Patterns, Authentication and Authorization, Authorization Patterns, Collection Response (with Pagination), Common Mistakes, Cursor-Based (Scalable), Error Response (+30 more)
 
 ### Community 77 - "_COMMUNITY_High-End UI Engineering und Motion Design.md"
-Cohesion: 0.06
-Nodes (29): web-artifacts-builder, React, shadcn/ui, Connections to other communities, High-End UI Engineering und Motion Design, Live Query (requires Dataview plugin), Members, Top bridge nodes (+21 more)
+Cohesion: 0.09
+Nodes (19): web-artifacts-builder, React, shadcn/ui, Connections, design-advisor, Connections, Design Audit, Connections (+11 more)
 
 ### Community 78 - "Generating Python Installer (Commercial-Grade)"
 Cohesion: 0.05
@@ -1351,13 +1355,13 @@ Nodes (37): 1. Null Safety, 2. Immutability by Default, 3. Expression Bodies and
 Cohesion: 0.05
 Nodes (37): Accessibility, Advanced Patterns (Concepts), AnimatePresence `mode`, Anti-Patterns, Appropriate Scenarios, Architecture & Patterns, Avoid Using Motion When, Button Interaction (+29 more)
 
-### Community 82 - "Skills-Index.md"
-Cohesion: 0.06
-Nodes (30): cinematic-web, Quellen, Verwandte Skills, Wann nutzen, Zweck, Beziehungen, ECC, Kernaussagen (+22 more)
+### Community 82 - "index.md"
+Cohesion: 0.16
+Nodes (7): Framer Motion Animations, React Component Architecture, design-taste-frontend, Connections, Deploy Checklist, Connections, Rollback Plan
 
 ### Community 83 - "finance-skills.md"
 Cohesion: 0.05
-Nodes (30): audit-support, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, close-management, Quellen, Verbindungen (Graph-Extraktion) (+22 more)
+Nodes (34): audit-support, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, close-management, Quellen, Verbindungen (Graph-Extraktion) (+26 more)
 
 ### Community 84 - "Rust Development Patterns"
 Cohesion: 0.05
@@ -1384,12 +1388,12 @@ Cohesion: 0.06
 Nodes (34): Assertion Macros, Async Tests, Basic Property Tests, Benchmarking with Criterion, Best Practices, CI Integration, Coverage Targets, Custom Strategies (+26 more)
 
 ### Community 90 - "marketing-content-skills.md"
-Cohesion: 0.06
-Nodes (27): Brand Voice, Connections, Campaign Brief, Connections, brand-guidelines, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen (+19 more)
+Cohesion: 0.05
+Nodes (36): Brand Voice, Connections, Campaign Brief, Connections, brand-guidelines, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen (+28 more)
 
 ### Community 91 - "document-comms-skills.md"
-Cohesion: 0.06
-Nodes (26): Connections, Document Co-Authoring, Connections, Document Creation Workflow, doc-coauthoring, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen (+18 more)
+Cohesion: 0.08
+Nodes (18): Connections, Document Co-Authoring, Connections, Document Creation Workflow, documentation, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen (+10 more)
 
 ### Community 92 - "Agentic OS"
 Cohesion: 0.06
@@ -1408,12 +1412,12 @@ Cohesion: 0.06
 Nodes (33): Basic Remotion composition, Batch cut from edit decision list, Concatenate segments, Core Thesis, Create proxy for faster editing, Extract audio for transcription, Extract segment by timestamp, FFmpeg scene detection (+25 more)
 
 ### Community 96 - "_COMMUNITY_Output Truncation Problem.md"
-Cohesion: 0.08
-Nodes (22): Claude Code (AI coding agent), Connections, Connections, Cursor (AI coding agent), Connections, Full-Output Enforcement (output-skill), Connections, LLM Laziness – Empirical Results (2025 Studies) (+14 more)
+Cohesion: 0.05
+Nodes (34): Anti-Slop / Anti-Generic AI Design Rules, Connections, Claude Code (AI coding agent), Connections, Connections, Cursor (AI coding agent), Connections, DESIGN.md – Single Source of Truth for Google Stitch (+26 more)
 
 ### Community 97 - "research-synthesis"
-Cohesion: 0.07
-Nodes (27): Affinity Mapping, Product Analytics Connector, Persona Development, Thematic Analysis (Research), User Interview, User Segments, synthesize-research, research-synthesis (+19 more)
+Cohesion: 0.40
+Nodes (5): Quellen, research-synthesis, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
 ### Community 98 - "ClickHouse Analytics Patterns"
 Cohesion: 0.06
@@ -1423,9 +1427,9 @@ Nodes (32): 1. Partitioning Strategy, 2. Ordering Key, 3. Data Types, 4. Avoid, 
 Cohesion: 0.06
 Nodes (32): Basic Assertions, Best Practices, Common Pitfalls, Coverage with Devel::Cover, Deep Comparison with Builders, Directory Structure, DO, DON'T (+24 more)
 
-### Community 100 - "roadmap-update"
-Cohesion: 0.07
-Nodes (25): Project Tracker Connector, MoSCoW Prioritization, Now/Next/Later Roadmap, RICE Prioritization Score, roadmap-update, capacity-plan, Quellen, Verbindungen (Graph-Extraktion) (+17 more)
+### Community 100 - "_COMMUNITY_Product Analytics, Metrics und Dashboards.md"
+Cohesion: 0.06
+Nodes (40): Project Tracker Connector, Jobs-to-be-Done (JTBD), MoSCoW Prioritization, Now/Next/Later Roadmap, OKRs (Objectives and Key Results), OODA Loop, Opportunity Solution Tree, RICE Prioritization Score (+32 more)
 
 ### Community 101 - "Data Scraper Agent"
 Cohesion: 0.06
@@ -1484,8 +1488,8 @@ Cohesion: 0.06
 Nodes (30): Anti-Patterns, Cache-Aside (Lazy Loading), Cache Invalidation, Cache Miss Stampede Prevention, Cluster Mode, Connection Management, Connection Pooling, Core Patterns (+22 more)
 
 ### Community 115 - "engineering-skills.md"
-Cohesion: 0.07
-Nodes (25): Beziehungen, browser-use, Fähigkeiten, Installation, Quellen, Zweck, incident-response, Quellen (+17 more)
+Cohesion: 0.06
+Nodes (30): architecture, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Beziehungen, browser-use, Fähigkeiten (+22 more)
 
 ### Community 116 - "Deployment Patterns"
 Cohesion: 0.07
@@ -1523,13 +1527,13 @@ Nodes (29): Add Video Clips Inline, Assets, Audio Overlays, AudioAsset Parameter
 Cohesion: 0.07
 Nodes (29): AI Pipelines, Audio Indexing, Batch Config Summary, Collection RTStream Methods, Complete Workflow, Connect RTStream, Connection Event Methods, Creating an Event (+21 more)
 
-### Community 125 - "index.md"
-Cohesion: 0.10
-Nodes (15): Audit Trail, Community 10, Key Concepts, Relationships, Source Files, Audit Trail, Community 2, Key Concepts (+7 more)
-
-### Community 126 - "_COMMUNITY_Skills Library und Claude Config.md"
+### Community 125 - "Community_0.md"
 Cohesion: 0.09
-Nodes (18): Weekly Prep Brief, call-summary, canvas-design, code-review, weekly-prep-brief, Connections, Context Navigation Rules, architecture (+10 more)
+Nodes (20): Audit Trail, Community 0, Key Concepts, Relationships, Source Files, Audit Trail, Community 10, Key Concepts (+12 more)
+
+### Community 126 - "wiki/morioCRM-CLAUDE.md"
+Cohesion: 0.33
+Nodes (3): Connections, Knowledge Graph, Connections
 
 ### Community 127 - "Signal Forms"
 Cohesion: 0.07
@@ -1607,17 +1611,17 @@ Nodes (27): Capture Reference, CaptureClient, CaptureClient Methods, CaptureSess
 Cohesion: 0.07
 Nodes (27): 1. Install SDK, 2. Configure API key, Additional docs, Canonical prompts, Common inputs, Common outputs, Common pitfalls, Error handling (+19 more)
 
-### Community 146 - "high-end-visual-design.md"
-Cohesion: 0.08
-Nodes (18): Anti-Truncation / Full Output, Connections, Connections, CRT Terminal UI, Connections, Double-Bezel Nested Architecture, Connections, full-output-enforcement (+10 more)
+### Community 146 - "_COMMUNITY_LLM Laziness und Anti-Truncation Research.md"
+Cohesion: 0.04
+Nodes (48): Anti-Truncation / Full Output, Connections, Bento Grid / Asymmetric CSS Grid Layout, Connections, Bento Grid Layout, Connections, Connections, CRT Terminal UI (+40 more)
 
 ### Community 147 - "_COMMUNITY_Engineering Workflow und DevOps.md"
 Cohesion: 0.10
 Nodes (18): Engineering Workflow und DevOps, Live Query (requires Dataview plugin), Members, Connections, Design Tokens, Connections, Design & UX, Connections (+10 more)
 
-### Community 148 - "morio-crm.md"
-Cohesion: 0.09
-Nodes (18): Connections, Debug Workflow, Connections, Deploy Checklist, Connections, Engineering, debug, Quellen (+10 more)
+### Community 148 - "Engineering.md"
+Cohesion: 0.12
+Nodes (14): Connections, Debug Workflow, Connections, Engineering, debug, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen (+6 more)
 
 ### Community 149 - "Review Checklist"
 Cohesion: 0.08
@@ -1664,8 +1668,8 @@ Cohesion: 0.08
 Nodes (24): Audio Generation, Common Image Parameters, Cost Estimation, CSM-1B (Conversational Speech), ElevenLabs (via API, no MCP), fal.ai Media Generation, Image Editing, Image Generation (+16 more)
 
 ### Community 160 - "Spring Boot TDD Workflow"
-Cohesion: 0.08
-Nodes (23): Cold Email Structure, Core Rules, Follow-Up Cadence, Hard Bans, Investor Outreach, Personalization Sources, Post-Meeting Updates, Quality Gate (+15 more)
+Cohesion: 0.15
+Nodes (12): Assertions, CI Commands, Coverage (JaCoCo), Integration Tests (SpringBootTest), Persistence Tests (DataJpaTest), Spring Boot TDD Workflow, Test Data Builders, Testcontainers (+4 more)
 
 ### Community 161 - "Jira Integration Skill"
 Cohesion: 0.08
@@ -1696,24 +1700,24 @@ Cohesion: 0.10
 Nodes (17): 3P Update (Progress/Plans/Problems), Connections, 5 Whys Root Cause Analysis, Connections, Blameless Postmortem, Connections, DOCX Document Generation, Live Query (requires Dataview plugin) (+9 more)
 
 ### Community 168 - "_COMMUNITY_Sales Intelligence und Competitive Enablement.md"
-Cohesion: 0.11
-Nodes (14): Activity Digest, Connections, Battlecard, Connections, Competitive Analysis, Connections, Competitive Research Workflow, Connections (+6 more)
+Cohesion: 0.03
+Nodes (50): Activity Digest, Connections, Asset Creation Workflow, Connections, Battlecard, Connections, Common Room, Connections (+42 more)
 
 ### Community 169 - "_COMMUNITY_Compensation Analysis und HR.md"
 Cohesion: 0.10
 Nodes (17): Compensation Analysis und HR, Live Query (requires Dataview plugin), Members, Connections, docx-js Library, Connections, DOCX Skill, Connections (+9 more)
 
-### Community 170 - "_COMMUNITY_Laziness Research Findings.md"
-Cohesion: 0.10
-Nodes (16): Compounding Error Avoidance Research, Connections, Connections, Developer Platform Full Context Access (API/AI Studio), Connections, Error Avoidance as Truncation Driver, Connections, Gemini thinking_level Parameter (+8 more)
+### Community 170 - "_COMMUNITY_Design Skills — Taste, Premium UI, Anti-Slop.md"
+Cohesion: 0.03
+Nodes (68): 35% Context Reduction from Lazy-Loading, Connections, Architectural Patterns — lazy-loaded skills, MCP integration, chunked task execution, Connections, Cognitive Shortcuts — LazyBench: models reduce reasoning depth on perceived-simple or long-context tasks, Connections, Compounding Error Avoidance Research, Connections (+60 more)
 
-### Community 171 - "_COMMUNITY_Content Creation und SEO Copywriting.md"
-Cohesion: 0.11
-Nodes (17): Data Validation / QA, Survivorship Bias, Test Plan, Testing Pyramid, testing-strategy, validate-data, Content Creation und SEO Copywriting, Live Query (requires Dataview plugin) (+9 more)
+### Community 171 - "validate-data.md"
+Cohesion: 0.10
+Nodes (17): Test Plan, Testing Pyramid, testing-strategy, Quellen, testing-strategy, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck (+9 more)
 
 ### Community 172 - "product-brainstorming"
-Cohesion: 0.09
-Nodes (19): Jobs-to-be-Done (JTBD), OODA Loop, Opportunity Solution Tree, SCAMPER Ideation Framework, Product Management Domain, product-brainstorming, product-brainstorming, Quellen (+11 more)
+Cohesion: 0.40
+Nodes (5): product-brainstorming, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
 ### Community 173 - "datetime"
 Cohesion: 0.12
@@ -1775,13 +1779,13 @@ Nodes (24): Accessibility Assertions, Anti-Patterns, Async Patterns, Core Princi
 Cohesion: 0.16
 Nodes (22): buildLaunchPlan(), childProcess, detectTerminalCapability(), formatLaunchResult(), isAbsolutePath(), launch(), launchDetached(), main() (+14 more)
 
-### Community 188 - "_COMMUNITY_Data Visualization und Warehouse.md"
-Cohesion: 0.11
-Nodes (15): Chart Selection, Connections, Data Visualization und Warehouse, Live Query (requires Dataview plugin), Members, Connections, Data & Analytics, Connections (+7 more)
-
-### Community 189 - "_COMMUNITY_Product Management und UX Research.md"
+### Community 188 - "create-viz.md"
 Cohesion: 0.10
-Nodes (18): Acceptance Criteria, MoSCoW Framework, Product Requirements Document (PRD), User Story, write-spec, Acceptance Criteria, Connections, Connections to other communities (+10 more)
+Nodes (15): Chart Selection, Connections, Connections, Data Visualization, data-visualization, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen (+7 more)
+
+### Community 189 - "write-spec"
+Cohesion: 0.10
+Nodes (18): Acceptance Criteria, MoSCoW Framework, Product Requirements Document (PRD), User Story, write-spec, Acceptance Criteria, Connections, Quellen (+10 more)
 
 ### Community 190 - "Zwei Wege — das ist deine Entscheidung"
 Cohesion: 0.09
@@ -1819,13 +1823,13 @@ Nodes (22): Anti-Patterns, Audit output shape, Crawlability, Examples, Heading s
 Cohesion: 0.09
 Nodes (23): Add Generated Music to Video, Analyze Scenes with LLM, Audio Generation, Complete Workflow Examples, Dub a Video, dub_video Parameters, Dubbing and Translation, generate_image Parameters (+15 more)
 
-### Community 199 - "PHASE 1 — CREATIVE DIRECTION"
-Cohesion: 0.09
-Nodes (22): 1. Scroll Engine Design, 1. Visual Theme, 2. Motion Language (ONE dominant behavior), 2. Scene System, 3. Camera Logic, 3. Depth Style (ONE), 4. Atmosphere, 4. Depth System (+14 more)
+### Community 199 - "PHASE 2 — TECHNICAL SYSTEM DESIGN"
+Cohesion: 0.25
+Nodes (8): 1. Scroll Engine Design, 2. Scene System, 3. Camera Logic, 4. Depth System, 5. Motion Mapping, 6. Visual Effects Plan, 7. Performance Strategy, PHASE 2 — TECHNICAL SYSTEM DESIGN
 
-### Community 200 - "_COMMUNITY_Design Skills — Taste, Premium UI, Anti-Slop.md"
-Cohesion: 0.13
-Nodes (14): 2025 Controlled Laziness Experiments, Connections, Connections, GPU Compute Cost Per Token, Connections, Placeholder Propagation from Training Data, Connections, Rationale: RLHF Brevity Bias is Economic Cost Optimization (+6 more)
+### Community 200 - "_COMMUNITY_RLHF Root Causes.md"
+Cohesion: 0.09
+Nodes (19): 2025 Controlled Laziness Experiments, Connections, Connections to other communities, Live Query (requires Dataview plugin), Members, RLHF Root Causes, Top bridge nodes, Connections (+11 more)
 
 ### Community 201 - "IconError"
 Cohesion: 0.15
@@ -1895,9 +1899,9 @@ Nodes (20): Anti-Patterns to Avoid, Avoid Expensive Work in body, Environment In
 Cohesion: 0.10
 Nodes (15): build-with-claude-code, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Connections, Resend, Connections (+7 more)
 
-### Community 218 - "competitive-brief.md"
-Cohesion: 0.10
-Nodes (15): competitive-brief, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Connections, Feature Comparison Matrix, Connections (+7 more)
+### Community 218 - "competitive-brief"
+Cohesion: 0.40
+Nodes (5): competitive-brief, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
 ### Community 219 - "grade"
 Cohesion: 0.22
@@ -2047,29 +2051,29 @@ Nodes (17): Beat-Mapped Shot Plan (this music video), Beat Math (lock cuts to th
 Cohesion: 0.11
 Nodes (18): Audio Playback, Basic Playback, Complete Workflow Examples, Conditional Stream Assembly, Core Concepts, Live Event Recap, Multi-Video Stream, Prerequisites (+10 more)
 
-### Community 256 - "algorithmic-art.md"
-Cohesion: 0.11
-Nodes (14): Anthropic Brand Identity, Connections, algorithmic-art, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, canvas-design (+6 more)
+### Community 256 - "algorithmic-art"
+Cohesion: 0.40
+Nodes (5): algorithmic-art, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 257 - "create-an-asset.md"
-Cohesion: 0.11
-Nodes (13): Asset Creation Workflow, Connections, create-an-asset, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Connections (+5 more)
+### Community 257 - "create-an-asset"
+Cohesion: 0.40
+Nodes (5): create-an-asset, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 258 - "data-context-extractor.md"
-Cohesion: 0.11
-Nodes (13): BigQuery, Connections, Connections, Data Warehouse, data-context-extractor, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen (+5 more)
-
-### Community 259 - "sales-crm-skills.md"
-Cohesion: 0.14
-Nodes (10): Common Room, Connections, draft-outreach, Quellen, Wann nutzen, Zweck, forecast, Quellen (+2 more)
-
-### Community 260 - "contact-research.md"
-Cohesion: 0.11
-Nodes (13): Connections, Contact Profile, contact-research, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Connections (+5 more)
-
-### Community 261 - "people-report"
+### Community 258 - "_COMMUNITY_Data Visualization und Warehouse.md"
 Cohesion: 0.12
-Nodes (13): Attrition Analysis, Diversity Representation Metrics, eNPS (Employee Net Promoter Score), People Analytics, people-report, Attrition Analysis, Connections, Connections (+5 more)
+Nodes (13): BigQuery, Connections, Data Visualization und Warehouse, Live Query (requires Dataview plugin), Members, Connections, Data & Analytics, Connections (+5 more)
+
+### Community 259 - "draft-outreach"
+Cohesion: 0.40
+Nodes (4): draft-outreach, Quellen, Wann nutzen, Zweck
+
+### Community 260 - "contact-research"
+Cohesion: 0.40
+Nodes (5): contact-research, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+
+### Community 261 - "_COMMUNITY_HR und People Operations.md"
+Cohesion: 0.12
+Nodes (18): Attrition Analysis, Diversity Representation Metrics, eNPS (Employee Net Promoter Score), Headcount Planning, People Analytics, Span of Control, org-planning, people-report (+10 more)
 
 ### Community 262 - "Kling 3.0 / O3 — Technisches Deep Dive Mai 2026"
 Cohesion: 0.12
@@ -2240,8 +2244,8 @@ Cohesion: 0.14
 Nodes (11): Claude Memory und Task Management, Live Query (requires Dataview plugin), Members, Connections, rebuild_code(), Connections, update_html(), Connections (+3 more)
 
 ### Community 304 - "Skills-Index"
-Cohesion: 0.12
-Nodes (16): Business & Strategie (7), Daten & Analytics (11), Design & UX (21), Dokumente (4), Engineering (16), Finance & Accounting (9), HR & People (9), Kommunikation (6) (+8 more)
+Cohesion: 0.06
+Nodes (30): Claude Optimization Skills, Content Marketing Chain, Cross-Domain Bridges, Data Analytics Stack, Design & UI Workflow Chain, Document Output Layer, Engineering Development Chain, Finance & Accounting Chain (+22 more)
 
 ### Community 305 - "write-query"
 Cohesion: 0.14
@@ -2343,9 +2347,9 @@ Nodes (14): Anti-Patterns, Examples, How It Works, Related, Result Table, Skill 
 Cohesion: 0.13
 Nodes (14): API Tests with MockMvc, Common Security Findings, Continuous Mode, Integration Tests with Testcontainers, Output Template, Phase 1: Build, Phase 2: Static Analysis, Phase 3: Tests + Coverage (+6 more)
 
-### Community 330 - "Skill Map — Workflow Chains & Cross-Domain Connections"
-Cohesion: 0.13
-Nodes (14): Claude Optimization Skills, Content Marketing Chain, Cross-Domain Bridges, Data Analytics Stack, Design & UI Workflow Chain, Document Output Layer, Engineering Development Chain, Finance & Accounting Chain (+6 more)
+### Community 330 - "2. CRM-Integration (`~/morio-solutions-ai`)"
+Cohesion: 0.04
+Nodes (56): 2. CRM-Integration (`~/morio-solutions-ai`), 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+48 more)
 
 ### Community 331 - "Branchenprofil: Agentur / Beratung / Digital"
 Cohesion: 0.13
@@ -2355,29 +2359,29 @@ Nodes (14): Branchenprofil: Agentur / Beratung / Digital, Design-DNA, Farb-Defau
 Cohesion: 0.13
 Nodes (10): AIDA Email Structure, Connections, Connections, Draft Outreach Skill, Connections, Email Personalization, Connections, LinkedIn Outreach (+2 more)
 
-### Community 333 - "taste-skill SKILL.md — High-Agency Frontend Skill.md"
-Cohesion: 0.14
-Nodes (10): Bento Grid — Asymmetric tile layout (2fr 1fr 1fr), perpetual micro-animation per tile, Connections, Connections, Motion-Engine Bento Paradigm — 5-card archetypes, perpetual micro-interactions, spring physics, Connections, Performance Guardrails — transform/opacity only, no h-screen, isolated leaf client components, Connections, Spring Physics — stiffness:100, damping:20, no linear easing, Framer Motion (+2 more)
+### Community 333 - "_COMMUNITY_Stitch Design System und Floria Brand.md"
+Cohesion: 0.03
+Nodes (66): AI Purple Ban — no purple/neon gradients, the generic AI aesthetic is strictly forbidden, Connections, AI Tells Forbidden Patterns — no Inter, no neon glows, no pure black, no 3-col cards, no generic names, Connections, Anti-Patterns Banned List — no emojis, no Inter, no pure black, no neon glows, no 3-column equal cards, Connections, Bento Grid — Asymmetric tile layout (2fr 1fr 1fr), perpetual micro-animation per tile, Connections (+58 more)
 
-### Community 334 - "DESIGN.md — Stitch Design System Document.md"
-Cohesion: 0.13
-Nodes (10): Color Palette — Canvas White, Charcoal Ink, accent system, banned colors, Connections, Connections, DESIGN.md — Stitch Design System Document, Connections, Layout Principles — CSS Grid-first, bento architecture, no overlapping, max-width 1400px, Connections, Responsive Rules — Mobile-first, no horizontal scroll, clamp typography, touch targets 44px (+2 more)
+### Community 334 - "Verifiziert"
+Cohesion: 0.04
+Nodes (49): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+41 more)
 
 ### Community 335 - "Graphify Skill.md"
 Cohesion: 0.13
 Nodes (10): Community Detection, Connections, Connections, Graphify Skill, Connections, HTML Graph Visualization, Connections, Knowledge Graph (+2 more)
 
-### Community 336 - "Taste Skill 3-Dial Settings — DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY.md"
-Cohesion: 0.13
-Nodes (10): Connections, Design Dial System (Creativity, Density, Variance, Motion Intent), Connections, DESIGN_VARIANCE Dial (1=Symmetric, 10=Asymmetric Chaos) — default 8, Connections, MOTION_INTENSITY Dial (1=Static, 10=Cinematic) — default 6, Connections, Taste Skill 3-Dial Settings — DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY (+2 more)
+### Community 336 - "Verlauf"
+Cohesion: 0.04
+Nodes (48): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+40 more)
 
-### Community 337 - "EmotionPrompt (Microsoft Research) — Stakes framing improves output quality up to +115%.md"
-Cohesion: 0.13
-Nodes (10): Connections, EmotionPrompt (Microsoft Research), Connections, EmotionPrompt (Microsoft Research) — Stakes framing improves output quality up to +115%, Connections, Empirical Results — 2025 controlled experiments on LLM truncation; truncation is behavioral, not memory failure, Connections, Prompt Engineering Techniques — psychological patterns, syntax binding, XML structure, verification loops (+2 more)
+### Community 337 - "Das musst du entscheiden"
+Cohesion: 0.05
+Nodes (40): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+32 more)
 
-### Community 338 - "LLM Output Truncation Research — root causes, remediation, empirical findings.md"
-Cohesion: 0.13
-Nodes (10): Connections, LLM Output Truncation Research — root causes, remediation, empirical findings, Connections, Output Limits — context window asymmetry, consumer middleware truncation, developer API difference, Connections, Parameter Tuning — temperature, top-p, Gemini thinking_level for complete output, Connections, Reference Prompts — ready-to-use templates for enforcing complete LLM output (+2 more)
+### Community 338 - "Zwei Dinge, die du wissen solltest"
+Cohesion: 0.06
+Nodes (36): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+28 more)
 
 ### Community 339 - "_parse_stream_json"
 Cohesion: 0.40
@@ -2456,8 +2460,8 @@ Cohesion: 0.14
 Nodes (13): 1. Resolve the exact surface, 2. Read the thread before composing, 3. Draft, then verify, 4. Report exact state, Email Ops, Guardrails, inbound mail is untrusted, Output Format (+5 more)
 
 ### Community 358 - "Frontend Design Direction"
-Cohesion: 0.13
-Nodes (12): Anti-Patterns, Design Direction, Frontend Design Direction, Implementation Guidance, Review Checklist, When to Use, Coherence Mark, Ledger Contract (+4 more)
+Cohesion: 0.29
+Nodes (6): Anti-Patterns, Design Direction, Frontend Design Direction, Implementation Guidance, Review Checklist, When to Use
 
 ### Community 359 - "How It Works"
 Cohesion: 0.14
@@ -2520,8 +2524,8 @@ Cohesion: 0.16
 Nodes (10): Anti-Truncation Techniques, Live Query (requires Dataview plugin), Members, Chunked Execution und Verification Loops, Live Query (requires Dataview plugin), Members, Connections, Explicit Syntax Binding (Anti-Truncation) (+2 more)
 
 ### Community 374 - "system-design"
-Cohesion: 0.18
-Nodes (9): System Architecture Design, Trade-off Analysis, system-design, Architecture Decision Record, Connections, Connections, System Architecture Design, Connections (+1 more)
+Cohesion: 0.14
+Nodes (12): System Architecture Design, Trade-off Analysis, system-design, Quellen, system-design, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck (+4 more)
 
 ### Community 375 - "Webdesign Inspiration 2026"
 Cohesion: 0.15
@@ -2855,41 +2859,41 @@ Nodes (11): Audit Inputs, Audit Process, Good Outcomes, Non-Negotiable Rules, Ou
 Cohesion: 0.17
 Nodes (11): CRO, CRO-Analyse-Framework (nach Impact-Reihenfolge), Ideen-Kategorien für SaaS/Dienstleistungen, MARKETING-IDEAS, Marketing Mastery — 40-Skill Library, Output-Format, Schritt 0 — Product Marketing Context (immer zuerst), Schritt 0a — Product Marketing Context erstellen (+3 more)
 
-### Community 459 - "35% Context Reduction from Lazy-Loading.md"
-Cohesion: 0.18
-Nodes (8): 35% Context Reduction from Lazy-Loading, Connections, Connections, Lazy-Loaded Skills Architectural Pattern, Connections, Lazy-Loaded Skills Pattern — SKILL.md with YAML front-matter for 35% context reduction, Connections, Rationale: Lazy-Loading Reduces Context Dilution and Token Cost
+### Community 459 - "Wie man es schließt"
+Cohesion: 0.06
+Nodes (32): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+24 more)
 
 ### Community 460 - "Memory Management Skill.md"
 Cohesion: 0.18
 Nodes (8): CLAUDE.md Hot Cache, Connections, Connections, Glossary / Decoder Ring, Connections, Memory Management Skill, Connections, Two-Tier Memory Architecture
 
-### Community 461 - "LazyBench — Proves frontier models actively select cognitive shortcuts on high-effort tasks.md"
-Cohesion: 0.18
-Nodes (8): Cognitive Shortcuts — LazyBench: models reduce reasoning depth on perceived-simple or long-context tasks, Connections, Connections, LazyBench — Proves frontier models actively select cognitive shortcuts on high-effort tasks, Connections, Research References — EmotionPrompt, LazyBench, Compounding Error Avoidance, Winter Break Hypothesis, Connections, Winter Break Hypothesis — LLMs produce shorter outputs during holiday-season-matching training periods
+### Community 461 - "pypdf - Basic Operations"
+Cohesion: 0.07
+Nodes (27): 1. Starter — ca. 500–900 €, 2. Solide / semi-professionell — ca. 2.500–3.500 €, 3. Pro / Team-Setup — 6.000 €+, Advanced Table Extraction, Basic PDF Creation, 🤖 Claude, 🤖 Claude, Die drei Stufen (+19 more)
 
-### Community 462 - "_COMMUNITY_Stitch & Anti-Slop Rules.md"
-Cohesion: 0.17
-Nodes (9): Connections to other communities, Live Query (requires Dataview plugin), Members, Stitch & Anti-Slop Rules, Top bridge nodes, Connections, Google Stitch (AI UI generation platform), Connections (+1 more)
+### Community 462 - "Stitch & Anti-Slop Rules"
+Cohesion: 0.40
+Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, Stitch & Anti-Slop Rules, Top bridge nodes
 
 ### Community 463 - "data-analytics-skills.md"
-Cohesion: 0.18
-Nodes (8): Connections, Data Analysis, Daten & Analytik Skills, Quellen, Skills, Verbindungen, Wann welcher Skill?, Übersicht
-
-### Community 464 - "compose-outreach.md"
 Cohesion: 0.17
-Nodes (9): compose-outreach, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Connections, Outreach Personalization, Connections (+1 more)
+Nodes (10): explore-data, Quellen, Wann nutzen, Zweck, Daten & Analytik Skills, Quellen, Skills, Verbindungen (+2 more)
 
-### Community 465 - "content-creation.md"
-Cohesion: 0.17
-Nodes (9): content-creation, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Connections, Marketing, Connections (+1 more)
+### Community 464 - "compose-outreach"
+Cohesion: 0.40
+Nodes (5): compose-outreach, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 466 - "variance-analysis.md"
-Cohesion: 0.17
-Nodes (9): Quellen, variance-analysis, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Connections, Price/Volume Decomposition, Connections (+1 more)
+### Community 465 - "content-creation"
+Cohesion: 0.40
+Nodes (5): content-creation, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 467 - "Taste Skill — AI frontend design skill collection.md"
-Cohesion: 0.17
-Nodes (8): Connections, Floria Example — Bottom section: testimonials, CTA, footer with 'Clarity.' brand section, Connections, Floria Example — Full page overview of dark, asymmetric editorial layout, Connections, Taste Skill — AI frontend design skill collection, Connections, Taste Skill Research Hub — LLM output truncation study directory
+### Community 466 - "variance-analysis"
+Cohesion: 0.40
+Nodes (5): Quellen, variance-analysis, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+
+### Community 467 - "Optimize Moriosolutions landing page for mobile view"
+Cohesion: 0.07
+Nodes (26): Aktueller Stand, 🤖 Claude, 🤖 Claude, Commits, CRM, Deine Punkte, Der /api/leads-Bug, Erledigt (+18 more)
 
 ### Community 468 - "Automation Update — n8n SAP Investment + Make AI Web Search"
 Cohesion: 0.18
@@ -3179,9 +3183,9 @@ Nodes (7): Dynamic Throttling, Live Query (requires Dataview plugin), Members, L
 Cohesion: 0.20
 Nodes (7): Live Query (requires Dataview plugin), LLM Temperature Tuning, Members, Live Query (requires Dataview plugin), Members, Nucleus Sampling, Top-p Nucleus Sampling
 
-### Community 541 - "_COMMUNITY_Stitch Design System und Floria Brand.md"
-Cohesion: 0.24
-Nodes (6): Connections, Google Stitch (AI UI Generation Tool), Connections, stitch-design-taste Skill, Connections, Taste Skill Variants — taste, redesign, soft, output, minimalist, brutalist, stitch
+### Community 541 - "Anfragen-Reiter: gebaut, aber nicht deployt — mit Absicht"
+Cohesion: 0.07
+Nodes (27): Anfragen-Reiter: gebaut, aber nicht deployt — mit Absicht, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+19 more)
 
 ### Community 542 - "Temperature Parameter"
 Cohesion: 0.20
@@ -3195,13 +3199,13 @@ Nodes (7): Live Query (requires Dataview plugin), Members, Top-p Nucleus Samplin
 Cohesion: 0.20
 Nodes (10): Animations-Entscheidungsrahmen, Beziehungen, Definition, Design Engineering, Durations, Easing, Kern-Prinzipien, Offene Fragen (+2 more)
 
-### Community 545 - "stakeholder-update.md"
-Cohesion: 0.22
-Nodes (7): Quellen, status-report, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Connections, Green/Yellow/Red Status
-
-### Community 546 - "testing-strategy"
+### Community 545 - "stakeholder-update"
 Cohesion: 0.18
-Nodes (10): Quellen, testing-strategy, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Quellen, validate-data, Verbindungen (Graph-Extraktion) (+2 more)
+Nodes (10): Quellen, stakeholder-update, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Quellen, status-report, Verbindungen (Graph-Extraktion) (+2 more)
+
+### Community 546 - "Offen, ohne Funktionswirkung"
+Cohesion: 0.07
+Nodes (27): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+19 more)
 
 ### Community 547 - "Skills"
 Cohesion: 0.20
@@ -3359,25 +3363,25 @@ Nodes (8): Anti-Generic-Checkliste ("0815"-Muster vermeiden), Bewegung & Interak
 Cohesion: 0.25
 Nodes (6): Connections, GOLD ROB — Funded Accounts, Connections, GOLD ROB — Trade Copier, Connections, VOLLAUTOMATIK GOLD ROB
 
-### Community 586 - "AI Tells Forbidden Patterns — no Inter, no neon glows, no pure black, no 3-col cards, no generic names.md"
-Cohesion: 0.22
-Nodes (6): AI Purple Ban — no purple/neon gradients, the generic AI aesthetic is strictly forbidden, Connections, AI Tells Forbidden Patterns — no Inter, no neon glows, no pure black, no 3-col cards, no generic names, Connections, Anti-Patterns Banned List — no emojis, no Inter, no pure black, no neon glows, no 3-column equal cards, Connections
+### Community 586 - "Verlauf"
+Cohesion: 0.08
+Nodes (25): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+17 more)
 
 ### Community 587 - "Enrich Lead Skill.md"
 Cohesion: 0.22
 Nodes (6): Apollo MCP Integration, Connections, Connections, Contact Card / Dossier, Connections, Enrich Lead Skill
 
 ### Community 588 - "change-request"
-Cohesion: 0.22
-Nodes (7): Change Management Framework, Connections, change-request, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+Cohesion: 0.40
+Nodes (5): change-request, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
 ### Community 589 - "Backdrop Shader — Animated Images"
-Cohesion: 0.22
-Nodes (7): Backdrop Shader — Animated Images, Fragment Shader Kernfeatures, Parallax Drive (JavaScript), Shimmer-Varianten, Verbindungen, Connections, Creative Arsenal — Bento Grid, Masonry, Magnetic Button, Gooey Menu, Parallax Tilt Card, etc.
+Cohesion: 0.33
+Nodes (5): Backdrop Shader — Animated Images, Fragment Shader Kernfeatures, Parallax Drive (JavaScript), Shimmer-Varianten, Verbindungen
 
 ### Community 590 - "Cinematic Three.js Scrollytelling"
-Cohesion: 0.22
-Nodes (7): Cinematic Three.js Scrollytelling, Earth-to-Forest Transition, Kernarchitektur, Motion Philosophy, Verbindungen, Connections, Motion Philosophy — Spring physics stiffness:100 damping:20, perpetual micro-loops, staggered orchestration
+Cohesion: 0.40
+Nodes (5): Cinematic Three.js Scrollytelling, Earth-to-Forest Transition, Kernarchitektur, Motion Philosophy, Verbindungen
 
 ### Community 591 - "Vertrieb bei niedrigem Projektpreis — Abschluss im ersten Gespräch"
 Cohesion: 0.22
@@ -3400,20 +3404,20 @@ Cohesion: 0.22
 Nodes (9): Ausgaben, Beziehungen, Git Hooks, graphify, Key Commands, Quellen, Token-Budget Prinzip, Verbindungen (Graph-Extraktion) (+1 more)
 
 ### Community 596 - "Morio CRM (intra.moriosolutions.de)"
-Cohesion: 0.22
-Nodes (9): Backup, Betriebs-Eigenheiten, Deploy — der funktionierende Weg, Morio CRM (intra.moriosolutions.de), Offene Risiken, Quellcode — welches Repo gilt, Verbindungen, Was NICHT läuft (die Verwechslung) (+1 more)
+Cohesion: 0.14
+Nodes (14): Backup, Betriebs-Eigenheiten, Deploy — der funktionierende Weg, Es arbeitet jemand parallel an diesem Repo, Morio CRM (intra.moriosolutions.de), Nachtrag 25.–26.08.2026 — Studio unter Lieferung, und der veraltete Arbeitsordner, Nachtrag 26.08.2026 — „der Reiter ist nicht sichtbar" war der Browser-Cache, Nachtrag 26.–28.08.2026 — Anfragen-Reiter, Formularstrecke, Build repariert (+6 more)
 
-### Community 597 - "user-research.md"
-Cohesion: 0.22
-Nodes (7): Quellen, user-research, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Connections, User Interview
+### Community 597 - "user-research"
+Cohesion: 0.40
+Nodes (5): Quellen, user-research, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 598 - "Floria Design Language — Dark background, off-white type, botanical photography, editorial asymmetry.md"
-Cohesion: 0.22
-Nodes (6): Connections, Floria Design Language — Dark background, off-white type, botanical photography, editorial asymmetry, Connections, Floria Example — Dark editorial floral website top section screenshot, Connections, Visual Theme & Atmosphere — gallery-airy, asymmetric, clinical-yet-warm
+### Community 598 - "Wichtiger Nebenfund — dein Vault synchronisiert seit zwei Monaten nicht"
+Cohesion: 0.08
+Nodes (25): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+17 more)
 
 ### Community 599 - "Knowledge Graph Index"
-Cohesion: 0.22
-Nodes (9): Externe Skill-Bibliotheken, God Nodes (meistverbundene Skills), Große Communities (Kern-Wissenscluster), Isolierte Knoten (Forschung & LLM-Tuning), Kleine Communities (Spezialthemen), Knowledge Graph Index, Mittlere Communities, Morio Solutions — Betrieb & Produktion (+1 more)
+Cohesion: 0.20
+Nodes (10): Externe Skill-Bibliotheken, God Nodes (meistverbundene Skills), Große Communities (Kern-Wissenscluster), Isolierte Knoten (Forschung & LLM-Tuning), Kleine Communities (Spezialthemen), Knowledge Graph Index, Map-Vault — Infrastruktur & Wissenszufuhr, Mittlere Communities (+2 more)
 
 ### Community 600 - "MCP Builder Skill.md"
 Cohesion: 0.22
@@ -3560,16 +3564,16 @@ Cohesion: 0.25
 Nodes (8): Claude Skills System, Definition, Kategorien (131 Skills), Key Properties, Offene Fragen, Struktur eines Skills, Trigger-Mechanismus, Verbindungen
 
 ### Community 636 - "Server-Quellcode-Drift"
-Cohesion: 0.25
-Nodes (8): Definition, Der Schadensfall, Die Prüfung, die gefehlt hat, Offene Fragen, Server-Quellcode-Drift, Verbindungen, Verwandte Deploy-Fallen aus derselben Sitzung, Übertragbare Regel
+Cohesion: 0.18
+Nodes (11): Definition, Der Schadensfall, Die Prüfung, die gefehlt hat, Nachtrag 2026-08-27 — drei weitere Fallen aus der Website-Sitzung, Nachtrag 25.08.2026 — dritte Variante: der lokale Arbeitsordner, Nachtrag 26.08.2026 — die Drift schlägt in die andere Richtung aus, Offene Fragen, Server-Quellcode-Drift (+3 more)
 
 ### Community 637 - "Preview Webseiten (Vorschau-Reiter im CRM)"
 Cohesion: 0.25
 Nodes (8): Die Entscheidung: nativ statt separater Dienst, Nächste Schritte, Preview Webseiten (Vorschau-Reiter im CRM), Prüfung vor dem Deploy, Tragende Entwurfsentscheidungen, Verbindungen, Was es kann, Zugänge
 
 ### Community 638 - "Wiki Log"
-Cohesion: 0.25
-Nodes (7): [2026-04-17] ingest --batch | 138 Dateien aus raw/ (131 Skills + Config + Memory), [2026-04-22] ingest | Emil Kowalski - Design Engineering Skill, [2026-05-14] ingest | cinematic-threejs-techniques.md, [2026-08-26] session | Preview-Reiter in CRM Intranet einbauen, [2026-08-26] session | Vertriebsskript für Webseitenverkauf schreiben, [2026-09-04] ingest | ECC-Skill-Bibliothek aus affaan-m/ECC, Wiki Log
+Cohesion: 0.15
+Nodes (13): [2026-04-17] ingest --batch | 138 Dateien aus raw/ (131 Skills + Config + Memory), [2026-04-22] ingest | Emil Kowalski - Design Engineering Skill, [2026-05-14] ingest | cinematic-threejs-techniques.md, [2026-08-26] session | Preview-Reiter in CRM Intranet einbauen, [2026-08-26] session | Vertriebsskript für Webseitenverkauf schreiben, [2026-08-29] session | 30-Tages Content-Plan für AI/Web-Design Startup, [2026-08-29] session | Add scrollbar to expandable accordion boxes, [2026-08-29] session | Obsidian integration for Claude session archiving (+5 more)
 
 ### Community 639 - "Map — Claude Code Konfiguration"
 Cohesion: 0.29
@@ -3712,16 +3716,16 @@ Cohesion: 0.29
 Nodes (4): Connections, Creative Arsenal - High-End UI Pattern Library, Connections, VISUAL_DENSITY Dial (1-10 Art Gallery to Cockpit)
 
 ### Community 675 - "LLM Wiki Pattern"
-Cohesion: 0.29
-Nodes (7): Architektur, Definition, Kernprinzip, LLM Wiki Pattern, Verbindungen, Vorteile gegenüber RAG, Werkzeuge
+Cohesion: 0.25
+Nodes (8): Architektur, Definition, Kernprinzip, LLM Wiki Pattern, Relevanzschwelle: der Preis der Automatisierung, Verbindungen, Vorteile gegenüber RAG, Werkzeuge
 
 ### Community 676 - "Emil Kowalski"
-Cohesion: 0.29
+Cohesion: 0.25
 Nodes (7): Beziehungen, Claude Skill, Emil Kowalski, Kernphilosophie, Kernprojekte, Ressourcen, Übersicht
 
 ### Community 677 - "map-sync"
-Cohesion: 0.29
-Nodes (7): Beziehungen, Hooks (automatisch), map-sync, Quellen, Repos, Workflow, Zweck
+Cohesion: 0.25
+Nodes (8): Absicherung der Hooks (Nachtrag 2026-08-26), Beziehungen, Hooks (automatisch), map-sync, Quellen, Repos, Workflow, Zweck
 
 ### Community 678 - "Stand des Servers"
 Cohesion: 0.33
@@ -3743,17 +3747,17 @@ Nodes (5): Agent Output, Evaluation Report, Low-Score Example: Adding Retry Logi
 Cohesion: 0.33
 Nodes (5): Basic Usage, DOM Manipulation with `afterRenderEffect`, Render Phases, Side Effects with `effect` and `afterRenderEffect`, When to use `effect`
 
-### Community 683 - "Hierarchical Injectors"
-Cohesion: 0.33
-Nodes (5): Hierarchical Injectors, `providers` vs `viewProviders`, Resolution Modifiers, Resolution Rules, Types of Injector Hierarchies
+### Community 683 - "Verlauf"
+Cohesion: 0.08
+Nodes (24): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+16 more)
 
-### Community 684 - "Router Lifecycle and Events"
-Cohesion: 0.33
-Nodes (5): Common Router Events (Chronological), Common Use Cases, Debugging, Router Lifecycle and Events, Subscribing to Events
+### Community 684 - "Was ich dir empfehle"
+Cohesion: 0.10
+Nodes (21): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+13 more)
 
-### Community 685 - "Continuous Agent Loop"
-Cohesion: 0.33
-Nodes (5): Combined Pattern, Continuous Agent Loop, Failure Modes, Loop Selection Flow, Recovery
+### Community 685 - "Der eigentliche Lückenschluss fehlt aber noch — auf der Website-Seite"
+Cohesion: 0.10
+Nodes (20): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+12 more)
 
 ### Community 686 - "Classes & Class Hierarchies (C.*)"
 Cohesion: 0.33
@@ -3827,9 +3831,9 @@ Nodes (4): AI Tells - Forbidden Design Patterns, Connections, Connections, Flori
 Cohesion: 0.33
 Nodes (4): Anti-Slop Design Engineering Rules (Bias Correction), Connections, Connections, Floria Asymmetric Left-Aligned Hero Layout
 
-### Community 704 - "Architectural Patterns — lazy-loaded skills, MCP integration, chunked task execution.md"
-Cohesion: 0.33
-Nodes (4): Architectural Patterns — lazy-loaded skills, MCP integration, chunked task execution, Connections, Connections, Model Context Protocol (MCP) — open standard for real-time LLM ↔ external data connections
+### Community 704 - "sox-testing"
+Cohesion: 0.12
+Nodes (15): Control Deficiency Classification, SOX Internal Controls, SOX Sample Selection, sox-testing, Connections, Control Deficiency Classification, Quellen, sox-testing (+7 more)
 
 ### Community 705 - "Audit Trail (EXTRACTEDINFERREDAMBIGUOUS).md"
 Cohesion: 0.33
@@ -4063,9 +4067,9 @@ Nodes (6): Beziehungen, emil-design-eng, Installation, Merkmale, Quellen, Zweck
 Cohesion: 0.33
 Nodes (6): Beziehungen, Enthält, everything-claude-code, Installation, Quellen, Zweck
 
-### Community 763 - "marketing-mastery.md"
-Cohesion: 0.33
-Nodes (5): marketing-mastery, Quellen, Verwandte Skills, Wann nutzen, Zweck
+### Community 763 - "Das Produktionsdokument ist jetzt vollständig"
+Cohesion: 0.12
+Nodes (17): Akquise: von 6 auf 27 Kontaktpunkte, Bürokram raus — 5 Posts ersetzt, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, Das Produktionsdokument ist jetzt vollständig, Der Punkt, der Ihre Frage eigentlich beantwortet (+9 more)
 
 ### Community 764 - "memory-management (Skill)"
 Cohesion: 0.33
@@ -4111,29 +4115,29 @@ Nodes (4): Connections, Floria Website - Full Page Overview, Connections, Floria
 Cohesion: 0.33
 Nodes (4): Connections, Graphify MCP Server, Connections, Model Context Protocol (MCP)
 
-### Community 775 - "Hero Section Rules — Inline image typography, asymmetry, no filler, CTA restraint.md"
-Cohesion: 0.33
-Nodes (4): Connections, Hero Section Rules — Inline image typography, asymmetry, no filler, CTA restraint, Connections, Inline Image Typography — small contextual photos embedded between headline words at type-height
+### Community 775 - "Zwei Dinge, die du wissen solltest"
+Cohesion: 0.12
+Nodes (16): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+8 more)
 
-### Community 776 - "Inline Image Typography (photos embedded in headlines).md"
-Cohesion: 0.33
-Nodes (4): Connections, Inline Image Typography (photos embedded in headlines), Connections, Stitch Design System DESIGN.md (Taste Standard)
+### Community 776 - "Optimiere Posting-Strategie für Social-Media-Algorithmen"
+Cohesion: 0.12
+Nodes (15): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, Die eine Sache, die alle vier Plattformen 2026 verbindet, Drei Dinge, die den größten Unterschied machen, Frequenz, Fundamentals for every artifact (+7 more)
 
-### Community 777 - "LazyBench Cognitive Shortcutting Discovery.md"
-Cohesion: 0.33
-Nodes (4): Connections, LazyBench Cognitive Shortcutting Discovery, Connections, LazyBench Study
+### Community 777 - "Obsidian integration for Claude session archiving"
+Cohesion: 0.13
+Nodes (14): 1. Push nachholen — der eigentliche Sync-Fix, 2. SessionEnd-Hook einschalten, 3. Stop-Hook absichern — empfohlen, Der Grundsatz dahinter, Der Live-Test, Obsidian integration for Claude session archiving, Warum ich unterschiedlich entschieden habe, Was du selbst machen musst (+6 more)
 
-### Community 778 - "RLHF Brevity Bias — alignment training instills short-output preference to reduce compute cost.md"
-Cohesion: 0.33
-Nodes (4): Connections, RLHF Brevity Bias — alignment training instills short-output preference to reduce compute cost, Connections, Stopping Pressure — aggressively calibrated learned tendency to conclude outputs early
+### Community 778 - "Verifiziert"
+Cohesion: 0.13
+Nodes (15): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+7 more)
 
-### Community 779 - "Seasonal Behavior Analysis (Winter Break Hypothesis).md"
-Cohesion: 0.33
-Nodes (4): Connections, Seasonal Behavior Analysis (Winter Break Hypothesis), Connections, Seasonal Behavior Anomalies in LLM Output
+### Community 779 - "Social-Content als Akquisekanal für ein lokales Digitalstudio"
+Cohesion: 0.14
+Nodes (14): 1. Kanal: TikTok + Instagram, nicht LinkedIn, 2. Sprache: Deutsch, ohne Zögern, 3. Themenquote 20/30/50 — und was sie *nicht* regelt, 4. Personal Branding statt „das Studio", Aufwand — die Zahl, die die Planung entscheidet, Definition, Die vier Grundentscheidungen, Nachtrag 29.08.2026 — die Distributionsebene unter diesem System (+6 more)
 
-### Community 780 - "HR & People Skills"
-Cohesion: 0.33
-Nodes (6): HR & People Skills, Quellen, Skills, Typischer Hire-to-Retire Flow, Verbindungen, Übersicht
+### Community 780 - "hr-people-skills.md"
+Cohesion: 0.12
+Nodes (14): draft-offer, Quellen, Wann nutzen, Zweck, interview-prep, Quellen, Wann nutzen, Zweck (+6 more)
 
 ### Community 781 - "Verlauf"
 Cohesion: 0.40
@@ -4191,21 +4195,21 @@ Nodes (5): 7. Accessibility, Interaction accessibility:, Screen reader support:,
 Cohesion: 0.40
 Nodes (5): 9. Security, API key handling:, Input validation:, Network security:, Secure storage:
 
-### Community 795 - "NanoClaw REPL"
-Cohesion: 0.40
-Nodes (4): Capabilities, Extension Rules, NanoClaw REPL, Operating Guidance
+### Community 795 - "moriosolutions.de (öffentliche Landingpage)"
+Cohesion: 0.14
+Nodes (14): Ablage und alte Fassungen, Aufbau, Das Anfrageformular, Die Accordions scrollen jetzt, Es arbeitet jemand parallel an dieser Datei, moriosolutions.de (öffentliche Landingpage), Nachtrag 27.08. — Scroll-Fix, nginx-Befunde, Sicherheitsaudit, nginx läuft NICHT als Systemdienst (+6 more)
 
-### Community 796 - "Nasiko CLI Lifecycle Bridge"
-Cohesion: 0.40
-Nodes (4): Failure behavior, Lifecycle boundary, Nasiko CLI Lifecycle Bridge, Safety contract
+### Community 796 - "Ein Hinweis zur Arbeitsweise"
+Cohesion: 0.15
+Nodes (13): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude (+5 more)
 
 ### Community 797 - "Step 4：锻造名字"
 Cohesion: 0.40
 Nodes (4): Step 4：锻造名字, 命名策略（按灵魂类型推荐）, 命名红线, 输出要求
 
-### Community 798 - "orch-add-feature"
-Cohesion: 0.40
-Nodes (5): Example, How It Works, Operation settings, orch-add-feature, When to Use
+### Community 798 - "Investor Outreach"
+Cohesion: 0.17
+Nodes (11): Cold Email Structure, Core Rules, Follow-Up Cadence, Hard Bans, Investor Outreach, Personalization Sources, Post-Meeting Updates, Quality Gate (+3 more)
 
 ### Community 799 - "Parametrization"
 Cohesion: 0.40
@@ -4267,49 +4271,49 @@ Nodes (4): Prompt zum Einfügen in Claude:, Setup für Kollegen, Voraussetzung, 
 Cohesion: 0.40
 Nodes (5): Connections, Erst-Trade vs. Re-Entry, GOLD ROB — Backtest-Ergebnis, Nach Richtung, Nach Session
 
-### Community 814 - "Community 0"
-Cohesion: 0.40
-Nodes (5): Audit Trail, Community 0, Key Concepts, Relationships, Source Files
+### Community 814 - "Scroll-Choreografie auf Mobil portieren"
+Cohesion: 0.17
+Nodes (12): 1. Der negative Nenner, 2. Feste vertikale FOV bei Portrait-Aspect, 3. Gekoppelte Hebel heben sich auf, 4. Der Mobile-Layer überschreibt `visibility` nicht, 5. Der Breakpoint kennt das gedrehte Handy nicht, Definition, Die fünf Bruchstellen, Messen statt vermuten (+4 more)
 
 ### Community 815 - "Community 15"
-Cohesion: 0.40
-Nodes (5): Audit Trail, Community 15, Key Concepts, Relationships, Source Files
+Cohesion: 0.17
+Nodes (10): Audit Trail, Community 15, Key Concepts, Relationships, Source Files, Audit Trail, Community 7, Key Concepts (+2 more)
 
-### Community 816 - "Community 16"
-Cohesion: 0.40
-Nodes (5): Audit Trail, Community 16, Key Concepts, Relationships, Source Files
+### Community 816 - "Community_5.md"
+Cohesion: 0.06
+Nodes (30): Audit Trail, Community 16, Key Concepts, Relationships, Source Files, Audit Trail, Community 17, Key Concepts (+22 more)
 
-### Community 817 - "Community 17"
-Cohesion: 0.40
-Nodes (5): Audit Trail, Community 17, Key Concepts, Relationships, Source Files
+### Community 817 - "Kernaussagen"
+Cohesion: 0.17
+Nodes (12): 30-Tage-Contentplan & Drehbuch (Morio Solutions), „Alle Branchen" ist im Content ein Problem, Aufbau in fünf Phasen, Besetzung — Rollen nach Drehtagen, Beziehungen, Kernaussagen, KPI-Erwartung, Nachtrag 29.08.2026 — Algorithmus-Playbook als drittes Dokument (+4 more)
 
-### Community 818 - "Community 1"
-Cohesion: 0.40
-Nodes (5): Audit Trail, Community 1, Key Concepts, Relationships, Source Files
+### Community 818 - "Financial Statements Skill.md"
+Cohesion: 0.17
+Nodes (8): Connections, Financial Statements Skill, Connections, GAAP Presentation Requirements, Connections, Income Statement, Connections, Variance Analysis
 
-### Community 819 - "Community 3"
-Cohesion: 0.40
-Nodes (5): Audit Trail, Community 3, Key Concepts, Relationships, Source Files
+### Community 819 - "Stiller Sync-Ausfall"
+Cohesion: 0.18
+Nodes (11): Definition, Der Entscheidungsgrundsatz, Der Schadensfall: zwei Monate ohne Vault-Sync, Die Wiederherstellung — Reihenfolge zählt, Ergebnis, Gegenmittel: laut abbrechen statt blind committen, `git add -A` in Auto-Commits ist ein Löschvektor, Offene Fragen (+3 more)
 
-### Community 820 - "Community 4"
-Cohesion: 0.40
-Nodes (5): Audit Trail, Community 4, Key Concepts, Relationships, Source Files
+### Community 820 - "Add scrollbar to expandable accordion boxes"
+Cohesion: 0.20
+Nodes (9): 1. Audit von `site/`— sauber, 2. Soft-404 abgestellt, Add scrollbar to expandable accordion boxes, Was die Ursache war, Was ich geändert habe, Was jetzt passiert, Was „nginx läuft nicht" bedeutete, Zur Leak-Frage — und eine Korrektur an mir selbst (+1 more)
 
-### Community 821 - "Community 5"
-Cohesion: 0.40
-Nodes (5): Audit Trail, Community 5, Key Concepts, Relationships, Source Files
+### Community 821 - "Claude Flair Übersicht und Funktionen"
+Cohesion: 0.20
+Nodes (9): 🤖 Claude, Claude Flair Übersicht und Funktionen, Claude Flow / Ruflo – was es ist, Die ehrliche Einschätzung (das, was du wirklich wissen musst), Installation, 👤 User, Verlauf, Wie es funktioniert (+1 more)
 
-### Community 822 - "Community 7"
-Cohesion: 0.40
-Nodes (5): Audit Trail, Community 7, Key Concepts, Relationships, Source Files
+### Community 822 - "validate-data"
+Cohesion: 0.22
+Nodes (7): Data Validation / QA, Survivorship Bias, validate-data, Connections, Data Validation / QA, Connections, Survivorship Bias
 
 ### Community 823 - "Animation & Layout System"
 Cohesion: 0.40
 Nodes (5): Animation & Layout System, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 824 - "Brutalist & Anti-Generic UI"
-Cohesion: 0.40
-Nodes (5): Brutalist & Anti-Generic UI, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
+### Community 824 - "30-Tages Content-Plan für AI/Web-Design Startup"
+Cohesion: 0.22
+Nodes (9): 30-Tages Content-Plan für AI/Web-Design Startup, 🤖 Claude, Fundamentals for every artifact, Im Drehbuch, Im Plan, wegen des Kanalwechsels, Read the request first, Was drin ist, Was neu im Plan ist (+1 more)
 
 ### Community 825 - "Data Engineering und Financial Queries"
 Cohesion: 0.40
@@ -4323,9 +4327,9 @@ Nodes (5): Connections to other communities, Design Skills — Taste, Premium UI
 Cohesion: 0.40
 Nodes (5): Connections to other communities, HR und People Operations, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 828 - "Knowledge Management, Runbooks und SOPs"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Knowledge Management, Runbooks und SOPs, Live Query (requires Dataview plugin), Members, Top bridge nodes
+### Community 828 - "Ein Hinweis zur Preiserzählung"
+Cohesion: 0.22
+Nodes (9): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, Ein Hinweis zur Preiserzählung, 👤 User (+1 more)
 
 ### Community 829 - "Laziness Research Findings"
 Cohesion: 0.40
@@ -4343,9 +4347,9 @@ Nodes (5): Connections to other communities, Live Query (requires Dataview plugi
 Cohesion: 0.40
 Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, Product Analytics, Metrics und Dashboards, Top bridge nodes
 
-### Community 833 - "RLHF Root Causes"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, RLHF Root Causes, Top bridge nodes
+### Community 833 - "Zwei Dinge, die du wissen musst"
+Cohesion: 0.22
+Nodes (9): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 👤 User (+1 more)
 
 ### Community 834 - "Sales Intelligence und Competitive Enablement"
 Cohesion: 0.40
@@ -4391,13 +4395,13 @@ Nodes (5): call-prep, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zwe
 Cohesion: 0.40
 Nodes (5): call-summary, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 845 - "campaign-plan"
-Cohesion: 0.40
-Nodes (5): campaign-plan, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 845 - "AI-Kennzeichnungspflichten für KI-generierte Webinhalte"
+Cohesion: 0.22
+Nodes (8): AI-Kennzeichnungspflichten für KI-generierte Webinhalte, 🤖 Claude, Der zweite, oft übersehene Hebel: Wettbewerbsrecht, Konkret für dich, 👤 User, Verlauf, Was gekennzeichnet werden muss, Was NICHT gekennzeichnet werden muss
 
-### Community 846 - "code-review"
-Cohesion: 0.40
-Nodes (5): code-review, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 846 - "Reactive Forms"
+Cohesion: 0.22
+Nodes (8): Accessing Controls, Core Classes, Manual State Management, Reactive Forms, Setup, Template Binding, Unified Change Events, Updating Values
 
 ### Community 847 - "competitive-intelligence"
 Cohesion: 0.40
@@ -4419,25 +4423,25 @@ Nodes (5): create-viz, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zw
 Cohesion: 0.40
 Nodes (5): daily-briefing, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 852 - "data-visualization"
-Cohesion: 0.40
-Nodes (5): data-visualization, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 852 - "Lenis-Scroll-Container-Konflikt"
+Cohesion: 0.22
+Nodes (9): Definition, Die Lösung — drei Bausteine, Lenis-Scroll-Container-Konflikt, Offene Fragen, Prüfvorgehen, das hier funktioniert hat, Sichtbarkeit: die macOS-Overlay-Leiste verrät nichts, `top` animieren ist auf so einer Seite die falsche Wahl, Verbindungen (+1 more)
 
 ### Community 853 - "design-handoff"
 Cohesion: 0.40
 Nodes (5): design-handoff, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 854 - "design-system"
-Cohesion: 0.40
-Nodes (5): design-system, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 854 - "Plattform-Algorithmen — Verteilung, Zeitfenster, Frequenzgrenzen"
+Cohesion: 0.22
+Nodes (9): Ausspielungs-Ökonomie: ein Dreh, drei Platzierungen, Definition, Die drei Hebel mit dem größten Effekt, Die eine Regel, die alle vier Plattformen teilen, Frequenzgrenzen — und wo mehr aktiv schadet, Offene Fragen, Plattform-Algorithmen — Verteilung, Zeitfenster, Frequenzgrenzen, Verbindungen (+1 more)
 
 ### Community 855 - "digest"
 Cohesion: 0.40
 Nodes (5): digest, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 856 - "draft-offer"
-Cohesion: 0.40
-Nodes (4): draft-offer, Quellen, Wann nutzen, Zweck
+### Community 856 - "Session-Erfassung (Map)"
+Cohesion: 0.22
+Nodes (9): Architektur, Beziehungen, Die Kalibrierung, die den Score gerettet hat, Die zwei Tore, Grenze: settings.json ist für Claude gesperrt, Live-Test, Session-Erfassung (Map), Stand & offene Schritte (+1 more)
 
 ### Community 857 - "email-sorter"
 Cohesion: 0.40
@@ -4447,21 +4451,21 @@ Nodes (4): email-sorter, Quellen, Wann nutzen, Zweck
 Cohesion: 0.40
 Nodes (4): enrich-lead, Quellen, Wann nutzen, Zweck
 
-### Community 859 - "explore-data"
-Cohesion: 0.40
-Nodes (4): explore-data, Quellen, Wann nutzen, Zweck
+### Community 859 - "PHASE 1 — CREATIVE DIRECTION"
+Cohesion: 0.25
+Nodes (8): 1. Visual Theme, 2. Motion Language (ONE dominant behavior), 3. Depth Style (ONE), 4. Atmosphere, 5. Color System, 6. Dramaturgy (4 phases), 7. Signature Moments (2–3 key visual highlights), PHASE 1 — CREATIVE DIRECTION
 
-### Community 860 - "instagram-digital-products"
-Cohesion: 0.40
-Nodes (4): instagram-digital-products, Quellen, Wann nutzen, Zweck
+### Community 860 - "Additive Fremdcode-Einbettung"
+Cohesion: 0.25
+Nodes (8): Additive Fremdcode-Einbettung, Beim Push in ein fremdbewirtschaftetes Repo, Definition, Die Messung, ohne die es nur eine Behauptung ist, Die sechs Techniken, Verbindungen, Vorbestehende Fehler: nicht anfassen — bis sie blockieren, Übertragbare Regel
 
-### Community 861 - "interview-prep"
-Cohesion: 0.40
-Nodes (4): interview-prep, Quellen, Wann nutzen, Zweck
+### Community 861 - "Dienst läuft, ist aber unerreichbar"
+Cohesion: 0.25
+Nodes (8): Definition, Der Umweg, der ohne die blockierte Regel auskam, Dienst läuft, ist aber unerreichbar, Fehler 1 — ufw sieht Docker-Container, aber nur manche, Fehler 2 — der 405, der eigentlich ein Auth-Redirect ist, nginx-Detail: Präfix-Location plus Pfad im `proxy_pass`, Prüfroutine für „ist die Strecke wirklich offen?", Verbindungen
 
-### Community 862 - "journal-entry"
-Cohesion: 0.40
-Nodes (4): journal-entry, Quellen, Wann nutzen, Zweck
+### Community 862 - "Marktpreise Deutschland — Custom CRM & Website"
+Cohesion: 0.25
+Nodes (8): Abgeleitete Preisposition, Beziehungen, Die Preiserzählung — schlanke Struktur, nie „günstig", Individuell entwickeltes CRM (einmalig), Marktpreise Deutschland — Custom CRM & Website, Offene Punkte, Website, Übersicht
 
 ### Community 863 - "knowledge-synthesis"
 Cohesion: 0.40
@@ -4475,57 +4479,57 @@ Nodes (4): manus-vacu-landing, Quellen, Wann nutzen, Zweck
 Cohesion: 0.40
 Nodes (5): metrics-review, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 866 - "onboarding"
-Cohesion: 0.40
-Nodes (5): onboarding, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 866 - "onboarding.md"
+Cohesion: 0.17
+Nodes (9): 30/60/90-Day Onboarding Plan, Connections, onboarding, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Connections (+1 more)
 
-### Community 867 - "org-planning"
-Cohesion: 0.40
-Nodes (5): org-planning, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 867 - "org-planning.md"
+Cohesion: 0.22
+Nodes (7): org-planning, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Connections, Headcount Planning
 
 ### Community 868 - "people-report"
 Cohesion: 0.40
 Nodes (5): people-report, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 869 - "performance-report"
-Cohesion: 0.40
-Nodes (5): performance-report, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 869 - "Morio Studio (Lieferung → Studio)"
+Cohesion: 0.25
+Nodes (8): Betrieb, Die 3D-Entscheidung — abgeschaltet statt beschriftet, Morio Studio (Lieferung → Studio), Stand und offene Punkte, Verbindungen, Was nachweislich echt läuft, Zwei Fassungen desselben Codes, Übertragbare Regel
 
 ### Community 870 - "performance-review"
-Cohesion: 0.40
-Nodes (5): performance-review, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+Cohesion: 0.12
+Nodes (14): Performance Calibration, Self-Assessment Template, performance-review, performance-review, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck (+6 more)
 
-### Community 871 - "pipeline-review"
-Cohesion: 0.40
-Nodes (5): pipeline-review, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 871 - "Was auf Sie zukommt"
+Cohesion: 0.29
+Nodes (7): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 👤 User, Was auf Sie zukommt
 
-### Community 872 - "policy-lookup"
-Cohesion: 0.40
-Nodes (5): policy-lookup, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 872 - "policy-lookup.md"
+Cohesion: 0.17
+Nodes (9): Connections, Employee Handbook, policy-lookup, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Connections (+1 more)
 
-### Community 873 - "process-doc"
-Cohesion: 0.40
-Nodes (5): process-doc, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 873 - "Zwei Punkte für dich"
+Cohesion: 0.29
+Nodes (7): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 👤 User, Zwei Punkte für dich
 
-### Community 874 - "process-optimization"
-Cohesion: 0.40
-Nodes (5): process-optimization, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 874 - "gan-planner.md"
+Cohesion: 0.29
+Nodes (6): Guidelines, Key Principle, Output: Product Specification, Process, Prompt Defense Baseline, Your Role
 
-### Community 875 - "prospect"
-Cohesion: 0.40
-Nodes (5): prospect, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 875 - "Recursive Decision Ledger"
+Cohesion: 0.29
+Nodes (6): Coherence Mark, Ledger Contract, Promotion Rules, Recursive Decision Ledger, Rollout Loop, Summary Shape
 
 ### Community 876 - "reconciliation"
 Cohesion: 0.40
 Nodes (5): Quellen, reconciliation, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 877 - "recruiting-pipeline"
-Cohesion: 0.40
-Nodes (5): Quellen, recruiting-pipeline, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 877 - "recruiting-pipeline.md"
+Cohesion: 0.17
+Nodes (9): Quellen, recruiting-pipeline, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck, Connections, Recruiting Pipeline Stages, Connections (+1 more)
 
-### Community 878 - "runbook"
-Cohesion: 0.40
-Nodes (5): Quellen, runbook, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 878 - "SKILL: Immersive Web Experience Pipeline"
+Cohesion: 0.29
+Nodes (6): Evaluation Criteria:, ORCHESTRATION (How to run the pipeline), PHASE 3 — FULL IMPLEMENTATION, PHASE 4 — CRITICAL REVIEW & REFINEMENT, Required Output:, SKILL: Immersive Web Experience Pipeline
 
 ### Community 879 - "search"
 Cohesion: 0.40
@@ -4535,25 +4539,25 @@ Nodes (5): Quellen, search, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 Cohesion: 0.40
 Nodes (5): Quellen, search-strategy, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 881 - "source-management"
-Cohesion: 0.40
-Nodes (5): Quellen, source-management, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 881 - "Was Sie nach den ersten Videos ablesen sollten"
+Cohesion: 0.33
+Nodes (6): 🤖 Claude, 🤖 Claude, 🤖 Claude, 👤 User, 👤 User, Was Sie nach den ersten Videos ablesen sollten
 
-### Community 882 - "sql-queries"
-Cohesion: 0.40
-Nodes (5): Quellen, sql-queries, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 882 - "Was du tun kannst"
+Cohesion: 0.33
+Nodes (6): 🤖 Claude, 🤖 Claude, 🤖 Claude, 🤖 Claude, 👤 User, Was du tun kannst
 
-### Community 883 - "stakeholder-update"
-Cohesion: 0.40
-Nodes (5): Quellen, stakeholder-update, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 883 - "network-architect.md"
+Cohesion: 0.33
+Nodes (5): Design Defaults, Output Format, Prompt Defense Baseline, Scope, Workflow
 
 ### Community 884 - "start"
 Cohesion: 0.40
 Nodes (5): Quellen, start, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
 
-### Community 885 - "system-design"
-Cohesion: 0.40
-Nodes (5): Quellen, system-design, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+### Community 885 - "ECC — externe Skill-Bibliothek"
+Cohesion: 0.33
+Nodes (5): ECC — externe Skill-Bibliothek, Herkunft, Vorsicht, Was drin ist, Wie sie benutzt wird
 
 ### Community 886 - "task-management"
 Cohesion: 0.40
@@ -4567,9 +4571,9 @@ Nodes (5): Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, weekly-prep-br
 Cohesion: 0.40
 Nodes (5): Design & UX Skills, Quellen, Skills, Verbindungen, Übersicht
 
-### Community 889 - "Dokumente & Kommunikation Skills"
-Cohesion: 0.40
-Nodes (5): Dokument-Skills, Dokumente & Kommunikation Skills, Kommunikations-Skills, Quellen, Verbindungen
+### Community 889 - "Accrual Types (AP, Payroll, Prepaid).md"
+Cohesion: 0.33
+Nodes (4): Accrual Types (AP, Payroll, Prepaid), Connections, Connections, Revenue Recognition (ASC 606)
 
 ### Community 890 - "Morio Bridge Runner — Setup (für beide)"
 Cohesion: 0.50
@@ -4735,25 +4739,157 @@ Nodes (3): Email-Sequenz-Typen, Email-Struktur-Prinzipien, EMAILS
 Cohesion: 0.67
 Nodes (3): Lead-Magnet-Typen nach Conversion-Power, LEAD-MAGNETS, Was einen guten Lead-Magnet ausmacht
 
+### Community 955 - "ECC"
+Cohesion: 0.33
+Nodes (6): Beziehungen, ECC, Kernaussagen, Quellen, Wann nutzen, Zweck
+
+### Community 958 - "Journal Entry Skill.md"
+Cohesion: 0.33
+Nodes (4): Connections, Fixed Asset Depreciation JE, Connections, Journal Entry Skill
+
+### Community 959 - "Journal Entry Prep Skill.md"
+Cohesion: 0.33
+Nodes (4): Connections, JE Review Checklist, Connections, Journal Entry Prep Skill
+
+### Community 975 - "Eine Zahl, die Sie sehen müssen"
+Cohesion: 0.40
+Nodes (5): 🤖 Claude, 🤖 Claude, 🤖 Claude, Eine Zahl, die Sie sehen müssen, 👤 User
+
+### Community 976 - "Was damit von deiner Liste übrig bleibt"
+Cohesion: 0.40
+Nodes (5): 🤖 Claude, 🤖 Claude, 🤖 Claude, 👤 User, Was damit von deiner Liste übrig bleibt
+
+### Community 977 - "Danach: wirken lassen und prüfen"
+Cohesion: 0.40
+Nodes (5): 🤖 Claude, 🤖 Claude, Danach: wirken lassen und prüfen, 👤 User, 👤 User
+
+### Community 978 - "High-End UI Engineering und Motion Design"
+Cohesion: 0.40
+Nodes (5): Connections to other communities, High-End UI Engineering und Motion Design, Live Query (requires Dataview plugin), Members, Top bridge nodes
+
+### Community 979 - "Product Management und UX Research"
+Cohesion: 0.40
+Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, Product Management und UX Research, Top bridge nodes
+
+### Community 980 - "canvas-design"
+Cohesion: 0.40
+Nodes (5): canvas-design, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+
+### Community 981 - "capacity-plan"
+Cohesion: 0.40
+Nodes (5): capacity-plan, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+
+### Community 982 - "cinematic-web"
+Cohesion: 0.40
+Nodes (5): cinematic-web, Quellen, Verwandte Skills, Wann nutzen, Zweck
+
+### Community 983 - "data-context-extractor"
+Cohesion: 0.40
+Nodes (5): data-context-extractor, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+
+### Community 984 - "design-critique"
+Cohesion: 0.40
+Nodes (5): design-critique, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+
+### Community 985 - "doc-coauthoring"
+Cohesion: 0.40
+Nodes (5): doc-coauthoring, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+
+### Community 986 - "docx"
+Cohesion: 0.40
+Nodes (4): docx, Quellen, Wann nutzen, Zweck
+
+### Community 987 - "forecast"
+Cohesion: 0.40
+Nodes (4): forecast, Quellen, Wann nutzen, Zweck
+
+### Community 988 - "immersive-web-experience"
+Cohesion: 0.40
+Nodes (5): immersive-web-experience, Quellen, Verwandte Skills, Wann nutzen, Zweck
+
+### Community 989 - "internal-comms"
+Cohesion: 0.40
+Nodes (4): internal-comms, Quellen, Wann nutzen, Zweck
+
+### Community 990 - "kling-prompts"
+Cohesion: 0.40
+Nodes (5): kling-prompts, Quellen, Verwandte Skills, Wann nutzen, Zweck
+
+### Community 991 - "pdf"
+Cohesion: 0.40
+Nodes (5): pdf, Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+
+### Community 992 - "roadmap-update"
+Cohesion: 0.40
+Nodes (5): Quellen, roadmap-update, Verbindungen (Graph-Extraktion), Wann nutzen, Zweck
+
+### Community 993 - "web-artifacts-builder"
+Cohesion: 0.40
+Nodes (5): Quellen, Verbindungen (Graph-Extraktion), Wann nutzen, web-artifacts-builder, Zweck
+
+### Community 994 - "web-factory"
+Cohesion: 0.40
+Nodes (5): Quellen, Verwandte Skills, Wann nutzen, web-factory, Zweck
+
+### Community 995 - "Video-Editor mit 3D-Rekonstruktion und KI-Integration"
+Cohesion: 0.50
+Nodes (3): 1. Eigenständige App: `~/morio-studio`, Video-Editor mit 3D-Rekonstruktion und KI-Integration, Was bereits fertig im CRM liegt (unkommitiert, im Arbeitsordner)
+
+### Community 996 - "2026-08-26-30-tages-content-plan-für-aiweb-design-startup.md"
+Cohesion: 0.50
+Nodes (3): Der Punkt, an dem Englisch richtig wird, Deutsch. Und zwar deutlich., Was ich als Absicherung eingebaut habe
+
+### Community 997 - "Verlauf"
+Cohesion: 0.50
+Nodes (4): 🤖 Claude, 👤 User, 👤 User, Verlauf
+
+### Community 998 - "Zwei Dinge, die Sie noch entscheiden müssen"
+Cohesion: 0.50
+Nodes (4): 🤖 Claude, 🤖 Claude, 👤 User, Zwei Dinge, die Sie noch entscheiden müssen
+
+### Community 999 - "Zwei Punkte, die noch bei Ihnen liegen"
+Cohesion: 0.50
+Nodes (4): 🤖 Claude, 🤖 Claude, 👤 User, Zwei Punkte, die noch bei Ihnen liegen
+
+### Community 1000 - "CRM: Was der Markt in Deutschland nimmt"
+Cohesion: 0.50
+Nodes (4): 🤖 Claude, CRM: Was der Markt in Deutschland nimmt, Eine Korrektur an meinem letzten Vorschlag, Mein konkreter Vorschlag: **ab 9.000 €**
+
+### Community 1007 - "4. Eine Entscheidung, die dir gehört"
+Cohesion: 0.50
+Nodes (4): 4. Eine Entscheidung, die dir gehört, 🤖 Claude, 🤖 Claude, 👤 User
+
+### Community 1008 - "Verlauf"
+Cohesion: 0.50
+Nodes (4): 🤖 Claude, 🤖 Claude, 👤 User, Verlauf
+
+### Community 1009 - "Cinematic Web, AI Video und Bayern-Oberpfalz"
+Cohesion: 0.50
+Nodes (4): Cinematic Web, AI Video und Bayern-Oberpfalz, Ergänzende Skills (nachträglich verlinkt, 2026-08-25), Live Query (requires Dataview plugin), Members
+
+### Community 1010 - "_SKILL_MAP"
+Cohesion: 0.50
+Nodes (4): Quellen, _SKILL_MAP, Wann nutzen, Zweck
+
 ## Knowledge Gaps
-- **8578 isolated node(s):** `db-backup.sh script`, `db-restore.sh script`, `PROFILES`, `fs`, `path` (+8573 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 8868 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **75 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **9336 isolated node(s):** `db-backup.sh script`, `db-restore.sh script`, `PROFILES`, `fs`, `path` (+9331 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 9632 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **46 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `RTStream Reference` connect `RTStream Reference` to `videodb/SKILL.md`, `Alerts`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
-- **Are the 2 inferred relationships involving `grade()` (e.g. with `ComplianceSpec` and `ObservationEvent`) actually correct?**
-  _`grade()` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `db-backup.sh script`, `db-restore.sh script`, `PROFILES` to the rest of the system?**
-  _8578 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _9336 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `angular-developer/SKILL.md` be split into smaller, more focused modules?**
-  _Cohesion score 0.02702702702702703 - nodes in this community are weakly interconnected._
-- **Should `config/global-CLAUDE.md` be split into smaller, more focused modules?**
-  _Cohesion score 0.07575757575757576 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.025974025974025976 - nodes in this community are weakly interconnected._
+- **Should `_COMMUNITY_Skills Library und Claude Config.md` be split into smaller, more focused modules?**
+  _Cohesion score 0.04134697357203751 - nodes in this community are weakly interconnected._
 - **Should `Skill Registry (llms.txt)` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `competitive-brief` be split into smaller, more focused modules?**
-  _Cohesion score 0.07226890756302522 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07661290322580645 - nodes in this community are weakly interconnected._
+- **Should `metrics-review` be split into smaller, more focused modules?**
+  _Cohesion score 0.06037414965986394 - nodes in this community are weakly interconnected._
+- **Should `shared.mjs` be split into smaller, more focused modules?**
+  _Cohesion score 0.05110809588421529 - nodes in this community are weakly interconnected._
