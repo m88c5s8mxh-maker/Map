@@ -25,6 +25,32 @@ def rebuild_code() -> None:
         print(f"[map] Code-Rebuild übersprungen: {e}")
 
 
+# ── Bündel-Ordner zusammenfassen ──────────────────────────────────────────
+# Ein Skill-Bündel wie raw/skills/ecc/ bringt hunderte Dateien mit. Einzeln
+# aufgelistet ersäuft der Index, den CLAUDE.md als Ersteinstieg vorschreibt —
+# darum pro Bündel eine Zeile mit Zähler.
+BUNDLE_PARENT = ("raw", "skills")
+BUNDLE_MIN_FILES = 5
+
+
+def summarize_raw(raw_files: list[Path]) -> list[str]:
+    bundles: dict[str, int] = defaultdict(int)
+    singles: list[Path] = []
+    for f in raw_files:
+        parts = f.parts
+        if len(parts) > 3 and parts[:2] == BUNDLE_PARENT:
+            bundles[parts[2]] += 1
+        else:
+            singles.append(f)
+
+    entries = [f"`skills/{name}/` — {count} Dateien (Bündel, Einstieg `SKILL.md`)"
+               for name, count in sorted(bundles.items()) if count > BUNDLE_MIN_FILES]
+    flat = [name for name, count in bundles.items() if count <= BUNDLE_MIN_FILES]
+    entries += sorted(f.name for f in singles)
+    entries += sorted(f"skills/{n}/SKILL.md" for n in flat)
+    return entries
+
+
 # ── 2. index.md aus Wiki-Seiten generieren ────────────────────────────────
 def update_index() -> None:
     wiki_pages = sorted(
@@ -74,8 +100,8 @@ def update_index() -> None:
 
     if raw_files:
         lines += ["## Quelldateien (raw/)", ""]
-        for f in sorted(raw_files):
-            lines.append(f"- {f.name}")
+        for entry in summarize_raw(raw_files):
+            lines.append(f"- {entry}")
         lines.append("")
 
     lines += [
