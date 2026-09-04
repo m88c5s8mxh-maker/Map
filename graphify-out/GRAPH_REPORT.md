@@ -1,7 +1,7 @@
-# Graph Report - .  (2026-09-04)
+# Graph Report - .  (2026-09-05)
 
 ## Corpus Check
-- 35 files · ~879,687 words
+- 35 files · ~873,403 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -646,12 +646,12 @@
 10. `Examples` - 24 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Email Sequence Skill` --semantically_similar_to--> `DM Automation Sequence`  [INFERRED] [semantically similar]
-  raw/skills/email-sequence.md → raw/skills/instagram-digital-products.md
+- `DM Automation Sequence` --semantically_similar_to--> `Email Sequence Skill`  [INFERRED] [semantically similar]
+  raw/skills/instagram-digital-products.md → raw/skills/email-sequence.md
 - `Architecture Decision Record` --semantically_similar_to--> `system-design`  [INFERRED] [semantically similar]
   raw/skills/architecture.md → raw/skills/system-design.md
-- `Retention Metrics (D1/D7/D30)` --semantically_similar_to--> `eNPS (Employee Net Promoter Score)`  [INFERRED] [semantically similar]
-  raw/skills/metrics-review.md → raw/skills/people-report.md
+- `eNPS (Employee Net Promoter Score)` --semantically_similar_to--> `Retention Metrics (D1/D7/D30)`  [INFERRED] [semantically similar]
+  raw/skills/people-report.md → raw/skills/metrics-review.md
 - `Marketing` --belongs_to_domain--> `performance-report`  [INFERRED]
   raw/skills/content-creation.md → raw/skills/performance-report.md
 - `Generate compliance specs from skill files using LLM.` --uses--> `ComplianceSpec`  [INFERRED]
