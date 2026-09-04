@@ -1936,3 +1936,19 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 2026-09-04 18:55:51 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
 2026-09-04 18:55:51 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
 2026-09-04 18:58:42 T0 score=8 Install ECC package from GitHub
+[graphify] Extraction warning (227 issues): Node 12673 (id='concept_karpathy_llm_wiki') has invalid file_type 'concept' - must be one of ['code', 'document', 'image', 'paper', 'rationale']
+[graphify hook] 1 file(s) changed - rebuilding graph...
+[graphify watch] Rebuilt: 13117 nodes, 14418 edges, 622 communities
+[graphify watch] graph.json and GRAPH_REPORT.md updated in graphify-out
+[main 6012461] Auto: wiki sync 2026-09-04 20:09
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/m88c5s8mxh-maker/Map.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/m88c5s8mxh-maker/Map.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-09-04 20:12:25 [sync] PUSH FEHLGESCHLAGEN (main): lokal committed, aber divergiert von origin/main.
+2026-09-04 20:12:25 [sync]   -> manuell zusammenfuehren, z.B. 'git pull --no-rebase' und Konflikte loesen.
