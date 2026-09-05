@@ -1,4 +1,4 @@
-# Graph Report - Map  (2026-09-04)
+# Graph Report - Map  (2026-09-05)
 
 ## Corpus Check
 - 1564 files · ~864,128 words
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `63f6d192`
+- Built from commit: `832454cd`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -1033,14 +1033,14 @@
 ## Surprising Connections (you probably didn't know these)
 - `test_projects_gc_no_candidates()` --calls--> `_cmd_projects_gc()`  [INFERRED]
   raw/skills/ecc/skills/continuous-learning-v2/scripts/test_parse_instinct.py → raw/skills/ecc/skills/continuous-learning-v2/scripts/instinct-cli.py
+- `Architecture Decision Record` --semantically_similar_to--> `system-design`  [INFERRED] [semantically similar]
+  raw/skills/architecture.md → raw/skills/system-design.md
 - `sox-testing` --semantically_similar_to--> `statistical-analysis`  [INFERRED] [semantically similar]
   raw/skills/sox-testing.md → raw/skills/statistical-analysis.md
+- `user-research` --semantically_similar_to--> `write-spec`  [INFERRED] [semantically similar]
+  raw/skills/user-research.md → raw/skills/write-spec.md
 - `validate-data` --semantically_similar_to--> `variance-analysis`  [INFERRED] [semantically similar]
   raw/skills/validate-data.md → raw/skills/variance-analysis.md
-- `Email Sequence Skill` --semantically_similar_to--> `DM Automation Sequence`  [INFERRED] [semantically similar]
-  raw/skills/email-sequence.md → raw/skills/instagram-digital-products.md
-- `testing-strategy` --semantically_similar_to--> `validate-data`  [INFERRED] [semantically similar]
-  raw/skills/testing-strategy.md → raw/skills/validate-data.md
 
 ## Import Cycles
 - None detected.

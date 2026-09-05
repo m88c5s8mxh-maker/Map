@@ -1,6 +1,6 @@
 # Knowledge Graph Index
 
-> Zuletzt aktualisiert: 2026-09-04 · 808 Wiki-Seiten · 727 Quelldateien
+> Zuletzt aktualisiert: 2026-09-05 · 808 Wiki-Seiten · 727 Quelldateien
 
 ---
 

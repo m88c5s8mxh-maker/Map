@@ -849,6 +849,16 @@
       "community": 201,
       "community_name": "IconError",
       "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "SymbolConfiguration",
+            "receiver_type": "NSImage",
+            "lang": "swift",
+            "line": "L79"
+          }
+        ]
+      },
       "norm_label": "generateicon()",
       "source_file": "raw/skills/ecc/skills/ios-icon-gen/scripts/generate_icons.swift",
       "source_location": "L65"
@@ -352498,5 +352508,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "63f6d19278cbc29dae8dd66f0b77b5a63cc505c1"
+  "built_at_commit": "832454cdae30d42e3ddc5c7c1c789f0ba74b8264"
 }
